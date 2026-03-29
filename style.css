@@ -1,0 +1,433 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --gray-50:  #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-700: #374151;
+  --gray-900: #111827;
+  --disclaimer-height: 60px;
+  --label-col-width: 84px;
+  --drug-col-width: 155px;
+}
+
+body {
+  font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif;
+  background: var(--gray-50);
+  color: var(--gray-900);
+  line-height: 1.5;
+  min-height: 100vh;
+  padding-bottom: calc(var(--disclaimer-height) + 16px);
+}
+
+/* ===== Header ===== */
+.header {
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  color: white;
+  padding: 20px 20px 16px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: clamp(1.2rem, 4vw, 1.6rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: 4px;
+}
+
+.header .subtitle {
+  font-size: 0.8rem;
+  opacity: 0.85;
+  margin-bottom: 16px;
+}
+
+/* ===== ドメインタブ（大分類） ===== */
+.domain-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.domain-btn {
+  padding: 10px 22px;
+  border: 2px solid var(--gray-300);
+  border-radius: 10px;
+  background: white;
+  color: var(--gray-600, #4b5563);
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.15s;
+  letter-spacing: 0.01em;
+}
+
+.domain-btn:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.domain-btn[data-domain="sleep"].active {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: white;
+}
+
+.domain-btn[data-domain="pain"].active {
+  background: #0d9488;
+  border-color: #0d9488;
+  color: white;
+}
+
+.domain-btn[data-domain="pain"]:not(.active):hover {
+  border-color: #0d9488;
+  color: #0d9488;
+}
+
+/* ===== Main ===== */
+.main {
+  max-width: 100%;
+  padding: 14px 16px;
+}
+
+/* ===== カテゴリタブ（小分類） ===== */
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 8px 14px;
+  border: 2px solid var(--gray-200);
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--gray-700);
+  transition: all 0.15s;
+}
+
+.tab-btn:hover { border-color: #2563eb; color: #2563eb; }
+.tab-btn.active { background: #2563eb; border-color: #2563eb; color: white; }
+
+/* 鎮痛薬ドメイン時のタブ色 */
+body.domain-pain .tab-btn:hover  { border-color: #0d9488; color: #0d9488; }
+body.domain-pain .tab-btn.active { background: #0d9488; border-color: #0d9488; }
+
+/* ===== 検索 ===== */
+.search-box {
+  position: relative;
+  margin-bottom: 12px;
+  max-width: 480px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 9px 16px 9px 40px;
+  border: 2px solid var(--gray-200);
+  border-radius: 10px;
+  font-size: 0.88rem;
+  background: white;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.search-box input:focus { outline: none; border-color: #2563eb; }
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gray-400);
+  font-size: 0.95rem;
+  pointer-events: none;
+}
+
+/* ===== Meta row ===== */
+.meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.result-info { font-size: 0.8rem; color: var(--gray-500); }
+
+.sort-wrap { display: flex; align-items: center; gap: 6px; }
+.sort-wrap label { font-size: 0.8rem; color: var(--gray-500); white-space: nowrap; }
+
+#sort-select {
+  font-size: 0.8rem;
+  padding: 4px 24px 4px 8px;
+  border: 1px solid var(--gray-200);
+  border-radius: 6px;
+  background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%239ca3af'/%3E%3C/svg%3E") no-repeat right 8px center;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--gray-700);
+}
+
+#sort-select:focus { outline: none; border-color: #2563eb; }
+
+/* ===== Table wrapper ===== */
+#cards { width: 100%; }
+
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  border: 1px solid var(--gray-200);
+  background: white;
+}
+
+.table-wrapper::-webkit-scrollbar { height: 6px; }
+.table-wrapper::-webkit-scrollbar-track { background: var(--gray-100); border-radius: 3px; }
+.table-wrapper::-webkit-scrollbar-thumb { background: var(--gray-300); border-radius: 3px; }
+
+/* ===== Table ===== */
+.compare-table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  min-width: max-content;
+}
+
+.sticky-col {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: white;
+}
+
+thead .sticky-col { z-index: 3; }
+
+.label-col { width: var(--label-col-width); min-width: var(--label-col-width); }
+
+.sticky-col::after {
+  content: '';
+  position: absolute;
+  top: 0; right: -6px; bottom: 0;
+  width: 6px;
+  background: linear-gradient(to right, rgba(0,0,0,0.06), transparent);
+  pointer-events: none;
+}
+
+.compare-table thead th:not(.sticky-col) {
+  width: var(--drug-col-width);
+  min-width: var(--drug-col-width);
+  padding: 12px 10px 10px;
+  border-left: 1px solid var(--gray-200);
+  vertical-align: top;
+}
+
+.col-name {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 2px;
+  line-height: 1.3;
+}
+
+.col-brand { font-size: 0.72rem; color: var(--gray-500); margin-bottom: 6px; }
+
+/* ===== Class badges ===== */
+.class-badge {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 20px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1.6;
+  white-space: normal;
+  word-break: keep-all;
+}
+
+/* 睡眠・抗不安 */
+.class-badge.benzo        { background: #fef3c7; color: #92400e; }
+.class-badge.non-benzo    { background: #dbeafe; color: #1e40af; }
+.class-badge.orexin       { background: #d1fae5; color: #065f46; }
+.class-badge.melatonin    { background: #ede9fe; color: #5b21b6; }
+.class-badge.serotonin    { background: #fce7f3; color: #9d174d; }
+.class-badge.ssri         { background: #fdf2f8; color: #701a75; }
+.class-badge.snri         { background: #f3e8ff; color: #581c87; }
+.class-badge.thienodiaz   { background: #ffedd5; color: #9a3412; }
+/* 鎮痛 */
+.class-badge.acetaminophen { background: #d1fae5; color: #065f46; }
+.class-badge.nsaid-non     { background: #fef3c7; color: #92400e; }
+.class-badge.nsaid-cox2    { background: #dbeafe; color: #1e40af; }
+.class-badge.weak-opioid   { background: #ede9fe; color: #5b21b6; }
+.class-badge.opioid-combo  { background: #fce7f3; color: #9d174d; }
+/* 抗精神病薬 */
+.class-badge.typical-ap    { background: #4a1d96; color: #ede9fe; }
+.class-badge.atypical-sda  { background: #6d28d9; color: #f5f3ff; }
+.class-badge.atypical-marta{ background: #7c3aed; color: #f5f3ff; }
+.class-badge.atypical-dss  { background: #8b5cf6; color: #f5f3ff; }
+/* 抗うつ薬 */
+.class-badge.tca           { background: #1e3a5f; color: #dbeafe; }
+.class-badge.nassa         { background: #0c4a6e; color: #e0f2fe; }
+.class-badge.multimodal    { background: #1e40af; color: #dbeafe; }
+/* 気分安定薬 */
+.class-badge.lithium       { background: #064e3b; color: #d1fae5; }
+.class-badge.mood-stable   { background: #065f46; color: #d1fae5; }
+/* 認知症 */
+.class-badge.ache-i        { background: #78350f; color: #fef3c7; }
+.class-badge.nmda-ant      { background: #92400e; color: #fef3c7; }
+/* 神経障害性疼痛 */
+.class-badge.alpha2delta   { background: #0e7490; color: #cffafe; }
+/* 片頭痛 */
+.class-badge.triptan       { background: #9f1239; color: #ffe4e6; }
+.class-badge.ditan         { background: #be123c; color: #ffe4e6; }
+.class-badge.cgrp-ab       { background: #e11d48; color: #fff1f2; }
+/* 抗てんかん薬 */
+.class-badge.na-channel-b  { background: #1e3a5f; color: #dbeafe; }
+.class-badge.sv2a-b        { background: #2e1065; color: #ede9fe; }
+.class-badge.multi-aed     { background: #312e81; color: #e0e7ff; }
+/* パーキンソン病 */
+.class-badge.levodopa-sys  { background: #14532d; color: #dcfce7; }
+.class-badge.da-agonist    { background: #166534; color: #dcfce7; }
+.class-badge.mao-comt-i    { background: #365314; color: #f7fee7; }
+
+/* ===== Table body ===== */
+.compare-table tbody td {
+  padding: 8px 10px;
+  border-left: 1px solid var(--gray-100);
+  border-top: 1px solid var(--gray-100);
+  vertical-align: middle;
+  font-size: 0.82rem;
+  color: var(--gray-700);
+}
+
+.row-alt td { background: inherit; } /* JS inline styleで制御 */
+
+.row-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--gray-500);
+  text-align: center;
+  line-height: 1.4;
+  padding: 8px 6px;
+  border-left: none !important;
+  white-space: pre-line;
+}
+
+.row-label-warn { color: #c2410c; }
+
+/* Stars */
+.stars-wrap { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.stars       { color: #f59e0b; font-size: 0.9rem; letter-spacing: 1px; }
+.stars-empty { color: var(--gray-200); font-size: 0.9rem; letter-spacing: 1px; }
+.star-num    { font-size: 0.7rem; color: var(--gray-400); }
+
+/* Value cells */
+.val-cell    { text-align: center; font-weight: 600; font-size: 0.85rem; }
+.val-nodata  { color: var(--gray-400) !important; font-weight: 400; font-size: 0.75rem; }
+.onset-cell  { text-align: center; font-weight: 700; font-size: 0.82rem; color: #0891b2; }
+
+/* Rank badges */
+.rank-badge {
+  display: inline-block;
+  padding: 3px 7px;
+  border-radius: 5px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.5;
+  white-space: normal;
+  word-break: keep-all;
+}
+.rank-first   { background: #dcfce7; color: #166534; }
+.rank-second  { background: #fef9c3; color: #854d0e; }
+.rank-support { background: var(--gray-100); color: var(--gray-700); }
+
+/* Mechanism / Action */
+.mech-cell {
+  font-size: 0.75rem;
+  color: #374151;
+  line-height: 1.5;
+  background: #f8fafc !important;
+  border-left: 2px solid #93c5fd !important;
+}
+
+/* Evidence / Caution */
+.evidence-cell {
+  font-size: 0.72rem;
+  color: var(--gray-500);
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.caution-cell {
+  font-size: 0.75rem;
+  color: #7c2d12;
+  background: #fff7ed !important;
+  border-left: 2px solid #f97316 !important;
+  line-height: 1.5;
+}
+
+/* ===== 全体検索グループ ===== */
+.search-group {
+  margin-bottom: 20px;
+}
+
+.search-group-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--gray-700);
+  margin-bottom: 6px;
+  padding: 0 2px;
+}
+
+.group-count {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--gray-400);
+  background: var(--gray-100);
+  padding: 1px 7px;
+  border-radius: 10px;
+}
+
+/* No results */
+.no-results { text-align: center; padding: 60px 20px; color: var(--gray-500); }
+.no-results-icon { font-size: 2.5rem; margin-bottom: 10px; }
+
+/* Disclaimer */
+.disclaimer {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  height: var(--disclaimer-height);
+  background: rgba(17, 24, 39, 0.95);
+  backdrop-filter: blur(4px);
+  color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  z-index: 100;
+}
+
+.disclaimer p { font-size: clamp(0.65rem, 2vw, 0.8rem); text-align: center; line-height: 1.4; }
+.disclaimer strong { color: #fbbf24; }
+
+/* Responsive */
+@media (max-width: 480px) {
+  :root { --label-col-width: 70px; --drug-col-width: 138px; }
+  .col-name   { font-size: 0.85rem; }
+  .tab-btn    { font-size: 0.8rem; padding: 7px 8px; }
+  .domain-btn { font-size: 0.82rem; padding: 9px 12px; }
+}

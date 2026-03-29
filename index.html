@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>薬の早見表</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>💊 薬の早見表</h1>
+    <p class="subtitle">精神系・神経系薬の包括的比較 ｜ 作用機序・効能・エビデンスの学習用早見表</p>
+  </header>
+
+  <main class="main">
+
+    <!-- ドメインタブ（大分類） -->
+    <div class="domain-tabs">
+      <button class="domain-btn active" data-domain="sleep">🧠 精神系</button>
+      <button class="domain-btn" data-domain="pain">🩹 神経系</button>
+    </div>
+
+    <!-- カテゴリタブ（小分類・JSで生成） -->
+    <div class="tabs" id="cat-tabs" role="tablist"></div>
+
+    <!-- 検索 -->
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="search" id="search" placeholder="薬品名・系統名・キーワードで検索…" autocomplete="off">
+    </div>
+
+    <!-- 件数・並び替え -->
+    <div class="meta-row">
+      <p class="result-info" id="result-info" aria-live="polite"></p>
+      <div class="sort-wrap">
+        <label for="sort-select">並び替え：</label>
+        <select id="sort-select">
+          <option value="default">デフォルト</option>
+          <option value="star-desc">効果スコア（高い順）</option>
+          <option value="star-asc">効果スコア（低い順）</option>
+          <option value="nnt-asc">NNT（小さい順）</option>
+          <option value="rank-first">推奨度（高い順）</option>
+          <option value="name-asc">名前（50音順）</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- テーブル -->
+    <div id="cards"></div>
+
+  </main>
+
+  <footer class="disclaimer" role="contentinfo">
+    <p>
+      <strong>⚕ 免責事項：</strong>
+      掲載数値は参考値です。治療・服薬の最終判断は必ず<strong>医師・薬剤師</strong>にご相談ください。
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
