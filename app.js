@@ -12,6 +12,8 @@ const DOMAINS = {
       { key: '抗うつ薬',           label: '🌱 抗うつ薬' },
       { key: '気分安定薬',         label: '⚖ 気分安定薬' },
       { key: '認知症治療薬',       label: '🧠 認知症治療薬' },
+      { key: '双極性障害そう状態', label: '⚡ 双極性そう状態' },
+      { key: '双極性障害うつ状態', label: '🌧 双極性うつ状態' },
     ],
     defaultCat: '睡眠薬',
     headBg:       'linear-gradient(180deg, #f0f4ff 0%, #e8eeff 100%)',
@@ -37,6 +39,21 @@ const DOMAINS = {
     rowAltSticky: '#f3fdfb',
     accentColor:  '#0f766e',
   },
+  lifestyle: {
+    file: './data/lifestyle.json',
+    categories: [
+      { key: '糖尿病治療薬',     label: '🩸 糖尿病' },
+      { key: '高血圧治療薬',     label: '💓 高血圧' },
+      { key: '脂質異常症治療薬', label: '🧪 脂質異常症' },
+      { key: '高尿酸血症治療薬', label: '🦴 高尿酸血症' },
+    ],
+    defaultCat: '糖尿病治療薬',
+    headBg:       'linear-gradient(180deg, #f0fdf4 0%, #dcfce7 100%)',
+    stickyBg:     '#f0fdf4',
+    rowAltBg:     '#f7fef9',
+    rowAltSticky: '#ecfbf1',
+    accentColor:  '#16a34a',
+  },
 };
 
 // カテゴリ → ドメインのマップ（全体検索で使用）
@@ -59,6 +76,7 @@ async function init() {
       dataCache[key] = await res.json();
     })
   );
+  document.body.className = `domain-${currentDomain}`;
   renderDomainTabs();
   renderCatTabs();
   render();
@@ -88,6 +106,7 @@ function renderCatTabs() {
 function switchDomain(domain) {
   currentDomain   = domain;
   currentCategory = DOMAINS[domain].defaultCat;
+  document.body.className = `domain-${domain}`;
   renderDomainTabs();
   renderCatTabs();
   render();
@@ -319,6 +338,96 @@ const EPILEPSY_ROWS = [
   { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
 ];
 
+// 双極性障害そう状態
+const BIPOLAR_MANIA_ROWS = [
+  { label: '主な作用',       field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',       field: 'mechanism',      type: 'mech'   },
+  { label: 'YMRS改善',       field: 'placebo_onset',  type: 'accent' },
+  { label: '治療反応率',     field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT',            field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',     field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現時間',   field: 'onset_time',     type: 'val'    },
+  { label: '効果持続時間',   field: 'duration_hours', type: 'val'    },
+  { label: '推奨度',         field: 'guideline_rank', type: 'rank'   },
+  { label: 'エビデンス出典', field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
+];
+
+// 双極性障害うつ状態
+const BIPOLAR_DEP_ROWS = [
+  { label: '主な作用',       field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',       field: 'mechanism',      type: 'mech'   },
+  { label: 'MADRS改善',      field: 'placebo_onset',  type: 'accent' },
+  { label: '治療反応率',     field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT',            field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',     field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現時間',   field: 'onset_time',     type: 'val'    },
+  { label: '効果持続時間',   field: 'duration_hours', type: 'val'    },
+  { label: '推奨度',         field: 'guideline_rank', type: 'rank'   },
+  { label: 'エビデンス出典', field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
+];
+
+// 糖尿病治療薬
+const DIABETES_ROWS = [
+  { label: '主な作用',       field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',       field: 'mechanism',      type: 'mech'   },
+  { label: 'HbA1c低下',      field: 'placebo_onset',  type: 'accent' },
+  { label: '体重・付加効果', field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT（心血管）',  field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',     field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',       field: 'onset_time',     type: 'val'    },
+  { label: '投与頻度',       field: 'duration_hours', type: 'val'    },
+  { label: '推奨度',         field: 'guideline_rank', type: 'rank'   },
+  { label: 'エビデンス出典', field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
+];
+
+// 高血圧治療薬
+const HYPERTENSION_ROWS = [
+  { label: '主な作用',       field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',       field: 'mechanism',      type: 'mech'   },
+  { label: 'SBP/DBP低下',   field: 'placebo_onset',  type: 'accent' },
+  { label: '心血管保護',     field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT（MACE）',   field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',     field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',       field: 'onset_time',     type: 'val'    },
+  { label: '投与頻度',       field: 'duration_hours', type: 'val'    },
+  { label: '推奨度',         field: 'guideline_rank', type: 'rank'   },
+  { label: 'エビデンス出典', field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
+];
+
+// 脂質異常症治療薬
+const DYSLIPIDEMIA_ROWS = [
+  { label: '主な作用',       field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',       field: 'mechanism',      type: 'mech'   },
+  { label: 'LDL低下率',      field: 'placebo_onset',  type: 'accent' },
+  { label: '心血管保護',     field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT（MACE）',   field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',     field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',       field: 'onset_time',     type: 'val'    },
+  { label: '投与頻度',       field: 'duration_hours', type: 'val'    },
+  { label: '推奨度',         field: 'guideline_rank', type: 'rank'   },
+  { label: 'エビデンス出典', field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
+];
+
+// 高尿酸血症治療薬
+const HYPERURICEMIA_ROWS = [
+  { label: '主な作用',       field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',       field: 'mechanism',      type: 'mech'   },
+  { label: '尿酸値低下',     field: 'placebo_onset',  type: 'accent' },
+  { label: '目標達成率',     field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT（痛風発作）',field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',     field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',       field: 'onset_time',     type: 'val'    },
+  { label: '投与頻度',       field: 'duration_hours', type: 'val'    },
+  { label: '推奨度',         field: 'guideline_rank', type: 'rank'   },
+  { label: 'エビデンス出典', field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
+];
+
 // パーキンソン病治療薬
 const PARKINSON_ROWS = [
   { label: '主な作用',         field: 'action_type',    type: 'mech'  },
@@ -338,10 +447,16 @@ function getRowDefs(category) {
   if (ROW_DEFS[category]) return ROW_DEFS[category];
   if (['抗精神病薬（定型）', '抗精神病薬（非定型）', '抗うつ薬', '気分安定薬', '認知症治療薬'].includes(category))
     return PSYCH_ROWS;
-  if (category === '片頭痛') return MIGRAINE_ROWS;
-  if (category === '抗てんかん薬') return EPILEPSY_ROWS;
+  if (category === '双極性障害そう状態') return BIPOLAR_MANIA_ROWS;
+  if (category === '双極性障害うつ状態') return BIPOLAR_DEP_ROWS;
+  if (category === '糖尿病治療薬')       return DIABETES_ROWS;
+  if (category === '高血圧治療薬')       return HYPERTENSION_ROWS;
+  if (category === '脂質異常症治療薬')   return DYSLIPIDEMIA_ROWS;
+  if (category === '高尿酸血症治療薬')   return HYPERURICEMIA_ROWS;
+  if (category === '片頭痛')             return MIGRAINE_ROWS;
+  if (category === '抗てんかん薬')       return EPILEPSY_ROWS;
   if (category === 'パーキンソン病治療薬') return PARKINSON_ROWS;
-  return PAIN_ROWS; // 非オピオイド系・弱オピオイド・神経障害性疼痛
+  return PAIN_ROWS;
 }
 
 // ===== 汎用行ビルダー =====
@@ -466,6 +581,33 @@ function getClassBadge(cls) {
     '非麦角系ドパミン作動薬（経皮）': { css: 'da-agonist' },
     'MAO-B阻害薬':                    { css: 'mao-comt-i' },
     'COMT阻害薬':                     { css: 'mao-comt-i' },
+    // 双極性障害
+    '非定型抗精神病薬配合剤':         { css: 'atypical-combo' },
+    // 糖尿病
+    'ビグアナイド系':                 { css: 'biguanide' },
+    'SGLT2阻害薬':                    { css: 'sglt2i' },
+    'GLP-1受容体作動薬':              { css: 'glp1ra' },
+    'DPP-4阻害薬':                    { css: 'dpp4i' },
+    'SU薬（スルホニル尿素）':         { css: 'su-drug' },
+    'チアゾリジン系（TZD）':          { css: 'tzd' },
+    // 高血圧
+    'Ca拮抗薬（L型）':                { css: 'ccb' },
+    'ARB':                            { css: 'arb' },
+    'ACE阻害薬':                      { css: 'acei' },
+    'サイアザイド様利尿薬':           { css: 'thiazide' },
+    'β1選択的遮断薬':                 { css: 'beta-blocker' },
+    // 脂質異常症
+    'スタチン（高強度）':             { css: 'statin-high' },
+    'スタチン（中強度）':             { css: 'statin-mod' },
+    'コレステロール吸収阻害薬':       { css: 'chol-absorb' },
+    'PCSK9阻害薬（抗体薬）':          { css: 'pcsk9i' },
+    'フィブラート系':                 { css: 'fibrate' },
+    '高純度EPA':                      { css: 'epa' },
+    // 高尿酸血症
+    '非プリン型キサンチンオキシダーゼ阻害薬': { css: 'xo-inhibitor' },
+    'プリン型キサンチンオキシダーゼ阻害薬':   { css: 'xo-inhibitor' },
+    '尿酸排泄促進薬':                 { css: 'uricosuric' },
+    '抗炎症薬（チュブリン重合阻害）': { css: 'colchicine-badge' },
   };
   return map[cls] || { css: 'benzo' };
 }

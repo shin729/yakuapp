@@ -87,6 +87,20 @@ body {
   color: #0d9488;
 }
 
+.domain-btn[data-domain="lifestyle"].active {
+  background: #16a34a;
+  border-color: #16a34a;
+  color: white;
+}
+
+.domain-btn[data-domain="lifestyle"]:not(.active):hover {
+  border-color: #16a34a;
+  color: #16a34a;
+}
+
+body.domain-lifestyle .tab-btn:hover  { border-color: #16a34a; color: #16a34a; }
+body.domain-lifestyle .tab-btn.active { background: #16a34a; border-color: #16a34a; }
+
 /* ===== Main ===== */
 .main {
   max-width: 100%;
@@ -300,6 +314,32 @@ thead .sticky-col { z-index: 3; }
 .class-badge.levodopa-sys  { background: #14532d; color: #dcfce7; }
 .class-badge.da-agonist    { background: #166534; color: #dcfce7; }
 .class-badge.mao-comt-i    { background: #365314; color: #f7fee7; }
+/* 双極性障害 */
+.class-badge.atypical-combo { background: #4c1d95; color: #ede9fe; }
+/* 糖尿病 */
+.class-badge.biguanide     { background: #1e3a5f; color: #dbeafe; }
+.class-badge.sglt2i        { background: #0369a1; color: #e0f2fe; }
+.class-badge.glp1ra        { background: #0284c7; color: #e0f2fe; }
+.class-badge.dpp4i         { background: #0ea5e9; color: #e0f2fe; }
+.class-badge.su-drug       { background: #92400e; color: #fef3c7; }
+.class-badge.tzd           { background: #78350f; color: #fef3c7; }
+/* 高血圧 */
+.class-badge.ccb           { background: #9f1239; color: #ffe4e6; }
+.class-badge.arb           { background: #be123c; color: #ffe4e6; }
+.class-badge.acei          { background: #881337; color: #ffe4e6; }
+.class-badge.thiazide      { background: #831843; color: #fce7f3; }
+.class-badge.beta-blocker  { background: #500724; color: #fce7f3; }
+/* 脂質異常症 */
+.class-badge.statin-high   { background: #312e81; color: #e0e7ff; }
+.class-badge.statin-mod    { background: #3730a3; color: #e0e7ff; }
+.class-badge.chol-absorb   { background: #4338ca; color: #e0e7ff; }
+.class-badge.pcsk9i        { background: #1e1b4b; color: #e0e7ff; }
+.class-badge.fibrate       { background: #065f46; color: #d1fae5; }
+.class-badge.epa           { background: #0f766e; color: #ccfbf1; }
+/* 高尿酸血症 */
+.class-badge.xo-inhibitor  { background: #422006; color: #ffedd5; }
+.class-badge.uricosuric    { background: #713f12; color: #fef3c7; }
+.class-badge.colchicine-badge { background: #1c1917; color: #fef3c7; }
 
 /* ===== Table body ===== */
 .compare-table tbody td {
