@@ -362,7 +362,7 @@ function renderCell(d, def, accentColor) {
     case 'nnt':      return nntCell(v, accentColor);
     case 'stars':    return starsCell(v);
     case 'rank':     return rankCell(s);
-    case 'evidence': return `<td class="evidence-cell">${esc(s)}</td>`;
+    case 'evidence': return evidenceCell(d);
     case 'caution':  return cautionCell(s);
     case 'mech':     return `<td class="mech-cell">${esc(s)}</td>`;
     default:         return `<td class="val-cell">${esc(s)}</td>`;
@@ -406,6 +406,16 @@ function rankCell(rank) {
 
 function cautionCell(text) {
   return `<td class="caution-cell">${esc(text)}</td>`;
+}
+
+function evidenceCell(d) {
+  const linkBtn = d.evidence_url
+    ? `<button class="ev-link-btn" data-url="${esc(d.evidence_url)}" aria-label="参照リンクを表示">🔗</button>
+       <div class="ev-link-panel" hidden>
+         <a href="${esc(d.evidence_url)}" target="_blank" rel="noopener noreferrer">${esc(d.evidence_url)}</a>
+       </div>`
+    : '';
+  return `<td class="evidence-cell">${esc(d.evidence || '')}${linkBtn}</td>`;
 }
 
 // ===== バッジ =====
@@ -478,5 +488,12 @@ document.querySelectorAll('.domain-btn').forEach(btn => {
 });
 document.getElementById('search').addEventListener('input', onSearch);
 document.getElementById('sort-select').addEventListener('change', onSort);
+document.getElementById('cards').addEventListener('click', e => {
+  const btn = e.target.closest('.ev-link-btn');
+  if (!btn) return;
+  const panel = btn.nextElementSibling;
+  panel.hidden = !panel.hidden;
+  btn.classList.toggle('active', !panel.hidden);
+});
 
 init();

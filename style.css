@@ -369,6 +369,37 @@ thead .sticky-col { z-index: 3; }
   line-height: 1.4;
 }
 
+.ev-link-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.7rem;
+  padding: 1px 3px;
+  opacity: 0.35;
+  vertical-align: middle;
+  transition: opacity 0.15s;
+  margin-left: 2px;
+  line-height: 1;
+}
+
+.ev-link-btn:hover,
+.ev-link-btn.active {
+  opacity: 0.85;
+}
+
+.ev-link-panel {
+  margin-top: 4px;
+  font-size: 0.63rem;
+  font-style: normal;
+  word-break: break-all;
+}
+
+.ev-link-panel a {
+  color: #2563eb;
+  text-decoration: underline;
+  opacity: 0.75;
+}
+
 .caution-cell {
   font-size: 0.75rem;
   color: #7c2d12;
