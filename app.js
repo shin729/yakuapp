@@ -293,6 +293,22 @@ const PSYCH_ROWS = [
   { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
 ];
 
+// 抗精神病薬（定型・非定型）専用：陽性症状・陰性症状行を追加
+const AP_ROWS = [
+  { label: '主な作用',       field: 'action_type',       type: 'mech'   },
+  { label: '作用機序',       field: 'mechanism',         type: 'mech'   },
+  { label: '陽性症状改善',   field: 'positive_symptoms', type: 'accent' },
+  { label: '陰性症状改善',   field: 'negative_symptoms', type: 'accent' },
+  { label: '症状スコア改善', field: 'placebo_onset',     type: 'accent' },
+  { label: '治療反応率',     field: 'placebo_sleep',     type: 'accent' },
+  { label: 'NNT',            field: 'NNT',               type: 'nnt'    },
+  { label: '効果スコア',     field: 'efficacy_star',     type: 'stars'  },
+  { label: '効果持続時間',   field: 'duration_hours',    type: 'val'    },
+  { label: '推奨度',         field: 'guideline_rank',    type: 'rank'   },
+  { label: 'エビデンス出典', field: 'evidence',          type: 'evidence'},
+  { label: '⚠ 注意事項',    field: 'caution',           type: 'caution'},
+];
+
 // 非オピオイド・弱オピオイド・神経障害性疼痛
 const PAIN_ROWS = [
   { label: '主な作用',       field: 'action_type',    type: 'mech'  },
@@ -445,7 +461,9 @@ const PARKINSON_ROWS = [
 
 function getRowDefs(category) {
   if (ROW_DEFS[category]) return ROW_DEFS[category];
-  if (['抗精神病薬（定型）', '抗精神病薬（非定型）', '抗うつ薬', '気分安定薬', '認知症治療薬'].includes(category))
+  if (['抗精神病薬（定型）', '抗精神病薬（非定型）'].includes(category))
+    return AP_ROWS;
+  if (['抗うつ薬', '気分安定薬', '認知症治療薬'].includes(category))
     return PSYCH_ROWS;
   if (category === '双極性障害そう状態') return BIPOLAR_MANIA_ROWS;
   if (category === '双極性障害うつ状態') return BIPOLAR_DEP_ROWS;
@@ -551,6 +569,8 @@ function getClassBadge(cls) {
     '弱オピオイド':                   { css: 'weak-opioid' },
     '弱オピオイド配合剤':             { css: 'opioid-combo' },
     // 新規
+    '置換ベンズアミド系':             { css: 'typical-ap' },
+    'フェノチアジン系':               { css: 'typical-ap' },
     '定型抗精神病薬（高力価）':       { css: 'typical-ap' },
     '定型抗精神病薬（低力価）':       { css: 'typical-ap' },
     '非定型抗精神病薬（SDA）':        { css: 'atypical-sda' },
@@ -568,6 +588,7 @@ function getClassBadge(cls) {
     'コリンエステラーゼ阻害薬（AChEI）＋APL': { css: 'ache-i' },
     'NMDA受容体拮抗薬':               { css: 'nmda-ant' },
     'α2δリガンド（カルシウムチャネル調節薬）': { css: 'alpha2delta' },
+    'α2δリガンド（第2世代）':        { css: 'alpha2delta' },
     'トリプタン系（5-HT1B/1D作動薬）':{ css: 'triptan' },
     'ジタン系（5-HT1F作動薬）':       { css: 'ditan' },
     'CGRP受容体拮抗抗体':             { css: 'cgrp-ab' },
@@ -575,6 +596,9 @@ function getClassBadge(cls) {
     'SV2A結合薬':                     { css: 'sv2a-b' },
     '多作用機序型抗てんかん薬':       { css: 'multi-aed' },
     'Na+チャネル遮断薬（緩徐な不活性化増強）': { css: 'na-channel-b' },
+    'スルホンアミド系抗てんかん薬':   { css: 'multi-aed' },
+    'AMPA受容体拮抗薬（非競合）':     { css: 'sv2a-b' },
+    '1,5-ベンゾジアゼピン系':         { css: 'benzo' },
     '脂肪酸系抗てんかん薬':           { css: 'mood-stable' },
     'ドパミン前駆体':                 { css: 'levodopa-sys' },
     '非麦角系ドパミン作動薬':         { css: 'da-agonist' },
@@ -603,6 +627,7 @@ function getClassBadge(cls) {
     'PCSK9阻害薬（抗体薬）':          { css: 'pcsk9i' },
     'フィブラート系':                 { css: 'fibrate' },
     '高純度EPA':                      { css: 'epa' },
+    'アルドステロン拮抗薬':           { css: 'thiazide' },
     // 高尿酸血症
     '非プリン型キサンチンオキシダーゼ阻害薬': { css: 'xo-inhibitor' },
     'プリン型キサンチンオキシダーゼ阻害薬':   { css: 'xo-inhibitor' },
