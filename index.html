@@ -37,16 +37,19 @@
     <!-- 件数・並び替え -->
     <div class="meta-row">
       <p class="result-info" id="result-info" aria-live="polite"></p>
-      <div class="sort-wrap">
-        <label for="sort-select">並び替え：</label>
-        <select id="sort-select">
-          <option value="default">デフォルト</option>
-          <option value="star-desc">効果スコア（高い順）</option>
-          <option value="star-asc">効果スコア（低い順）</option>
-          <option value="nnt-asc">NNT（小さい順）</option>
-          <option value="rank-first">推奨度（高い順）</option>
-          <option value="name-asc">名前（50音順）</option>
-        </select>
+      <div class="meta-row-right">
+        <button class="compare-toggle-btn" id="compare-toggle" aria-pressed="false">⚖ 比較</button>
+        <div class="sort-wrap">
+          <label for="sort-select">並び替え：</label>
+          <select id="sort-select">
+            <option value="default">デフォルト</option>
+            <option value="star-desc">効果スコア（高い順）</option>
+            <option value="star-asc">効果スコア（低い順）</option>
+            <option value="nnt-asc">NNT（小さい順）</option>
+            <option value="rank-first">推奨度（高い順）</option>
+            <option value="name-asc">名前（50音順）</option>
+          </select>
+        </div>
       </div>
     </div>
 
@@ -54,6 +57,13 @@
     <div id="cards"></div>
 
   </main>
+
+  <!-- 比較バー -->
+  <div class="compare-bar" id="compare-bar" hidden>
+    <div class="compare-bar-chips" id="compare-bar-chips"></div>
+    <button class="compare-go-btn" id="compare-go-btn">比較する（<span id="compare-count">0</span>）</button>
+    <button class="compare-clear-btn" id="compare-clear-btn">✕</button>
+  </div>
 
   <footer class="disclaimer" role="contentinfo">
     <p>

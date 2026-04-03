@@ -489,6 +489,292 @@ thead .sticky-col { z-index: 3; }
 .no-results { text-align: center; padding: 60px 20px; color: var(--gray-500); }
 .no-results-icon { font-size: 2.5rem; margin-bottom: 10px; }
 
+/* ===== 比較モード ===== */
+
+/* トグルボタン */
+.meta-row-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.compare-toggle-btn {
+  padding: 5px 12px;
+  border: 2px solid var(--gray-300);
+  border-radius: 8px;
+  background: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: inherit;
+  color: var(--gray-600, #4b5563);
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.compare-toggle-btn:hover { border-color: #7c3aed; color: #7c3aed; }
+.compare-toggle-btn.active { background: #7c3aed; border-color: #7c3aed; color: white; }
+
+/* カード内比較ボタン */
+.card-head-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.card-compare-btn {
+  padding: 3px 8px;
+  border: 1.5px solid var(--gray-300);
+  border-radius: 6px;
+  background: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--gray-500);
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.card-compare-btn:hover { border-color: #7c3aed; color: #7c3aed; }
+.card-compare-btn.active { background: #7c3aed; border-color: #7c3aed; color: white; }
+
+/* カード選択状態 */
+.drug-card.compare-selected {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 2px #c4b5fd;
+}
+
+/* テーブルヘッダー比較ボタン */
+.col-compare-btn {
+  display: block;
+  margin-top: 6px;
+  padding: 3px 8px;
+  border: 1.5px solid var(--gray-300);
+  border-radius: 6px;
+  background: white;
+  font-size: 0.68rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--gray-500);
+  transition: all 0.15s;
+  font-family: inherit;
+  width: 100%;
+}
+
+.col-compare-btn:hover { border-color: #7c3aed; color: #7c3aed; }
+.col-compare-btn.active { background: #7c3aed; border-color: #7c3aed; color: white; }
+
+.compare-table thead th.compare-selected {
+  outline: 2px solid #7c3aed;
+  outline-offset: -2px;
+}
+
+/* 比較バー（フッターの上） */
+.compare-bar {
+  position: fixed;
+  bottom: var(--disclaimer-height);
+  left: 0; right: 0;
+  background: rgba(30, 20, 60, 0.97);
+  backdrop-filter: blur(6px);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 99;
+  border-top: 1px solid rgba(124, 58, 237, 0.4);
+}
+
+.compare-bar-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+
+.cmp-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(124, 58, 237, 0.3);
+  border: 1px solid rgba(167, 139, 250, 0.5);
+  border-radius: 20px;
+  padding: 3px 8px 3px 10px;
+  font-size: 0.72rem;
+  color: #e9d5ff;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cmp-chip-x {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #c4b5fd;
+  font-size: 0.65rem;
+  padding: 0;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.compare-go-btn {
+  padding: 7px 14px;
+  background: #7c3aed;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.compare-go-btn:hover { background: #6d28d9; }
+
+.compare-clear-btn {
+  background: none;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 6px;
+  color: #d1d5db;
+  font-size: 0.8rem;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+/* 比較オーバーレイ */
+.cmp-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 200;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px 12px;
+  overflow-y: auto;
+}
+
+.cmp-modal {
+  background: white;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 40px);
+}
+
+.cmp-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background: linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%);
+  color: white;
+  flex-shrink: 0;
+}
+
+.cmp-modal-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.cmp-close-btn {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 8px;
+  color: white;
+  font-size: 0.8rem;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.cmp-close-btn:hover { background: rgba(255,255,255,0.25); }
+
+.cmp-table-wrap {
+  overflow: auto;
+  flex: 1;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cmp-drug-col {
+  min-width: 150px;
+}
+
+.cmp-drug-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 2px;
+}
+
+.cmp-drug-brand {
+  font-size: 0.7rem;
+  color: var(--gray-500);
+  margin-bottom: 2px;
+}
+
+.cmp-drug-cat {
+  font-size: 0.65rem;
+  color: #7c3aed;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.cmp-label-col {
+  width: 90px !important;
+  min-width: 90px !important;
+  background: white;
+}
+
+thead .cmp-label-col { background: #f5f3ff !important; }
+
+/* 最良値ハイライト */
+.cmp-best {
+  background: #f0fdf4 !important;
+  position: relative;
+}
+
+.cmp-best::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: #16a34a;
+}
+
+.cmp-legend {
+  padding: 8px 16px;
+  font-size: 0.72rem;
+  color: var(--gray-500);
+  border-top: 1px solid var(--gray-100);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.cmp-best-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #16a34a;
+  border-radius: 2px;
+}
+
 /* Disclaimer */
 .disclaimer {
   position: fixed;

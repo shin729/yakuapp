@@ -72,6 +72,26 @@ let currentCategory = '睡眠薬';
 let searchQuery = '';
 let sortKey     = 'default';
 
+// ===== 比較モード状態 =====
+let compareMode = false;
+let compareList = []; // max 4
+
+// クロスカテゴリ比較用の汎用行定義
+const COMPARE_ROWS = [
+  { label: 'カテゴリ',       field: 'category',       type: 'val'    },
+  { label: '主な作用',       field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',       field: 'mechanism',      type: 'mech'   },
+  { label: '主要効果指標',   field: 'placebo_onset',  type: 'accent' },
+  { label: '副次効果指標',   field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT',            field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',     field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',       field: 'onset_time',     type: 'val'    },
+  { label: '投与期間・頻度', field: 'duration_hours', type: 'val'    },
+  { label: '推奨度',         field: 'guideline_rank', type: 'rank'   },
+  { label: 'エビデンス出典', field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
+];
+
 // ===== Init =====
 async function init() {
   await Promise.allSettled(
@@ -278,14 +298,22 @@ function buildDrugCard(d, defs, cfg) {
     return `<div class="${rowClass}"><span class="cd-label">${esc(def.label)}</span><span class="cd-val">${esc(s)}</span></div>`;
   }).join('');
 
+  const sel = isCompareSelected(d);
+  const cmpBtn = compareMode
+    ? `<button class="card-compare-btn${sel ? ' active' : ''}" data-cmp-name="${esc(d.name)}" data-cmp-cat="${esc(d.category)}" aria-label="比較に追加">${sel ? '✓' : '＋'}</button>`
+    : '';
+
   return `
-  <div class="drug-card">
+  <div class="drug-card${sel ? ' compare-selected' : ''}" data-card-name="${esc(d.name)}" data-card-cat="${esc(d.category)}">
     <div class="card-head">
       <div class="card-title-wrap">
         <div class="card-name">${esc(d.name)}</div>
         <div class="card-brand">${esc(d.brand || '')}</div>
       </div>
-      <span class="class-badge ${badge.css}">${esc(d.class || '')}</span>
+      <div class="card-head-right">
+        <span class="class-badge ${badge.css}">${esc(d.class || '')}</span>
+        ${cmpBtn}
+      </div>
     </div>
     <div class="card-kpis">
       <div class="kpi-item"><span class="kpi-label">効果</span><div class="kpi-stars">${starsHTML}</div></div>
@@ -320,11 +348,16 @@ function noResultsHTML() {
 function buildTable(drugs, cfg, category) {
   const headerCells = drugs.map(d => {
     const badge = getClassBadge(d.class);
+    const sel = isCompareSelected(d);
+    const cmpBtn = compareMode
+      ? `<button class="col-compare-btn${sel ? ' active' : ''}" data-cmp-name="${esc(d.name)}" data-cmp-cat="${esc(d.category)}">${sel ? '✓ 選択中' : '＋ 比較'}</button>`
+      : '';
     return `
-      <th style="background:${cfg.headBg}">
+      <th class="${sel ? 'compare-selected' : ''}" style="background:${cfg.headBg}">
         <div class="col-name">${esc(d.name)}</div>
         <div class="col-brand">${esc(d.brand)}</div>
         <span class="class-badge ${badge.css}">${esc(d.class)}</span>
+        ${cmpBtn}
       </th>`;
   }).join('');
 
@@ -820,6 +853,142 @@ function esc(str) {
     .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+// ===== 比較モード関数 =====
+function isCompareSelected(d) {
+  return compareList.some(x => x.name === d.name && x.category === d.category);
+}
+
+function toggleCompareMode() {
+  compareMode = !compareMode;
+  const btn = document.getElementById('compare-toggle');
+  btn.classList.toggle('active', compareMode);
+  btn.setAttribute('aria-pressed', compareMode);
+  if (!compareMode) {
+    compareList = [];
+    updateCompareBar();
+  }
+  render();
+}
+
+function toggleCompareItem(name, cat) {
+  if (compareList.length >= 4 && !compareList.some(x => x.name === name && x.category === cat)) return;
+  const allDrugs = Object.values(dataCache).flat();
+  const drug = allDrugs.find(d => d.name === name && d.category === cat);
+  if (!drug) return;
+  const idx = compareList.findIndex(x => x.name === name && x.category === cat);
+  if (idx >= 0) compareList.splice(idx, 1);
+  else compareList.push(drug);
+  updateCompareBar();
+  // 選択状態だけ差分更新（フルレンダリング不要）
+  document.querySelectorAll('[data-card-name]').forEach(el => {
+    const n = el.dataset.cardName, c = el.dataset.cardCat;
+    const s = compareList.some(x => x.name === n && x.category === c);
+    el.classList.toggle('compare-selected', s);
+    const b = el.querySelector('.card-compare-btn');
+    if (b) { b.classList.toggle('active', s); b.textContent = s ? '✓' : '＋'; }
+  });
+  document.querySelectorAll('.col-compare-btn').forEach(b => {
+    const s = compareList.some(x => x.name === b.dataset.cmpName && x.category === b.dataset.cmpCat);
+    b.classList.toggle('active', s);
+    b.textContent = s ? '✓ 選択中' : '＋ 比較';
+    b.closest('th').classList.toggle('compare-selected', s);
+  });
+}
+
+function updateCompareBar() {
+  const bar = document.getElementById('compare-bar');
+  bar.hidden = compareList.length === 0;
+  document.getElementById('compare-bar-chips').innerHTML = compareList.map(d =>
+    `<span class="cmp-chip">${esc(d.name)}<button class="cmp-chip-x" data-cmp-name="${esc(d.name)}" data-cmp-cat="${esc(d.category)}">✕</button></span>`
+  ).join('');
+  document.getElementById('compare-count').textContent = compareList.length;
+}
+
+function getCompareRows(drugs) {
+  const cats = [...new Set(drugs.map(d => d.category))];
+  if (cats.length === 1) return getRowDefs(cats[0]);
+  return COMPARE_ROWS;
+}
+
+function showComparison() {
+  if (compareList.length < 2) return;
+  const drugs = compareList;
+  const rows  = getCompareRows(drugs);
+
+  // 最良値を事前計算
+  const bestStar = Math.max(...drugs.map(d => Number(d.efficacy_star) || 0));
+  const nntVals  = drugs.map(d => typeof d.NNT === 'number' ? d.NNT : Infinity);
+  const bestNnt  = Math.min(...nntVals);
+
+  // ヘッダー
+  const domainCfg = Object.values(DOMAINS).find(cfg =>
+    cfg.categories.some(c => c.key === drugs[0].category)
+  ) || Object.values(DOMAINS)[0];
+  const headBg = domainCfg.headBg;
+
+  const headers = drugs.map(d => {
+    const badge = getClassBadge(d.class || '');
+    return `<th class="cmp-drug-col">
+      <div class="cmp-drug-name">${esc(d.name)}</div>
+      <div class="cmp-drug-brand">${esc(d.brand || '')}</div>
+      <div class="cmp-drug-cat">${esc(d.category)}</div>
+      <span class="class-badge ${badge.css}">${esc(d.class || '')}</span>
+    </th>`;
+  }).join('');
+
+  // 行
+  const bodyRows = rows.map((def, i) => {
+    const alt = i % 2 === 1;
+    const cells = drugs.map(d => {
+      const v = d[def.field];
+      const isBest =
+        (def.type === 'stars' && (Number(v) || 0) === bestStar && bestStar > 0) ||
+        (def.type === 'nnt'   && typeof v === 'number' && v === bestNnt && bestNnt < Infinity);
+      const inner = renderCell(d, def, '#1d4ed8');
+      // renderCellは<td>を返す→中身だけ取り出してbestクラスを付与
+      const tdContent = inner.replace(/^<td[^>]*>/, '').replace(/<\/td>$/, '');
+      return `<td class="${isBest ? 'cmp-best' : ''}">${tdContent}</td>`;
+    }).join('');
+    const isWarn = def.label.startsWith('⚠');
+    return `<tr class="${alt ? 'row-alt' : ''}${isWarn ? ' cmp-warn-row' : ''}">
+      <td class="row-label sticky-col label-col cmp-label-col">${esc(def.label)}</td>
+      ${cells}
+    </tr>`;
+  }).join('');
+
+  const html = `
+  <div class="cmp-overlay" id="cmp-overlay">
+    <div class="cmp-modal">
+      <div class="cmp-modal-header">
+        <span class="cmp-modal-title">⚖ 薬剤比較（${drugs.length}剤）</span>
+        <button class="cmp-close-btn" id="cmp-close-btn">✕ 閉じる</button>
+      </div>
+      <div class="cmp-table-wrap">
+        <div class="table-wrapper">
+          <table class="compare-table">
+            <thead><tr>
+              <th class="sticky-col label-col cmp-label-col" style="background:${headBg}">項目</th>
+              ${headers}
+            </tr></thead>
+            <tbody>${bodyRows}</tbody>
+          </table>
+        </div>
+      </div>
+      <div class="cmp-legend"><span class="cmp-best-dot"></span> その比較内での最良値</div>
+    </div>
+  </div>`;
+
+  document.body.insertAdjacentHTML('beforeend', html);
+  document.getElementById('cmp-close-btn').addEventListener('click', closeComparison);
+  document.getElementById('cmp-overlay').addEventListener('click', e => {
+    if (e.target.id === 'cmp-overlay') closeComparison();
+  });
+}
+
+function closeComparison() {
+  document.getElementById('cmp-overlay')?.remove();
+}
+
 // ===== イベント =====
 let _resizeTimer;
 window.addEventListener('resize', () => {
@@ -832,12 +1001,36 @@ document.querySelectorAll('.domain-btn').forEach(btn => {
 });
 document.getElementById('search').addEventListener('input', onSearch);
 document.getElementById('sort-select').addEventListener('change', onSort);
+document.getElementById('compare-toggle').addEventListener('click', toggleCompareMode);
+document.getElementById('compare-go-btn').addEventListener('click', showComparison);
+document.getElementById('compare-clear-btn').addEventListener('click', () => {
+  compareList = [];
+  updateCompareBar();
+  render();
+});
+
+// カード・テーブルへの委譲イベント（比較ボタン + エビデンスリンク）
 document.getElementById('cards').addEventListener('click', e => {
-  const btn = e.target.closest('.ev-link-btn');
-  if (!btn) return;
-  const panel = btn.nextElementSibling;
-  panel.hidden = !panel.hidden;
-  btn.classList.toggle('active', !panel.hidden);
+  // エビデンスリンク
+  const evBtn = e.target.closest('.ev-link-btn');
+  if (evBtn) {
+    const panel = evBtn.nextElementSibling;
+    panel.hidden = !panel.hidden;
+    evBtn.classList.toggle('active', !panel.hidden);
+    return;
+  }
+  // 比較ボタン（カード）
+  const cmpCard = e.target.closest('.card-compare-btn');
+  if (cmpCard) { toggleCompareItem(cmpCard.dataset.cmpName, cmpCard.dataset.cmpCat); return; }
+  // 比較ボタン（テーブルヘッダー）
+  const cmpCol = e.target.closest('.col-compare-btn');
+  if (cmpCol) { toggleCompareItem(cmpCol.dataset.cmpName, cmpCol.dataset.cmpCat); return; }
+});
+
+// 比較バーのチップ削除
+document.getElementById('compare-bar-chips').addEventListener('click', e => {
+  const x = e.target.closest('.cmp-chip-x');
+  if (x) toggleCompareItem(x.dataset.cmpName, x.dataset.cmpCat);
 });
 
 init();
