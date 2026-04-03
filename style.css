@@ -499,14 +499,14 @@ thead .sticky-col { z-index: 3; }
 .card-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 
 .drug-card {
   background: white;
-  border-radius: 14px;
+  border-radius: 10px;
   border: 1px solid var(--gray-200);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
   overflow: hidden;
 }
 
@@ -514,29 +514,30 @@ thead .sticky-col { z-index: 3; }
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 10px;
-  padding: 14px 14px 10px;
+  gap: 8px;
+  padding: 10px 12px 8px;
 }
 
 .card-title-wrap { flex: 1; min-width: 0; }
 
 .card-name {
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: var(--gray-900);
   line-height: 1.3;
 }
 
 .card-brand {
-  font-size: 0.75rem;
+  font-size: 0.68rem;
   color: var(--gray-500);
-  margin-top: 2px;
+  margin-top: 1px;
 }
 
 .card-head .class-badge {
   flex-shrink: 0;
-  max-width: 120px;
+  max-width: 110px;
   text-align: center;
+  font-size: 0.6rem;
 }
 
 /* KPI行 */
@@ -544,7 +545,7 @@ thead .sticky-col { z-index: 3; }
   display: flex;
   align-items: center;
   gap: 0;
-  padding: 8px 14px 10px;
+  padding: 6px 12px 7px;
   border-top: 1px solid var(--gray-100);
   background: var(--gray-50);
 }
@@ -554,7 +555,7 @@ thead .sticky-col { z-index: 3; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3px;
+  gap: 2px;
 }
 
 .kpi-item + .kpi-item {
@@ -564,25 +565,26 @@ thead .sticky-col { z-index: 3; }
 .kpi-rank { flex: 1.4; }
 
 .kpi-label {
-  font-size: 0.65rem;
+  font-size: 0.58rem;
   color: var(--gray-400);
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
 }
 
 .kpi-stars { display: flex; }
-.kpi-stars .stars      { font-size: 0.85rem; letter-spacing: 0; }
-.kpi-stars .stars-empty{ font-size: 0.85rem; letter-spacing: 0; color: var(--gray-200); }
+.kpi-stars .stars      { font-size: 0.75rem; letter-spacing: 0; }
+.kpi-stars .stars-empty{ font-size: 0.75rem; letter-spacing: 0; color: var(--gray-200); }
 
 .kpi-val {
-  font-size: 1.0rem;
+  font-size: 0.88rem;
   font-weight: 700;
   color: var(--gray-700);
 }
 
 .kpi-rank .rank-badge {
-  font-size: 0.68rem;
+  font-size: 0.6rem;
+  padding: 2px 5px;
   text-align: center;
   white-space: normal;
   word-break: keep-all;
@@ -594,14 +596,14 @@ thead .sticky-col { z-index: 3; }
   justify-content: space-between;
   align-items: baseline;
   gap: 8px;
-  padding: 6px 14px;
+  padding: 4px 12px;
   border-top: 1px solid var(--gray-100);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 
 .card-accent-label {
   color: var(--gray-500);
-  font-size: 0.72rem;
+  font-size: 0.65rem;
   flex-shrink: 0;
 }
 
@@ -609,6 +611,7 @@ thead .sticky-col { z-index: 3; }
   color: var(--gray-700);
   font-weight: 600;
   text-align: right;
+  font-size: 0.72rem;
 }
 
 /* 詳細 (details/summary) */
@@ -620,8 +623,8 @@ thead .sticky-col { z-index: 3; }
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 14px;
-  font-size: 0.8rem;
+  padding: 7px 12px;
+  font-size: 0.72rem;
   font-weight: 600;
   color: var(--gray-500);
   cursor: pointer;
@@ -634,7 +637,7 @@ thead .sticky-col { z-index: 3; }
 
 .card-summary::after {
   content: '▾';
-  font-size: 0.75rem;
+  font-size: 0.68rem;
   transition: transform 0.2s;
 }
 
@@ -649,19 +652,19 @@ thead .sticky-col { z-index: 3; }
 /* 詳細内の各行 */
 .card-detail-row {
   display: flex;
-  gap: 8px;
-  padding: 7px 14px;
+  gap: 6px;
+  padding: 5px 12px;
   border-top: 1px solid var(--gray-100);
-  font-size: 0.78rem;
-  line-height: 1.5;
+  font-size: 0.72rem;
+  line-height: 1.45;
 }
 
 .card-detail-row:first-child { border-top: none; }
 
 .cd-label {
   flex-shrink: 0;
-  width: 90px;
-  font-size: 0.7rem;
+  width: 78px;
+  font-size: 0.63rem;
   font-weight: 600;
   color: var(--gray-500);
   padding-top: 1px;
@@ -671,6 +674,7 @@ thead .sticky-col { z-index: 3; }
   flex: 1;
   color: var(--gray-700);
   word-break: break-all;
+  font-size: 0.7rem;
 }
 
 .cd-evidence { font-style: italic; color: var(--gray-500); }
