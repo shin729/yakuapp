@@ -14,7 +14,9 @@ const DOMAINS = {
       { key: '認知症治療薬',       label: '🧠 認知症治療薬' },
       { key: '双極性障害そう状態', label: '⚡ 双極性そう状態' },
       { key: '双極性障害うつ状態', label: '🌧 双極性うつ状態' },
-      { key: 'ADHD治療薬',         label: '🎯 ADHD' },
+      { key: 'ADHD治療薬',             label: '🎯 ADHD' },
+      { key: 'アルコール依存症治療薬', label: '🍶 アルコール依存症' },
+      { key: '禁煙補助薬',             label: '🚭 禁煙補助' },
     ],
     defaultCat: '睡眠薬',
     headBg:       'linear-gradient(180deg, #f0f4ff 0%, #e8eeff 100%)',
@@ -485,6 +487,36 @@ const ADHD_ROWS = [
   { label: '⚠ 注意事項',      field: 'caution',        type: 'caution'},
 ];
 
+// アルコール依存症治療薬
+const ALCOHOL_ROWS = [
+  { label: '主な作用',         field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',         field: 'mechanism',      type: 'mech'   },
+  { label: '断酒・飲酒量減少', field: 'placebo_onset',  type: 'accent' },
+  { label: '再発防止・長期効果',field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT',              field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',         field: 'onset_time',     type: 'val'    },
+  { label: '推奨投与期間',     field: 'duration_hours', type: 'val'    },
+  { label: '推奨度',           field: 'guideline_rank', type: 'rank'   },
+  { label: 'エビデンス出典',   field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',      field: 'caution',        type: 'caution'},
+];
+
+// 禁煙補助薬
+const SMOKING_ROWS = [
+  { label: '主な作用',         field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',         field: 'mechanism',      type: 'mech'   },
+  { label: '禁煙成功率（6カ月）',field: 'placebo_onset', type: 'accent' },
+  { label: 'プラセボ比禁煙率', field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT',              field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',         field: 'onset_time',     type: 'val'    },
+  { label: '推奨投与期間',     field: 'duration_hours', type: 'val'    },
+  { label: '推奨度',           field: 'guideline_rank', type: 'rank'   },
+  { label: 'エビデンス出典',   field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',      field: 'caution',        type: 'caution'},
+];
+
 // 強オピオイド
 const STRONG_OPIOID_ROWS = [
   { label: '主な作用',         field: 'action_type',    type: 'mech'   },
@@ -583,8 +615,10 @@ function getRowDefs(category) {
     return PSYCH_ROWS;
   if (category === '双極性障害そう状態') return BIPOLAR_MANIA_ROWS;
   if (category === '双極性障害うつ状態') return BIPOLAR_DEP_ROWS;
-  if (category === 'ADHD治療薬')         return ADHD_ROWS;
-  if (category === '強オピオイド')       return STRONG_OPIOID_ROWS;
+  if (category === 'ADHD治療薬')             return ADHD_ROWS;
+  if (category === 'アルコール依存症治療薬') return ALCOHOL_ROWS;
+  if (category === '禁煙補助薬')             return SMOKING_ROWS;
+  if (category === '強オピオイド')           return STRONG_OPIOID_ROWS;
   if (category === '糖尿病治療薬')       return DIABETES_ROWS;
   if (category === '高血圧治療薬')       return HYPERTENSION_ROWS;
   if (category === '脂質異常症治療薬')   return DYSLIPIDEMIA_ROWS;
@@ -692,6 +726,15 @@ function getClassBadge(cls) {
     '中枢刺激薬（アンフェタミン系）':   { css: 'stimulant' },
     '非刺激薬（NRI）':                 { css: 'nri-adhd' },
     '非刺激薬（α2A作動薬）':           { css: 'alpha2a-adhd' },
+    // 依存症
+    'オピオイド拮抗薬':                 { css: 'depend-ant' },
+    'GABA調節薬（断酒補助）':           { css: 'depend-gaba' },
+    'アルデヒド脱水素酵素阻害薬':       { css: 'depend-ald' },
+    'シアナミド系':                     { css: 'depend-ald' },
+    'オピオイド部分拮抗薬':             { css: 'depend-ant' },
+    'α4β2ニコチン受容体部分作動薬':     { css: 'cessation-var' },
+    'ニコチン代替療法（経皮）':         { css: 'cessation-nrt' },
+    'ニコチン代替療法（口腔内）':       { css: 'cessation-nrt' },
     // 強オピオイド
     '強オピオイド（モルヒネ系）':       { css: 'strong-opioid' },
     '強オピオイド（合成）':             { css: 'strong-opioid' },

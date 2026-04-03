@@ -274,6 +274,12 @@ thead .sticky-col { z-index: 3; }
 .class-badge.stimulant    { background: #fef08a; color: #713f12; }
 .class-badge.nri-adhd     { background: #fed7aa; color: #7c2d12; }
 .class-badge.alpha2a-adhd { background: #fecdd3; color: #881337; }
+/* 依存症 */
+.class-badge.depend-ant   { background: #1e3a5f; color: #bfdbfe; }
+.class-badge.depend-gaba  { background: #14532d; color: #bbf7d0; }
+.class-badge.depend-ald   { background: #422006; color: #fed7aa; }
+.class-badge.cessation-var{ background: #4c1d95; color: #ddd6fe; }
+.class-badge.cessation-nrt{ background: #1f2937; color: #d1fae5; }
 /* 強オピオイド */
 .class-badge.strong-opioid { background: #450a0a; color: #fca5a5; }
 /* 睡眠・抗不安 */
