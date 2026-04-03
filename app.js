@@ -160,6 +160,9 @@ function render() {
   searchQuery ? renderGlobalSearch() : renderDomainView();
 }
 
+// ===== モバイル判定 =====
+function isMobile() { return window.innerWidth < 640; }
+
 // ===== 通常ビュー（ドメイン・カテゴリ別） =====
 function renderDomainView() {
   const drugs  = (dataCache[currentDomain] || []).filter(d => d.category === currentCategory);
@@ -173,7 +176,9 @@ function renderDomainView() {
     container.innerHTML = noResultsHTML();
     return;
   }
-  container.innerHTML = `<div class="table-wrapper">${buildTable(sorted, cfg, currentCategory)}</div>`;
+  container.innerHTML = isMobile()
+    ? buildCardList(sorted, cfg, currentCategory)
+    : `<div class="table-wrapper">${buildTable(sorted, cfg, currentCategory)}</div>`;
 }
 
 // ===== 全体検索ビュー =====
@@ -209,15 +214,94 @@ function renderGlobalSearch() {
 
   container.innerHTML = ordered.map(({ key, label, domCfg }) => {
     const sorted = sortDrugs(groups[key]);
+    const inner = isMobile()
+      ? buildCardList(sorted, domCfg, key)
+      : `<div class="table-wrapper">${buildTable(sorted, domCfg, key)}</div>`;
     return `
       <div class="search-group">
         <div class="search-group-header">
           ${label}
           <span class="group-count">${sorted.length}件</span>
         </div>
-        <div class="table-wrapper">${buildTable(sorted, domCfg, key)}</div>
+        ${inner}
       </div>`;
   }).join('');
+}
+
+// ===== カードリスト（モバイル用） =====
+function buildCardList(drugs, cfg, category) {
+  const defs = getRowDefs(category);
+  return `<div class="card-list">${drugs.map(d => buildDrugCard(d, defs, cfg)).join('')}</div>`;
+}
+
+function buildDrugCard(d, defs, cfg) {
+  const badge    = getClassBadge(d.class || '');
+  const starDef  = defs.find(r => r.type === 'stars');
+  const nntDef   = defs.find(r => r.type === 'nnt');
+  const rankDef  = defs.find(r => r.type === 'rank');
+  const accentDefs = defs.filter(r => r.type === 'accent').slice(0, 2);
+
+  // Stars
+  const n = starDef ? (Number(d[starDef.field]) || 0) : 0;
+  const starsHTML = `<span class="stars">${'★'.repeat(n)}</span><span class="stars-empty">${'☆'.repeat(5 - n)}</span>`;
+
+  // NNT
+  const nntVal = nntDef && d[nntDef.field] != null ? d[nntDef.field] : '―';
+
+  // Rank
+  const rankVal = rankDef ? (d[rankDef.field] || '') : '';
+  const { css: rankCss } = getRankBadge(rankVal);
+
+  // KPI accent rows (up to 2)
+  const accentHTML = accentDefs.map(def => {
+    const v = d[def.field];
+    if (!v) return '';
+    return `<div class="card-accent"><span class="card-accent-label">${esc(def.label)}</span><span class="card-accent-val">${esc(String(v))}</span></div>`;
+  }).join('');
+
+  // Detail rows (all defs except stars/nnt/rank already shown in KPIs)
+  const detailHTML = defs.map(def => {
+    if (['stars', 'nnt', 'rank'].includes(def.type)) return '';
+    const v = d[def.field];
+    if (v == null || v === '') return '';
+    const s = String(v);
+    // evidence with link
+    if (def.type === 'evidence') return evidenceCardRow(def.label, d);
+    const rowClass = def.type === 'caution' ? 'card-detail-row card-detail-caution'
+                   : def.type === 'mech'    ? 'card-detail-row card-detail-mech'
+                   : def.type === 'accent'  ? 'card-detail-row card-detail-accent'
+                   : 'card-detail-row';
+    return `<div class="${rowClass}"><span class="cd-label">${esc(def.label)}</span><span class="cd-val">${esc(s)}</span></div>`;
+  }).join('');
+
+  return `
+  <div class="drug-card">
+    <div class="card-head">
+      <div class="card-title-wrap">
+        <div class="card-name">${esc(d.name)}</div>
+        <div class="card-brand">${esc(d.brand || '')}</div>
+      </div>
+      <span class="class-badge ${badge.css}">${esc(d.class || '')}</span>
+    </div>
+    <div class="card-kpis">
+      <div class="kpi-item"><span class="kpi-label">効果</span><div class="kpi-stars">${starsHTML}</div></div>
+      <div class="kpi-item"><span class="kpi-label">NNT</span><span class="kpi-val">${esc(String(nntVal))}</span></div>
+      <div class="kpi-item kpi-rank"><span class="kpi-label">推奨</span><span class="rank-badge ${rankCss}">${esc(rankVal)}</span></div>
+    </div>
+    ${accentHTML}
+    <details class="card-details">
+      <summary class="card-summary">詳細を見る</summary>
+      <div class="card-detail-body">${detailHTML}</div>
+    </details>
+  </div>`;
+}
+
+function evidenceCardRow(label, d) {
+  const linkBtn = d.evidence_url
+    ? `<button class="ev-link-btn" data-url="${esc(d.evidence_url)}" aria-label="参照リンクを表示">🔗</button>
+       <div class="ev-link-panel" hidden><a href="${esc(d.evidence_url)}" target="_blank" rel="noopener noreferrer">${esc(d.evidence_url)}</a></div>`
+    : '';
+  return `<div class="card-detail-row"><span class="cd-label">${esc(label)}</span><span class="cd-val cd-evidence">${esc(d.evidence || '')}${linkBtn}</span></div>`;
 }
 
 function noResultsHTML() {
@@ -650,6 +734,12 @@ function esc(str) {
 }
 
 // ===== イベント =====
+let _resizeTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(_resizeTimer);
+  _resizeTimer = setTimeout(render, 150);
+});
+
 document.querySelectorAll('.domain-btn').forEach(btn => {
   btn.addEventListener('click', () => switchDomain(btn.dataset.domain));
 });

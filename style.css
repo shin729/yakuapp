@@ -495,10 +495,213 @@ thead .sticky-col { z-index: 3; }
 .disclaimer p { font-size: clamp(0.65rem, 2vw, 0.8rem); text-align: center; line-height: 1.4; }
 .disclaimer strong { color: #fbbf24; }
 
+/* ===== モバイル カードレイアウト ===== */
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.drug-card {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid var(--gray-200);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+.card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 14px 14px 10px;
+}
+
+.card-title-wrap { flex: 1; min-width: 0; }
+
+.card-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  line-height: 1.3;
+}
+
+.card-brand {
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  margin-top: 2px;
+}
+
+.card-head .class-badge {
+  flex-shrink: 0;
+  max-width: 120px;
+  text-align: center;
+}
+
+/* KPI行 */
+.card-kpis {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 8px 14px 10px;
+  border-top: 1px solid var(--gray-100);
+  background: var(--gray-50);
+}
+
+.kpi-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.kpi-item + .kpi-item {
+  border-left: 1px solid var(--gray-200);
+}
+
+.kpi-rank { flex: 1.4; }
+
+.kpi-label {
+  font-size: 0.65rem;
+  color: var(--gray-400);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.kpi-stars { display: flex; }
+.kpi-stars .stars      { font-size: 0.85rem; letter-spacing: 0; }
+.kpi-stars .stars-empty{ font-size: 0.85rem; letter-spacing: 0; color: var(--gray-200); }
+
+.kpi-val {
+  font-size: 1.0rem;
+  font-weight: 700;
+  color: var(--gray-700);
+}
+
+.kpi-rank .rank-badge {
+  font-size: 0.68rem;
+  text-align: center;
+  white-space: normal;
+  word-break: keep-all;
+}
+
+/* アクセント行（上位2項目） */
+.card-accent {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  padding: 6px 14px;
+  border-top: 1px solid var(--gray-100);
+  font-size: 0.8rem;
+}
+
+.card-accent-label {
+  color: var(--gray-500);
+  font-size: 0.72rem;
+  flex-shrink: 0;
+}
+
+.card-accent-val {
+  color: var(--gray-700);
+  font-weight: 600;
+  text-align: right;
+}
+
+/* 詳細 (details/summary) */
+.card-details {
+  border-top: 1px solid var(--gray-100);
+}
+
+.card-summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gray-500);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  gap: 4px;
+}
+
+.card-summary::-webkit-details-marker { display: none; }
+
+.card-summary::after {
+  content: '▾';
+  font-size: 0.75rem;
+  transition: transform 0.2s;
+}
+
+.card-details[open] .card-summary::after {
+  transform: rotate(180deg);
+}
+
+.card-detail-body {
+  border-top: 1px solid var(--gray-100);
+}
+
+/* 詳細内の各行 */
+.card-detail-row {
+  display: flex;
+  gap: 8px;
+  padding: 7px 14px;
+  border-top: 1px solid var(--gray-100);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.card-detail-row:first-child { border-top: none; }
+
+.cd-label {
+  flex-shrink: 0;
+  width: 90px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--gray-500);
+  padding-top: 1px;
+}
+
+.cd-val {
+  flex: 1;
+  color: var(--gray-700);
+  word-break: break-all;
+}
+
+.cd-evidence { font-style: italic; color: var(--gray-500); }
+
+.card-detail-mech {
+  background: #f8fafc;
+  border-left: 3px solid #93c5fd;
+}
+
+.card-detail-caution {
+  background: #fff7ed;
+  border-left: 3px solid #f97316;
+}
+
+.card-detail-caution .cd-label { color: #c2410c; }
+.card-detail-caution .cd-val   { color: #7c2d12; }
+
 /* Responsive */
 @media (max-width: 480px) {
   :root { --label-col-width: 70px; --drug-col-width: 138px; }
   .col-name   { font-size: 0.85rem; }
   .tab-btn    { font-size: 0.8rem; padding: 7px 8px; }
   .domain-btn { font-size: 0.82rem; padding: 9px 12px; }
+}
+
+@media (max-width: 639px) {
+  .main { padding: 12px; }
+  .card-list { gap: 10px; }
+  .domain-tabs { gap: 6px; }
+  .domain-btn { font-size: 0.82rem; padding: 9px 10px; }
+  .tabs { gap: 6px; }
+  .tab-btn { font-size: 0.78rem; padding: 7px 6px; min-width: 0; }
+  .search-box { max-width: 100%; }
 }
