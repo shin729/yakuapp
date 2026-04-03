@@ -14,6 +14,7 @@ const DOMAINS = {
       { key: '認知症治療薬',       label: '🧠 認知症治療薬' },
       { key: '双極性障害そう状態', label: '⚡ 双極性そう状態' },
       { key: '双極性障害うつ状態', label: '🌧 双極性うつ状態' },
+      { key: 'ADHD治療薬',         label: '🎯 ADHD' },
     ],
     defaultCat: '睡眠薬',
     headBg:       'linear-gradient(180deg, #f0f4ff 0%, #e8eeff 100%)',
@@ -26,6 +27,7 @@ const DOMAINS = {
     file: './data/pain.json',
     categories: [
       { key: '非オピオイド系',           label: '💊 非オピオイド系' },
+      { key: '強オピオイド',             label: '🔴 強オピオイド' },
       { key: '弱オピオイド・補助薬',     label: '⚕ 弱オピオイド・補助薬' },
       { key: '神経障害性疼痛',           label: '⚡ 神経障害性疼痛' },
       { key: '片頭痛',                   label: '🎯 片頭痛' },
@@ -468,6 +470,36 @@ const BIPOLAR_DEP_ROWS = [
   { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
 ];
 
+// ADHD治療薬
+const ADHD_ROWS = [
+  { label: '主な作用',         field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',         field: 'mechanism',      type: 'mech'   },
+  { label: 'ADHD-RS改善',      field: 'placebo_onset',  type: 'accent' },
+  { label: '治療反応率',       field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT',              field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',         field: 'onset_time',     type: 'val'    },
+  { label: '効果持続時間',     field: 'duration_hours', type: 'val'    },
+  { label: '推奨度',           field: 'guideline_rank', type: 'rank'   },
+  { label: 'エビデンス出典',   field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',      field: 'caution',        type: 'caution'},
+];
+
+// 強オピオイド
+const STRONG_OPIOID_ROWS = [
+  { label: '主な作用',         field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',         field: 'mechanism',      type: 'mech'   },
+  { label: '疼痛スコア改善',   field: 'placebo_onset',  type: 'accent' },
+  { label: '50%軽減達成率',    field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT50',            field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現時間',     field: 'onset_time',     type: 'val'    },
+  { label: '効果持続時間',     field: 'duration_hours', type: 'val'    },
+  { label: '推奨度',           field: 'guideline_rank', type: 'rank'   },
+  { label: 'エビデンス出典',   field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',      field: 'caution',        type: 'caution'},
+];
+
 // 糖尿病治療薬
 const DIABETES_ROWS = [
   { label: '主な作用',       field: 'action_type',    type: 'mech'   },
@@ -551,6 +583,8 @@ function getRowDefs(category) {
     return PSYCH_ROWS;
   if (category === '双極性障害そう状態') return BIPOLAR_MANIA_ROWS;
   if (category === '双極性障害うつ状態') return BIPOLAR_DEP_ROWS;
+  if (category === 'ADHD治療薬')         return ADHD_ROWS;
+  if (category === '強オピオイド')       return STRONG_OPIOID_ROWS;
   if (category === '糖尿病治療薬')       return DIABETES_ROWS;
   if (category === '高血圧治療薬')       return HYPERTENSION_ROWS;
   if (category === '脂質異常症治療薬')   return DYSLIPIDEMIA_ROWS;
@@ -653,6 +687,16 @@ function getClassBadge(cls) {
     '弱オピオイド':                   { css: 'weak-opioid' },
     '弱オピオイド配合剤':             { css: 'opioid-combo' },
     // 新規
+    // ADHD
+    '中枢刺激薬（メチルフェニデート）': { css: 'stimulant' },
+    '中枢刺激薬（アンフェタミン系）':   { css: 'stimulant' },
+    '非刺激薬（NRI）':                 { css: 'nri-adhd' },
+    '非刺激薬（α2A作動薬）':           { css: 'alpha2a-adhd' },
+    // 強オピオイド
+    '強オピオイド（モルヒネ系）':       { css: 'strong-opioid' },
+    '強オピオイド（合成）':             { css: 'strong-opioid' },
+    '強オピオイド（貼付剤）':           { css: 'strong-opioid' },
+    '強オピオイド（混合作用）':         { css: 'strong-opioid' },
     '置換ベンズアミド系':             { css: 'typical-ap' },
     'フェノチアジン系':               { css: 'typical-ap' },
     '定型抗精神病薬（高力価）':       { css: 'typical-ap' },

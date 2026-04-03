@@ -270,6 +270,12 @@ thead .sticky-col { z-index: 3; }
   word-break: keep-all;
 }
 
+/* ADHD */
+.class-badge.stimulant    { background: #fef08a; color: #713f12; }
+.class-badge.nri-adhd     { background: #fed7aa; color: #7c2d12; }
+.class-badge.alpha2a-adhd { background: #fecdd3; color: #881337; }
+/* 強オピオイド */
+.class-badge.strong-opioid { background: #450a0a; color: #fca5a5; }
 /* 睡眠・抗不安 */
 .class-badge.benzo        { background: #fef3c7; color: #92400e; }
 .class-badge.non-benzo    { background: #dbeafe; color: #1e40af; }
