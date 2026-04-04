@@ -199,7 +199,7 @@ function renderDomainView() {
   }
   container.innerHTML = isMobile()
     ? buildCardList(sorted, cfg, currentCategory)
-    : `<div class="table-wrapper">${buildTable(sorted, cfg, currentCategory)}</div>`;
+    : `<div class="table-wrapper">${buildTable(sorted, cfg, currentCategory)}</div><p class="table-scroll-hint">← 横にスクロールできます →</p>`;
 }
 
 // ===== 全体検索ビュー =====
@@ -237,7 +237,7 @@ function renderGlobalSearch() {
     const sorted = sortDrugs(groups[key]);
     const inner = isMobile()
       ? buildCardList(sorted, domCfg, key)
-      : `<div class="table-wrapper">${buildTable(sorted, domCfg, key)}</div>`;
+      : `<div class="table-wrapper">${buildTable(sorted, domCfg, key)}</div><p class="table-scroll-hint">← 横にスクロールできます →</p>`;
     return `
       <div class="search-group">
         <div class="search-group-header">
@@ -284,9 +284,12 @@ function buildDrugCard(d, defs, cfg) {
     const s = String(v);
     // evidence with link
     if (def.type === 'evidence') return evidenceCardRow(def.label, d);
-    const rowClass = def.type === 'caution' ? 'card-detail-row card-detail-caution'
-                   : def.type === 'mech'    ? 'card-detail-row card-detail-mech'
-                   : def.type === 'accent'  ? 'card-detail-row card-detail-accent'
+    if (def.type === 'caution') {
+      const hasContra = s.includes('禁忌');
+      return `<div class="card-detail-row card-detail-caution${hasContra ? ' has-contraindication' : ''}"><span class="cd-label">${esc(def.label)}</span><span class="cd-val">${highlightCaution(s)}</span></div>`;
+    }
+    const rowClass = def.type === 'mech'   ? 'card-detail-row card-detail-mech'
+                   : def.type === 'accent' ? 'card-detail-row card-detail-accent'
                    : 'card-detail-row';
     return `<div class="${rowClass}"><span class="cd-label">${esc(def.label)}</span><span class="cd-val">${esc(s)}</span></div>`;
   }).join('');
@@ -711,11 +714,21 @@ function starsCell(n) {
 }
 
 function usecaseCell(text) {
+  const long = text.length > 38;
+  if (long) {
+    return `<td class="usecase-cell"><span class="uc-text uc-clamp">${esc(text)}</span><button class="uc-expand-btn" aria-label="全文を見る">▾ 全文</button></td>`;
+  }
   return `<td class="usecase-cell">${esc(text)}</td>`;
 }
 
+// 禁忌を赤バッジでハイライト（escした後に適用するので安全）
+function highlightCaution(text) {
+  return esc(text).replace(/禁忌/g, '<mark class="contraindication">禁忌</mark>');
+}
+
 function cautionCell(text) {
-  return `<td class="caution-cell">${esc(text)}</td>`;
+  const hasContraindication = text.includes('禁忌');
+  return `<td class="caution-cell${hasContraindication ? ' has-contraindication' : ''}">${highlightCaution(text)}</td>`;
 }
 
 function evidenceCell(d) {
@@ -862,8 +875,24 @@ function toggleCompareMode() {
   render();
 }
 
+function showToast(msg, duration = 2500) {
+  document.querySelector('.toast')?.remove();
+  const el = document.createElement('div');
+  el.className = 'toast';
+  el.textContent = msg;
+  document.body.appendChild(el);
+  requestAnimationFrame(() => el.classList.add('toast-show'));
+  setTimeout(() => {
+    el.classList.remove('toast-show');
+    setTimeout(() => el.remove(), 300);
+  }, duration);
+}
+
 function toggleCompareItem(name, cat) {
-  if (compareList.length >= 4 && !compareList.some(x => x.name === name && x.category === cat)) return;
+  if (compareList.length >= 4 && !compareList.some(x => x.name === name && x.category === cat)) {
+    showToast('最大4剤まで比較できます');
+    return;
+  }
   const allDrugs = Object.values(dataCache).flat();
   const drug = allDrugs.find(d => d.name === name && d.category === cat);
   if (!drug) return;
@@ -894,7 +923,7 @@ function updateCompareBar() {
   document.getElementById('compare-bar-chips').innerHTML = compareList.map(d =>
     `<span class="cmp-chip">${esc(d.name)}<button class="cmp-chip-x" data-cmp-name="${esc(d.name)}" data-cmp-cat="${esc(d.category)}">✕</button></span>`
   ).join('');
-  document.getElementById('compare-count').textContent = compareList.length;
+  document.getElementById('compare-count').textContent = `${compareList.length}/4`;
 }
 
 function getCompareRows(drugs) {
@@ -1007,7 +1036,7 @@ document.getElementById('compare-clear-btn').addEventListener('click', () => {
   render();
 });
 
-// カード・テーブルへの委譲イベント（比較ボタン + エビデンスリンク）
+// カード・テーブルへの委譲イベント
 document.getElementById('cards').addEventListener('click', e => {
   // エビデンスリンク
   const evBtn = e.target.closest('.ev-link-btn');
@@ -1015,6 +1044,14 @@ document.getElementById('cards').addEventListener('click', e => {
     const panel = evBtn.nextElementSibling;
     panel.hidden = !panel.hidden;
     evBtn.classList.toggle('active', !panel.hidden);
+    return;
+  }
+  // 使い分けポイント展開ボタン
+  const ucBtn = e.target.closest('.uc-expand-btn');
+  if (ucBtn) {
+    const text = ucBtn.previousElementSibling;
+    const nowClamped = text.classList.toggle('uc-clamp'); // true=折りたたみ, false=展開
+    ucBtn.textContent = nowClamped ? '▾ 全文' : '▴ 閉じる';
     return;
   }
   // 比較ボタン（カード）

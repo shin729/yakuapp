@@ -469,6 +469,90 @@ thead .sticky-col { z-index: 3; }
   line-height: 1.5;
 }
 
+/* 禁忌を含む注意事項セルはさらに強調 */
+.caution-cell.has-contraindication,
+.card-detail-caution.has-contraindication {
+  background: #fef2f2 !important;
+  border-left: 3px solid #dc2626 !important;
+}
+
+/* 禁忌バッジ */
+.contraindication {
+  display: inline-block;
+  background: #dc2626;
+  color: white;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 4px;
+  margin: 0 1px;
+  vertical-align: baseline;
+  letter-spacing: 0.02em;
+  font-style: normal;
+}
+
+/* 使い分けポイント 省略 */
+.uc-text.uc-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.uc-expand-btn {
+  display: block;
+  margin-top: 3px;
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 0.65rem;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+
+.uc-expand-btn:hover { opacity: 1; }
+
+/* テーブル横スクロールヒント（PC専用） */
+.table-scroll-hint {
+  display: none;
+  font-size: 0.63rem;
+  color: var(--gray-400);
+  text-align: right;
+  padding: 3px 6px 0;
+  letter-spacing: 0.03em;
+}
+
+@media (min-width: 640px) {
+  .table-scroll-hint { display: block; }
+}
+
+/* トースト通知 */
+.toast {
+  position: fixed;
+  bottom: calc(var(--disclaimer-height) + 80px);
+  left: 50%;
+  transform: translateX(-50%) translateY(12px);
+  background: rgba(30, 20, 60, 0.92);
+  color: white;
+  padding: 8px 18px;
+  border-radius: 24px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  z-index: 500;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.2s;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.toast.toast-show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
 /* ===== 全体検索グループ ===== */
 .search-group {
   margin-bottom: 20px;
