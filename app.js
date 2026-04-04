@@ -87,7 +87,7 @@ const COMPARE_ROWS = [
   { label: '効果スコア',     field: 'efficacy_star',  type: 'stars'  },
   { label: '効果発現',       field: 'onset_time',     type: 'val'    },
   { label: '投与期間・頻度', field: 'duration_hours', type: 'val'    },
-  { label: '推奨度',         field: 'guideline_rank', type: 'rank'   },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典', field: 'evidence',       type: 'evidence'},
   { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
 ];
@@ -169,10 +169,7 @@ function sortDrugs(drugs) {
         return na - nb;
       });
     case 'rank-first':
-      return arr.sort((a, b) => {
-        const s = r => r.includes('第一') ? 0 : r.includes('第二') ? 1 : 2;
-        return s(a.guideline_rank) - s(b.guideline_rank);
-      });
+      return arr.sort((a, b) => (b.efficacy_star || 0) - (a.efficacy_star || 0));
     case 'name-asc':
       return arr.sort((a, b) => a.name.localeCompare(b.name, 'ja'));
     default: return arr;
@@ -272,10 +269,6 @@ function buildDrugCard(d, defs, cfg) {
   // NNT
   const nntVal = nntDef && d[nntDef.field] != null ? d[nntDef.field] : '―';
 
-  // Rank
-  const rankVal = rankDef ? (d[rankDef.field] || '') : '';
-  const { css: rankCss } = getRankBadge(rankVal);
-
   // KPI accent rows (up to 2)
   const accentHTML = accentDefs.map(def => {
     const v = d[def.field];
@@ -285,7 +278,7 @@ function buildDrugCard(d, defs, cfg) {
 
   // Detail rows (all defs except stars/nnt/rank already shown in KPIs)
   const detailHTML = defs.map(def => {
-    if (['stars', 'nnt', 'rank'].includes(def.type)) return '';
+    if (['stars', 'nnt'].includes(def.type)) return '';
     const v = d[def.field];
     if (v == null || v === '') return '';
     const s = String(v);
@@ -316,9 +309,8 @@ function buildDrugCard(d, defs, cfg) {
       </div>
     </div>
     <div class="card-kpis">
-      <div class="kpi-item"><span class="kpi-label">効果</span><div class="kpi-stars">${starsHTML}</div></div>
+      <div class="kpi-item"><span class="kpi-label">効果スコア</span><div class="kpi-stars">${starsHTML}</div></div>
       <div class="kpi-item"><span class="kpi-label">NNT</span><span class="kpi-val">${esc(String(nntVal))}</span></div>
-      <div class="kpi-item kpi-rank"><span class="kpi-label">推奨</span><span class="rank-badge ${rankCss}">${esc(rankVal)}</span></div>
     </div>
     ${accentHTML}
     <details class="card-details">
@@ -382,7 +374,7 @@ const ROW_DEFS = {
     { label: 'NNT',            field: 'NNT',            type: 'nnt'   },
     { label: '効果スコア',     field: 'efficacy_star',  type: 'stars' },
     { label: '効果持続時間',   field: 'duration_hours', type: 'val'   },
-    { label: '推奨度',         field: 'guideline_rank', type: 'rank'  },
+    { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
     { label: 'エビデンス出典', field: 'evidence',       type: 'evidence'},
     { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
   ],
@@ -394,7 +386,7 @@ const ROW_DEFS = {
     { label: 'NNT',            field: 'NNT',            type: 'nnt'   },
     { label: '効果スコア',     field: 'efficacy_star',  type: 'stars' },
     { label: '効果持続時間',   field: 'duration_hours', type: 'val'   },
-    { label: '推奨度',         field: 'guideline_rank', type: 'rank'  },
+    { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
     { label: 'エビデンス出典', field: 'evidence',       type: 'evidence'},
     { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
   ],
@@ -409,7 +401,7 @@ const PSYCH_ROWS = [
   { label: 'NNT',            field: 'NNT',            type: 'nnt'   },
   { label: '効果スコア',     field: 'efficacy_star',  type: 'stars' },
   { label: '効果持続時間',   field: 'duration_hours', type: 'val'   },
-  { label: '推奨度',         field: 'guideline_rank', type: 'rank'  },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典', field: 'evidence',       type: 'evidence'},
   { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
 ];
@@ -425,7 +417,7 @@ const AP_ROWS = [
   { label: 'NNT',            field: 'NNT',               type: 'nnt'    },
   { label: '効果スコア',     field: 'efficacy_star',     type: 'stars'  },
   { label: '効果持続時間',   field: 'duration_hours',    type: 'val'    },
-  { label: '推奨度',         field: 'guideline_rank',    type: 'rank'   },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典', field: 'evidence',          type: 'evidence'},
   { label: '⚠ 注意事項',    field: 'caution',           type: 'caution'},
 ];
@@ -440,7 +432,7 @@ const PAIN_ROWS = [
   { label: '効果スコア',     field: 'efficacy_star',  type: 'stars' },
   { label: '効果発現時間',   field: 'onset_time',     type: 'val'   },
   { label: '効果持続時間',   field: 'duration_hours', type: 'val'   },
-  { label: '推奨度',         field: 'guideline_rank', type: 'rank'  },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典', field: 'evidence',       type: 'evidence'},
   { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
 ];
@@ -455,7 +447,7 @@ const MIGRAINE_ROWS = [
   { label: '効果スコア',         field: 'efficacy_star',  type: 'stars' },
   { label: '効果発現時間',       field: 'onset_time',     type: 'val'   },
   { label: '効果持続時間',       field: 'duration_hours', type: 'val'   },
-  { label: '推奨度',             field: 'guideline_rank', type: 'rank'  },
+  { label: '使い分けポイント',   field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典',     field: 'evidence',       type: 'evidence'},
   { label: '⚠ 注意事項',        field: 'caution',        type: 'caution'},
 ];
@@ -470,7 +462,7 @@ const EPILEPSY_ROWS = [
   { label: '効果スコア',           field: 'efficacy_star',  type: 'stars' },
   { label: '効果発現時間',         field: 'onset_time',     type: 'val'   },
   { label: '効果持続時間',         field: 'duration_hours', type: 'val'   },
-  { label: '推奨度',               field: 'guideline_rank', type: 'rank'  },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典',       field: 'evidence',       type: 'evidence'},
   { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
 ];
@@ -485,7 +477,7 @@ const BIPOLAR_MANIA_ROWS = [
   { label: '効果スコア',     field: 'efficacy_star',  type: 'stars'  },
   { label: '効果発現時間',   field: 'onset_time',     type: 'val'    },
   { label: '効果持続時間',   field: 'duration_hours', type: 'val'    },
-  { label: '推奨度',         field: 'guideline_rank', type: 'rank'   },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典', field: 'evidence',       type: 'evidence'},
   { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
 ];
@@ -500,7 +492,7 @@ const BIPOLAR_DEP_ROWS = [
   { label: '効果スコア',     field: 'efficacy_star',  type: 'stars'  },
   { label: '効果発現時間',   field: 'onset_time',     type: 'val'    },
   { label: '効果持続時間',   field: 'duration_hours', type: 'val'    },
-  { label: '推奨度',         field: 'guideline_rank', type: 'rank'   },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典', field: 'evidence',       type: 'evidence'},
   { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
 ];
@@ -515,7 +507,7 @@ const ADHD_ROWS = [
   { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'  },
   { label: '効果発現',         field: 'onset_time',     type: 'val'    },
   { label: '効果持続時間',     field: 'duration_hours', type: 'val'    },
-  { label: '推奨度',           field: 'guideline_rank', type: 'rank'   },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典',   field: 'evidence',       type: 'evidence'},
   { label: '⚠ 注意事項',      field: 'caution',        type: 'caution'},
 ];
@@ -530,7 +522,7 @@ const ALCOHOL_ROWS = [
   { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'  },
   { label: '効果発現',         field: 'onset_time',     type: 'val'    },
   { label: '推奨投与期間',     field: 'duration_hours', type: 'val'    },
-  { label: '推奨度',           field: 'guideline_rank', type: 'rank'   },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典',   field: 'evidence',       type: 'evidence'},
   { label: '⚠ 注意事項',      field: 'caution',        type: 'caution'},
 ];
@@ -545,7 +537,7 @@ const SMOKING_ROWS = [
   { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'  },
   { label: '効果発現',         field: 'onset_time',     type: 'val'    },
   { label: '推奨投与期間',     field: 'duration_hours', type: 'val'    },
-  { label: '推奨度',           field: 'guideline_rank', type: 'rank'   },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典',   field: 'evidence',       type: 'evidence'},
   { label: '⚠ 注意事項',      field: 'caution',        type: 'caution'},
 ];
@@ -560,7 +552,7 @@ const STRONG_OPIOID_ROWS = [
   { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'  },
   { label: '効果発現時間',     field: 'onset_time',     type: 'val'    },
   { label: '効果持続時間',     field: 'duration_hours', type: 'val'    },
-  { label: '推奨度',           field: 'guideline_rank', type: 'rank'   },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典',   field: 'evidence',       type: 'evidence'},
   { label: '⚠ 注意事項',      field: 'caution',        type: 'caution'},
 ];
@@ -575,7 +567,7 @@ const DIABETES_ROWS = [
   { label: '効果スコア',     field: 'efficacy_star',  type: 'stars'  },
   { label: '効果発現',       field: 'onset_time',     type: 'val'    },
   { label: '投与頻度',       field: 'duration_hours', type: 'val'    },
-  { label: '推奨度',         field: 'guideline_rank', type: 'rank'   },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典', field: 'evidence',       type: 'evidence'},
   { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
 ];
@@ -590,7 +582,7 @@ const HYPERTENSION_ROWS = [
   { label: '効果スコア',     field: 'efficacy_star',  type: 'stars'  },
   { label: '効果発現',       field: 'onset_time',     type: 'val'    },
   { label: '投与頻度',       field: 'duration_hours', type: 'val'    },
-  { label: '推奨度',         field: 'guideline_rank', type: 'rank'   },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典', field: 'evidence',       type: 'evidence'},
   { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
 ];
@@ -605,7 +597,7 @@ const DYSLIPIDEMIA_ROWS = [
   { label: '効果スコア',     field: 'efficacy_star',  type: 'stars'  },
   { label: '効果発現',       field: 'onset_time',     type: 'val'    },
   { label: '投与頻度',       field: 'duration_hours', type: 'val'    },
-  { label: '推奨度',         field: 'guideline_rank', type: 'rank'   },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典', field: 'evidence',       type: 'evidence'},
   { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
 ];
@@ -620,7 +612,7 @@ const HYPERURICEMIA_ROWS = [
   { label: '効果スコア',     field: 'efficacy_star',  type: 'stars'  },
   { label: '効果発現',       field: 'onset_time',     type: 'val'    },
   { label: '投与頻度',       field: 'duration_hours', type: 'val'    },
-  { label: '推奨度',         field: 'guideline_rank', type: 'rank'   },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典', field: 'evidence',       type: 'evidence'},
   { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
 ];
@@ -635,7 +627,7 @@ const PARKINSON_ROWS = [
   { label: '効果スコア',       field: 'efficacy_star',  type: 'stars' },
   { label: '効果発現時間',     field: 'onset_time',     type: 'val'   },
   { label: '効果持続時間',     field: 'duration_hours', type: 'val'   },
-  { label: '推奨度',           field: 'guideline_rank', type: 'rank'  },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典',   field: 'evidence',       type: 'evidence'},
   { label: '⚠ 注意事項',      field: 'caution',        type: 'caution'},
 ];
@@ -679,7 +671,7 @@ function renderCell(d, def, accentColor) {
     case 'accent':   return valCell(s, accentColor);
     case 'nnt':      return nntCell(v, accentColor);
     case 'stars':    return starsCell(v);
-    case 'rank':     return rankCell(s);
+    case 'usecase':  return usecaseCell(s);
     case 'evidence': return evidenceCell(d);
     case 'caution':  return cautionCell(s);
     case 'mech':     return `<td class="mech-cell">${esc(s)}</td>`;
@@ -718,8 +710,8 @@ function starsCell(n) {
     </td>`;
 }
 
-function rankCell(rank) {
-  return `<td><span class="rank-badge ${getRankBadge(rank).css}">${esc(rank)}</span></td>`;
+function usecaseCell(text) {
+  return `<td class="usecase-cell">${esc(text)}</td>`;
 }
 
 function cautionCell(text) {
@@ -945,9 +937,13 @@ function showComparison() {
         (def.type === 'stars' && (Number(v) || 0) === bestStar && bestStar > 0) ||
         (def.type === 'nnt'   && typeof v === 'number' && v === bestNnt && bestNnt < Infinity);
       const inner = renderCell(d, def, '#1d4ed8');
-      // renderCellは<td>を返す→中身だけ取り出してbestクラスを付与
-      const tdContent = inner.replace(/^<td[^>]*>/, '').replace(/<\/td>$/, '');
-      return `<td class="${isBest ? 'cmp-best' : ''}">${tdContent}</td>`;
+      // renderCellが返す<td>にcmp-bestクラスを追記
+      return isBest
+        ? inner.replace(/^(<td[^>]*)(>)/, (_, pre, gt) =>
+            pre.includes('class=')
+              ? pre.replace(/class="([^"]*)"/, `class="$1 cmp-best"`) + gt
+              : pre + ' class="cmp-best"' + gt)
+        : inner;
     }).join('');
     const isWarn = def.label.startsWith('⚠');
     return `<tr class="${alt ? 'row-alt' : ''}${isWarn ? ' cmp-warn-row' : ''}">

@@ -12,7 +12,7 @@
     "placebo_sleep": "中途覚醒−12.3分",
     "NNT": 5.0,
     "duration_hours": "4〜6時間（t1/2約2時間・持越し少）",
-    "guideline_rank": "第一選択（新薬）",
+    "guideline_rank": "持越しが最も少ないDORA。高齢者・翌朝の眠気が問題になる患者に",
     "evidence": "第III相試験 301試験（2025年承認）",
     "caution": "翌朝の持越しが最も少ないDORA。強力なCYP3A阻害薬（イトラコナゾール等）との併用禁忌"
   },
@@ -29,7 +29,7 @@
     "placebo_sleep": "中途覚醒−22.8分",
     "NNT": 4.2,
     "duration_hours": "6〜8時間",
-    "guideline_rank": "第一選択",
+    "guideline_rank": "中途覚醒改善に優れる。CYP3A4阻害薬がない患者に適する",
     "evidence": "Lancet Neurology 2022（HERALDトライアル PMID:35065036）",
     "caution": "依存性は低い。CYP3A4基質のため一部薬との相互作用に注意"
   },
@@ -46,7 +46,7 @@
     "placebo_sleep": "中途覚醒−17.5分",
     "NNT": 3.2,
     "duration_hours": "6〜8時間",
-    "guideline_rank": "第一選択",
+    "guideline_rank": "入眠・維持両方に有効。翌朝の認知・運動機能への影響が少ない",
     "evidence": "SUNRISE 1/2試験（Lancet Neurology 2019 PMID:31880796）",
     "caution": "依存性は低い。CYP3A4阻害薬との併用に注意"
   },
@@ -63,7 +63,7 @@
     "placebo_sleep": "中途覚醒−16.6分",
     "NNT": 4.5,
     "duration_hours": "7〜9時間",
-    "guideline_rank": "第一選択",
+    "guideline_rank": "最初に登場したオレキシン拮抗薬。依存性が低く長期使用に適する",
     "evidence": "Phase 3 Pooled Analysis（PMC4990943）",
     "caution": "翌日の眠気に注意。依存性は低い"
   },
@@ -80,7 +80,7 @@
     "placebo_sleep": "中途覚醒−19分 / 総睡眠+36分",
     "NNT": 3.8,
     "duration_hours": "5〜8時間",
-    "guideline_rank": "第一選択",
+    "guideline_rank": "入眠障害に特化。短時間作用で翌朝への持越しが少ない非ベンゾ系",
     "evidence": "Morin et al., Sleep 2012（PMC3466802）",
     "caution": "依存性・反跳性不眠に注意。高齢者は転倒リスクあり"
   },
@@ -97,7 +97,7 @@
     "placebo_sleep": "睡眠効率+6%",
     "NNT": 4.1,
     "duration_hours": "6〜9時間",
-    "guideline_rank": "第一選択",
+    "guideline_rank": "入眠・睡眠維持ともに有効。BZよりやや依存性が低い非ベンゾ系",
     "evidence": "JCSM 2008（PMID:18595435）; PMDA審査資料",
     "caution": "苦味の副作用が多い。依存性に注意"
   },
@@ -114,7 +114,7 @@
     "placebo_sleep": "総睡眠+19分",
     "NNT": 9.2,
     "duration_hours": "入眠改善（持続効果は限定的）",
-    "guideline_rank": "補助的選択",
+    "guideline_rank": "依存性・翌日持越しがほぼなし。高齢者・依存症リスクが高い患者に",
     "evidence": "Zammit et al., JCSM 2007（PMC1978328）",
     "caution": "依存性・乱用リスクなし。効果は比較的弱め"
   },
@@ -131,7 +131,7 @@
     "placebo_sleep": "中途覚醒−20分 / 総睡眠+40分",
     "NNT": 4.5,
     "duration_hours": "6〜12時間",
-    "guideline_rank": "第二選択",
+    "guideline_rank": "第一選択が使えない際の代替薬",
     "evidence": "国内添付文書（JAPIC）",
     "caution": "依存性・反跳性不眠・記憶障害に注意"
   },
@@ -148,7 +148,7 @@
     "placebo_sleep": "データなし",
     "NNT": 5.5,
     "duration_hours": "3〜5時間（短時間型）",
-    "guideline_rank": "第二選択",
+    "guideline_rank": "超短時間型BZ。入眠困難のみ・健忘リスクがあるため短期使用限定",
     "evidence": "AASM臨床ガイドライン（J Clin Sleep Med 2017）",
     "caution": "強い依存性・健忘・反跳性不眠。長期使用は非推奨"
   },
@@ -165,7 +165,7 @@
     "placebo_sleep": "総睡眠+50分（国内データ）",
     "NNT": "未算出（国内エビデンス限定）",
     "duration_hours": "18〜38時間（長時間型）",
-    "guideline_rank": "第二選択",
+    "guideline_rank": "中等度の睡眠維持障害に。筋弛緩・抗不安作用もあり（BZ系）",
     "evidence": "国内添付文書（JAPIC）",
     "caution": "翌日の眠気・依存性・筋弛緩作用に注意"
   },
@@ -182,7 +182,7 @@
     "placebo_sleep": "治療反応率+16〜22%",
     "NNT": 2.9,
     "duration_hours": "効果発現まで2〜4週間",
-    "guideline_rank": "第一選択（長期管理）",
+    "guideline_rank": "うつ病・パニック・社交不安・PTSD。中断症状に注意",
     "evidence": "Rickels et al., Am J Psychiatry 2003（PMID:12668365）",
     "caution": "中断症状に注意。性機能障害・体重増加の副作用あり"
   },
@@ -199,7 +199,7 @@
     "placebo_sleep": "治療反応率+20%",
     "NNT": 3.1,
     "duration_hours": "効果発現まで2〜4週間",
-    "guideline_rank": "第一選択（長期管理）",
+    "guideline_rank": "うつ病・GADの第一選択。相互作用が少なく忍容性が高い",
     "evidence": "Davidson et al., Depr Anxiety 2004（PMID:15274172）",
     "caution": "QT延長リスク。導入初期に不安が一時的に増強することあり"
   },
@@ -216,7 +216,7 @@
     "placebo_sleep": "治療反応率+27%",
     "NNT": 3.7,
     "duration_hours": "効果発現まで2〜4週間",
-    "guideline_rank": "第一選択（GAD長期管理）",
+    "guideline_rank": "うつ病・GAD・糖尿病性神経障害・慢性腰痛にも適応",
     "evidence": "Hartford et al., Int Clin Psychopharmacol 2007（PMID:17311303）",
     "caution": "嘔気・血圧上昇。急激な中断は避ける。抗うつ薬・神経障害性疼痛にも使用"
   },
@@ -233,7 +233,7 @@
     "placebo_sleep": "治療反応率+22%（GAD）",
     "NNT": 3.9,
     "duration_hours": "6〜12時間",
-    "guideline_rank": "第一選択（短期）",
+    "guideline_rank": "即効性が高くパニック発作の頓服に。依存性があり長期連用は避ける",
     "evidence": "プレガバリン比較試験（PMID:16143734）",
     "caution": "依存性が高い。長期使用は推奨されない"
   },
@@ -250,7 +250,7 @@
     "placebo_sleep": "治療反応率+30%（パニック障害）",
     "NNT": 4.1,
     "duration_hours": "18〜50時間（長時間型）",
-    "guideline_rank": "第一選択（パニック障害）",
+    "guideline_rank": "パニック障害の維持療法。抗けいれん作用を兼ねる",
     "evidence": "Pande et al., J Clin Psychiatry 2000（PMID:10520979）",
     "caution": "鎮静・依存性・長期蓄積に注意。抗てんかん薬としても使用（ミオクロニー発作等）"
   },
@@ -267,7 +267,7 @@
     "placebo_sleep": "治療反応率+24%（GAD）",
     "NNT": 4.0,
     "duration_hours": "6〜12時間",
-    "guideline_rank": "第一選択（短期）",
+    "guideline_rank": "即効性・中間作用。肝障害合併患者にも使いやすいBZ系",
     "evidence": "Fresquet et al., 2000（PMID:10676820）",
     "caution": "依存性・鎮静・記憶障害。長期使用非推奨"
   },
@@ -284,7 +284,7 @@
     "placebo_sleep": "治療反応率+20%（国内データ）",
     "NNT": 5.0,
     "duration_hours": "6〜12時間",
-    "guideline_rank": "第二選択",
+    "guideline_rank": "日本で広く使用される短時間作用BZ。不眠合併の不安症状に",
     "evidence": "国内使用実績（国際的RCTデータ限定的）",
     "caution": "依存性・乱用リスク高い。2016年より向精神薬指定"
   },
@@ -301,7 +301,7 @@
     "placebo_sleep": "治療反応率+12%（国内データ）",
     "NNT": 10.0,
     "duration_hours": "効果発現まで1〜2週間",
-    "guideline_rank": "補助的選択",
+    "guideline_rank": "依存性なし・緩やかな効果。長期維持・BZ離脱後の不安に",
     "evidence": "国内臨床試験データ（添付文書）",
     "caution": "依存性なし。効果発現が遅い。急性不安には不向き"
   },
@@ -318,7 +318,7 @@
     "placebo_sleep": "治療反応率+40%",
     "NNT": 3.5,
     "duration_hours": "8〜24時間（半減期12〜35時間）",
-    "guideline_rank": "第二選択（副作用考慮）",
+    "guideline_rank": "幻覚・妄想に強力。急性期の興奮・せん妄に筋注でも使用可",
     "evidence": "Davis et al., Schizophr Bull 2003; Leucht et al., Lancet 2013（PMID:23810019）",
     "caution": "錐体外路症状（EPS）・遅発性ジスキネジアのリスクが高い。高プロラクチン血症。デポ製剤（ハロペリドールデカノアート）もあり",
     "positive_symptoms": "幻覚・妄想への有効性★★★★★（D2強遮断）",
@@ -337,7 +337,7 @@
     "placebo_sleep": "治療反応率+35%",
     "NNT": 3.8,
     "duration_hours": "12〜24時間",
-    "guideline_rank": "第二選択（歴史的標準薬）",
+    "guideline_rank": "鎮静が主目的。強い興奮・不眠合併例に",
     "evidence": "Cochrane Review（Adams et al. 2014）",
     "caution": "鎮静が強い。低血圧・抗コリン副作用・光線過敏・肝障害。EPSは高力価定型薬より少ない",
     "positive_symptoms": "陽性症状に有効★★★（広域D2遮断）",
@@ -356,7 +356,7 @@
     "placebo_sleep": "治療反応率+38%",
     "NNT": 3.6,
     "duration_hours": "12〜24時間（デポ：2〜4週間）",
-    "guideline_rank": "第二選択（維持療法・デポ製剤）",
+    "guideline_rank": "デポ製剤あり。服薬アドヒアランスが低い患者の維持療法に",
     "evidence": "国内添付文書；Cochrane Review（Marques et al. 2004）",
     "caution": "EPSリスクが高い。デポ注射製剤（フルデカシン）は長時間作用型で服薬アドヒアランス改善に使用",
     "positive_symptoms": "幻覚・妄想★★★★（デポ製剤で継続率高）",
@@ -375,7 +375,7 @@
     "placebo_sleep": "治療反応率+38%",
     "NNT": 4.0,
     "duration_hours": "12〜24時間",
-    "guideline_rank": "第一選択（統合失調症）",
+    "guideline_rank": "非定型の基本薬。幻覚・妄想に有効で剤形豊富（内服・液・注射・デポ）",
     "evidence": "Leucht et al., Lancet 2013（PMID:23810019）; Marder et al., 2003",
     "caution": "高用量でEPS・高プロラクチン血症。低用量では忍容性良好。デポ注射製剤あり（リスパダールコンスタ）",
     "positive_symptoms": "幻覚・妄想★★★★（D2/5-HT2A遮断）",
@@ -394,7 +394,7 @@
     "placebo_sleep": "治療反応率+42%",
     "NNT": 3.5,
     "duration_hours": "24時間（半減期21〜54時間）",
-    "guideline_rank": "第一選択（統合失調症・双極性障害）",
+    "guideline_rank": "陽性・陰性症状ともに有効。体重増加・代謝リスクを許容できる例に",
     "evidence": "Leucht et al., Lancet 2013; CATIE試験（PMID:16172203）",
     "caution": "体重増加・血糖上昇・高脂血症が著明（代謝症候群リスク）。鎮静が強い。効果の高さはトップクラス",
     "positive_symptoms": "陽性症状★★★★",
@@ -413,7 +413,7 @@
     "placebo_sleep": "治療反応率+35%",
     "NNT": 4.5,
     "duration_hours": "12〜24時間（XR製剤で1日1回）",
-    "guideline_rank": "第一選択（統合失調症・双極性障害）",
+    "guideline_rank": "鎮静・睡眠障害合併例に。代謝影響はオランザピンより少ない",
     "evidence": "Leucht et al., Lancet 2013; BOLDER試験（双極性障害うつ）",
     "caution": "D2遮断は弱くEPS少ない。体重増加・眠気が主な副作用。低用量で不眠・不安への適応外使用あり",
     "positive_symptoms": "陽性症状★★★",
@@ -432,7 +432,7 @@
     "placebo_sleep": "治療反応率+28%",
     "NNT": 5.0,
     "duration_hours": "24時間（半減期75〜94時間）",
-    "guideline_rank": "第一選択（統合失調症・うつ病補助）",
+    "guideline_rank": "代謝副作用が少ない。体重増加・QT延長を避けたい患者に",
     "evidence": "Leucht et al., Lancet 2013; Berman et al., CNS Spectr 2007（うつ病補助）",
     "caution": "アカシジア（静座不能）が比較的多い。体重・代謝への影響は少ない。うつ病補助療法・抗うつ薬としても使用",
     "positive_symptoms": "陽性症状★★★★（D2部分作動）",
@@ -451,7 +451,7 @@
     "placebo_sleep": "治療反応率+15%（うつ病補助）",
     "NNT": 8.0,
     "duration_hours": "24時間（半減期91時間）",
-    "guideline_rank": "第二選択（うつ病補助・統合失調症）",
+    "guideline_rank": "陰性症状・抑うつへの効果。忍容性に優れ認知機能改善の期待",
     "evidence": "Thase et al., J Clin Psychiatry 2015; Kane et al., J Clin Psychiatry 2015（統合失調症）",
     "caution": "アカシジアはアリピプラゾールより少ない。体重増加はやや多め。日本でうつ病補助適応あり",
     "positive_symptoms": "陽性症状★★★（D2部分作動）",
@@ -470,7 +470,7 @@
     "placebo_sleep": "治療反応率+37%",
     "NNT": 4.2,
     "duration_hours": "24時間（XR錠）；月1回デポあり（ゼプリオン）",
-    "guideline_rank": "第一選択（特に維持療法）",
+    "guideline_rank": "リスペリドンの活性代謝物。月1回注射（デポ）が維持療法に有用",
     "evidence": "Kane et al., J Clin Psychopharmacol 2007; デポ製剤（ゼプリオン）長期試験",
     "caution": "高プロラクチン血症。リスペリドンの活性代謝物で効果・副作用が類似。月1回・3ヶ月1回注射製剤が服薬管理に有用",
     "positive_symptoms": "幻覚・妄想★★★★（活性代謝物）",
@@ -489,7 +489,7 @@
     "placebo_sleep": "治療反応率+18%",
     "NNT": 7.5,
     "duration_hours": "効果発現まで2〜4週間",
-    "guideline_rank": "第一選択（うつ病・強迫性障害）",
+    "guideline_rank": "うつ病・強迫症（OCD）第一選択。CYP1A2阻害に注意",
     "evidence": "Cipriani et al., Lancet 2018（PMID:29477251）",
     "caution": "CYP1A2・CYP2C19を強く阻害（薬物相互作用多）。強迫性障害（OCD）への適応あり。嘔気が出やすい"
   },
@@ -506,7 +506,7 @@
     "placebo_sleep": "治療反応率+20%",
     "NNT": 7.0,
     "duration_hours": "効果発現まで2〜4週間",
-    "guideline_rank": "第一選択（うつ病・各種不安障害）",
+    "guideline_rank": "うつ病・各種不安症の第一選択。妊娠中・産後うつのエビデンスあり",
     "evidence": "Cipriani et al., Lancet 2018（有効性・忍容性バランス最良）",
     "caution": "副作用プロファイルが良好。薬物相互作用が少ない。PTSDにも適応あり。導入初期の不安増強に注意"
   },
@@ -523,7 +523,7 @@
     "placebo_sleep": "治療反応率+22%",
     "NNT": 6.5,
     "duration_hours": "効果発現まで2〜4週間",
-    "guideline_rank": "第一選択（うつ病・GAD・社交不安障害）",
+    "guideline_rank": "うつ病・GAD・社交不安。難治例でSNRIに切り替える際に",
     "evidence": "Cipriani et al., Lancet 2018; Davidson et al., J Clin Psychiatry 2004（GAD）",
     "caution": "血圧上昇（特に高用量）。中断症状が強め。嘔気。高用量でNET阻害増強（鎮痛効果増加）"
   },
@@ -540,7 +540,7 @@
     "placebo_sleep": "治療反応率+16%",
     "NNT": 8.0,
     "duration_hours": "効果発現まで2〜4週間",
-    "guideline_rank": "第一選択（うつ病）；線維筋痛症に使用",
+    "guideline_rank": "うつ病GADに適応。慢性疼痛合併例にも選択肢",
     "evidence": "国内臨床試験データ；Arnold et al., Arthritis Rheum 2004（線維筋痛症）",
     "caution": "NET阻害がSERTより強い。排尿困難（男性）。日本での線維筋痛症適応は「トレドミン」"
   },
@@ -557,7 +557,7 @@
     "placebo_sleep": "治療反応率+27%（うつ病）",
     "NNT": 3.7,
     "duration_hours": "効果発現まで2〜4週間",
-    "guideline_rank": "第一選択（うつ病・GAD・慢性疼痛）",
+    "guideline_rank": "うつ病・GAD・糖尿病性神経障害・慢性腰痛にも適応",
     "evidence": "Cipriani et al., Lancet 2018; Hartford et al., 2007（GAD）",
     "caution": "嘔気・血圧上昇。急激な中断は避ける。抗不安薬・神経障害性疼痛カテゴリにも掲載"
   },
@@ -574,7 +574,7 @@
     "placebo_sleep": "治療反応率+20%",
     "NNT": 7.0,
     "duration_hours": "効果発現まで2〜4週間（神経痛：1〜2週間）",
-    "guideline_rank": "第二選択（うつ病）；神経障害性疼痛は第一選択",
+    "guideline_rank": "うつ病に適する",
     "evidence": "Cipriani et al., Lancet 2018; Cochrane（神経障害性疼痛 Derry et al. 2012）",
     "caution": "口渇・便秘・尿閉（抗コリン）、眠気（H1遮断）、起立性低血圧（α1遮断）が強い。過量服用で心毒性。神経障害性疼痛カテゴリにも掲載"
   },
@@ -591,7 +591,7 @@
     "placebo_sleep": "治療反応率+19%",
     "NNT": 7.5,
     "duration_hours": "効果発現まで2〜4週間",
-    "guideline_rank": "第二選択（副作用考慮）",
+    "guideline_rank": "難治性うつ・夜尿症。相互作用・心毒性モニタリングが必要",
     "evidence": "Cipriani et al., Lancet 2018; Klein 1964（パニック障害の先駆的研究）",
     "caution": "抗コリン副作用・心毒性（QT延長・心室性不整脈）。過量服用リスク。パニック障害・夜尿症にも適応"
   },
@@ -608,7 +608,7 @@
     "placebo_sleep": "治療反応率+22%（うつ病）；OCD反応率+35%",
     "NNT": 6.0,
     "duration_hours": "効果発現まで2〜4週間",
-    "guideline_rank": "第二選択（うつ病）；OCD第一選択",
+    "guideline_rank": "うつ病・強迫症（OCD）のTCA。OCD治療に特に有用",
     "evidence": "Cipriani et al., Lancet 2018; DeVeaugh-Geiss et al., J Clin Psychiatry 1989（OCD）",
     "caution": "TCA中で最もSERT選択性が高く、OCD治療に特に有効。抗コリン・心毒性に注意"
   },
@@ -625,7 +625,7 @@
     "placebo_sleep": "治療反応率+23%",
     "NNT": 6.5,
     "duration_hours": "効果発現まで1〜2週間（睡眠・食欲改善は比較的早い）",
-    "guideline_rank": "第一選択（特に体重減少・不眠合併例）",
+    "guideline_rank": "不眠・食欲低下・体重減少を伴ううつに。鎮静が強く就寝前投与",
     "evidence": "Cipriani et al., Lancet 2018; Benkert et al., 2006",
     "caution": "体重増加・眠気が強い（H1強遮断）。性機能障害は少ない。食欲低下・不眠を伴ううつ病に特に適している"
   },
@@ -642,7 +642,7 @@
     "placebo_sleep": "治療反応率+16%",
     "NNT": 8.0,
     "duration_hours": "効果発現まで2〜4週間",
-    "guideline_rank": "第一選択（特に認知機能改善を要する例）",
+    "guideline_rank": "認知機能障害が問題のうつ病。マルチモーダル作用で再発予防",
     "evidence": "Cipriani et al., Lancet 2018; McIntyre et al., Int J Neuropsychopharmacol 2014",
     "caution": "嘔気は頻度多いが一過性。性機能障害はSSRIより少ない。認知機能への改善効果に関するデータが蓄積中"
   },
@@ -659,7 +659,7 @@
     "placebo_sleep": "治療反応率+20%（補助療法）",
     "NNT": 7.0,
     "duration_hours": "効果発現1〜2週間（補助療法として）",
-    "guideline_rank": "第一選択（うつ病補助療法）",
+    "guideline_rank": "代謝副作用が少ない。体重増加・QT延長を避けたい患者に",
     "evidence": "Berman et al., CNS Spectr 2007; Berman et al., J Clin Psychiatry 2009",
     "caution": "アカシジアが多め。体重・代謝への影響は少ない。抗精神病薬（非定型）カテゴリにも掲載"
   },
@@ -676,7 +676,7 @@
     "placebo_sleep": "治療反応率+15%（補助療法）",
     "NNT": 8.0,
     "duration_hours": "効果発現1〜2週間（補助療法として）",
-    "guideline_rank": "第二選択（うつ病補助療法）",
+    "guideline_rank": "陰性症状・抑うつへの効果。忍容性に優れ認知機能改善の期待",
     "evidence": "Thase et al., J Clin Psychiatry 2015（うつ病補助）",
     "caution": "アカシジアはアリピプラゾールより少ない。体重増加はやや多め。抗精神病薬（非定型）カテゴリにも掲載"
   },
@@ -693,7 +693,7 @@
     "placebo_sleep": "再発リスク−40%（維持療法）",
     "NNT": 5.0,
     "duration_hours": "半減期20〜24時間（1日2〜3回投与）",
-    "guideline_rank": "第一選択（双極性障害・維持療法）",
+    "guideline_rank": "双極性障害の自殺リスク低減エビデンスあり。血中濃度モニタリング必須",
     "evidence": "Cipriani et al., Lancet 2013; Goodwin et al., JAMA 2016（自殺リスク低減）",
     "caution": "治療域が狭い（0.6〜1.2mEq/L）。腎・甲状腺機能の定期モニタリング必須。NSAIDや利尿薬でリチウム中毒リスク上昇。妊婦は注意"
   },
@@ -710,7 +710,7 @@
     "placebo_sleep": "躁反応率+40%",
     "NNT": 4.5,
     "duration_hours": "半減期9〜16時間（徐放製剤で1日1〜2回）",
-    "guideline_rank": "第一選択（双極性障害・抗てんかん）",
+    "guideline_rank": "双極性・てんかん・偏頭痛予防。肝毒性・催奇形性に注意",
     "evidence": "Bowden et al., JAMA 1994（双極性障害）; Cochrane（抗てんかん）",
     "caution": "催奇形性（妊婦禁忌）。体重増加・肝毒性・血小板減少。定期的な血液・肝機能検査が必要。抗てんかん薬カテゴリにも掲載"
   },
@@ -727,7 +727,7 @@
     "placebo_sleep": "躁反応率+35%",
     "NNT": 5.5,
     "duration_hours": "半減期14〜27時間（自己誘導で短縮）",
-    "guideline_rank": "第一選択（抗てんかん・神経痛）；第二選択（双極性障害）",
+    "guideline_rank": "双極性・三叉神経痛。CYP誘導薬で相互作用が多い",
     "evidence": "NICE ガイドライン2014; Cochrane（てんかん・三叉神経痛）",
     "caution": "CYP3A4誘導で薬物相互作用多い。自己誘導で血中濃度が低下。重篤な皮膚副作用（SJS/TEN）のリスクあり。抗てんかん薬・神経障害性疼痛カテゴリにも掲載"
   },
@@ -744,7 +744,7 @@
     "placebo_sleep": "うつ相再発防止率+35%",
     "NNT": 6.0,
     "duration_hours": "半減期25〜33時間（1日1〜2回）",
-    "guideline_rank": "第一選択（双極性うつ病予防・てんかん）",
+    "guideline_rank": "双極性うつ状態の再発予防に優れる。皮疹（Stevens-Johnson）に注意し緩徐増量",
     "evidence": "Calabrese et al., J Clin Psychiatry 1999; Goodwin et al., J Clin Psychiatry 2004",
     "caution": "重篤な皮疹（SJS）：漸増スケジュールが必須。バルプロ酸との併用で血中濃度上昇。抗てんかん薬カテゴリにも掲載"
   },
@@ -761,7 +761,7 @@
     "placebo_sleep": "悪化遅延+4〜6ヶ月",
     "NNT": 7.0,
     "duration_hours": "半減期約70時間（1日1回）",
-    "guideline_rank": "第一選択（アルツハイマー型認知症 軽〜中等度）",
+    "guideline_rank": "アルツハイマー・レビー小体型認知症に。軽度〜重度まで適応",
     "evidence": "Rogers et al., Neurology 1998（PMID:9881220）; Rogers et al., Arch Intern Med 1998",
     "caution": "嘔気・下痢・徐脈。高用量10mgは効果増強だが副作用増加。レビー小体型認知症・パーキンソン病認知症にも適応"
   },
@@ -778,7 +778,7 @@
     "placebo_sleep": "悪化遅延+3〜5ヶ月",
     "NNT": 8.0,
     "duration_hours": "半減期1.5時間（活性代謝物10時間）；パッチ製剤は24時間効果",
-    "guideline_rank": "第一選択（特にレビー小体型認知症）",
+    "guideline_rank": "アルツハイマー・パーキンソン認知症に。貼付剤で服薬管理が容易",
     "evidence": "Corey-Bloom et al., Int J Geriatr Psychiatry 1998; PMDA審査資料",
     "caution": "消化器症状が多い（パッチ製剤で軽減可）。パーキンソン病認知症・レビー小体型認知症に特に効果的"
   },
@@ -795,7 +795,7 @@
     "placebo_sleep": "悪化遅延+4〜5ヶ月",
     "NNT": 7.5,
     "duration_hours": "半減期7〜8時間（徐放製剤で1日1回）",
-    "guideline_rank": "第一選択（アルツハイマー型認知症）",
+    "guideline_rank": "アルツハイマー軽度〜中等度。ニコチン性受容体増感作用を持つ",
     "evidence": "Raskind et al., Neurology 2000（PMID:10961583）",
     "caution": "嘔気・嘔吐。徐放製剤で忍容性改善。AChE阻害＋nAChR正アロステリック調節の二重機序"
   },
@@ -812,7 +812,7 @@
     "placebo_sleep": "悪化遅延+4〜8ヶ月",
     "NNT": 9.0,
     "duration_hours": "半減期60〜100時間（1日1〜2回）",
-    "guideline_rank": "第一選択（中等度〜重度アルツハイマー型認知症）",
+    "guideline_rank": "中等度〜重度アルツハイマーに。AChEI との併用で相乗効果",
     "evidence": "Reisberg et al., NEJM 2003（PMID:12672860）; Cochrane Review",
     "caution": "眩暈・頭痛・便秘。AChEIとの併用が一般的（中等度〜重度）。腎機能低下時は減量"
   },
@@ -829,7 +829,7 @@
     "NNT": 5,
     "onset_time": "1-2週",
     "duration_hours": "1日2-3回（血中濃度0.8-1.2 mEq/L）",
-    "guideline_rank": "第一選択",
+    "guideline_rank": "てんかんよりも双極性障害が主適応（抗てんかん薬として使用する場合）",
     "evidence": "Cochrane Review（Cipriani et al. 2013 PMID:23846537）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/23846537/",
     "caution": "有効治療域が狭く中毒リスク高。腎機能・甲状腺機能の定期モニタリング必須。脱水・NSAIDs・ACE阻害薬で中毒リスク上昇。自殺リスク低減効果あり"
@@ -847,7 +847,7 @@
     "NNT": 6,
     "onset_time": "3-5日",
     "duration_hours": "1日2-3回（血中濃度50-100 microg/mL）",
-    "guideline_rank": "第一選択",
+    "guideline_rank": "その疾患の標準的な選択肢",
     "evidence": "Cochrane Review（Macritchie et al. 2003 PMID:12535456）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/12535456/",
     "caution": "肝障害・高アンモニア血症・体重増加・催奇形性（妊婦禁忌）。血中濃度モニタリング要。ラモトリギン血中濃度を約2倍に上昇させる"
@@ -865,7 +865,7 @@
     "NNT": 4,
     "onset_time": "数日-1週",
     "duration_hours": "1日1回",
-    "guideline_rank": "第一選択",
+    "guideline_rank": "陽性・陰性症状ともに有効。体重増加・代謝リスクを許容できる例に",
     "evidence": "Cochrane Review（Rendell et al. 2006 PMID:16437469）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/16437469/",
     "caution": "体重増加・高血糖・代謝異常リスクが高い。高齢者の転倒・誤嚥リスク。急性期後は継続投与の必要性を評価する"
@@ -883,7 +883,7 @@
     "NNT": 5,
     "onset_time": "数日-1週",
     "duration_hours": "1日1回",
-    "guideline_rank": "第一選択",
+    "guideline_rank": "代謝副作用が少ない。体重増加・QT延長を避けたい患者に",
     "evidence": "Sachs et al., J Clin Psychiatry 2006（PMID:16889462）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/16889462/",
     "caution": "体重増加・代謝系副作用は少ない。アカシジア（静座不能）に注意。不眠・活性化症候群が出ることがある"
@@ -901,7 +901,7 @@
     "NNT": 5,
     "onset_time": "数日-1週",
     "duration_hours": "1日2-3回（速放）/ 1日1回（徐放）",
-    "guideline_rank": "第一選択",
+    "guideline_rank": "その疾患の標準的な選択肢",
     "evidence": "Bowden et al., Bipolar Disord 2005（PMID:15842183）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/15842183/",
     "caution": "強い鎮静・眠気。体重増加・高血糖リスク。QT延長・起立性低血圧。急激な中断で反跳性不眠"
@@ -919,7 +919,7 @@
     "NNT": 6,
     "onset_time": "数日",
     "duration_hours": "1日1-2回",
-    "guideline_rank": "第一選択",
+    "guideline_rank": "非定型の基本薬。幻覚・妄想に有効で剤形豊富（内服・液・注射・デポ）",
     "evidence": "Smulevich et al., Br J Psychiatry 2005（PMID:16055826）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/16055826/",
     "caution": "D2遮断が強くEPS（錐体外路症状）リスクが高い。高プロラクチン血症・月経異常・性機能障害"
@@ -937,7 +937,7 @@
     "NNT": 7,
     "onset_time": "数日",
     "duration_hours": "1日2回（舌下錠）",
-    "guideline_rank": "第二選択",
+    "guideline_rank": "舌下投与で剤形の選択肢が増える。体重増加は中程度",
     "evidence": "McIntyre et al., J Affect Disord 2010（PMID:20381153）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/20381153/",
     "caution": "舌下服用後10分は飲食禁止。口腔内しびれ・感覚異常。体重増加はオランザピンより少ない"
@@ -955,7 +955,7 @@
     "NNT": 8,
     "onset_time": "1-2週",
     "duration_hours": "1日2-3回（血中濃度4-12 microg/mL）",
-    "guideline_rank": "第二選択",
+    "guideline_rank": "双極性・三叉神経痛。CYP誘導薬で相互作用が多い",
     "evidence": "Vasudev et al., Cochrane Review 2006（PMID:16856089）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/16856089/",
     "caution": "多数の薬物相互作用（CYP3A4強力誘導）。SJS（アジア系はHLA-B*1502スクリーニング推奨）。血中濃度モニタリング必須"
@@ -973,7 +973,7 @@
     "NNT": 6,
     "onset_time": "1-2週",
     "duration_hours": "1日1回（就寝前）",
-    "guideline_rank": "第一選択",
+    "guideline_rank": "鎮静・睡眠障害合併例に。代謝影響はオランザピンより少ない",
     "evidence": "Calabrese et al., Am J Psychiatry 2005（PMID:15863787）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/15863787/",
     "caution": "眠気・体重増加・代謝系副作用。単剤で双極うつに適応あり（抗うつ薬単剤は躁転リスクのため原則回避）"
@@ -991,7 +991,7 @@
     "NNT": 7,
     "onset_time": "2-4週",
     "duration_hours": "1日1回（食後必須）",
-    "guideline_rank": "第一選択",
+    "guideline_rank": "代謝への影響が少ない。認知機能改善・食後投与が必須",
     "evidence": "Calabrese et al., Am J Psychiatry 2014（PMID:24329418）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/24329418/",
     "caution": "空腹時吸収が大幅低下（食後350kcal以上必須）。CYP3A4基質のためグレープフルーツ禁忌。アカシジアに注意"
@@ -1009,7 +1009,7 @@
     "NNT": 9,
     "onset_time": "4-8週（漸増期間含む）",
     "duration_hours": "1日1-2回",
-    "guideline_rank": "第一選択（うつ相予防・維持）",
+    "guideline_rank": "双極性うつ状態の再発予防に優れる。皮疹（Stevens-Johnson）に注意し緩徐増量",
     "evidence": "Goodwin et al., J Clin Psychiatry 2004（PMID:15058979）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/15058979/",
     "caution": "SJS・TEN（重篤な皮疹）リスク→漸増プロトコル厳守が必須。バルプロ酸併用で血中濃度が約2倍に（用量半減）。急激な中断禁忌"
@@ -1027,7 +1027,7 @@
     "NNT": 10,
     "onset_time": "2-4週",
     "duration_hours": "1日2-3回（血中濃度0.6-1.0 mEq/L）",
-    "guideline_rank": "第一選択（自殺リスク高例）",
+    "guideline_rank": "自殺リスク高例に適する",
     "evidence": "Cipriani et al., Lancet 2013（PMID:23290185）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/23290185/",
     "caution": "有効治療域が狭く中毒リスク。急性うつへの効果は限定的だが自殺リスク低減効果が特徴的。腎機能低下で蓄積注意"
@@ -1045,7 +1045,7 @@
     "NNT": 12,
     "onset_time": "1-2週",
     "duration_hours": "1日2-3回",
-    "guideline_rank": "第二選択（混合状態・急速交代型）",
+    "guideline_rank": "混合状態・急速交代型の場合に代替として検討",
     "evidence": "Davis et al., J Clin Psychiatry 2005（PMID:15818699）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/15818699/",
     "caution": "単剤でのうつ効果エビデンスは限定的。催奇形性（妊婦禁忌）。ラモトリギン血中濃度を上昇させる"
@@ -1063,7 +1063,7 @@
     "NNT": 11,
     "onset_time": "2-4週",
     "duration_hours": "1日1回",
-    "guideline_rank": "補助的選択",
+    "guideline_rank": "補助的な位置付け",
     "evidence": "Thase et al., J Clin Psychiatry 2008（PMID:18954151）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/18954151/",
     "caution": "双極うつへの単剤エビデンスは限定的。躁転リスクは低め。アカシジアに注意"
@@ -1082,7 +1082,7 @@
     "NNT": 5.5,
     "efficacy_star": 3,
     "duration_hours": "8〜12時間（t1/2 約8h）",
-    "guideline_rank": "補助的選択（胃潰瘍合併例・低用量うつ）",
+    "guideline_rank": "低用量で陰性症状・抑うつ・胃潰瘍にも適応。高用量で陽性症状",
     "evidence": "Cochrane review 2002（PMID:12137657）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/12137657/",
     "caution": "プロラクチン↑顕著（無月経・乳汁分泌）。腎排泄のため腎機能低下例は減量。高用量でEPS"
@@ -1101,7 +1101,7 @@
     "NNT": 6.0,
     "efficacy_star": 3,
     "duration_hours": "12〜24時間（t1/2 15〜30h）",
-    "guideline_rank": "補助的選択（難治性不眠・緩和ケア）",
+    "guideline_rank": "強力な鎮静が必要な難治性不眠・緩和ケア場面に",
     "evidence": "添付文書・臨床経験",
     "evidence_url": null,
     "caution": "強い鎮静・起立性低血圧・口渇。QT延長リスク。抗コリン作用あり"
@@ -1120,7 +1120,7 @@
     "NNT": 4.5,
     "efficacy_star": 4,
     "duration_hours": "12〜24時間（貼付剤24時間）",
-    "guideline_rank": "第二選択（EPS懸念例に貼付剤が有用）",
+    "guideline_rank": "嚥下困難例にテープ剤が有用。EPSは中程度",
     "evidence": "Kane JM et al. J Clin Psychiatry 2015（PMID:25919841）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/25919841/",
     "caution": "食後投与で吸収↑（空腹時は効果減弱）。テープは皮膚刺激に注意。EPS中程度"
@@ -1139,7 +1139,7 @@
     "NNT": 5.0,
     "efficacy_star": 3,
     "duration_hours": "8〜12時間（t1/2 約3h・1日3回）",
-    "guideline_rank": "補助的選択",
+    "guideline_rank": "5-HT1A作動で不安・抑うつ合併例に。1日3回服用が欠点",
     "evidence": "Murasaki M et al. Psychiatry Clin Neurosci 2007（PMID:17316357）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/17316357/",
     "caution": "食後投与必須（空腹時は吸収不良）。1日3回服用で服薬アドヒアランス↓のリスク"
@@ -1158,7 +1158,7 @@
     "NNT": 3.0,
     "efficacy_star": 5,
     "duration_hours": "12〜16時間（t1/2 12h）",
-    "guideline_rank": "治療抵抗性に第一選択（2剤失敗後）",
+    "guideline_rank": "2剤以上の抗精神病薬が無効な治療抵抗性統合失調症に限定使用",
     "evidence": "Kane JM et al. Arch Gen Psychiatry 1988（PMID:2849054）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/2849054/",
     "caution": "無顆粒球症（1〜2%）のため定期血液検査必須（CPMS登録）。体重増加・糖尿病リスク高。過鎮静・流涎"
@@ -1177,7 +1177,7 @@
     "NNT": 4.0,
     "efficacy_star": 4,
     "duration_hours": "24時間（t1/2 18h・1日1回）",
-    "guideline_rank": "第二選択（代謝副作用が懸念される例）",
+    "guideline_rank": "代謝への影響が少ない。認知機能改善・食後投与が必須",
     "evidence": "Loebel A et al. J Clin Psychiatry 2013（PMID:23218157）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/23218157/",
     "caution": "食後（350kcal以上）投与必須（空腹時は血中濃度1/2）。CYP3A4基質。体重・血糖への影響少ない"
@@ -1196,7 +1196,7 @@
     "NNT": 4.0,
     "efficacy_star": 5,
     "duration_hours": "24時間（活性代謝物t1/2 1〜3週）",
-    "guideline_rank": "第二選択（陰性症状が前景の例に強く推奨）",
+    "guideline_rank": "陰性症状が前景の統合失調症に最もエビデンスが強い",
     "evidence": "Németh G et al. Lancet 2017（PMID:27839948）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/27839948/",
     "caution": "活性代謝物の半減期が長く（1〜3週）、副作用発現が遅れることがある。アカシジアに注意"
@@ -1215,7 +1215,7 @@
     "NNT": 5.0,
     "efficacy_star": 4,
     "duration_hours": "12時間（t1/2 24h・1日2回）",
-    "guideline_rank": "第二選択",
+    "guideline_rank": "舌下投与で剤形の選択肢が増える。体重増加は中程度",
     "evidence": "Potkin SG et al. J Clin Psychiatry 2007（PMID:18052560）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/18052560/",
     "caution": "舌下投与必須（飲み込むと生体内利用率<2%）。口腔内感覚鈍麻。体重増加あり"
@@ -1232,7 +1232,7 @@
     "NNT": 10.0,
     "efficacy_star": 3,
     "duration_hours": "2週間に1回点滴（t1/2 約5日）",
-    "guideline_rank": "早期AD（MCI〜軽度）に条件付き推奨",
+    "guideline_rank": "MCI〜軽度ADに限定。アミロイド病理を持つ早期例の進行抑制",
     "evidence": "van Dyck CH et al. NEJM 2023（CLARITY AD試験 PMID:36449413）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/36449413/",
     "caution": "ARIA（アミロイド関連画像異常：脳浮腫・微小出血）に注意。APOE4ホモ接合体はリスク高。MRI定期モニタリング必須。抗凝固薬との併用慎重"
@@ -1250,7 +1250,7 @@
     "efficacy_star": 5,
     "onset_time": "即放：30〜60分・コンサータ（OROS）：1〜2時間",
     "duration_hours": "コンサータ：12時間・即放：4〜6時間",
-    "guideline_rank": "第一選択（小児・成人ADHD）",
+    "guideline_rank": "ADHDの最も強いエビデンス。不注意・多動ともに有効な第一選択",
     "evidence": "Cortese S et al. Lancet Psychiatry 2018（ネットワークメタ解析 PMID:30097390）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/30097390/",
     "caution": "食欲低下・不眠・心拍数↑。依存性あり（向精神薬指定）。心疾患・甲状腺機能亢進は禁忌。成長への影響を定期モニタリング"
@@ -1268,7 +1268,7 @@
     "efficacy_star": 5,
     "onset_time": "1〜2時間（消化管でアンフェタミンに変換）",
     "duration_hours": "12〜14時間（1日1回朝）",
-    "guideline_rank": "第一選択（成人ADHD・コンサータ無効例）",
+    "guideline_rank": "乱用リスクが低い設計。コンサータ無効・成人ADHD に",
     "evidence": "Cortese S et al. Lancet Psychiatry 2018（PMID:30097390）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/30097390/",
     "caution": "食欲低下・不眠・血圧上昇。向精神薬（第一種）。依存性はメチルフェニデートより低い（プロドラッグ設計）。心疾患・高血圧は禁忌"
@@ -1286,7 +1286,7 @@
     "efficacy_star": 3,
     "onset_time": "4〜8週（効果発現が遅い）",
     "duration_hours": "24時間（1日1〜2回）",
-    "guideline_rank": "第二選択（刺激薬禁忌・依存症リスク・チック合併）",
+    "guideline_rank": "依存性なし・非刺激薬。チック・不安合併・依存症リスクが高い例に",
     "evidence": "Michelson D et al. Am J Psychiatry 2001（PMID:11691686）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/11691686/",
     "caution": "効果発現まで4〜8週必要。初期に悪心・食欲低下。肝機能障害（まれ）。自殺念慮への注意（小児・青年）。MAO阻害薬と禁忌"
@@ -1304,7 +1304,7 @@
     "efficacy_star": 3,
     "onset_time": "2〜4週（徐放製剤）",
     "duration_hours": "24時間（1日1回就寝前）",
-    "guideline_rank": "第二選択（チック合併・攻撃性・刺激薬禁忌）",
+    "guideline_rank": "多動性・衝動性・攻撃性に特に有効。チック合併例にも使用可",
     "evidence": "Sallee FR et al. J Am Acad Child Adolesc Psychiatry 2009（PMID:19242382）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/19242382/",
     "caution": "眠気・血圧低下・徐脈。急激な中止で反跳性高血圧。アルコールとの相互作用。刺激薬との併用で相乗効果あり"
@@ -1322,7 +1322,7 @@
     "efficacy_star": 3,
     "onset_time": "数日〜1週間",
     "duration_hours": "12〜24時間（1日1回または月1回注射剤）",
-    "guideline_rank": "第一選択（飲酒量低減・断酒維持）",
+    "guideline_rank": "飲酒の快感を遮断。「飲酒量低減」「断酒」どちらの目標にも使える",
     "evidence": "Rösner S et al. Cochrane 2010（PMID:20238348）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/20238348/",
     "caution": "服薬中にオピオイド系薬（鎮痛薬など）が無効になる。急性肝炎・重篤な肝障害は禁忌。悪心・頭痛（初期）。断酒してから服用開始"
@@ -1340,7 +1340,7 @@
     "efficacy_star": 4,
     "onset_time": "飲酒1〜2時間前に服用（必要時）",
     "duration_hours": "12〜24時間（飲酒しない日は服用不要）",
-    "guideline_rank": "第一選択（断酒困難・飲酒量低減を目標とする例）",
+    "guideline_rank": "断酒を目標としないハームリダクション型。飲酒前に服用する必要時型",
     "evidence": "Mann K et al. Eur Neuropsychopharmacol 2013（ESENSE試験 PMID:23375536）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/23375536/",
     "caution": "悪心・めまい・不眠（服用開始初期）。断酒目標でない点が他薬と異なる。肝障害・腎障害で慎重使用"
@@ -1358,7 +1358,7 @@
     "efficacy_star": 3,
     "onset_time": "断酒後5日以内に開始（離脱安定後）",
     "duration_hours": "24時間（1日3回食後）",
-    "guideline_rank": "第一選択（断酒維持・ナルトレキソンと相補的）",
+    "guideline_rank": "断酒後の離脱渇望を抑制。腎機能正常例の断酒維持に",
     "evidence": "Rösner S et al. Cochrane 2010（PMID:20166068）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/20166068/",
     "caution": "腎排泄のため腎機能低下例は禁忌（CCr<30）。下痢・悪心（初期）。ナルトレキソンとの併用で相乗効果の報告あり"
@@ -1376,7 +1376,7 @@
     "efficacy_star": 3,
     "onset_time": "服薬後12時間以内に飲酒で反応",
     "duration_hours": "効果持続：最終服用から1〜2週間",
-    "guideline_rank": "第二選択（動機付けが高い・確認服薬が可能な例）",
+    "guideline_rank": "飲酒への嫌悪条件付け。確認服薬が可能で強い意志がある例に",
     "evidence": "Skinner MD et al. PLOS ONE 2014（PMID:24416179）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/24416179/",
     "caution": "服薬中の飲酒は危険（重篤な心血管反応）。アルコール含有製品（うがい薬・香水など）も禁忌。肝障害・心疾患は禁忌。確認服薬が効果の鍵"
@@ -1394,7 +1394,7 @@
     "efficacy_star": 3,
     "onset_time": "服薬後1〜3時間で飲酒反応",
     "duration_hours": "効果持続：約12時間（ジスルフィラムより短い）",
-    "guideline_rank": "補助的選択（日本で広く使用・朝の確認服薬に適する）",
+    "guideline_rank": "ジスルフィラムと同機序で短時間型。朝の確認服薬として日本で広用",
     "evidence": "添付文書・国内臨床経験",
     "evidence_url": null,
     "caution": "服薬中の飲酒は危険。肝障害に注意（定期肝機能検査）。ジスルフィラムと比較して甲状腺抑制作用が強い。確認服薬が必須"
@@ -1412,7 +1412,7 @@
     "efficacy_star": 5,
     "onset_time": "禁煙予定日1週間前から開始",
     "duration_hours": "24時間（1日2回・12週間標準）",
-    "guideline_rank": "第一選択（禁煙薬物療法で最も有効）",
+    "guideline_rank": "禁煙補助薬として最も有効。渇望と喫煙満足感の両方を抑制",
     "evidence": "Cahill K et al. Cochrane 2016（PMID:27091294）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/27091294/",
     "caution": "悪心（最多副作用・食後服用で軽減）。うつ・自殺念慮の報告（精神疾患既往は慎重）。2025年現在チャンピックスは供給停止中・後発品あり"
@@ -1430,7 +1430,7 @@
     "efficacy_star": 3,
     "onset_time": "貼付後2〜4時間（血中濃度安定）",
     "duration_hours": "24時間（毎日貼り替え・8〜12週間）",
-    "guideline_rank": "第一選択（OTC・バレニクリン禁忌例）",
+    "guideline_rank": "OTC入手可能。1日1枚交換でニコチンを安定補充。手軽な導入に",
     "evidence": "Stead LF et al. Cochrane 2012（PMID:22786451）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/22786451/",
     "caution": "皮膚刺激・かぶれ（貼付部位を毎日変える）。心疾患急性期は慎重。就寝中は外しても可（不眠・悪夢の場合）。OTCで入手可能"
@@ -1448,7 +1448,7 @@
     "efficacy_star": 3,
     "onset_time": "噛み始め後5〜10分（口腔粘膜吸収）",
     "duration_hours": "30分（1回使用）・1日最大24個まで",
-    "guideline_rank": "第一選択（OTC・パッチとの併用でOR↑）",
+    "guideline_rank": "OTC入手可能。急性渇望のときだけ使う頓服型。パッチとの併用で効果増",
     "evidence": "Stead LF et al. Cochrane 2012（PMID:22786451）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/22786451/",
     "caution": "飲食後15分は使用しない（吸収↓）。「チュー＆パーク法」で正しく使用する必要あり。顎関節症に注意。OTCで入手可能"
