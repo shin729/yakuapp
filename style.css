@@ -1018,6 +1018,73 @@ thead .cmp-label-col { background: #f5f3ff !important; }
 .card-detail-caution .cd-label { color: #c2410c; }
 .card-detail-caution .cd-val   { color: #7c2d12; }
 
+/* 比較バー表示中はメインに下余白を追加（カードが隠れないように） */
+body.compare-bar-open .main {
+  padding-bottom: calc(var(--disclaimer-height) + 68px);
+}
+
+/* 比較モーダル スクロールヒント（モバイルのみ表示） */
+.cmp-scroll-hint {
+  display: none;
+  text-align: center;
+  font-size: 0.65rem;
+  color: var(--gray-400);
+  padding: 5px 12px;
+  border-bottom: 1px solid var(--gray-100);
+  flex-shrink: 0;
+  letter-spacing: 0.03em;
+}
+
+/* ===== モバイル：比較モーダルを下から出るシート型に ===== */
+@media (max-width: 639px) {
+  .cmp-overlay {
+    padding: 0;
+    align-items: flex-end;
+  }
+
+  .cmp-modal {
+    border-radius: 16px 16px 0 0;
+    max-height: 88vh;
+    max-width: 100%;
+  }
+
+  .cmp-scroll-hint {
+    display: block;
+  }
+
+  .cmp-drug-col {
+    width: 110px;
+    min-width: 100px;
+  }
+
+  .cmp-label-col {
+    width: 62px !important;
+    min-width: 62px !important;
+  }
+
+  .cmp-drug-name { font-size: 0.78rem; }
+  .cmp-drug-brand, .cmp-drug-cat { font-size: 0.56rem; }
+
+  .cmp-table-wrap .compare-table thead th:not(.sticky-col) {
+    padding: 8px 6px;
+  }
+
+  .cmp-table-wrap .compare-table tbody td {
+    padding: 6px 6px;
+    font-size: 0.72rem;
+  }
+
+  .cmp-table-wrap .compare-table .row-label {
+    font-size: 0.58rem;
+    padding: 6px 4px;
+  }
+
+  .cmp-legend {
+    font-size: 0.65rem;
+    padding: 6px 12px;
+  }
+}
+
 /* Responsive */
 @media (max-width: 480px) {
   :root { --label-col-width: 70px; --drug-col-width: 138px; }

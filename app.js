@@ -890,6 +890,7 @@ function toggleCompareItem(name, cat) {
 function updateCompareBar() {
   const bar = document.getElementById('compare-bar');
   bar.hidden = compareList.length === 0;
+  document.body.classList.toggle('compare-bar-open', compareList.length > 0);
   document.getElementById('compare-bar-chips').innerHTML = compareList.map(d =>
     `<span class="cmp-chip">${esc(d.name)}<button class="cmp-chip-x" data-cmp-name="${esc(d.name)}" data-cmp-cat="${esc(d.category)}">✕</button></span>`
   ).join('');
@@ -959,6 +960,7 @@ function showComparison() {
         <span class="cmp-modal-title">⚖ 薬剤比較（${drugs.length}剤）</span>
         <button class="cmp-close-btn" id="cmp-close-btn">✕ 閉じる</button>
       </div>
+      <div class="cmp-scroll-hint">← 横にスクロールして比較 →</div>
       <div class="cmp-table-wrap">
         <div class="table-wrapper">
           <table class="compare-table">
