@@ -830,8 +830,8 @@
     "onset_time": "1-2週",
     "duration_hours": "1日2-3回（血中濃度0.8-1.2 mEq/L）",
     "guideline_rank": "てんかんよりも双極性障害が主適応（抗てんかん薬として使用する場合）",
-    "evidence": "Cochrane Review（Cipriani et al. 2013 PMID:23846537）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/23846537/",
+    "evidence": "Cochrane Review（Cipriani et al. 2013 PMID:31152444）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/31152444/",
     "caution": "有効治療域が狭く中毒リスク高。腎機能・甲状腺機能の定期モニタリング必須。脱水・NSAIDs・ACE阻害薬で中毒リスク上昇。自殺リスク低減効果あり"
   },
   {
@@ -848,8 +848,8 @@
     "onset_time": "3-5日",
     "duration_hours": "1日2-3回（血中濃度50-100 microg/mL）",
     "guideline_rank": "その疾患の標準的な選択肢",
-    "evidence": "Cochrane Review（Macritchie et al. 2003 PMID:12535456）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/12535456/",
+    "evidence": "Cochrane Review（Macritchie et al. 2003 PMID:12535506）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/12535506/",
     "caution": "肝障害・高アンモニア血症・体重増加・催奇形性（妊婦禁忌）。血中濃度モニタリング要。ラモトリギン血中濃度を約2倍に上昇させる"
   },
   {
@@ -866,8 +866,8 @@
     "onset_time": "数日-1週",
     "duration_hours": "1日1回",
     "guideline_rank": "陽性・陰性症状ともに有効。体重増加・代謝リスクを許容できる例に",
-    "evidence": "Cochrane Review（Rendell et al. 2006 PMID:16437469）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/16437469/",
+    "evidence": "Cochrane Review（Rendell et al. 2006 PMID:12918000）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/12918000/",
     "caution": "体重増加・高血糖・代謝異常リスクが高い。高齢者の転倒・誤嚥リスク。急性期後は継続投与の必要性を評価する"
   },
   {
@@ -884,8 +884,8 @@
     "onset_time": "数日-1週",
     "duration_hours": "1日1回",
     "guideline_rank": "代謝副作用が少ない。体重増加・QT延長を避けたい患者に",
-    "evidence": "Sachs et al., J Clin Psychiatry 2006（PMID:16889462）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/16889462/",
+    "evidence": "Sachs et al., J Clin Psychiatry 2006（PMID:16669728）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/16669728/",
     "caution": "体重増加・代謝系副作用は少ない。アカシジア（静座不能）に注意。不眠・活性化症候群が出ることがある"
   },
   {
@@ -902,8 +902,8 @@
     "onset_time": "数日-1週",
     "duration_hours": "1日2-3回（速放）/ 1日1回（徐放）",
     "guideline_rank": "その疾患の標準的な選択肢",
-    "evidence": "Bowden et al., Bipolar Disord 2005（PMID:15842183）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/15842183/",
+    "evidence": "Bowden et al., Bipolar Disord 2005（PMID:15669897）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/15669897/",
     "caution": "強い鎮静・眠気。体重増加・高血糖リスク。QT延長・起立性低血圧。急激な中断で反跳性不眠"
   },
   {
@@ -920,8 +920,8 @@
     "onset_time": "数日",
     "duration_hours": "1日1-2回",
     "guideline_rank": "非定型の基本薬。幻覚・妄想に有効で剤形豊富（内服・液・注射・デポ）",
-    "evidence": "Smulevich et al., Br J Psychiatry 2005（PMID:16055826）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/16055826/",
+    "evidence": "Smulevich et al., Br J Psychiatry 2005（PMID:16135859）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/16135859/",
     "caution": "D2遮断が強くEPS（錐体外路症状）リスクが高い。高プロラクチン血症・月経異常・性機能障害"
   },
   {
@@ -938,8 +938,8 @@
     "onset_time": "数日",
     "duration_hours": "1日2回（舌下錠）",
     "guideline_rank": "舌下投与で剤形の選択肢が増える。体重増加は中程度",
-    "evidence": "McIntyre et al., J Affect Disord 2010（PMID:20381153）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/20381153/",
+    "evidence": "McIntyre et al., J Affect Disord 2010（PMID:20096936）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/20096936/",
     "caution": "舌下服用後10分は飲食禁止。口腔内しびれ・感覚異常。体重増加はオランザピンより少ない"
   },
   {
@@ -956,8 +956,8 @@
     "onset_time": "1-2週",
     "duration_hours": "1日2-3回（血中濃度4-12 microg/mL）",
     "guideline_rank": "双極性・三叉神経痛。CYP誘導薬で相互作用が多い",
-    "evidence": "Vasudev et al., Cochrane Review 2006（PMID:16856089）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/16856089/",
+    "evidence": "Vasudev et al., Cochrane Review 2006",
+    "evidence_url": null,
     "caution": "多数の薬物相互作用（CYP3A4強力誘導）。SJS（アジア系はHLA-B*1502スクリーニング推奨）。血中濃度モニタリング必須"
   },
   {
@@ -974,8 +974,8 @@
     "onset_time": "1-2週",
     "duration_hours": "1日1回（就寝前）",
     "guideline_rank": "鎮静・睡眠障害合併例に。代謝影響はオランザピンより少ない",
-    "evidence": "Calabrese et al., Am J Psychiatry 2005（PMID:15863787）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/15863787/",
+    "evidence": "Calabrese et al., Am J Psychiatry 2005（PMID:15994719）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/15994719/",
     "caution": "眠気・体重増加・代謝系副作用。単剤で双極うつに適応あり（抗うつ薬単剤は躁転リスクのため原則回避）"
   },
   {
@@ -992,8 +992,8 @@
     "onset_time": "2-4週",
     "duration_hours": "1日1回（食後必須）",
     "guideline_rank": "代謝への影響が少ない。認知機能改善・食後投与が必須",
-    "evidence": "Calabrese et al., Am J Psychiatry 2014（PMID:24329418）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/24329418/",
+    "evidence": "Calabrese et al., Am J Psychiatry 2014（PMID:24170221）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/24170221/",
     "caution": "空腹時吸収が大幅低下（食後350kcal以上必須）。CYP3A4基質のためグレープフルーツ禁忌。アカシジアに注意"
   },
   {
@@ -1010,8 +1010,8 @@
     "onset_time": "4-8週（漸増期間含む）",
     "duration_hours": "1日1-2回",
     "guideline_rank": "双極性うつ状態の再発予防に優れる。皮疹（Stevens-Johnson）に注意し緩徐増量",
-    "evidence": "Goodwin et al., J Clin Psychiatry 2004（PMID:15058979）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/15058979/",
+    "evidence": "Goodwin et al., J Clin Psychiatry 2004（PMID:15096085）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/15096085/",
     "caution": "SJS・TEN（重篤な皮疹）リスク→漸増プロトコル厳守が必須。バルプロ酸併用で血中濃度が約2倍に（用量半減）。急激な中断禁忌"
   },
   {
@@ -1028,8 +1028,8 @@
     "onset_time": "2-4週",
     "duration_hours": "1日2-3回（血中濃度0.6-1.0 mEq/L）",
     "guideline_rank": "自殺リスク高例に適する",
-    "evidence": "Cipriani et al., Lancet 2013（PMID:23290185）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/23290185/",
+    "evidence": "Cipriani et al., Lancet 2013（PMID:23814104）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/23814104/",
     "caution": "有効治療域が狭く中毒リスク。急性うつへの効果は限定的だが自殺リスク低減効果が特徴的。腎機能低下で蓄積注意"
   },
   {
@@ -1046,8 +1046,8 @@
     "onset_time": "1-2週",
     "duration_hours": "1日2-3回",
     "guideline_rank": "混合状態・急速交代型の場合に代替として検討",
-    "evidence": "Davis et al., J Clin Psychiatry 2005（PMID:15818699）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/15818699/",
+    "evidence": "Davis et al., J Clin Psychiatry 2005（PMID:15780695）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/15780695/",
     "caution": "単剤でのうつ効果エビデンスは限定的。催奇形性（妊婦禁忌）。ラモトリギン血中濃度を上昇させる"
   },
   {
@@ -1064,8 +1064,8 @@
     "onset_time": "2-4週",
     "duration_hours": "1日1回",
     "guideline_rank": "補助的な位置付け",
-    "evidence": "Thase et al., J Clin Psychiatry 2008（PMID:18954151）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/18954151/",
+    "evidence": "Thase et al., J Clin Psychiatry 2008（PMID:18344725）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/18344725/",
     "caution": "双極うつへの単剤エビデンスは限定的。躁転リスクは低め。アカシジアに注意"
   },
   {
@@ -1216,8 +1216,8 @@
     "efficacy_star": 4,
     "duration_hours": "12時間（t1/2 24h・1日2回）",
     "guideline_rank": "舌下投与で剤形の選択肢が増える。体重増加は中程度",
-    "evidence": "Potkin SG et al. J Clin Psychiatry 2007（PMID:18052560）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/18052560/",
+    "evidence": "Potkin SG et al. J Clin Psychiatry 2007（PMID:17960962）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/17960962/",
     "caution": "舌下投与必須（飲み込むと生体内利用率<2%）。口腔内感覚鈍麻。体重増加あり"
   },
   {
@@ -1287,8 +1287,8 @@
     "onset_time": "4〜8週（効果発現が遅い）",
     "duration_hours": "24時間（1日1〜2回）",
     "guideline_rank": "依存性なし・非刺激薬。チック・不安合併・依存症リスクが高い例に",
-    "evidence": "Michelson D et al. Am J Psychiatry 2001（PMID:11691686）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/11691686/",
+    "evidence": "Michelson D et al. Am J Psychiatry 2001（PMID:12411225）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/12411225/",
     "caution": "効果発現まで4〜8週必要。初期に悪心・食欲低下。肝機能障害（まれ）。自殺念慮への注意（小児・青年）。MAO阻害薬と禁忌"
   },
   {
@@ -1305,8 +1305,8 @@
     "onset_time": "2〜4週（徐放製剤）",
     "duration_hours": "24時間（1日1回就寝前）",
     "guideline_rank": "多動性・衝動性・攻撃性に特に有効。チック合併例にも使用可",
-    "evidence": "Sallee FR et al. J Am Acad Child Adolesc Psychiatry 2009（PMID:19242382）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/19242382/",
+    "evidence": "Sallee FR et al. J Am Acad Child Adolesc Psychiatry 2009（PMID:19106767）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/19106767/",
     "caution": "眠気・血圧低下・徐脈。急激な中止で反跳性高血圧。アルコールとの相互作用。刺激薬との併用で相乗効果あり"
   },
   {
@@ -1341,8 +1341,8 @@
     "onset_time": "飲酒1〜2時間前に服用（必要時）",
     "duration_hours": "12〜24時間（飲酒しない日は服用不要）",
     "guideline_rank": "断酒を目標としないハームリダクション型。飲酒前に服用する必要時型",
-    "evidence": "Mann K et al. Eur Neuropsychopharmacol 2013（ESENSE試験 PMID:23375536）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/23375536/",
+    "evidence": "Mann K et al. Eur Neuropsychopharmacol 2013（ESENSE試験 PMID:23562264）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/23562264/",
     "caution": "悪心・めまい・不眠（服用開始初期）。断酒目標でない点が他薬と異なる。肝障害・腎障害で慎重使用"
   },
   {
@@ -1377,8 +1377,8 @@
     "onset_time": "服薬後12時間以内に飲酒で反応",
     "duration_hours": "効果持続：最終服用から1〜2週間",
     "guideline_rank": "飲酒への嫌悪条件付け。確認服薬が可能で強い意志がある例に",
-    "evidence": "Skinner MD et al. PLOS ONE 2014（PMID:24416179）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/24416179/",
+    "evidence": "Skinner MD et al. PLOS ONE 2014（PMID:24520330）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/24520330/",
     "caution": "服薬中の飲酒は危険（重篤な心血管反応）。アルコール含有製品（うがい薬・香水など）も禁忌。肝障害・心疾患は禁忌。確認服薬が効果の鍵"
   },
   {
@@ -1413,8 +1413,8 @@
     "onset_time": "禁煙予定日1週間前から開始",
     "duration_hours": "24時間（1日2回・12週間標準）",
     "guideline_rank": "禁煙補助薬として最も有効。渇望と喫煙満足感の両方を抑制",
-    "evidence": "Cahill K et al. Cochrane 2016（PMID:27091294）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/27091294/",
+    "evidence": "Cahill K et al. Cochrane 2016（PMID:27158893）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/27158893/",
     "caution": "悪心（最多副作用・食後服用で軽減）。うつ・自殺念慮の報告（精神疾患既往は慎重）。2025年現在チャンピックスは供給停止中・後発品あり"
   },
   {
@@ -1431,8 +1431,8 @@
     "onset_time": "貼付後2〜4時間（血中濃度安定）",
     "duration_hours": "24時間（毎日貼り替え・8〜12週間）",
     "guideline_rank": "OTC入手可能。1日1枚交換でニコチンを安定補充。手軽な導入に",
-    "evidence": "Stead LF et al. Cochrane 2012（PMID:22786451）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/22786451/",
+    "evidence": "Stead LF et al. Cochrane 2012（PMID:23152200）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/23152200/",
     "caution": "皮膚刺激・かぶれ（貼付部位を毎日変える）。心疾患急性期は慎重。就寝中は外しても可（不眠・悪夢の場合）。OTCで入手可能"
   },
   {
@@ -1449,8 +1449,8 @@
     "onset_time": "噛み始め後5〜10分（口腔粘膜吸収）",
     "duration_hours": "30分（1回使用）・1日最大24個まで",
     "guideline_rank": "OTC入手可能。急性渇望のときだけ使う頓服型。パッチとの併用で効果増",
-    "evidence": "Stead LF et al. Cochrane 2012（PMID:22786451）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/22786451/",
+    "evidence": "Stead LF et al. Cochrane 2012（PMID:23152200）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/23152200/",
     "caution": "飲食後15分は使用しない（吸収↓）。「チュー＆パーク法」で正しく使用する必要あり。顎関節症に注意。OTCで入手可能"
   }
 ]
