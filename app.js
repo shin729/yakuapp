@@ -104,6 +104,7 @@ async function init() {
   renderDomainTabs();
   renderCatTabs();
   render();
+  requestAnimationFrame(syncBottomPadding);
 }
 
 // ===== ドメインタブ =====
@@ -924,6 +925,18 @@ function updateCompareBar() {
     `<span class="cmp-chip">${esc(d.name)}<button class="cmp-chip-x" data-cmp-name="${esc(d.name)}" data-cmp-cat="${esc(d.category)}">✕</button></span>`
   ).join('');
   document.getElementById('compare-count').textContent = `${compareList.length}/4`;
+  // バーの実際の高さが確定してから余白を更新
+  requestAnimationFrame(syncBottomPadding);
+}
+
+// 固定要素（免責バー + 比較バー）の実際の高さを計測して main の下余白を動的に設定
+function syncBottomPadding() {
+  const disclaimer = document.querySelector('.disclaimer');
+  const bar        = document.getElementById('compare-bar');
+  const disclaimerH = disclaimer ? disclaimer.getBoundingClientRect().height : 60;
+  const barH        = (bar && !bar.hidden) ? bar.getBoundingClientRect().height : 0;
+  const main = document.querySelector('.main');
+  if (main) main.style.paddingBottom = `${disclaimerH + barH + 24}px`;
 }
 
 function getCompareRows(drugs) {

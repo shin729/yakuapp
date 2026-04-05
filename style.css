@@ -1102,16 +1102,7 @@ thead .cmp-label-col { background: #f5f3ff !important; }
 .card-detail-caution .cd-label { color: #c2410c; }
 .card-detail-caution .cd-val   { color: #7c2d12; }
 
-/* 比較バー表示中はメインに下余白を追加（カードが隠れないように） */
-body.compare-bar-open .main {
-  padding-bottom: calc(var(--disclaimer-height) + 80px);
-}
-@media (max-width: 639px) {
-  body.compare-bar-open .main {
-    /* モバイルはチップが折り返すため余白を多めに確保 */
-    padding-bottom: calc(var(--disclaimer-height) + 130px);
-  }
-}
+/* 比較バー表示中の下余白は JS（syncBottomPadding）で動的に設定 */
 
 /* ===== モバイル比較：縦スクロール グリッドレイアウト ===== */
 .cmp-grid-wrap {
