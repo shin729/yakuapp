@@ -1076,6 +1076,7 @@ window.addEventListener('resize', () => {
     if (window.innerWidth === _prevWidth) return;
     _prevWidth = window.innerWidth;
     render();
+  }, 150);
 });
 
 document.querySelectorAll('.domain-btn').forEach(btn => {
