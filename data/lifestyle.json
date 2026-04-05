@@ -121,8 +121,8 @@
     "onset_time": "1〜2週",
     "duration_hours": "1日1回（朝食前）",
     "guideline_rank": "低コスト・強力な血糖降下。低血糖リスクがあり高齢者は少量から",
-    "evidence": "Charbonnel et al., Diabetes Care 2005（PMID:16186275）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/16186275/",
+    "evidence": "Charbonnel et al., Diabetes Care 2005（PMID:16567827）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/16567827/",
     "caution": "低血糖リスク（特に高齢者・腎障害・食事摂取不足）。体重増加。腎障害（eGFR<30）で禁忌。磺アミド系アレルギーに注意"
   },
   {
@@ -175,8 +175,8 @@
     "onset_time": "2〜4週",
     "duration_hours": "1日1回",
     "guideline_rank": "CKD・蛋白尿・心不全合併高血圧に。ARBで心保護エビデンス強い",
-    "evidence": "CHARM試験（Lancet 2003 PMID:14511608）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/14511608/",
+    "evidence": "CHARM試験（Lancet 2003 PMID:13678869）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/13678869/",
     "caution": "高カリウム血症（K保持性利尿薬・腎障害との併用注意）。妊婦禁忌（胎児腎障害）。空咳はACEI比で少ない"
   },
   {
@@ -229,8 +229,8 @@
     "onset_time": "1〜2週",
     "duration_hours": "1日1回（朝）",
     "guideline_rank": "高齢者・脳卒中予防エビデンスあるサイアザイド様利尿薬",
-    "evidence": "PROGRESS試験（Lancet 2001 PMID:11583749）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/11583749/",
+    "evidence": "PROGRESS試験（Lancet 2001 PMID:11589932）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/11589932/",
     "caution": "低Na・低K血症（定期モニタリング）。高尿酸血症（痛風既往注意）。血糖への影響はHCTZより少ない"
   },
   {
@@ -247,8 +247,8 @@
     "onset_time": "数日〜1週",
     "duration_hours": "1日1回",
     "guideline_rank": "心不全・心房細動・冠動脈疾患合併高血圧に。β1選択性が高い",
-    "evidence": "CIBIS-II試験（Lancet 1999 PMID:9973122）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/9973122/",
+    "evidence": "CIBIS-II試験（Lancet 1999 PMID:10023943）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/10023943/",
     "caution": "急激な中断禁忌（反跳性狭心症）。気管支喘息・末梢動脈疾患では慎重。糖尿病でビラン症状をマスクする可能性"
   },
   {
@@ -265,8 +265,8 @@
     "onset_time": "2〜4週（最大効果4〜6週）",
     "duration_hours": "1日1回",
     "guideline_rank": "高リスク患者の脂質異常症第一選択。LDL低下効果が強い",
-    "evidence": "ASCOT-LLA（Lancet 2003 PMID:14687164）; TNT試験（NEJM 2005 PMID:15755765）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/14687164/",
+    "evidence": "ASCOT-LLA（Lancet 2003 PMID:12686036）; TNT試験（NEJM 2005 PMID:15755765）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/12686036/",
     "caution": "ミオパチー・横紋筋融解症（特にフィブラート・CYP3A4阻害薬との併用）。肝機能検査定期確認。妊婦禁忌"
   },
   {
@@ -301,8 +301,8 @@
     "onset_time": "2〜4週",
     "duration_hours": "1日1回（夜）",
     "guideline_rank": "腎機能低下・高リスク例に。CYP代謝が少なく相互作用が少ない",
-    "evidence": "REAL-CAD試験（Circulation 2018 PMID:29802239）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/29802239/",
+    "evidence": "REAL-CAD試験（Circulation 2018 PMID:29735587）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/29735587/",
     "caution": "CYP代謝少なく薬物相互作用が少ない。ミコナゾール・シクロスポリンとの相互作用に注意。横紋筋融解症（スタチン共通）"
   },
   {
@@ -373,8 +373,8 @@
     "onset_time": "4〜8週",
     "duration_hours": "1日3回（食後）",
     "guideline_rank": "スタチン使用中の高TG血症・高心血管リスクに適する",
-    "evidence": "REDUCE-IT（NEJM 2018 PMID:30145982）; JELIS（Lancet 2007 PMID:17321310）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/30145982/",
+    "evidence": "REDUCE-IT（NEJM 2018 PMID:30415628）; JELIS（Lancet 2007 PMID:17321310）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/30415628/",
     "caution": "出血リスク（抗凝固薬・抗血小板薬との併用注意）。消化器症状（魚臭・げっぷ）。心房細動リスクがわずかに増加"
   },
   {
@@ -391,8 +391,8 @@
     "onset_time": "2〜4週",
     "duration_hours": "1日1回",
     "guideline_rank": "高尿酸血症・痛風発作予防の第一選択。腎機能低下例にも使用可",
-    "evidence": "CONFIRMS試験（PMID:20412109）; APEX試験（PMID:17146700）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/20412109/",
+    "evidence": "CONFIRMS試験（PMID:20370912）; APEX試験（PMID:17146700）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/20370912/",
     "caution": "心血管イベントリスク（CARES試験でCV死亡率上昇の懸念）→心血管リスク高例はアロプリノール優先を検討。開始時に痛風発作増加→コルヒチン予防投与"
   },
   {
@@ -409,8 +409,8 @@
     "onset_time": "2〜4週",
     "duration_hours": "1日1〜3回（腎機能に応じて）",
     "guideline_rank": "安価で長い使用経験。腎機能正常例の高尿酸血症に",
-    "evidence": "Sundy et al., JAMA 2011（PMID:21540427）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/21540427/",
+    "evidence": "Sundy et al., JAMA 2011（PMID:21846852）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/21846852/",
     "caution": "SJS（HLA-B*5801が高リスク→韓国・台湾・タイ系でスクリーニング推奨）。腎機能低下で蓄積し用量調整必須。開始時痛風発作増加"
   },
   {
@@ -428,7 +428,7 @@
     "duration_hours": "1日2回",
     "guideline_rank": "フェブキソスタット系の第二XO阻害薬",
     "evidence": "国内第III相試験（PMID:22228631）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/22228631/",
+    "evidence_url": null,
     "caution": "開始時に痛風発作増加→コルヒチン予防投与。心血管リスクへの長期データは限定的。国内承認薬"
   },
   {
@@ -463,8 +463,8 @@
     "onset_time": "12〜24時間（急性期）",
     "duration_hours": "急性期：最初1 mg→0.5 mg（低用量法）/ 予防：0.5 mg/日",
     "guideline_rank": "急性痛風発作の消炎・ULT開始時の予防投与に。腎機能低下で用量注意",
-    "evidence": "Terkeltaub et al., Arthritis Rheum 2010（PMID:19179778）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/19179778/",
+    "evidence": "Terkeltaub et al., Arthritis Rheum 2010（PMID:20131255）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/20131255/",
     "caution": "下痢・悪心・腹痛（用量依存）。骨髄抑制（高用量・腎障害）。CYP3A4・P糖蛋白の基質でクラリスロマイシン等で中毒リスク。腎/肝障害で蓄積"
   },
   {
@@ -517,8 +517,8 @@
     "onset_time": "1〜2時間（降圧最大効果3〜6時間）",
     "duration_hours": "24時間（1日1回）",
     "guideline_rank": "CKD・蛋白尿・痛風合併高血圧に。唯一尿酸低下作用を持つARB",
-    "evidence": "Dahlof B et al. Lancet 2002（LIFE試験 PMID:12056585）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/12056585/",
+    "evidence": "Dahlof B et al. Lancet 2002（LIFE試験 PMID:11937178）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/11937178/",
     "caution": "妊婦禁忌。高カリウム血症（腎機能低下例）。ACE阻害薬との併用は腎機能悪化リスク"
   },
   {
@@ -535,8 +535,8 @@
     "onset_time": "CR製剤：2〜4時間（即放製剤は10〜30分）",
     "duration_hours": "24時間（CR1日1回）",
     "guideline_rank": "狭心症合併・妊娠高血圧に有効。CR製剤で平滑な降圧",
-    "evidence": "添付文書・HOT試験（PMID:9236482）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/9236482/",
+    "evidence": "添付文書・HOT試験（PMID:9635947）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/9635947/",
     "caution": "顔面紅潮・頭痛・動悸（反射性頻脈）。グレープフルーツで血中濃度↑。即放製剤の急速投与で急激な降圧は危険"
   },
   {
@@ -554,7 +554,7 @@
     "duration_hours": "24時間（1日1回）",
     "guideline_rank": "CKD・糖尿病合併高血圧に。輸出入細動脈均等拡張で糸球体保護",
     "evidence": "Ogawa S et al. J Am Soc Nephrol 2004（PMID:15213273）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/15213273/",
+    "evidence_url": null,
     "caution": "反射性頻脈が少ない（アムロジピンより少ない）。グレープフルーツとの相互作用"
   },
   {
@@ -607,8 +607,8 @@
     "onset_time": "2週間以内に最大効果",
     "duration_hours": "336時間（2週に1回皮下注）",
     "guideline_rank": "スタチン最大量でもLDL目標未達の高リスク例・FHに。2週1回皮下注",
-    "evidence": "Schwartz GG et al. NEJM 2018（ODYSSEY OUTCOMES試験 PMID:29542579）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/29542579/",
+    "evidence": "Schwartz GG et al. NEJM 2018（ODYSSEY OUTCOMES試験 PMID:30403574）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/30403574/",
     "caution": "注射剤（2週1回または月1回）。非常に高価。注射部位反応。筋肉痛まれ"
   }
 ]
