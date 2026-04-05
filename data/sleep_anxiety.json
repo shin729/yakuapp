@@ -1083,8 +1083,8 @@
     "efficacy_star": 3,
     "duration_hours": "8〜12時間（t1/2 約8h）",
     "guideline_rank": "低用量で陰性症状・抑うつ・胃潰瘍にも適応。高用量で陽性症状",
-    "evidence": "Cochrane review 2002（PMID:12137657）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/12137657/",
+    "evidence": "Cochrane review 2002（PMID:10796605）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/10796605/",
     "caution": "プロラクチン↑顕著（無月経・乳汁分泌）。腎排泄のため腎機能低下例は減量。高用量でEPS"
   },
   {
@@ -1122,7 +1122,7 @@
     "duration_hours": "12〜24時間（貼付剤24時間）",
     "guideline_rank": "嚥下困難例にテープ剤が有用。EPSは中程度",
     "evidence": "Kane JM et al. J Clin Psychiatry 2015（PMID:25919841）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/25919841/",
+    "evidence_url": null,
     "caution": "食後投与で吸収↑（空腹時は効果減弱）。テープは皮膚刺激に注意。EPS中程度"
   },
   {
@@ -1141,7 +1141,7 @@
     "duration_hours": "8〜12時間（t1/2 約3h・1日3回）",
     "guideline_rank": "5-HT1A作動で不安・抑うつ合併例に。1日3回服用が欠点",
     "evidence": "Murasaki M et al. Psychiatry Clin Neurosci 2007（PMID:17316357）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/17316357/",
+    "evidence_url": null,
     "caution": "食後投与必須（空腹時は吸収不良）。1日3回服用で服薬アドヒアランス↓のリスク"
   },
   {
@@ -1159,8 +1159,8 @@
     "efficacy_star": 5,
     "duration_hours": "12〜16時間（t1/2 12h）",
     "guideline_rank": "2剤以上の抗精神病薬が無効な治療抵抗性統合失調症に限定使用",
-    "evidence": "Kane JM et al. Arch Gen Psychiatry 1988（PMID:2849054）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/2849054/",
+    "evidence": "Kane JM et al. Arch Gen Psychiatry 1988（PMID:3046553）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/3046553/",
     "caution": "無顆粒球症（1〜2%）のため定期血液検査必須（CPMS登録）。体重増加・糖尿病リスク高。過鎮静・流涎"
   },
   {
@@ -1178,8 +1178,8 @@
     "efficacy_star": 4,
     "duration_hours": "24時間（t1/2 18h・1日1回）",
     "guideline_rank": "代謝への影響が少ない。認知機能改善・食後投与が必須",
-    "evidence": "Loebel A et al. J Clin Psychiatry 2013（PMID:23218157）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/23218157/",
+    "evidence": "Loebel A et al. J Clin Psychiatry 2013（PMID:23541189）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/23541189/",
     "caution": "食後（350kcal以上）投与必須（空腹時は血中濃度1/2）。CYP3A4基質。体重・血糖への影響少ない"
   },
   {
@@ -1197,8 +1197,8 @@
     "efficacy_star": 5,
     "duration_hours": "24時間（活性代謝物t1/2 1〜3週）",
     "guideline_rank": "陰性症状が前景の統合失調症に最もエビデンスが強い",
-    "evidence": "Németh G et al. Lancet 2017（PMID:27839948）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/27839948/",
+    "evidence": "Németh G et al. Lancet 2017（PMID:28185672）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/28185672/",
     "caution": "活性代謝物の半減期が長く（1〜3週）、副作用発現が遅れることがある。アカシジアに注意"
   },
   {
@@ -1323,8 +1323,8 @@
     "onset_time": "数日〜1週間",
     "duration_hours": "12〜24時間（1日1回または月1回注射剤）",
     "guideline_rank": "飲酒の快感を遮断。「飲酒量低減」「断酒」どちらの目標にも使える",
-    "evidence": "Rösner S et al. Cochrane 2010（PMID:20238348）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/20238348/",
+    "evidence": "Rösner S et al. Cochrane 2010（PMID:21154349）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/21154349/",
     "caution": "服薬中にオピオイド系薬（鎮痛薬など）が無効になる。急性肝炎・重篤な肝障害は禁忌。悪心・頭痛（初期）。断酒してから服用開始"
   },
   {
@@ -1359,8 +1359,8 @@
     "onset_time": "断酒後5日以内に開始（離脱安定後）",
     "duration_hours": "24時間（1日3回食後）",
     "guideline_rank": "断酒後の離脱渇望を抑制。腎機能正常例の断酒維持に",
-    "evidence": "Rösner S et al. Cochrane 2010（PMID:20166068）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/20166068/",
+    "evidence": "Rösner S et al. Cochrane 2010（PMID:20824837）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/20824837/",
     "caution": "腎排泄のため腎機能低下例は禁忌（CCr<30）。下痢・悪心（初期）。ナルトレキソンとの併用で相乗効果の報告あり"
   },
   {
