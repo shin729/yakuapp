@@ -157,9 +157,9 @@
     "onset_time": "30〜60分",
     "duration_hours": "4〜6時間（速放）",
     "guideline_rank": "NSAIDs が使えない慢性疼痛・神経障害性疼痛に。依存性は純粋オピオイドより低い",
-    "evidence": "Cochrane Review（Duehmke et al. 2017 PMID:28438836）",
+    "evidence": "Cochrane Review（Duehmke et al. 2017 PMID:28616956）",
     "caution": "嘔気・めまい・便秘。依存性あり（弱い）。セロトニン症候群リスク。痙攣閾値低下",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/28438836/"
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/28616956/"
   },
   {
     "name": "コデイン",
@@ -175,9 +175,9 @@
     "onset_time": "30〜60分",
     "duration_hours": "4〜6時間",
     "guideline_rank": "軽〜中等度疼痛・鎮咳。弱い鎮痛が必要な咳嗽合併例に",
-    "evidence": "Cochrane Review（Derry et al. 2010 PMID:20091549）",
+    "evidence": "Cochrane Review（Derry et al. 2010 PMID:20393966）",
     "caution": "単剤での鎮痛効果は弱い。CYP2D6多型で効果差が大きい。依存性・便秘・嘔気",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/20091549/"
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/20393966/"
   },
   {
     "name": "トラマドール/アセトアミノフェン",
@@ -211,9 +211,9 @@
     "onset_time": "1〜2週間（効果発現）",
     "duration_hours": "8〜12時間（半減期6時間）",
     "guideline_rank": "糖尿病性神経障害・帯状疱疹後神経痛の第一選択α2δリガンド",
-    "evidence": "Cochrane Review（Moore et al. 2009 PMID:19370610）; Dworkin et al., Pain 2005",
+    "evidence": "Cochrane Review（Moore et al. 2009 PMID:30673120）; Dworkin et al., Pain 2005",
     "caution": "眩暈・眠気（高頻度）。体重増加・浮腫。依存性・乱用リスクあり。腎機能に応じた用量調節が必要",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/19370610/"
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/30673120/"
   },
   {
     "name": "ガバペンチン",
@@ -229,9 +229,9 @@
     "onset_time": "2〜3週間（効果発現）",
     "duration_hours": "6〜8時間（吸収が非線形）",
     "guideline_rank": "糖尿病性神経障害・帯状疱疹後神経痛に。プレガバリン先発薬",
-    "evidence": "Cochrane Review（Moore et al. 2014 PMID:25218855）",
+    "evidence": "Cochrane Review（Moore et al. 2014 PMID:28597471）",
     "caution": "眩暈・眠気・認知機能低下。用量依存的だが吸収が非線形（高用量で吸収率低下）。プレガバリンの前身",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/25218855/"
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/28597471/"
   },
   {
     "name": "アミトリプチリン（神経痛）",
@@ -283,9 +283,9 @@
     "onset_time": "30〜60分（経口）；15〜20分（皮下注射）",
     "duration_hours": "4〜6時間",
     "guideline_rank": "急性発作の標準トリプタン。皮下注射で最速発現",
-    "evidence": "Cochrane Review（Derry et al. 2012 PMID:22419300）",
+    "evidence": "Cochrane Review（Derry et al. 2012 PMID:22336849）",
     "caution": "虚血性心疾患・脳血管障害に禁忌。嘔気・胸部絞扼感。トリプタン系は月10回以上の使用で薬物乱用頭痛に注意",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/22419300/"
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/22336849/"
   },
   {
     "name": "リザトリプタン",
@@ -301,9 +301,9 @@
     "onset_time": "15〜30分（OD錠で速い）",
     "duration_hours": "4〜6時間",
     "guideline_rank": "急性発作に速やかな効果。冠動脈疾患がなければ第一選択",
-    "evidence": "Cochrane Review（Oldman et al. 2002 PMID:12076450）",
+    "evidence": "Cochrane Review（Oldman et al. 2002 PMID:25408622）",
     "caution": "虚血性心疾患・脳血管障害に禁忌。プロプラノロール服用者は用量減量。口腔内崩壊錠（OD錠）で水なし服用可",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/12076450/"
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/25408622/"
   },
   {
     "name": "ゾルミトリプタン",
@@ -319,9 +319,9 @@
     "onset_time": "30〜60分",
     "duration_hours": "4〜6時間",
     "guideline_rank": "急性発作に。点鼻薬もあり嘔気が強い例に使いやすい",
-    "evidence": "Cochrane Review（Smith et al. 2012 PMID:22419296）",
+    "evidence": "Cochrane Review（Smith et al. 2012 PMID:24848613）",
     "caution": "虚血性心疾患・脳血管障害に禁忌。鼻スプレー製剤もあり嘔気に効果的",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/22419296/"
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/24848613/"
   },
   {
     "name": "ラスミジタン",
@@ -337,9 +337,9 @@
     "onset_time": "30〜60分",
     "duration_hours": "4〜6時間",
     "guideline_rank": "心血管リスクが高くトリプタンが禁忌の急性発作に",
-    "evidence": "SAMURAI・SPARTAN試験（NEJM 2019 PMID:31461196）",
+    "evidence": "SAMURAI・SPARTAN試験（NEJM 2019 PMID:30446595）",
     "caution": "眩暈・眠気（CNS副作用が多め）。心血管禁忌なし。服用後8時間は運転不可",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/31461196/"
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/30446595/"
   },
   {
     "name": "エレヌマブ",
@@ -355,9 +355,9 @@
     "onset_time": "1ヶ月以内に効果発現",
     "duration_hours": "月1回皮下注射（半減期28日）",
     "guideline_rank": "月4回以上の発作がある反復性・慢性片頭痛の予防に",
-    "evidence": "ARISE試験（Lancet Neurology 2017 PMID:28927914）; STRIVE試験",
+    "evidence": "ARISE試験（Lancet Neurology 2017 PMID:29171821）; STRIVE試験",
     "caution": "便秘・注射部位反応。妊婦への安全性は未確立。高価格。他予防薬不応例に特に有効",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/28927914/"
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/29171821/"
   },
   {
     "name": "呉茱萸湯",
@@ -643,8 +643,8 @@
     "onset_time": "1〜2週間で効果発現",
     "duration_hours": "12時間（t1/2 約6h・1日2回）",
     "guideline_rank": "末梢神経障害性疼痛に。プレガバリンより傾眠・めまいが少ない傾向",
-    "evidence": "Baba M et al. J Diabetes Investig 2019（PMID:30900390）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/30900390/",
+    "evidence": "Baba M et al. J Diabetes Investig 2019（PMID:30672128）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/30672128/",
     "caution": "傾眠・めまい（プレガバリンより少ない傾向）。腎機能に応じて減量。体重増加あり"
   },
   {
@@ -679,8 +679,8 @@
     "onset_time": "投与1カ月以内に効果発現",
     "duration_hours": "720時間（月1回）または2160時間（四半期1回）",
     "guideline_rank": "月4回以上の片頭痛予防。月1回または四半期1回から選択可",
-    "evidence": "Silberstein SD et al. NEJM 2017（HALO試験 PMID:29171821）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/29171821/",
+    "evidence": "Silberstein SD et al. NEJM 2017（HALO試験 PMID:29800211）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/29800211/",
     "caution": "注射部位反応。四半期1回投与（675mg）は服薬アドヒアランス向上に有利。他予防薬無効例に適応"
   },
   {
