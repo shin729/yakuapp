@@ -1104,7 +1104,156 @@ thead .cmp-label-col { background: #f5f3ff !important; }
 
 /* 比較バー表示中はメインに下余白を追加（カードが隠れないように） */
 body.compare-bar-open .main {
-  padding-bottom: calc(var(--disclaimer-height) + 68px);
+  padding-bottom: calc(var(--disclaimer-height) + 80px);
+}
+@media (max-width: 639px) {
+  body.compare-bar-open .main {
+    /* モバイルはチップが折り返すため余白を多めに確保 */
+    padding-bottom: calc(var(--disclaimer-height) + 130px);
+  }
+}
+
+/* ===== モバイル比較：縦スクロール グリッドレイアウト ===== */
+.cmp-grid-wrap {
+  overflow-y: auto;
+  flex: 1;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cmpg-grid {
+  display: grid;
+  width: 100%;
+}
+
+/* 項目ラベル列ヘッダー */
+.cmpg-head-label {
+  background: #f5f3ff;
+  padding: 6px 4px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--gray-500);
+  text-align: center;
+  border-bottom: 2px solid #c4b5fd;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 薬名ヘッダー */
+.cmpg-drug-head {
+  background: linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%);
+  color: white;
+  padding: 8px 5px;
+  text-align: center;
+  border-bottom: 2px solid #c4b5fd;
+  border-left: 1px solid rgba(255,255,255,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.cmpg-drug-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+  line-height: 1.3;
+}
+
+.cmpg-drug-brand {
+  font-size: 0.58rem;
+  opacity: 0.8;
+  margin-bottom: 3px;
+}
+
+.cmpg-badge {
+  font-size: 0.55rem !important;
+  padding: 1px 4px !important;
+  white-space: normal;
+  word-break: keep-all;
+}
+
+/* 行ラベル */
+.cmpg-label {
+  font-size: 0.58rem;
+  font-weight: 600;
+  color: var(--gray-500);
+  text-align: center;
+  padding: 6px 3px;
+  background: white;
+  border-top: 1px solid var(--gray-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.3;
+}
+
+.cmpg-label-warn {
+  color: #c2410c;
+}
+
+/* データセル */
+.cmpg-val {
+  padding: 5px 5px;
+  font-size: 0.72rem;
+  color: var(--gray-700);
+  border-top: 1px solid var(--gray-100);
+  border-left: 1px solid var(--gray-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.4;
+  word-break: break-all;
+}
+
+.cmpg-alt { background: var(--gray-50); }
+
+/* 最良値ハイライト */
+.cmpg-best {
+  background: #f0fdf4 !important;
+  position: relative;
+}
+.cmpg-best::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: #16a34a;
+}
+
+/* セルタイプ別スタイル */
+.cmpg-val.cmpg-type-caution {
+  background: #fff7ed;
+  color: #7c2d12;
+  font-size: 0.68rem;
+  justify-content: flex-start;
+  text-align: left;
+}
+.cmpg-val.cmpg-type-caution.has-contraindication {
+  background: #fef2f2 !important;
+}
+.cmpg-val.cmpg-type-usecase {
+  background: #eff6ff;
+  color: #1e40af;
+  font-size: 0.68rem;
+  justify-content: flex-start;
+  text-align: left;
+}
+.cmpg-val.cmpg-type-mech {
+  background: #f8fafc;
+  font-size: 0.68rem;
+  justify-content: flex-start;
+  text-align: left;
+}
+.cmpg-val.cmpg-type-evidence {
+  font-size: 0.63rem;
+  color: var(--gray-500);
+  font-style: italic;
+  justify-content: flex-start;
+  text-align: left;
 }
 
 /* 比較モーダル スクロールヒント（モバイルのみ表示） */

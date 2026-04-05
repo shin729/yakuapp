@@ -982,6 +982,21 @@ function showComparison() {
     </tr>`;
   }).join('');
 
+  const contentSection = isMobile()
+    ? buildMobileCmpGrid(drugs, rows, bestStar, bestNnt)
+    : `<div class="cmp-scroll-hint">← 横にスクロールして比較 →</div>
+       <div class="cmp-table-wrap">
+         <div class="table-wrapper">
+           <table class="compare-table">
+             <thead><tr>
+               <th class="sticky-col label-col cmp-label-col" style="background:${headBg}">項目</th>
+               ${headers}
+             </tr></thead>
+             <tbody>${bodyRows}</tbody>
+           </table>
+         </div>
+       </div>`;
+
   const html = `
   <div class="cmp-overlay" id="cmp-overlay">
     <div class="cmp-modal">
@@ -989,18 +1004,7 @@ function showComparison() {
         <span class="cmp-modal-title">⚖ 薬剤比較（${drugs.length}剤）</span>
         <button class="cmp-close-btn" id="cmp-close-btn">✕ 閉じる</button>
       </div>
-      <div class="cmp-scroll-hint">← 横にスクロールして比較 →</div>
-      <div class="cmp-table-wrap">
-        <div class="table-wrapper">
-          <table class="compare-table">
-            <thead><tr>
-              <th class="sticky-col label-col cmp-label-col" style="background:${headBg}">項目</th>
-              ${headers}
-            </tr></thead>
-            <tbody>${bodyRows}</tbody>
-          </table>
-        </div>
-      </div>
+      ${contentSection}
       <div class="cmp-legend"><span class="cmp-best-dot"></span> その比較内での最良値</div>
     </div>
   </div>`;
@@ -1012,15 +1016,66 @@ function showComparison() {
   });
 }
 
+// モバイル用：縦スクロールのCSSグリッド比較レイアウト
+function buildMobileCmpGrid(drugs, rows, bestStar, bestNnt) {
+  const n = drugs.length;
+  const cols = `68px ${'1fr '.repeat(n).trim()}`;
+
+  const drugHeaders = drugs.map(d => {
+    const badge = getClassBadge(d.class || '');
+    return `<div class="cmpg-drug-head">
+      <div class="cmpg-drug-name">${esc(d.name)}</div>
+      <div class="cmpg-drug-brand">${esc(d.brand || '')}</div>
+      <span class="class-badge ${badge.css} cmpg-badge">${esc(d.class || '')}</span>
+    </div>`;
+  }).join('');
+
+  const rowsHTML = rows.map((def, i) => {
+    const alt = i % 2 === 1;
+    const isWarn = def.label.startsWith('⚠');
+    const labelCell = `<div class="cmpg-label${isWarn ? ' cmpg-label-warn' : ''}">${esc(def.label)}</div>`;
+    const valCells = drugs.map(d => {
+      const v = d[def.field];
+      const isBest =
+        (def.type === 'stars' && (Number(v) || 0) === bestStar && bestStar > 0) ||
+        (def.type === 'nnt'   && typeof v === 'number' && v === bestNnt && bestNnt < Infinity);
+      const inner = renderCell(d, def, '#1d4ed8');
+      const hasContra = inner.includes('has-contraindication');
+      const content = inner.replace(/^<td[^>]*>/, '').replace(/<\/td>$/, '');
+      const cls = ['cmpg-val',
+        `cmpg-type-${def.type}`,
+        isBest ? 'cmpg-best' : '',
+        alt ? 'cmpg-alt' : '',
+        hasContra ? 'has-contraindication' : ''
+      ].filter(Boolean).join(' ');
+      return `<div class="${cls}">${content}</div>`;
+    }).join('');
+    return labelCell + valCells;
+  }).join('');
+
+  return `<div class="cmp-grid-wrap">
+    <div class="cmpg-grid" style="grid-template-columns:${cols}">
+      <div class="cmpg-head-label">項目</div>
+      ${drugHeaders}
+      ${rowsHTML}
+    </div>
+  </div>`;
+}
+
 function closeComparison() {
   document.getElementById('cmp-overlay')?.remove();
 }
 
 // ===== イベント =====
 let _resizeTimer;
+let _prevWidth = window.innerWidth;
 window.addEventListener('resize', () => {
   clearTimeout(_resizeTimer);
-  _resizeTimer = setTimeout(render, 150);
+  _resizeTimer = setTimeout(() => {
+    // モバイルのアドレスバー開閉（高さのみ変化）では再レンダリングしない
+    if (window.innerWidth === _prevWidth) return;
+    _prevWidth = window.innerWidth;
+    render();
 });
 
 document.querySelectorAll('.domain-btn').forEach(btn => {
