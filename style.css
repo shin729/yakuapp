@@ -352,6 +352,22 @@ thead .sticky-col { z-index: 3; }
 .class-badge.xo-inhibitor  { background: #422006; color: #ffedd5; }
 .class-badge.uricosuric    { background: #713f12; color: #fef3c7; }
 .class-badge.colchicine-badge { background: #1c1917; color: #fef3c7; }
+/* ステロイド内服 */
+.class-badge.steroid-oral       { background: #c2410c; color: #fff7ed; }
+.class-badge.steroid-oral-long  { background: #9a3412; color: #ffedd5; }
+.class-badge.steroid-oral-short { background: #ea580c; color: #fff7ed; }
+/* ステロイド塗布薬（強度順）*/
+.class-badge.steroid-top-1 { background: #7f1d1d; color: #fef2f2; }
+.class-badge.steroid-top-2 { background: #991b1b; color: #fee2e2; }
+.class-badge.steroid-top-3 { background: #b45309; color: #fef3c7; }
+.class-badge.steroid-top-4 { background: #d97706; color: #fffbeb; }
+/* ステロイド点鼻薬 */
+.class-badge.steroid-nasal   { background: #0369a1; color: #e0f2fe; }
+.class-badge.steroid-nasal-1 { background: #0284c7; color: #f0f9ff; }
+/* ステロイド点眼薬 */
+.class-badge.steroid-eye-mild   { background: #059669; color: #ecfdf5; }
+.class-badge.steroid-eye-strong { background: #065f46; color: #d1fae5; }
+.class-badge.steroid-top-5 { background: #f59e0b; color: #1c1917; }
 
 /* ===== Table body ===== */
 .compare-table tbody td {

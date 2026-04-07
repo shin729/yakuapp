@@ -58,6 +58,21 @@ const DOMAINS = {
     rowAltSticky: '#ecfbf1',
     accentColor:  '#16a34a',
   },
+  steroid: {
+    file: './data/steroid.json',
+    categories: [
+      { key: '内服',   label: '💊 内服ステロイド' },
+      { key: '塗布薬', label: '🧴 外用ステロイド（塗布薬）' },
+      { key: '点鼻薬', label: '👃 点鼻ステロイド' },
+      { key: '点眼薬', label: '👁 点眼ステロイド' },
+    ],
+    defaultCat: '内服',
+    headBg:       'linear-gradient(180deg, #fff7ed 0%, #ffedd5 100%)',
+    stickyBg:     '#fff7ed',
+    rowAltBg:     '#fffbf7',
+    rowAltSticky: '#fff3e8',
+    accentColor:  '#c2410c',
+  },
 };
 
 // カテゴリ → ドメインのマップ（全体検索で使用）
@@ -636,6 +651,62 @@ const PARKINSON_ROWS = [
   { label: '⚠ 注意事項',      field: 'caution',        type: 'caution'},
 ];
 
+// ステロイド内服
+const STEROID_ORAL_ROWS = [
+  { label: '主な作用',             field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',             field: 'mechanism',      type: 'mech'   },
+  { label: 'プレドニゾロン換算効力', field: 'placebo_onset',  type: 'accent' },
+  { label: '半減期・作用持続時間', field: 'placebo_sleep',  type: 'accent' },
+  { label: '効果スコア',           field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',             field: 'onset_time',     type: 'val'    },
+  { label: '投与頻度',             field: 'duration_hours', type: 'val'    },
+  { label: '使い分けポイント',     field: 'guideline_rank', type: 'usecase'},
+  { label: 'エビデンス出典',       field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
+];
+
+// ステロイド塗布薬
+const STEROID_TOPICAL_ROWS = [
+  { label: '主な作用',         field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',         field: 'mechanism',      type: 'mech'   },
+  { label: '強度分類（7段階）', field: 'placebo_onset',  type: 'accent' },
+  { label: '剤形',             field: 'placebo_sleep',  type: 'accent' },
+  { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',         field: 'onset_time',     type: 'val'    },
+  { label: '投与頻度',         field: 'duration_hours', type: 'val'    },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
+  { label: 'エビデンス出典',   field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',      field: 'caution',        type: 'caution'},
+];
+
+// ステロイド点鼻薬
+const STEROID_NASAL_ROWS = [
+  { label: '主な作用',                     field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',                     field: 'mechanism',      type: 'mech'   },
+  { label: '鼻症状スコア改善',             field: 'placebo_onset',  type: 'accent' },
+  { label: '全身吸収（バイオアベイラビリティ）', field: 'placebo_sleep', type: 'accent' },
+  { label: '効果スコア',                   field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',                     field: 'onset_time',     type: 'val'    },
+  { label: '投与頻度',                     field: 'duration_hours', type: 'val'    },
+  { label: '使い分けポイント',             field: 'guideline_rank', type: 'usecase'},
+  { label: 'エビデンス出典',               field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',                  field: 'caution',        type: 'caution'},
+];
+
+// ステロイド点眼薬
+const STEROID_EYE_ROWS = [
+  { label: '主な作用',         field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',         field: 'mechanism',      type: 'mech'   },
+  { label: '抗炎症効果レベル', field: 'placebo_onset',  type: 'accent' },
+  { label: '眼圧上昇リスク',   field: 'placebo_sleep',  type: 'accent' },
+  { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',         field: 'onset_time',     type: 'val'    },
+  { label: '投与頻度',         field: 'duration_hours', type: 'val'    },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
+  { label: 'エビデンス出典',   field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',      field: 'caution',        type: 'caution'},
+];
+
 function getRowDefs(category) {
   if (ROW_DEFS[category]) return ROW_DEFS[category];
   if (['抗精神病薬（定型）', '抗精神病薬（非定型）'].includes(category))
@@ -655,6 +726,10 @@ function getRowDefs(category) {
   if (category === '片頭痛')             return MIGRAINE_ROWS;
   if (category === '抗てんかん薬')       return EPILEPSY_ROWS;
   if (category === 'パーキンソン病治療薬') return PARKINSON_ROWS;
+  if (category === '内服')   return STEROID_ORAL_ROWS;
+  if (category === '塗布薬') return STEROID_TOPICAL_ROWS;
+  if (category === '点鼻薬') return STEROID_NASAL_ROWS;
+  if (category === '点眼薬') return STEROID_EYE_ROWS;
   return PAIN_ROWS;
 }
 
@@ -843,6 +918,23 @@ function getClassBadge(cls) {
     'プリン型キサンチンオキシダーゼ阻害薬':   { css: 'xo-inhibitor' },
     '尿酸排泄促進薬':                 { css: 'uricosuric' },
     '抗炎症薬（チュブリン重合阻害）': { css: 'colchicine-badge' },
+    // ステロイド内服
+    'グルココルチコイド（中間型）': { css: 'steroid-oral' },
+    'グルココルチコイド（長時間型）': { css: 'steroid-oral-long' },
+    'グルココルチコイド（短時間型）': { css: 'steroid-oral-short' },
+    // ステロイド塗布薬
+    '外用ステロイド I群（最強）':   { css: 'steroid-top-1' },
+    '外用ステロイド II群（強力）':  { css: 'steroid-top-2' },
+    '外用ステロイド III群（強）':   { css: 'steroid-top-3' },
+    '外用ステロイド IV群（中等度）':{ css: 'steroid-top-4' },
+    // ステロイド点鼻薬
+    '点鼻ステロイド（第2世代）': { css: 'steroid-nasal' },
+    '点鼻ステロイド（第1世代）': { css: 'steroid-nasal-1' },
+    // ステロイド点眼薬
+    '眼科用ステロイド（弱〜中）': { css: 'steroid-eye-mild' },
+    '眼科用ステロイド（強力）':   { css: 'steroid-eye-strong' },
+    // ステロイド塗布薬（V群追加）
+    '外用ステロイド V群（弱）': { css: 'steroid-top-5' },
   };
   return map[cls] || { css: 'benzo' };
 }
