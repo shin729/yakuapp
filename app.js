@@ -65,6 +65,7 @@ const DOMAINS = {
       { key: '塗布薬', label: '🧴 外用ステロイド（塗布薬）' },
       { key: '点鼻薬', label: '👃 点鼻ステロイド' },
       { key: '点眼薬', label: '👁 点眼ステロイド' },
+      { key: '貼付剤', label: '🩹 外用ステロイド（貼付剤）' },
     ],
     defaultCat: '内服',
     headBg:       'linear-gradient(180deg, #fff7ed 0%, #ffedd5 100%)',
@@ -655,7 +656,7 @@ const PARKINSON_ROWS = [
 const STEROID_ORAL_ROWS = [
   { label: '主な作用',             field: 'action_type',    type: 'mech'   },
   { label: '作用機序',             field: 'mechanism',      type: 'mech'   },
-  { label: 'プレドニゾロン換算効力', field: 'placebo_onset',  type: 'accent' },
+  { label: 'プレドニゾロン換算力価', field: 'placebo_onset',  type: 'accent' },
   { label: '半減期・作用持続時間', field: 'placebo_sleep',  type: 'accent' },
   { label: '効果スコア',           field: 'efficacy_star',  type: 'stars'  },
   { label: '効果発現',             field: 'onset_time',     type: 'val'    },
@@ -707,6 +708,19 @@ const STEROID_EYE_ROWS = [
   { label: '⚠ 注意事項',      field: 'caution',        type: 'caution'},
 ];
 
+// ステロイド貼付剤
+const STEROID_PATCH_ROWS = [
+  { label: '主な作用',             field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',             field: 'mechanism',      type: 'mech'   },
+  { label: '強度分類（7段階）',   field: 'placebo_onset',  type: 'accent' },
+  { label: '持続時間・交換頻度', field: 'placebo_sleep',  type: 'accent' },
+  { label: '効果スコア',           field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',             field: 'onset_time',     type: 'val'    },
+  { label: '使い分けポイント',     field: 'guideline_rank', type: 'usecase'},
+  { label: 'エビデンス出典',       field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
+];
+
 function getRowDefs(category) {
   if (ROW_DEFS[category]) return ROW_DEFS[category];
   if (['抗精神病薬（定型）', '抗精神病薬（非定型）'].includes(category))
@@ -730,6 +744,7 @@ function getRowDefs(category) {
   if (category === '塗布薬') return STEROID_TOPICAL_ROWS;
   if (category === '点鼻薬') return STEROID_NASAL_ROWS;
   if (category === '点眼薬') return STEROID_EYE_ROWS;
+  if (category === '貼付剤') return STEROID_PATCH_ROWS;
   return PAIN_ROWS;
 }
 
@@ -935,6 +950,9 @@ function getClassBadge(cls) {
     '眼科用ステロイド（強力）':   { css: 'steroid-eye-strong' },
     // ステロイド塗布薬（V群追加）
     '外用ステロイド V群（弱）': { css: 'steroid-top-5' },
+    // ステロイド貼付剤
+    '外用ステロイド II群（強力）':  { css: 'steroid-top-2' },
+    '外用ステロイド III群（強力）': { css: 'steroid-top-3' },
   };
   return map[cls] || { css: 'benzo' };
 }
