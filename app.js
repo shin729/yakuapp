@@ -74,6 +74,51 @@ const DOMAINS = {
     rowAltSticky: '#fff3e8',
     accentColor:  '#c2410c',
   },
+  arrhythmia: {
+    file: './data/arrhythmia.json',
+    categories: [
+      { key: '心房細動（レートコントロール）', label: '💓 AF レートコントロール' },
+      { key: '心房細動（リズムコントロール）', label: '🎵 AF リズムコントロール' },
+      { key: '心室性不整脈',                   label: '⚡ 心室性不整脈（VT/VF）' },
+      { key: '上室性頻脈（SVT）',              label: '🔺 上室性頻脈（SVT）' },
+      { key: 'VW_Ia',    label: '📘 Class Ia（Na遮断・活動電位延長）' },
+      { key: 'VW_Ib',    label: '📗 Class Ib（Na遮断・活動電位短縮）' },
+      { key: 'VW_Ic',    label: '📙 Class Ic（Na遮断・伝導遅延）' },
+      { key: 'VW_II',    label: '📕 Class II（β遮断）' },
+      { key: 'VW_III',   label: '📓 Class III（K遮断・活動電位延長）' },
+      { key: 'VW_IV',    label: '📔 Class IV（Ca遮断）' },
+      { key: 'VW_other', label: '📒 その他（ジゴキシン・ATP）' },
+    ],
+    defaultCat: '心房細動（レートコントロール）',
+    headBg:       'linear-gradient(180deg, #fff1f2 0%, #ffe4e6 100%)',
+    stickyBg:     '#fff1f2',
+    rowAltBg:     '#fffbfb',
+    rowAltSticky: '#ffeef0',
+    accentColor:  '#be123c',
+  },
+};
+
+// ===== Vaughan Williams分類マップ（薬剤名 → VWクラスキー） =====
+const VW_CLASS_MAP = {
+  'シベンゾリン':              'VW_Ia',
+  'リドカイン（静注）':        'VW_Ib',
+  'メキシレチン':              'VW_Ib',
+  'フレカイニド':              'VW_Ic',
+  'ピルジカイニド':            'VW_Ic',
+  'ビソプロロール':            'VW_II',
+  'メトプロロール':            'VW_II',
+  'プロプラノロール':          'VW_II',
+  'アミオダロン':              'VW_III',
+  'アミオダロン（VT/VF）':     'VW_III',
+  'ソタロール':                'VW_III',
+  'ニフェカラント':            'VW_III',
+  'ジルチアゼム':              'VW_IV',
+  'ジルチアゼム静注（SVT）':   'VW_IV',
+  'ベラパミル':                'VW_IV',
+  'ベラパミル静注（SVT）':     'VW_IV',
+  'ベプリジル':                'VW_IV',
+  'ジゴキシン':                'VW_other',
+  'ATP（アデノシン三リン酸）': 'VW_other',
 };
 
 // カテゴリ → ドメインのマップ（全体検索で使用）
@@ -203,7 +248,11 @@ function isMobile() { return window.innerWidth < 640; }
 
 // ===== 通常ビュー（ドメイン・カテゴリ別） =====
 function renderDomainView() {
-  const drugs  = (dataCache[currentDomain] || []).filter(d => d.category === currentCategory);
+  const drugs  = (dataCache[currentDomain] || []).filter(d =>
+    currentCategory.startsWith('VW_')
+      ? VW_CLASS_MAP[d.name] === currentCategory
+      : d.category === currentCategory
+  );
   const sorted = sortDrugs(drugs);
   const cfg    = DOMAINS[currentDomain];
 
