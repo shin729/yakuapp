@@ -74,6 +74,25 @@ const DOMAINS = {
     rowAltSticky: '#fff3e8',
     accentColor:  '#c2410c',
   },
+  hf: {
+    file: './data/hf.json',
+    categories: [
+      { key: 'HFrEF（予後改善薬）', label: '🫀 HFrEF 予後改善薬（EF<40%）' },
+      { key: 'HFpEF治療薬',         label: '💙 HFpEF 治療薬（EF≥40%）'     },
+      { key: '症状改善・体液管理',  label: '💧 症状改善・体液管理'          },
+      { key: 'MX_RAAS',     label: '🔗 RAAS遮断薬（ACE/ARB/ARNI/MRA）' },
+      { key: 'MX_beta',     label: '🛡 β遮断薬'                         },
+      { key: 'MX_SGLT2',   label: '⚡ SGLT2阻害薬'                     },
+      { key: 'MX_diuretic', label: '💧 利尿薬'                          },
+      { key: 'MX_other',    label: '📋 その他（ジゴキシン・イバブラジン）'},
+    ],
+    defaultCat: 'HFrEF（予後改善薬）',
+    headBg:       'linear-gradient(180deg, #f5f3ff 0%, #ede9fe 100%)',
+    stickyBg:     '#f5f3ff',
+    rowAltBg:     '#faf9ff',
+    rowAltSticky: '#efecfd',
+    accentColor:  '#7c3aed',
+  },
   arrhythmia: {
     file: './data/arrhythmia.json',
     categories: [
@@ -96,6 +115,27 @@ const DOMAINS = {
     rowAltSticky: '#ffeef0',
     accentColor:  '#be123c',
   },
+};
+
+// ===== 心不全作用機序分類マップ（薬剤名 → MXクラスキー） =====
+const HF_CLASS_MAP = {
+  'エナラプリル':                  'MX_RAAS',
+  'カンデサルタン':                'MX_RAAS',
+  'サクビトリル/バルサルタン':     'MX_RAAS',
+  'スピロノラクトン':              'MX_RAAS',
+  'エプレレノン':                  'MX_RAAS',
+  'スピロノラクトン（HFpEF）':     'MX_RAAS',
+  'カルベジロール':                'MX_beta',
+  'ビソプロロール（心不全）':      'MX_beta',
+  'ダパグリフロジン':              'MX_SGLT2',
+  'エンパグリフロジン':            'MX_SGLT2',
+  'ダパグリフロジン（HFpEF）':     'MX_SGLT2',
+  'エンパグリフロジン（HFpEF）':   'MX_SGLT2',
+  'フロセミド':                    'MX_diuretic',
+  'アゾセミド':                    'MX_diuretic',
+  'トルバプタン':                  'MX_diuretic',
+  'ジゴキシン（心不全）':          'MX_other',
+  'イバブラジン':                  'MX_other',
 };
 
 // ===== Vaughan Williams分類マップ（薬剤名 → VWクラスキー） =====
@@ -248,11 +288,11 @@ function isMobile() { return window.innerWidth < 640; }
 
 // ===== 通常ビュー（ドメイン・カテゴリ別） =====
 function renderDomainView() {
-  const drugs  = (dataCache[currentDomain] || []).filter(d =>
-    currentCategory.startsWith('VW_')
-      ? VW_CLASS_MAP[d.name] === currentCategory
-      : d.category === currentCategory
-  );
+  const drugs  = (dataCache[currentDomain] || []).filter(d => {
+    if (currentCategory.startsWith('VW_')) return VW_CLASS_MAP[d.name] === currentCategory;
+    if (currentCategory.startsWith('MX_')) return HF_CLASS_MAP[d.name] === currentCategory;
+    return d.category === currentCategory;
+  });
   const sorted = sortDrugs(drugs);
   const cfg    = DOMAINS[currentDomain];
 
@@ -757,6 +797,22 @@ const STEROID_EYE_ROWS = [
   { label: '⚠ 注意事項',      field: 'caution',        type: 'caution'},
 ];
 
+// 心不全（HFrEF・HFpEF・症状改善共通）
+const HF_ROWS = [
+  { label: '主な作用',           field: 'action_type',        type: 'mech'    },
+  { label: '作用機序',           field: 'mechanism',          type: 'mech'    },
+  { label: '主要アウトカム改善', field: 'placebo_onset',      type: 'accent'  },
+  { label: '心不全入院・症状改善',field: 'placebo_sleep',     type: 'accent'  },
+  { label: 'NNT',                field: 'NNT',                type: 'nnt'     },
+  { label: '効果スコア',         field: 'efficacy_star',      type: 'stars'   },
+  { label: '予後改善エビデンス', field: 'mortality_benefit',  type: 'benefit' },
+  { label: '開始用量',           field: 'start_dose',         type: 'val'     },
+  { label: '目標用量',           field: 'target_dose',        type: 'val'     },
+  { label: '使い分けポイント',   field: 'guideline_rank',     type: 'usecase' },
+  { label: 'エビデンス出典',     field: 'evidence',           type: 'evidence'},
+  { label: '⚠ 注意事項',        field: 'caution',            type: 'caution' },
+];
+
 // ステロイド貼付剤
 const STEROID_PATCH_ROWS = [
   { label: '主な作用',             field: 'action_type',    type: 'mech'   },
@@ -794,6 +850,9 @@ function getRowDefs(category) {
   if (category === '点鼻薬') return STEROID_NASAL_ROWS;
   if (category === '点眼薬') return STEROID_EYE_ROWS;
   if (category === '貼付剤') return STEROID_PATCH_ROWS;
+  if (['HFrEF（予後改善薬）', 'HFpEF治療薬', '症状改善・体液管理',
+       'MX_RAAS', 'MX_beta', 'MX_SGLT2', 'MX_diuretic', 'MX_other'].includes(category))
+    return HF_ROWS;
   return PAIN_ROWS;
 }
 
@@ -818,6 +877,12 @@ function renderCell(d, def, accentColor) {
     case 'evidence': return evidenceCell(d);
     case 'caution':  return cautionCell(s);
     case 'mech':     return `<td class="mech-cell">${esc(s)}</td>`;
+    case 'benefit': {
+      const yes   = s.includes('あり');
+      const color = yes ? '#15803d' : '#6b7280';
+      const icon  = yes ? '✓ ' : '✕ ';
+      return `<td class="val-cell" style="color:${color};font-weight:600">${esc(icon + s)}</td>`;
+    }
     default:         return `<td class="val-cell">${esc(s)}</td>`;
   }
 }
