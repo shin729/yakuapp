@@ -86,6 +86,11 @@ const DOMAINS = {
       { key: 'MX_diuretic', label: '💧 利尿薬'                          },
       { key: 'MX_other',    label: '📋 その他（ジゴキシン・イバブラジン）'},
     ],
+    categoryGroups: [
+      { key: 'disease',   label: '疾患別',    cats: ['HFrEF（予後改善薬）', 'HFpEF治療薬', '症状改善・体液管理'] },
+      { key: 'mechanism', label: '作用機序別', cats: ['MX_RAAS', 'MX_beta', 'MX_SGLT2', 'MX_diuretic', 'MX_other'] },
+    ],
+    defaultGroup: 'disease',
     defaultCat: 'HFrEF（予後改善薬）',
     headBg:       'linear-gradient(180deg, #f5f3ff 0%, #ede9fe 100%)',
     stickyBg:     '#f5f3ff',
@@ -108,6 +113,11 @@ const DOMAINS = {
       { key: 'VW_IV',    label: '📔 Class IV（Ca遮断）' },
       { key: 'VW_other', label: '📒 その他（ジゴキシン・ATP）' },
     ],
+    categoryGroups: [
+      { key: 'disease',   label: '疾患別',    cats: ['心房細動（レートコントロール）', '心房細動（リズムコントロール）', '心室性不整脈', '上室性頻脈（SVT）'] },
+      { key: 'mechanism', label: '作用機序別', cats: ['VW_Ia', 'VW_Ib', 'VW_Ic', 'VW_II', 'VW_III', 'VW_IV', 'VW_other'] },
+    ],
+    defaultGroup: 'disease',
     defaultCat: '心房細動（レートコントロール）',
     headBg:       'linear-gradient(180deg, #fff1f2 0%, #ffe4e6 100%)',
     stickyBg:     '#fff1f2',
@@ -168,8 +178,9 @@ Object.entries(DOMAINS).forEach(([dk, cfg]) => {
 });
 
 let dataCache = {};
-let currentDomain   = 'sleep';
-let currentCategory = '睡眠薬';
+let currentDomain         = 'sleep';
+let currentCategory       = '睡眠薬';
+let currentCategoryGroup  = null;   // 疾患別 / 作用機序別（categoryGroups を持つドメイン専用）
 let searchQuery = '';
 let sortKey     = 'default';
 
@@ -217,9 +228,35 @@ function renderDomainTabs() {
 
 // ===== カテゴリタブ =====
 function renderCatTabs() {
-  const cfg = DOMAINS[currentDomain];
-  const tabsEl = document.getElementById('cat-tabs');
-  tabsEl.innerHTML = cfg.categories.map(c => `
+  const cfg      = DOMAINS[currentDomain];
+  const groupEl  = document.getElementById('cat-group-area');
+  const tabsEl   = document.getElementById('cat-tabs');
+
+  // ── グループトグル（疾患別 / 作用機序別）──
+  if (cfg.categoryGroups) {
+    if (!currentCategoryGroup) currentCategoryGroup = cfg.defaultGroup || cfg.categoryGroups[0].key;
+    groupEl.innerHTML = `
+      <div class="cat-group-toggle">
+        ${cfg.categoryGroups.map(g => `
+          <button class="cat-group-btn${g.key === currentCategoryGroup ? ' active' : ''}"
+                  data-group="${g.key}">${g.label}</button>`).join('')}
+      </div>`;
+    groupEl.querySelectorAll('.cat-group-btn').forEach(btn => {
+      btn.addEventListener('click', () => switchCategoryGroup(btn.dataset.group));
+    });
+  } else {
+    currentCategoryGroup = null;
+    groupEl.innerHTML = '';
+  }
+
+  // ── 表示するカテゴリを絞り込み ──
+  let catsToShow = cfg.categories;
+  if (cfg.categoryGroups && currentCategoryGroup) {
+    const grp = cfg.categoryGroups.find(g => g.key === currentCategoryGroup);
+    if (grp) catsToShow = cfg.categories.filter(c => grp.cats.includes(c.key));
+  }
+
+  tabsEl.innerHTML = catsToShow.map(c => `
     <button class="tab-btn${c.key === currentCategory ? ' active' : ''}" data-cat="${c.key}" role="tab">
       ${c.label}
     </button>`).join('');
@@ -228,10 +265,21 @@ function renderCatTabs() {
   });
 }
 
+// ===== グループ切り替え（疾患別 ↔ 作用機序別） =====
+function switchCategoryGroup(group) {
+  currentCategoryGroup = group;
+  const cfg = DOMAINS[currentDomain];
+  const grp = cfg.categoryGroups.find(g => g.key === group);
+  if (grp && grp.cats.length > 0) currentCategory = grp.cats[0];
+  renderCatTabs();
+  render();
+}
+
 // ===== ドメイン切り替え =====
 function switchDomain(domain) {
-  currentDomain   = domain;
-  currentCategory = DOMAINS[domain].defaultCat;
+  currentDomain        = domain;
+  currentCategoryGroup = DOMAINS[domain].defaultGroup || null;
+  currentCategory      = DOMAINS[domain].defaultCat;
   document.body.className = `domain-${domain}`;
   renderDomainTabs();
   renderCatTabs();
