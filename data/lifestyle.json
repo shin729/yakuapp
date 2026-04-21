@@ -504,6 +504,24 @@
     "caution": "悪心・嘔吐（初期）。甲状腺髄様癌の既往/家族歴は禁忌。膵炎リスク（まれ）。注射製剤"
   },
   {
+    "name": "チルゼパチド",
+    "brand": "マンジャロ",
+    "category": "糖尿病治療薬",
+    "class": "GIP/GLP-1受容体作動薬",
+    "action_type": "GIP+GLP-1デュアル作動（HbA1c・体重減少でGLP-1単独を上回る）",
+    "mechanism": "GIPおよびGLP-1受容体を同時活性化。インスリン分泌↑（血糖依存性）・グルカゴン↓・食欲抑制・体重減少。GLP-1単独より高い血糖降下・体重減少効果を示す",
+    "placebo_onset": "HbA1c −1.9〜2.3%",
+    "placebo_sleep": "体重−7〜11kg（セマグルチド比較で優越）",
+    "NNT": null,
+    "efficacy_star": 5,
+    "onset_time": "4〜12週",
+    "duration_hours": "週1回（皮下注射）",
+    "guideline_rank": "セマグルチドを上回る体重減少・血糖降下。体重管理が重要な2型糖尿病例に特に有用。2023年日本承認",
+    "evidence": "Frías JP et al. NEJM 2021（SURPASS-2 PMID:34170647）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/34170647/",
+    "caution": "悪心・嘔吐・下痢（開始初期）。膵炎既往は禁忌。甲状腺C細胞腫瘍リスク（動物実験）。週1回皮下注射"
+  },
+  {
     "name": "ロサルタン",
     "brand": "ニューロタン",
     "category": "高血圧治療薬",

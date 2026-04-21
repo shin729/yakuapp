@@ -142,9 +142,9 @@
     "onset_time": "1〜2時間",
     "duration_hours": "1日1回",
     "guideline_rank": "HFrEFの4本柱の一つ。β1選択性がありカルベジロールより気管支への影響が少ない。軽度〜中等度COPD合併例でも慎重投与可能。1日1回で服薬アドヒアランスに有利",
-    "evidence": "CIBIS-II trial（PMID:9922258）; 日本循環器学会 心不全ガイドライン",
+    "evidence": "CIBIS-II trial（PMID:10023943）; 日本循環器学会 心不全ガイドライン",
     "caution": "重症喘息・重篤COPD禁忌（軽度COPDは慎重投与可）。急性心不全増悪期は導入禁忌。徐脈・高度房室ブロック。急な中断禁止",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/9922258/"
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/10023943/"
   },
   {
     "name": "ダパグリフロジン",
