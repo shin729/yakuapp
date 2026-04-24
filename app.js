@@ -1076,10 +1076,10 @@ const STEROID_PATCH_ROWS = [
 const ALLERGY_ANTIHIST_ROWS = [
   { label: '作用機序',               field: 'mechanism',       type: 'mech'    },
   { label: '主な適応',               field: 'indication',      type: 'mech'    },
-  { label: '世代',                   field: 'generation',      type: 'tag'     },
   { label: '構造/骨格',              field: 'structure',       type: 'mech'    },
   { label: '脳内H1受容体占拠率',     field: 'brain_occupancy', type: 'accent'  },
   { label: '眠気の強さ',             field: 'drowsiness',      type: 'accent'  },
+  { label: '50%改善達成率',          field: 'response_rate',   type: 'accent'  },
   { label: '効果スコア',             field: 'efficacy_star',   type: 'stars'   },
   { label: '作用持続',               field: 'duration',        type: 'val'     },
   { label: '使い分けポイント',       field: 'guideline_rank',  type: 'usecase' },
@@ -1488,21 +1488,24 @@ function getClassBadge(cls) {
     '消化器系漢方（腸管スパスム緩解・桂枝湯加芍薬）':   { css: 'gi-kampo' },
     '消化器系漢方（緩下・腸潤化・高齢者便秘）':         { css: 'gi-kampo' },
     '消化器系漢方（瀉下・清熱・発汗・利水・実証の肥満便秘）': { css: 'gi-kampo' },
-    // 抗アレルギー薬 - 抗ヒスタミン薬（第2世代・非鎮静性）
+    // 抗アレルギー薬 - 抗ヒスタミン薬（旧長名・後方互換）
     '第2世代抗ヒスタミン薬（非鎮静性・ピペリジン骨格）': { css: 'ah-2gen-non' },
     '第2世代抗ヒスタミン薬（非鎮静性・三環系）':        { css: 'ah-2gen-non' },
-    // 抗ヒスタミン薬（第2世代・低鎮静性）
     '第2世代抗ヒスタミン薬（低鎮静性・ピペラジン骨格）': { css: 'ah-2gen-low' },
     '第2世代抗ヒスタミン薬（低鎮静性・ピペリジン骨格）': { css: 'ah-2gen-low' },
     '第2世代抗ヒスタミン薬（低鎮静性・ジベンズオキセピン骨格）': { css: 'ah-2gen-low' },
-    // 抗ヒスタミン薬（第2世代・軽鎮静性）
     '第2世代抗ヒスタミン薬（軽鎮静性・フタラジノン骨格）': { css: 'ah-2gen-mild' },
     '第2世代抗ヒスタミン薬（双作用：H1拮抗+肥満細胞安定化）': { css: 'ah-2gen-mild' },
-    // 抗ヒスタミン薬（第1世代）
     '第1世代抗ヒスタミン薬（鎮静性・プロピルアミン骨格）': { css: 'ah-1gen' },
     '第1世代抗ヒスタミン薬（鎮静性・エタノールアミン骨格）': { css: 'ah-1gen' },
     '第1世代抗ヒスタミン薬（鎮静性・ピペラジン骨格）': { css: 'ah-1gen' },
     '第1世代抗ヒスタミン薬（鎮静性・フェノチアジン骨格）': { css: 'ah-1gen' },
+    // 抗ヒスタミン薬（短縮後クラス名）
+    '第2世代・非鎮静性': { css: 'ah-2gen-non'  },
+    '第2世代・低鎮静性': { css: 'ah-2gen-low'  },
+    '第2世代・軽鎮静性': { css: 'ah-2gen-mild' },
+    '第2世代・双作用':   { css: 'ah-2gen-mild' },
+    '第1世代・鎮静性':   { css: 'ah-1gen'      },
     // LTRA・肥満細胞安定化薬
     'LTRAシステイニル型（CysLT1選択的）': { css: 'ah-ltra' },
     '肥満細胞安定化薬（クロモン系）':      { css: 'ah-mcs' },
