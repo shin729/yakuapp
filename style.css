@@ -408,6 +408,41 @@ thead .sticky-col { z-index: 3; }
 .class-badge.steroid-eye-strong { background: #065f46; color: #d1fae5; }
 .class-badge.steroid-top-5 { background: #f59e0b; color: #1c1917; }
 
+/* 消化器系バッジ */
+.class-badge.gi-lax-stim  { background: #7f1d1d; color: #fef2f2; }
+.class-badge.gi-lax-osmo  { background: #1e3a5f; color: #dbeafe; }
+.class-badge.gi-lax-secr  { background: #0369a1; color: #e0f2fe; }
+.class-badge.gi-lax-gcc   { background: #0284c7; color: #f0f9ff; }
+.class-badge.gi-lax-ibat  { background: #0891b2; color: #cffafe; }
+.class-badge.gi-lax-peg   { background: #0e7490; color: #cffafe; }
+.class-badge.gi-lax-pam   { background: #155e75; color: #e0f2fe; }
+.class-badge.gi-probi     { background: #166534; color: #dcfce7; }
+.class-badge.gi-enzyme    { background: #78350f; color: #fef3c7; }
+.class-badge.gi-bile      { background: #713f12; color: #fef3c7; }
+.class-badge.gi-anti-d2   { background: #4c1d95; color: #ede9fe; }
+.class-badge.gi-anti-5ht3 { background: #6d28d9; color: #f5f3ff; }
+.class-badge.gi-anti-nk1  { background: #7c3aed; color: #f5f3ff; }
+.class-badge.gi-anti-phen { background: #5b21b6; color: #ede9fe; }
+.class-badge.gi-dia-opi   { background: #450a0a; color: #fca5a5; }
+.class-badge.gi-dia-ast   { background: #92400e; color: #fef3c7; }
+.class-badge.gi-dia-abs   { background: #1c1917; color: #e7e5e4; }
+.class-badge.gi-dia-res   { background: #312e81; color: #e0e7ff; }
+.class-badge.gi-pcab      { background: #991b1b; color: #fef2f2; }
+.class-badge.gi-ppi       { background: #9f1239; color: #ffe4e6; }
+.class-badge.gi-h2b       { background: #881337; color: #ffe4e6; }
+.class-badge.gi-muco      { background: #065f46; color: #d1fae5; }
+.class-badge.gi-muco-al   { background: #1e3a5f; color: #dbeafe; }
+.class-badge.gi-fgd       { background: #0f766e; color: #ccfbf1; }
+.class-badge.gi-ibs       { background: #047857; color: #d1fae5; }
+.class-badge.gi-5asa      { background: #14532d; color: #dcfce7; }
+.class-badge.gi-ibd-ste   { background: #c2410c; color: #fff7ed; }
+.class-badge.gi-ibd-imm   { background: #b45309; color: #fef3c7; }
+.class-badge.gi-ibd-bio   { background: #1e3a5f; color: #dbeafe; }
+.class-badge.gi-ibd-il    { background: #0369a1; color: #e0f2fe; }
+.class-badge.gi-ibd-int   { background: #0e7490; color: #cffafe; }
+.class-badge.gi-ibd-bud   { background: #92400e; color: #fef3c7; }
+.class-badge.gi-kampo     { background: #3f6212; color: #ecfccb; }
+
 /* ===== Table body ===== */
 .compare-table tbody td {
   padding: 8px 10px;

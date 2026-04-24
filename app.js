@@ -125,6 +125,27 @@ const DOMAINS = {
     rowAltSticky: '#ffeef0',
     accentColor:  '#be123c',
   },
+  gi: {
+    file: './data/gi.json',
+    categories: [
+      { key: '便秘薬',             label: '💊 便秘薬' },
+      { key: '整腸剤',             label: '🦠 整腸剤' },
+      { key: '消化酵素・胆汁系',   label: '🧪 消化酵素・胆汁系' },
+      { key: '悪心・嘔吐',         label: '🤢 悪心・嘔吐' },
+      { key: '下痢止め',           label: '🚽 下痢止め' },
+      { key: '胃酸分泌抑制薬',     label: '🔴 胃酸分泌抑制薬' },
+      { key: '粘膜防御薬',         label: '🛡 粘膜防御薬' },
+      { key: '機能性消化管疾患',   label: '🔄 機能性消化管疾患' },
+      { key: '潰瘍性大腸炎・クローン病', label: '🧬 潰瘍性大腸炎・クローン病' },
+      { key: '消化器系漢方',       label: '🌿 消化器系漢方' },
+    ],
+    defaultCat: '便秘薬',
+    headBg:       'linear-gradient(180deg, #f0fdf4 0%, #dcfce7 100%)',
+    stickyBg:     '#f0fdf4',
+    rowAltBg:     '#f7fef9',
+    rowAltSticky: '#e8fced',
+    accentColor:  '#059669',
+  },
 };
 
 // ===== 心不全作用機序分類マップ（薬剤名 → MXクラスキー） =====
@@ -861,6 +882,132 @@ const HF_ROWS = [
   { label: '⚠ 注意事項',        field: 'caution',            type: 'caution' },
 ];
 
+// ===== 消化器系 ROW_DEFS =====
+const GI_LAXATIVE_ROWS = [
+  { label: '主な作用',           field: 'action_type',     type: 'mech'   },
+  { label: '作用機序',           field: 'mechanism',       type: 'mech'   },
+  { label: '刺激性・種別',       field: 'stimulant_type',  type: 'accent' },
+  { label: '長期使用可否（依存性）', field: 'long_term_use', type: 'accent' },
+  { label: '効果スコア',         field: 'efficacy_star',   type: 'stars'  },
+  { label: '発現時間',           field: 'onset_time',      type: 'val'    },
+  { label: '水分摂取の必要性',   field: 'water_required',  type: 'val'    },
+  { label: '使い分けポイント',   field: 'guideline_rank',  type: 'usecase'},
+  { label: 'エビデンス出典',     field: 'evidence',        type: 'evidence'},
+  { label: '⚠ 注意事項',        field: 'caution',         type: 'caution'},
+];
+
+const GI_PROBIOTIC_ROWS = [
+  { label: '主な作用',           field: 'action_type',     type: 'mech'   },
+  { label: '作用機序',           field: 'mechanism',       type: 'mech'   },
+  { label: '主な適応・効果',     field: 'placebo_onset',   type: 'accent' },
+  { label: '腸内環境への影響',   field: 'placebo_sleep',   type: 'accent' },
+  { label: '効果スコア',         field: 'efficacy_star',   type: 'stars'  },
+  { label: '効果発現',           field: 'onset_time',      type: 'val'    },
+  { label: '使い分けポイント',   field: 'guideline_rank',  type: 'usecase'},
+  { label: 'エビデンス出典',     field: 'evidence',        type: 'evidence'},
+  { label: '⚠ 注意事項',        field: 'caution',         type: 'caution'},
+];
+
+const GI_ENZYME_ROWS = [
+  { label: '主な作用',           field: 'action_type',     type: 'mech'   },
+  { label: '作用機序',           field: 'mechanism',       type: 'mech'   },
+  { label: '効果対象',           field: 'target_effect',   type: 'accent' },
+  { label: '服用タイミング',     field: 'dosing_timing',   type: 'accent' },
+  { label: '効果スコア',         field: 'efficacy_star',   type: 'stars'  },
+  { label: '使い分けポイント',   field: 'guideline_rank',  type: 'usecase'},
+  { label: 'エビデンス出典',     field: 'evidence',        type: 'evidence'},
+  { label: '⚠ 注意事項',        field: 'caution',         type: 'caution'},
+];
+
+const GI_ANTIEMETIC_ROWS = [
+  { label: '主な作用',           field: 'action_type',     type: 'mech'   },
+  { label: '作用機序',           field: 'mechanism',       type: 'mech'   },
+  { label: '主要制吐効果',       field: 'placebo_onset',   type: 'accent' },
+  { label: '適応・使用場面',     field: 'placebo_sleep',   type: 'accent' },
+  { label: 'NNT',                field: 'NNT',             type: 'nnt'    },
+  { label: '効果スコア',         field: 'efficacy_star',   type: 'stars'  },
+  { label: '効果発現',           field: 'onset_time',      type: 'val'    },
+  { label: '投与頻度',           field: 'duration_hours',  type: 'val'    },
+  { label: '使い分けポイント',   field: 'guideline_rank',  type: 'usecase'},
+  { label: 'エビデンス出典',     field: 'evidence',        type: 'evidence'},
+  { label: '⚠ 注意事項',        field: 'caution',         type: 'caution'},
+];
+
+const GI_ANTIDIARR_ROWS = [
+  { label: '主な作用',               field: 'action_type',         type: 'mech'   },
+  { label: '作用機序',               field: 'mechanism',           type: 'mech'   },
+  { label: '腸管運動抑制の強さ',     field: 'motility_inhibition', type: 'accent' },
+  { label: '感染症での使用可否',     field: 'infection_use',       type: 'accent' },
+  { label: '効果スコア',             field: 'efficacy_star',       type: 'stars'  },
+  { label: '即効性',                 field: 'quick_onset',         type: 'val'    },
+  { label: '使い分けポイント',       field: 'guideline_rank',      type: 'usecase'},
+  { label: 'エビデンス出典',         field: 'evidence',            type: 'evidence'},
+  { label: '⚠ 注意事項',            field: 'caution',             type: 'caution'},
+];
+
+const GI_ACID_ROWS = [
+  { label: '主な作用',               field: 'action_type',         type: 'mech'   },
+  { label: '作用機序',               field: 'mechanism',           type: 'mech'   },
+  { label: '酸分泌抑制の強さ',       field: 'acid_strength',       type: 'accent' },
+  { label: '夜間酸分泌への効果',     field: 'nocturnal_acid',      type: 'accent' },
+  { label: '効果スコア',             field: 'efficacy_star',       type: 'stars'  },
+  { label: '発現速度',               field: 'onset_time',          type: 'val'    },
+  { label: '投与頻度',               field: 'duration_hours',      type: 'val'    },
+  { label: '使い分けポイント',       field: 'guideline_rank',      type: 'usecase'},
+  { label: 'エビデンス出典',         field: 'evidence',            type: 'evidence'},
+  { label: '⚠ 注意事項',            field: 'caution',             type: 'caution'},
+];
+
+const GI_MUCOSAL_ROWS = [
+  { label: '主な作用',               field: 'action_type',         type: 'mech'   },
+  { label: '作用機序',               field: 'mechanism',           type: 'mech'   },
+  { label: '防御効果の強さ',         field: 'mucosal_strength',    type: 'accent' },
+  { label: '即効性',                 field: 'quick_onset',         type: 'accent' },
+  { label: '効果スコア',             field: 'efficacy_star',       type: 'stars'  },
+  { label: '効果発現',               field: 'onset_time',          type: 'val'    },
+  { label: '投与頻度',               field: 'duration_hours',      type: 'val'    },
+  { label: '使い分けポイント',       field: 'guideline_rank',      type: 'usecase'},
+  { label: 'エビデンス出典',         field: 'evidence',            type: 'evidence'},
+  { label: '⚠ 注意事項',            field: 'caution',             type: 'caution'},
+];
+
+const GI_FGD_ROWS = [
+  { label: '主な作用',                   field: 'action_type',      type: 'mech'   },
+  { label: '作用機序',                   field: 'mechanism',        type: 'mech'   },
+  { label: 'ターゲット症状',             field: 'target_symptoms',  type: 'accent' },
+  { label: '便通への影響',               field: 'bowel_effect',     type: 'accent' },
+  { label: '効果スコア',                 field: 'efficacy_star',    type: 'stars'  },
+  { label: '効果発現までの時間',         field: 'onset_time',       type: 'val'    },
+  { label: '使い分けポイント',           field: 'guideline_rank',   type: 'usecase'},
+  { label: 'エビデンス出典',             field: 'evidence',         type: 'evidence'},
+  { label: '⚠ 注意事項',                field: 'caution',          type: 'caution'},
+];
+
+const GI_IBD_ROWS = [
+  { label: '主な作用',               field: 'action_type',                 type: 'mech'   },
+  { label: '作用機序',               field: 'mechanism',                   type: 'mech'   },
+  { label: '寛解導入 / 維持',        field: 'remission_type',              type: 'accent' },
+  { label: '感染リスク',             field: 'infection_risk',              type: 'accent' },
+  { label: 'NNT',                    field: 'NNT',                         type: 'nnt'    },
+  { label: '効果スコア',             field: 'efficacy_star',               type: 'stars'  },
+  { label: '免疫抑制の強さ',         field: 'immunosuppression_strength',  type: 'val'    },
+  { label: '使い分けポイント',       field: 'guideline_rank',              type: 'usecase'},
+  { label: 'エビデンス出典',         field: 'evidence',                    type: 'evidence'},
+  { label: '⚠ 注意事項',            field: 'caution',                     type: 'caution'},
+];
+
+const GI_KAMPO_ROWS = [
+  { label: '主な作用',           field: 'action_type',         type: 'mech'   },
+  { label: '作用機序',           field: 'mechanism',           type: 'mech'   },
+  { label: '主な適応症状',       field: 'main_symptoms',       type: 'accent' },
+  { label: '体力レベルの適応',   field: 'constitution_level',  type: 'accent' },
+  { label: '効果スコア',         field: 'efficacy_star',       type: 'stars'  },
+  { label: '即効性・継続性',     field: 'duration_type',       type: 'val'    },
+  { label: '使い分けポイント',   field: 'guideline_rank',      type: 'usecase'},
+  { label: 'エビデンス出典',     field: 'evidence',            type: 'evidence'},
+  { label: '⚠ 注意事項',        field: 'caution',             type: 'caution'},
+];
+
 // ステロイド貼付剤
 const STEROID_PATCH_ROWS = [
   { label: '主な作用',             field: 'action_type',    type: 'mech'   },
@@ -901,6 +1048,17 @@ function getRowDefs(category) {
   if (['HFrEF（予後改善薬）', 'HFpEF治療薬', '症状改善・体液管理',
        'MX_RAAS', 'MX_beta', 'MX_SGLT2', 'MX_diuretic', 'MX_other'].includes(category))
     return HF_ROWS;
+  // 消化器系
+  if (category === '便秘薬')             return GI_LAXATIVE_ROWS;
+  if (category === '整腸剤')             return GI_PROBIOTIC_ROWS;
+  if (category === '消化酵素・胆汁系')   return GI_ENZYME_ROWS;
+  if (category === '悪心・嘔吐')         return GI_ANTIEMETIC_ROWS;
+  if (category === '下痢止め')           return GI_ANTIDIARR_ROWS;
+  if (category === '胃酸分泌抑制薬')     return GI_ACID_ROWS;
+  if (category === '粘膜防御薬')         return GI_MUCOSAL_ROWS;
+  if (category === '機能性消化管疾患')   return GI_FGD_ROWS;
+  if (category === '潰瘍性大腸炎・クローン病') return GI_IBD_ROWS;
+  if (category === '消化器系漢方')       return GI_KAMPO_ROWS;
   return PAIN_ROWS;
 }
 
@@ -1115,6 +1273,71 @@ function getClassBadge(cls) {
     // ステロイド貼付剤
     '外用ステロイド II群（強力）':  { css: 'steroid-top-2' },
     '外用ステロイド III群（強力）': { css: 'steroid-top-3' },
+    // 消化器系 - 便秘薬
+    '刺激性下剤（アントラキノン系）':       { css: 'gi-lax-stim' },
+    '刺激性下剤（ジフェニルメタン系）':     { css: 'gi-lax-stim' },
+    '非刺激性下剤（塩類下剤・浸透圧性）':   { css: 'gi-lax-osmo' },
+    '腸液分泌促進薬（ClC-2クロライドチャネル活性化）': { css: 'gi-lax-secr' },
+    'グアニル酸シクラーゼC（GCC）受容体作動薬': { css: 'gi-lax-gcc' },
+    '胆汁酸トランスポーター（IBAT）阻害薬': { css: 'gi-lax-ibat' },
+    '非刺激性下剤（高分子浸透圧性下剤・PEG）': { css: 'gi-lax-peg' },
+    '末梢性オピオイドμ受容体拮抗薬（PAMORA）': { css: 'gi-lax-pam' },
+    // 整腸剤
+    '生菌製剤（ビフィドバクテリウム属）':             { css: 'gi-probi' },
+    '生菌製剤（抗菌薬耐性ラクトバチルス属）':         { css: 'gi-probi' },
+    '生菌製剤（クロストリジウム・ブチリカム）':       { css: 'gi-probi' },
+    '生菌製剤（エンテロコッカス・フェカーリス）':     { css: 'gi-probi' },
+    // 消化酵素・胆汁系
+    '膵酵素製剤（リパーゼ・アミラーゼ・プロテアーゼ含有）': { css: 'gi-enzyme' },
+    '胆汁酸製剤（親水性二次胆汁酸）':    { css: 'gi-bile' },
+    '消泡剤（シリコーン系ポリマー）':     { css: 'gi-enzyme' },
+    '消化酵素配合剤（アミラーゼ・プロテアーゼ・リパーゼ等）': { css: 'gi-enzyme' },
+    // 悪心・嘔吐
+    'ドパミンD2受容体拮抗薬（消化管運動促進薬・中枢性制吐薬）': { css: 'gi-anti-d2' },
+    'ドパミンD2受容体拮抗薬（末梢選択性・BBB通過少）':          { css: 'gi-anti-d2' },
+    '5-HT3受容体拮抗薬（第1世代・中枢・末梢）':    { css: 'gi-anti-5ht3' },
+    '5-HT3受容体拮抗薬（第1世代・長時間作用型）':  { css: 'gi-anti-5ht3' },
+    'ニューロキニン1（NK1）受容体拮抗薬':           { css: 'gi-anti-nk1' },
+    'フェノチアジン系制吐薬（D2・H1・ムスカリン受容体遮断）': { css: 'gi-anti-phen' },
+    // 下痢止め
+    '末梢性オピオイドμ受容体作動薬（腸管選択性）': { css: 'gi-dia-opi' },
+    '収斂薬（タンニン酸・蛋白複合体）':             { css: 'gi-dia-ast' },
+    '吸着剤（腸管内毒素・細菌・ガス吸着）':         { css: 'gi-dia-abs' },
+    '植物アルカロイド（抗菌・腸管蠕動抑制・腸液分泌抑制）': { css: 'gi-dia-abs' },
+    '陰イオン交換樹脂（胆汁酸吸着薬）':             { css: 'gi-dia-res' },
+    // 胃酸分泌抑制薬
+    'カリウムイオン競合型アシッドブロッカー（P-CAB）': { css: 'gi-pcab' },
+    'プロトンポンプ阻害薬（PPI・第2世代・S異性体）':   { css: 'gi-ppi' },
+    'プロトンポンプ阻害薬（PPI）':                     { css: 'gi-ppi' },
+    'プロトンポンプ阻害薬（PPI・CYP2C19影響少）':      { css: 'gi-ppi' },
+    'H2受容体拮抗薬（H2ブロッカー・第2世代）':         { css: 'gi-h2b' },
+    // 粘膜防御薬
+    '粘膜防御因子増強薬（プロスタグランジン産生促進・粘液増加）': { css: 'gi-muco' },
+    '粘膜防御因子増強薬（テルペン誘導体・ムコ多糖増加）':         { css: 'gi-muco' },
+    'アルミニウム含有粘膜被覆薬（潰瘍面選択的付着）':             { css: 'gi-muco-al' },
+    '亜鉛含有粘膜修復薬（組織修復促進・抗酸化）':                 { css: 'gi-muco' },
+    // 機能性消化管疾患
+    'アセチルコリンエステラーゼ阻害薬（消化管選択的・胃運動促進）': { css: 'gi-fgd' },
+    '腸管運動調節薬（オピオイド受容体作動・双方向調節）':           { css: 'gi-fgd' },
+    '5-HT3受容体拮抗薬（腸管感覚・運動選択的）':                   { css: 'gi-ibs' },
+    '高吸水性ポリマー（腸内水分調節・便形成補助）':                 { css: 'gi-ibs' },
+    'ドパミンD2受容体拮抗薬＋コリンエステラーゼ阻害薬（胃運動促進）': { css: 'gi-fgd' },
+    '抗コリン薬（腸管スパスム抑制・第四級アンモニウム化合物）':     { css: 'gi-ibs' },
+    // 潰瘍性大腸炎・クローン病
+    '5-アミノサリチル酸（5-ASA）製剤':                         { css: 'gi-5asa' },
+    '全身性ステロイド（糖質コルチコイド・免疫抑制）':           { css: 'gi-ibd-ste' },
+    'チオプリン系免疫調節薬（プリン代謝拮抗）':                 { css: 'gi-ibd-imm' },
+    '抗TNFα抗体（キメラ型IgG1・点滴静注）':                    { css: 'gi-ibd-bio' },
+    '抗IL-12/23p40抗体（完全ヒト型IgG1・点滴→皮下注）':        { css: 'gi-ibd-il' },
+    '抗α4β7インテグリン抗体（腸管選択的・完全ヒト型IgG1）':    { css: 'gi-ibd-int' },
+    '局所作用型ステロイド（CYP3A4一回通過代謝型）':            { css: 'gi-ibd-bud' },
+    // 消化器系漢方
+    '消化器系漢方（腸管運動促進・温補・血流改善）':     { css: 'gi-kampo' },
+    '消化器系漢方（胃運動促進・グレリン分泌促進・補気健脾）': { css: 'gi-kampo' },
+    '消化器系漢方（寒熱錯雑・胃腸炎症・口内炎治療）':   { css: 'gi-kampo' },
+    '消化器系漢方（腸管スパスム緩解・桂枝湯加芍薬）':   { css: 'gi-kampo' },
+    '消化器系漢方（緩下・腸潤化・高齢者便秘）':         { css: 'gi-kampo' },
+    '消化器系漢方（瀉下・清熱・発汗・利水・実証の肥満便秘）': { css: 'gi-kampo' },
   };
   return map[cls] || { css: 'benzo' };
 }
