@@ -1060,14 +1060,14 @@ const STEROID_PATCH_ROWS = [
 
 // ===== 抗アレルギー薬 ROW_DEFS =====
 const ALLERGY_ANTIHIST_ROWS = [
-  { label: '世代',                   field: 'generation',      type: 'mech'    },
+  { label: '作用機序',               field: 'mechanism',       type: 'mech'    },
+  { label: '主な適応',               field: 'indication',      type: 'mech'    },
+  { label: '世代',                   field: 'generation',      type: 'tag'     },
   { label: '構造/骨格',              field: 'structure',       type: 'mech'    },
   { label: '脳内H1受容体占拠率',     field: 'brain_occupancy', type: 'accent'  },
   { label: '眠気の強さ',             field: 'drowsiness',      type: 'accent'  },
-  { label: '作用機序',               field: 'mechanism',       type: 'mech'    },
   { label: '効果スコア',             field: 'efficacy_star',   type: 'stars'   },
   { label: '作用持続',               field: 'duration',        type: 'val'     },
-  { label: '主な適応',               field: 'indication',      type: 'val'     },
   { label: '使い分けポイント',       field: 'guideline_rank',  type: 'usecase' },
   { label: 'エビデンス出典',         field: 'evidence',        type: 'evidence'},
   { label: '⚠ 注意事項',            field: 'caution',         type: 'caution' },
@@ -1192,6 +1192,7 @@ function renderCell(d, def, accentColor) {
     case 'evidence': return evidenceCell(d);
     case 'caution':  return cautionCell(s);
     case 'mech':     return `<td class="mech-cell">${esc(s)}</td>`;
+    case 'tag':      return `<td class="tag-cell">${esc(s)}</td>`;
     case 'benefit': {
       const yes   = s.includes('あり');
       const color = yes ? '#15803d' : '#6b7280';

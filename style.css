@@ -527,6 +527,16 @@ thead .sticky-col { z-index: 3; }
   border-left: 2px solid #93c5fd !important;
 }
 
+/* 世代タグ（小さめ・薄色） */
+.tag-cell {
+  font-size: 0.68rem;
+  color: #6b7280;
+  font-weight: 500;
+  padding: 3px 10px !important;
+  background: #f9fafb !important;
+  letter-spacing: 0.02em;
+}
+
 /* 使い分けポイント */
 .usecase-cell {
   font-size: 0.78rem;
