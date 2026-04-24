@@ -48,6 +48,7 @@
     "duration_hours": "6〜8時間",
     "guideline_rank": "入眠・維持両方に有効。翌朝の認知・運動機能への影響が少ない",
     "evidence": "SUNRISE 1/2試験（Lancet Neurology 2019 PMID:31880796）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/31880796/",
     "caution": "依存性は低い。CYP3A4阻害薬との併用に注意"
   },
   {
