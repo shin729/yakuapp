@@ -911,14 +911,15 @@ const GI_PROBIOTIC_ROWS = [
 ];
 
 const GI_ENZYME_ROWS = [
-  { label: '主な作用',           field: 'action_type',     type: 'mech'   },
-  { label: '作用機序',           field: 'mechanism',       type: 'mech'   },
-  { label: '効果対象',           field: 'target_effect',   type: 'accent' },
-  { label: '服用タイミング',     field: 'dosing_timing',   type: 'accent' },
-  { label: '効果スコア',         field: 'efficacy_star',   type: 'stars'  },
-  { label: '使い分けポイント',   field: 'guideline_rank',  type: 'usecase'},
-  { label: 'エビデンス出典',     field: 'evidence',        type: 'evidence'},
-  { label: '⚠ 注意事項',        field: 'caution',         type: 'caution'},
+  { label: '主な作用',           field: 'action_type',      type: 'mech'   },
+  { label: '作用機序',           field: 'mechanism',        type: 'mech'   },
+  { label: '効果対象',           field: 'target_effect',    type: 'accent' },
+  { label: '主要酵素成分',       field: 'dominant_enzyme',  type: 'accent' },
+  { label: '服用タイミング',     field: 'dosing_timing',    type: 'val'    },
+  { label: '効果スコア',         field: 'efficacy_star',    type: 'stars'  },
+  { label: '使い分けポイント',   field: 'guideline_rank',   type: 'usecase'},
+  { label: 'エビデンス出典',     field: 'evidence',         type: 'evidence'},
+  { label: '⚠ 注意事項',        field: 'caution',          type: 'caution'},
 ];
 
 const GI_ANTIEMETIC_ROWS = [
@@ -986,16 +987,17 @@ const GI_FGD_ROWS = [
 ];
 
 const GI_IBD_ROWS = [
-  { label: '主な作用',               field: 'action_type',                 type: 'mech'   },
-  { label: '作用機序',               field: 'mechanism',                   type: 'mech'   },
-  { label: '寛解導入 / 維持',        field: 'remission_type',              type: 'accent' },
-  { label: '感染リスク',             field: 'infection_risk',              type: 'accent' },
-  { label: 'NNT',                    field: 'NNT',                         type: 'nnt'    },
-  { label: '効果スコア',             field: 'efficacy_star',               type: 'stars'  },
-  { label: '免疫抑制の強さ',         field: 'immunosuppression_strength',  type: 'val'    },
-  { label: '使い分けポイント',       field: 'guideline_rank',              type: 'usecase'},
-  { label: 'エビデンス出典',         field: 'evidence',                    type: 'evidence'},
-  { label: '⚠ 注意事項',            field: 'caution',                     type: 'caution'},
+  { label: '主な作用',                   field: 'action_type',                 type: 'mech'   },
+  { label: '作用機序',                   field: 'mechanism',                   type: 'mech'   },
+  { label: '製剤放出機構・適用部位',     field: 'delivery_system',             type: 'accent' },
+  { label: '寛解導入 / 維持',            field: 'remission_type',              type: 'accent' },
+  { label: '感染リスク',                 field: 'infection_risk',              type: 'accent' },
+  { label: 'NNT',                        field: 'NNT',                         type: 'nnt'    },
+  { label: '効果スコア',                 field: 'efficacy_star',               type: 'stars'  },
+  { label: '免疫抑制の強さ',             field: 'immunosuppression_strength',  type: 'val'    },
+  { label: '使い分けポイント',           field: 'guideline_rank',              type: 'usecase'},
+  { label: 'エビデンス出典',             field: 'evidence',                    type: 'evidence'},
+  { label: '⚠ 注意事項',                field: 'caution',                     type: 'caution'},
 ];
 
 const GI_KAMPO_ROWS = [
