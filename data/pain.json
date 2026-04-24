@@ -15,7 +15,9 @@
     "guideline_rank": "軽〜中等度疼痛の第一選択。腎機能・胃への影響が少なく高齢者・妊婦にも",
     "evidence": "Cochrane Review（Moore et al. 2015）; WHO鎮痛ラダー",
     "caution": "過量服用で肝障害。腎・胃腸への影響はNSAIDsより少ない。妊婦にも使用可",
-    "evidence_url": null
+    "evidence_url": null,
+    "analgesic_effect": "★★★ 中等度（軽〜中等度疼痛・発熱時の疼痛に有効）",
+    "anti_inflammatory_effect": "★ ほぼなし（COX阻害作用は極めて弱い・抗炎症目的では使用しない）"
   },
   {
     "name": "セレコキシブ",
@@ -33,7 +35,9 @@
     "guideline_rank": "胃腸障害リスクが低いCOX-2選択薬。消化性潰瘍既往・高齢者に",
     "evidence": "Cochrane Review（Derry et al. 2013）; CONDOR試験",
     "caution": "胃腸リスクが低い。スルホンアミドアレルギーに注意。心血管リスクは注意が必要",
-    "evidence_url": null
+    "evidence_url": null,
+    "analgesic_effect": "★★★★ 強い（変形性関節症・慢性炎症性疼痛・術後痛）",
+    "anti_inflammatory_effect": "★★★★ 強い（COX-2選択的阻害・消化管障害が非選択的NSAIDより少ない）"
   },
   {
     "name": "メロキシカム",
@@ -51,7 +55,9 @@
     "guideline_rank": "腎・胃への影響が比較的少ないCOX-2優先薬。長時間作用で1日1回",
     "evidence": "Cochrane Review（Derry et al. 2016）",
     "caution": "1日1回投与が可能。急性痛への有効性は他NSAIDsよりやや劣る場合あり",
-    "evidence_url": null
+    "evidence_url": null,
+    "analgesic_effect": "★★★ 中等度〜強い（変形性関節症・慢性関節リウマチ）",
+    "anti_inflammatory_effect": "★★★★ 強い（COX-2優先的選択性・治療用量ではCOX-1影響少）"
   },
   {
     "name": "エトドラク",
@@ -69,7 +75,9 @@
     "guideline_rank": "胃腸障害リスクが低め。変形性関節症・関節リウマチに",
     "evidence": "国内臨床試験データ; PMDA承認資料",
     "caution": "胃腸障害は選択的COX-2阻害薬と同程度に少ない。国内使用実績が主体",
-    "evidence_url": null
+    "evidence_url": null,
+    "analgesic_effect": "★★★ 中等度〜強い（変形性関節症・急性疼痛）",
+    "anti_inflammatory_effect": "★★★ 中〜強（COX-2優先的選択性・消化管副作用は非選択的より少ない）"
   },
   {
     "name": "ロキソプロフェン",
@@ -87,7 +95,9 @@
     "guideline_rank": "急性疼痛・炎症に有効なNSAID。胃腸障害のリスクがある場合は注意",
     "evidence": "PMDA承認資料; 国内臨床試験データ",
     "caution": "胃腸障害・腎機能低下に注意。空腹時服用は避ける。プロドラッグのため胃への直接刺激は少ない",
-    "evidence_url": null
+    "evidence_url": null,
+    "analgesic_effect": "★★★★ 強い（急性疼痛・術後痛・頭痛・月経痛・歯痛）",
+    "anti_inflammatory_effect": "★★★★ 強い（COX-1/2両方を阻害・プロドラッグ設計で胃腸負担を軽減）"
   },
   {
     "name": "イブプロフェン",
@@ -105,7 +115,9 @@
     "guideline_rank": "世界で最も広く使われるNSAID。OTCで入手可能",
     "evidence": "Cochrane Review（Derry et al. 2017 PMID:28004394）",
     "caution": "胃腸障害・腎障害リスク。心血管リスク患者には注意。市販薬としても普及",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/28004394/"
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/28004394/",
+    "analgesic_effect": "★★★★★ 非常に強い（急性疼痛のNNT最良・OTC最強クラス）",
+    "anti_inflammatory_effect": "★★★★ 強い（COX-1/2両方を非選択的に阻害・関節炎にも有効）"
   },
   {
     "name": "ジクロフェナク",
@@ -123,7 +135,9 @@
     "guideline_rank": "抗炎症効果が強いNSAID。外用ゲルで局所療法にも使用可",
     "evidence": "Cochrane Review（Derry et al. 2015 PMID:26358158）",
     "caution": "胃腸障害・肝障害リスク。心血管リスクはNSAIDs中やや高め。外用剤も有効",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/26358158/"
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/26358158/",
+    "analgesic_effect": "★★★★ 強い（炎症性疼痛・術後痛・筋骨格系疼痛）",
+    "anti_inflammatory_effect": "★★★★★ 非常に強い（COX阻害に加えてリポキシゲナーゼ経路も部分的に抑制）"
   },
   {
     "name": "ナプロキセン",
@@ -141,7 +155,9 @@
     "guideline_rank": "半減期が長く1日2回。心血管リスクが比較的低いNSAID",
     "evidence": "Cochrane Review（Derry et al. 2009 PMID:19160268）",
     "caution": "効果発現はやや遅いが持続時間が長い。心血管リスクはNSAIDs中最も低いとされる",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/19160268/"
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/19160268/",
+    "analgesic_effect": "★★★★ 強い（長時間作用・慢性疼痛・片頭痛・月経困難症）",
+    "anti_inflammatory_effect": "★★★★ 強い（COX-1/2両阻害・心血管安全性が非選択的NSAIDで最も良好）"
   },
   {
     "name": "トラマドール",

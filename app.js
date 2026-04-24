@@ -602,7 +602,24 @@ const AP_ROWS = [
   { label: '⚠ 注意事項',    field: 'caution',           type: 'caution'},
 ];
 
-// 非オピオイド・弱オピオイド・神経障害性疼痛
+// 非オピオイド系（鎮痛効果・抗炎症効果を個別表示）
+const NON_OPIOID_ROWS = [
+  { label: '主な作用',           field: 'action_type',              type: 'mech'   },
+  { label: '作用機序',           field: 'mechanism',                type: 'mech'   },
+  { label: '鎮痛効果',           field: 'analgesic_effect',         type: 'accent' },
+  { label: '抗炎症効果',         field: 'anti_inflammatory_effect', type: 'accent' },
+  { label: '疼痛スコア改善',     field: 'placebo_onset',            type: 'accent' },
+  { label: '50%軽減達成率',      field: 'placebo_sleep',            type: 'accent' },
+  { label: 'NNT50',              field: 'NNT',                      type: 'nnt'    },
+  { label: '効果スコア',         field: 'efficacy_star',            type: 'stars'  },
+  { label: '効果発現時間',       field: 'onset_time',               type: 'val'    },
+  { label: '効果持続時間',       field: 'duration_hours',           type: 'val'    },
+  { label: '使い分けポイント',   field: 'guideline_rank',           type: 'usecase'},
+  { label: 'エビデンス出典',     field: 'evidence',                 type: 'evidence'},
+  { label: '⚠ 注意事項',        field: 'caution',                  type: 'caution'},
+];
+
+// 弱オピオイド・神経障害性疼痛
 const PAIN_ROWS = [
   { label: '主な作用',       field: 'action_type',    type: 'mech'  },
   { label: '作用機序',       field: 'mechanism',      type: 'mech'  },
@@ -1063,6 +1080,7 @@ function getRowDefs(category) {
   if (category === '機能性消化管疾患')   return GI_FGD_ROWS;
   if (category === '潰瘍性大腸炎・クローン病') return GI_IBD_ROWS;
   if (category === '消化器系漢方')       return GI_KAMPO_ROWS;
+  if (category === '非オピオイド系')     return NON_OPIOID_ROWS;
   return PAIN_ROWS;
 }
 
