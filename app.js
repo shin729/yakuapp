@@ -150,6 +150,7 @@ const HF_CLASS_MAP = {
 
 // ===== Vaughan Williams分類マップ（薬剤名 → VWクラスキー） =====
 const VW_CLASS_MAP = {
+  'ジソピラミド':              'VW_Ia',
   'シベンゾリン':              'VW_Ia',
   'リドカイン（静注）':        'VW_Ib',
   'メキシレチン':              'VW_Ib',
@@ -157,6 +158,7 @@ const VW_CLASS_MAP = {
   'ピルジカイニド':            'VW_Ic',
   'ビソプロロール':            'VW_II',
   'メトプロロール':            'VW_II',
+  'ランジオロール':            'VW_II',
   'プロプラノロール':          'VW_II',
   'アミオダロン':              'VW_III',
   'アミオダロン（VT/VF）':     'VW_III',
