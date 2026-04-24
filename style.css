@@ -525,7 +525,14 @@ thead .sticky-col { z-index: 3; }
   line-height: 1.5;
   background: #f8fafc !important;
   border-left: 2px solid #93c5fd !important;
+  white-space: pre-line;
 }
+
+/* 心不全 追加バッジ */
+.class-badge.hf-arni    { background: #4c1d95; color: #ede9fe; }
+.class-badge.hf-if      { background: #0f4c81; color: #dbeafe; }
+.class-badge.hf-v2      { background: #065f46; color: #d1fae5; }
+.class-badge.hf-digoxin { background: #78350f; color: #fef3c7; }
 
 /* 世代タグ（小さめ・薄色） */
 .tag-cell {

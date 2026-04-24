@@ -917,6 +917,20 @@ const HF_ROWS = [
   { label: '⚠ 注意事項',        field: 'caution',            type: 'caution' },
 ];
 
+// 不整脈（全カテゴリ共通）
+const ARRHYTHMIA_ROWS = [
+  { label: '適応不整脈',           field: 'action_type',    type: 'mech'    },
+  { label: '作用機序',             field: 'mechanism',      type: 'mech'    },
+  { label: '有効性指標',           field: 'placebo_onset',  type: 'accent'  },
+  { label: '付加的効果',           field: 'placebo_sleep',  type: 'accent'  },
+  { label: '効果スコア',           field: 'efficacy_star',  type: 'stars'   },
+  { label: '効果発現',             field: 'onset_time',     type: 'val'     },
+  { label: '作用持続',             field: 'duration_hours', type: 'val'     },
+  { label: '使い分けポイント',     field: 'guideline_rank', type: 'usecase' },
+  { label: 'エビデンス出典',       field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',          field: 'caution',        type: 'caution' },
+];
+
 // ===== 消化器系 ROW_DEFS =====
 const GI_LAXATIVE_ROWS = [
   { label: '主な作用',           field: 'action_type',     type: 'mech'   },
@@ -1150,6 +1164,11 @@ function getRowDefs(category) {
   if (['HFrEF（予後改善薬）', 'HFpEF治療薬', '症状改善・体液管理',
        'MX_RAAS', 'MX_beta', 'MX_SGLT2', 'MX_diuretic', 'MX_other'].includes(category))
     return HF_ROWS;
+  // 不整脈
+  if (['心房細動（レートコントロール）', '心房細動（リズムコントロール）',
+       '心室性不整脈', '上室性頻脈（SVT）',
+       'VW_Ia', 'VW_Ib', 'VW_Ic', 'VW_II', 'VW_III', 'VW_IV', 'VW_other'].includes(category))
+    return ARRHYTHMIA_ROWS;
   // 消化器系
   if (category === '便秘薬')             return GI_LAXATIVE_ROWS;
   if (category === '整腸剤')             return GI_PROBIOTIC_ROWS;
@@ -1441,6 +1460,27 @@ function getClassBadge(cls) {
     '抗IL-12/23p40抗体（完全ヒト型IgG1・点滴→皮下注）':        { css: 'gi-ibd-il' },
     '抗α4β7インテグリン抗体（腸管選択的・完全ヒト型IgG1）':    { css: 'gi-ibd-int' },
     '局所作用型ステロイド（CYP3A4一回通過代謝型）':            { css: 'gi-ibd-bud' },
+    // 心不全 — 短縮後のクラス名
+    'ARNI':              { css: 'hf-arni'     },
+    'MRA（選択的）':     { css: 'thiazide'    },
+    'MRA（非選択的）':   { css: 'thiazide'    },
+    'β遮断薬（非選択的）': { css: 'beta-blocker' },
+    'β遮断薬（β1選択的）': { css: 'beta-blocker' },
+    'If電流阻害薬':      { css: 'hf-if'       },
+    'V2受容体拮抗薬':    { css: 'hf-v2'       },
+    '強心配糖体':        { css: 'hf-digoxin'  },
+    // 高尿酸血症 — 短縮後
+    'XO阻害薬（非プリン型）': { css: 'xo-inhibitor' },
+    'XO阻害薬（プリン型）':   { css: 'xo-inhibitor' },
+    '微小管重合阻害薬':       { css: 'colchicine-badge' },
+    // 脂質異常症 — 短縮後
+    'PCSK9阻害薬':       { css: 'pcsk9i'      },
+    // 糖尿病 — 短縮後
+    'SU薬':              { css: 'su-drug'     },
+    'TZD':               { css: 'tzd'         },
+    'GIP/GLP-1作動薬':   { css: 'glp1ra'      },
+    // gi — K⁺表記
+    'K⁺競合型アシッドブロッカー（P-CAB）': { css: 'gi-pcab' },
     // 消化器系漢方
     '消化器系漢方（腸管運動促進・温補・血流改善）':     { css: 'gi-kampo' },
     '消化器系漢方（胃運動促進・グレリン分泌促進・補気健脾）': { css: 'gi-kampo' },
