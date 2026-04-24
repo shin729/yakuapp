@@ -358,5 +358,23 @@
     "evidence": "日本循環器学会ガイドライン2020; QT延長症候群治療エビデンス",
     "caution": "喘息・COPD禁忌（β2遮断→気管支痙攣）。徐脈・房室ブロック。急な中断禁止（リバウンド頻脈・虚血増悪）。糖尿病患者では低血糖症状をマスク",
     "evidence_url": null
+  },
+  {
+    "name": "ジソピラミド",
+    "brand": "リスモダン",
+    "category": "心房細動（リズムコントロール）",
+    "class": "Na⁺チャネル遮断薬（Class Ia・抗コリン作用）",
+    "action_type": "迷走神経緊張性AF・HCM合併AFのリズムコントロール",
+    "mechanism": "Na⁺チャネル遮断（Class Ia）に加え強い抗コリン作用を持つ。迷走神経緊張により誘発されるAF（食後・睡眠中・安静時に起こるvagally-mediated AF）に対して、迷走神経拮抗作用により洞調律維持に有効。肥大型閉塞性心筋症（HOCM）では心筋弛緩効果・流出路圧較差低下にも有用",
+    "efficacy_star": 3,
+    "placebo_onset": "迷走神経緊張性AF発作回数の減少（vagally-mediated AFに特に有効）",
+    "placebo_sleep": "HOCM流出路圧較差の低下・症状改善",
+    "NNT": null,
+    "onset_time": "1〜2時間（経口）",
+    "duration_hours": "1日3回（通常錠）/ 1日2回（徐放錠）",
+    "guideline_rank": "器質的心疾患のない迷走神経緊張性AF（食後・睡眠中・安静時に発症）の第一選択薬。交感神経依存性AFにはβ遮断薬が優先されるが、迷走神経緊張性には本薬が優位。HOCM合併AFにも有効（流出路狭窄改善）。【注意】器質的心疾患（心筋梗塞後・心不全・高度左室肥大）では死亡率増加の懸念があり原則禁忌",
+    "evidence": "日本循環器学会 不整脈薬物治療ガイドライン2020; Sherrid MV et al., JACC 2005（HCM PMID:15837261）",
+    "caution": "抗コリン作用（排尿困難・前立腺肥大禁忌・口渇・便秘・緑内障禁忌）。QT延長・torsades de pointes（QTcを定期モニタリング）。器質的心疾患（心不全・心筋梗塞後）禁忌。低血糖（インスリン分泌促進）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/15837261/"
   }
 ]
