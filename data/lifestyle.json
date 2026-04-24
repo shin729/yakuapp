@@ -231,7 +231,7 @@
     "guideline_rank": "CKD・蛋白尿・心不全合併高血圧に。ARBで心保護エビデンス強い",
     "evidence": "CHARM試験（Lancet 2003 PMID:13678869）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/13678869/",
-    "caution": "高カリウム血症（K保持性利尿薬・腎障害との併用注意）。妊婦禁忌（胎児腎障害）。空咳はACEI比で少ない"
+    "caution": "高K血症（K保持性利尿薬・腎障害との併用注意）。妊婦禁忌（胎児腎障害）。空咳はACEI比で少ない"
   },
   {
     "name": "ロサルタン",
@@ -249,7 +249,7 @@
     "guideline_rank": "CKD・蛋白尿・痛風合併高血圧に。唯一尿酸低下作用を持つARB",
     "evidence": "Dahlof B et al. Lancet 2002（LIFE試験 PMID:11937178）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/11937178/",
-    "caution": "妊婦禁忌。高カリウム血症（腎機能低下例）。ACE阻害薬との併用は腎機能悪化リスク"
+    "caution": "妊婦禁忌。高K血症（腎機能低下例）。ACE阻害薬との併用は腎機能悪化リスク"
   },
   {
     "name": "エナラプリル",
@@ -339,7 +339,7 @@
     "guideline_rank": "難治性高血圧（第4選択）・心不全・原発性アルドステロン症に",
     "evidence": "Pitt B et al. NEJM 1999（RALES試験 PMID:10471456）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/10471456/",
-    "caution": "高カリウム血症（ACE/ARB併用で特に注意）。女性化乳房・月経異常（抗アンドロゲン作用）。腎機能低下例は禁忌または慎重"
+    "caution": "高K血症（ACE/ARB併用で特に注意）。女性化乳房・月経異常（抗アンドロゲン作用）。腎機能低下例は禁忌または慎重"
   },
   {
     "name": "インダパミド",

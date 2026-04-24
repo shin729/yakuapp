@@ -17,7 +17,7 @@
     "duration_hours": "1日2回",
     "guideline_rank": "安定したHFrEF（EF<40%）でACE阻害薬・ARBからアップグレードする最優先候補。EF<35%または入院リスクが高い患者でガイドライン推奨。【重要】ACE阻害薬と同時投与禁忌・切り替え時36時間以上の休薬が必須（血管浮腫リスク）",
     "evidence": "PARADIGM-HF trial（PMID:25176015）; 日本循環器学会 心不全ガイドライン",
-    "caution": "【禁忌】ACE阻害薬との同時投与（血管浮腫）・切り替え時36時間洗い出し必須。妊婦禁忌。低血圧・高カリウム血症・腎機能悪化に注意",
+    "caution": "【禁忌】ACE阻害薬との同時投与（血管浮腫）・切り替え時36時間洗い出し必須。妊婦禁忌。低血圧・高K血症・腎機能悪化に注意",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/25176015/"
   },
   {
@@ -38,7 +38,7 @@
     "duration_hours": "1日1〜2回",
     "guideline_rank": "HFrEF（EF<40%）の第一選択RAAS遮断薬。すべてのHFrEF患者に原則投与。忍容性があればARNI（エンレスト）へのアップグレードを検討。空咳が出る場合はARB（カンデサルタン）へ変更",
     "evidence": "SOLVD-Treatment trial（PMID:2057034）; 日本循環器学会 心不全ガイドライン2017改訂版",
-    "caution": "空咳（ACE阻害薬特有、約10〜15%）。高カリウム血症（MRA・ARB併用時は特に注意）。腎機能悪化（両側腎動脈狭窄禁忌）。妊婦禁忌",
+    "caution": "空咳（ACE阻害薬特有、約10〜15%）。高K血症（MRA・ARB併用時は特に注意）。腎機能悪化（両側腎動脈狭窄禁忌）。妊婦禁忌",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/2057034/"
   },
   {
@@ -59,7 +59,7 @@
     "duration_hours": "1日1回",
     "guideline_rank": "ACE阻害薬（エナラプリル等）による空咳が出る場合の第一代替薬。ACE阻害薬との併用も可能だが高K血症・腎機能悪化に注意。ARNIへのアップグレードも選択肢",
     "evidence": "CHARM-Alternative trial（PMID:12954463）; CHARM-Added trial（PMID:12954464）",
-    "caution": "高カリウム血症（MRA・ACE阻害薬との三剤併用は原則禁忌）。腎機能悪化に注意。妊婦禁忌",
+    "caution": "高K血症（MRA・ACE阻害薬との三剤併用は原則禁忌）。腎機能悪化に注意。妊婦禁忌",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/12954463/"
   },
   {
@@ -80,7 +80,7 @@
     "duration_hours": "1日1回",
     "guideline_rank": "スピロノラクトンによる女性化乳房・月経不順が問題になる場合の代替。心筋梗塞後LV機能低下（EF≤40%）への適応もある（EPHESUS試験）。スピロノラクトンより薬価が高い",
     "evidence": "EMPHASIS-HF trial（PMID:21073363）; EPHESUS trial（PMID:12668699）",
-    "caution": "高カリウム血症（スピロノラクトンと同様に注意）。eGFR<30は禁忌。ACE阻害薬・ARBとの併用で高K血症リスク増大",
+    "caution": "高K血症（スピロノラクトンと同様に注意）。eGFR<30は禁忌。ACE阻害薬・ARBとの併用で高K血症リスク増大",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/21073363/"
   },
   {
@@ -101,7 +101,7 @@
     "duration_hours": "1日1回",
     "guideline_rank": "HFrEF（EF<35%）でACE阻害薬・β遮断薬を使用中の患者に第三の柱として追加。NNT=9は心不全薬の中で最も優れた部類。女性化乳房・月経不順が問題になる場合はエプレレノン（選択的MRA）へ変更",
     "evidence": "RALES trial（PMID:10471456）; 日本循環器学会 心不全ガイドライン",
-    "caution": "高カリウム血症（腎機能低下例・ACE/ARB併用で特に危険）。女性化乳房・月経不順（エストロゲン様作用）。腎機能低下（eGFR<30は原則禁忌）",
+    "caution": "高K血症（腎機能低下例・ACE/ARB併用で特に危険）。女性化乳房・月経不順（エストロゲン様作用）。腎機能低下（eGFR<30は原則禁忌）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/10471456/"
   },
   {
@@ -269,7 +269,7 @@
     "duration_hours": "1日1回",
     "guideline_rank": "HFpEFでの全体エビデンスは確立していない（TOPCAT試験で全体の主要エンドポイントは未達）。SGLT2阻害薬が使えない症例や症状コントロール目的で使用を検討。体液貯留・浮腫が主症状のHFpEFには症状改善として選択肢",
     "evidence": "TOPCAT trial（PMID:24716680）",
-    "caution": "高カリウム血症。eGFR<30は原則禁忌。女性化乳房。HFpEFでの予後改善エビデンスは確立していない点を念頭に",
+    "caution": "高K血症。eGFR<30は原則禁忌。女性化乳房。HFpEFでの予後改善エビデンスは確立していない点を念頭に",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/24716680/"
   },
   {
@@ -319,7 +319,7 @@
     "brand": "サムスカ",
     "category": "症状改善・体液管理",
     "class": "V2受容体拮抗薬",
-    "action_type": "低ナトリウム血症合併心不全の体液管理・フロセミド抵抗性浮腫",
+    "action_type": "低Na血症合併心不全の体液管理・フロセミド抵抗性浮腫",
     "mechanism": "腎集合管のバソプレシンV2受容体を遮断し、電解質を排泄せずに水だけを排泄する（水利尿）。ループ利尿薬で改善しない低Na血症・体液貯留を是正する",
     "efficacy_star": 3,
     "placebo_onset": "血清Na改善（7日以内に+5〜7mEq/L）・体重減少",
