@@ -443,6 +443,30 @@ thead .sticky-col { z-index: 3; }
 .class-badge.gi-ibd-bud   { background: #92400e; color: #fef3c7; }
 .class-badge.gi-kampo     { background: #3f6212; color: #ecfccb; }
 
+/* ===== 抗アレルギー薬バッジ ===== */
+/* 第2世代・非鎮静性（明るいシアン） */
+.class-badge.ah-2gen-non  { background: #0891b2; color: #ecfeff; }
+/* 第2世代・低鎮静性（中シアン） */
+.class-badge.ah-2gen-low  { background: #0e7490; color: #cffafe; }
+/* 第2世代・軽鎮静性（深シアン） */
+.class-badge.ah-2gen-mild { background: #155e75; color: #cffafe; }
+/* 第1世代・鎮静性（グレー） */
+.class-badge.ah-1gen      { background: #374151; color: #f3f4f6; }
+/* ロイコトリエン拮抗薬（インジゴ） */
+.class-badge.ah-ltra      { background: #3730a3; color: #e0e7ff; }
+/* 肥満細胞安定化薬（エメラルド） */
+.class-badge.ah-mcs       { background: #065f46; color: #d1fae5; }
+/* 生物学的製剤 – 抗IgE（オレンジ） */
+.class-badge.ah-bio-ige   { background: #c2410c; color: #fff7ed; }
+/* 生物学的製剤 – 抗IL-4/13（ローズ） */
+.class-badge.ah-bio-il4   { background: #9d174d; color: #fce7f3; }
+/* 生物学的製剤 – 抗IL-5（パープル） */
+.class-badge.ah-bio-il5   { background: #6b21a8; color: #f3e8ff; }
+/* アレルゲン免疫療法・SLIT（深緑） */
+.class-badge.ah-ait       { background: #14532d; color: #dcfce7; }
+/* アレルゲン免疫療法・SCIT（テール） */
+.class-badge.ah-ait-sc    { background: #134e4a; color: #ccfbf1; }
+
 /* ===== Table body ===== */
 .compare-table tbody td {
   padding: 8px 10px;

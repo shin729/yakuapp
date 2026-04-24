@@ -146,6 +146,22 @@ const DOMAINS = {
     rowAltSticky: '#e8fced',
     accentColor:  '#059669',
   },
+  allergy: {
+    file: './data/allergy.json',
+    categories: [
+      { key: '抗ヒスタミン薬',       label: '💊 抗ヒスタミン薬' },
+      { key: 'ロイコトリエン拮抗薬', label: '🔵 ロイコトリエン拮抗薬' },
+      { key: '肥満細胞安定化薬',     label: '🛡 肥満細胞安定化薬' },
+      { key: '生物学的製剤',         label: '💉 生物学的製剤' },
+      { key: 'アレルゲン免疫療法',   label: '🌱 アレルゲン免疫療法' },
+    ],
+    defaultCat: '抗ヒスタミン薬',
+    headBg:       'linear-gradient(180deg, #ecfeff 0%, #cffafe 100%)',
+    stickyBg:     '#ecfeff',
+    rowAltBg:     '#f5feff',
+    rowAltSticky: '#e4fbfd',
+    accentColor:  '#0891b2',
+  },
 };
 
 // ===== 心不全作用機序分類マップ（薬剤名 → MXクラスキー） =====
@@ -1042,6 +1058,71 @@ const STEROID_PATCH_ROWS = [
   { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
 ];
 
+// ===== 抗アレルギー薬 ROW_DEFS =====
+const ALLERGY_ANTIHIST_ROWS = [
+  { label: '世代',                   field: 'generation',      type: 'mech'    },
+  { label: '構造/骨格',              field: 'structure',       type: 'mech'    },
+  { label: '脳内H1受容体占拠率',     field: 'brain_occupancy', type: 'accent'  },
+  { label: '眠気の強さ',             field: 'drowsiness',      type: 'accent'  },
+  { label: '作用機序',               field: 'mechanism',       type: 'mech'    },
+  { label: '効果スコア',             field: 'efficacy_star',   type: 'stars'   },
+  { label: '作用持続',               field: 'duration',        type: 'val'     },
+  { label: '主な適応',               field: 'indication',      type: 'val'     },
+  { label: '使い分けポイント',       field: 'guideline_rank',  type: 'usecase' },
+  { label: 'エビデンス出典',         field: 'evidence',        type: 'evidence'},
+  { label: '⚠ 注意事項',            field: 'caution',         type: 'caution' },
+];
+
+const ALLERGY_LTRA_ROWS = [
+  { label: '作用機序',               field: 'mechanism',       type: 'mech'    },
+  { label: '主な適応',               field: 'indication',      type: 'mech'    },
+  { label: '効果スコア',             field: 'efficacy_star',   type: 'stars'   },
+  { label: '鼻閉への効果',           field: 'pollen_effect',   type: 'accent'  },
+  { label: '喘息合併への効果',       field: 'asthma_effect',   type: 'accent'  },
+  { label: '夜間症状への効果',       field: 'nocturnal_effect',type: 'accent'  },
+  { label: '服薬タイミング',         field: 'dosing_time',     type: 'val'     },
+  { label: '使い分けポイント',       field: 'guideline_rank',  type: 'usecase' },
+  { label: 'エビデンス出典',         field: 'evidence',        type: 'evidence'},
+  { label: '⚠ 注意事項',            field: 'caution',         type: 'caution' },
+];
+
+const ALLERGY_MCS_ROWS = [
+  { label: '作用機序',               field: 'mechanism',       type: 'mech'    },
+  { label: '適応疾患',               field: 'indication',      type: 'mech'    },
+  { label: '効果スコア',             field: 'efficacy_star',   type: 'stars'   },
+  { label: '即効性',                 field: 'onset',           type: 'accent'  },
+  { label: '予防効果',               field: 'prevention_effect',type: 'accent' },
+  { label: '使い分けポイント',       field: 'guideline_rank',  type: 'usecase' },
+  { label: 'エビデンス出典',         field: 'evidence',        type: 'evidence'},
+  { label: '⚠ 注意事項',            field: 'caution',         type: 'caution' },
+];
+
+const ALLERGY_BIO_ROWS = [
+  { label: 'ターゲット分子',         field: 'target_molecule', type: 'mech'    },
+  { label: '作用機序',               field: 'mechanism',       type: 'mech'    },
+  { label: '主な適応疾患',           field: 'indication',      type: 'mech'    },
+  { label: '効果スコア',             field: 'efficacy_star',   type: 'stars'   },
+  { label: '投与方法',               field: 'administration',  type: 'val'     },
+  { label: '奏効率/寛解率',          field: 'remission_rate',  type: 'accent'  },
+  { label: '使い分けポイント',       field: 'guideline_rank',  type: 'usecase' },
+  { label: 'エビデンス出典',         field: 'evidence',        type: 'evidence'},
+  { label: '⚠ 注意事項',            field: 'caution',         type: 'caution' },
+];
+
+const ALLERGY_AIT_ROWS = [
+  { label: '投与経路',               field: 'action_type',     type: 'mech'    },
+  { label: '適応アレルゲン',         field: 'allergen',        type: 'mech'    },
+  { label: '作用機序',               field: 'mechanism',       type: 'mech'    },
+  { label: '効果スコア',             field: 'efficacy_star',   type: 'stars'   },
+  { label: '投与スケジュール',       field: 'administration',  type: 'val'     },
+  { label: '治療期間',               field: 'treatment_duration',type: 'val'   },
+  { label: '根治への可能性',         field: 'cure_potential',  type: 'accent'  },
+  { label: '副反応リスク',           field: 'side_effect_risk',type: 'accent'  },
+  { label: '使い分けポイント',       field: 'guideline_rank',  type: 'usecase' },
+  { label: 'エビデンス出典',         field: 'evidence',        type: 'evidence'},
+  { label: '⚠ 注意事項',            field: 'caution',         type: 'caution' },
+];
+
 function getRowDefs(category) {
   if (ROW_DEFS[category]) return ROW_DEFS[category];
   if (['抗精神病薬（定型）', '抗精神病薬（非定型）'].includes(category))
@@ -1081,6 +1162,12 @@ function getRowDefs(category) {
   if (category === '潰瘍性大腸炎・クローン病') return GI_IBD_ROWS;
   if (category === '消化器系漢方')       return GI_KAMPO_ROWS;
   if (category === '非オピオイド系')     return NON_OPIOID_ROWS;
+  // 抗アレルギー薬
+  if (category === '抗ヒスタミン薬')       return ALLERGY_ANTIHIST_ROWS;
+  if (category === 'ロイコトリエン拮抗薬') return ALLERGY_LTRA_ROWS;
+  if (category === '肥満細胞安定化薬')     return ALLERGY_MCS_ROWS;
+  if (category === '生物学的製剤')         return ALLERGY_BIO_ROWS;
+  if (category === 'アレルゲン免疫療法')   return ALLERGY_AIT_ROWS;
   return PAIN_ROWS;
 }
 
@@ -1360,6 +1447,34 @@ function getClassBadge(cls) {
     '消化器系漢方（腸管スパスム緩解・桂枝湯加芍薬）':   { css: 'gi-kampo' },
     '消化器系漢方（緩下・腸潤化・高齢者便秘）':         { css: 'gi-kampo' },
     '消化器系漢方（瀉下・清熱・発汗・利水・実証の肥満便秘）': { css: 'gi-kampo' },
+    // 抗アレルギー薬 - 抗ヒスタミン薬（第2世代・非鎮静性）
+    '第2世代抗ヒスタミン薬（非鎮静性・ピペリジン骨格）': { css: 'ah-2gen-non' },
+    '第2世代抗ヒスタミン薬（非鎮静性・三環系）':        { css: 'ah-2gen-non' },
+    // 抗ヒスタミン薬（第2世代・低鎮静性）
+    '第2世代抗ヒスタミン薬（低鎮静性・ピペラジン骨格）': { css: 'ah-2gen-low' },
+    '第2世代抗ヒスタミン薬（低鎮静性・ピペリジン骨格）': { css: 'ah-2gen-low' },
+    '第2世代抗ヒスタミン薬（低鎮静性・ジベンズオキセピン骨格）': { css: 'ah-2gen-low' },
+    // 抗ヒスタミン薬（第2世代・軽鎮静性）
+    '第2世代抗ヒスタミン薬（軽鎮静性・フタラジノン骨格）': { css: 'ah-2gen-mild' },
+    '第2世代抗ヒスタミン薬（双作用：H1拮抗+肥満細胞安定化）': { css: 'ah-2gen-mild' },
+    // 抗ヒスタミン薬（第1世代）
+    '第1世代抗ヒスタミン薬（鎮静性・プロピルアミン骨格）': { css: 'ah-1gen' },
+    '第1世代抗ヒスタミン薬（鎮静性・エタノールアミン骨格）': { css: 'ah-1gen' },
+    '第1世代抗ヒスタミン薬（鎮静性・ピペラジン骨格）': { css: 'ah-1gen' },
+    '第1世代抗ヒスタミン薬（鎮静性・フェノチアジン骨格）': { css: 'ah-1gen' },
+    // LTRA・肥満細胞安定化薬
+    'LTRAシステイニル型（CysLT1選択的）': { css: 'ah-ltra' },
+    '肥満細胞安定化薬（クロモン系）':      { css: 'ah-mcs' },
+    '肥満細胞安定化薬（アントラニル酸誘導体・国内開発）': { css: 'ah-mcs' },
+    // 生物学的製剤
+    '抗IgE抗体（ヒト化IgG1κ）':                        { css: 'ah-bio-ige' },
+    '抗IL-4Rα抗体（IL-4・IL-13共通受容体遮断）':        { css: 'ah-bio-il4' },
+    '抗IL-5抗体（完全ヒト化IgG1κ）':                   { css: 'ah-bio-il5' },
+    '抗IL-5Rα抗体（フコース除去・ADCC増強）':           { css: 'ah-bio-il5' },
+    // アレルゲン免疫療法
+    '舌下免疫療法（SLIT）スギ花粉': { css: 'ah-ait' },
+    '舌下免疫療法（SLIT）ダニ':     { css: 'ah-ait' },
+    '皮下免疫療法（SCIT）':         { css: 'ah-ait-sc' },
   };
   return map[cls] || { css: 'benzo' };
 }
