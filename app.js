@@ -1318,6 +1318,7 @@ function getClassBadge(cls) {
     '強オピオイド（合成）':             { css: 'strong-opioid' },
     '強オピオイド（貼付剤）':           { css: 'strong-opioid' },
     '強オピオイド（混合作用）':         { css: 'strong-opioid' },
+    '強オピオイド（μ作動+NMDA拮抗）':  { css: 'strong-opioid' },
     '置換ベンズアミド系':             { css: 'typical-ap' },
     'フェノチアジン系':               { css: 'typical-ap' },
     '定型抗精神病薬（高力価）':       { css: 'typical-ap' },
