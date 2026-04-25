@@ -345,6 +345,7 @@ thead .sticky-col { z-index: 3; }
 .class-badge.tca           { background: #1e3a5f; color: #dbeafe; }
 .class-badge.nassa         { background: #0c4a6e; color: #e0f2fe; }
 .class-badge.multimodal    { background: #1e40af; color: #dbeafe; }
+.class-badge.neuroste      { background: #4a044e; color: #f5d0fe; }
 /* 気分安定薬 */
 .class-badge.lithium       { background: #064e3b; color: #d1fae5; }
 .class-badge.mood-stable   { background: #065f46; color: #d1fae5; }

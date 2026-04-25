@@ -1329,6 +1329,8 @@ function getClassBadge(cls) {
     '三環系抗うつ薬（TCA）':          { css: 'tca' },
     'NaSSA':                          { css: 'nassa' },
     'マルチモーダル抗うつ薬':         { css: 'multimodal' },
+    'ニューロステロイド GABAA-PAM':    { css: 'neuroste' },
+    'アロプレグナノロン様GABAA受容体機能賦活剤': { css: 'neuroste' }, // 旧表記・後方互換
     'リチウム塩':                     { css: 'lithium' },
     '脂肪酸系気分安定薬':             { css: 'mood-stable' },
     '気分安定薬（Na+チャネル遮断薬）':{ css: 'mood-stable' },
