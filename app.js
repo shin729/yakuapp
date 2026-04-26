@@ -165,14 +165,27 @@ const DOMAINS = {
   respiratory: {
     file: './data/respiratory.json',
     categories: [
-      { key: '吸入薬',               label: '💨 吸入薬' },
-      { key: '気管支喘息（内服）',   label: '💊 気管支喘息（内服）' },
-      { key: 'COPD（内服）',         label: '🫁 COPD（内服）' },
-      { key: '肺高血圧症',           label: '❤ 肺高血圧症' },
-      { key: '間質性肺疾患',         label: '🫧 間質性肺疾患' },
-      { key: '慢性咳嗽',             label: '😮‍💨 慢性咳嗽' },
+      { key: '気管支喘息（吸入）', label: '💨 気管支喘息（吸入）' },
+      { key: 'COPD（吸入）',       label: '💨 COPD（吸入）' },
+      { key: '気管支喘息（内服）', label: '💊 気管支喘息（内服）' },
+      { key: 'COPD（内服）',       label: '🫁 COPD（内服）' },
+      { key: '肺高血圧症',         label: '❤ 肺高血圧症' },
+      { key: '間質性肺疾患',       label: '🫧 間質性肺疾患' },
+      { key: '慢性咳嗽',           label: '😮‍💨 慢性咳嗽' },
+      { key: 'RX_SABA',      label: '🔴 SABA（短時間作用β2）' },
+      { key: 'RX_LABA',      label: '🟠 LABA（長時間作用β2）' },
+      { key: 'RX_LAMA',      label: '🔵 LAMA（長時間作用抗コリン）' },
+      { key: 'RX_ICS',       label: '🟢 ICS（吸入ステロイド）' },
+      { key: 'RX_ICS_LABA',  label: '🟩 ICS/LABA配合' },
+      { key: 'RX_LAMA_LABA', label: '🟦 LAMA/LABA配合' },
+      { key: 'RX_TRIPLE',    label: '⬛ ICS/LABA/LAMA（3剤）' },
     ],
-    defaultCat: '吸入薬',
+    categoryGroups: [
+      { key: 'disease',   label: '疾患別',    cats: ['気管支喘息（吸入）', 'COPD（吸入）', '気管支喘息（内服）', 'COPD（内服）', '肺高血圧症', '間質性肺疾患', '慢性咳嗽'] },
+      { key: 'mechanism', label: '作用機序別', cats: ['RX_SABA', 'RX_LABA', 'RX_LAMA', 'RX_ICS', 'RX_ICS_LABA', 'RX_LAMA_LABA', 'RX_TRIPLE'] },
+    ],
+    defaultGroup: 'disease',
+    defaultCat: '気管支喘息（吸入）',
     headBg:       'linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 100%)',
     stickyBg:     '#f0f9ff',
     rowAltBg:     '#f8fcff',
@@ -225,6 +238,29 @@ const VW_CLASS_MAP = {
   'ベプリジル':                'VW_IV',
   'ジゴキシン':                'VW_other',
   'ATP（アデノシン三リン酸）': 'VW_other',
+};
+
+// ===== 呼吸器作用機序分類マップ（薬剤名 → RXクラスキー） =====
+const RESP_MECH_MAP = {
+  'サルブタモール':                          'RX_SABA',
+  'プロカテロール':                          'RX_SABA',
+  'サルメテロール':                          'RX_LABA',
+  'ホルモテロール':                          'RX_LABA',
+  'インダカテロール':                        'RX_LABA',
+  'チオトロピウム':                          'RX_LAMA',
+  'グリコピロニウム':                        'RX_LAMA',
+  'ウメクリジニウム':                        'RX_LAMA',
+  'ブデソニド':                              'RX_ICS',
+  'フルチカゾンプロピオン酸':               'RX_ICS',
+  'シクレソニド':                            'RX_ICS',
+  'ブデソニド/ホルモテロール':              'RX_ICS_LABA',
+  'フルチカゾン/サルメテロール':            'RX_ICS_LABA',
+  'フルチカゾンフランカルボン酸/ビランテロール': 'RX_ICS_LABA',
+  'チオトロピウム/オロダテロール':          'RX_LAMA_LABA',
+  'グリコピロニウム/インダカテロール':      'RX_LAMA_LABA',
+  'ウメクリジニウム/ビランテロール':        'RX_LAMA_LABA',
+  'フルチカゾン/ビランテロール/ウメクリジニウム':    'RX_TRIPLE',
+  'ブデソニド/ホルモテロール/グリコピロニウム':      'RX_TRIPLE',
 };
 
 // カテゴリ → ドメインのマップ（全体検索で使用）
@@ -395,6 +431,7 @@ function renderDomainView() {
   const drugs  = (dataCache[currentDomain] || []).filter(d => {
     if (currentCategory.startsWith('VW_')) return VW_CLASS_MAP[d.name] === currentCategory;
     if (currentCategory.startsWith('MX_')) return HF_CLASS_MAP[d.name] === currentCategory;
+    if (currentCategory.startsWith('RX_')) return RESP_MECH_MAP[d.name] === currentCategory;
     return d.category === currentCategory;
   });
   const sorted = sortDrugs(drugs);
@@ -1230,7 +1267,10 @@ function getRowDefs(category) {
   if (category === '生物学的製剤')         return ALLERGY_BIO_ROWS;
   if (category === 'アレルゲン免疫療法')   return ALLERGY_AIT_ROWS;
   // 呼吸器
-  if (category === '吸入薬')               return RESP_INHALER_ROWS;
+  if (['気管支喘息（吸入）', 'COPD（吸入）',
+       'RX_SABA', 'RX_LABA', 'RX_LAMA', 'RX_ICS',
+       'RX_ICS_LABA', 'RX_LAMA_LABA', 'RX_TRIPLE'].includes(category))
+    return RESP_INHALER_ROWS;
   if (['気管支喘息（内服）', 'COPD（内服）',
        '肺高血圧症', '間質性肺疾患', '慢性咳嗽'].includes(category))
     return RESP_ORAL_ROWS;
