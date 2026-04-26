@@ -162,6 +162,23 @@ const DOMAINS = {
     rowAltSticky: '#e4fbfd',
     accentColor:  '#0891b2',
   },
+  respiratory: {
+    file: './data/respiratory.json',
+    categories: [
+      { key: '吸入薬',               label: '💨 吸入薬' },
+      { key: '気管支喘息（内服）',   label: '💊 気管支喘息（内服）' },
+      { key: 'COPD（内服）',         label: '🫁 COPD（内服）' },
+      { key: '肺高血圧症',           label: '❤ 肺高血圧症' },
+      { key: '間質性肺疾患',         label: '🫧 間質性肺疾患' },
+      { key: '慢性咳嗽',             label: '😮‍💨 慢性咳嗽' },
+    ],
+    defaultCat: '吸入薬',
+    headBg:       'linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 100%)',
+    stickyBg:     '#f0f9ff',
+    rowAltBg:     '#f8fcff',
+    rowAltSticky: '#e8f5fd',
+    accentColor:  '#0369a1',
+  },
 };
 
 // ===== 心不全作用機序分類マップ（薬剤名 → MXクラスキー） =====
@@ -1137,6 +1154,31 @@ const ALLERGY_AIT_ROWS = [
   { label: '⚠ 注意事項',            field: 'caution',         type: 'caution' },
 ];
 
+// ===== 呼吸器 ROW_DEFS =====
+const RESP_INHALER_ROWS = [
+  { label: '作用機序',         field: 'mechanism',       type: 'mech'    },
+  { label: '主な適応',         field: 'indication',      type: 'mech'    },
+  { label: 'デバイス',         field: 'device',          type: 'val'     },
+  { label: '必要吸気流速',     field: 'inhalation_flow', type: 'accent'  },
+  { label: '効果スコア',       field: 'efficacy_star',   type: 'stars'   },
+  { label: '効果発現',         field: 'onset_time',      type: 'val'     },
+  { label: '作用持続',         field: 'duration_hours',  type: 'val'     },
+  { label: '使い分けポイント', field: 'guideline_rank',  type: 'usecase' },
+  { label: 'エビデンス出典',   field: 'evidence',        type: 'evidence'},
+  { label: '⚠ 注意事項',      field: 'caution',         type: 'caution' },
+];
+const RESP_ORAL_ROWS = [
+  { label: '作用機序',         field: 'mechanism',       type: 'mech'    },
+  { label: '主な適応',         field: 'indication',      type: 'mech'    },
+  { label: '効果スコア',       field: 'efficacy_star',   type: 'stars'   },
+  { label: '主要効果指標',     field: 'placebo_onset',   type: 'accent'  },
+  { label: '副次効果指標',     field: 'placebo_sleep',   type: 'accent'  },
+  { label: '作用持続',         field: 'duration_hours',  type: 'val'     },
+  { label: '使い分けポイント', field: 'guideline_rank',  type: 'usecase' },
+  { label: 'エビデンス出典',   field: 'evidence',        type: 'evidence'},
+  { label: '⚠ 注意事項',      field: 'caution',         type: 'caution' },
+];
+
 function getRowDefs(category) {
   if (ROW_DEFS[category]) return ROW_DEFS[category];
   if (['抗精神病薬（定型）', '抗精神病薬（非定型）'].includes(category))
@@ -1187,6 +1229,11 @@ function getRowDefs(category) {
   if (category === '肥満細胞安定化薬')     return ALLERGY_MCS_ROWS;
   if (category === '生物学的製剤')         return ALLERGY_BIO_ROWS;
   if (category === 'アレルゲン免疫療法')   return ALLERGY_AIT_ROWS;
+  // 呼吸器
+  if (category === '吸入薬')               return RESP_INHALER_ROWS;
+  if (['気管支喘息（内服）', 'COPD（内服）',
+       '肺高血圧症', '間質性肺疾患', '慢性咳嗽'].includes(category))
+    return RESP_ORAL_ROWS;
   return PAIN_ROWS;
 }
 
@@ -1530,6 +1577,27 @@ function getClassBadge(cls) {
     '舌下免疫療法（SLIT）スギ花粉': { css: 'ah-ait' },
     '舌下免疫療法（SLIT）ダニ':     { css: 'ah-ait' },
     '皮下免疫療法（SCIT）':         { css: 'ah-ait-sc' },
+    // 呼吸器
+    'SABA（短時間作用型β2刺激薬）':   { css: 'resp-saba' },
+    'LABA（長時間作用型β2刺激薬）':   { css: 'resp-laba' },
+    'LAMA（長時間作用型抗コリン薬）': { css: 'resp-lama' },
+    'ICS（吸入ステロイド）':          { css: 'resp-ics'  },
+    'ICS/LABA配合剤':                 { css: 'resp-ics-laba' },
+    'LAMA/LABA配合剤':                { css: 'resp-lama-laba' },
+    'ICS/LABA/LAMA配合剤（3剤配合）': { css: 'resp-triple' },
+    'LTRA（ロイコトリエン受容体拮抗薬）': { css: 'resp-ltra' },
+    'キサンチン系気管支拡張薬':       { css: 'resp-xanth' },
+    '抗IgE抗体（生物学的製剤）':      { css: 'resp-bio-ige' },
+    '抗IL-5抗体（生物学的製剤）':     { css: 'resp-bio-il5' },
+    '抗IL-5Rα抗体（生物学的製剤）':   { css: 'resp-bio-il5' },
+    '抗IL-4Rα抗体（生物学的製剤）':   { css: 'resp-bio-il4' },
+    'PDE4阻害薬':                     { css: 'resp-pde4' },
+    'ERA（エンドセリン受容体拮抗薬）': { css: 'resp-era' },
+    'PDE5阻害薬':                     { css: 'resp-pde5' },
+    'プロスタサイクリン受容体作動薬（IP受容体作動薬）': { css: 'resp-pgi2' },
+    '抗線維化薬':                     { css: 'resp-antifib' },
+    'チロシンキナーゼ阻害薬（抗線維化薬）': { css: 'resp-antifib' },
+    'P2X3受容体拮抗薬':               { css: 'resp-p2x3' },
   };
   return map[cls] || { css: 'benzo' };
 }

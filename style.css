@@ -467,6 +467,25 @@ thead .sticky-col { z-index: 3; }
 .class-badge.ah-ait       { background: #14532d; color: #dcfce7; }
 /* アレルゲン免疫療法・SCIT（テール） */
 .class-badge.ah-ait-sc    { background: #134e4a; color: #ccfbf1; }
+/* 呼吸器 */
+.class-badge.resp-saba      { background: #7f1d1d; color: #fecaca; }
+.class-badge.resp-laba      { background: #9a3412; color: #fed7aa; }
+.class-badge.resp-lama      { background: #1e3a5f; color: #bfdbfe; }
+.class-badge.resp-ics       { background: #14532d; color: #bbf7d0; }
+.class-badge.resp-ics-laba  { background: #064e3b; color: #a7f3d0; }
+.class-badge.resp-lama-laba { background: #1e3a8a; color: #bfdbfe; }
+.class-badge.resp-triple    { background: #1e1b4b; color: #c7d2fe; }
+.class-badge.resp-ltra      { background: #365314; color: #d9f99d; }
+.class-badge.resp-xanth     { background: #713f12; color: #fef3c7; }
+.class-badge.resp-bio-ige   { background: #831843; color: #fce7f3; }
+.class-badge.resp-bio-il5   { background: #4c1d95; color: #ede9fe; }
+.class-badge.resp-bio-il4   { background: #701a75; color: #fae8ff; }
+.class-badge.resp-pde4      { background: #0f766e; color: #ccfbf1; }
+.class-badge.resp-era       { background: #7c2d12; color: #ffedd5; }
+.class-badge.resp-pde5      { background: #1d4ed8; color: #dbeafe; }
+.class-badge.resp-pgi2      { background: #0e7490; color: #cffafe; }
+.class-badge.resp-antifib   { background: #374151; color: #f3f4f6; }
+.class-badge.resp-p2x3      { background: #4a044e; color: #fae8ff; }
 
 /* ===== Table body ===== */
 .compare-table tbody td {
