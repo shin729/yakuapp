@@ -575,7 +575,11 @@ function evidenceCardRow(label, d) {
     ? `<button class="ev-link-btn" data-url="${esc(d.evidence_url)}" aria-label="参照リンクを表示">🔗</button>
        <div class="ev-link-panel" hidden><a href="${esc(d.evidence_url)}" target="_blank" rel="noopener noreferrer">${esc(d.evidence_url)}</a></div>`
     : '';
-  return `<div class="card-detail-row"><span class="cd-label">${esc(label)}</span><span class="cd-val cd-evidence">${esc(d.evidence || '')}${linkBtn}</span></div>`;
+  const glBtn = d.guideline_url
+    ? `<button class="ev-link-btn ev-gl-btn" data-url="${esc(d.guideline_url)}" aria-label="ガイドラインを表示">📋</button>
+       <div class="ev-link-panel" hidden><a href="${esc(d.guideline_url)}" target="_blank" rel="noopener noreferrer">ガイドライン PDF</a></div>`
+    : '';
+  return `<div class="card-detail-row"><span class="cd-label">${esc(label)}</span><span class="cd-val cd-evidence">${esc(d.evidence || '')}${linkBtn}${glBtn}</span></div>`;
 }
 
 function noResultsHTML() {

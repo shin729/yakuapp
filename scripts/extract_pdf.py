@@ -425,6 +425,12 @@ async def main(source: str, target_json: str, drug_name_en: str = None):
         for d in drugs:
             print(f"  - {d.get('name', '不明')}（{d.get('category', '')}）")
         print()
+
+        # ガイドラインURLをJSONフィールドとして注入（hallucination防止のため外部から）
+        if guideline_urls:
+            for drug in drugs:
+                drug.setdefault('guideline_url', guideline_urls[0])
+
         merge_into_json(drugs, json_path)
 
     except Exception as e:
