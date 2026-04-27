@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-extract_pdf.py - NotebookLMでPDFから薬剤情報を抽出してJSONに追記
+extract_pdf.py - NotebookLMでPDF/URLから薬剤情報を抽出してJSONに追記
 
 使い方:
-  python scripts/extract_pdf.py <pdf_path> <target_json>
+  python scripts/extract_pdf.py <pdf_or_url> <target_json> [英語薬剤名]
 
 例:
+  # PDF（ファイルパス）
   python scripts/extract_pdf.py data/raw/zuranolone.pdf data/sleep_anxiety.json
-  python scripts/extract_pdf.py data/raw/celecoxib.pdf data/pain.json
+  # URL（PMDAページ等）
+  python scripts/extract_pdf.py https://www.info.pmda.go.jp/go/pack/2123404D1033_1_10/ data/arrhythmia.json landiolol
+  # PDF + PubMed自動検索
+  python scripts/extract_pdf.py data/raw/celecoxib.pdf data/pain.json celecoxib
 
 注意:
   文字化けする場合は Git Bash で以下を実行してください:
@@ -27,7 +31,7 @@ from notebooklm import NotebookLMClient
 # NotebookLMが引用番号 [1] [2, 3] を文字列に混入することがあるので除去
 def clean_citation(val):
     if isinstance(val, str):
-        return re.sub(r'\s*\[[\d,\s\.]+\]', '', val).strip()
+        return re.sub(r'\s*\[[\d,\s\.\-–]+\]', '', val).strip()
     return val
 
 def clean_drug(drug: dict) -> dict:
@@ -85,6 +89,43 @@ def search_pubmed(drug_name: str, max_results: int = 4) -> list[str]:
     return r.json()['esearchresult']['idlist']
 
 
+async def _run_extraction(nb_id: str, client, extra_urls: list[str] = None) -> list[dict]:
+    """共通抽出処理（ソース追加後に呼ぶ）"""
+    if extra_urls:
+        print("追加URLを投入中...")
+        for url in extra_urls:
+            await client.sources.add_url(nb_id, url)
+            print(f"  追加: {url[:80]}")
+
+    wait_sec = 20 if extra_urls else 12
+    print(f"解析待機中（{wait_sec}秒）...")
+    await asyncio.sleep(wait_sec)
+
+    print("NotebookLMに質問中...")
+    result = await client.chat.ask(nb_id, EXTRACT_PROMPT)
+    raw = result.answer.strip()
+
+    if raw.startswith("```"):
+        raw = raw.split("\n", 1)[1]
+        raw = raw.rsplit("```", 1)[0].strip()
+
+    try:
+        drugs = json.loads(raw)
+    except json.JSONDecodeError:
+        match = re.search(r'\[.*\]', raw, re.DOTALL)
+        if match:
+            drugs = json.loads(match.group())
+        else:
+            print("\n--- NotebookLM応答（パース失敗）---")
+            print(raw[:2000])
+            print("---")
+            raise ValueError("JSONの抽出に失敗しました")
+
+    if isinstance(drugs, dict):
+        drugs = [drugs]
+    return [clean_drug(d) for d in drugs]
+
+
 async def extract_from_pdf(pdf_path: pathlib.Path, pubmed_ids: list[str] = None) -> list[dict]:
     """PDFをNotebookLMにアップロードして薬剤情報を抽出
     pubmed_ids: 追加するPubMed論文のPMIDリスト（省略時はPDF単体で抽出）
@@ -100,41 +141,33 @@ async def extract_from_pdf(pdf_path: pathlib.Path, pubmed_ids: list[str] = None)
             print(f"PDFアップロード中: {pdf_path.name}")
             await client.sources.add_file(nb_id, pdf_path)
 
-            if pubmed_ids:
-                print("PubMed論文を追加中...")
-                for pmid in pubmed_ids:
-                    await client.sources.add_url(nb_id, f'https://pubmed.ncbi.nlm.nih.gov/{pmid}/')
-                    print(f"  追加: PMID:{pmid}")
+            extra = [f'https://pubmed.ncbi.nlm.nih.gov/{pmid}/' for pmid in (pubmed_ids or [])]
+            return await _run_extraction(nb_id, client, extra or None)
 
-            wait_sec = 15 if pubmed_ids else 10
-            print(f"解析待機中（{wait_sec}秒）...")
-            await asyncio.sleep(wait_sec)
+        finally:
+            print(f"ノートブック削除中: {nb_id}")
+            await client.notebooks.delete(nb_id)
+            print("削除完了")
 
-            print("NotebookLMに質問中...")
-            result = await client.chat.ask(nb_id, EXTRACT_PROMPT)
-            raw = result.answer.strip()
 
-            if raw.startswith("```"):
-                raw = raw.split("\n", 1)[1]
-                raw = raw.rsplit("```", 1)[0].strip()
+async def extract_from_url(source_url: str, pubmed_ids: list[str] = None) -> list[dict]:
+    """URLをNotebookLMに追加して薬剤情報を抽出（PMDA添付文書ページ等）
+    pubmed_ids: 追加するPubMed論文のPMIDリスト
+    """
+    slug = re.sub(r'[^a-zA-Z0-9]', '-', source_url.split('/')[-2] or source_url.split('/')[-1])[:30]
+    async with await NotebookLMClient.from_storage() as client:
+        nb_title = f"yakuapp-{slug}"
+        print(f"ノートブック作成中: {nb_title}")
+        nb = await client.notebooks.create(nb_title)
+        nb_id = nb.id
+        print(f"作成完了: {nb_id}")
 
-            try:
-                drugs = json.loads(raw)
-            except json.JSONDecodeError:
-                match = re.search(r'\[.*\]', raw, re.DOTALL)
-                if match:
-                    drugs = json.loads(match.group())
-                else:
-                    print("\n--- NotebookLM応答（パース失敗）---")
-                    print(raw[:2000])
-                    print("---")
-                    raise ValueError("JSONの抽出に失敗しました")
+        try:
+            print(f"URLを追加中: {source_url[:80]}")
+            await client.sources.add_url(nb_id, source_url)
 
-            if isinstance(drugs, dict):
-                drugs = [drugs]
-
-            # 引用番号を除去
-            return [clean_drug(d) for d in drugs]
+            extra = [f'https://pubmed.ncbi.nlm.nih.gov/{pmid}/' for pmid in (pubmed_ids or [])]
+            return await _run_extraction(nb_id, client, extra or None)
 
         finally:
             print(f"ノートブック削除中: {nb_id}")
@@ -171,17 +204,13 @@ def merge_into_json(drugs: list[dict], json_path: pathlib.Path) -> int:
     return added
 
 
-async def main(pdf_file: str, target_json: str, drug_name: str = None):
-    pdf_path = pathlib.Path(pdf_file)
+async def main(source: str, target_json: str, drug_name: str = None):
     json_path = pathlib.Path(target_json)
+    is_url = source.startswith('http://') or source.startswith('https://')
 
-    if not pdf_path.exists():
-        print(f"エラー: PDFが見つかりません: {pdf_path}")
-        sys.exit(1)
-
-    print("=== NotebookLM PDF抽出開始 ===")
-    print(f"入力PDF : {pdf_path}")
-    print(f"出力先  : {json_path}")
+    print("=== NotebookLM 抽出開始 ===")
+    print(f"入力   : {source}")
+    print(f"出力先 : {json_path}")
 
     pubmed_ids = None
     if drug_name:
@@ -191,7 +220,15 @@ async def main(pdf_file: str, target_json: str, drug_name: str = None):
     print()
 
     try:
-        drugs = await extract_from_pdf(pdf_path, pubmed_ids)
+        if is_url:
+            drugs = await extract_from_url(source, pubmed_ids)
+        else:
+            pdf_path = pathlib.Path(source)
+            if not pdf_path.exists():
+                print(f"エラー: PDFが見つかりません: {pdf_path}")
+                sys.exit(1)
+            drugs = await extract_from_pdf(pdf_path, pubmed_ids)
+
         print(f"\n{len(drugs)}件の薬剤情報を抽出:")
         for d in drugs:
             print(f"  - {d.get('name', '不明')}（{d.get('category', '')}）")
