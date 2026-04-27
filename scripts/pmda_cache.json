@@ -1,4 +1,14 @@
 {
   "ランジオロール": "https://www.info.pmda.go.jp/go/pack/2123404D1033_1_10/2123404D1033_1_10?view=body&lang=ja",
-  "ジソピラミド": "https://www.info.pmda.go.jp/go/pack/2129002M1060_2_02/2129002M1060_2_02?view=body&lang=ja"
+  "ジソピラミド": "https://www.info.pmda.go.jp/go/pack/2129002M1060_2_02/2129002M1060_2_02?view=body&lang=ja",
+
+  "_guideline_arrhythmia": [
+    "https://www.j-circ.or.jp/cms/wp-content/uploads/2020/01/JCS2020_Ono.pdf"
+  ],
+  "_guideline_sleep": [
+    "https://jssr.jp/files/guideline/suiminyaku-guideline.pdf"
+  ],
+  "_guideline_pain": [
+    "https://www.jhsnet.net/pdf/guideline_2021.pdf"
+  ]
 }

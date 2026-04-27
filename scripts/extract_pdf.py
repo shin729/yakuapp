@@ -44,6 +44,26 @@ def save_pmda_cache(cache: dict):
     with open(CACHE_PATH, 'w', encoding='utf-8') as f:
         json.dump(cache, f, ensure_ascii=False, indent=2)
 
+# target_jsonファイル名 → キャッシュのガイドラインキー
+_GUIDELINE_KEY_MAP = {
+    'arrhythmia':    '_guideline_arrhythmia',
+    'hf':            '_guideline_arrhythmia',  # 循環器は同じ
+    'sleep_anxiety': '_guideline_sleep',
+    'pain':          '_guideline_pain',
+}
+
+def get_guideline_urls(json_path: pathlib.Path) -> list[str]:
+    """対象JSONのドメインに対応するガイドラインURLをキャッシュから取得"""
+    stem = json_path.stem  # e.g. 'arrhythmia'
+    key = _GUIDELINE_KEY_MAP.get(stem)
+    if not key:
+        return []
+    cache = load_pmda_cache()
+    urls = cache.get(key, [])
+    if urls:
+        print(f"ガイドライン適用: {key} ({len(urls)}件)")
+    return urls
+
 async def resolve_pmda_url(drug_name_ja: str) -> str | None:
     """日本語薬剤名 → PMDA view=body URL を解決（キャッシュ優先）"""
     cache = load_pmda_cache()
@@ -142,9 +162,10 @@ _PROMPT_BASE = """\
 以下の資料（PMDA添付文書・インタビューフォーム・PubMed論文等）から、薬剤情報を抽出してください。
 
 【重要な指示】
-- guideline_rank は PMDA添付文書の「効能・効果」「用法・用量」「臨床成績」を優先して記述する
-  （PubMed論文の疾患名に引っ張られないこと）
-- placebo_onset / placebo_sleep / NNT は PubMed論文の数値を積極的に使う
+- guideline_rank は 診療ガイドライン（あれば最優先）または PMDA添付文書の「効能・効果」「用法・用量」を参照して記述する
+  例：「○○学会ガイドライン推奨グレードA」「第一選択/第二選択」「使い分けポイント」など
+  PubMed論文の疾患名には引っ張られないこと
+- placebo_onset / placebo_sleep / NNT は PubMed論文または添付文書の臨床成績の数値を積極的に使う
 - name は日本語一般名のみ（「塩酸塩」「フマル酸塩」等の塩表記は含めない）
 - caution は150字以内
 - 引用番号 [1][2,3][1-3] は除去する
@@ -258,7 +279,7 @@ async def _run_extraction(nb_id: str, client, prompt: str, extra_urls: list[str]
     return [clean_drug(d) for d in drugs]
 
 
-async def extract_from_pdf(pdf_path: pathlib.Path, prompt: str, pubmed_ids: list[str] = None) -> list[dict]:
+async def extract_from_pdf(pdf_path: pathlib.Path, prompt: str, extra_urls: list[str] = None) -> list[dict]:
     async with await NotebookLMClient.from_storage() as client:
         nb_title = f"yakuapp-{pdf_path.stem}"
         print(f"ノートブック作成中: {nb_title}")
@@ -268,15 +289,14 @@ async def extract_from_pdf(pdf_path: pathlib.Path, prompt: str, pubmed_ids: list
         try:
             print(f"PDFアップロード中: {pdf_path.name}")
             await client.sources.add_file(nb_id, pdf_path)
-            extra = [f'https://pubmed.ncbi.nlm.nih.gov/{pmid}/' for pmid in (pubmed_ids or [])]
-            return await _run_extraction(nb_id, client, prompt, extra or None)
+            return await _run_extraction(nb_id, client, prompt, extra_urls or None)
         finally:
             print(f"ノートブック削除中: {nb_id}")
             await client.notebooks.delete(nb_id)
             print("削除完了")
 
 
-async def extract_from_url(source_url: str, prompt: str, pubmed_ids: list[str] = None) -> list[dict]:
+async def extract_from_url(source_url: str, prompt: str, extra_urls: list[str] = None) -> list[dict]:
     slug = re.sub(r'[^a-zA-Z0-9]', '-', source_url.split('/')[-2] or source_url.split('/')[-1])[:30]
     async with await NotebookLMClient.from_storage() as client:
         nb_title = f"yakuapp-{slug}"
@@ -287,8 +307,7 @@ async def extract_from_url(source_url: str, prompt: str, pubmed_ids: list[str] =
         try:
             print(f"URLを追加中: {source_url[:80]}")
             await client.sources.add_url(nb_id, source_url)
-            extra = [f'https://pubmed.ncbi.nlm.nih.gov/{pmid}/' for pmid in (pubmed_ids or [])]
-            return await _run_extraction(nb_id, client, prompt, extra or None)
+            return await _run_extraction(nb_id, client, prompt, extra_urls or None)
         finally:
             print(f"ノートブック削除中: {nb_id}")
             await client.notebooks.delete(nb_id)
@@ -369,12 +388,20 @@ async def main(source: str, target_json: str, drug_name_en: str = None):
         print(f"有効カテゴリ: {valid_cats}")
     prompt = build_extract_prompt(valid_cats)
 
+    # ガイドラインURL取得
+    guideline_urls = get_guideline_urls(json_path)
+
     # PubMed検索
     pubmed_ids = None
     if drug_name_en:
         print(f"PubMed検索: {drug_name_en}")
         pubmed_ids = search_pubmed(drug_name_en)
         print(f"  取得PMID: {pubmed_ids}")
+
+    # 追加URLをまとめる（ガイドライン + PubMed）
+    extra_urls = guideline_urls + [
+        f'https://pubmed.ncbi.nlm.nih.gov/{pmid}/' for pmid in (pubmed_ids or [])
+    ] or None
     print()
 
     # sourceを解決
@@ -390,9 +417,9 @@ async def main(source: str, target_json: str, drug_name_en: str = None):
 
     try:
         if is_url:
-            drugs = await extract_from_url(source, prompt, pubmed_ids)
+            drugs = await extract_from_url(source, prompt, extra_urls)
         else:
-            drugs = await extract_from_pdf(pathlib.Path(source), prompt, pubmed_ids)
+            drugs = await extract_from_pdf(pathlib.Path(source), prompt, extra_urls)
 
         print(f"\n{len(drugs)}件の薬剤情報を抽出:")
         for d in drugs:
