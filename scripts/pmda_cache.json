@@ -6,10 +6,13 @@
   "_guideline_arrhythmia": [
     "https://www.j-circ.or.jp/cms/wp-content/uploads/2020/01/JCS2020_Ono.pdf"
   ],
+  "_guideline_arrhythmia_version": "JCS/JHRS 2020年改訂版 不整脈薬物治療ガイドライン",
   "_guideline_sleep": [
     "https://jssr.jp/files/guideline/suiminyaku-guideline.pdf"
   ],
+  "_guideline_sleep_version": "日本睡眠学会 睡眠薬の適正な使用と休薬のための診療ガイドライン（2014年）",
   "_guideline_pain": [
     "https://www.jhsnet.net/pdf/guideline_2021.pdf"
-  ]
+  ],
+  "_guideline_pain_version": "頭痛の診療ガイドライン2021（日本神経学会・日本頭痛学会）"
 }

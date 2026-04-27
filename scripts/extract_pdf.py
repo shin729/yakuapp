@@ -52,17 +52,18 @@ _GUIDELINE_KEY_MAP = {
     'pain':          '_guideline_pain',
 }
 
-def get_guideline_urls(json_path: pathlib.Path) -> list[str]:
-    """対象JSONのドメインに対応するガイドラインURLをキャッシュから取得"""
-    stem = json_path.stem  # e.g. 'arrhythmia'
+def get_guideline_info(json_path: pathlib.Path) -> tuple[list[str], str]:
+    """対象JSONのドメインに対応するガイドラインURL一覧とバージョン名を返す"""
+    stem = json_path.stem
     key = _GUIDELINE_KEY_MAP.get(stem)
     if not key:
-        return []
+        return [], ''
     cache = load_pmda_cache()
     urls = cache.get(key, [])
+    version = cache.get(f'{key}_version', '')
     if urls:
-        print(f"ガイドライン適用: {key} ({len(urls)}件)")
-    return urls
+        print(f"ガイドライン適用: {version or key} ({len(urls)}件)")
+    return urls, version
 
 async def resolve_pmda_url(drug_name_ja: str) -> str | None:
     """日本語薬剤名 → PMDA view=body URL を解決（キャッシュ優先）"""
@@ -164,6 +165,7 @@ _PROMPT_BASE = """\
 【重要な指示】
 - guideline_rank は 診療ガイドライン（あれば最優先）または PMDA添付文書の「効能・効果」「用法・用量」を参照して記述する
   例：「○○学会ガイドライン推奨グレードA」「第一選択/第二選択」「使い分けポイント」など
+  複数バージョンが含まれる場合は必ず最新版の推奨を使うこと
   PubMed論文の疾患名には引っ張られないこと
 - placebo_onset / placebo_sleep / NNT は PubMed論文または添付文書の臨床成績の数値を積極的に使う
 - name は日本語一般名のみ（「塩酸塩」「フマル酸塩」等の塩表記は含めない）
@@ -202,16 +204,18 @@ _PROMPT_BASE = """\
 - 不明な情報は null
 """
 
-def build_extract_prompt(valid_categories: list[str] = None) -> str:
+def build_extract_prompt(valid_categories: list[str] = None, guideline_version: str = '') -> str:
+    hints = []
     if valid_categories:
         cats_str = '・'.join(valid_categories)
-        category_hint = f'【有効なcategory値】次のいずれかを選ぶ:\n{cats_str}'
+        hints.append(f'【有効なcategory値】次のいずれかを選ぶ:\n{cats_str}')
         category_instruction = f'次のいずれか: {cats_str}'
     else:
-        category_hint = ''
         category_instruction = 'カテゴリ名（例: 睡眠薬、非オピオイド系など）'
+    if guideline_version:
+        hints.append(f'【参照ガイドライン】{guideline_version}\n  → 複数バージョンが含まれる場合はこのバージョンの推奨を優先すること')
     return _PROMPT_BASE.format(
-        category_hint=category_hint,
+        category_hint='\n'.join(hints),
         category_instruction=category_instruction,
     )
 
@@ -386,10 +390,10 @@ async def main(source: str, target_json: str, drug_name_en: str = None):
     valid_cats = get_categories_from_json(json_path)
     if valid_cats:
         print(f"有効カテゴリ: {valid_cats}")
-    prompt = build_extract_prompt(valid_cats)
+    prompt = build_extract_prompt(valid_cats, guideline_version)
 
     # ガイドラインURL取得
-    guideline_urls = get_guideline_urls(json_path)
+    guideline_urls, guideline_version = get_guideline_info(json_path)
 
     # PubMed検索
     pubmed_ids = None
