@@ -639,7 +639,7 @@
     "efficacy_star": 4,
     "placebo_onset": "HAMD −1.8点（Day 15、プラセボ比）",
     "placebo_sleep": "治療反応率 +17%（プラセボ比、Day 15）",
-    "NNT": null,
+    "NNT": 5.9,
     "onset_time": "投与3日以内",
     "duration_hours": "半減期 約14時間（14日間投与で効果持続）",
     "guideline_rank": "国内新薬につき未策定（2025年承認）",
