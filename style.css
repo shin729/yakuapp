@@ -486,6 +486,26 @@ thead .sticky-col { z-index: 3; }
 .class-badge.resp-pgi2      { background: #0e7490; color: #cffafe; }
 .class-badge.resp-antifib   { background: #374151; color: #f3f4f6; }
 .class-badge.resp-p2x3      { background: #4a044e; color: #fae8ff; }
+/* 抗菌薬 */
+.class-badge.ab-pen         { background: #dbeafe; color: #1e40af; }
+.class-badge.ab-pen-bli     { background: #bfdbfe; color: #1e3a8a; }
+.class-badge.ab-cef1        { background: #e0f2fe; color: #075985; }
+.class-badge.ab-cef2        { background: #cffafe; color: #164e63; }
+.class-badge.ab-cef3        { background: #ccfbf1; color: #134e4a; }
+.class-badge.ab-cef4        { background: #d1fae5; color: #065f46; }
+.class-badge.ab-carba       { background: #fee2e2; color: #991b1b; }
+.class-badge.ab-mono        { background: #f1f5f9; color: #334155; }
+.class-badge.ab-macro       { background: #ede9fe; color: #4c1d95; }
+.class-badge.ab-tetra       { background: #fef3c7; color: #78350f; }
+.class-badge.ab-quin        { background: #dcfce7; color: #14532d; }
+.class-badge.ab-resp-quin   { background: #bbf7d0; color: #14532d; }
+.class-badge.ab-amino       { background: #fef9c3; color: #713f12; }
+.class-badge.ab-glyco       { background: #f3e8ff; color: #6b21a8; }
+.class-badge.ab-linco       { background: #fce7f3; color: #9d174d; }
+.class-badge.ab-oxazo       { background: #1c1917; color: #fef2f2; }
+.class-badge.ab-st          { background: #ecfdf5; color: #065f46; }
+.class-badge.ab-tb          { background: #fef3c7; color: #92400e; }
+.class-badge.ab-other       { background: #f4f4f5; color: #3f3f46; }
 
 /* ===== Table body ===== */
 .compare-table tbody td {

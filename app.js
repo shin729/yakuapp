@@ -192,7 +192,51 @@ const DOMAINS = {
     rowAltSticky: '#e8f5fd',
     accentColor:  '#0369a1',
   },
+  antibiotics: {
+    file: './data/antibiotics.json',
+    categories: [
+      { key: 'ペニシリン系',             label: '🔵 ペニシリン系' },
+      { key: 'セファロスポリン第1世代',   label: '💊 セフェム第1世代' },
+      { key: 'セファロスポリン第2世代',   label: '💊 セフェム第2世代' },
+      { key: 'セファロスポリン第3世代',   label: '💊 セフェム第3世代' },
+      { key: 'セファロスポリン第4世代',   label: '💊 セフェム第4世代' },
+      { key: 'カルバペネム系',            label: '🔴 カルバペネム系' },
+      { key: 'モノバクタム系',            label: '💊 モノバクタム系' },
+      { key: 'マクロライド系',            label: '🟣 マクロライド系' },
+      { key: 'テトラサイクリン系',        label: '🟠 テトラサイクリン系' },
+      { key: 'フルオロキノロン系',        label: '🟢 フルオロキノロン系' },
+      { key: 'アミノグリコシド系',        label: '💊 アミノグリコシド系' },
+      { key: 'グリコペプチド系',          label: '🟤 グリコペプチド系' },
+      { key: 'リンコサミド系',            label: '💊 リンコサミド系' },
+      { key: 'オキサゾリジノン系',        label: '⚫ オキサゾリジノン系' },
+      { key: 'ST合剤',                    label: '💊 ST合剤' },
+      { key: 'その他',                    label: '💊 その他' },
+      { key: 'AB_MRSA',      label: '🦠 MRSA' },
+      { key: 'AB_STREP',     label: '🦠 肺炎球菌・連鎖球菌' },
+      { key: 'AB_ENTERO',    label: '🦠 腸球菌' },
+      { key: 'AB_ENTERO_BAC',label: '🦠 腸内細菌科' },
+      { key: 'AB_ESBL',      label: '🦠 ESBL産生菌' },
+      { key: 'AB_PSEUDO',    label: '🦠 緑膿菌' },
+      { key: 'AB_ANAEROBE',  label: '🦠 嫌気性菌' },
+      { key: 'AB_ATYPICAL',  label: '🦠 非定型菌' },
+      { key: 'AB_TB',        label: '🦠 抗結核薬' },
+    ],
+    categoryGroups: [
+      { key: 'byClass',    label: 'クラス別',  cats: ['ペニシリン系', 'セファロスポリン第1世代', 'セファロスポリン第2世代', 'セファロスポリン第3世代', 'セファロスポリン第4世代', 'カルバペネム系', 'モノバクタム系', 'マクロライド系', 'テトラサイクリン系', 'フルオロキノロン系', 'アミノグリコシド系', 'グリコペプチド系', 'リンコサミド系', 'オキサゾリジノン系', 'ST合剤', 'その他'] },
+      { key: 'byOrganism', label: '対象菌別',  cats: ['AB_MRSA', 'AB_STREP', 'AB_ENTERO', 'AB_ENTERO_BAC', 'AB_ESBL', 'AB_PSEUDO', 'AB_ANAEROBE', 'AB_ATYPICAL', 'AB_TB'] },
+    ],
+    defaultGroup: 'byClass',
+    defaultCat:   'ペニシリン系',
+    headBg:       'linear-gradient(180deg, #f0fdf4 0%, #dcfce7 100%)',
+    stickyBg:     '#f0fdf4',
+    rowAltBg:     '#f7fef9',
+    rowAltSticky: '#ecfbf1',
+    accentColor:  '#15803d',
+  },
 };
+
+// ===== 抗結核薬リスト（対象菌別タブ AB_TB 用） =====
+const AB_TB_DRUGS = ['イソニアジド', 'ピラジナミド', 'エタンブトール', 'ストレプトマイシン', 'リファンピシン', 'リファブチン', 'エンビオマイシン', 'カナマイシン'];
 
 // ===== 心不全作用機序分類マップ（薬剤名 → MXクラスキー） =====
 const HF_CLASS_MAP = {
@@ -432,6 +476,11 @@ function renderDomainView() {
     if (currentCategory.startsWith('VW_')) return VW_CLASS_MAP[d.name] === currentCategory;
     if (currentCategory.startsWith('MX_')) return HF_CLASS_MAP[d.name] === currentCategory;
     if (currentCategory.startsWith('RX_')) return RESP_MECH_MAP[d.name] === currentCategory;
+    if (currentCategory.startsWith('AB_')) {
+      if (currentCategory === 'AB_TB') return AB_TB_DRUGS.includes(d.name);
+      const specField = { AB_MRSA: 'mrsa', AB_STREP: 'strep', AB_ENTERO: 'entero', AB_ENTERO_BAC: 'entero_bac', AB_ESBL: 'esbl', AB_PSEUDO: 'pseudo', AB_ANAEROBE: 'anaerobe', AB_ATYPICAL: 'atypical' }[currentCategory];
+      return specField && ['+++', '++', '+'].includes(d[specField]);
+    }
     return d.category === currentCategory;
   });
   const sorted = sortDrugs(drugs);
@@ -1220,7 +1269,21 @@ const RESP_ORAL_ROWS = [
   { label: '⚠ 注意事項',      field: 'caution',         type: 'caution' },
 ];
 
+// ===== 抗菌薬 ROW_DEFS =====
+const ANTIBIOTIC_ROWS = [
+  { label: '作用機序',       field: 'mechanism',  type: 'mech'    },
+  { label: 'PK/PD特性',      field: 'pkpd',       type: 'val'     },
+  { label: '米国用量',        field: 'dose_us',    type: 'accent'  },
+  { label: '投与経路',        field: 'route',      type: 'val'     },
+  { label: '第一選択',        field: 'first_line', type: 'usecase' },
+  { label: '適応外使用',      field: 'off_label',  type: 'usecase' },
+  { label: '交差アレルギー',  field: 'cross',      type: 'val'     },
+  { label: '⚠ 注意事項',     field: 'caution',    type: 'caution' },
+  { label: 'TDM',             field: 'tdm',        type: 'val'     },
+];
+
 function getRowDefs(category) {
+  if (currentDomain === 'antibiotics') return ANTIBIOTIC_ROWS;
   if (ROW_DEFS[category]) return ROW_DEFS[category];
   if (['抗精神病薬（定型）', '抗精神病薬（非定型）'].includes(category))
     return AP_ROWS;
@@ -1642,6 +1705,30 @@ function getClassBadge(cls) {
     '抗線維化薬':                     { css: 'resp-antifib' },
     'チロシンキナーゼ阻害薬（抗線維化薬）': { css: 'resp-antifib' },
     'P2X3受容体拮抗薬':               { css: 'resp-p2x3' },
+    // 抗菌薬
+    '天然ペニシリン':                      { css: 'ab-pen'    },
+    '広域ペニシリン':                      { css: 'ab-pen'    },
+    'βラクタマーゼ阻害薬配合ペニシリン':  { css: 'ab-pen-bli'},
+    '第1世代セフェム':                     { css: 'ab-cef1'   },
+    '第2世代セフェム':                     { css: 'ab-cef2'   },
+    '第3世代セフェム':                     { css: 'ab-cef3'   },
+    '第4世代セフェム':                     { css: 'ab-cef4'   },
+    'カルバペネム':                        { css: 'ab-carba'  },
+    'ペネム系':                            { css: 'ab-carba'  },
+    'モノバクタム系':                      { css: 'ab-mono'   },
+    'マクロライド系':                      { css: 'ab-macro'  },
+    'テトラサイクリン系':                  { css: 'ab-tetra'  },
+    'フルオロキノロン系':                  { css: 'ab-quin'   },
+    '呼吸器キノロン':                      { css: 'ab-resp-quin' },
+    'アミノグリコシド系':                  { css: 'ab-amino'  },
+    'グリコペプチド系':                    { css: 'ab-glyco'  },
+    'リンコサミド系':                      { css: 'ab-linco'  },
+    'オキサゾリジノン系':                  { css: 'ab-oxazo'  },
+    'ST合剤':                              { css: 'ab-st'     },
+    '抗結核薬':                            { css: 'ab-tb'     },
+    'ペプチド系抗結核薬':                  { css: 'ab-tb'     },
+    'リファマイシン系':                    { css: 'ab-tb'     },
+    'ホスホマイシン系':                    { css: 'ab-other'  },
   };
   return map[cls] || { css: 'benzo' };
 }
