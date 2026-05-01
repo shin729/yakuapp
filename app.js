@@ -1273,6 +1273,7 @@ const RESP_ORAL_ROWS = [
 const ANTIBIOTIC_ROWS = [
   { label: '作用機序',       field: 'mechanism',  type: 'mech'    },
   { label: 'PK/PD特性',      field: 'pkpd',       type: 'val'     },
+  { label: '血中半減期',      field: 'half_life',  type: 'val'     },
   { label: '米国用量',        field: 'dose_us',    type: 'accent'  },
   { label: '投与経路',        field: 'route',      type: 'val'     },
   { label: '第一選択',        field: 'first_line', type: 'usecase' },

@@ -5,8 +5,8 @@
     "category": "アミノグリコシド系",
     "class": "アミノグリコシド系",
     "mechanism": "細菌のリボゾームに作用して蛋白合成を阻害し、殺菌的に作用する。ゲンタマイシンなど他のアミノグリコシド系抗菌薬を不活化する酵素による影響を受けにくいため、それらの薬剤に耐性を示す菌株に対しても抗菌力を維持しやすいという特徴を持つ。",
-    "pkpd": "濃度依存性（Cmax/MIC）。アミノグリコシド系の基本特性であり、一回大量投与が有効とされる。",
-    "dose_us": "15mg/kg IV q24h",
+    "pkpd": "濃度依存性（Cmax/MIC）",
+    "dose_us": "15mg/kg 静注 1日1回",
     "route": "注射",
     "first_line": "HAP/VAP緑膿菌カバー要（IDSA）",
     "off_label": "多剤耐性結核（IDSA推奨）",
@@ -21,7 +21,8 @@
     "pseudo": "++",
     "anaerobe": "-",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約2.2時間"
   },
   {
     "name": "アモキシシリン",
@@ -29,8 +30,8 @@
     "category": "ペニシリン系",
     "class": "広域ペニシリン",
     "mechanism": "細菌の細胞壁ペプチドグリカンの最終重合工程を触媒するペニシリン結合蛋白（PBP 1A, 1B, 2, 3）に結合してその活性を阻害し、細胞壁合成を抑制することで殺菌的に作用する。ただしβ-ラクタマーゼにより分解されるため、同酵素産生菌に対しては抗菌力を失う点に注意が必要である。",
-    "pkpd": "時間依存性（%T>MIC）。βラクタム系の基本特性であり、血中濃度を有効発育阻止濃度以上に保つ時間が重要となる。",
-    "dose_us": "500mg-1g PO q8h or 875mg PO q12h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "500mg-1g 経口 8時間毎 or 875mg 経口 12時間毎",
     "route": "経口",
     "first_line": "CAP軽症・外来（IDSA/ATS）、レンサ球菌咽頭炎（IDSA）、ヘリコバクター・ピロリ除菌（日本ガイドライン）",
     "off_label": "サルモネラ・赤痢菌感染症、中耳炎大量療法（IDSA推奨）、感染性心内膜炎予防（AHA推奨）",
@@ -45,16 +46,17 @@
     "pseudo": "-",
     "anaerobe": "+",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約1.0時間（60分）"
   },
   {
     "name": "アモキシシリン/クラブラン酸",
     "brand": "オーグメンチン配合錠125SS・オーグメンチン配合錠250RS",
     "category": "ペニシリン系",
-    "class": "広域ペニシリン",
+    "class": "βラクタマーゼ阻害薬配合ペニシリン",
     "mechanism": "クラブラン酸がβ-ラクタマーゼに不可逆的に結合してこれを不活化する。その間に、ペニシリン系抗菌薬であるアモキシシリンが細菌の細胞壁ペプチドグリカンの生合成（ペニシリン結合蛋白1A、1Bs）を阻害することで、殺菌的に作用する。β-ラクタマーゼ産生菌による耐性を克服し、幅広いスペクトラムを有する。",
-    "pkpd": "時間依存性（%T>MIC）。βラクタム系の基本特性であり、β-ラクタマーゼに安定。アモキシシリンとクラブラン酸の双方とも血中半減期は約1時間である。",
-    "dose_us": "500mg/125mg PO q8h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "500mg/125mg 経口 8時間毎",
     "route": "経口",
     "first_line": "CAP（市中肺炎）外来（IDSA）、急性副鼻腔炎（IDSA）",
     "off_label": "動物咬傷（IDSA推奨）",
@@ -69,7 +71,8 @@
     "pseudo": "-",
     "anaerobe": "++",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約1.36時間"
   },
   {
     "name": "アンピシリン",
@@ -77,8 +80,8 @@
     "category": "ペニシリン系",
     "class": "広域ペニシリン",
     "mechanism": "細菌の細胞壁ペプチドグリカンの生合成を阻害することで殺菌的に作用する。ペニシリン結合蛋白（PBP）1A、1B、3に高い親和性を持ち、細胞壁の架橋構造の形成を妨げる。ただし、β-ラクタマーゼによって容易に分解されるため、耐性菌（β-ラクタマーゼ産生菌）には無効である。",
-    "pkpd": "時間依存性（%T>MIC）。βラクタム系の基本特性であり、血中濃度がMICを上回る時間の割合が治療効果に最も寄与する。",
-    "dose_us": "2g IV q4h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "2g 静注 4時間毎",
     "route": "経口/注射",
     "first_line": "Listeria髄膜炎（IDSA）、感受性のある腸球菌感染症（IDSA）",
     "off_label": null,
@@ -93,7 +96,8 @@
     "pseudo": "-",
     "anaerobe": "++",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約1.0時間（60分）"
   },
   {
     "name": "アジスロマイシン",
@@ -101,8 +105,8 @@
     "category": "マクロライド系",
     "class": "マクロライド系",
     "mechanism": "細菌の70Sリボソームの50Sサブユニットと結合し、細菌の蛋白合成を阻害することで抗菌作用を発揮する。組織移行性に優れ、感染巣において高い濃度を維持する特性を持つ。",
-    "pkpd": "AUC依存性（AUC/MIC）。血中半減期が非常に長く（約60時間以上）、1日1回投与で組織内に1週間以上有効濃度が維持される。",
-    "dose_us": "500mg PO q24h",
+    "pkpd": "AUC依存性（AUC/MIC）",
+    "dose_us": "500mg 経口 1日1回",
     "route": "経口/注射",
     "first_line": "CAP軽症・外来（IDSA）",
     "off_label": "MAC感染症の予防・治療（IDSA推奨）",
@@ -117,7 +121,8 @@
     "pseudo": "-",
     "anaerobe": "+",
     "atypical": "+++",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約68時間（組織内）"
   },
   {
     "name": "アズトレオナム",
@@ -125,8 +130,8 @@
     "category": "モノバクタム系",
     "class": "モノバクタム系",
     "mechanism": "細菌の細胞壁ペプチドグリカンの生合成を阻害し、殺菌的に作用する。ペニシリン結合蛋白3（PBP-3）に高い親和性を持つ世界初のモノバクタム系抗生剤である。グラム陰性菌の外膜に対する透過性が良好で、多くのβ-ラクタマーゼに安定であり、産生誘導能も小さいという特徴を持つ。",
-    "pkpd": "時間依存性（%T>MIC）。βラクタム系と同様に、血中濃度がMICを上回る時間の割合が効果に寄与する。",
-    "dose_us": "1-2g IV q8h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "1-2g 静注 8時間毎",
     "route": "注射",
     "first_line": null,
     "off_label": null,
@@ -141,7 +146,8 @@
     "pseudo": "++",
     "anaerobe": "-",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約1.7時間（100分）"
   },
   {
     "name": "セファゾリン",
@@ -149,8 +155,8 @@
     "category": "セファロスポリン第1世代",
     "class": "第1世代セフェム",
     "mechanism": "細菌の細胞壁ペプチドグリカンの生合成を阻害することで、殺菌的に作用する。具体的にはペニシリン結合蛋白（PBP）1A、1B、2、3に親和性を持ち、細胞壁の最終架橋段階を妨げることで細菌を死滅させる。グラム陽性菌に強い活性を持つが、β-ラクタマーゼに対してはやや不安定な性質を併せ持つ。",
-    "pkpd": "時間依存性（%T>MIC）。βラクタム系の基本特性。",
-    "dose_us": "1g-2g IV q8h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "1g-2g 静注 8時間毎",
     "route": "注射",
     "first_line": "MSSA感染症（心内膜炎・血流感染・皮膚軟部組織感染）、周術期感染予防",
     "off_label": null,
@@ -165,7 +171,8 @@
     "pseudo": "-",
     "anaerobe": "+",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約1.4時間（84分）"
   },
   {
     "name": "セフカペン ピボキシル",
@@ -173,7 +180,7 @@
     "category": "セファロスポリン第3世代",
     "class": "第3世代セフェム",
     "mechanism": "細菌の細胞壁合成を阻害することにより抗菌作用を発揮し、作用は殺菌的である。ペニシリン結合蛋白PBP3型に高い親和性を示し、各種細菌が産生するβ-ラクタマーゼに対して安定である。",
-    "pkpd": "時間依存性（%T>MIC）。βラクタム系の基本特性。",
+    "pkpd": "時間依存性（%T>MIC）",
     "dose_us": null,
     "route": "経口",
     "first_line": null,
@@ -189,7 +196,8 @@
     "pseudo": "-",
     "anaerobe": "+",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約1.0時間（60分）"
   },
   {
     "name": "セフジトレン ピボキシル",
@@ -197,8 +205,8 @@
     "category": "セファロスポリン第3世代",
     "class": "第3世代セフェム",
     "mechanism": "細菌細胞壁の合成阻害（PBPへの結合）による。吸収性を高めたエステル型プロドラッグであり、各種β-ラクタマーゼに対して安定である。グラム陽性菌、グラム陰性菌に加え、一部の嫌気性菌に対しても抗菌力を有し、特にインフルエンザ菌（BLNARを含む）や肺炎球菌に対して強い活性を示す。",
-    "pkpd": "時間依存性（%T>MIC）。βラクタム系の基本特性。",
-    "dose_us": "200-400mg PO q12h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "200-400mg 経口 12時間毎",
     "route": "経口",
     "first_line": null,
     "off_label": null,
@@ -213,7 +221,8 @@
     "pseudo": "-",
     "anaerobe": "+",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約1.0時間（60分）"
   },
   {
     "name": "セフェピム",
@@ -221,8 +230,8 @@
     "category": "セファロスポリン第4世代",
     "class": "第4世代セフェム",
     "mechanism": "細菌の細胞壁ペプチドグリカンの生合成を阻害し、殺菌的に作用する（ペニシリン結合蛋白3, 1A, 1B, 2に親和性）。他のセフェム系と比較して、各種β-ラクタマーゼに対して高い安定性を持つ。",
-    "pkpd": "時間依存性（%T>MIC）。βラクタム系の基本特性。",
-    "dose_us": "2g IV q8h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "2g 静注 8時間毎",
     "route": "注射",
     "first_line": "発熱性好中球減少症（IDSA）、HAP/VAP緑膿菌カバー要（IDSA）",
     "off_label": "淋菌・赤痢菌感染（臨床的有効性）",
@@ -237,7 +246,8 @@
     "pseudo": "++",
     "anaerobe": "+",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約2時間"
   },
   {
     "name": "セフィキシム",
@@ -245,8 +255,8 @@
     "category": "セファロスポリン第3世代",
     "class": "第3世代セフェム",
     "mechanism": "細菌の細胞壁ペプチドグリカンの生合成を阻害し，殺菌的に作用する（ペニシリン結合蛋白1A，1B，3に親和性）。β-ラクタマーゼに対する安定性が高いのが特徴である。",
-    "pkpd": "時間依存性（%T>MIC）。βラクタム系の基本特性。血中半減期は約137分と比較的長い。",
-    "dose_us": "400mg PO q24h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "400mg 経口 1日1回",
     "route": "経口",
     "first_line": null,
     "off_label": null,
@@ -261,7 +271,8 @@
     "pseudo": "-",
     "anaerobe": "+",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約2.3時間"
   },
   {
     "name": "セフメタゾール",
@@ -269,8 +280,8 @@
     "category": "セファロスポリン第2世代",
     "class": "第2世代セフェム",
     "mechanism": "細菌の細胞壁ペプチドグリカンの生合成を阻害し、殺菌的に作用する。ペニシリン結合蛋白（PBP）1A、1Bs、3、4、5、6、2'に高い親和性を持ち、各種細菌の産生するβ-ラクタマーゼに対して極めて安定である。",
-    "pkpd": "時間依存性（%T>MIC）。βラクタム系の基本特性。",
-    "dose_us": "2g IV q6-12h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "2g 静注 6〜12時間毎",
     "route": "注射",
     "first_line": null,
     "off_label": "ESBL産生菌感染症（カルバペネム温存）",
@@ -285,7 +296,8 @@
     "pseudo": "-",
     "anaerobe": "++",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約1.2時間（70分）"
   },
   {
     "name": "セフォタキシム",
@@ -293,8 +305,8 @@
     "category": "セファロスポリン第3世代",
     "class": "第3世代セフェム",
     "mechanism": "グラム陽性菌からグラム陰性菌に至る広範囲なスペクトルを有し、外膜通過性は良好である。細菌の細胞壁ペプチドグリカン架橋形成を強く阻害することで、殺菌的に作用する。特にペニシリン結合蛋白1A、1B、3に高い親和性を示す。また、多くのβ-ラクタマーゼに対して抵抗性を有し、安定している。",
-    "pkpd": "時間依存性（%T>MIC）。βラクタム系の基本特性。",
-    "dose_us": "1-2g IV q8h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "1-2g 静注 8時間毎",
     "route": "注射",
     "first_line": "細菌性髄膜炎（IDSA推奨）",
     "off_label": null,
@@ -309,7 +321,8 @@
     "pseudo": "-",
     "anaerobe": "+",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約1.0時間（62分）"
   },
   {
     "name": "セフォチアム",
@@ -317,7 +330,7 @@
     "category": "セファロスポリン第2世代",
     "class": "第2世代セフェム",
     "mechanism": "細菌の細胞壁ペプチドグリカンの生合成を阻害し、殺菌的に作用する。ペニシリン結合蛋白1B、3に親和性を有する。β-ラクタマーゼに対して安定であり、グラム陽性菌からグラム陰性菌（大腸菌、インフルエンザ菌等）までバランスの取れた抗菌力を示す。",
-    "pkpd": "時間依存性（%T>MIC）。βラクタム系の基本特性。",
+    "pkpd": "時間依存性（%T>MIC）",
     "dose_us": null,
     "route": "経口/注射",
     "first_line": null,
@@ -333,7 +346,8 @@
     "pseudo": "-",
     "anaerobe": "+",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約1.1時間"
   },
   {
     "name": "セフポドキシム プロキセチル",
@@ -341,8 +355,8 @@
     "category": "セファロスポリン第3世代",
     "class": "第3世代セフェム",
     "mechanism": "細菌の細胞壁ペプチドグリカンの生合成を阻害し，殺菌的に作用する。ペニシリン結合蛋白(PBP)の1および3に親和性を示し、細胞壁の主要構成成分であるペプチドグリカンの架橋形成を阻止する。各種細菌の産生するβ-ラクタマーゼに対して比較的安定である。",
-    "pkpd": "時間依存性（%T>MIC）。βラクタム系の基本特性。",
-    "dose_us": "200 mg PO q12h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "200 mg 経口 12時間毎",
     "route": "経口",
     "first_line": null,
     "off_label": null,
@@ -357,7 +371,8 @@
     "pseudo": "-",
     "anaerobe": "+",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約2.0時間"
   },
   {
     "name": "セフタジジム",
@@ -365,8 +380,8 @@
     "category": "セファロスポリン第3世代",
     "class": "第3世代セフェム",
     "mechanism": "細菌の細胞壁ペプチドグリカンの生合成を阻害し、殺菌的に作用する。ペニシリン結合蛋白（PBP）の3、1A、1Bに親和性を示す。β-ラクタマーゼに対して比較的安定である。",
-    "pkpd": "時間依存性（%T>MIC）。βラクタム系の基本特性。",
-    "dose_us": "1-2g IV q8h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "1-2g 静注 8時間毎",
     "route": "注射",
     "first_line": "HAP/VAP緑膿菌カバー要（IDSA）",
     "off_label": null,
@@ -381,7 +396,8 @@
     "pseudo": "+++",
     "anaerobe": "+",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約1.5時間（91分）"
   },
   {
     "name": "シプロフロキサシン",
@@ -389,8 +405,8 @@
     "category": "フルオロキノロン系",
     "class": "フルオロキノロン系",
     "mechanism": "細菌のDNA複製に関わる酵素であるII型DNAトポイソメラーゼ（DNAジャイレースおよびトポイソメラーゼIV）を阻害することで、DNA合成を妨げ殺菌的に作用する。\nグラム陰性菌に対して特に強力な活性を保持し、緑膿菌に対しても有効な抗菌力を有する。",
-    "pkpd": "濃度依存性（Cmax/MIC、AUC/MIC）。キノロン系の基本特性。",
-    "dose_us": "400mg IV q8h",
+    "pkpd": "AUC依存性（AUC/MIC）",
+    "dose_us": "400mg 静注 8時間毎",
     "route": "経口/注射",
     "first_line": "複雑性尿路感染症（IDSA）、緑膿菌感染症（IDSA）",
     "off_label": "炭疽（曝露後予防）、好中球減少性発熱の低リスク患者（IDSA）",
@@ -405,7 +421,8 @@
     "pseudo": "++",
     "anaerobe": "△",
     "atypical": "++",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約2.6時間"
   },
   {
     "name": "クラリスロマイシン",
@@ -413,8 +430,8 @@
     "category": "マクロライド系",
     "class": "マクロライド系",
     "mechanism": "細菌の70Sリボソームの50Sサブユニットと結合し、ペプチジルtRNAの転位反応を阻害することで、タンパク質の合成を抑制する。抗菌作用に加え、組織移行性が非常に高く、食細胞や肺組織などの細胞内に高濃度に分布する特徴がある。また、14員環マクロライドとして抗炎症作用やバイオフィルム抑制効果も併せ持つ。",
-    "pkpd": "AUC依存性（AUC/MIC）。良好な組織移行性を有し、組織内濃度は血中濃度よりも高く維持される。",
-    "dose_us": "500mg PO q12h",
+    "pkpd": "AUC依存性（AUC/MIC）",
+    "dose_us": "500mg 経口 12時間毎",
     "route": "経口",
     "first_line": "市中肺炎（IDSA/ATS）、非結核性抗酸菌症（MAC）治療、H.ピロリ除菌（併用）",
     "off_label": "びまん性汎細気管支炎（DPB）の長期少量投与",
@@ -429,7 +446,8 @@
     "pseudo": "-",
     "anaerobe": "++",
     "atypical": "+++",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約4.04時間"
   },
   {
     "name": "クリンダマイシン",
@@ -437,8 +455,8 @@
     "category": "リンコサミド系",
     "class": "リンコサミド系",
     "mechanism": "細菌の70Sリボゾームの50Sサブユニットと強く結合して，蛋白合成を阻害する。また、高い臓器・組織移行性を示し、β-ラクタマーゼの産生を抑制する作用も併せ持つ。",
-    "pkpd": "時間依存性（%T>MIC）。血中半減期は比較的短い（点滴静注で約30分、筋注で約162〜212分）。",
-    "dose_us": "600-900mg IV q8h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "600-900mg 静注 8時間毎",
     "route": "経口/注射",
     "first_line": null,
     "off_label": "MRSA皮膚軟部組織感染症（IDSA推奨）",
@@ -453,7 +471,8 @@
     "pseudo": "-",
     "anaerobe": "+++",
     "atypical": "++",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約0.5時間（30分）"
   },
   {
     "name": "ドキシサイクリン",
@@ -461,8 +480,8 @@
     "category": "テトラサイクリン系",
     "class": "テトラサイクリン系",
     "mechanism": "細菌の70Sおよび80Sリボゾーム（特に前者）に強く結合することで、蛋白合成を阻害し抗菌作用を発揮する。",
-    "pkpd": "AUC依存性（AUC/MIC）。血中半減期が長く（経口で約11〜13時間）、組織移行性に優れる特徴を持つ。",
-    "dose_us": "100mg PO/IV q12h",
+    "pkpd": "AUC依存性（AUC/MIC）",
+    "dose_us": "100mg 経口/静注 12時間毎",
     "route": "経口/注射",
     "first_line": "CAP軽症・外来（IDSA）、非定型肺炎、リケッチア症、クラミジア感染症",
     "off_label": "MRSA皮膚軟部組織感染（IDSA推奨）",
@@ -477,7 +496,8 @@
     "pseudo": "-",
     "anaerobe": "+",
     "atypical": "+++",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約7.5時間"
   },
   {
     "name": "エリスロマイシン",
@@ -485,8 +505,8 @@
     "category": "マクロライド系",
     "class": "マクロライド系",
     "mechanism": "細菌の70Sリボゾームの50Sサブユニットと強く結合し、転位反応を抑制することで蛋白合成を阻害する。主としてグラム陽性菌に強い抗菌力を示し、さらにマイコプラズマやクラミジア、レジオネラ、百日咳菌、ジフテリア菌などの非定型病原体や特殊な細菌に対しても優れた有効性を有する。",
-    "pkpd": "時間依存性（%T>MIC）。マクロライド系の基本特性。",
-    "dose_us": "250-500 mg PO q6h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "250-500 mg 経口 6時間毎",
     "route": "経口/注射",
     "first_line": null,
     "off_label": "糖尿病性胃不全麻痺における消化管運動促進（モチリン受容体作動薬としての利用）",
@@ -501,7 +521,8 @@
     "pseudo": "-",
     "anaerobe": "++",
     "atypical": "+++",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約1.4時間（82分）"
   },
   {
     "name": "ファロペネム",
@@ -509,7 +530,7 @@
     "category": "その他",
     "class": "ペネム系",
     "mechanism": "細菌の細胞壁合成阻害により殺菌的に作用する。特にペニシリン結合蛋白2（PBP-2）に高い親和性を持つ。β-ラクタマーゼに対して安定であり、グラム陽性菌から陰性菌、嫌気性菌まで幅広い抗菌スペクトラムを有する。",
-    "pkpd": "時間依存性（%T>MIC）。β-ラクタム系の基本特性であり、血中半減期は約60分である。",
+    "pkpd": "時間依存性（%T>MIC）",
     "dose_us": null,
     "route": "経口",
     "first_line": null,
@@ -525,7 +546,8 @@
     "pseudo": "-",
     "anaerobe": "++",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約1.0時間（60分）"
   },
   {
     "name": "ホスホマイシン",
@@ -533,8 +555,8 @@
     "category": "その他",
     "class": "ホスホマイシン系",
     "mechanism": "細菌の細胞壁合成の初期段階を阻害する。具体的には、UDP-N-アセチルグルコサミンからUDP-N-アセチルグルコサミンエノールピルビルエーテルへの変換反応を触媒する酵素MurAを阻害することで、ペプチドグリカン合成を妨げ殺菌的に作用する。既存の他系統抗菌薬との交差耐性がなく、相乗効果を期待した併用療法にも用いられる。",
-    "pkpd": "時間依存性（%T>MIC）。細胞壁合成阻害薬としての基本特性を持つが、組織移行性が良好で、尿路感染症などの単回投与ではAUC/MICも関与する。",
-    "dose_us": "3g PO single dose",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "3g 経口 single dose",
     "route": "経口/注射",
     "first_line": "単純性膀胱炎（IDSA）",
     "off_label": "多剤耐性菌感染症における併用療法（IDSA推奨）",
@@ -549,7 +571,8 @@
     "pseudo": "++",
     "anaerobe": "△",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約1.5時間"
   },
   {
     "name": "ゲンタマイシン",
@@ -557,8 +580,8 @@
     "category": "アミノグリコシド系",
     "class": "アミノグリコシド系",
     "mechanism": "細菌のリボゾームに作用し，蛋白合成を阻害し，殺菌的に作用する。",
-    "pkpd": "濃度依存性（Cmax/MIC）。速やかな殺菌作用を示す。",
-    "dose_us": "5-7 mg/kg IV q24h",
+    "pkpd": "濃度依存性（Cmax/MIC）",
+    "dose_us": "5-7 mg/kg 静注 1日1回",
     "route": "注射",
     "first_line": "HAP/VAP緑膿菌カバー要（IDSA併用療法）、感染性心内膜炎（相乗効果目的）",
     "off_label": null,
@@ -573,7 +596,8 @@
     "pseudo": "++",
     "anaerobe": "-",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約2.2時間"
   },
   {
     "name": "イミペネム・シラスタチン",
@@ -581,8 +605,8 @@
     "category": "カルバペネム系",
     "class": "カルバペネム",
     "mechanism": "イミペネムは細菌細胞壁のペプチドグリカンの特異的合成を阻害することで殺菌作用を示す。特にペニシリン結合蛋白2（PBP-2）に強い親和性を持ち、各種β-ラクタマーゼに対して非常に安定である。シラスタチンは腎臓における脱水素酵素によるイミペネムの加水分解を阻害し、尿中回収率と血中濃度を維持する役割を担う。",
-    "pkpd": "時間依存性（%T>MIC）。βラクタム系の基本特性",
-    "dose_us": "500mg IV q6h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "500mg 静注 6時間毎",
     "route": "注射",
     "first_line": "ESBL産生菌感染症（IDSA）",
     "off_label": null,
@@ -597,7 +621,8 @@
     "pseudo": "++",
     "anaerobe": "+++",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約1.0時間（58分）"
   },
   {
     "name": "レボフロキサシン",
@@ -605,8 +630,8 @@
     "category": "フルオロキノロン系",
     "class": "フルオロキノロン系",
     "mechanism": "細菌のDNAジャイレース及びトポイソメラーゼIVに作用し、DNA複製を阻害することで細菌の増殖を抑制する。DNAジャイレースおよびトポイソメラーゼIVに対する阻害活性は、既存のオフロキサシンの約2倍の強度を有しており、MIC付近の濃度で溶菌を認める殺菌的な抗菌作用を発揮する。",
-    "pkpd": "濃度依存性（Cmax/MIC、AUC/MIC）",
-    "dose_us": "750mg IV/PO q24h",
+    "pkpd": "AUC依存性（AUC/MIC）",
+    "dose_us": "750mg 静注/経口 1日1回",
     "route": "経口/注射",
     "first_line": "市中肺炎（IDSA）、レジオネラ肺炎（IDSA）",
     "off_label": null,
@@ -621,7 +646,8 @@
     "pseudo": "+",
     "anaerobe": "+",
     "atypical": "+++",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約7.89時間"
   },
   {
     "name": "メロペネム",
@@ -629,8 +655,8 @@
     "category": "カルバペネム系",
     "class": "カルバペネム",
     "mechanism": "ペニシリン結合蛋白（PBPs）に高い親和性を示し、細菌の細胞壁合成（細胞壁ペプチドグリカンの架橋形成）を阻害することで、殺菌的に作用する。",
-    "pkpd": "時間依存性（%T>MIC）。カルバペネム系の基本特性であり、血中半減期は約1時間である。",
-    "dose_us": "1g IV q8h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "1g 静注 8時間毎",
     "route": "注射",
     "first_line": "ESBL産生菌感染症（IDSA）、発熱性好中球減少症（IDSA）",
     "off_label": null,
@@ -645,7 +671,8 @@
     "pseudo": "++",
     "anaerobe": "+++",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約0.5時間（30分）"
   },
   {
     "name": "ミノサイクリン",
@@ -653,8 +680,8 @@
     "category": "テトラサイクリン系",
     "class": "テトラサイクリン系",
     "mechanism": "細菌の蛋白合成系において、t-RNAがm-RNA・リボゾーム複合物と結合するのを妨げ、蛋白合成を阻止させることにより抗菌作用を発揮する。細菌のリボゾームの30Sサブユニットに特異的に作用することで、選択毒性を有する。",
-    "pkpd": "AUC依存性（AUC/MIC）。テトラサイクリン系の中では血中半減期が長く（経口で約9.5時間）、脂溶性が高いため組織移行性に優れるのが特徴である。",
-    "dose_us": "200mg PO/IV load, then 100mg PO/IV q12h",
+    "pkpd": "AUC依存性（AUC/MIC）",
+    "dose_us": "200mg 経口/静注 load, then 100mg 経口/静注 12時間毎",
     "route": "経口/注射",
     "first_line": "非定型肺炎（マイコプラズマ・クラミジア等）（IDSA）",
     "off_label": "MRSA皮膚軟部組織感染症（IDSA推奨）",
@@ -669,7 +696,8 @@
     "pseudo": "-",
     "anaerobe": "++",
     "atypical": "+++",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約6.0時間"
   },
   {
     "name": "ピペラシリン",
@@ -677,8 +705,8 @@
     "category": "ペニシリン系",
     "class": "広域ペニシリン",
     "mechanism": "細菌の細胞壁ペプチドグリカンの生合成を阻害し、殺菌的に作用する。特にペニシリン結合蛋白3（PBP-3）に対して高い親和性を有する。",
-    "pkpd": "時間依存性（%T>MIC）。βラクタム系の基本特性であり、血中濃度がMICを上回る時間の割合を維持することが重要である。",
-    "dose_us": "3g IV q4h or 4g IV q6h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "3g 静注 4時間毎 or 4g 静注 6時間毎",
     "route": "注射",
     "first_line": null,
     "off_label": null,
@@ -693,7 +721,8 @@
     "pseudo": "++（緑膿菌）",
     "anaerobe": "++（嫌気性菌）",
     "atypical": "-（非定型菌）",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約0.79時間"
   },
   {
     "name": "リファンピシン",
@@ -701,8 +730,8 @@
     "category": "その他",
     "class": "抗結核薬",
     "mechanism": "細菌のDNA依存性RNAポリメラーゼに結合してRNA合成を阻害することで抗菌作用を発揮する。動物細胞のRNAポリメラーゼは阻害しないため、選択毒性が高い。分裂・分裂静止期の結核菌に対しても殺菌力を有するのが大きな特徴である。結核治療において、イソニアジドと並び多剤併用療法の主軸を担う重要な薬剤である。",
-    "pkpd": "AUC依存性（AUC/MIC）。殺菌的に作用し、血中半減期は比較的長い（約268分）。",
-    "dose_us": "600mg PO q24h",
+    "pkpd": "AUC依存性（AUC/MIC）",
+    "dose_us": "600mg 経口 1日1回",
     "route": "経口",
     "first_line": "活動性結核の初回治療（IDSA/ATS/CDC）",
     "off_label": "MRSA人工物感染（IDSA推奨）、レジオネラ肺炎、髄膜炎菌保菌者の除菌、非定型抗酸菌症",
@@ -717,7 +746,8 @@
     "pseudo": "-",
     "anaerobe": "+",
     "atypical": "++",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約4.5時間"
   },
   {
     "name": "ストレプトマイシン",
@@ -725,8 +755,8 @@
     "category": "アミノグリコシド系",
     "class": "アミノグリコシド系",
     "mechanism": "細菌のリボゾームに作用し、蛋白合成を阻害し、殺菌的に作用する。アミノグリコシド系抗菌薬であり、細菌の30Sリボソームサブユニットに結合することで遺伝情報の誤読を誘発し、正常なタンパク質合成を停止させる。特に結核菌などの抗酸菌に対して強力な殺菌活性を示すのが特徴である。",
-    "pkpd": "濃度依存性（Cmax/MIC）。アミノグリコシド系抗菌薬の基本特性であり、高いピーク血中濃度が殺菌効果に寄与する。",
-    "dose_us": "1g IM q24h",
+    "pkpd": "濃度依存性（Cmax/MIC）",
+    "dose_us": "1g 筋注 1日1回",
     "route": "注射",
     "first_line": "肺結核（他剤併用）、ペスト、野兎病",
     "off_label": null,
@@ -741,7 +771,8 @@
     "pseudo": "-",
     "anaerobe": "-",
     "atypical": "+++",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約5.0時間"
   },
   {
     "name": "スルバクタム／アンピシリン",
@@ -749,8 +780,8 @@
     "category": "ペニシリン系",
     "class": "βラクタマーゼ阻害薬配合ペニシリン",
     "mechanism": "アンピシリンがペニシリン結合蛋白（PBP）に結合して細菌の細胞壁合成を阻害し、殺菌的に作用する。スルバクタムは細菌が産生するβ-ラクタマーゼを不可逆的に阻害することで、アンピシリンの分解を防ぎ抗菌力を維持・拡大させる。また、スルバクタム自体もアシネトバクター属等に対して一部抗菌活性を持つ。",
-    "pkpd": "時間依存性（%T>MIC）。β-ラクタム系の基本特性。",
-    "dose_us": "1.5g-3g IV q6h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "1.5g-3g 静注 6時間毎",
     "route": "注射",
     "first_line": "市中肺炎・入院（IDSA/ATS）、誤嚥性肺炎（IDSA）、腹腔内感染症（IDSA）",
     "off_label": "アシネトバクター感染症（IDSA推奨）",
@@ -765,7 +796,8 @@
     "pseudo": "-",
     "anaerobe": "+++",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約1.1時間（64分）"
   },
   {
     "name": "スルファメトキサゾール・トリメトプリム",
@@ -773,8 +805,8 @@
     "category": "ST合剤",
     "class": "ST合剤",
     "mechanism": "スルファメトキサゾール(SMX)が微生物体内での葉酸生合成を阻害し、トリメトプリム(TMP)が葉酸の活性化を阻害して抗菌作用を示す。\n両剤の併用により細菌の葉酸代謝における連続した2箇所を同時に阻害するため、核酸およびタンパク合成を強力かつ相乗的に抑制し、単独使用時よりも優れた殺菌的抗菌効果を発揮する。",
-    "pkpd": "AUC依存性（AUC/MIC）。良好な組織移行性（髄液、肺、尿路、眼など）と長い血中半減期が特徴。",
-    "dose_us": "160/800mg PO q12h (UTI), 15-20mg/kg/day TMP IV q6-8h (PJP)",
+    "pkpd": "AUC依存性（AUC/MIC）",
+    "dose_us": "160/800mg 経口 12時間毎（UTI）\n15〜20mg/kg/日 TMP 静注 6〜8時間毎（PJP）",
     "route": "経口/注射",
     "first_line": "ニューモシスチス肺炎の治療・予防、Stenotrophomonas maltophilia感染症",
     "off_label": "MRSA皮膚軟部組織感染症（IDSA推奨）、リステリア髄膜炎（ペニシリンアレルギー時）",
@@ -789,16 +821,17 @@
     "pseudo": "-",
     "anaerobe": "+",
     "atypical": "+",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約12.0時間"
   },
   {
     "name": "タゾバクタム/ピペラシリン",
     "brand": "ゾシン静注用2.25／ゾシン静注用4.5",
     "category": "ペニシリン系",
-    "class": "広域ペニシリン",
+    "class": "βラクタマーゼ阻害薬配合ペニシリン",
     "mechanism": "ピペラシリンが細菌の細胞壁合成を阻害して殺菌的に作用する。タゾバクタムは、細菌が産生するβ-ラクタマーゼと結合してこれを不活化し、ピペラシリンの分解を防ぐ。この配合により、β-ラクタマーゼ産生菌を含む広域な菌種に対して抗菌力を発揮する。",
-    "pkpd": "時間依存性（%T>MIC）。半減期が短いため、有効性を高めるには投与回数の維持や持続点滴が考慮される。",
-    "dose_us": "4.5g IV q6h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "4.5g 静注 6時間毎",
     "route": "注射",
     "first_line": "HAP/VAP緑膿菌カバー要（IDSA）、発熱性好中球減少症",
     "off_label": null,
@@ -813,7 +846,8 @@
     "pseudo": "+++",
     "anaerobe": "++",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約0.68時間"
   },
   {
     "name": "テイコプラニン",
@@ -821,8 +855,8 @@
     "category": "グリコペプチド系",
     "class": "グリコペプチド系",
     "mechanism": "細菌細胞壁ペプチドグリカン前駆体ムレインモノマーのD-Ala-D-Ala部位に結合し、物理的にムレインモノマーの架橋形成を阻害することによる細胞壁合成阻害。",
-    "pkpd": "AUC依存性（AUC/MIC）。血中半減期が約85時間と非常に長く、定常状態後は1日1回投与が可能となる。",
-    "dose_us": "6-12 mg/kg IV q24h",
+    "pkpd": "AUC依存性（AUC/MIC）",
+    "dose_us": "6-12 mg/kg 静注 1日1回",
     "route": "注射",
     "first_line": null,
     "off_label": null,
@@ -837,7 +871,8 @@
     "pseudo": "-",
     "anaerobe": "+",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約85時間（二相性：初期0.5時間/終末期85時間）"
   },
   {
     "name": "バンコマイシン",
@@ -845,8 +880,8 @@
     "category": "グリコペプチド系",
     "class": "グリコペプチド系",
     "mechanism": "細菌の細胞壁合成阻害（ペプチドグリカン前駆体のD-Ala-D-Ala末端に結合し重合を阻止）を主作用とする。さらに、細胞膜の変性やRNAの合成阻害作用も併せ持つことで、グラム陽性菌に対して殺菌的に作用する。",
-    "pkpd": "AUC依存性（AUC/MIC）。治療効果の最大化と副作用回避のため、TDMによる血中濃度管理が重要となる。",
-    "dose_us": "15-20 mg/kg IV q8-12h",
+    "pkpd": "AUC依存性（AUC/MIC）",
+    "dose_us": "15〜20mg/kg 静注 8〜12時間毎",
     "route": "経口/注射",
     "first_line": "MRSA感染症（IDSA）、C. difficile関連下痢症（IDSA/経口投与）",
     "off_label": null,
@@ -861,7 +896,8 @@
     "pseudo": "-",
     "anaerobe": "+",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約5.2時間"
   },
   {
     "name": "ベンジルペニシリン",
@@ -869,8 +905,8 @@
     "category": "ペニシリン系",
     "class": "天然ペニシリン",
     "mechanism": "細菌の細胞壁を構成するペプチドグリカンの合成を阻害することで、細菌の細胞壁合成を抑制し、増殖・生育中の菌に対して殺菌的に作用する。ペニシリナーゼ産生菌を除くグラム陽性菌およびグラム陰性球菌に対して強力な活性を持つ。",
-    "pkpd": "時間依存性（%T>MIC）。血中半減期が約30分と短いため、有効血中濃度を維持するには頻回投与や持続静注が必要となる。",
-    "dose_us": "2-4 million units IV q4h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "2-4 million units 静注 4時間毎",
     "route": "注射",
     "first_line": "神経梅毒（IDSA）、感受性のあるレンサ球菌性心内膜炎、ガス壊疽",
     "off_label": null,
@@ -885,7 +921,8 @@
     "pseudo": "-",
     "anaerobe": "++",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約0.5時間（30分）"
   },
   {
     "name": "ビアペネム",
@@ -893,7 +930,7 @@
     "category": "カルバペネム系",
     "class": "カルバペネム",
     "mechanism": "ペニシリン結合蛋白（PBP）に高い親和性を示し、細菌の細胞壁合成（ムレイン架橋形成）を阻害することで殺菌作用を発揮する。MSSAのPBP1・4、大腸菌や緑膿菌のPBP2・4に対して特に高い親和性を示す。ヒト腎脱水素酵素（DHP-1）に安定な単一製剤である。",
-    "pkpd": "時間依存性（%T>MIC）。βラクタム系の基本特性。血中半減期は約1時間である。",
+    "pkpd": "時間依存性（%T>MIC）",
     "dose_us": null,
     "route": "注射",
     "first_line": null,
@@ -909,7 +946,8 @@
     "pseudo": "++",
     "anaerobe": "++",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約1時間"
   },
   {
     "name": "セフロキシム アキセチル",
@@ -917,8 +955,8 @@
     "category": "セファロスポリン第2世代",
     "class": "第2世代セフェム",
     "mechanism": "セフロキシムのプロドラッグであり、エステル化により経口吸収性を高めている。吸収過程で腸管壁のエステラーゼにより脱エステル化され、生体内ではセフロキシムとして殺菌的な抗菌作用を発揮する。セフロキシムはβ-ラクタマーゼに対する抵抗性が強く、産生菌に対しても抗菌力を示す。",
-    "pkpd": "時間依存性（%T>MIC）。βラクタム系の基本特性。",
-    "dose_us": "250-500mg PO q12h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "250-500mg 経口 12時間毎",
     "route": "経口",
     "first_line": null,
     "off_label": null,
@@ -933,7 +971,8 @@
     "pseudo": "-",
     "anaerobe": "+",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約1.7時間"
   },
   {
     "name": "ドリペネム",
@@ -941,8 +980,8 @@
     "category": "カルバペネム系",
     "class": "カルバペネム",
     "mechanism": "細菌の細胞壁合成酵素であるペニシリン結合蛋白（PBP）に結合し、細菌の細胞壁合成阻害により抗菌作用を発揮する。黄色ブドウ球菌ではPBP1に、緑膿菌ではPBP2、3に、大腸菌ではPBP2に高い結合親和性を示し、殺菌的に作用する。",
-    "pkpd": "時間依存性（%T>MIC）。βラクタム系の基本特性であり、血中半減期は約0.9時間前後と比較的短い。",
-    "dose_us": "500mg IV q8h",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "500mg 静注 8時間毎",
     "route": "注射",
     "first_line": "HAP/VAP緑膿菌カバー要（IDSA）",
     "off_label": null,
@@ -957,7 +996,8 @@
     "pseudo": "++（緑膿菌）",
     "anaerobe": "+++（嫌気性菌）",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約0.5時間（30分）"
   },
   {
     "name": "イソニアジド",
@@ -965,8 +1005,8 @@
     "category": "その他",
     "class": "抗結核薬",
     "mechanism": "第一の作用点は結核菌に特異な細胞壁成分であるミコール酸の合成阻害である。また、核酸の生合成阻害、糖およびアミノ酸代謝の阻害作用も併せ持つ。",
-    "pkpd": "濃度依存性（Cmax/MIC）。結核菌に対し強力な殺菌作用を持つ。",
-    "dose_us": "300mg PO/IM q24h",
+    "pkpd": "濃度依存性（Cmax/MIC）",
+    "dose_us": "300mg 経口/筋注 1日1回",
     "route": "経口/注射",
     "first_line": "活動性結核の初期強化療法（ATS/CDC/IDSA）",
     "off_label": null,
@@ -981,7 +1021,8 @@
     "pseudo": "-",
     "anaerobe": "-",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約1.0時間（60分）"
   },
   {
     "name": "カナマイシン",
@@ -989,8 +1030,8 @@
     "category": "アミノグリコシド系",
     "class": "アミノグリコシド系",
     "mechanism": "細菌のリボゾーム30Sサブユニットに結合して蛋白合成を阻害し、殺菌的に作用する。グラム陽性菌、グラム陰性菌（大腸菌、クレブシエラ、プロテウス等）および結核菌に対して抗菌力を有する。内服では吸収されにくいため腸管感染症の治療や腸内除菌に用いられ、注射剤は全身性感染症や結核の治療に使用される。",
-    "pkpd": "濃度依存性（Cmax/MIC）。アミノグリコシド系の基本的特性。",
-    "dose_us": "15 mg/kg/day IM/IV divided q8h or q12h",
+    "pkpd": "濃度依存性（Cmax/MIC）",
+    "dose_us": "15 mg/kg/day 筋注/静注 divided 8時間毎 or 12時間毎",
     "route": "経口/注射",
     "first_line": null,
     "off_label": null,
@@ -1005,7 +1046,8 @@
     "pseudo": "+",
     "anaerobe": "-",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約3.9時間"
   },
   {
     "name": "エンビオマイシン",
@@ -1013,7 +1055,7 @@
     "category": "その他",
     "class": "ペプチド系抗結核薬",
     "mechanism": "リボゾームの蛋白合成を阻害することによって抗菌作用を示す。結核菌などの抗酸菌に対して特異的に強い抗菌力を有する。",
-    "pkpd": "濃度依存性（Cmax/MIC）。アミノグリコシド系に近い特性を持ち、血中半減期は約2.7時間である。",
+    "pkpd": "濃度依存性（Cmax/MIC）",
     "dose_us": null,
     "route": "注射",
     "first_line": null,
@@ -1029,7 +1071,8 @@
     "pseudo": "-",
     "anaerobe": "-",
     "atypical": "++",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約2.70時間"
   },
   {
     "name": "ピラジナミド",
@@ -1037,8 +1080,8 @@
     "category": "その他",
     "class": "抗結核薬",
     "mechanism": "作用機序の詳細は不明だが、ピラジン酸が抗菌活性の本体とされる。抗酸菌のピラジナミダーゼにより生じたピラジン酸がマクロファージ内でトラップされ、細胞内pHを結核菌に毒性のあるレベルまで下げると考えられている。他剤が無効な酸性環境で代謝の障害された細胞内の結核菌に滅菌的に作用し、治療期間の短縮に寄与する。",
-    "pkpd": "濃度依存性（Cmax/MIC）。血中半減期は約9.5時間で、細胞膜浸透性が高い。他剤が無効な酸性環境（pH 5.0～5.5）において、代謝の障害された細胞内の結核菌に対して特異的に抗菌作用を発揮する特性を持つ。",
-    "dose_us": "1.5-2g PO q24h",
+    "pkpd": "濃度依存性（Cmax/MIC）",
+    "dose_us": "1.5-2g 経口 1日1回",
     "route": "経口",
     "first_line": "活動性結核の初期集中治療期（ATS/IDSA/CDC）",
     "off_label": null,
@@ -1053,7 +1096,8 @@
     "pseudo": "-",
     "anaerobe": "-",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約12.3時間"
   },
   {
     "name": "エタンブトール",
@@ -1061,8 +1105,8 @@
     "category": "その他",
     "class": "抗結核薬",
     "mechanism": "増殖過程にある結核菌に静菌的に作用します。主な作用機序は、抗酸菌の細胞壁成分であるアラビノガラクタンの合成に関与するアラビノシルトランスフェラーゼを阻害し、細胞壁の形成を妨げることで細胞分裂を抑制することと考えられています。",
-    "pkpd": "AUC依存性（AUC/MIC）。静菌的に作用する抗結核薬です。",
-    "dose_us": "15 mg/kg PO q24h",
+    "pkpd": "AUC依存性（AUC/MIC）",
+    "dose_us": "15 mg/kg 経口 1日1回",
     "route": "経口",
     "first_line": "肺結核（IDSA/ATS/CDC）",
     "off_label": "非結核性抗酸菌症（MAC症など）（IDSA/ATS推奨）",
@@ -1077,7 +1121,8 @@
     "pseudo": "-",
     "anaerobe": "-",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約48時間"
   },
   {
     "name": "リファブチン",
@@ -1085,8 +1130,8 @@
     "category": "その他",
     "class": "リファマイシン系",
     "mechanism": "細菌のDNA依存性RNAポリメラーゼに結合してRNA合成を阻害することで抗菌活性を発揮する。リファンピシンと同様の機序であるが、高濃度ではリファンピシン耐性結核菌のDNA合成も阻害する可能性が示唆されている。細胞内移行性が高く、特にマイコバクテリウム属に対して強力な活性を持つ。",
-    "pkpd": "AUC依存性（AUC/MIC）。血中半減期が17〜20時間と非常に長く、組織移行性に優れる。",
-    "dose_us": "300mg PO q24h",
+    "pkpd": "AUC依存性（AUC/MIC）",
+    "dose_us": "300mg 経口 1日1回",
     "route": "経口",
     "first_line": "HIV感染患者における播種性MAC症の発症抑制（IDSA）、非結核性抗酸菌症（ATS/IDSA）",
     "off_label": "リファンピシン耐性結核（IDSA推奨）",
@@ -1100,7 +1145,8 @@
     "esbl": "-",
     "pseudo": "-",
     "anaerobe": "-",
-    "atypical": "+++"
+    "atypical": "+++",
+    "half_life": "約20時間"
   },
   {
     "name": "シタフロキサシン",
@@ -1108,7 +1154,7 @@
     "category": "フルオロキノロン系",
     "class": "フルオロキノロン系",
     "mechanism": "細菌の標的酵素であるDNAジャイレース及びトポイソメラーゼIVの両方に対して阻害活性を示し、DNA複製を阻害することで殺菌的に作用する。肺炎球菌や大腸菌において耐性化の影響を受けにくく、広範な抗菌活性を有する。",
-    "pkpd": "濃度依存性（Cmax/MIC）。またはAUC依存性（AUC/MIC）。",
+    "pkpd": "AUC依存性（AUC/MIC）",
     "dose_us": null,
     "route": "経口",
     "first_line": null,
@@ -1124,7 +1170,8 @@
     "pseudo": "++",
     "anaerobe": "++",
     "atypical": "+++",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約7.9時間"
   },
   {
     "name": "テビペネム ピボキシル",
@@ -1132,7 +1179,7 @@
     "category": "カルバペネム系",
     "class": "カルバペネム",
     "mechanism": "活性本体テビペネムが細菌の細胞壁合成酵素であるペニシリン結合蛋白質（PBP）に結合し、細胞壁合成を阻害することで殺菌的に作用する。特に肺炎球菌やインフルエンザ菌の複数のPBPに対して高い親和性を持ち、アミノ酸置換の積み重ねによる影響を受けにくいため、耐性菌に対しても強い抗菌力を発揮する。",
-    "pkpd": "時間依存性（%T>MIC）。強い短時間殺菌力を示し、PAE（後発育治療効果）あるいはPASMEにより抗菌効果が持続する特性を持つ。",
+    "pkpd": "時間依存性（%T>MIC）",
     "dose_us": null,
     "route": "経口",
     "first_line": "小児の耐性肺炎球菌・インフルエンザ菌による中耳炎、副鼻腔炎、肺炎（国内ガイドライン）",
@@ -1148,7 +1195,8 @@
     "pseudo": "△",
     "anaerobe": "++",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約1.1時間"
   },
   {
     "name": "モキシフロキサシン",
@@ -1156,8 +1204,8 @@
     "category": "フルオロキノロン系",
     "class": "呼吸器キノロン",
     "mechanism": "細菌のDNAジャイレース（グラム陰性菌）およびトポイソメレースIV（グラム陽性菌）の活性を阻害し、DNA複製を妨げることで殺菌的に作用する。",
-    "pkpd": "AUC依存性（AUC/MIC）。高い血中濃度と長い半減期により1日1回投与で大きなAUCが得られ、呼吸器組織への移行性にも優れる。臨床効果と相関するパラメータはAUC/MICである。",
-    "dose_us": "400mg PO/IV q24h",
+    "pkpd": "AUC依存性（AUC/MIC）",
+    "dose_us": "400mg 経口/静注 1日1回",
     "route": "経口",
     "first_line": "市中肺炎（IDSA/ATS）",
     "off_label": "骨盤内炎症性疾患（IDSA推奨）",
@@ -1172,7 +1220,8 @@
     "pseudo": "△",
     "anaerobe": "++",
     "atypical": "+++",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約13.9時間"
   },
   {
     "name": "セフトリアキソン",
@@ -1180,8 +1229,8 @@
     "category": "セファロスポリン第3世代",
     "class": "第3世代セフェム",
     "mechanism": "細菌の細胞壁ペプチドグリカン架橋形成を強く阻害し殺菌的に作用する（PBP3に高親和性）。β-ラクタマーゼに安定。血中半減期約8時間と長く1日1回投与が可能。",
-    "pkpd": "時間依存性（%T>MIC）。半減期が長いため1日1回投与で24時間有効濃度を維持できる。",
-    "dose_us": "1-2g IV/IM q24h（重症・髄膜炎: 2g IV q12h）",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "1-2g 静注/筋注 1日1回（重症・髄膜炎: 2g 静注 12時間毎）",
     "route": "注射",
     "first_line": "CAP中等症・入院（IDSA/ATS）、細菌性髄膜炎（CSF移行良好）、淋菌感染症（IDSA）、腸チフス",
     "off_label": "赤痢菌・パラチフス菌感染症、感染性心内膜炎（連鎖球菌）",
@@ -1196,7 +1245,8 @@
     "pseudo": "-",
     "anaerobe": "+",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約8.1時間"
   },
   {
     "name": "リネゾリド",
@@ -1204,8 +1254,8 @@
     "category": "オキサゾリジノン系",
     "class": "オキサゾリジノン系",
     "mechanism": "リボゾーム50Sサブユニットに結合し70S開始複合体の形成を阻害することで蛋白合成の最初期段階を抑制する。従来の蛋白合成阻害薬とは異なる作用部位を持ち、静菌的に作用する。",
-    "pkpd": "AUC依存性（AUC/MIC）。経口バイオアベイラビリティほぼ100%で経口・注射切替が容易。",
-    "dose_us": "600mg PO/IV q12h",
+    "pkpd": "AUC依存性（AUC/MIC）",
+    "dose_us": "600mg 経口/静注 12時間毎",
     "route": "経口/注射",
     "first_line": "MRSA肺炎（バンコマイシン代替・IDSA）、VRE感染症（IDSA）",
     "off_label": "MRSA皮膚感染症、多剤耐性結核（WHO推奨）",
@@ -1220,7 +1270,8 @@
     "pseudo": "-",
     "anaerobe": "+",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約5時間"
   },
   {
     "name": "ガレノキサシン",
@@ -1228,8 +1279,8 @@
     "category": "フルオロキノロン系",
     "class": "呼吸器キノロン",
     "mechanism": "細菌由来のII型トポイソメラーゼ（DNAジャイレース・トポイソメラーゼIV）を阻害し殺菌的に作用する。フルオロ基を持たないデスフルオロキノロンであり、光線過敏症リスクが低い。",
-    "pkpd": "AUC依存性（AUC/MIC）。1日1回投与で大きなAUCが得られ、肺組織・肺胞マクロファージへの移行が良好。",
-    "dose_us": "400mg PO q24h（日本承認のみ）",
+    "pkpd": "AUC依存性（AUC/MIC）",
+    "dose_us": "400mg 経口 1日1回（日本承認のみ）",
     "route": "経口",
     "first_line": "CAP（市中肺炎）・呼吸器感染症（日本ガイドライン）、PRSP（ペニシリン耐性肺炎球菌）",
     "off_label": null,
@@ -1244,6 +1295,7 @@
     "pseudo": "-",
     "anaerobe": "+",
     "atypical": "+++",
-    "evidence_url": null
+    "evidence_url": null,
+    "half_life": "約11時間"
   }
 ]
