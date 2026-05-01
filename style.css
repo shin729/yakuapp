@@ -488,7 +488,7 @@ thead .sticky-col { z-index: 3; }
 .class-badge.resp-p2x3      { background: #4a044e; color: #fae8ff; }
 /* 抗菌薬 */
 .class-badge.ab-pen         { background: #dbeafe; color: #1e40af; }
-.class-badge.ab-pen-bli     { background: #bfdbfe; color: #1e3a8a; }
+.class-badge.ab-pen-bli     { background: #bfdbfe; color: #1e3a8a; white-space: normal; word-break: break-all; max-width: 9em; }
 .class-badge.ab-cef1        { background: #e0f2fe; color: #075985; }
 .class-badge.ab-cef2        { background: #cffafe; color: #164e63; }
 .class-badge.ab-cef3        { background: #ccfbf1; color: #134e4a; }
