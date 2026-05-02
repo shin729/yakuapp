@@ -507,6 +507,13 @@ thead .sticky-col { z-index: 3; }
 .class-badge.ab-tb          { background: #fef3c7; color: #92400e; }
 .class-badge.ab-other       { background: #f4f4f5; color: #3f3f46; }
 
+/* 抗真菌薬バッジ */
+.class-badge.af-poly        { background: #fef3c7; color: #92400e; }
+.class-badge.af-triaz       { background: #ede9fe; color: #4c1d95; }
+.class-badge.af-echio       { background: #dcfce7; color: #14532d; }
+.class-badge.af-imid        { background: #fce7f3; color: #9d174d; }
+.class-badge.af-other       { background: #f0f9ff; color: #0c4a6e; }
+
 /* ===== Table body ===== */
 .compare-table tbody td {
   padding: 8px 10px;

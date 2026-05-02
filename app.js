@@ -192,6 +192,31 @@ const DOMAINS = {
     rowAltSticky: '#e8f5fd',
     accentColor:  '#0369a1',
   },
+  antifungals: {
+    file: './data/antifungals.json',
+    categories: [
+      { key: 'ポリエン系',       label: '🔴 ポリエン系' },
+      { key: 'トリアゾール系',   label: '🟣 トリアゾール系' },
+      { key: 'エキノカンジン系', label: '🟢 エキノカンジン系' },
+      { key: 'その他',           label: '💊 その他' },
+      { key: 'AF_CANDIDA',     label: '🍄 カンジダ' },
+      { key: 'AF_ASPERGILLUS', label: '🍄 アスペルギルス' },
+      { key: 'AF_CRYPTO',      label: '🍄 クリプトコッカス' },
+      { key: 'AF_MUCOR',       label: '🍄 接合菌/ムコール' },
+      { key: 'AF_DERM',        label: '🍄 皮膚糸状菌' },
+    ],
+    categoryGroups: [
+      { key: 'byClass',    label: 'クラス別',  cats: ['ポリエン系', 'トリアゾール系', 'エキノカンジン系', 'その他'] },
+      { key: 'byOrganism', label: '対象菌別',  cats: ['AF_CANDIDA', 'AF_ASPERGILLUS', 'AF_CRYPTO', 'AF_MUCOR', 'AF_DERM'] },
+    ],
+    defaultGroup: 'byClass',
+    defaultCat:   'ポリエン系',
+    headBg:       'linear-gradient(180deg, #fdf4ff 0%, #fae8ff 100%)',
+    stickyBg:     '#fdf4ff',
+    rowAltBg:     '#fefbff',
+    rowAltSticky: '#f9f0fe',
+    accentColor:  '#9333ea',
+  },
   antibiotics: {
     file: './data/antibiotics.json',
     categories: [
@@ -475,6 +500,10 @@ function renderDomainView() {
     if (currentCategory.startsWith('AB_')) {
       if (currentCategory === 'AB_TB') return AB_TB_DRUGS.includes(d.name);
       const specField = { AB_MRSA: 'mrsa', AB_STREP: 'strep', AB_ENTERO: 'entero', AB_ENTERO_BAC: 'entero_bac', AB_ESBL: 'esbl', AB_PSEUDO: 'pseudo', AB_ANAEROBE: 'anaerobe', AB_ATYPICAL: 'atypical' }[currentCategory];
+      return specField && ['+++', '++', '+'].includes(d[specField]);
+    }
+    if (currentCategory.startsWith('AF_')) {
+      const specField = { AF_CANDIDA: 'candida', AF_ASPERGILLUS: 'aspergillus', AF_CRYPTO: 'crypto', AF_MUCOR: 'mucor', AF_DERM: 'dermatophyte' }[currentCategory];
       return specField && ['+++', '++', '+'].includes(d[specField]);
     }
     return d.category === currentCategory;
@@ -1265,6 +1294,21 @@ const RESP_ORAL_ROWS = [
   { label: '⚠ 注意事項',      field: 'caution',         type: 'caution' },
 ];
 
+// ===== 抗真菌薬 ROW_DEFS =====
+const ANTIFUNGAL_ROWS = [
+  { label: '作用機序',      field: 'mechanism',       type: 'mech'    },
+  { label: 'PK/PD特性',     field: 'pkpd',            type: 'val'     },
+  { label: '血中半減期',    field: 'half_life',        type: 'val'     },
+  { label: '経口BA',        field: 'bioavailability',  type: 'accent'  },
+  { label: '米国用量',      field: 'dose_us',          type: 'accent'  },
+  { label: '投与経路',      field: 'route',            type: 'val'     },
+  { label: '第一選択',      field: 'first_line',       type: 'usecase' },
+  { label: '適応外使用',    field: 'off_label',        type: 'usecase' },
+  { label: '薬物相互作用',  field: 'cross',            type: 'val'     },
+  { label: '⚠ 注意事項',   field: 'caution',          type: 'caution' },
+  { label: 'TDM',           field: 'tdm',              type: 'val'     },
+];
+
 // ===== 抗菌薬 ROW_DEFS =====
 const ANTIBIOTIC_ROWS = [
   { label: '作用機序',       field: 'mechanism',  type: 'mech'    },
@@ -1280,6 +1324,7 @@ const ANTIBIOTIC_ROWS = [
 ];
 
 function getRowDefs(category) {
+  if (currentDomain === 'antifungals') return ANTIFUNGAL_ROWS;
   if (currentDomain === 'antibiotics') return ANTIBIOTIC_ROWS;
   if (ROW_DEFS[category]) return ROW_DEFS[category];
   if (['抗精神病薬（定型）', '抗精神病薬（非定型）'].includes(category))
@@ -1726,6 +1771,14 @@ function getClassBadge(cls) {
     'ペプチド系抗結核薬':                  { css: 'ab-tb'     },
     'リファマイシン系':                    { css: 'ab-tb'     },
     'ホスホマイシン系':                    { css: 'ab-other'  },
+    // 抗真菌薬
+    'ポリエン':                            { css: 'af-poly'   },
+    'トリアゾール':                        { css: 'af-triaz'  },
+    'エキノカンジン':                      { css: 'af-echio'  },
+    'イミダゾール':                        { css: 'af-imid'   },
+    'フルシトシン':                        { css: 'af-other'  },
+    'アリルアミン系':                      { css: 'af-other'  },
+    'アリルアミン':                        { css: 'af-other'  },
   };
   return map[cls] || { css: 'benzo' };
 }
