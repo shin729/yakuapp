@@ -1296,17 +1296,16 @@ const RESP_ORAL_ROWS = [
 
 // ===== 抗真菌薬 ROW_DEFS =====
 const ANTIFUNGAL_ROWS = [
-  { label: '作用機序',      field: 'mechanism',       type: 'mech'    },
-  { label: 'PK/PD特性',     field: 'pkpd',            type: 'val'     },
-  { label: '血中半減期',    field: 'half_life',        type: 'val'     },
-  { label: '経口BA',        field: 'bioavailability',  type: 'accent'  },
-  { label: '米国用量',      field: 'dose_us',          type: 'accent'  },
-  { label: '投与経路',      field: 'route',            type: 'val'     },
-  { label: '第一選択',      field: 'first_line',       type: 'usecase' },
-  { label: '適応外使用',    field: 'off_label',        type: 'usecase' },
-  { label: '薬物相互作用',  field: 'cross',            type: 'val'     },
-  { label: '⚠ 注意事項',   field: 'caution',          type: 'caution' },
-  { label: 'TDM',           field: 'tdm',              type: 'val'     },
+  { label: '作用機序',      field: 'mechanism',  type: 'mech'    },
+  { label: 'PK/PD特性',     field: 'pkpd',       type: 'val'     },
+  { label: '血中半減期',    field: 'half_life',   type: 'val'     },
+  { label: '米国用量',      field: 'dose_us',     type: 'accent'  },
+  { label: '投与経路・BA',  field: 'route',       type: 'accent'  },
+  { label: '第一選択',      field: 'first_line',  type: 'usecase' },
+  { label: '適応外使用',    field: 'off_label',   type: 'usecase' },
+  { label: '薬物相互作用',  field: 'cross',       type: 'val'     },
+  { label: '⚠ 注意事項',   field: 'caution',     type: 'caution' },
+  { label: 'TDM',           field: 'tdm',         type: 'val'     },
 ];
 
 // ===== 抗菌薬 ROW_DEFS =====
