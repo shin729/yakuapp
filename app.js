@@ -192,6 +192,21 @@ const DOMAINS = {
     rowAltSticky: '#e8f5fd',
     accentColor:  '#0369a1',
   },
+  antiviral: {
+    file: './data/antivirals.json',
+    categories: [
+      { key: '抗ヘルペス/CMV薬', label: '💊 抗ヘルペス/CMV薬' },
+      { key: '抗HIV薬',          label: '🔴 抗HIV薬' },
+      { key: '抗マラリア薬',     label: '🌿 抗マラリア薬' },
+      { key: 'その他原虫薬',     label: '🦠 その他原虫薬' },
+    ],
+    defaultCat:   '抗ヘルペス/CMV薬',
+    headBg:       'linear-gradient(180deg, #fffbeb 0%, #fef3c7 100%)',
+    stickyBg:     '#fffbeb',
+    rowAltBg:     '#fffdf5',
+    rowAltSticky: '#fef8e1',
+    accentColor:  '#d97706',
+  },
   antifungals: {
     file: './data/antifungals.json',
     categories: [
@@ -1294,6 +1309,19 @@ const RESP_ORAL_ROWS = [
   { label: '⚠ 注意事項',      field: 'caution',         type: 'caution' },
 ];
 
+// ===== 抗ウイルス/抗原虫薬 ROW_DEFS =====
+const ANTIVIRAL_ROWS = [
+  { label: '作用機序',      field: 'mechanism',  type: 'mech'    },
+  { label: '血中半減期',    field: 'half_life',   type: 'val'     },
+  { label: '米国用量',      field: 'dose_us',     type: 'accent'  },
+  { label: '投与経路・BA',  field: 'route',       type: 'accent'  },
+  { label: '第一選択',      field: 'first_line',  type: 'usecase' },
+  { label: '適応外使用',    field: 'off_label',   type: 'usecase' },
+  { label: '薬物相互作用',  field: 'cross',       type: 'val'     },
+  { label: '⚠ 注意事項',   field: 'caution',     type: 'caution' },
+  { label: 'TDM',           field: 'tdm',         type: 'val'     },
+];
+
 // ===== 抗真菌薬 ROW_DEFS =====
 const ANTIFUNGAL_ROWS = [
   { label: '作用機序',      field: 'mechanism',  type: 'mech'    },
@@ -1323,6 +1351,7 @@ const ANTIBIOTIC_ROWS = [
 ];
 
 function getRowDefs(category) {
+  if (currentDomain === 'antiviral')   return ANTIVIRAL_ROWS;
   if (currentDomain === 'antifungals') return ANTIFUNGAL_ROWS;
   if (currentDomain === 'antibiotics') return ANTIBIOTIC_ROWS;
   if (ROW_DEFS[category]) return ROW_DEFS[category];
@@ -1770,6 +1799,15 @@ function getClassBadge(cls) {
     'ペプチド系抗結核薬':                  { css: 'ab-tb'     },
     'リファマイシン系':                    { css: 'ab-tb'     },
     'ホスホマイシン系':                    { css: 'ab-other'  },
+    // 抗ウイルス/抗原虫薬
+    'ヌクレオシド系（抗ヘルペス）':        { css: 'av-herpes' },
+    'ヌクレオシド系（抗CMV）':             { css: 'av-cmv'   },
+    'ヌクレオシド系（抗HIV）':             { css: 'av-hiv'   },
+    'NRTI':                                { css: 'av-hiv'   },
+    '抗葉酸薬':                            { css: 'av-malaria'},
+    '抗マラリア薬':                        { css: 'av-malaria'},
+    'ニトロイミダゾール':                  { css: 'av-nitro'  },
+    '抗原虫薬':                            { css: 'av-proto'  },
     // 抗真菌薬
     'ポリエン':                            { css: 'af-poly'   },
     'トリアゾール':                        { css: 'af-triaz'  },

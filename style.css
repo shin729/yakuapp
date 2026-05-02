@@ -507,6 +507,14 @@ thead .sticky-col { z-index: 3; }
 .class-badge.ab-tb          { background: #fef3c7; color: #92400e; }
 .class-badge.ab-other       { background: #f4f4f5; color: #3f3f46; }
 
+/* 抗ウイルス/抗原虫薬バッジ */
+.class-badge.av-herpes      { background: #d1fae5; color: #065f46; }
+.class-badge.av-cmv         { background: #a7f3d0; color: #064e3b; }
+.class-badge.av-hiv         { background: #fee2e2; color: #991b1b; }
+.class-badge.av-malaria     { background: #fef9c3; color: #713f12; }
+.class-badge.av-nitro       { background: #ede9fe; color: #4c1d95; }
+.class-badge.av-proto       { background: #f4f4f5; color: #3f3f46; }
+
 /* 抗真菌薬バッジ */
 .class-badge.af-poly        { background: #fef3c7; color: #92400e; }
 .class-badge.af-triaz       { background: #ede9fe; color: #4c1d95; }
