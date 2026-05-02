@@ -259,7 +259,16 @@ async def _run_extraction(nb_id: str, client, prompt: str, extra_urls: list[str]
     await asyncio.sleep(wait_sec)
 
     print("NotebookLMに質問中...")
-    result = await client.chat.ask(nb_id, prompt)
+    for attempt in range(3):
+        try:
+            result = await client.chat.ask(nb_id, prompt)
+            break
+        except Exception as e:
+            if attempt < 2 and any(w in str(e).lower() for w in ('rate', 'limit', 'reject', 'timed', 'timeout')):
+                print(f"  レートリミット検出、60秒待機してリトライ ({attempt+1}/3)...")
+                await asyncio.sleep(60)
+            else:
+                raise
     raw = result.answer.strip()
 
     if raw.startswith("```"):
@@ -284,7 +293,7 @@ async def _run_extraction(nb_id: str, client, prompt: str, extra_urls: list[str]
 
 
 async def extract_from_pdf(pdf_path: pathlib.Path, prompt: str, extra_urls: list[str] = None) -> list[dict]:
-    async with await NotebookLMClient.from_storage() as client:
+    async with await NotebookLMClient.from_storage(timeout=120) as client:
         nb_title = f"yakuapp-{pdf_path.stem}"
         print(f"ノートブック作成中: {nb_title}")
         nb = await client.notebooks.create(nb_title)
@@ -302,7 +311,7 @@ async def extract_from_pdf(pdf_path: pathlib.Path, prompt: str, extra_urls: list
 
 async def extract_from_url(source_url: str, prompt: str, extra_urls: list[str] = None) -> list[dict]:
     slug = re.sub(r'[^a-zA-Z0-9]', '-', source_url.split('/')[-2] or source_url.split('/')[-1])[:30]
-    async with await NotebookLMClient.from_storage() as client:
+    async with await NotebookLMClient.from_storage(timeout=120) as client:
         nb_title = f"yakuapp-{slug}"
         print(f"ノートブック作成中: {nb_title}")
         nb = await client.notebooks.create(nb_title)
@@ -390,10 +399,10 @@ async def main(source: str, target_json: str, drug_name_en: str = None):
     valid_cats = get_categories_from_json(json_path)
     if valid_cats:
         print(f"有効カテゴリ: {valid_cats}")
-    prompt = build_extract_prompt(valid_cats, guideline_version)
 
     # ガイドラインURL取得
     guideline_urls, guideline_version = get_guideline_info(json_path)
+    prompt = build_extract_prompt(valid_cats, guideline_version)
 
     # PubMed検索
     pubmed_ids = None
