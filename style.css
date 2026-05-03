@@ -47,6 +47,7 @@ body {
 /* ===== ドメインタブ（大分類） ===== */
 .domain-tabs {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 10px;
 }
@@ -1511,12 +1512,22 @@ thead .cmp-label-col { background: #f5f3ff !important; }
   .main { padding: 12px; }
   .card-list { gap: 10px; }
 
-  /* ===== 大分類タブ：ピル形状で小分類と区別 ===== */
-  .domain-tabs { gap: 6px; }
+  /* ===== 大分類タブ：横スクロール化 ===== */
+  .domain-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 6px;
+    padding: 4px 2px 8px;
+  }
+  .domain-tabs::-webkit-scrollbar { display: none; }
   .domain-btn {
+    flex: 0 0 auto;
+    white-space: nowrap;
     font-size: 0.82rem;
     padding: 9px 14px;
-    border-radius: 20px; /* ピル → 小分類の角ばったボタンと明確に区別 */
+    border-radius: 20px;
   }
 
   /* ===== 小分類タブ：横スクロール化（縦長解消） ===== */
