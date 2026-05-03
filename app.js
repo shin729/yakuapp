@@ -1800,6 +1800,7 @@ function getClassBadge(cls) {
     'リファマイシン系':                    { css: 'ab-tb'     },
     'ホスホマイシン系':                    { css: 'ab-other'  },
     // 抗ウイルス/抗原虫薬
+    'ヘリカーゼ阻害薬':                    { css: 'av-heli'   },
     'ヌクレオシド系（抗ヘルペス）':        { css: 'av-herpes' },
     'ヌクレオシド系（抗CMV）':             { css: 'av-cmv'   },
     'ヌクレオシド系（抗HIV）':             { css: 'av-hiv'   },

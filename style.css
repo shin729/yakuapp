@@ -508,6 +508,7 @@ thead .sticky-col { z-index: 3; }
 .class-badge.ab-other       { background: #f4f4f5; color: #3f3f46; }
 
 /* 抗ウイルス/抗原虫薬バッジ */
+.class-badge.av-heli        { background: #e0f2fe; color: #0c4a6e; }
 .class-badge.av-herpes      { background: #d1fae5; color: #065f46; }
 .class-badge.av-cmv         { background: #a7f3d0; color: #064e3b; }
 .class-badge.av-hiv         { background: #fee2e2; color: #991b1b; }
