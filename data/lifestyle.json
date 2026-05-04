@@ -399,7 +399,7 @@
     "name": "アリロクマブ",
     "brand": "プラルエント",
     "category": "脂質異常症治療薬",
-    "class": "PCSK9阻害薬",
+    "class": "PCSK9阻害薬（抗体薬）",
     "action_type": "PCSK9阻害薬（LDLr再生・LDL強力低下）",
     "mechanism": "PCSK9に結合してLDL受容体の分解を阻止→LDR受容体数↑→LDL強力低下（最大70%）。スタチン最大量でも不十分な例に適応",
     "placebo_onset": "LDL −50〜65%",
