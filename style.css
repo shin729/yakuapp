@@ -359,6 +359,7 @@ thead .sticky-col { z-index: 3; }
 .class-badge.triptan       { background: #9f1239; color: #ffe4e6; }
 .class-badge.ditan         { background: #be123c; color: #ffe4e6; }
 .class-badge.cgrp-ab       { background: #e11d48; color: #fff1f2; }
+.class-badge.gepant        { background: #9a3412; color: #ffedd5; }
 /* 抗てんかん薬 */
 .class-badge.na-channel-b  { background: #1e3a5f; color: #dbeafe; }
 .class-badge.sv2a-b        { background: #2e1065; color: #ede9fe; }
@@ -387,6 +388,7 @@ thead .sticky-col { z-index: 3; }
 .class-badge.statin-mod    { background: #3730a3; color: #e0e7ff; }
 .class-badge.chol-absorb   { background: #4338ca; color: #e0e7ff; }
 .class-badge.pcsk9i        { background: #1e1b4b; color: #e0e7ff; }
+.class-badge.pcsk9i-sirna  { background: #312e81; color: #c7d2fe; }
 .class-badge.fibrate       { background: #065f46; color: #d1fae5; }
 .class-badge.epa           { background: #0f766e; color: #ccfbf1; }
 /* 高尿酸血症 */
@@ -483,6 +485,7 @@ thead .sticky-col { z-index: 3; }
 .class-badge.resp-bio-ige   { background: #831843; color: #fce7f3; }
 .class-badge.resp-bio-il5   { background: #4c1d95; color: #ede9fe; }
 .class-badge.resp-bio-il4   { background: #701a75; color: #fae8ff; }
+.class-badge.resp-bio-tslp  { background: #1e3a5f; color: #dbeafe; }
 .class-badge.resp-pde4      { background: #0f766e; color: #ccfbf1; }
 .class-badge.resp-era       { background: #7c2d12; color: #ffedd5; }
 .class-badge.resp-pde5      { background: #1d4ed8; color: #dbeafe; }

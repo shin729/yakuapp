@@ -412,6 +412,24 @@
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/30446595/"
   },
   {
+    "name": "リメゲパント",
+    "brand": "ナリメプラント",
+    "category": "片頭痛",
+    "class": "ゲパント系（CGRP受容体小分子拮抗薬）",
+    "action_type": "片頭痛急性期治療・予防（二重適応）",
+    "mechanism": "CGRP受容体を小分子で可逆的に拮抗→三叉神経血管炎症を抑制。\n血管収縮なし。急性期（75mg頓服）と予防（隔日75mg）の両用途",
+    "efficacy_star": 4,
+    "placebo_onset": "2時間後頭痛消失率+19%（プラセボ比）",
+    "placebo_sleep": "2.5時間後疼痛消失率+16%",
+    "NNT": 6,
+    "onset_time": "60〜90分",
+    "duration_hours": "48時間（急性期）/ 隔日投与で予防",
+    "guideline_rank": "2024年日本承認。心血管禁忌なし。トリプタン不応・禁忌例に。急性期と予防を1剤でカバーできる唯一の経口CGRP拮抗薬",
+    "evidence": "Lipton RB et al. NEJM 2019（BHV3000-301試験 PMID:31491384）",
+    "caution": "CYP3A4/P糖タンパク強阻害薬で血中濃度上昇（投与禁忌）。妊婦・授乳婦は禁忌",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/31491384/"
+  },
+  {
     "name": "リザトリプタン",
     "brand": "マクサルト",
     "category": "片頭痛",

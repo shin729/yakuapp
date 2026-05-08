@@ -414,6 +414,24 @@
     "caution": "注射剤（2週1回または月1回）。非常に高価。注射部位反応。筋肉痛まれ"
   },
   {
+    "name": "インクリシラン",
+    "brand": "レクビオ",
+    "category": "脂質異常症治療薬",
+    "class": "PCSK9阻害薬（siRNA）",
+    "action_type": "PCSK9-siRNA（RNA干渉・肝細胞内PCSK9 mRNA分解）",
+    "mechanism": "GalNAc修飾siRNAが肝細胞に選択的に取り込まれRISCを形成→PCSK9 mRNAを分解→\nPCSK9タンパク産生↓→LDL受容体数↑→LDL-C 約50%低下",
+    "placebo_onset": "LDL −50〜52%（スタチン追加時）",
+    "placebo_sleep": "ORION-4心血管イベント試験（進行中）",
+    "NNT": null,
+    "efficacy_star": 5,
+    "onset_time": "2〜4週で最大効果",
+    "duration_hours": "初回→3ヶ月後→以降6ヶ月毎（年2回）",
+    "guideline_rank": "年2回皮下注で服薬アドヒアランス最高水準。スタチン最大量・PCSK9抗体薬でも不十分な高リスク例・FHに。2023年日本承認",
+    "evidence": "Wright RS et al. NEJM 2020（ORION-10試験 PMID:32302133）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/32302133/",
+    "caution": "注射部位反応（軽微）。心血管アウトカム試験（ORION-4）進行中。非常に高価"
+  },
+  {
     "name": "ロスバスタチン",
     "brand": "クレストール",
     "category": "脂質異常症治療薬",

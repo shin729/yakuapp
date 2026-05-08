@@ -546,6 +546,27 @@
     "caution": "注射部位反応・結膜炎。アナフィラキシーリスク。IL-4/IL-13遮断による皮膚炎悪化の初期報告あり。"
   },
   {
+    "name": "テゼペルマブ",
+    "brand": "テゼスパイア",
+    "category": "気管支喘息（内服）",
+    "class": "抗TSLP抗体（生物学的製剤）",
+    "action_type": "上皮サイトカイン遮断・重症喘息（好酸球値非依存）",
+    "mechanism": "TSLP（胸腺間質性リンパ球新生因子）に結合し受容体結合を阻害。\nアレルゲン刺激で上皮細胞が産生するTSLPを上流で遮断→Th2炎症・好酸球・IgE・肥満細胞活性化を広範に抑制",
+    "indication": "重症喘息（血中好酸球値によらず適応）",
+    "efficacy_star": 5,
+    "placebo_onset": "増悪リスク低下 プラセボ比 −56%（NAVIGATOR試験）",
+    "placebo_sleep": "FEV1改善 プラセボ比 +0.13L",
+    "NNT": null,
+    "onset_time": "数週間〜数ヵ月",
+    "duration_hours": "4週間（皮下注）",
+    "device": null,
+    "inhalation_flow": null,
+    "guideline_rank": "GINA Step 5：好酸球非高値（<300/μL）にも唯一の適応。2型炎症型・非2型炎症型の両喘息に有効。2023年日本承認",
+    "evidence": "Menzies-Gow AN, et al. N Engl J Med. 2021. PMID: 34252915",
+    "evidence_url": null,
+    "caution": "注射部位反応・鼻咽頭炎。アナフィラキシーリスク（投与後観察必須）。好酸球≥300/μLでは他生物学的製剤との優劣を比較検討"
+  },
+  {
     "name": "ロフルミラスト",
     "brand": "ダクサス",
     "category": "COPD（内服）",
