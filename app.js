@@ -1585,7 +1585,9 @@ function getClassBadge(cls) {
     '非麦角系ドパミン作動薬':         { css: 'da-agonist' },
     '非麦角系ドパミン作動薬（経皮）': { css: 'da-agonist' },
     'MAO-B阻害薬':                    { css: 'mao-comt-i' },
+    'MAO-B阻害薬（第2世代）':         { css: 'mao-comt-i' },
     'COMT阻害薬':                     { css: 'mao-comt-i' },
+    'COMT阻害薬（第3世代・1日1回型）': { css: 'mao-comt-i' },
     // 双極性障害
     '非定型抗精神病薬配合剤':         { css: 'atypical-combo' },
     // 糖尿病

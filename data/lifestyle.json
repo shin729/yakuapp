@@ -162,6 +162,24 @@
     "caution": "膵炎リスク（まれ）。関節痛。腎機能低下で用量減量（eGFR<45で50 mg/日）。心血管保護効果は限定的"
   },
   {
+    "name": "リナグリプチン",
+    "brand": "トラゼンタ",
+    "category": "糖尿病治療薬",
+    "class": "DPP-4阻害薬",
+    "action_type": "血糖降下（低血糖リスク低・腎機能非依存）",
+    "mechanism": "DPP-4を選択的に阻害しGLP-1・GIPの分解を防ぎ血糖依存的インスリン分泌増加・グルカゴン抑制を示す。他のDPP-4阻害薬と異なり肝胆汁路で排泄されるため腎機能にかかわらず用量調整が不要（eGFR<15でも5mg/日で使用可）。この腎機能非依存性が最大の特徴",
+    "efficacy_star": 3,
+    "placebo_onset": "HbA1c −0.7%（プラセボ比）",
+    "placebo_sleep": "体重 0 kg（中性）",
+    "NNT": "心血管中立（CARMELINA試験）",
+    "onset_time": "数日〜2週",
+    "duration_hours": "1日1回",
+    "guideline_rank": "慢性腎臓病（CKD）合併糖尿病の第一選択DPP-4阻害薬。透析患者でも用量調整なしで使用可能。CKD患者においてシタグリプチンは減量が必要だが、リナグリプチンは同用量（5mg/日）のまま使用できる",
+    "evidence": "CARMELINA試験（PMID:30477464）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/30477464/",
+    "caution": "膵炎リスク（まれ）。関節痛。心血管保護効果は限定的（CARMELINA試験で中立）。ゲムフィブロジルとの併用でAUC増加（注意）"
+  },
+  {
     "name": "グリメピリド",
     "brand": "アマリール",
     "category": "糖尿病治療薬",
