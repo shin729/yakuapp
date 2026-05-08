@@ -449,6 +449,19 @@ thead .sticky-col { z-index: 3; }
 .class-badge.gi-ibd-jak1  { background: #6d28d9; color: #ede9fe; }
 .class-badge.gi-kampo     { background: #3f6212; color: #ecfccb; }
 
+/* ===== 不整脈薬バッジ ===== */
+.class-badge.arr-beta1    { background: #064e3b; color: #d1fae5; }
+.class-badge.arr-beta     { background: #065f46; color: #d1fae5; }
+.class-badge.arr-ccb      { background: #1e3a8a; color: #dbeafe; }
+.class-badge.arr-multi    { background: #78350f; color: #fef3c7; }
+.class-badge.arr-na-ia    { background: #1d4ed8; color: #dbeafe; }
+.class-badge.arr-na-ib    { background: #0369a1; color: #e0f2fe; }
+.class-badge.arr-na-ic    { background: #075985; color: #e0f2fe; }
+.class-badge.arr-k3       { background: #4c1d95; color: #ede9fe; }
+.class-badge.arr-other    { background: #374151; color: #f3f4f6; }
+.class-badge.arr-vka      { background: #7f1d1d; color: #fee2e2; }
+.class-badge.arr-doac     { background: #9f1239; color: #ffe4e6; }
+
 /* ===== 抗アレルギー薬バッジ ===== */
 /* 第2世代・非鎮静性（明るいシアン） */
 .class-badge.ah-2gen-non  { background: #0891b2; color: #ecfeff; }

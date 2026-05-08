@@ -1823,6 +1823,28 @@ function getClassBadge(cls) {
     'フルシトシン':                        { css: 'af-other'  },
     'アリルアミン系':                      { css: 'af-other'  },
     'アリルアミン':                        { css: 'af-other'  },
+    // 不整脈
+    'β遮断薬（選択的β1遮断・Class II）':                 { css: 'arr-beta1'  },
+    'β遮断薬（超短時間作用型β1選択的・Class II）':        { css: 'arr-beta1'  },
+    'β遮断薬（非選択的β1/β2遮断・Class II）':            { css: 'arr-beta'   },
+    'Ca拮抗薬（非DHP系・Class IV）':                     { css: 'arr-ccb'    },
+    '多チャネル遮断薬（Class III主体・I/II/IV複合）':     { css: 'arr-multi'  },
+    'β遮断薬＋K⁺チャネル遮断（Class II+III）':           { css: 'arr-multi'  },
+    '多チャネル遮断薬（Class IV主体＋I・III）':           { css: 'arr-multi'  },
+    'Na⁺チャネル遮断薬（Class Ia・抗コリン作用）':        { css: 'arr-na-ia'  },
+    'Na⁺チャネル遮断薬（Class Ia）':                     { css: 'arr-na-ia'  },
+    'Na⁺チャネル遮断薬（Class Ib）':                     { css: 'arr-na-ib'  },
+    'Na⁺チャネル遮断薬（Class Ib・リドカインの経口版）':  { css: 'arr-na-ib'  },
+    'Na⁺チャネル遮断薬（Class Ic）':                     { css: 'arr-na-ic'  },
+    'Na⁺チャネル遮断薬（Class Ic・pure Na遮断）':         { css: 'arr-na-ic'  },
+    'K⁺チャネル遮断薬（pure Class III・IKr選択的遮断）':  { css: 'arr-k3'     },
+    '強心配糖体（ジギタリス製剤）':                       { css: 'hf-digoxin' },
+    '内因性ヌクレオシド（アデノシンA₁受容体作動薬）':    { css: 'arr-other'  },
+    // 抗凝固薬（AF血栓塞栓症予防）
+    'ビタミンK拮抗薬（VKA）':                            { css: 'arr-vka'    },
+    '直接トロンビン阻害薬（DTI・DOAC）':                  { css: 'arr-doac'   },
+    '直接Xa因子阻害薬（DOAC・1日1回型）':                { css: 'arr-doac'   },
+    '直接Xa因子阻害薬（DOAC・1日2回型）':                { css: 'arr-doac'   },
   };
   return map[cls] || { css: 'benzo' };
 }
