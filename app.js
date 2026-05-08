@@ -1815,6 +1815,12 @@ function getClassBadge(cls) {
     '抗マラリア薬':                        { css: 'av-malaria'},
     'ニトロイミダゾール':                  { css: 'av-nitro'  },
     '抗原虫薬':                            { css: 'av-proto'  },
+    // 抗インフルエンザ薬
+    'NA阻害薬（経口）':                            { css: 'av-flu-na'  },
+    'NA阻害薬（吸入）':                            { css: 'av-flu-na'  },
+    'NA阻害薬（吸入・長時間作用型）':              { css: 'av-flu-na'  },
+    'NA阻害薬（静注）':                            { css: 'av-flu-na'  },
+    'キャップ依存性エンドヌクレアーゼ阻害薬（CEN阻害薬）': { css: 'av-flu-cen' },
     // 抗真菌薬
     'ポリエン':                            { css: 'af-poly'   },
     'トリアゾール':                        { css: 'af-triaz'  },

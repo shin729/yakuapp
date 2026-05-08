@@ -536,6 +536,8 @@ thead .sticky-col { z-index: 3; }
 .class-badge.av-malaria     { background: #fef9c3; color: #713f12; }
 .class-badge.av-nitro       { background: #ede9fe; color: #4c1d95; }
 .class-badge.av-proto       { background: #f4f4f5; color: #3f3f46; }
+.class-badge.av-flu-na      { background: #fef3c7; color: #78350f; }
+.class-badge.av-flu-cen     { background: #fce7f3; color: #831843; }
 
 /* 抗真菌薬バッジ */
 .class-badge.af-poly        { background: #fef3c7; color: #92400e; }
