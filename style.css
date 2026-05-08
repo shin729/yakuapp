@@ -464,6 +464,8 @@ thead .sticky-col { z-index: 3; }
 .class-badge.ah-bio-il4   { background: #9d174d; color: #fce7f3; }
 /* 生物学的製剤 – 抗IL-5（パープル） */
 .class-badge.ah-bio-il5   { background: #6b21a8; color: #f3e8ff; }
+/* 生物学的製剤 – 抗IL-13（シアン） */
+.class-badge.ah-bio-il13  { background: #155e75; color: #cffafe; }
 /* アレルゲン免疫療法・SLIT（深緑） */
 .class-badge.ah-ait       { background: #14532d; color: #dcfce7; }
 /* アレルゲン免疫療法・SCIT（テール） */

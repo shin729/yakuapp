@@ -171,6 +171,25 @@
     "response_rate": "花粉症：鼻症状スコア50%以上改善 約55〜65%（国内プラセボ対照試験）"
   },
   {
+    "name": "ベポタスチン",
+    "brand": "タリオン",
+    "category": "抗ヒスタミン薬",
+    "class": "第2世代・低鎮静性",
+    "generation": "第2世代",
+    "structure": "ピペリジン酢酸骨格",
+    "brain_occupancy": "約20〜26%",
+    "drowsiness": "★★ 軽度（眠気6〜10%。自動車運転注意の記載あり）",
+    "mechanism": "末梢H1受容体選択的拮抗＋肥満細胞安定化（ヒスタミン・LTC4遊離抑制）。腎排泄優位の国内開発薬",
+    "efficacy_star": 4,
+    "duration": "12時間（10mg 1日2回）",
+    "indication": "アレルギー性鼻炎、蕁麻疹、皮膚掻痒症",
+    "guideline_rank": "国内開発薬。H1拮抗＋肥満細胞安定化の二重作用。皮膚掻痒症にも保険適応。腎機能低下時は5mgに減量",
+    "evidence": "Nagakura T et al. J Allergy Clin Immunol 2000",
+    "evidence_url": null,
+    "caution": "腎機能障害時は減量（腎排泄）。軽度眠気（自動車運転注意）。1日2回服用が必要",
+    "response_rate": "花粉症：鼻症状スコア50%以上改善 約50〜60%（国内プラセボ対照試験）"
+  },
+  {
     "name": "アゼラスチン",
     "brand": "アゼプチン",
     "category": "抗ヒスタミン薬",
@@ -419,6 +438,23 @@
     "evidence": "FitzGerald JM et al. Lancet 2016",
     "evidence_url": null,
     "caution": "注射部位反応。好酸球急速低下で潜在的寄生虫感染・副腎不全が顕在化する可能性"
+  },
+  {
+    "name": "トラロキヌマブ",
+    "brand": "アドトラーザ",
+    "category": "生物学的製剤",
+    "class": "抗IL-13抗体（完全ヒト化IgG4κ）",
+    "target_molecule": "IL-13（Th2炎症・バリア機能障害・掻痒を主導するサイトカイン）",
+    "mechanism": "IL-13に直接結合→IL-13受容体α1/α2へのシグナル伝達を阻害→\nTh2型皮膚炎症・経皮水分喪失・掻痒を抑制（IL-4は遮断しない）",
+    "action_type": "抗IL-13生物学的製剤",
+    "indication": "中等症〜重症アトピー性皮膚炎（既存治療で効果不十分）",
+    "efficacy_star": 4,
+    "administration": "皮下注射300mg 2週間毎（EASI-75達成後は4週間毎に延長可）",
+    "remission_rate": "アトピー：EASI-75達成率38〜39%（16週・ECZTRA1/2試験）。IGA 0/1達成率25%",
+    "guideline_rank": "IL-13選択的遮断。2022年日本承認。デュピルマブ結膜炎が問題となる例や不耐・禁忌例の代替選択肢",
+    "evidence": "Wollenberg A et al. Lancet 2021",
+    "evidence_url": null,
+    "caution": "結膜炎（約4%・デュピルマブの15〜20%より低頻度）。注射部位反応。上気道感染スクリーニング推奨"
   },
   {
     "name": "スギ花粉舌下免疫療法",

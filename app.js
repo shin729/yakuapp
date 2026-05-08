@@ -1750,6 +1750,7 @@ function getClassBadge(cls) {
     '抗IL-4Rα抗体（IL-4・IL-13共通受容体遮断）':        { css: 'ah-bio-il4' },
     '抗IL-5抗体（完全ヒト化IgG1κ）':                   { css: 'ah-bio-il5' },
     '抗IL-5Rα抗体（フコース除去・ADCC増強）':           { css: 'ah-bio-il5' },
+    '抗IL-13抗体（完全ヒト化IgG4κ）':                  { css: 'ah-bio-il13' },
     // アレルゲン免疫療法
     '舌下免疫療法（SLIT）スギ花粉': { css: 'ah-ait' },
     '舌下免疫療法（SLIT）ダニ':     { css: 'ah-ait' },
