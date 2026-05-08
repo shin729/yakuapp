@@ -1821,6 +1821,10 @@ function getClassBadge(cls) {
     'NA阻害薬（吸入・長時間作用型）':              { css: 'av-flu-na'  },
     'NA阻害薬（静注）':                            { css: 'av-flu-na'  },
     'キャップ依存性エンドヌクレアーゼ阻害薬（CEN阻害薬）': { css: 'av-flu-cen' },
+    // 抗COVID-19薬
+    'プロテアーゼ阻害薬（COVID-19・3CLpro阻害）':           { css: 'av-covid-3cl' },
+    'プロテアーゼ阻害薬（COVID-19・3CLpro阻害・日本開発）': { css: 'av-covid-3cl' },
+    'ヌクレオチドアナログ（RdRp阻害薬・静注）':             { css: 'av-covid-rdp' },
     // 抗真菌薬
     'ポリエン':                            { css: 'af-poly'   },
     'トリアゾール':                        { css: 'af-triaz'  },
