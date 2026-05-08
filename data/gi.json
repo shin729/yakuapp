@@ -819,6 +819,23 @@
     "evidence_url": null
   },
   {
+    "name": "リサンキズマブ",
+    "brand": "スキリージ",
+    "category": "潰瘍性大腸炎・クローン病",
+    "class": "抗IL-23p19抗体（完全ヒト型IgG1）",
+    "action_type": "IL-23のp19サブユニット選択的中和→Th17炎症経路の特異的遮断",
+    "mechanism": "IL-23のp19サブユニットに特異的に結合しIL-23シグナルを遮断する。IL-12（p35+p40）には影響を与えず、IL-23（p19+p40）のみを選択的に阻害する。Th17細胞の維持に必須なIL-23を遮断しTh17由来のIL-17A・IL-22の産生を抑制する",
+    "remission_type": "寛解導入・維持療法の両方（中等症〜重症CD：2023年承認、UC：2024年承認）",
+    "infection_risk": "低〜中程度（IL-23選択的阻害のため感染リスクはウステキヌマブと同等以下の可能性）",
+    "NNT": 5,
+    "immunosuppression_strength": "中〜強（IL-23特異的・Th17経路選択的：IL-12経路は温存）",
+    "efficacy_star": 5,
+    "guideline_rank": "抗TNF失効・不耐容のCD・UCへの選択肢。ウステキヌマブより選択性が高くIL-12経路（Th1免疫）を温存するため感染防御能への影響が理論的に少ない。ADVANCE試験（CD）で抗TNF失効例でも高い寛解率を示した。日本ではCD2023年・UC2024年承認",
+    "evidence": "PMID:34774328（ADVANCE/MOTIVATE CD試験）; PMID:36634691（INSPIRE UC試験）",
+    "caution": "投与前感染症スクリーニング（結核・B型肝炎）必須。活動性感染症禁忌。活動性TB禁忌",
+    "evidence_url": null
+  },
+  {
     "name": "ベドリズマブ",
     "brand": "エンタイビオ",
     "category": "潰瘍性大腸炎・クローン病",
@@ -850,6 +867,23 @@
     "guideline_rank": "中等症〜重症UC・CDのステロイド難治・依存例の標準生物学的製剤。投与前に必ず結核スクリーニング（胸部X線・QFT/T-SPOT）・B型肝炎HBs抗原確認が必須。キメラ型のため抗体産生によるADAリスクあり（AZAの併用で低減）",
     "evidence": "PMID:9717533（Active Crohn's Disease試験）; PMID:15765826（ACT1/ACT2 UC試験）",
     "caution": "投与前結核スクリーニング必須。活動性感染症禁忌。うっ血性心不全（NYHA III/IV）禁忌。脱髄疾患悪化。抗薬剤抗体（ADA）形成による効果減弱",
+    "evidence_url": null
+  },
+  {
+    "name": "アダリムマブ",
+    "brand": "ヒュミラ",
+    "category": "潰瘍性大腸炎・クローン病",
+    "class": "抗TNFα抗体（完全ヒト型IgG1・皮下注）",
+    "action_type": "TNFαを中和→腸管粘膜炎症の急速消炎・深部潰瘍の治癒促進",
+    "mechanism": "可溶性・膜結合型TNFαの両方に結合して中和する。完全ヒト化IgG1抗体のためインフリキシマブ（キメラ型）と比べ抗薬剤抗体（ADA）産生リスクが低く長期安定性が高い。皮下注製剤のため2週間に1回の外来・自己投与が可能",
+    "remission_type": "寛解導入・維持療法の両方（中等症〜重症UC・CD）",
+    "infection_risk": "高い（結核再活性化・日和見感染・B型肝炎再活性化）",
+    "NNT": 4,
+    "immunosuppression_strength": "強い（TNFα広域遮断→自然免疫・適応免疫の全身的な抑制）",
+    "efficacy_star": 5,
+    "guideline_rank": "インフリキシマブと同等の有効性を持つ抗TNFα製剤。完全ヒト型のためADA産生リスクが低く長期安定性が高い。皮下注自己投与（2週間に1回）で外来管理に優れる。投与前に必ず結核スクリーニング・B型肝炎HBs抗原確認が必須。関節症状を伴うIBDにも適応",
+    "evidence": "PMID:12867484（CLASSIC I CD試験）; PMID:21617852（ULTRA 1 UC試験）",
+    "caution": "投与前結核スクリーニング必須。活動性感染症禁忌。うっ血性心不全（NYHA III/IV）禁忌。脱髄疾患悪化。注射部位反応",
     "evidence_url": null
   },
   {

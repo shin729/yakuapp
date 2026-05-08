@@ -442,7 +442,9 @@ thead .sticky-col { z-index: 3; }
 .class-badge.gi-ibd-ste   { background: #c2410c; color: #fff7ed; }
 .class-badge.gi-ibd-imm   { background: #b45309; color: #fef3c7; }
 .class-badge.gi-ibd-bio   { background: #1e3a5f; color: #dbeafe; }
+.class-badge.gi-ibd-bio-sc { background: #1d4ed8; color: #dbeafe; }
 .class-badge.gi-ibd-il    { background: #0369a1; color: #e0f2fe; }
+.class-badge.gi-ibd-il23  { background: #075985; color: #e0f2fe; }
 .class-badge.gi-ibd-int   { background: #0e7490; color: #cffafe; }
 .class-badge.gi-ibd-bud   { background: #92400e; color: #fef3c7; }
 .class-badge.gi-ibd-jak   { background: #4f46e5; color: #eef2ff; }
@@ -527,6 +529,8 @@ thead .sticky-col { z-index: 3; }
 .class-badge.ab-st          { background: #ecfdf5; color: #065f46; }
 .class-badge.ab-tb          { background: #fef3c7; color: #92400e; }
 .class-badge.ab-other       { background: #f4f4f5; color: #3f3f46; }
+.class-badge.ab-nitro       { background: #fff7ed; color: #7c2d12; }
+.class-badge.ab-lipo        { background: #0f172a; color: #e0f2fe; }
 
 /* 抗ウイルス/抗原虫薬バッジ */
 .class-badge.av-heli        { background: #e0f2fe; color: #0c4a6e; }

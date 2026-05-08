@@ -1694,7 +1694,9 @@ function getClassBadge(cls) {
     '全身性ステロイド（糖質コルチコイド・免疫抑制）':           { css: 'gi-ibd-ste' },
     'チオプリン系免疫調節薬（プリン代謝拮抗）':                 { css: 'gi-ibd-imm' },
     '抗TNFα抗体（キメラ型IgG1・点滴静注）':                    { css: 'gi-ibd-bio' },
+    '抗TNFα抗体（完全ヒト型IgG1・皮下注）':                    { css: 'gi-ibd-bio-sc' },
     '抗IL-12/23p40抗体（完全ヒト型IgG1・点滴→皮下注）':        { css: 'gi-ibd-il' },
+    '抗IL-23p19抗体（完全ヒト型IgG1）':                        { css: 'gi-ibd-il23' },
     '抗α4β7インテグリン抗体（腸管選択的・完全ヒト型IgG1）':    { css: 'gi-ibd-int' },
     '局所作用型ステロイド（CYP3A4一回通過代謝型）':            { css: 'gi-ibd-bud' },
     'JAK阻害薬（JAK1/2/3選択的・第一世代）':                   { css: 'gi-ibd-jak' },
@@ -1805,6 +1807,8 @@ function getClassBadge(cls) {
     'ペプチド系抗結核薬':                  { css: 'ab-tb'     },
     'リファマイシン系':                    { css: 'ab-tb'     },
     'ホスホマイシン系':                    { css: 'ab-other'  },
+    'ニトロイミダゾール系':               { css: 'ab-nitro'  },
+    '環状脂肪酸ペプチド系（リポペプチド系）': { css: 'ab-lipo' },
     // 抗ウイルス/抗原虫薬
     'ヘリカーゼ阻害薬':                    { css: 'av-heli'   },
     'ヌクレオシド系（抗ヘルペス）':        { css: 'av-herpes' },
