@@ -1697,6 +1697,8 @@ function getClassBadge(cls) {
     '抗IL-12/23p40抗体（完全ヒト型IgG1・点滴→皮下注）':        { css: 'gi-ibd-il' },
     '抗α4β7インテグリン抗体（腸管選択的・完全ヒト型IgG1）':    { css: 'gi-ibd-int' },
     '局所作用型ステロイド（CYP3A4一回通過代謝型）':            { css: 'gi-ibd-bud' },
+    'JAK阻害薬（JAK1/2/3選択的・第一世代）':                   { css: 'gi-ibd-jak' },
+    'JAK阻害薬（JAK1選択的・第二世代）':                       { css: 'gi-ibd-jak1' },
     // 心不全 — 短縮後のクラス名
     'ARNI':              { css: 'hf-arni'     },
     'MRA（選択的）':     { css: 'thiazide'    },
