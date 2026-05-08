@@ -171,7 +171,7 @@ const DOMAINS = {
       { key: 'COPD（内服）',       label: '🫁 COPD（内服）' },
       { key: '肺高血圧症',         label: '❤ 肺高血圧症' },
       { key: '間質性肺疾患',       label: '🫧 間質性肺疾患' },
-      { key: '慢性咳嗽',           label: '😮‍💨 慢性咳嗽' },
+      { key: '咳嗽',               label: '😮‍💨 咳嗽' },
       { key: 'RX_SABA',      label: '🔴 SABA（短時間作用β2）' },
       { key: 'RX_LABA',      label: '🟠 LABA（長時間作用β2）' },
       { key: 'RX_LAMA',      label: '🔵 LAMA（長時間作用抗コリン）' },
@@ -181,7 +181,7 @@ const DOMAINS = {
       { key: 'RX_TRIPLE',    label: '⬛ ICS/LABA/LAMA（3剤）' },
     ],
     categoryGroups: [
-      { key: 'disease',   label: '疾患別',    cats: ['気管支喘息（吸入）', 'COPD（吸入）', '気管支喘息（内服）', 'COPD（内服）', '肺高血圧症', '間質性肺疾患', '慢性咳嗽'] },
+      { key: 'disease',   label: '疾患別',    cats: ['気管支喘息（吸入）', 'COPD（吸入）', '気管支喘息（内服）', 'COPD（内服）', '肺高血圧症', '間質性肺疾患', '咳嗽'] },
       { key: 'mechanism', label: '作用機序別', cats: ['RX_SABA', 'RX_LABA', 'RX_LAMA', 'RX_ICS', 'RX_ICS_LABA', 'RX_LAMA_LABA', 'RX_TRIPLE'] },
     ],
     defaultGroup: 'disease',
