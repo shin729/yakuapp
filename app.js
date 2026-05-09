@@ -232,6 +232,22 @@ const DOMAINS = {
     rowAltSticky: '#f9f0fe',
     accentColor:  '#9333ea',
   },
+  ent: {
+    file: './data/ent.json',
+    categories: [
+      { key: 'めまい・メニエール病',   label: '🌀 めまい・メニエール病' },
+      { key: '副鼻腔炎',              label: '👃 副鼻腔炎' },
+      { key: '鼻閉改善薬',            label: '💨 鼻閉改善薬' },
+      { key: '耳鳴り・難聴',          label: '👂 耳鳴り・難聴' },
+      { key: '咽頭・口腔・口内炎',    label: '🗣 咽頭・口腔・口内炎' },
+    ],
+    defaultCat: 'めまい・メニエール病',
+    headBg:       'linear-gradient(180deg, #f0fdfa 0%, #ccfbf1 100%)',
+    stickyBg:     '#f0fdfa',
+    rowAltBg:     '#f7fffe',
+    rowAltSticky: '#e8fbf7',
+    accentColor:  '#0d9488',
+  },
   antibiotics: {
     file: './data/antibiotics.json',
     categories: [
@@ -1380,10 +1396,74 @@ const ANTIBIOTIC_ROWS = [
   { label: 'TDM',             field: 'tdm',        type: 'val'     },
 ];
 
+// ===== 耳鼻科 ROW_DEFS =====
+const ENT_VERTIGO_ROWS = [
+  { label: '主な作用',         field: 'action_type',    type: 'mech'    },
+  { label: '作用機序',         field: 'mechanism',      type: 'mech'    },
+  { label: '主な適応',         field: 'indication',     type: 'mech'    },
+  { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'   },
+  { label: '効果発現・持続',   field: 'onset_time',     type: 'val'     },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase' },
+  { label: 'エビデンス出典',   field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',      field: 'caution',        type: 'caution' },
+];
+
+const ENT_SINUSITIS_ROWS = [
+  { label: '主な作用',         field: 'action_type',    type: 'mech'    },
+  { label: '作用機序',         field: 'mechanism',      type: 'mech'    },
+  { label: '主な適応',         field: 'indication',     type: 'mech'    },
+  { label: '治療の役割',       field: 'role',           type: 'accent'  },
+  { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'   },
+  { label: '投与期間',         field: 'duration',       type: 'val'     },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase' },
+  { label: 'エビデンス出典',   field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',      field: 'caution',        type: 'caution' },
+];
+
+const ENT_NASAL_ROWS = [
+  { label: '主な作用',         field: 'action_type',    type: 'mech'    },
+  { label: '作用機序',         field: 'mechanism',      type: 'mech'    },
+  { label: '剤形',             field: 'formulation',    type: 'accent'  },
+  { label: '作用持続',         field: 'duration',       type: 'val'     },
+  { label: 'リバウンド・連用', field: 'rebound_risk',   type: 'accent'  },
+  { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'   },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase' },
+  { label: 'エビデンス出典',   field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',      field: 'caution',        type: 'caution' },
+];
+
+const ENT_HEARING_ROWS = [
+  { label: '主な作用',         field: 'action_type',    type: 'mech'    },
+  { label: '作用機序',         field: 'mechanism',      type: 'mech'    },
+  { label: '対象症状',         field: 'target_symptom', type: 'accent'  },
+  { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'   },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase' },
+  { label: 'エビデンス出典',   field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',      field: 'caution',        type: 'caution' },
+];
+
+const ENT_THROAT_ROWS = [
+  { label: '主な作用',         field: 'action_type',    type: 'mech'    },
+  { label: '作用機序',         field: 'mechanism',      type: 'mech'    },
+  { label: '対象症状',         field: 'target_symptom', type: 'accent'  },
+  { label: '剤形',             field: 'formulation',    type: 'accent'  },
+  { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'   },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase' },
+  { label: '⚠ 注意事項',      field: 'caution',        type: 'caution' },
+];
+
 function getRowDefs(category) {
   if (currentDomain === 'antiviral')   return ANTIVIRAL_ROWS;
   if (currentDomain === 'antifungals') return ANTIFUNGAL_ROWS;
   if (currentDomain === 'antibiotics') return ANTIBIOTIC_ROWS;
+  // 耳鼻科
+  if (currentDomain === 'ent') {
+    if (category === 'めまい・メニエール病') return ENT_VERTIGO_ROWS;
+    if (category === '副鼻腔炎')             return ENT_SINUSITIS_ROWS;
+    if (category === '鼻閉改善薬')           return ENT_NASAL_ROWS;
+    if (category === '耳鳴り・難聴')         return ENT_HEARING_ROWS;
+    if (category === '咽頭・口腔・口内炎')   return ENT_THROAT_ROWS;
+  }
   if (ROW_DEFS[category]) return ROW_DEFS[category];
   if (['抗精神病薬（定型）', '抗精神病薬（非定型）'].includes(category))
     return AP_ROWS;
