@@ -507,6 +507,34 @@ function render() {
 function isMobile() { return window.innerWidth < 640; }
 
 // ===== 通常ビュー（ドメイン・カテゴリ別） =====
+// ===== ドラッグスクロール（PC用） =====
+function enableDragScroll(el) {
+  let isDown = false, startX = 0, scrollLeft = 0, hasMoved = false;
+  el.addEventListener('mousedown', e => {
+    if (e.target.closest('button, a')) return;
+    isDown = true;
+    hasMoved = false;
+    startX = e.pageX;
+    scrollLeft = el.scrollLeft;
+  });
+  const stop = () => { isDown = false; el.classList.remove('is-dragging'); };
+  el.addEventListener('mouseleave', stop);
+  el.addEventListener('mouseup', stop);
+  el.addEventListener('mousemove', e => {
+    if (!isDown) return;
+    const dx = e.pageX - startX;
+    if (!hasMoved && Math.abs(dx) < 5) return;
+    hasMoved = true;
+    el.classList.add('is-dragging');
+    e.preventDefault();
+    el.scrollLeft = scrollLeft - dx;
+  });
+}
+function applyDragScroll(root) {
+  if (isMobile()) return;
+  (root || document).querySelectorAll('.table-wrapper').forEach(enableDragScroll);
+}
+
 function renderDomainView() {
   const drugs  = (dataCache[currentDomain] || []).filter(d => {
     if (currentCategory.startsWith('VW_')) return VW_CLASS_MAP[d.name] === currentCategory;
@@ -536,6 +564,7 @@ function renderDomainView() {
   container.innerHTML = isMobile()
     ? buildCardList(sorted, cfg, currentCategory)
     : `<div class="table-wrapper">${buildTable(sorted, cfg, currentCategory)}</div><p class="table-scroll-hint">← 横にスクロールできます →</p>`;
+  applyDragScroll(container);
 }
 
 // ===== 全体検索ビュー =====
@@ -583,6 +612,7 @@ function renderGlobalSearch() {
         ${inner}
       </div>`;
   }).join('');
+  applyDragScroll(container);
 }
 
 // ===== カードリスト（モバイル用） =====
@@ -2041,6 +2071,7 @@ function showComparison() {
   </div>`;
 
   document.body.insertAdjacentHTML('beforeend', html);
+  applyDragScroll(document.getElementById('cmp-overlay'));
   document.getElementById('cmp-close-btn').addEventListener('click', closeComparison);
   document.getElementById('cmp-overlay').addEventListener('click', e => {
     if (e.target.id === 'cmp-overlay') closeComparison();
