@@ -46,21 +46,40 @@ const DOMAINS = {
   lifestyle: {
     file: './data/lifestyle.json',
     categories: [
-      { key: '糖尿病治療薬',           label: '🩸 糖尿病（経口・注射）' },
-      { key: '超速効型インスリン',      label: '⚡ 超速効型インスリン' },
-      { key: '速効型・中間型インスリン', label: '💉 速効型・中間型' },
-      { key: '持続型インスリン',         label: '🕐 持続型インスリン' },
-      { key: '混合型インスリン',         label: '🔀 混合型インスリン' },
       { key: '高血圧治療薬',     label: '💓 高血圧' },
       { key: '脂質異常症治療薬', label: '🧪 脂質異常症' },
       { key: '高尿酸血症治療薬', label: '🦴 高尿酸血症' },
     ],
-    defaultCat: '糖尿病治療薬',
+    defaultCat: '高血圧治療薬',
     headBg:       'linear-gradient(180deg, #f0fdf4 0%, #dcfce7 100%)',
     stickyBg:     '#f0fdf4',
     rowAltBg:     '#f7fef9',
     rowAltSticky: '#ecfbf1',
     accentColor:  '#16a34a',
+  },
+  diabetes: {
+    file: './data/diabetes.json',
+    categories: [
+      { key: '注射薬（非インスリン）',   label: '🧪 非インスリン注射薬' },
+      { key: '超速効型インスリン',        label: '⚡ 超速効型' },
+      { key: '速効型・中間型インスリン',  label: '💉 速効型・中間型' },
+      { key: '持続型インスリン',          label: '🕐 持続型（基礎）' },
+      { key: '混合型インスリン',          label: '🔀 混合型' },
+      { key: '経口薬・代謝改善系',        label: '🧬 代謝改善系' },
+      { key: '経口薬・心腎保護系',        label: '🫀 心腎保護系' },
+      { key: '経口薬・分泌促進系',        label: '⚠ 分泌促進（低血糖リスク）' },
+    ],
+    categoryGroups: [
+      { key: 'injectable', label: '注射薬', cats: ['注射薬（非インスリン）', '超速効型インスリン', '速効型・中間型インスリン', '持続型インスリン', '混合型インスリン'] },
+      { key: 'oral',       label: '経口薬', cats: ['経口薬・代謝改善系', '経口薬・心腎保護系', '経口薬・分泌促進系'] },
+    ],
+    defaultGroup: 'injectable',
+    defaultCat: '注射薬（非インスリン）',
+    headBg:       'linear-gradient(180deg, #fef2f2 0%, #fee2e2 100%)',
+    stickyBg:     '#fef2f2',
+    rowAltBg:     '#fff8f8',
+    rowAltSticky: '#fde8e8',
+    accentColor:  '#dc2626',
   },
   steroid: {
     file: './data/steroid.json',
@@ -1400,6 +1419,60 @@ const ANTIBIOTIC_ROWS = [
   { label: 'TDM',             field: 'tdm',        type: 'val'     },
 ];
 
+// ===== 糖尿病ドメイン ROW_DEFS =====
+const DM_INJECTABLE_ROWS = [
+  { label: '主な作用',           field: 'action_type',    type: 'mech'    },
+  { label: '作用機序',           field: 'mechanism',      type: 'mech'    },
+  { label: 'HbA1c低下',          field: 'placebo_onset',  type: 'accent'  },
+  { label: '体重・心腎保護',     field: 'placebo_sleep',  type: 'accent'  },
+  { label: 'NNT（心血管）',     field: 'NNT',            type: 'nnt'     },
+  { label: '効果スコア',         field: 'efficacy_star',  type: 'stars'   },
+  { label: '効果発現',           field: 'onset_time',     type: 'val'     },
+  { label: '投与頻度',           field: 'duration_hours', type: 'val'     },
+  { label: '使い分けポイント',   field: 'guideline_rank', type: 'usecase' },
+  { label: 'エビデンス出典',     field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',        field: 'caution',        type: 'caution' },
+];
+const DM_METABOLIC_ROWS = [
+  { label: '主な作用',           field: 'action_type',    type: 'mech'    },
+  { label: '作用機序',           field: 'mechanism',      type: 'mech'    },
+  { label: 'HbA1c低下',          field: 'placebo_onset',  type: 'accent'  },
+  { label: '体重・付加効果',     field: 'placebo_sleep',  type: 'accent'  },
+  { label: 'NNT（心血管）',     field: 'NNT',            type: 'nnt'     },
+  { label: '効果スコア',         field: 'efficacy_star',  type: 'stars'   },
+  { label: '効果発現',           field: 'onset_time',     type: 'val'     },
+  { label: '投与頻度',           field: 'duration_hours', type: 'val'     },
+  { label: '使い分けポイント',   field: 'guideline_rank', type: 'usecase' },
+  { label: 'エビデンス出典',     field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',        field: 'caution',        type: 'caution' },
+];
+const DM_CARDIORENAL_ROWS = [
+  { label: '主な作用',           field: 'action_type',    type: 'mech'    },
+  { label: '作用機序',           field: 'mechanism',      type: 'mech'    },
+  { label: 'HbA1c低下',          field: 'placebo_onset',  type: 'accent'  },
+  { label: '心腎保護・体重効果', field: 'placebo_sleep',  type: 'accent'  },
+  { label: 'NNT（心血管）',     field: 'NNT',            type: 'nnt'     },
+  { label: '効果スコア',         field: 'efficacy_star',  type: 'stars'   },
+  { label: '効果発現',           field: 'onset_time',     type: 'val'     },
+  { label: '投与頻度',           field: 'duration_hours', type: 'val'     },
+  { label: '使い分けポイント',   field: 'guideline_rank', type: 'usecase' },
+  { label: 'エビデンス出典',     field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',        field: 'caution',        type: 'caution' },
+];
+const DM_SECRETAGOGUE_ROWS = [
+  { label: '主な作用',           field: 'action_type',    type: 'mech'    },
+  { label: '作用機序',           field: 'mechanism',      type: 'mech'    },
+  { label: 'HbA1c低下',          field: 'placebo_onset',  type: 'accent'  },
+  { label: '体重変化',           field: 'placebo_sleep',  type: 'accent'  },
+  { label: 'NNT（心血管）',     field: 'NNT',            type: 'nnt'     },
+  { label: '効果スコア',         field: 'efficacy_star',  type: 'stars'   },
+  { label: '効果発現',           field: 'onset_time',     type: 'val'     },
+  { label: '投与頻度',           field: 'duration_hours', type: 'val'     },
+  { label: '使い分けポイント',   field: 'guideline_rank', type: 'usecase' },
+  { label: 'エビデンス出典',     field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',        field: 'caution',        type: 'caution' },
+];
+
 // ===== インスリン ROW_DEFS =====
 const INSULIN_ULTRARAPID_ROWS = [
   { label: 'インスリン区分',   field: 'insulin_type', type: 'accent'  },
@@ -1522,7 +1595,13 @@ function getRowDefs(category) {
   if (category === '禁煙補助薬')             return SMOKING_ROWS;
   if (category === '強オピオイド')           return STRONG_OPIOID_ROWS;
   if (category === '糖尿病治療薬')       return DIABETES_ROWS;
-  if (category === '超速効型インスリン')      return INSULIN_ULTRARAPID_ROWS;
+  // 糖尿病ドメイン（注射薬・経口薬）
+  if (category === '注射薬（非インスリン）')   return DM_INJECTABLE_ROWS;
+  if (category === '経口薬・代謝改善系')       return DM_METABOLIC_ROWS;
+  if (category === '経口薬・心腎保護系')       return DM_CARDIORENAL_ROWS;
+  if (category === '経口薬・分泌促進系')       return DM_SECRETAGOGUE_ROWS;
+  // インスリン（糖尿病ドメイン・生活習慣病ドメイン共通）
+  if (category === '超速効型インスリン')       return INSULIN_ULTRARAPID_ROWS;
   if (category === '速効型・中間型インスリン') return INSULIN_SHORT_ROWS;
   if (category === '持続型インスリン')         return INSULIN_BASAL_ROWS;
   if (category === '混合型インスリン')         return INSULIN_PREMIX_ROWS;
