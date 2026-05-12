@@ -46,7 +46,11 @@ const DOMAINS = {
   lifestyle: {
     file: './data/lifestyle.json',
     categories: [
-      { key: '糖尿病治療薬',     label: '🩸 糖尿病' },
+      { key: '糖尿病治療薬',           label: '🩸 糖尿病（経口・注射）' },
+      { key: '超速効型インスリン',      label: '⚡ 超速効型インスリン' },
+      { key: '速効型・中間型インスリン', label: '💉 速効型・中間型' },
+      { key: '持続型インスリン',         label: '🕐 持続型インスリン' },
+      { key: '混合型インスリン',         label: '🔀 混合型インスリン' },
       { key: '高血圧治療薬',     label: '💓 高血圧' },
       { key: '脂質異常症治療薬', label: '🧪 脂質異常症' },
       { key: '高尿酸血症治療薬', label: '🦴 高尿酸血症' },
@@ -1396,6 +1400,48 @@ const ANTIBIOTIC_ROWS = [
   { label: 'TDM',             field: 'tdm',        type: 'val'     },
 ];
 
+// ===== インスリン ROW_DEFS =====
+const INSULIN_ULTRARAPID_ROWS = [
+  { label: 'インスリン区分',   field: 'insulin_type', type: 'accent'  },
+  { label: '作用機序',         field: 'mechanism',    type: 'mech'    },
+  { label: '発現時間',         field: 'onset_time',   type: 'val'     },
+  { label: 'ピーク時間',       field: 'peak_time',    type: 'val'     },
+  { label: '持続時間',         field: 'duration',     type: 'val'     },
+  { label: '投与タイミング',   field: 'timing',       type: 'val'     },
+  { label: '特徴',             field: 'feature',      type: 'usecase' },
+  { label: '⚠ 注意事項',      field: 'caution',      type: 'caution' },
+];
+const INSULIN_SHORT_ROWS = [
+  { label: 'インスリン区分',   field: 'insulin_type', type: 'accent'  },
+  { label: '作用機序',         field: 'mechanism',    type: 'mech'    },
+  { label: '発現時間',         field: 'onset_time',   type: 'val'     },
+  { label: 'ピーク時間',       field: 'peak_time',    type: 'val'     },
+  { label: '持続時間',         field: 'duration',     type: 'val'     },
+  { label: '投与タイミング',   field: 'timing',       type: 'val'     },
+  { label: '特徴',             field: 'feature',      type: 'usecase' },
+  { label: '⚠ 注意事項',      field: 'caution',      type: 'caution' },
+];
+const INSULIN_BASAL_ROWS = [
+  { label: 'インスリン区分',   field: 'insulin_type', type: 'accent'  },
+  { label: '作用機序',         field: 'mechanism',    type: 'mech'    },
+  { label: '発現時間',         field: 'onset_time',   type: 'val'     },
+  { label: 'ピーク',           field: 'peak_time',    type: 'val'     },
+  { label: '持続時間',         field: 'duration',     type: 'val'     },
+  { label: '投与タイミング',   field: 'timing',       type: 'val'     },
+  { label: '特徴',             field: 'feature',      type: 'usecase' },
+  { label: '⚠ 注意事項',      field: 'caution',      type: 'caution' },
+];
+const INSULIN_PREMIX_ROWS = [
+  { label: 'インスリン区分',   field: 'insulin_type', type: 'accent'  },
+  { label: '作用機序',         field: 'mechanism',    type: 'mech'    },
+  { label: '速効成分比率',     field: 'ratio',        type: 'val'     },
+  { label: '発現時間',         field: 'onset_time',   type: 'val'     },
+  { label: 'ピーク時間',       field: 'peak_time',    type: 'val'     },
+  { label: '持続時間',         field: 'duration',     type: 'val'     },
+  { label: '投与タイミング',   field: 'timing',       type: 'val'     },
+  { label: '⚠ 注意事項',      field: 'caution',      type: 'caution' },
+];
+
 // ===== 耳鼻科 ROW_DEFS =====
 const ENT_VERTIGO_ROWS = [
   { label: '主な作用',         field: 'action_type',    type: 'mech'    },
@@ -1476,6 +1522,10 @@ function getRowDefs(category) {
   if (category === '禁煙補助薬')             return SMOKING_ROWS;
   if (category === '強オピオイド')           return STRONG_OPIOID_ROWS;
   if (category === '糖尿病治療薬')       return DIABETES_ROWS;
+  if (category === '超速効型インスリン')      return INSULIN_ULTRARAPID_ROWS;
+  if (category === '速効型・中間型インスリン') return INSULIN_SHORT_ROWS;
+  if (category === '持続型インスリン')         return INSULIN_BASAL_ROWS;
+  if (category === '混合型インスリン')         return INSULIN_PREMIX_ROWS;
   if (category === '高血圧治療薬')       return HYPERTENSION_ROWS;
   if (category === '脂質異常症治療薬')   return DYSLIPIDEMIA_ROWS;
   if (category === '高尿酸血症治療薬')   return HYPERURICEMIA_ROWS;
