@@ -46,11 +46,10 @@ const DOMAINS = {
   lifestyle: {
     file: './data/lifestyle.json',
     categories: [
-      { key: '高血圧治療薬',     label: '💓 高血圧' },
       { key: '脂質異常症治療薬', label: '🧪 脂質異常症' },
       { key: '高尿酸血症治療薬', label: '🦴 高尿酸血症' },
     ],
-    defaultCat: '高血圧治療薬',
+    defaultCat: '脂質異常症治療薬',
     headBg:       'linear-gradient(180deg, #f0fdf4 0%, #dcfce7 100%)',
     stickyBg:     '#f0fdf4',
     rowAltBg:     '#f7fef9',
@@ -100,6 +99,7 @@ const DOMAINS = {
   hf: {
     file: './data/hf.json',
     categories: [
+      { key: '高血圧治療薬',        label: '💓 高血圧治療薬'               },
       { key: 'HFrEF（予後改善薬）', label: '🫀 HFrEF 予後改善薬（EF<40%）' },
       { key: 'HFpEF治療薬',         label: '💙 HFpEF 治療薬（EF≥40%）'     },
       { key: '症状改善・体液管理',  label: '💧 症状改善・体液管理'          },
@@ -110,11 +110,12 @@ const DOMAINS = {
       { key: 'MX_other',    label: '📋 その他（ジゴキシン・イバブラジン）'},
     ],
     categoryGroups: [
-      { key: 'disease',   label: '疾患別',    cats: ['HFrEF（予後改善薬）', 'HFpEF治療薬', '症状改善・体液管理'] },
-      { key: 'mechanism', label: '作用機序別', cats: ['MX_RAAS', 'MX_beta', 'MX_SGLT2', 'MX_diuretic', 'MX_other'] },
+      { key: 'hypertension', label: '高血圧',           cats: ['高血圧治療薬'] },
+      { key: 'disease',      label: '心不全（疾患別）',  cats: ['HFrEF（予後改善薬）', 'HFpEF治療薬', '症状改善・体液管理'] },
+      { key: 'mechanism',    label: '心不全（機序別）',  cats: ['MX_RAAS', 'MX_beta', 'MX_SGLT2', 'MX_diuretic', 'MX_other'] },
     ],
-    defaultGroup: 'disease',
-    defaultCat: 'HFrEF（予後改善薬）',
+    defaultGroup: 'hypertension',
+    defaultCat: '高血圧治療薬',
     headBg:       'linear-gradient(180deg, #f5f3ff 0%, #ede9fe 100%)',
     stickyBg:     '#f5f3ff',
     rowAltBg:     '#faf9ff',
