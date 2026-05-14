@@ -96,6 +96,22 @@ const DOMAINS = {
     rowAltSticky: '#fff3e8',
     accentColor:  '#c2410c',
   },
+  immune: {
+    file: './data/immune.json',
+    categories: [
+      { key: 'csDMARD',          label: '🧬 csDMARD（従来型）' },
+      { key: 'TNF阻害薬',        label: '🎯 TNF阻害薬' },
+      { key: 'IL阻害薬',         label: '💉 IL阻害薬' },
+      { key: 'JAK阻害薬',        label: '🔬 JAK阻害薬' },
+      { key: '全身性免疫抑制薬', label: '💊 全身性免疫抑制薬' },
+    ],
+    defaultCat: 'csDMARD',
+    headBg:       'linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 100%)',
+    stickyBg:     '#f0f9ff',
+    rowAltBg:     '#f8fcff',
+    rowAltSticky: '#e8f5fd',
+    accentColor:  '#0284c7',
+  },
   hf: {
     file: './data/hf.json',
     categories: [
@@ -1379,6 +1395,21 @@ const RESP_ORAL_ROWS = [
   { label: '⚠ 注意事項',      field: 'caution',         type: 'caution' },
 ];
 
+// ===== 免疫・リウマチ ROW_DEFS =====
+const IMMUNE_ROWS = [
+  { label: '主な適応疾患',     field: 'action_type',    type: 'mech'    },
+  { label: '作用機序',         field: 'mechanism',      type: 'mech'    },
+  { label: '有効率・寛解率',   field: 'placebo_onset',  type: 'accent'  },
+  { label: '副次評価指標',     field: 'placebo_sleep',  type: 'accent'  },
+  { label: 'NNT',              field: 'NNT',            type: 'nnt'     },
+  { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'   },
+  { label: '効果発現',         field: 'onset_time',     type: 'val'     },
+  { label: '投与法・間隔',     field: 'duration_hours', type: 'val'     },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase' },
+  { label: 'エビデンス出典',   field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',      field: 'caution',        type: 'caution' },
+];
+
 // ===== 抗ウイルス/抗原虫薬 ROW_DEFS =====
 const ANTIVIRAL_ROWS = [
   { label: '作用機序',      field: 'mechanism',  type: 'mech'    },
@@ -1573,6 +1604,7 @@ const ENT_THROAT_ROWS = [
 ];
 
 function getRowDefs(category) {
+  if (currentDomain === 'immune')      return IMMUNE_ROWS;
   if (currentDomain === 'antiviral')   return ANTIVIRAL_ROWS;
   if (currentDomain === 'antifungals') return ANTIFUNGAL_ROWS;
   if (currentDomain === 'antibiotics') return ANTIBIOTIC_ROWS;

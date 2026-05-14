@@ -50,6 +50,23 @@ _GUIDELINE_KEY_MAP = {
     'hf':            '_guideline_arrhythmia',  # 循環器は同じ
     'sleep_anxiety': '_guideline_sleep',
     'pain':          '_guideline_pain',
+    'immune':        '_guideline_immune',
+}
+
+# ドメイン別の追加プロンプトヒント
+_DOMAIN_DEFAULT_CATS = {
+    'immune': ['csDMARD', 'TNF阻害薬', 'IL阻害薬', 'JAK阻害薬', '全身性免疫抑制薬'],
+}
+
+_DOMAIN_FIELD_HINTS = {
+    'immune': (
+        '【免疫・リウマチ系薬のフィールド指定】\n'
+        '- placebo_onset : ACR20/ACR50達成率（例: "ACR20 65% / ACR50 40%"）または主要有効性評価指標\n'
+        '- placebo_sleep : ACR70達成率または副次評価指標（例: "ACR70 22%・DAS28寛解率 28%"）\n'
+        '- action_type   : 主な適応疾患（例: "関節リウマチ・乾癬性関節炎"）\n'
+        '- onset_time    : 効果発現時期（例: "2〜4週"）\n'
+        '- duration_hours: 投与法と間隔（例: "皮下注・2週に1回"）'
+    ),
 }
 
 def get_guideline_info(json_path: pathlib.Path) -> tuple[list[str], str]:
@@ -204,8 +221,11 @@ _PROMPT_BASE = """\
 - 不明な情報は null
 """
 
-def build_extract_prompt(valid_categories: list[str] = None, guideline_version: str = '') -> str:
+def build_extract_prompt(valid_categories: list[str] = None, guideline_version: str = '',
+                         domain_hint: str = '', target_hint: str = '') -> str:
     hints = []
+    if target_hint:
+        hints.append(target_hint)
     if valid_categories:
         cats_str = '・'.join(valid_categories)
         hints.append(f'【有効なcategory値】次のいずれかを選ぶ:\n{cats_str}')
@@ -214,6 +234,8 @@ def build_extract_prompt(valid_categories: list[str] = None, guideline_version: 
         category_instruction = 'カテゴリ名（例: 睡眠薬、非オピオイド系など）'
     if guideline_version:
         hints.append(f'【参照ガイドライン】{guideline_version}\n  → 複数バージョンが含まれる場合はこのバージョンの推奨を優先すること')
+    if domain_hint:
+        hints.append(domain_hint)
     return _PROMPT_BASE.format(
         category_hint='\n'.join(hints),
         category_instruction=category_instruction,
@@ -319,8 +341,17 @@ async def extract_from_url(source_url: str, prompt: str, extra_urls: list[str] =
         print(f"作成完了: {nb_id}")
         try:
             print(f"URLを追加中: {source_url[:80]}")
-            await client.sources.add_url(nb_id, source_url)
-            return await _run_extraction(nb_id, client, prompt, extra_urls or None)
+            pmda_ok = False
+            try:
+                await client.sources.add_url(nb_id, source_url)
+                pmda_ok = True
+                print("  PMDA添付文書: 追加成功")
+            except Exception as e:
+                print(f"  警告: PMDA URL追加失敗 ({str(e)[:80]})")
+                if not extra_urls:
+                    raise ValueError(f"PMDAもPubMedソースもなし: {source_url}") from e
+                print("  → PubMedソースのみで抽出を継続します")
+            return await _run_extraction(nb_id, client, prompt, extra_urls if not pmda_ok else (extra_urls or None))
         finally:
             print(f"ノートブック削除中: {nb_id}")
             await client.notebooks.delete(nb_id)
@@ -395,14 +426,21 @@ async def main(source: str, target_json: str, drug_name_en: str = None):
     print(f"入力   : {source}")
     print(f"出力先 : {json_path}")
 
-    # カテゴリを既存JSONから自動取得
-    valid_cats = get_categories_from_json(json_path)
+    # カテゴリ取得：ドメインデフォルトがあれば優先、なければ既存JSONから取得
+    valid_cats = _DOMAIN_DEFAULT_CATS.get(json_path.stem) or get_categories_from_json(json_path)
     if valid_cats:
         print(f"有効カテゴリ: {valid_cats}")
 
     # ガイドラインURL取得
     guideline_urls, guideline_version = get_guideline_info(json_path)
-    prompt = build_extract_prompt(valid_cats, guideline_version)
+    domain_hint = _DOMAIN_FIELD_HINTS.get(json_path.stem, '')
+    # 薬剤名指定ヒント（PubMedフォールバック時に複数薬剤混入を防ぐ）
+    target_hint = ''
+    if is_drug_name or (not is_file and not is_url):
+        drug_name_ja = source  # 日本語薬剤名
+        en_part = f"（英語名: {drug_name_en}）" if drug_name_en else ''
+        target_hint = f'【抽出対象薬剤】{drug_name_ja}{en_part} の情報を1件のみ抽出する。他の薬剤の情報は含めないこと。'
+    prompt = build_extract_prompt(valid_cats, guideline_version, domain_hint, target_hint)
 
     # PubMed検索
     pubmed_ids = None
