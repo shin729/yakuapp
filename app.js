@@ -141,8 +141,19 @@ const DOMAINS = {
   blood: {
     file: './data/blood.json',
     categories: [
-      { key: '抗凝固薬', label: '🩸 抗凝固薬' },
+      { key: '抗凝固薬',          label: '🩸 抗凝固薬' },
+      { key: '抗血小板薬',        label: '🧬 抗血小板薬' },
+      { key: '血栓溶解薬',        label: '⚡ 血栓溶解薬' },
+      { key: '鉄剤',              label: '🔴 鉄剤' },
+      { key: 'ESA（腎性貧血）',   label: '💉 ESA（腎性貧血）' },
+      { key: 'G-CSF',             label: '🦴 G-CSF' },
+      { key: 'TPO受容体作動薬',   label: '🩸 TPO受容体作動薬' },
     ],
+    categoryGroups: [
+      { key: 'coagulation',   label: '凝固系', cats: ['抗凝固薬', '抗血小板薬', '血栓溶解薬'] },
+      { key: 'hematopoietic', label: '造血系', cats: ['鉄剤', 'ESA（腎性貧血）', 'G-CSF', 'TPO受容体作動薬'] },
+    ],
+    defaultGroup: 'coagulation',
     defaultCat: '抗凝固薬',
     headBg:       'linear-gradient(180deg, #fff0f0 0%, #ffd6d6 100%)',
     stickyBg:     '#fff0f0',
@@ -1422,6 +1433,21 @@ const BLOOD_AC_ROWS = [
   { label: '⚠ 注意事項',      field: 'caution',        type: 'caution' },
 ];
 
+// ===== 造血系 ROW_DEFS =====
+const BLOOD_HEMA_ROWS = [
+  { label: '主な適応',         field: 'action_type',    type: 'mech'    },
+  { label: '作用機序',         field: 'mechanism',      type: 'mech'    },
+  { label: '有効性指標',       field: 'placebo_onset',  type: 'accent'  },
+  { label: '治療目標・安全性', field: 'placebo_sleep',  type: 'accent'  },
+  { label: 'NNT',              field: 'NNT',            type: 'nnt'     },
+  { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'   },
+  { label: '効果発現',         field: 'onset_time',     type: 'val'     },
+  { label: '投与法',           field: 'duration_hours', type: 'val'     },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase' },
+  { label: 'エビデンス出典',   field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',      field: 'caution',        type: 'caution' },
+];
+
 // ===== 免疫・リウマチ ROW_DEFS =====
 const IMMUNE_ROWS = [
   { label: '主な適応疾患',     field: 'action_type',    type: 'mech'    },
@@ -1631,7 +1657,10 @@ const ENT_THROAT_ROWS = [
 ];
 
 function getRowDefs(category) {
-  if (currentDomain === 'blood')       return BLOOD_AC_ROWS;
+  if (currentDomain === 'blood') {
+    if (['鉄剤', 'ESA（腎性貧血）', 'G-CSF', 'TPO受容体作動薬'].includes(category)) return BLOOD_HEMA_ROWS;
+    return BLOOD_AC_ROWS;
+  }
   if (currentDomain === 'immune')      return IMMUNE_ROWS;
   if (currentDomain === 'antiviral')   return ANTIVIRAL_ROWS;
   if (currentDomain === 'antifungals') return ANTIFUNGAL_ROWS;
