@@ -138,6 +138,18 @@ const DOMAINS = {
     rowAltSticky: '#efecfd',
     accentColor:  '#7c3aed',
   },
+  blood: {
+    file: './data/blood.json',
+    categories: [
+      { key: '抗凝固薬', label: '🩸 抗凝固薬' },
+    ],
+    defaultCat: '抗凝固薬',
+    headBg:       'linear-gradient(180deg, #fff0f0 0%, #ffd6d6 100%)',
+    stickyBg:     '#fff0f0',
+    rowAltBg:     '#fff8f8',
+    rowAltSticky: '#ffe8e8',
+    accentColor:  '#b91c1c',
+  },
   arrhythmia: {
     file: './data/arrhythmia.json',
     categories: [
@@ -1395,6 +1407,21 @@ const RESP_ORAL_ROWS = [
   { label: '⚠ 注意事項',      field: 'caution',         type: 'caution' },
 ];
 
+// ===== 血液・凝固 ROW_DEFS =====
+const BLOOD_AC_ROWS = [
+  { label: '主な適応',         field: 'action_type',    type: 'mech'    },
+  { label: '作用機序',         field: 'mechanism',      type: 'mech'    },
+  { label: '有効性指標',       field: 'placebo_onset',  type: 'accent'  },
+  { label: '出血リスク比較',   field: 'placebo_sleep',  type: 'accent'  },
+  { label: 'NNT',              field: 'NNT',            type: 'nnt'     },
+  { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'   },
+  { label: '効果発現',         field: 'onset_time',     type: 'val'     },
+  { label: '投与法',           field: 'duration_hours', type: 'val'     },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase' },
+  { label: 'エビデンス出典',   field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',      field: 'caution',        type: 'caution' },
+];
+
 // ===== 免疫・リウマチ ROW_DEFS =====
 const IMMUNE_ROWS = [
   { label: '主な適応疾患',     field: 'action_type',    type: 'mech'    },
@@ -1604,6 +1631,7 @@ const ENT_THROAT_ROWS = [
 ];
 
 function getRowDefs(category) {
+  if (currentDomain === 'blood')       return BLOOD_AC_ROWS;
   if (currentDomain === 'immune')      return IMMUNE_ROWS;
   if (currentDomain === 'antiviral')   return ANTIVIRAL_ROWS;
   if (currentDomain === 'antifungals') return ANTIFUNGAL_ROWS;
