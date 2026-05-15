@@ -14,7 +14,7 @@
     "duration_hours": "2週に1回（皮下注140 mg）/ 月1回（420 mg）",
     "guideline_rank": "スタチン最大量でもLDL目標未達の超高リスク例・FHに。月1〜2回皮下注",
     "evidence": "FOURIER試験（NEJM 2017 PMID:28304224）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/28304224/",
+    "evidence_url": null,
     "caution": "注射部位反応。高額（保険適用あり）。筋肉副作用・肝障害なし。スタチン不耐症患者でも使用可能"
   },
   {
@@ -32,7 +32,7 @@
     "duration_hours": "336時間（2週に1回皮下注）",
     "guideline_rank": "スタチン最大量でもLDL目標未達の高リスク例・FHに。2週1回皮下注",
     "evidence": "Schwartz GG et al. NEJM 2018（ODYSSEY OUTCOMES試験 PMID:30403574）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/30403574/",
+    "evidence_url": null,
     "caution": "注射剤（2週1回または月1回）。非常に高価。注射部位反応。筋肉痛まれ"
   },
   {
@@ -50,7 +50,7 @@
     "duration_hours": "初回→3ヶ月後→以降6ヶ月毎（年2回）",
     "guideline_rank": "年2回皮下注で服薬アドヒアランス最高水準。スタチン最大量・PCSK9抗体薬でも不十分な高リスク例・FHに。2023年日本承認",
     "evidence": "Wright RS et al. NEJM 2020（ORION-10試験 PMID:32302133）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/32302133/",
+    "evidence_url": null,
     "caution": "注射部位反応（軽微）。心血管アウトカム試験（ORION-4）進行中。非常に高価"
   },
   {
@@ -68,7 +68,7 @@
     "duration_hours": "1日1回",
     "guideline_rank": "最強クラスのLDL低下。家族性高コレステロール血症・高リスク例に",
     "evidence": "JUPITER試験（NEJM 2008 PMID:18997196）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/18997196/",
+    "evidence_url": null,
     "caution": "横紋筋融解症（特にアジア系・高用量）→アジア人は初期用量5〜10 mgから。蛋白尿（高用量・一過性）。妊婦禁忌"
   },
   {
@@ -86,7 +86,7 @@
     "duration_hours": "1日1回",
     "guideline_rank": "高リスク患者の脂質異常症第一選択。LDL低下効果が強い",
     "evidence": "ASCOT-LLA（Lancet 2003 PMID:12686036）; TNT試験（NEJM 2005 PMID:15755765）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/12686036/",
+    "evidence_url": null,
     "caution": "ミオパチー・横紋筋融解症（特にフィブラート・CYP3A4阻害薬との併用）。肝機能検査定期確認。妊婦禁忌"
   },
   {
@@ -99,12 +99,12 @@
     "efficacy_star": 4,
     "placebo_onset": "LDL -35〜44%（2〜4 mg）",
     "placebo_sleep": "HDL +8〜12% / TG中性的",
-    "NNT": "中リスク（REAL-CAD試験参考）",
+    "NNT": null,
     "onset_time": "2〜4週",
     "duration_hours": "1日1回（夜）",
     "guideline_rank": "腎機能低下・高リスク例に。CYP代謝が少なく相互作用が少ない",
     "evidence": "REAL-CAD試験（Circulation 2018 PMID:29735587）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/29735587/",
+    "evidence_url": null,
     "caution": "CYP代謝少なく薬物相互作用が少ない。ミコナゾール・シクロスポリンとの相互作用に注意。横紋筋融解症（スタチン共通）"
   },
   {
@@ -122,7 +122,7 @@
     "duration_hours": "24時間（就寝前1回）",
     "guideline_rank": "CKD・透析患者・薬物相互作用が懸念される例に。水溶性で筋障害リスクが低い",
     "evidence": "Shepherd J et al. NEJM 1995（WOSCOPS試験 PMID:7566020）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/7566020/",
+    "evidence_url": null,
     "caution": "筋障害リスクが低い（水溶性）。P-糖タンパク基質のため一部相互作用。フィブラートとの慎重併用"
   },
   {
@@ -140,7 +140,7 @@
     "duration_hours": "1日1回（食事と無関係）",
     "guideline_rank": "スタチン不十分・不耐容例に追加。LDL受容体非依存の吸収阻害",
     "evidence": "IMPROVE-IT試験（NEJM 2015 PMID:26039521）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/26039521/",
+    "evidence_url": null,
     "caution": "筋肉副作用なし。スタチンとの相互作用なし。胆石症リスク（軽微）。腎・肝障害でも使いやすい"
   },
   {
@@ -158,7 +158,7 @@
     "duration_hours": "1日2〜3回",
     "guideline_rank": "高TG血症・低HDL血症に。スタチンとの併用で混合型脂質異常症に。フェノフィブラートと同等だが腎機能低下例では蓄積しやすい",
     "evidence": "BIP試験（PMID:10938172）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/10938172/",
+    "evidence_url": null,
     "caution": "スタチンとの併用で横紋筋融解症リスク増加。腎機能低下で蓄積（eGFR<30で禁忌〜要調整）。胆石形成。肝酵素上昇"
   },
   {
@@ -176,7 +176,7 @@
     "duration_hours": "1日2回（朝・夕食後）",
     "guideline_rank": "高TG血症の新しい選択肢。フェノフィブラートより強力なTG低下。PROMINENT試験では心血管イベント抑制を示せず（TG正常化しても転帰改善なし）。TG降下目的の使用に限定",
     "evidence": "Das Pradhan A et al. NEJM 2022（PROMINENT試験 PMID:36351464）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/36351464/",
+    "evidence_url": null,
     "caution": "スタチンとの横紋筋融解症リスク（フィブラート共通）。腎障害での用量調整はフェノフィブラートより軽微。肝障害に注意。PROMINENT試験で心血管保護効果は未証明"
   },
   {
@@ -189,12 +189,12 @@
     "efficacy_star": 3,
     "placebo_onset": "TG -35〜50%（高TG血症への主効果）",
     "placebo_sleep": "HDL +10〜15% / LDL -5〜15%",
-    "NNT": "対象限定（FIELD・ACCORD Lipid参考）",
+    "NNT": null,
     "onset_time": "4〜8週",
     "duration_hours": "1日1回（食後）",
     "guideline_rank": "高TG血症・低HDL血症に。スタチンとの併用で混合型脂質異常症に",
     "evidence": "FIELD試験（Lancet 2005 PMID:16310551）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/16310551/",
+    "evidence_url": null,
     "caution": "スタチンとの併用で横紋筋融解症リスク増加。腎機能低下で調整（eGFR<30禁忌）。胆石形成。肝酵素上昇"
   },
   {
@@ -212,7 +212,7 @@
     "duration_hours": "1日3回（食後）",
     "guideline_rank": "スタチン使用中の高TG血症・高心血管リスクに適する",
     "evidence": "REDUCE-IT（NEJM 2018 PMID:30415628）; JELIS（Lancet 2007 PMID:17321310）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/30415628/",
+    "evidence_url": null,
     "caution": "出血リスク（抗凝固薬・抗血小板薬との併用注意）。消化器症状（魚臭・げっぷ）。心房細動リスクがわずかに増加"
   },
   {
@@ -225,12 +225,12 @@
     "efficacy_star": 5,
     "placebo_onset": "血清尿酸値 -37〜45%",
     "placebo_sleep": "目標尿酸値（6.0 mg/dL以下）達成率 80〜90%",
-    "NNT": "コルヒチン予防投与併用が推奨",
+    "NNT": null,
     "onset_time": "2〜4週",
     "duration_hours": "1日1回",
     "guideline_rank": "高尿酸血症・痛風発作予防の第一選択。腎機能低下例にも使用可",
     "evidence": "CONFIRMS試験（PMID:20370912）; APEX試験（PMID:17146700）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/20370912/",
+    "evidence_url": null,
     "caution": "心血管イベントリスク（CARES試験でCV死亡率上昇の懸念）→心血管リスク高例はアロプリノール優先を検討。開始時に痛風発作増加→コルヒチン予防投与"
   },
   {
@@ -243,7 +243,7 @@
     "efficacy_star": 4,
     "placebo_onset": "血清尿酸値 -30〜40%（80〜160 mg/日）",
     "placebo_sleep": "目標尿酸値達成率 70〜80%",
-    "NNT": "国内データ主体",
+    "NNT": null,
     "onset_time": "2〜4週",
     "duration_hours": "1日2回",
     "guideline_rank": "フェブキソスタット系の第二XO阻害薬",
@@ -266,7 +266,7 @@
     "duration_hours": "1日1〜3回（腎機能に応じて）",
     "guideline_rank": "安価で長い使用経験。腎機能正常例の高尿酸血症に",
     "evidence": "Sundy et al., JAMA 2011（PMID:21846852）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/21846852/",
+    "evidence_url": null,
     "caution": "SJS（HLA-B*5801が高リスク→韓国・台湾・タイ系でスクリーニング推奨）。腎機能低下で蓄積し用量調整必須。開始時痛風発作増加"
   },
   {
@@ -284,7 +284,7 @@
     "duration_hours": "1日1回（食後）",
     "guideline_rank": "尿酸排泄低下型高尿酸血症の新しい第一選択。ベンズブロマロンより安全性が高い（肝毒性なし）。0.5mg/日から開始し1mg/日へ増量。尿路結石予防のため水分摂取・尿アルカリ化を推奨",
     "evidence": "Hisatome I et al. Arthritis Rheumatol 2020（PMID:32077247）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/32077247/",
+    "evidence_url": null,
     "caution": "開始時に痛風発作増加→コルヒチン予防投与推奨。尿路結石リスク（尿アルカリ化・水分摂取2L/日以上で予防）。腎機能高度低下（eGFR<30）では使用慎重。ベンズブロマロンのような重篤肝毒性の報告なし"
   },
   {
@@ -297,7 +297,7 @@
     "efficacy_star": 4,
     "placebo_onset": "血清尿酸値 -35〜45%",
     "placebo_sleep": "目標尿酸値達成率 75〜85%",
-    "NNT": "尿酸排泄低下型に特効",
+    "NNT": null,
     "onset_time": "2〜4週",
     "duration_hours": "1日1回（食後）",
     "guideline_rank": "尿酸産生過剰型に有効な排泄促進薬。重篤な肝毒性リスクあり",
@@ -320,7 +320,7 @@
     "duration_hours": "急性期：最初1 mg→0.5 mg（低用量法）/ 予防：0.5 mg/日",
     "guideline_rank": "急性痛風発作の消炎・ULT開始時の予防投与に。腎機能低下で用量注意",
     "evidence": "Terkeltaub et al., Arthritis Rheum 2010（PMID:20131255）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/20131255/",
+    "evidence_url": null,
     "caution": "下痢・悪心・腹痛（用量依存）。骨髄抑制（高用量・腎障害）。CYP3A4・P糖蛋白の基質でクラリスロマイシン等で中毒リスク。腎/肝障害で蓄積"
   }
 ]
