@@ -33,7 +33,7 @@
     "guideline_rank": "AF血栓塞栓症予防のDOAC第一選択候補。中和薬（イダルシズマブ）がある唯一のDOAC。150mgで最強効果・110mgで出血低減。腎機能に応じた用量調整必要（eGFR<30禁忌）",
     "evidence": "Connolly SJ et al. NEJM 2009（RE-LY試験 PMID:19717844）",
     "caution": "腎排泄（eGFR<30で禁忌・30〜50で110mg推奨）。消化器症状（服用時食事推奨）。消化管出血リスク（ワルファリンより高い）。機械弁禁忌",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/19717844/"
+    "evidence_url": null
   },
   {
     "name": "リバーロキサバン",
@@ -51,7 +51,7 @@
     "guideline_rank": "1日1回服用でアドヒアランス良好。夕食後服用が吸収に必須。Xa阻害DOACとして広く使用される。ROCKET AF試験はワルファリンと非劣性",
     "evidence": "Patel MR et al. NEJM 2011（ROCKET AF試験 PMID:21830957）",
     "caution": "夕食後服用必須（空腹時は吸収40%低下）。腎機能低下で用量調整（eGFR<15禁忌）。中断時の反跳リスク（服用を忘れると急激な抗凝固効果低下）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/21830957/"
+    "evidence_url": null
   },
   {
     "name": "アピキサバン",
@@ -69,7 +69,7 @@
     "guideline_rank": "DOACの中で脳卒中予防効果・大出血抑制の両方でワルファリンより優れる（ARISTOTLE）。腎排泄が少なくeGFR 25〜30でも使用可能（慎重投与）。高齢者・腎機能低下例に特に有用",
     "evidence": "Granger CB et al. NEJM 2011（ARISTOTLE試験 PMID:21870978）",
     "caution": "1日2回（アドヒアランス要注意）。用量調整基準：80歳以上/体重60kg以下/Cr1.5mg/dL以上のうち2項目以上で2.5mgへ減量。中和薬アンデキサネットアルファ使用可",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/21870978/"
+    "evidence_url": null
   },
   {
     "name": "エドキサバン",
@@ -87,7 +87,7 @@
     "guideline_rank": "日本発のDOAC（第一三共）。1日1回でアドヒアランス良好。用量調整：体重60kg以下/eGFR 15〜50/強いP-gp阻害薬使用時は30mgへ減量。AF・VTEの両方に適応",
     "evidence": "Giugliano RP et al. NEJM 2013（ENGAGE AF-TIMI 48 PMID:24251359）",
     "caution": "腎機能で用量調整（eGFR<15禁忌）。P糖タンパク（P-gp）阻害薬で血中濃度上昇。機械弁禁忌。中断で塞栓リスク（橋渡し療法の検討を）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/24251359/"
+    "evidence_url": null
   },
   {
     "name": "アスピリン",
@@ -105,7 +105,7 @@
     "guideline_rank": "二次予防の基本薬（脳梗塞・AMI後）。一次予防は出血リスクと血栓リスクの個別評価が必要（高齢者はリスク上回る可能性）。ACS/PCI後はP2Y12阻害薬とのDAPTが標準",
     "evidence": "ATT Collaborators. Lancet 2009（PMID:19482214）",
     "caution": "消化管出血リスク（PPI併用推奨）。アスピリン喘息（NSAIDs感受性喘息）禁忌。手術前7日休薬（例外あり）。ライ症候群（小児禁忌）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/19482214/"
+    "evidence_url": null
   },
   {
     "name": "クロピドグレル",
@@ -123,7 +123,7 @@
     "guideline_rank": "DAPTの主力薬（BMS後最低1ヶ月・DES後最低6〜12ヶ月）。CYP2C19 PM（低代謝）はプラスグレル/チカグレロルへ変更考慮。脳梗塞再発予防のアスピリン代替",
     "evidence": "CAPRIE Steering Committee. Lancet 1996（PMID:8918275）",
     "caution": "CYP2C19遺伝子多型（*2/*3: Poor Metabolizer 約20%）で効果不十分。PPIのオメプラゾールとの相互作用（CYP2C19競合阻害）。手術前5〜7日休薬",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/8918275/"
+    "evidence_url": null
   },
   {
     "name": "プラスグレル",
@@ -141,7 +141,7 @@
     "guideline_rank": "PCIを施行するACS症例での第一選択候補。75歳以上・脳卒中/TIA既往は禁忌（出血リスク高）。CYP2C19 PM例でも効果が安定。クロピドグレルに対する優越性はACS/PCI例に限定",
     "evidence": "Wiviott SD et al. NEJM 2007（TRITON-TIMI 38 PMID:17982182）",
     "caution": "75歳以上・低体重（60kg未満）・脳卒中/TIA既往は禁忌（出血リスク）。大出血増加（消化管・頭蓋内）。安定狭心症（選択的PCI）での有効性は確立していない",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/17982182/"
+    "evidence_url": null
   },
   {
     "name": "チカグレロル",
@@ -159,7 +159,7 @@
     "guideline_rank": "ACS（不安定狭心症・NSTEMI・STEMI）でのDAPT第一選択。プラスグレルが禁忌の例（脳卒中/TIA既往・高齢・低体重）に有用。心血管死も有意に減少（クロピドグレルとの差）",
     "evidence": "Wallentin L et al. NEJM 2009（PLATO試験 PMID:19717846）",
     "caution": "呼吸困難（約15%・通常軽症・投薬継続可）。徐脈・房室ブロックリスク（洞不全症候群・高度ブロック例は慎重）。アスピリンは100mg以下が必須（高用量で効果減弱）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/19717846/"
+    "evidence_url": null
   },
   {
     "name": "シロスタゾール",
@@ -177,7 +177,7 @@
     "guideline_rank": "脳梗塞二次予防（アスピリン・クロピドグレルとほぼ同等）。慢性動脈閉塞症の間欠跛行改善。アスピリン使用不可例の代替。心不全（EF<40%）は禁忌",
     "evidence": "Gotoh F et al. Stroke 2000（CSPS試験 PMID:10593492）",
     "caution": "心不全（EF低下）禁忌（PDE3阻害→cAMP↑→致死的不整脈リスク）。頻脈・動悸。グレープフルーツ禁忌（CYP3A4阻害）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/10593492/"
+    "evidence_url": null
   },
   {
     "name": "アルテプラーゼ",
@@ -195,7 +195,7 @@
     "guideline_rank": "急性脳梗塞の第一選択（発症4.5時間以内・NIHSS 4〜25目安）。Door-to-needle 60分以内が目標（time is brain）。血圧管理（185/110mmHg未満維持）が重要",
     "evidence": "NINDS rt-PA Stroke Study Group. NEJM 1995（PMID:7477192）",
     "caution": "禁忌多数：出血性脳卒中既往・3ヶ月以内脳梗塞・頭蓋内手術・活動性出血・血圧185/110以上・血小板10万未満・抗凝固薬使用中。症候性頭蓋内出血（6%）が最重要合併症",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/7477192/"
+    "evidence_url": null
   },
   {
     "name": "ウロキナーゼ",
@@ -213,7 +213,25 @@
     "guideline_rank": "アルテプラーゼ普及後は急性脳梗塞・AMIへの使用は限定的。透析シャント閉塞・局所血栓溶解（カテーテル使用）に残存。アルテプラーゼが使用できない状況での代替",
     "evidence": "GUSTO Angiographic Investigators. NEJM 1993（PMID:8127828）",
     "caution": "出血リスク（頭蓋内出血含む）。活動性出血・出血性疾患禁忌。フィブリン非選択的なため全身性線溶亢進に注意",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/8127828/"
+    "evidence_url": null
+  },
+  {
+    "name": "テネクテプラーゼ",
+    "brand": "メタリーゼ",
+    "category": "血栓溶解薬",
+    "class": "改良型t-PA（アルテプラーゼ変異体・フィブリン高選択性・単回ボーラス投与）",
+    "action_type": "急性心筋梗塞（STEMI）の血栓溶解（単回ボーラス静注で完結）",
+    "mechanism": "アルテプラーゼのT103N・N117Q・KHRR296〜299AAAA変異により、フィブリン特異性を約14倍に向上させPAI-1耐性を付与した改良型t-PA。プラスミノゲンをプラスミンに変換しフィブリン血栓を溶解する。単回ボーラス静注で投与可能なため緊急時の簡便性が高い",
+    "efficacy_star": 5,
+    "placebo_onset": "TIMI-3灌流達成率 アルテプラーゼと同等（ASSENT-2試験）",
+    "placebo_sleep": "30日死亡率 6.18%（テネクテプラーゼ）vs 6.15%（アルテプラーゼ）・同等有効性",
+    "NNT": 8,
+    "onset_time": "単回ボーラス静注後即時に血栓溶解開始",
+    "duration_hours": "体重別単回静注（<60kg: 30mg / 60〜70kg: 35mg / 70〜80kg: 40mg / 80〜90kg: 45mg / ≥90kg: 50mg）",
+    "guideline_rank": "急性STEMIの血栓溶解療法。単回ボーラス投与でアルテプラーゼと同等の効果でPCI施行できない施設での緊急血栓溶解に有用。フィブリン選択性が高く全身性線溶亢進が少ない。2024年日本承認（AMI適応）",
+    "evidence": "ASSENT-2試験（Lancet 1999 PMID:10466982）",
+    "evidence_url": null,
+    "caution": "禁忌はアルテプラーゼと同様（出血性脳卒中既往・頭蓋内手術・活動性出血等）。頭蓋内出血リスクはアルテプラーゼと同等。体重別用量調整が必要。PCI可能な施設では原則PCI優先"
   },
   {
     "name": "フマル酸第一鉄",
@@ -267,7 +285,7 @@
     "guideline_rank": "経口鉄剤不耐・吸収不良（IBD・胃切除後）・炎症性貧血・心不全（HFrEF）の鉄欠乏に対し経口より迅速で確実な補充。透析前CKD・産後大量出血でも推奨",
     "evidence": "Anker SD et al. NEJM 2009（FAIR-HF PMID:19920054）",
     "caution": "アナフィラキシー反応（稀・投与後30分は観察）。低リン血症（長期・大量投与）。急速投与禁忌（低血圧・潮紅）。妊娠初期は慎重。経口鉄剤との重複投与しない",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/19920054/"
+    "evidence_url": null
   },
   {
     "name": "エポエチンアルファ",
@@ -285,7 +303,7 @@
     "guideline_rank": "腎性貧血の標準ESA（第1世代）。低用量から開始しHb目標範囲（10〜12g/dL）に調整。鉄補充（フェリチン>100・TSAT>20%）を並行。Hb>13g/dLへの過剰補正は脳卒中・死亡リスク増加",
     "evidence": "Eschbach JW et al. NEJM 1987（PMID:3308986）；TREAT試験（PMID:20042236）",
     "caution": "過剰補正（Hb>13g/dL）で脳卒中・心血管イベント・死亡増加（TREAT試験）。赤芽球癆（PRCA・抗EPO抗体産生）。高血圧悪化。透析シャント血栓。鉄欠乏では効果不十分",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/3308986/"
+    "evidence_url": null
   },
   {
     "name": "ダルベポエチンアルファ",
@@ -303,7 +321,7 @@
     "guideline_rank": "エポエチンαから変換可能（用量換算必要：エポエチンα:ダルベポエチン ≈ 200:1）。投与頻度を減らせる（週1回→2週1回）ため外来・非透析CKD患者のアドヒアランス向上",
     "evidence": "Locatelli F et al. NEJM 2004（CREATE試験 PMID:15533668）",
     "caution": "エポエチンαと同様：Hb過剰補正禁忌・PRCA・高血圧・血栓。単位換算に注意（エポエチンα:ダルベポエチン ≈ 200:1）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/15533668/"
+    "evidence_url": null
   },
   {
     "name": "エポエチンβペゴル",
@@ -321,7 +339,7 @@
     "guideline_rank": "最長作用型ESA（月1回投与）。透析患者の外来通院ごとの投与が最も楽。他ESAからの切り替えは用量換算表を参考（エポエチンα:ミルセラ ≈ 300:1）",
     "evidence": "Macdougall IC et al. Lancet 2007（ARCTOS試験 PMID:17888730）",
     "caution": "最長半減期のため過剰補正が起きると修正に時間がかかる。新規導入よりも安定維持期向き。PRCA・高血圧・血栓はESA共通リスク",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/17888730/"
+    "evidence_url": null
   },
   {
     "name": "ロキサデュスタット",
@@ -339,7 +357,7 @@
     "guideline_rank": "経口投与可能なESA代替薬（2020年承認）。注射が困難な患者・ESA低反応例（炎症性）に有用。ヘプシジン抑制→鉄利用改善（静注鉄の必要量減少の可能性）。長期心血管安全性は注視",
     "evidence": "Barratt J et al. Lancet Diabetes Endocrinol 2021（DOLOMITES PMID:34384553）",
     "caution": "心血管イベントリスク（長期安全性データ蓄積中）。血栓症。高血圧。腫瘍増悪懸念（HIF活性化による可能性）。活動性悪性腫瘍は慎重投与",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/34384553/"
+    "evidence_url": null
   },
   {
     "name": "バダデュスタット",
@@ -357,7 +375,7 @@
     "guideline_rank": "ロキサデュスタットと同カテゴリの経口HIF-PHD阻害薬。経口・週3回で注射不要。炎症性貧血でも比較的有効（ヘプシジン抑制）。ロキサデュスタットとの使い分けは保険・施設方針による",
     "evidence": "Fishbane S et al. NEJM 2021（PRO2TECT PMID:33939536）",
     "caution": "ロキサデュスタットと同様：心血管リスク・腫瘍促進懸念・高血圧・血栓。活動性悪性腫瘍・重度心不全では慎重",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/33939536/"
+    "evidence_url": null
   },
   {
     "name": "フィルグラスチム",
@@ -375,7 +393,7 @@
     "guideline_rank": "FN高リスク（>20%）化学療法での一次予防推奨（ASCO/ESMO GL）。化学療法後24時間以降に開始。造血幹細胞移植（PBSCT）の動員にも使用。連日投与が必要（ペグフィルグラスチムが代替可）",
     "evidence": "Crawford J et al. NEJM 1991（PMID:2049930）；ASCO Clinical Practice Guideline 2015",
     "caution": "骨痛（骨髄刺激による・NSAIDsまたはアセトアミノフェンで対処）。脾腫・脾破裂（稀・重篤）。ARDS。化学療法の14〜24時間前または直後は使用しない。白血病・骨髄異形成症候群での一般使用は慎重",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/2049930/"
+    "evidence_url": null
   },
   {
     "name": "ペグフィルグラスチム",
@@ -393,7 +411,7 @@
     "guideline_rank": "現在のG-CSF第一選択（1サイクル1回）。連日投与不要でアドヒアランス・コスト効率が良い。FN高リスク（>20%）では一次予防で推奨（ASCO）。化学療法の24時間前〜14日後には使用しない",
     "evidence": "Green MD et al. Ann Oncol 2003（PMID:12881374）",
     "caution": "フィルグラスチムと同様の副作用（骨痛・脾腫）。化学療法との適切な間隔が必要（少なくとも24時間後・次回化学療法の14日前まで）。サイクル間での2回投与は禁止",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/12881374/"
+    "evidence_url": null
   },
   {
     "name": "レノグラスチム",
@@ -429,7 +447,7 @@
     "guideline_rank": "慢性ITPの第二選択（ステロイド・免疫グロブリン後）。SAA（免疫抑制療法後の血小板回復促進）にも適応。食事・制酸薬との相互作用が重要（吸収低下）。定期的な肝機能・眼科検査が必要",
     "evidence": "Cheng G et al. Lancet 2011（RAISE試験 PMID:21145579）",
     "caution": "肝毒性（定期的な肝機能モニタリング必要）。白内障（動物実験で形成・ヒトでもリスク）。血栓塞栓症（門脈血栓・脳梗塞）。骨髄線維化（長期投与）。食事との相互作用（多価カチオン含有食品・制酸薬で吸収-70%）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/21145579/"
+    "evidence_url": null
   },
   {
     "name": "ロミプロスチム",
@@ -447,7 +465,7 @@
     "guideline_rank": "慢性ITP第二選択（エルトロンボパグと同等位置づけ）。注射が必要。経口不可・食事相互作用がある患者にはロミプロスチムが有利。定期的な血小板カウントが重要（過剰上昇に注意）",
     "evidence": "Kuter DJ et al. NEJM 2008（PMID:18981485）",
     "caution": "骨髄線維化（長期投与で網状線維増加）。過剰な血小板上昇で血栓リスク。投薬中止後のリバウンド（血小板急減・出血リスク）。週1回注射が必要（自己注射可）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/18981485/"
+    "evidence_url": null
   },
   {
     "name": "ルストロンボパグ",
@@ -465,7 +483,7 @@
     "guideline_rank": "肝疾患関連血小板減少症（肝硬変・食道静脈瘤治療前・TACE前など）の待機的手術前に特化。7日間の短期投与のみ（長期投与の適応なし）。術前輸血回避が目的",
     "evidence": "Hidaka H et al. J Gastroenterol 2019（BOOST2 PMID:30684072）",
     "caution": "血栓塞栓症（門脈血栓・肺塞栓）リスク（肝硬変患者は元来血栓リスク）。血小板200×10⁹/L超え防止。肝機能悪化で血中濃度上昇。短期使用のみ（長期有効性・安全性データなし）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/30684072/"
+    "evidence_url": null
   },
   {
     "name": "アバトロンボパグ",
@@ -483,6 +501,6 @@
     "guideline_rank": "ルストロンボパグと同様の肝疾患手術前適応。ITP適応も持つ（長期投与可）。食事の影響が少ない（食後・空腹どちらでも可）。ルストロンボパグとの主な違いは投与スケジュールと適応の広さ",
     "evidence": "Terrault N et al. Hepatology 2018（ADAPT-1 PMID:30020543）",
     "caution": "血栓塞栓症リスク（ルストロンボパグと同様）。血小板200×10⁹/L超え防止。肝機能に応じた用量調整（重度肝障害Child-Pugh Cは慎重）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/30020543/"
+    "evidence_url": null
   }
 ]

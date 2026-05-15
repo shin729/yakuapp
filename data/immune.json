@@ -32,7 +32,7 @@
     "duration_hours": "皮下注・2週に1回",
     "guideline_rank": "原則として既存治療で効果不十分な場合に限定。ただし、関節の構造的損傷の進展が早いと予想される場合には、メトトレキサートとの併用が考慮される。",
     "evidence": "Breedveld FC, et al. Arthritis Rheum. 2006 (PMID: 16389635)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/16389635/",
+    "evidence_url": null,
     "caution": "重篤な感染症、活動性結核、脱髄疾患、うっ血性心不全は禁忌。重大な副作用として敗血症、間質性肺炎、劇症肝炎、悪性リンパ腫等が報告されている。注射部位反応（紅斑、腫脹等）が約24％と高頻度に認められる。投与前の結核スクリーニングが必須。"
   },
   {
@@ -50,7 +50,7 @@
     "duration_hours": "皮下注・2週に1回",
     "guideline_rank": "既存治療で効果不十分な関節リウマチ（DMARDで不十分）、高安動脈炎・巨細胞性動脈炎（ステロイド治療で不十分または継続困難）に投与する。",
     "evidence": "Domestic Phase III (MRA229JP) Ogata A et al. Arthritis Care Res. 2014 (PMID: 24127394)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/24127394/",
+    "evidence_url": null,
     "caution": "重篤な感染症に注意。IL-6阻害により発熱やCRP上昇等の反応が抑制され感染発見が遅れる恐れがある。活動性結核、過敏症既往は禁忌。B型肝炎再活性化、脂質異常、白血球減少、腸管穿孔、アナフィラキシー、心障害に注意が必要。生ワクチン接種は不可。"
   },
   {
@@ -68,7 +68,7 @@
     "duration_hours": "経口・1日1回",
     "guideline_rank": "既存治療で効果不十分な場合に投与。RAでは抗リウマチ薬、ADでは適切な外用剤治療を先行させる。投与8週（円形脱毛は36週）で反応がない場合は中止を考慮。ADでは最適使用推進ガイドラインの対象。",
     "evidence": "RA-BEAM trial Taylor PC N Engl J Med 2017 (PMID: 28199307)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/28199307/",
+    "evidence_url": null,
     "caution": "禁忌：活動性結核、好中球数500未満、妊婦、重度腎障害等。重大な副作用：帯状疱疹や肺炎等の重篤な感染症、消化管穿孔、好中球・リンパ球減少、静脈血栓塞栓症、間質性肺炎。投与前に結核スクリーニングを行い、投与中は感染症や脂質異常、肝機能に十分注意すること。"
   },
   {
@@ -104,7 +104,7 @@
     "duration_hours": "皮下注・4週に1回",
     "guideline_rank": "既存治療で効果不十分な場合に投与。RAでは原則MTX併用、UCでは既存治療で効果不十分な場合に導入後維持療法を行う。",
     "evidence": "Subcutaneous golimumab induces clinical response and remission in patients with moderate-to-severe ulcerative colitis. Sandborn WJ et al. Gastroenterology. 2014 (PMID: 23735746)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/23735746/",
+    "evidence_url": null,
     "caution": "警告：重篤な感染症（結核、肺炎等）、脱髄疾患、悪性腫瘍の報告。禁忌：重篤な感染症、活動性結核、脱髄疾患（既往含む）、うっ血性心不全。B型肝炎ウイルス再活性化、間質性肺炎の増悪、自己抗体の発現に注意。投与中は生ワクチン接種不可。注射部位反応がみられることがある。"
   },
   {
@@ -122,7 +122,7 @@
     "duration_hours": "皮下注・2週に1回",
     "guideline_rank": "既存治療で効果不十分な場合に適用。関節破壊リスクが高いRAではMTX未治療でも検討可だがガイドライン参照のこと。RAでは12週、乾癬では16週以内に治療反応を評価し、継続を慎重に判断する。",
     "evidence": "Comparative efficacy and safety of biologic therapies for moderate-to-severe Crohn's disease Siddharth Singh et al. Lancet Gastroenterol Hepatol 2021 (PMID: 34688373)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/34688373/",
+    "evidence_url": null,
     "caution": "重篤な感染症、活動性結核、脱髄疾患、うっ血性心不全は禁忌。警告として敗血症、肺炎、結核の再燃、脱髄疾患の悪化が報告されている。投与前には結核（胸部X線、IGRA等）やB型肝炎の検査が必須。主な副作用は鼻咽頭炎、注射部位反応、上気道感染、発疹等。生ワクチンの接種は避けること。"
   },
   {
@@ -140,7 +140,7 @@
     "duration_hours": "皮下注・4週に1回（初回〜4週は毎週）",
     "guideline_rank": "既存治療で効果不十分な場合に投与。通常300mgを初回から4週後まで毎週、以降4週間に1回皮下投与する。強直性脊椎炎や体軸性脊椎関節炎、患者の体重により150mgの選択・投与が可能。",
     "evidence": "MAXIMISE trial Baraliakos X Ann Rheum Dis 2021 (PMID:33334727)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/33334727/",
+    "evidence_url": null,
     "caution": "警告：結核等の重篤な感染症に注意。禁忌：重篤な感染症、活動性結核。副作用：鼻咽頭炎、上気道感染、好中球数減少、炎症性腸疾患の悪化。生ワクチン接種不可。ラテックス過敏症に注意。16週以内に治療反応が得られない場合は治療計画の継続を慎重に再考すること。"
   },
   {
@@ -158,7 +158,7 @@
     "duration_hours": "皮下注・12週に1回（維持期）",
     "guideline_rank": "既存治療で効果不十分な乾癬（BSA10%以上等）、クローン病、潰瘍性大腸炎に使用。効果不十分な場合は投与間隔短縮や増量が可能。",
     "evidence": "SEQUENCE Study Peyrin-Biroulet L N Engl J Med 2024 (PMID: 39018531)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/39018531/",
+    "evidence_url": null,
     "caution": "重篤な感染症（結核等）や悪性腫瘍の発現に注意。禁忌は重篤な感染症、活動性結核、過敏症。主な副作用は鼻咽頭炎、上気道感染、頭痛。生ワクチン接種は不可。自己注射時のラテックス過敏症にも注意が必要。"
   },
   {
@@ -194,7 +194,7 @@
     "duration_hours": "皮下注・初回、4週後、以降12週間隔",
     "guideline_rank": "既存の全身療法（光線療法等）で効果不十分な場合に適用。16週（掌蹠膿疱症は28週）以内に治療反応が得られない場合は、治療計画の継続を慎重に再考する。",
     "evidence": "M16-008試験 Gordon KB et al. Lancet 2018 (PMID: 29555170)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/29555170/",
+    "evidence_url": null,
     "caution": "重篤な感染症や活動性結核患者には禁忌。結核既感染者等は原則抗結核薬を投与した上で使用する。生ワクチン接種は不可。悪性腫瘍の発現に注意が必要。主な副作用は上気道感染、頭痛、注射部位反応（紅斑、疼痛等）。重大な副作用に敗血症やアナフィラキシーがある。"
   },
   {
@@ -212,7 +212,7 @@
     "duration_hours": "経口・1日1回",
     "guideline_rank": "既存治療で効果不十分な場合に使用。通常200mgを1日1回経口投与し、患者の状態に応じ100mgへ減量可。中等度以上の腎機能障害では100mgを投与する。生物製剤や他のJAK阻害剤との併用は不可。",
     "evidence": "FINCH 1 Combe B Ann Rheum Dis 2021（PMID: 33504485）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/33504485/",
+    "evidence_url": null,
     "caution": "敗血症や結核等の重篤な感染症、悪性腫瘍の発現に注意。禁忌は、活動性結核、重篤な感染症、末期腎不全、重度の肝障害、高度な血球減少（好中球、リンパ球、Hb）、妊婦。副作用に悪心、上気道感染、肝機能値上昇、帯状疱疹等がある。投与開始前に結核やB型肝炎のスクリーニングと、定期的な血液検査が必須。"
   },
   {
@@ -230,7 +230,7 @@
     "duration_hours": "経口・1日1回",
     "guideline_rank": "既存治療で効果不十分な場合に、通常150mgを1日1回食後投与。状態により100mgへの減量が可。中等度肝障害患者には50mgを1日1回投与とする。",
     "evidence": "Efficacy of pharmacological treatment in rheumatoid arthritis: a systematic literature research informing the 2019 update of the EULAR recommendations for management of rheumatoid arthritis. Kerschbaumer A et al. Ann Rheum Dis. 2020 (PMID: 32033937)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/32033937/",
+    "evidence_url": null,
     "caution": "禁忌：重篤な感染症、活動性結核、重度肝障害、好中球・リンパ球・Hb極低値、妊婦。主な副作用：帯状疱疹や肺炎等の重篤な感染症。消化管穿孔、肝機能障害、間質性肺炎、静脈血栓塞栓症にも注意が必要。投与開始前に結核やB型肝炎の有無を確認し、投与中は定期的な血液検査等の観察を十分に行うこと。"
   },
   {
@@ -248,7 +248,7 @@
     "duration_hours": "経口・1日2回",
     "guideline_rank": "既存治療で効果不十分なベーチェット病、乾癬（面積30%以上）、アトピー性皮膚炎等に使用。血中トラフ値に基づき投与量を調整する。",
     "evidence": "Topical corticosteroids for dry eye Liu SH et al. Cochrane Database Syst Rev. 2022 (PMID: 36269562)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/36269562/",
+    "evidence_url": null,
     "caution": "禁忌：タクロリムス、ピタバスタチン、生ワクチン等。主な副作用：腎障害（5％以上）、多毛、血圧上昇、歯肉肥厚、感染症。腎・肝機能障害、中枢神経系障害（痙攣等）、悪性腫瘍の発現に注意。副作用防止のため、1ヵ月に1回を目安に血中トラフ値を測定し投与量を調節すること。"
   },
   {
@@ -266,7 +266,7 @@
     "duration_hours": "1日2回 経口投与",
     "guideline_rank": "HLA適合同胞間骨髄移植では第一選択としない。潰瘍性大腸炎では難治性（ステロイド抵抗性・依存性）であることを確認して使用し、原則3カ月までの投与とする。",
     "evidence": "Effect of Tacrolimus vs Intravenous Cyclophosphamide on Complete or Partial Response in Patients With Lupus Nephritis: A Randomized Clinical Trial. Zheng Z et al. JAMA Netw Open. 2022 (PMID: 35353167)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/35353167/",
+    "evidence_url": null,
     "caution": "禁忌：シクロスポリン、ボセンタン、カリウム保持性利尿剤投与中、生ワクチン。主な副作用：腎障害、心不全、感染症、高血糖。血中濃度モニタリング（TDM）が必須であり、トラフ値に基づき調節する。グレープフルーツジュースやセイヨウオトギリソウ含有食品の摂取を避ける。"
   },
   {
@@ -284,7 +284,7 @@
     "duration_hours": "1日1回 経口投与",
     "guideline_rank": "臓器移植、ステロイド依存性のIBD、治療抵抗性のリウマチ性疾患（SLE等）、自己免疫性肝炎等における治療選択肢。",
     "evidence": "Ewe K, et al. Gastroenterology. 1993 (PMID: 8335188)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/8335188/",
+    "evidence_url": null,
     "caution": "禁忌は成分過敏症、白血球数3000以下、フェブキソスタット等投与中、生ワクチン。重大な副作用として、血液障害、ショック、肝機能障害、悪性新生物、感染症、間質性肺炎、PMLが報告されている。NUDT15遺伝子多型により骨髄抑制リスクが高まるため、投与初期は頻回な血液検査が必要。"
   },
   {
@@ -302,7 +302,7 @@
     "duration_hours": "経口・1日1回",
     "guideline_rank": "SLE患者の皮膚症状、倦怠感、筋骨格系症状がある場合に考慮。理想体重に基づき、1日1回200mgまたは400mgを食後に投与する。",
     "evidence": "Randomized Trial of Ciprofloxacin Doxycycline and Hydroxychloroquine Versus Budesonide in Active Crohn's Disease. Rhodes JM et al. Dig Dis Sci. 2021 (PMID: 32681228)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/32681228/",
+    "evidence_url": null,
     "caution": "警告として網膜症等の重篤な眼障害が挙げられ、開始前及び定期的な眼科検査が必須。網膜症・黄斑症（SLE網膜症除く）の既往者や6歳未満の幼児には禁忌。主な副作用は下痢、頭痛等。低血糖、心筋症、骨髄抑制などの重大な副作用にも注意を要する。"
   },
   {
@@ -320,7 +320,7 @@
     "duration_hours": "経口・1日2回",
     "guideline_rank": "最新の診療ガイドラインを参考に、ループス腎炎や強皮症に伴う間質性肺疾患の適切な患者へ投与。ACR/CHESTガイドラインでSSc-ILD等の治療推奨に含まれる。",
     "evidence": "Treatment of interstitial lung disease in systemic sclerosis: guidelines and new clinical trial results. Johnson SR et al. Curr Opin Rheumatol 2024 (PMID: 39193880)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/39193880/",
+    "evidence_url": null,
     "caution": "警告として催奇形性があり妊婦は禁忌。投与中止後6週間まで確実な避妊を徹底する。重大な副作用に敗血症等の感染症、進行性多巣性白質脳症（PML）、白血球減少等の血液障害、消化管潰瘍、悪性リンパ腫がある。重度の慢性腎不全患者では血中濃度上昇に注意し、頻回な臨床検査を行うこと。"
   },
   {
@@ -338,7 +338,7 @@
     "duration_hours": "経口・1日2回（RA: 1回5mg、UC: 導入期10mg/維持期5mg）",
     "guideline_rank": "既存治療で効果不十分な関節リウマチ、中等症～重症の潰瘍性大腸炎に使用。RAでは少なくとも1剤の抗リウマチ薬、UCではステロイドや生物製剤等の既存治療で効果不十分な場合に投与を検討する。",
     "evidence": "Tanaka Y, et al. Mod Rheumatol. 2015 (PMID: 25167888)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/25167888/",
+    "evidence_url": null,
     "caution": "禁忌：重篤な感染症、活動性結核、重度肝障害、好中球数500/mm3未満、妊婦。警告として、結核・敗血症等の重篤な感染症や悪性腫瘍の発現に注意。帯状疱疹、消化管穿孔、間質性肺炎、静脈血栓塞栓症に注意が必要。B型肝炎の再活性化リスクがあるため投与前の確認が必須。"
   },
   {
@@ -356,7 +356,7 @@
     "duration_hours": "点滴静注・8週間隔（初回、2週、6週後）",
     "guideline_rank": "既存治療で効果不十分な場合に投与。関節リウマチではメトトレキサート製剤に併用して用いること。通常、初回投与後2週、6週、以後8週間隔で点滴静注し、効果不十分な場合は増量や間隔短縮も検討される。",
     "evidence": "ATTRACT試験 Lipsky PE et al. N Engl J Med. 2000 (PMID: 11101875)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/11101875/",
+    "evidence_url": null,
     "caution": "重篤な感染症、活動性結核、脱髄疾患、うっ血性心不全、過敏症既往は禁忌。警告として結核や敗血症等の致死的な感染症や脱髄疾患の悪化が明記されている。投与中・後のアナフィラキシーを含むinfusion reactionや遅発性過敏症、B型肝炎の再活性化、間質性肺炎、悪性腫瘍の発現に十分注意すること。"
   },
   {
@@ -410,7 +410,25 @@
     "duration_hours": "皮下注・週1回または週2回",
     "guideline_rank": "既存治療で効果不十分な関節リウマチに推奨。非ステロイド性抗炎症剤及び他の抗リウマチ薬等による適切な治療を行っても、疾患に起因する明らかな症状が残る場合に投与を検討する。",
     "evidence": "Moreland LW, et al. Ann Intern Med. 1999 (PMID: 10075613)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/10075613/",
+    "evidence_url": null,
     "caution": "敗血症、活動性結核、脱髄疾患、うっ血性心不全等は禁忌。重篤な感染症、結核、脱髄疾患の悪化、悪性腫瘍の発現リスクに警告がある。主な副作用は注射部位反応、鼻咽頭炎等。間質性肺炎、重篤な血液障害、肝機能障害等の重大な副作用にも注意し、感染症の徴候を慎重に観察すること。"
+  },
+  {
+    "name": "アバタセプト",
+    "brand": "オレンシア",
+    "category": "T細胞共刺激阻害薬",
+    "class": "CTLA-4-Ig融合蛋白（CD80/CD86共刺激シグナル選択的阻害）",
+    "action_type": "CD28-CD80/CD86共刺激シグナル遮断→T細胞活性化・炎症性サイトカイン産生抑制",
+    "mechanism": "CTLA-4の細胞外ドメインとIgG1 Fcの融合タンパク。抗原提示細胞上のCD80（B7-1）・CD86（B7-2）に結合しT細胞のCD28受容体との共刺激シグナルを遮断する。T細胞の完全活性化には抗原認識（シグナル1）と共刺激（シグナル2）の両方が必要であり、シグナル2を選択的に遮断することで過剰なT細胞活性化と炎症性サイトカイン（IL-6・TNFα・IL-17等）産生を抑制する",
+    "efficacy_star": 4,
+    "placebo_onset": "ACR20 60〜67%（MTX併用・12ヶ月）",
+    "placebo_sleep": "HAQ-DI改善（機能的改善）・関節破壊進行抑制（Sharp score）",
+    "NNT": 5,
+    "onset_time": "4〜8週（効果発現・最大効果3〜6ヶ月）",
+    "duration_hours": "静注：月1回（500〜1000mg体重別・30分点滴）/ 皮下注：週1回（125mg）",
+    "guideline_rank": "MTX無効の中等症〜重症RAに使用される生物学的DMARD。TNF阻害薬無効例にも有効。感染症リスクがTNF阻害薬より低い可能性があり高齢者・感染リスク高例で選択されやすい。2010年日本承認（RA・JIA・乾癬性関節炎）",
+    "evidence": "AIM試験（NEJM 2006 PMID:16818924）; ATTAIN試験（Ann Rheum Dis 2005 PMID:16258095）",
+    "evidence_url": null,
+    "caution": "感染症リスク（TNF阻害薬より低い傾向）。活動性感染症・重篤な感染症禁忌。結核スクリーニング必須。COPD患者では呼吸器有害事象（喘息悪化・COPD増悪）に注意。生ワクチン禁忌。TNF阻害薬との併用禁忌（感染症リスク増大・有効性上乗せなし）"
   }
 ]

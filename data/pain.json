@@ -115,7 +115,7 @@
     "guideline_rank": "世界で最も広く使われるNSAID。OTCで入手可能",
     "evidence": "Cochrane Review（Derry et al. 2017 PMID:28004394）",
     "caution": "胃腸障害・腎障害リスク。心血管リスク患者には注意。市販薬としても普及",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/28004394/",
+    "evidence_url": null,
     "analgesic_effect": "★★★★★ 非常に強い（急性疼痛のNNT最良・OTC最強クラス）",
     "anti_inflammatory_effect": "★★★★ 強い（COX-1/2両方を非選択的に阻害・関節炎にも有効）"
   },
@@ -135,7 +135,7 @@
     "guideline_rank": "抗炎症効果が強いNSAID。外用ゲルで局所療法にも使用可",
     "evidence": "Cochrane Review（Derry et al. 2015 PMID:26358158）",
     "caution": "胃腸障害・肝障害リスク。心血管リスクはNSAIDs中やや高め。外用剤も有効",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/26358158/",
+    "evidence_url": null,
     "analgesic_effect": "★★★★ 強い（炎症性疼痛・術後痛・筋骨格系疼痛）",
     "anti_inflammatory_effect": "★★★★★ 非常に強い（COX阻害に加えてリポキシゲナーゼ経路も部分的に抑制）"
   },
@@ -155,7 +155,7 @@
     "guideline_rank": "半減期が長く1日2回。心血管リスクが比較的低いNSAID",
     "evidence": "Cochrane Review（Derry et al. 2009 PMID:19160268）",
     "caution": "効果発現はやや遅いが持続時間が長い。心血管リスクはNSAIDs中最も低いとされる",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/19160268/",
+    "evidence_url": null,
     "analgesic_effect": "★★★★ 強い（長時間作用・慢性疼痛・片頭痛・月経困難症）",
     "anti_inflammatory_effect": "★★★★ 強い（COX-1/2両阻害・心血管安全性が非選択的NSAIDで最も良好）"
   },
@@ -175,7 +175,7 @@
     "guideline_rank": "NSAIDs が使えない慢性疼痛・神経障害性疼痛に。依存性は純粋オピオイドより低い",
     "evidence": "Cochrane Review（Duehmke et al. 2017 PMID:28616956）",
     "caution": "嘔気・めまい・便秘。依存性あり（弱い）。セロトニン症候群リスク。痙攣閾値低下",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/28616956/"
+    "evidence_url": null
   },
   {
     "name": "トラマドール/アセトアミノフェン",
@@ -193,7 +193,7 @@
     "guideline_rank": "NSAIDs が使えない慢性疼痛に。2成分の相乗効果",
     "evidence": "Fricke et al., Clin Ther 2004（PMID:15530999）",
     "caution": "トラマドール・アセトアミノフェン両剤の注意事項が該当。他のアセトアミノフェン製剤との重複に注意",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/15530999/"
+    "evidence_url": null
   },
   {
     "name": "コデイン",
@@ -211,7 +211,7 @@
     "guideline_rank": "軽〜中等度疼痛・鎮咳。弱い鎮痛が必要な咳嗽合併例に",
     "evidence": "Cochrane Review（Derry et al. 2010 PMID:20393966）",
     "caution": "単剤での鎮痛効果は弱い。CYP2D6多型で効果差が大きい。依存性・便秘・嘔気",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/20393966/"
+    "evidence_url": null
   },
   {
     "name": "ブプレノルフィン",
@@ -228,7 +228,7 @@
     "duration_hours": "168時間（週1回交換）",
     "guideline_rank": "週1回貼付剤で服薬管理が容易。経口困難・慢性腰痛・変形性関節症に",
     "evidence": "Steiner DJ et al. Clin J Pain 2011（PMID:21240002）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/21240002/",
+    "evidence_url": null,
     "caution": "部分作動薬のため完全作動薬との併用で拮抗。貼付部位の皮膚刺激。貼付剤はフェンタニルと異なり非麻薬指定（ノルスパン）"
   },
   {
@@ -264,7 +264,7 @@
     "duration_hours": "12時間（t1/2 約6h・1日2回）",
     "guideline_rank": "末梢神経障害性疼痛に。プレガバリンより傾眠・めまいが少ない傾向",
     "evidence": "Baba M et al. J Diabetes Investig 2019（PMID:30672128）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/30672128/",
+    "evidence_url": null,
     "caution": "傾眠・めまい（プレガバリンより少ない傾向）。腎機能に応じて減量。体重増加あり"
   },
   {
@@ -283,7 +283,7 @@
     "guideline_rank": "糖尿病性神経障害・帯状疱疹後神経痛の第一選択α2δリガンド",
     "evidence": "Cochrane Review（Moore et al. 2009 PMID:30673120）; Dworkin et al., Pain 2005",
     "caution": "眩暈・眠気（高頻度）。体重増加・浮腫。依存性・乱用リスクあり。腎機能に応じた用量調節が必要",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/30673120/"
+    "evidence_url": null
   },
   {
     "name": "ガバペンチン",
@@ -301,7 +301,7 @@
     "guideline_rank": "糖尿病性神経障害・帯状疱疹後神経痛に。プレガバリン先発薬",
     "evidence": "Cochrane Review（Moore et al. 2014 PMID:28597471）",
     "caution": "眩暈・眠気・認知機能低下。用量依存的だが吸収が非線形（高用量で吸収率低下）。プレガバリンの前身",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/28597471/"
+    "evidence_url": null
   },
   {
     "name": "デュロキセチン（神経痛）",
@@ -337,7 +337,7 @@
     "guideline_rank": "神経障害性疼痛に適する",
     "evidence": "Cochrane Review（Derry et al. 2012 PMID:23235657）",
     "caution": "口渇・便秘・尿閉（抗コリン）・眠気・起立性低血圧。過量服用で心毒性。高齢者は慎重に",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/23235657/"
+    "evidence_url": null
   },
   {
     "name": "エレヌマブ",
@@ -355,7 +355,7 @@
     "guideline_rank": "月4回以上の発作がある反復性・慢性片頭痛の予防に",
     "evidence": "ARISE試験（Lancet Neurology 2017 PMID:29171821）; STRIVE試験",
     "caution": "便秘・注射部位反応。妊婦への安全性は未確立。高価格。他予防薬不応例に特に有効",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/29171821/"
+    "evidence_url": null
   },
   {
     "name": "ガルカネズマブ",
@@ -372,7 +372,7 @@
     "duration_hours": "720時間（月1回皮下注）",
     "guideline_rank": "月4回以上の片頭痛予防。月1回注射で効果発現が早い",
     "evidence": "Stauffer VL et al. JAMA Neurol 2018（EVOLVE-1試験 PMID:29813147）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/29813147/",
+    "evidence_url": null,
     "caution": "注射部位反応。高価（月約4〜5万円）。妊娠中は禁忌。他の予防薬が無効または副作用の例に適応"
   },
   {
@@ -390,7 +390,7 @@
     "duration_hours": "720時間（月1回）または2160時間（四半期1回）",
     "guideline_rank": "月4回以上の片頭痛予防。月1回または四半期1回から選択可",
     "evidence": "Silberstein SD et al. NEJM 2017（HALO試験 PMID:29800211）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/29800211/",
+    "evidence_url": null,
     "caution": "注射部位反応。四半期1回投与（675mg）は服薬アドヒアランス向上に有利。他予防薬無効例に適応"
   },
   {
@@ -409,7 +409,7 @@
     "guideline_rank": "心血管リスクが高くトリプタンが禁忌の急性発作に",
     "evidence": "SAMURAI・SPARTAN試験（NEJM 2019 PMID:30446595）",
     "caution": "眩暈・眠気（CNS副作用が多め）。心血管禁忌なし。服用後8時間は運転不可",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/30446595/"
+    "evidence_url": null
   },
   {
     "name": "リメゲパント",
@@ -427,7 +427,7 @@
     "guideline_rank": "2024年日本承認。心血管禁忌なし。トリプタン不応・禁忌例に。急性期と予防を1剤でカバーできる唯一の経口CGRP拮抗薬",
     "evidence": "Lipton RB et al. NEJM 2019（BHV3000-301試験 PMID:31491384）",
     "caution": "CYP3A4/P糖タンパク強阻害薬で血中濃度上昇（投与禁忌）。妊婦・授乳婦は禁忌",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/31491384/"
+    "evidence_url": null
   },
   {
     "name": "リザトリプタン",
@@ -445,7 +445,7 @@
     "guideline_rank": "急性発作に速やかな効果。冠動脈疾患がなければ第一選択",
     "evidence": "Cochrane Review（Oldman et al. 2002 PMID:25408622）",
     "caution": "虚血性心疾患・脳血管障害に禁忌。プロプラノロール服用者は用量減量。口腔内崩壊錠（OD錠）で水なし服用可",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/25408622/"
+    "evidence_url": null
   },
   {
     "name": "スマトリプタン",
@@ -463,7 +463,7 @@
     "guideline_rank": "急性発作の標準トリプタン。皮下注射で最速発現",
     "evidence": "Cochrane Review（Derry et al. 2012 PMID:22336849）",
     "caution": "虚血性心疾患・脳血管障害に禁忌。嘔気・胸部絞扼感。トリプタン系は月10回以上の使用で薬物乱用頭痛に注意",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/22336849/"
+    "evidence_url": null
   },
   {
     "name": "ゾルミトリプタン",
@@ -481,7 +481,7 @@
     "guideline_rank": "急性発作に。点鼻薬もあり嘔気が強い例に使いやすい",
     "evidence": "Cochrane Review（Smith et al. 2012 PMID:24848613）",
     "caution": "虚血性心疾患・脳血管障害に禁忌。鼻スプレー製剤もあり嘔気に効果的",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/24848613/"
+    "evidence_url": null
   },
   {
     "name": "釣藤散",
@@ -535,7 +535,7 @@
     "guideline_rank": "焦点発作・ミオクローヌス発作に。相互作用が少なく使いやすい",
     "evidence": "Cochrane Review（Mbizvo et al. 2012 PMID:22623614）",
     "caution": "薬物相互作用が少なく安全性高い。行動異常・易刺激性（特に小児）。腎機能低下時は減量",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/22623614/"
+    "evidence_url": null
   },
   {
     "name": "ラコサミド",
@@ -553,7 +553,7 @@
     "guideline_rank": "焦点発作の補助療法。Na+チャンネル遮断の新機序",
     "evidence": "Ben-Menachem et al., Epilepsia 2007（PMID:17448157）",
     "caution": "眩暈・頭痛・複視。PR間隔延長（心伝導障害のある患者に注意）。薬物相互作用少ない",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/17448157/"
+    "evidence_url": null
   },
   {
     "name": "ペランパネル",
@@ -570,7 +570,7 @@
     "duration_hours": "24時間（t1/2 105h・就寝前1回）",
     "guideline_rank": "焦点・強直間代発作の補助療法。攻撃性・精神症状に注意",
     "evidence": "French JA et al. Neurology 2012（PMID:22689744）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/22689744/",
+    "evidence_url": null,
     "caution": "めまい・傾眠・攻撃性・精神症状（用量依存）。CYP3A4誘導薬で血中濃度↓。アルコールとの相互作用"
   },
   {
@@ -606,7 +606,7 @@
     "duration_hours": "24時間（t1/2 63h・1日1〜2回）",
     "guideline_rank": "焦点・全般てんかんの補助療法。腎結石・発汗減少に注意",
     "evidence": "Brodie MJ et al. Epilepsy Res 2005（PMID:16289617）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/16289617/",
+    "evidence_url": null,
     "caution": "腎結石（炭酸脱水酵素阻害）・発汗減少・高体温。体重減少。認知機能への影響少ない。緩徐に増量"
   },
   {
@@ -643,7 +643,7 @@
     "guideline_rank": "強直間代発作・焦点発作。治療域が狭く血中濃度モニタリング必須",
     "evidence": "SANAD試験（Lancet 2007 PMID:17399302）; Cochrane Review",
     "caution": "治療域が狭い（10〜20μg/mL）。薬物相互作用多い（CYP誘導）。歯肉増殖・多毛・奇形（妊婦禁忌）。静注は心毒性に注意",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/17399302/"
+    "evidence_url": null
   },
   {
     "name": "クロバザム",
@@ -660,7 +660,7 @@
     "duration_hours": "12〜24時間（t1/2 36〜42h）",
     "guideline_rank": "Lennox-Gastaut症候群・難治性てんかんの補助療法",
     "evidence": "Ng YT et al. NEJM 2011（PMID:21879742）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/21879742/",
+    "evidence_url": null,
     "caution": "耐性形成（連用で効果減弱）・依存・離脱症状。1,4-BZより少ないが長期使用に注意。傾眠"
   },
   {
@@ -678,7 +678,7 @@
     "duration_hours": "半減期：初回25〜65時間→自己誘導後8〜20時間（1日2〜3回）",
     "guideline_rank": "三叉神経痛の第一選択薬（Grade A）。焦点発作・強直間代発作の主要抗てんかん薬の一つ（SANAD試験）。アジア人HLA-B*1502保因者はSJS/TENリスク高（スクリーニング推奨）",
     "evidence": "Wiffen PJ et al. Cochrane 2011（三叉神経痛 PMID:21412919）; SANAD試験（Lancet 2007）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/21412919/",
+    "evidence_url": null,
     "caution": "SJS/TEN（HLA-B*1502陽性アジア人で高リスク）。低Na血症（SIADH）・肝障害。CYP3A4強誘導により多数の薬物相互作用。自己誘導で1〜2週後に血中濃度低下（増量必要）。血中濃度モニタリング（4〜12μg/mL）"
   },
   {
@@ -696,7 +696,7 @@
     "duration_hours": "半減期25〜35時間（1日1〜2回）",
     "guideline_rank": "焦点発作・原発性全般発作・Lennox-Gastaut症候群の補助療法。双極性障害の維持（うつ状態）に第一選択。カルバマゼピンよりSJS/TENリスクが低く広く使用される。SANAD試験で長期有効性を確認",
     "evidence": "SANAD試験（Lancet 2007 PMID:17399302）; Cochrane Review（Marson 2016）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/17399302/",
+    "evidence_url": null,
     "caution": "SJSリスク（漸増スケジュール必須・急増量で高リスク）。バルプロ酸併用で血中濃度2倍化（VPA使用時は1/2量から開始）。CYP3A4誘導薬（カルバマゼピン等）で血中濃度低下"
   },
   {
@@ -733,7 +733,7 @@
     "guideline_rank": "若年PD・うつ合併例に。ドパミン作動薬として線条体D3刺激",
     "evidence": "Parkinson Study Group（NEJM 2000 PMID:10869036）",
     "caution": "突発的な眠気（ナルコレプシー様発作）・衝動制御障害（過食・賭博等）。体位性低血圧。幻覚",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/10869036/"
+    "evidence_url": null
   },
   {
     "name": "ロピニロール",
@@ -751,7 +751,7 @@
     "guideline_rank": "早期・中等度PDに。ドパミン作動薬で衝動制御障害に注意",
     "evidence": "Brooks et al., Brain 1998（PMID:9519335）",
     "caution": "突発的な眠気・衝動制御障害。嘔気。体位性低血圧。レストレスレッグス症候群（RLS）にも適応",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/9519335/"
+    "evidence_url": null
   },
   {
     "name": "ロチゴチン",
@@ -769,7 +769,7 @@
     "guideline_rank": "貼付剤で血中濃度が安定。嚥下困難・ウェアリングオフに有用",
     "evidence": "Giladi et al., Eur J Neurol 2007（PMID:17635671）",
     "caution": "貼付部位の皮膚反応（必ず毎日部位変更）。突発的眠気・衝動制御障害。RLSにも適応",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/17635671/"
+    "evidence_url": null
   },
   {
     "name": "セレギリン",
@@ -787,7 +787,7 @@
     "guideline_rank": "補助的に使用。初期PDの単剤または L-DOPAへの上乗せ",
     "evidence": "Cochrane Review（Ives et al. 2004 PMID:15266527）",
     "caution": "チラミン含有食品（チーズ等）との相互作用（非選択的MAO阻害量では少ない）。セロトニン症候群（三環系・SSRI併用禁忌）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/15266527/"
+    "evidence_url": null
   },
   {
     "name": "エンタカポン",
@@ -805,7 +805,7 @@
     "guideline_rank": "ウェアリングオフ対策としてL-DOPAに上乗せ。COMT阻害薬",
     "evidence": "NOMESCOM試験（Mov Disord 2004 PMID:15083282）",
     "caution": "必ずレボドパと併用（単独使用不可）。下痢・尿の変色（橙色〜赤色）。ジスキネジアが増悪する場合はレボドパ減量",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/15083282/"
+    "evidence_url": null
   },
   {
     "name": "ラサジリン",
@@ -823,7 +823,7 @@
     "guideline_rank": "初期PD単剤療法または L-DOPAへの上乗せとして有用。セレギリンより副作用が少なくチラミン制限不要（高選択的MAO-B阻害のため）。MDS推奨：疾患修飾効果の可能性あり",
     "evidence": "TEMPO試験（PMID:12495434）; ADAGIO試験（PMID:19578567）",
     "caution": "セロトニン症候群（SSRI・TCA・メペリジン・デキストロメトルファンとの併用禁忌）。チラミン制限は原則不要（セレギリンより安全）。過度の眠気・起立性低血圧",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/12495434/"
+    "evidence_url": null
   },
   {
     "name": "オピカポン",
@@ -841,7 +841,7 @@
     "guideline_rank": "ウェアリングオフ対策のCOMT阻害薬。エンタカポンより1日1回でアドヒアランス良好。BIPARK-1/2試験で確認された有効性",
     "evidence": "BIPARK-1試験（PMID:27448191）; BIPARK-2試験（PMID:27448192）",
     "caution": "必ずレボドパと併用（単独使用不可）。ジスキネジア増悪（→レボドパ減量）。下痢・尿の変色（橙色）。エンタカポンに比べ相互作用が少ない",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/27448191/"
+    "evidence_url": null
   },
   {
     "name": "アマンタジン",
@@ -858,7 +858,7 @@
     "duration_hours": "半減期10〜15時間（1日2〜3回）",
     "guideline_rank": "L-DOPA誘発ジスキネジアの第一選択経口薬（MDS推奨）。早期PDの初期単剤療法や抗コリン薬の代替にも使用（副作用が抗コリン薬より少ない）",
     "evidence": "Thomas A et al. Neurology 2004（PMID:14745074）; Cochrane Review（Crosby et al. 2003）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/14745074/",
+    "evidence_url": null,
     "caution": "幻覚・精神症状（特に高齢者・認知症例）。網状皮斑・末梢浮腫。急な中断で悪性症候群様症状（漸減が必要）。腎機能低下時は蓄積するため減量"
   },
   {
@@ -894,7 +894,7 @@
     "duration_hours": "12時間（1日2回）",
     "guideline_rank": "神経障害性疼痛成分を伴う慢性疼痛に。悪心・便秘がオキシコドンより少ない",
     "evidence": "Schwartz S et al. J Pain 2011（PMID:21945027）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/21945027/",
+    "evidence_url": null,
     "caution": "悪心・便秘がオキシコドンより少ない。CYP代謝なし（相互作用少）。MAO阻害薬は禁忌。セロトニン症候群リスク（SSRI/SNRI併用注意）"
   },
   {
@@ -912,7 +912,7 @@
     "duration_hours": "即放：4〜6時間・徐放：24時間（1日1回）",
     "guideline_rank": "腎障害合併癌性疼痛に。1日1回徐放剤（ナルサス）で管理が容易",
     "evidence": "Wirz S et al. Pain Physician 2017（PMID:28934793）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/28934793/",
+    "evidence_url": null,
     "caution": "便秘・悪心・眠気。少量から開始し漸増。ナロキソンで拮抗。日本では2017年承認の比較的新しい薬剤"
   },
   {
@@ -930,7 +930,7 @@
     "duration_hours": "即放：4〜6時間・徐放：12時間",
     "guideline_rank": "癌性疼痛・慢性疼痛に。腎障害時はモルヒネより安全",
     "evidence": "Caraceni A et al. Lancet Oncol 2012（PMID:22240242）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/22240242/",
+    "evidence_url": null,
     "caution": "便秘・悪心・眠気。腎障害時はモルヒネより安全。依存性・乱用リスク（麻薬指定）。CYP3A4/2D6基質"
   },
   {
@@ -948,7 +948,7 @@
     "duration_hours": "即放：4〜6時間・徐放（コンチン）：12時間",
     "guideline_rank": "癌性疼痛WHO3段階ラダーの基本薬。豊富な剤形と長年の使用経験",
     "evidence": "WHO癌疼痛ガイドライン・Cochrane review 2015（PMID:26398958）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/26398958/",
+    "evidence_url": null,
     "caution": "呼吸抑制（特に初回・急増量）・便秘（必ず緩下薬併用）・悪心。腎機能低下でM6G蓄積→過鎮静。ナロキソンで拮抗可能"
   },
   {
@@ -966,7 +966,7 @@
     "duration_hours": "貼付剤：72時間（3日1回交換）",
     "guideline_rank": "経口困難・悪心が強い例に貼付剤。腎障害例にも使用しやすい",
     "evidence": "Tassinari D et al. J Palliat Med 2011（PMID:21385030）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/21385030/",
+    "evidence_url": null,
     "caution": "発熱・加温で吸収↑→過剰投与リスク。CYP3A4阻害薬で血中濃度↑。貼付剤は経口換算量から計算して開始。便秘少ないが悪心・眠気あり"
   },
   {
