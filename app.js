@@ -123,7 +123,7 @@ const DOMAINS = {
       { key: 'MX_beta',     label: '🛡 β遮断薬'                         },
       { key: 'MX_SGLT2',   label: '⚡ SGLT2阻害薬'                     },
       { key: 'MX_diuretic', label: '💧 利尿薬'                          },
-      { key: 'MX_other',    label: '📋 その他（ジゴキシン・イバブラジン）'},
+      { key: 'MX_other',    label: '📋 その他（ジゴキシン・イバブラジン・ベリキグアト）'},
     ],
     categoryGroups: [
       { key: 'hypertension', label: '高血圧',           cats: ['高血圧治療薬'] },
@@ -372,6 +372,7 @@ const HF_CLASS_MAP = {
   'トルバプタン':                  'MX_diuretic',
   'ジゴキシン（心不全）':          'MX_other',
   'イバブラジン':                  'MX_other',
+  'ベリキグアト':                  'MX_other',
 };
 
 // ===== Vaughan Williams分類マップ（薬剤名 → VWクラスキー） =====

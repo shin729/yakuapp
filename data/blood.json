@@ -378,6 +378,24 @@
     "evidence_url": null
   },
   {
+    "name": "エナロデュスタット",
+    "brand": "エナロイ",
+    "category": "ESA（腎性貧血）",
+    "class": "HIF-PHD阻害薬（経口・国内開発・1日1回）",
+    "action_type": "腎性貧血（CKD保存期・透析・非透析）",
+    "mechanism": "HIF-プロリル水酸化酵素（PHD1-3）を阻害→HIFα安定化→核内でHIF-β二量体形成→EPO遺伝子転写↑→内因性EPO産生増加。ロキサデュスタット・バダデュスタットと同機序。1日1回投与が可能",
+    "efficacy_star": 4,
+    "placebo_onset": "Hb改善：ダルベポエチンと非劣性（SYMPHONY試験群・国内第3相）",
+    "placebo_sleep": "目標Hb：10〜12g/dL。心血管イベントに関する国際大規模RCTデータは蓄積中",
+    "NNT": null,
+    "onset_time": "2〜4週でHb上昇",
+    "duration_hours": "経口 1日1回（透析：4mg・非透析：2mg から開始）",
+    "guideline_rank": "日本国内開発のHIF-PHD阻害薬（日本たばこ産業/鳥居薬品・2020年承認）。ロキサデュスタット・バダデュスタットと同カテゴリの経口ESA代替薬。1日1回投与で簡便。ヘプシジン抑制により炎症性貧血でも有効の可能性",
+    "evidence": "国内第3相SYMPHONY試験群（PMID:35115273）",
+    "caution": "HIF-PHD阻害薬クラス共通リスク：心血管イベント・腫瘍促進懸念（HIFα活性化）・高血圧・血栓。活動性悪性腫瘍・重度心不全・網膜症では慎重投与",
+    "evidence_url": null
+  },
+  {
     "name": "フィルグラスチム",
     "brand": "グラン / ノイポジェン",
     "category": "G-CSF",
