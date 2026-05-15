@@ -46,19 +46,10 @@ const DOMAINS = {
   lifestyle: {
     file: './data/lifestyle.json',
     categories: [
-      { key: '脂質異常症治療薬',      label: '🧪 脂質異常症' },
-      { key: '高尿酸血症治療薬',      label: '🦴 高尿酸血症' },
-      { key: 'ビスフォスフォネート系', label: '🦴 ビスフォスフォネート系' },
-      { key: '抗RANKL抗体',           label: '💉 抗RANKL抗体（デノスマブ）' },
-      { key: '骨形成促進薬',          label: '⬆ 骨形成促進薬' },
-      { key: 'SERM',                  label: '🌸 SERM' },
-      { key: '活性型ビタミンD₃製剤',  label: '☀ 活性型ビタミンD₃製剤' },
+      { key: '脂質異常症治療薬', label: '🧪 脂質異常症' },
+      { key: '高尿酸血症治療薬', label: '🦴 高尿酸血症' },
+      { key: '骨粗鬆症',         label: '🦴 骨粗鬆症' },
     ],
-    categoryGroups: [
-      { key: 'metabolic', label: '代謝系',  cats: ['脂質異常症治療薬', '高尿酸血症治療薬'] },
-      { key: 'bone',      label: '骨粗鬆症', cats: ['ビスフォスフォネート系', '抗RANKL抗体', '骨形成促進薬', 'SERM', '活性型ビタミンD₃製剤'] },
-    ],
-    defaultGroup: 'metabolic',
     defaultCat: '脂質異常症治療薬',
     headBg:       'linear-gradient(180deg, #f0fdf4 0%, #dcfce7 100%)',
     stickyBg:     '#f0fdf4',
@@ -93,11 +84,11 @@ const DOMAINS = {
   endocrine: {
     file: './data/endocrine.json',
     categories: [
-      { key: '甲状腺機能低下症治療薬', label: '🔵 甲状腺機能低下症' },
-      { key: '抗甲状腺薬',             label: '🔴 甲状腺機能亢進症' },
-      { key: 'ヨウ素製剤',             label: '🟡 ヨウ素製剤（術前・クリーゼ）' },
+      { key: '甲状腺',  label: '🦋 甲状腺' },
+      { key: '下垂体',  label: '🧠 下垂体' },
+      { key: '副甲状腺', label: '🔵 副甲状腺' },
     ],
-    defaultCat: '甲状腺機能低下症治療薬',
+    defaultCat: '甲状腺',
     headBg:       'linear-gradient(180deg, #fdf4ff 0%, #fae8ff 100%)',
     stickyBg:     '#fdf4ff',
     rowAltBg:     '#fefbff',
@@ -1096,18 +1087,18 @@ const OSTEOPOROSIS_ROWS = [
   { label: '⚠ 注意事項',      field: 'caution',        type: 'caution'},
 ];
 
-// 甲状腺治療薬（全カテゴリ共通）
+// 内分泌治療薬（甲状腺・下垂体・副甲状腺 共通）
 const THYROID_ROWS = [
-  { label: '主な適応・用途',      field: 'action_type',    type: 'mech'   },
-  { label: '作用機序',            field: 'mechanism',      type: 'mech'   },
-  { label: '甲状腺機能改善指標',  field: 'placebo_onset',  type: 'accent' },
-  { label: '付加的効果・特徴',    field: 'placebo_sleep',  type: 'accent' },
-  { label: '効果スコア',          field: 'efficacy_star',  type: 'stars'  },
-  { label: '効果発現',            field: 'onset_time',     type: 'val'    },
-  { label: '投与法・頻度',        field: 'duration_hours', type: 'val'    },
-  { label: '使い分けポイント',    field: 'guideline_rank', type: 'usecase'},
-  { label: 'エビデンス出典',      field: 'evidence',       type: 'evidence'},
-  { label: '⚠ 注意事項',         field: 'caution',        type: 'caution'},
+  { label: '主な適応・用途',     field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',           field: 'mechanism',      type: 'mech'   },
+  { label: '主な有効性指標',     field: 'placebo_onset',  type: 'accent' },
+  { label: '付加的効果・特徴',   field: 'placebo_sleep',  type: 'accent' },
+  { label: '効果スコア',         field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',           field: 'onset_time',     type: 'val'    },
+  { label: '投与法・頻度',       field: 'duration_hours', type: 'val'    },
+  { label: '使い分けポイント',   field: 'guideline_rank', type: 'usecase'},
+  { label: 'エビデンス出典',     field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',        field: 'caution',        type: 'caution'},
 ];
 
 // 脂質異常症治療薬
@@ -1752,10 +1743,8 @@ function getRowDefs(category) {
   if (category === '高血圧治療薬')       return HYPERTENSION_ROWS;
   if (category === '脂質異常症治療薬')   return DYSLIPIDEMIA_ROWS;
   if (category === '高尿酸血症治療薬')   return HYPERURICEMIA_ROWS;
-  if (['ビスフォスフォネート系', '抗RANKL抗体', '骨形成促進薬', 'SERM', '活性型ビタミンD₃製剤'].includes(category))
-    return OSTEOPOROSIS_ROWS;
-  if (['甲状腺機能低下症治療薬', '抗甲状腺薬', 'ヨウ素製剤'].includes(category))
-    return THYROID_ROWS;
+  if (category === '骨粗鬆症') return OSTEOPOROSIS_ROWS;
+  if (['甲状腺', '下垂体', '副甲状腺'].includes(category)) return THYROID_ROWS;
   if (category === '片頭痛')             return MIGRAINE_ROWS;
   if (category === '抗てんかん薬')       return EPILEPSY_ROWS;
   if (category === 'パーキンソン病治療薬') return PARKINSON_ROWS;
