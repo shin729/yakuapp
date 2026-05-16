@@ -137,6 +137,48 @@ const DOMAINS = {
     rowAltSticky: '#e2fbfd',
     accentColor:  '#0891b2',
   },
+  derma: {
+    file: './data/derma.json',
+    categories: [
+      { key: 'アトピー性皮膚炎', label: '🧴 アトピー性皮膚炎' },
+      { key: '乾癬',             label: '🔴 乾癬' },
+      { key: 'ざ瘡・外用薬',     label: '💊 ざ瘡・外用薬' },
+    ],
+    defaultCat: 'アトピー性皮膚炎',
+    headBg:       'linear-gradient(180deg, #fff7ed 0%, #fed7aa 100%)',
+    stickyBg:     '#fff7ed',
+    rowAltBg:     '#fffbf5',
+    rowAltSticky: '#fff1e0',
+    accentColor:  '#c2410c',
+  },
+  gyneco: {
+    file: './data/gyneco.json',
+    categories: [
+      { key: 'HRT・更年期',  label: '🌸 HRT・更年期' },
+      { key: '子宮内膜症',   label: '🔴 子宮内膜症' },
+      { key: 'OC・避妊',     label: '💊 OC・避妊' },
+    ],
+    defaultCat: 'HRT・更年期',
+    headBg:       'linear-gradient(180deg, #fdf2f8 0%, #fce7f3 100%)',
+    stickyBg:     '#fdf2f8',
+    rowAltBg:     '#fef8fc',
+    rowAltSticky: '#fbe8f5',
+    accentColor:  '#be185d',
+  },
+  nutrition: {
+    file: './data/nutrition.json',
+    categories: [
+      { key: 'ビタミン',       label: '💊 ビタミン' },
+      { key: 'ミネラル・電解質', label: '⚡ ミネラル・電解質' },
+      { key: '経腸栄養剤',     label: '🥛 経腸栄養剤' },
+    ],
+    defaultCat: 'ビタミン',
+    headBg:       'linear-gradient(180deg, #fefce8 0%, #fef08a 100%)',
+    stickyBg:     '#fefce8',
+    rowAltBg:     '#fffef5',
+    rowAltSticky: '#fdf9d0',
+    accentColor:  '#ca8a04',
+  },
   steroid: {
     file: './data/steroid.json',
     categories: [
@@ -1188,6 +1230,51 @@ const OPHTHALMO_ROWS = [
   { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
 ];
 
+// 皮膚科（アトピー性皮膚炎・乾癬・ざ瘡 共通）
+const DERMA_ROWS = [
+  { label: '適応・対象疾患',       field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',             field: 'mechanism',      type: 'mech'   },
+  { label: '有効性指標',           field: 'placebo_onset',  type: 'accent' },
+  { label: '付加効果・特徴',       field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT',                  field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',           field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',             field: 'onset_time',     type: 'val'    },
+  { label: '投与法・頻度',         field: 'duration_hours', type: 'val'    },
+  { label: '使い分けポイント',     field: 'guideline_rank', type: 'usecase'},
+  { label: 'エビデンス出典',       field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
+];
+
+// 産婦人科（HRT・更年期・子宮内膜症・OC 共通）
+const GYNECO_ROWS = [
+  { label: '適応・目的',           field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',             field: 'mechanism',      type: 'mech'   },
+  { label: '有効性指標',           field: 'placebo_onset',  type: 'accent' },
+  { label: '付加効果・特徴',       field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT',                  field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',           field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',             field: 'onset_time',     type: 'val'    },
+  { label: '投与法・頻度',         field: 'duration_hours', type: 'val'    },
+  { label: '使い分けポイント',     field: 'guideline_rank', type: 'usecase'},
+  { label: 'エビデンス出典',       field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
+];
+
+// ビタミン・ミネラル・経腸栄養（全カテゴリ共通）
+const NUTRITION_ROWS = [
+  { label: '主な適応',             field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',             field: 'mechanism',      type: 'mech'   },
+  { label: '有効性・補充効果',     field: 'placebo_onset',  type: 'accent' },
+  { label: '付加効果・臨床的意義', field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT',                  field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',           field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',             field: 'onset_time',     type: 'val'    },
+  { label: '投与法・用量',         field: 'duration_hours', type: 'val'    },
+  { label: '使い分けポイント',     field: 'guideline_rank', type: 'usecase'},
+  { label: 'エビデンス出典',       field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
+];
+
 // 脂質異常症治療薬
 const DYSLIPIDEMIA_ROWS = [
   { label: '主な作用',       field: 'action_type',    type: 'mech'   },
@@ -1835,6 +1922,9 @@ function getRowDefs(category) {
   if (['前立腺肥大', '過活動膀胱', 'ED'].includes(category)) return UROLOGY_ROWS;
   if (['ループ利尿薬', 'チアジド系利尿薬', 'カリウム保持性利尿薬'].includes(category)) return RENAL_ROWS;
   if (['緑内障', '加齢黄斑変性', 'ドライアイ'].includes(category)) return OPHTHALMO_ROWS;
+  if (['アトピー性皮膚炎', '乾癬', 'ざ瘡・外用薬'].includes(category)) return DERMA_ROWS;
+  if (['HRT・更年期', '子宮内膜症', 'OC・避妊'].includes(category)) return GYNECO_ROWS;
+  if (['ビタミン', 'ミネラル・電解質', '経腸栄養剤'].includes(category)) return NUTRITION_ROWS;
   if (category === '片頭痛')             return MIGRAINE_ROWS;
   if (category === '抗てんかん薬')       return EPILEPSY_ROWS;
   if (category === 'パーキンソン病治療薬') return PARKINSON_ROWS;
