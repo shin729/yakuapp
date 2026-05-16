@@ -95,6 +95,48 @@ const DOMAINS = {
     rowAltSticky: '#faf0fe',
     accentColor:  '#9333ea',
   },
+  urology: {
+    file: './data/urology.json',
+    categories: [
+      { key: '前立腺肥大', label: '🔵 前立腺肥大' },
+      { key: '過活動膀胱', label: '🔶 過活動膀胱' },
+      { key: 'ED',         label: '💊 勃起不全（ED）' },
+    ],
+    defaultCat: '前立腺肥大',
+    headBg:       'linear-gradient(180deg, #f0fdfa 0%, #ccfbf1 100%)',
+    stickyBg:     '#f0fdfa',
+    rowAltBg:     '#f7fffe',
+    rowAltSticky: '#e4fbf7',
+    accentColor:  '#0f766e',
+  },
+  renal: {
+    file: './data/renal.json',
+    categories: [
+      { key: 'ループ利尿薬',         label: '💧 ループ利尿薬' },
+      { key: 'チアジド系利尿薬',     label: '🔵 チアジド系' },
+      { key: 'カリウム保持性利尿薬', label: '🟢 K保持性利尿薬' },
+    ],
+    defaultCat: 'ループ利尿薬',
+    headBg:       'linear-gradient(180deg, #eff6ff 0%, #dbeafe 100%)',
+    stickyBg:     '#eff6ff',
+    rowAltBg:     '#f7faff',
+    rowAltSticky: '#e8f2ff',
+    accentColor:  '#1d4ed8',
+  },
+  ophthalmo: {
+    file: './data/ophthalmo.json',
+    categories: [
+      { key: '緑内障',       label: '👁 緑内障' },
+      { key: '加齢黄斑変性', label: '🔬 加齢黄斑変性' },
+      { key: 'ドライアイ',   label: '💧 ドライアイ' },
+    ],
+    defaultCat: '緑内障',
+    headBg:       'linear-gradient(180deg, #ecfeff 0%, #cffafe 100%)',
+    stickyBg:     '#ecfeff',
+    rowAltBg:     '#f5feff',
+    rowAltSticky: '#e2fbfd',
+    accentColor:  '#0891b2',
+  },
   steroid: {
     file: './data/steroid.json',
     categories: [
@@ -1101,6 +1143,51 @@ const THYROID_ROWS = [
   { label: '⚠ 注意事項',        field: 'caution',        type: 'caution'},
 ];
 
+// 泌尿器科（前立腺肥大・過活動膀胱・ED 共通）
+const UROLOGY_ROWS = [
+  { label: '主な適応',         field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',         field: 'mechanism',      type: 'mech'   },
+  { label: '有効性指標',       field: 'placebo_onset',  type: 'accent' },
+  { label: '付加効果・特徴',   field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT',              field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',         field: 'onset_time',     type: 'val'    },
+  { label: '投与法・頻度',     field: 'duration_hours', type: 'val'    },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
+  { label: 'エビデンス出典',   field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',      field: 'caution',        type: 'caution'},
+];
+
+// 腎臓・利尿薬（全カテゴリ共通）
+const RENAL_ROWS = [
+  { label: '作用部位・適応',       field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',             field: 'mechanism',      type: 'mech'   },
+  { label: '利尿・降圧効果',       field: 'placebo_onset',  type: 'accent' },
+  { label: '電解質・代謝への影響', field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT',                  field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',           field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',             field: 'onset_time',     type: 'val'    },
+  { label: '投与法・頻度',         field: 'duration_hours', type: 'val'    },
+  { label: '使い分けポイント',     field: 'guideline_rank', type: 'usecase'},
+  { label: 'エビデンス出典',       field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
+];
+
+// 眼科（緑内障・加齢黄斑変性・ドライアイ 共通）
+const OPHTHALMO_ROWS = [
+  { label: '適応・目的',           field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',             field: 'mechanism',      type: 'mech'   },
+  { label: '眼圧低下・主要指標',   field: 'placebo_onset',  type: 'accent' },
+  { label: '付加効果・特徴',       field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT',                  field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',           field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',             field: 'onset_time',     type: 'val'    },
+  { label: '投与法・頻度',         field: 'duration_hours', type: 'val'    },
+  { label: '使い分けポイント',     field: 'guideline_rank', type: 'usecase'},
+  { label: 'エビデンス出典',       field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
+];
+
 // 脂質異常症治療薬
 const DYSLIPIDEMIA_ROWS = [
   { label: '主な作用',       field: 'action_type',    type: 'mech'   },
@@ -1745,6 +1832,9 @@ function getRowDefs(category) {
   if (category === '高尿酸血症治療薬')   return HYPERURICEMIA_ROWS;
   if (category === '骨粗鬆症') return OSTEOPOROSIS_ROWS;
   if (['甲状腺', '下垂体', '副甲状腺'].includes(category)) return THYROID_ROWS;
+  if (['前立腺肥大', '過活動膀胱', 'ED'].includes(category)) return UROLOGY_ROWS;
+  if (['ループ利尿薬', 'チアジド系利尿薬', 'カリウム保持性利尿薬'].includes(category)) return RENAL_ROWS;
+  if (['緑内障', '加齢黄斑変性', 'ドライアイ'].includes(category)) return OPHTHALMO_ROWS;
   if (category === '片頭痛')             return MIGRAINE_ROWS;
   if (category === '抗てんかん薬')       return EPILEPSY_ROWS;
   if (category === 'パーキンソン病治療薬') return PARKINSON_ROWS;
