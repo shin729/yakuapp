@@ -571,6 +571,30 @@ Object.entries(DOMAINS).forEach(([dk, cfg]) => {
   cfg.categories.forEach(c => { CAT_TO_DOMAIN[c.key] = dk; });
 });
 
+// ===== ドメイン絞り込みグループ =====
+const DOMAIN_GROUPS = {
+  all:      null,
+  internal: ['sleep','pain','ortho','lifestyle','diabetes','endocrine','renal','arrhythmia','hf','gi','allergy','respiratory','blood','immune','oncology','nutrition'],
+  surgical: ['ortho','derma','steroid','ophthalmo','ent','gyneco','urology'],
+  infect:   ['antibiotics','antifungals','antiviral','antiseptic'],
+};
+
+let currentDomainGroup = 'all';
+
+function applyDomainFilter(group) {
+  currentDomainGroup = group;
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.group === group);
+  });
+  const allowed = DOMAIN_GROUPS[group];
+  document.querySelectorAll('.domain-btn').forEach(btn => {
+    btn.style.display = (!allowed || allowed.includes(btn.dataset.domain)) ? '' : 'none';
+  });
+  if (allowed && !allowed.includes(currentDomain)) {
+    switchDomain(allowed[0]);
+  }
+}
+
 let dataCache = {};
 let currentDomain         = 'sleep';
 let currentCategory       = '睡眠薬';
@@ -2806,6 +2830,9 @@ window.addEventListener('resize', () => {
 
 document.querySelectorAll('.domain-btn').forEach(btn => {
   btn.addEventListener('click', () => switchDomain(btn.dataset.domain));
+});
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => applyDomainFilter(btn.dataset.group));
 });
 document.getElementById('search').addEventListener('input', onSearch);
 document.getElementById('sort-select').addEventListener('change', onSort);

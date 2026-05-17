@@ -44,6 +44,38 @@ body {
   margin-bottom: 16px;
 }
 
+/* ===== ドメイン絞り込みフィルター ===== */
+.domain-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.filter-btn {
+  padding: 4px 14px;
+  border: 1px solid var(--gray-300);
+  border-radius: 20px;
+  background: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--gray-500);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+
+.filter-btn:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.filter-btn.active {
+  background: #1e40af;
+  border-color: #1e40af;
+  color: white;
+}
+
 /* ===== ドメインタブ（大分類） ===== */
 .domain-tabs {
   display: flex;
