@@ -140,10 +140,11 @@ const DOMAINS = {
   derma: {
     file: './data/derma.json',
     categories: [
-      { key: 'アトピー性皮膚炎', label: '🧴 アトピー性皮膚炎' },
-      { key: '乾癬',             label: '🔴 乾癬' },
-      { key: 'ざ瘡・外用薬',     label: '💊 ざ瘡・外用薬' },
-      { key: '褥瘡治療薬',       label: '🩹 褥瘡治療薬' },
+      { key: 'アトピー性皮膚炎',       label: '🧴 アトピー性皮膚炎' },
+      { key: '乾癬',                   label: '🔴 乾癬' },
+      { key: 'ざ瘡・外用薬',           label: '💊 ざ瘡・外用薬' },
+      { key: '褥瘡治療薬',             label: '🩹 褥瘡治療薬' },
+      { key: '皮膚感染症・外用抗菌薬', label: '🦠 皮膚感染症・外用抗菌薬' },
     ],
     defaultCat: 'アトピー性皮膚炎',
     headBg:       'linear-gradient(180deg, #fff7ed 0%, #fed7aa 100%)',
@@ -166,6 +167,19 @@ const DOMAINS = {
     rowAltBg:     '#fef8fc',
     rowAltSticky: '#fbe8f5',
     accentColor:  '#be185d',
+  },
+  ortho: {
+    file: './data/ortho.json',
+    categories: [
+      { key: '筋弛緩薬',     label: '💪 筋弛緩薬' },
+      { key: '変形性関節症', label: '🦴 変形性関節症' },
+    ],
+    defaultCat: '筋弛緩薬',
+    headBg:       'linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%)',
+    stickyBg:     '#f8fafc',
+    rowAltBg:     '#fafbfc',
+    rowAltSticky: '#f1f5f9',
+    accentColor:  '#475569',
   },
   oncology: {
     file: './data/oncology.json',
@@ -1292,6 +1306,21 @@ const GYNECO_ROWS = [
   { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
 ];
 
+// 整形外科（筋弛緩薬・変形性関節症）
+const ORTHO_ROWS = [
+  { label: '適応・対象疾患',       field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',             field: 'mechanism',      type: 'mech'   },
+  { label: '有効性指標',           field: 'placebo_onset',  type: 'accent' },
+  { label: '付加効果・使い分け',   field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT',                  field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',           field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',             field: 'onset_time',     type: 'val'    },
+  { label: '投与法・用量',         field: 'duration_hours', type: 'val'    },
+  { label: '使い分けポイント',     field: 'guideline_rank', type: 'usecase'},
+  { label: 'エビデンス出典',       field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
+];
+
 // がん支持療法（制吐薬・骨修飾薬）
 const ONCOLOGY_ROWS = [
   { label: '適応・対象レジメン',   field: 'action_type',    type: 'mech'   },
@@ -1984,8 +2013,9 @@ function getRowDefs(category) {
   if (['前立腺肥大', '過活動膀胱', 'ED'].includes(category)) return UROLOGY_ROWS;
   if (['ループ利尿薬', 'チアジド系利尿薬', 'カリウム保持性利尿薬'].includes(category)) return RENAL_ROWS;
   if (['緑内障', '加齢黄斑変性', 'ドライアイ'].includes(category)) return OPHTHALMO_ROWS;
-  if (['アトピー性皮膚炎', '乾癬', 'ざ瘡・外用薬'].includes(category)) return DERMA_ROWS;
+  if (['アトピー性皮膚炎', '乾癬', 'ざ瘡・外用薬', '皮膚感染症・外用抗菌薬'].includes(category)) return DERMA_ROWS;
   if (category === '褥瘡治療薬') return WOUND_ROWS;
+  if (['筋弛緩薬', '変形性関節症'].includes(category)) return ORTHO_ROWS;
   if (['HRT・更年期', '子宮内膜症', 'OC・避妊', '不妊治療'].includes(category)) return GYNECO_ROWS;
   if (['制吐薬（CINV）', '骨修飾薬'].includes(category)) return ONCOLOGY_ROWS;
   if (['ビタミン', 'ミネラル・電解質'].includes(category)) return NUTRITION_ROWS;
