@@ -166,6 +166,19 @@ const DOMAINS = {
     rowAltSticky: '#fbe8f5',
     accentColor:  '#be185d',
   },
+  oncology: {
+    file: './data/oncology.json',
+    categories: [
+      { key: '制吐薬（CINV）', label: '🤢 制吐薬（CINV）' },
+      { key: '骨修飾薬',       label: '🦴 骨修飾薬' },
+    ],
+    defaultCat: '制吐薬（CINV）',
+    headBg:       'linear-gradient(180deg, #f0fdf4 0%, #bbf7d0 100%)',
+    stickyBg:     '#f0fdf4',
+    rowAltBg:     '#f8fffe',
+    rowAltSticky: '#e0faf0',
+    accentColor:  '#15803d',
+  },
   nutrition: {
     file: './data/nutrition.json',
     categories: [
@@ -1262,6 +1275,21 @@ const GYNECO_ROWS = [
   { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
 ];
 
+// がん支持療法（制吐薬・骨修飾薬）
+const ONCOLOGY_ROWS = [
+  { label: '適応・対象レジメン',   field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',             field: 'mechanism',      type: 'mech'   },
+  { label: 'CINV/SRE制御率',       field: 'placebo_onset',  type: 'accent' },
+  { label: '付加効果・使用場面',   field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT',                  field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',           field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',             field: 'onset_time',     type: 'val'    },
+  { label: '投与法・用量',         field: 'duration_hours', type: 'val'    },
+  { label: '使い分けポイント',     field: 'guideline_rank', type: 'usecase'},
+  { label: 'エビデンス出典',       field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
+];
+
 // ビタミン・ミネラル
 const NUTRITION_ROWS = [
   { label: '主な適応',             field: 'action_type',    type: 'mech'   },
@@ -1941,6 +1969,7 @@ function getRowDefs(category) {
   if (['緑内障', '加齢黄斑変性', 'ドライアイ'].includes(category)) return OPHTHALMO_ROWS;
   if (['アトピー性皮膚炎', '乾癬', 'ざ瘡・外用薬'].includes(category)) return DERMA_ROWS;
   if (['HRT・更年期', '子宮内膜症', 'OC・避妊', '不妊治療'].includes(category)) return GYNECO_ROWS;
+  if (['制吐薬（CINV）', '骨修飾薬'].includes(category)) return ONCOLOGY_ROWS;
   if (['ビタミン', 'ミネラル・電解質'].includes(category)) return NUTRITION_ROWS;
   if (category === '経腸栄養剤') return ENTERAL_ROWS;
   if (category === '片頭痛')             return MIGRAINE_ROWS;
