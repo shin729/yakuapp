@@ -157,6 +157,7 @@ const DOMAINS = {
       { key: 'HRT・更年期',  label: '🌸 HRT・更年期' },
       { key: '子宮内膜症',   label: '🔴 子宮内膜症' },
       { key: 'OC・避妊',     label: '💊 OC・避妊' },
+      { key: '不妊治療',     label: '🌱 不妊治療' },
     ],
     defaultCat: 'HRT・更年期',
     headBg:       'linear-gradient(180deg, #fdf2f8 0%, #fce7f3 100%)',
@@ -1939,7 +1940,7 @@ function getRowDefs(category) {
   if (['ループ利尿薬', 'チアジド系利尿薬', 'カリウム保持性利尿薬'].includes(category)) return RENAL_ROWS;
   if (['緑内障', '加齢黄斑変性', 'ドライアイ'].includes(category)) return OPHTHALMO_ROWS;
   if (['アトピー性皮膚炎', '乾癬', 'ざ瘡・外用薬'].includes(category)) return DERMA_ROWS;
-  if (['HRT・更年期', '子宮内膜症', 'OC・避妊'].includes(category)) return GYNECO_ROWS;
+  if (['HRT・更年期', '子宮内膜症', 'OC・避妊', '不妊治療'].includes(category)) return GYNECO_ROWS;
   if (['ビタミン', 'ミネラル・電解質'].includes(category)) return NUTRITION_ROWS;
   if (category === '経腸栄養剤') return ENTERAL_ROWS;
   if (category === '片頭痛')             return MIGRAINE_ROWS;
