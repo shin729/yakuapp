@@ -799,6 +799,42 @@ thead .sticky-col { z-index: 3; }
   border-radius: 10px;
 }
 
+.search-group-domain {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #fff;
+  background: #475569;
+  padding: 1px 8px;
+  border-radius: 10px;
+  letter-spacing: 0.02em;
+}
+
+.search-group-sep {
+  color: var(--gray-400);
+  font-size: 0.8rem;
+}
+
+.search-group-jump {
+  margin-left: auto;
+  font-size: 0.72rem;
+  color: #2563eb;
+  background: none;
+  border: 1px solid #93c5fd;
+  border-radius: 6px;
+  padding: 2px 9px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+.search-group-jump:hover { background: #eff6ff; }
+
+mark.search-hit {
+  background: #fef08a;
+  color: inherit;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
 /* No results */
 .no-results { text-align: center; padding: 60px 20px; color: var(--gray-500); }
 .no-results-icon { font-size: 2.5rem; margin-bottom: 10px; }

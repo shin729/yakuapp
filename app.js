@@ -690,9 +690,18 @@ function switchCat(category) {
 }
 
 // ===== 検索 =====
+let _searchTimer = null;
 function onSearch(e) {
-  searchQuery = e.target.value.trim().toLowerCase();
-  render();
+  clearTimeout(_searchTimer);
+  const val = e.target.value.trim().toLowerCase();
+  _searchTimer = setTimeout(() => { searchQuery = val; render(); }, 200);
+}
+
+function highlight(str) {
+  const s = String(str ?? '');
+  if (!searchQuery) return esc(s);
+  const re = new RegExp('(' + searchQuery.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+  return s.split(re).map((p, i) => i % 2 === 1 ? `<mark class="search-hit">${esc(p)}</mark>` : esc(p)).join('');
 }
 
 // ===== ソート =====
@@ -820,21 +829,38 @@ function renderGlobalSearch() {
     });
   });
 
-  container.innerHTML = ordered.map(({ key, label, domCfg }) => {
+  container.innerHTML = ordered.map(({ key, label, dk, domCfg }) => {
     const sorted = sortDrugs(groups[key]);
+    const domBtn = document.querySelector(`.domain-btn[data-domain="${dk}"]`);
+    const domLabel = domBtn ? domBtn.textContent.trim() : dk;
     const inner = isMobile()
       ? buildCardList(sorted, domCfg, key)
       : `<div class="table-wrapper">${buildTable(sorted, domCfg, key)}</div><p class="table-scroll-hint">← 横にスクロールできます →</p>`;
     return `
       <div class="search-group">
         <div class="search-group-header">
+          <span class="search-group-domain">${esc(domLabel)}</span>
+          <span class="search-group-sep">›</span>
           ${label}
           <span class="group-count">${sorted.length}件</span>
+          <button class="search-group-jump" data-domain="${esc(dk)}" data-cat="${esc(key)}">このカテゴリを開く →</button>
         </div>
         ${inner}
       </div>`;
   }).join('');
   applyDragScroll(container);
+
+  container.querySelectorAll('.search-group-jump').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const dk  = btn.dataset.domain;
+      const cat = btn.dataset.cat;
+      searchQuery = '';
+      document.getElementById('search').value = '';
+      switchDomain(dk);
+      currentCategory = cat;
+      render();
+    });
+  });
 }
 
 // ===== カードリスト（モバイル用） =====
@@ -893,11 +919,11 @@ function buildDrugCard(d, defs, cfg) {
   <div class="drug-card${sel ? ' compare-selected' : ''}" data-card-name="${esc(d.name)}" data-card-cat="${esc(d.category)}">
     <div class="card-head">
       <div class="card-title-wrap">
-        <div class="card-name">${esc(d.name)}</div>
-        <div class="card-brand">${esc(d.brand || '')}</div>
+        <div class="card-name">${highlight(d.name)}</div>
+        <div class="card-brand">${highlight(d.brand || '')}</div>
       </div>
       <div class="card-head-right">
-        <span class="class-badge ${badge.css}">${esc(d.class || '')}</span>
+        <span class="class-badge ${badge.css}">${highlight(d.class || '')}</span>
         ${cmpBtn}
       </div>
     </div>
@@ -943,9 +969,9 @@ function buildTable(drugs, cfg, category) {
       : '';
     return `
       <th class="${sel ? 'compare-selected' : ''}" style="background:${cfg.headBg}">
-        <div class="col-name">${esc(d.name)}</div>
-        <div class="col-brand">${esc(d.brand)}</div>
-        <span class="class-badge ${badge.css}">${esc(d.class)}</span>
+        <div class="col-name">${highlight(d.name)}</div>
+        <div class="col-brand">${highlight(d.brand)}</div>
+        <span class="class-badge ${badge.css}">${highlight(d.class)}</span>
         ${cmpBtn}
       </th>`;
   }).join('');
