@@ -129,6 +129,7 @@ const DOMAINS = {
       { key: '緑内障',       label: '👁 緑内障' },
       { key: '加齢黄斑変性', label: '🔬 加齢黄斑変性' },
       { key: 'ドライアイ',   label: '💧 ドライアイ' },
+      { key: '感染性眼疾患', label: '🦠 感染性眼疾患' },
     ],
     defaultCat: '緑内障',
     headBg:       'linear-gradient(180deg, #ecfeff 0%, #cffafe 100%)',
@@ -145,6 +146,7 @@ const DOMAINS = {
       { key: 'ざ瘡・外用薬',           label: '💊 ざ瘡・外用薬' },
       { key: '褥瘡治療薬',             label: '🩹 褥瘡治療薬' },
       { key: '皮膚感染症・外用抗菌薬', label: '🦠 皮膚感染症・外用抗菌薬' },
+      { key: 'スキンケア・保湿剤',     label: '💧 スキンケア・保湿剤' },
     ],
     defaultCat: 'アトピー性皮膚炎',
     headBg:       'linear-gradient(180deg, #fff7ed 0%, #fed7aa 100%)',
@@ -167,6 +169,18 @@ const DOMAINS = {
     rowAltBg:     '#fef8fc',
     rowAltSticky: '#fbe8f5',
     accentColor:  '#be185d',
+  },
+  antiseptic: {
+    file: './data/antiseptic.json',
+    categories: [
+      { key: '消毒薬', label: '🧪 消毒薬' },
+    ],
+    defaultCat: '消毒薬',
+    headBg:       'linear-gradient(180deg, #fefce8 0%, #fde68a 100%)',
+    stickyBg:     '#fefce8',
+    rowAltBg:     '#fffef5',
+    rowAltSticky: '#fdf8cc',
+    accentColor:  '#854d0e',
   },
   ortho: {
     file: './data/ortho.json',
@@ -2013,7 +2027,9 @@ function getRowDefs(category) {
   if (['前立腺肥大', '過活動膀胱', 'ED'].includes(category)) return UROLOGY_ROWS;
   if (['ループ利尿薬', 'チアジド系利尿薬', 'カリウム保持性利尿薬'].includes(category)) return RENAL_ROWS;
   if (['緑内障', '加齢黄斑変性', 'ドライアイ'].includes(category)) return OPHTHALMO_ROWS;
-  if (['アトピー性皮膚炎', '乾癬', 'ざ瘡・外用薬', '皮膚感染症・外用抗菌薬'].includes(category)) return DERMA_ROWS;
+  if (category === '感染性眼疾患') return OPHTHALMO_ROWS;
+  if (['アトピー性皮膚炎', '乾癬', 'ざ瘡・外用薬', '皮膚感染症・外用抗菌薬', 'スキンケア・保湿剤'].includes(category)) return DERMA_ROWS;
+  if (category === '消毒薬') return DERMA_ROWS;
   if (category === '褥瘡治療薬') return WOUND_ROWS;
   if (['筋弛緩薬', '変形性関節症'].includes(category)) return ORTHO_ROWS;
   if (['HRT・更年期', '子宮内膜症', 'OC・避妊', '不妊治療'].includes(category)) return GYNECO_ROWS;
