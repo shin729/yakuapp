@@ -143,6 +143,7 @@ const DOMAINS = {
       { key: 'アトピー性皮膚炎', label: '🧴 アトピー性皮膚炎' },
       { key: '乾癬',             label: '🔴 乾癬' },
       { key: 'ざ瘡・外用薬',     label: '💊 ざ瘡・外用薬' },
+      { key: '褥瘡治療薬',       label: '🩹 褥瘡治療薬' },
     ],
     defaultCat: 'アトピー性皮膚炎',
     headBg:       'linear-gradient(180deg, #fff7ed 0%, #fed7aa 100%)',
@@ -849,6 +850,7 @@ function buildDrugCard(d, defs, cfg) {
     }
     const rowClass = def.type === 'mech'   ? 'card-detail-row card-detail-mech'
                    : def.type === 'kcal'   ? 'card-detail-row card-detail-kcal'
+                   : def.type === 'wound'  ? 'card-detail-row card-detail-wound'
                    : def.type === 'accent' ? 'card-detail-row card-detail-accent'
                    : 'card-detail-row';
     return `<div class="${rowClass}"><span class="cd-label">${esc(def.label)}</span><span class="cd-val">${esc(s)}</span></div>`;
@@ -1237,6 +1239,21 @@ const OPHTHALMO_ROWS = [
   { label: '眼圧低下・主要指標',   field: 'placebo_onset',  type: 'accent' },
   { label: '付加効果・特徴',       field: 'placebo_sleep',  type: 'accent' },
   { label: 'NNT',                  field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',           field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',             field: 'onset_time',     type: 'val'    },
+  { label: '投与法・頻度',         field: 'duration_hours', type: 'val'    },
+  { label: '使い分けポイント',     field: 'guideline_rank', type: 'usecase'},
+  { label: 'エビデンス出典',       field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
+];
+
+// 褥瘡治療薬（褥瘡の状態ステージを優先表示）
+const WOUND_ROWS = [
+  { label: '適応・対象',           field: 'action_type',    type: 'mech'   },
+  { label: '適応する褥瘡の状態',   field: 'wound_stage',    type: 'wound'  },
+  { label: '作用機序',             field: 'mechanism',      type: 'mech'   },
+  { label: '有効性指標',           field: 'placebo_onset',  type: 'accent' },
+  { label: '付加効果・特徴',       field: 'placebo_sleep',  type: 'accent' },
   { label: '効果スコア',           field: 'efficacy_star',  type: 'stars'  },
   { label: '効果発現',             field: 'onset_time',     type: 'val'    },
   { label: '投与法・頻度',         field: 'duration_hours', type: 'val'    },
@@ -1968,6 +1985,7 @@ function getRowDefs(category) {
   if (['ループ利尿薬', 'チアジド系利尿薬', 'カリウム保持性利尿薬'].includes(category)) return RENAL_ROWS;
   if (['緑内障', '加齢黄斑変性', 'ドライアイ'].includes(category)) return OPHTHALMO_ROWS;
   if (['アトピー性皮膚炎', '乾癬', 'ざ瘡・外用薬'].includes(category)) return DERMA_ROWS;
+  if (category === '褥瘡治療薬') return WOUND_ROWS;
   if (['HRT・更年期', '子宮内膜症', 'OC・避妊', '不妊治療'].includes(category)) return GYNECO_ROWS;
   if (['制吐薬（CINV）', '骨修飾薬'].includes(category)) return ONCOLOGY_ROWS;
   if (['ビタミン', 'ミネラル・電解質'].includes(category)) return NUTRITION_ROWS;
