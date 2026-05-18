@@ -1297,7 +1297,7 @@ const UROLOGY_ROWS = [
   { label: '⚠ 注意事項',      field: 'caution',        type: 'caution'},
 ];
 
-// 腎臓・利尿薬（全カテゴリ共通）
+// 腎臓・利尿薬
 const RENAL_ROWS = [
   { label: '作用部位・適応',       field: 'action_type',    type: 'mech'   },
   { label: '作用機序',             field: 'mechanism',      type: 'mech'   },
@@ -1307,6 +1307,34 @@ const RENAL_ROWS = [
   { label: '効果スコア',           field: 'efficacy_star',  type: 'stars'  },
   { label: '効果発現',             field: 'onset_time',     type: 'val'    },
   { label: '投与法・頻度',         field: 'duration_hours', type: 'val'    },
+  { label: '使い分けポイント',     field: 'guideline_rank', type: 'usecase'},
+  { label: 'エビデンス出典',       field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
+];
+// 高カリウム血症治療薬
+const HYPERKALEMIA_ROWS = [
+  { label: '適応',                 field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',             field: 'mechanism',      type: 'mech'   },
+  { label: 'K低下効果・特徴',      field: 'placebo_onset',  type: 'accent' },
+  { label: '他剤との違い・優位点', field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT',                  field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',           field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',             field: 'onset_time',     type: 'val'    },
+  { label: '投与法・用量',         field: 'duration_hours', type: 'val'    },
+  { label: '使い分けポイント',     field: 'guideline_rank', type: 'usecase'},
+  { label: 'エビデンス出典',       field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
+];
+// 高リン血症治療薬
+const HYPERPHOSPHATEMIA_ROWS = [
+  { label: '適応',                 field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',             field: 'mechanism',      type: 'mech'   },
+  { label: 'リン低下効果',         field: 'placebo_onset',  type: 'accent' },
+  { label: '特徴・既存薬との違い', field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT',                  field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',           field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',             field: 'onset_time',     type: 'val'    },
+  { label: '投与法・用量',         field: 'duration_hours', type: 'val'    },
   { label: '使い分けポイント',     field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典',       field: 'evidence',       type: 'evidence'},
   { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
@@ -2077,7 +2105,9 @@ function getRowDefs(category) {
   if (category === '骨粗鬆症') return OSTEOPOROSIS_ROWS;
   if (['甲状腺', '下垂体', '副甲状腺'].includes(category)) return THYROID_ROWS;
   if (['前立腺肥大', '過活動膀胱', 'ED'].includes(category)) return UROLOGY_ROWS;
-  if (['ループ利尿薬', 'チアジド系利尿薬', 'カリウム保持性利尿薬', '高カリウム血症治療薬', '高リン血症治療薬'].includes(category)) return RENAL_ROWS;
+  if (['ループ利尿薬', 'チアジド系利尿薬', 'カリウム保持性利尿薬'].includes(category)) return RENAL_ROWS;
+  if (category === '高カリウム血症治療薬') return HYPERKALEMIA_ROWS;
+  if (category === '高リン血症治療薬')     return HYPERPHOSPHATEMIA_ROWS;
   if (['緑内障', '加齢黄斑変性', 'ドライアイ'].includes(category)) return OPHTHALMO_ROWS;
   if (category === '感染性眼疾患') return OPHTHALMO_ROWS;
   if (['アトピー性皮膚炎', '乾癬', 'ざ瘡・外用薬', '皮膚感染症・外用抗菌薬', 'スキンケア・保湿剤'].includes(category)) return DERMA_ROWS;
