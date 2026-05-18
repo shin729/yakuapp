@@ -115,6 +115,8 @@ const DOMAINS = {
       { key: 'ループ利尿薬',         label: '💧 ループ利尿薬' },
       { key: 'チアジド系利尿薬',     label: '🔵 チアジド系' },
       { key: 'カリウム保持性利尿薬', label: '🟢 K保持性利尿薬' },
+      { key: '高カリウム血症治療薬', label: '⚡ 高K血症' },
+      { key: '高リン血症治療薬',     label: '🔴 高P血症' },
     ],
     defaultCat: 'ループ利尿薬',
     headBg:       'linear-gradient(180deg, #eff6ff 0%, #dbeafe 100%)',
@@ -2075,7 +2077,7 @@ function getRowDefs(category) {
   if (category === '骨粗鬆症') return OSTEOPOROSIS_ROWS;
   if (['甲状腺', '下垂体', '副甲状腺'].includes(category)) return THYROID_ROWS;
   if (['前立腺肥大', '過活動膀胱', 'ED'].includes(category)) return UROLOGY_ROWS;
-  if (['ループ利尿薬', 'チアジド系利尿薬', 'カリウム保持性利尿薬'].includes(category)) return RENAL_ROWS;
+  if (['ループ利尿薬', 'チアジド系利尿薬', 'カリウム保持性利尿薬', '高カリウム血症治療薬', '高リン血症治療薬'].includes(category)) return RENAL_ROWS;
   if (['緑内障', '加齢黄斑変性', 'ドライアイ'].includes(category)) return OPHTHALMO_ROWS;
   if (category === '感染性眼疾患') return OPHTHALMO_ROWS;
   if (['アトピー性皮膚炎', '乾癬', 'ざ瘡・外用薬', '皮膚感染症・外用抗菌薬', 'スキンケア・保湿剤'].includes(category)) return DERMA_ROWS;
