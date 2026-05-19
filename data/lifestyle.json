@@ -556,5 +556,23 @@
     "evidence": "Orimo H et al. Osteoporos Int 1994; META解析（複数試験）",
     "evidence_url": null,
     "caution": "高カルシウム血症（血清Ca・Crの定期モニタリング）。腎結石。eGFR<30で慎重"
+  },
+  {
+    "name": "ベムペド酸",
+    "brand": "ネクセトール",
+    "category": "脂質異常症治療薬",
+    "class": "ATPクエン酸リアーゼ（ACL）阻害薬",
+    "action_type": "肝臓でのコレステロール合成を阻害し、血中のLDLコレステロール値を低下させる。",
+    "mechanism": "肝臓において、コレステロール生合成経路のHMG-CoA還元酵素の上流に位置するATPクエン酸リアーゼ（ACL）を阻害する。これにより肝細胞内のコレステロール合成を抑制し、LDL受容体の発現を増加させて血中LDLコレステロールの取り込みを促進する。肝臓で特異的に活性化されるため、筋肉関連の副作用リスクが低いとされる。",
+    "efficacy_star": 4,
+    "placebo_onset": "6ヶ月時のLDLコレステロール値：プラセボ比で29.2 mg/dL低下（21.1%の差）",
+    "placebo_sleep": "主要エンドポイント（MACE）発生率：11.7%（プラセボ群：13.3%）",
+    "NNT": 62.5,
+    "onset_time": null,
+    "duration_hours": null,
+    "guideline_rank": "スタチン不耐容で心血管疾患がある、または高リスクな脂質異常症患者における心血管イベント抑制の治療選択肢となる。",
+    "evidence": "Bempedoic Acid and Cardiovascular Outcomes in Statin-Intolerant Patients Steven E Nissen N Engl J Med 2023（PMID: 36876740）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/36876740/",
+    "caution": "主な副作用として、痛風（3.1%）や胆石症（2.2%）のリスク上昇が報告されている。また、血清尿酸値、血清クレアチニン、肝酵素の上昇が認められる場合がある。スタチンと比較して、筋肉関連の副作用は発生しにくいとされる。"
   }
 ]

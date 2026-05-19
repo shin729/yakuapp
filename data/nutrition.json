@@ -292,5 +292,23 @@
     "evidence": "Heyland D et al. N Engl J Med 2013;368:1489-97（REDOXS・PMID:23594003）",
     "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/23594003/",
     "caution": "腎不全・肝不全患者への高用量静注グルタミンは死亡率増加リスク（REDOXS試験）→禁忌。高アンモニア血症（肝機能低下時）。アミノ酸代謝異常患者では慎重"
+  },
+  {
+    "name": "ヒスチジン亜鉛",
+    "brand": "ジンタス",
+    "category": "ミネラル・電解質",
+    "class": "低亜鉛血症治療剤",
+    "action_type": "血清亜鉛濃度を上昇・維持させ、低亜鉛血症を改善する。",
+    "mechanism": "本剤はヒスチジン亜鉛水和物を有効成分とする亜鉛補充剤である。経口投与後、小腸から吸収された亜鉛が血液中に入り、体内の様々な酵素の構成成分や活性化因子として働くことで、亜鉛欠乏状態を是正する。\nヒスチジンとの錯体形成により、従来の亜鉛製剤と比較して消化器への刺激を抑えつつ、効率的に亜鉛を供給する役割を果たす。",
+    "efficacy_star": 4,
+    "placebo_onset": "目標血清亜鉛濃度（80〜200μg/dL）の8週間維持率：86.4%（対照群：80.4%）",
+    "placebo_sleep": "目標血清亜鉛濃度の8週間維持達成率において、既存の酢酸亜鉛製剤に対する非劣性を確認",
+    "NNT": null,
+    "onset_time": "対照薬と比較して目標濃度の維持を早期に達成する傾向が認められた",
+    "duration_hours": null,
+    "guideline_rank": "低亜鉛血症に対し、血清亜鉛値に基づき1日50mg又は100mgを開始用量とし、目標濃度（80〜200μg/dL）維持を目的に投与する。既存薬に対し非劣性が確認されている。",
+    "evidence": "Randomized, multicenter, active-controlled open-label study of NPC-25, zinc histidine hydrate, (non-inferiority to NOBELZIN™, zinc acetate dihydrate) for patients with hypozincemia. Asaoka D, et al. J Trace Elem Med Biol. 2025 (PMID: 39705879)",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/39705879/",
+    "caution": "主な副作用は悪心（2.8%）や嘔吐（0.9%）であるが、既存の酢酸亜鉛製剤と比較して発現頻度が低い。血清亜鉛濃度の過度な上昇を避けるため、定期的なモニタリングと適切な用量調整が必要である。"
   }
 ]

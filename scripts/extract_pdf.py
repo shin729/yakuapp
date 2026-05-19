@@ -98,20 +98,20 @@ async def resolve_pmda_url(drug_name_ja: str) -> str | None:
     return url
 
 async def _search_pmda_playwright(drug_name: str) -> str | None:
-    """PlaywrightでPMDA検索し、最初のview=body URLを返す"""
+    """PlaywrightでPMDA検索し、添付文書URL（HTML or PDF）を返す"""
     from playwright.async_api import async_playwright
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         context = await browser.new_context()
         page = await context.new_page()
 
-        found_url = None
-        pack_ids = []
+        collected_urls: list[str] = []
 
-        # レスポンスを監視してgo/packのURLを拾う
+        # レスポンスを監視してgo/packまたはResultDataSetPDFのURLを拾う
         async def on_response(response):
-            if 'info.pmda.go.jp/go/pack' in response.url:
-                pack_ids.append(response.url)
+            url = response.url
+            if 'info.pmda.go.jp/go/pack' in url or 'ResultDataSetPDF' in url:
+                collected_urls.append(url)
 
         page.on('response', on_response)
 
@@ -119,45 +119,54 @@ async def _search_pmda_playwright(drug_name: str) -> str | None:
             await page.goto('https://www.pmda.go.jp/PmdaSearch/iyakuSearch/')
             await page.wait_for_load_state('networkidle')
 
-            # cookie経由の検索条件を設定してPOST
-            search_cond = json.dumps({
-                'nameWord': drug_name,
-                'iyakuHowtoNameSearchRadioValue': '1',
-                'howtoMatchRadioValue': '1',
-            })
-            await context.add_cookies([{
-                'name': 'SearchCond_Iyaku',
-                'value': search_cond,
-                'domain': 'www.pmda.go.jp',
-                'path': '/',
-            }])
-
             await page.fill('#txtName', drug_name)
             await page.wait_for_timeout(300)
-            await page.evaluate("document.querySelector('form[name=\"iyakuSearchActionForm\"]').submit()")
+            # PMDA検索ボタン（image型）をクリック
+            try:
+                await page.click('input[name="btnA"]')
+            except Exception:
+                await page.evaluate(
+                    "document.querySelector('form[name=\"iyakuSearchActionForm\"]').submit()"
+                )
             await page.wait_for_load_state('networkidle')
             await page.wait_for_timeout(4000)
 
-            # ページ内のgo/packリンクを収集
-            links = await page.eval_on_selector_all(
+            # ページ内リンクを両形式で収集
+            pack_links = await page.eval_on_selector_all(
                 'a[href*="info.pmda.go.jp/go/pack"]',
                 'els => els.map(e => e.href)'
             )
-            pack_ids.extend(links)
+            pdf_links = await page.eval_on_selector_all(
+                'a[href*="ResultDataSetPDF"]',
+                'els => els.map(e => e.href)'
+            )
+            collected_urls.extend(pack_links)
+            collected_urls.extend(pdf_links)
 
         except Exception as e:
             print(f"  Playwright検索エラー: {e}")
         finally:
             await browser.close()
 
-        if pack_ids:
-            # 最初のpack IDからview=body URLを構築
-            raw = pack_ids[0].rstrip('/')
+        if not collected_urls:
+            return None
+
+        # go/pack形式（HTML）を優先、なければResultDataSetPDF（PDF）を使用
+        pack_urls = [u for u in collected_urls if 'info.pmda.go.jp/go/pack' in u]
+        pdf_urls  = [u for u in collected_urls if 'ResultDataSetPDF' in u]
+
+        if pack_urls:
+            raw = pack_urls[0].rstrip('/')
             pack_id = raw.split('/go/pack/')[-1].split('/')[0]
             found_url = f'https://www.info.pmda.go.jp/go/pack/{pack_id}/{pack_id}?view=body&lang=ja'
-            print(f"  発見: {found_url}")
+            print(f"  発見(HTML): {found_url}")
+            return found_url
+        elif pdf_urls:
+            found_url = pdf_urls[0]
+            print(f"  発見(PDF): {found_url}")
+            return found_url
 
-        return found_url
+        return None
 
 
 # ============================================================

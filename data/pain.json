@@ -413,7 +413,7 @@
   },
   {
     "name": "リメゲパント",
-    "brand": "ナリメプラント",
+    "brand": "ナルティークOD",
     "category": "片頭痛",
     "class": "ゲパント系（CGRP受容体小分子拮抗薬）",
     "action_type": "片頭痛急性期治療・予防（二重適応）",
@@ -987,5 +987,24 @@
     "evidence_url": null,
     "caution": "傾眠・めまい・疲労・悪心。CYP2C19誘導薬やカルバマゼピン併用で血中濃度低下に注意。カルバマゼピン活性代謝物の濃度上昇あり。自殺念慮・攻撃性等の精神症状悪化に留意。",
     "guideline_url": null
+  },
+  {
+    "name": "アトゲパント",
+    "brand": "アクイプタ",
+    "category": "片頭痛",
+    "class": "CGRP受容体拮抗薬（ゲパント）",
+    "action_type": "片頭痛予防のための経口CGRP受容体拮抗薬",
+    "mechanism": "経口投与可能な低分子CGRP受容体拮抗薬（ゲパント）。三叉神経終末から放出されるCGRPによって誘発される血漿蛋白質漏出、神経原性炎症および血管拡張を抑制する。単独では血管収縮作用を惹起しないため、トリプタン製剤が使用できない心血管系リスクのある患者への応用も期待される作用機序を持つ。",
+    "efficacy_star": 4,
+    "placebo_onset": "12週間平均の月間片頭痛日数 プラセボ比-1.2〜-1.7日（60mg群で-1.7日）",
+    "placebo_sleep": "50%改善達成率 55.6〜60.8%（プラセボ群 29.0%）",
+    "NNT": null,
+    "onset_time": null,
+    "duration_hours": null,
+    "guideline_rank": "頭痛の診療ガイドライン2021推奨グレードA。大規模臨床試験で有意な片頭痛予防効果が実証されている。既存の予防薬が奏効しない症例に対しても有効性が確認されており、反復性片頭痛の予防に有効とされる。",
+    "evidence": "Atogepant for the Preventive Treatment of Migraine Ailani J et al. N Engl J Med 2021（PMID:34407343）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/34407343/",
+    "caution": "主な副作用は便秘、悪心、眠気、浮動性めまいである。重篤な肝障害の報告はないが、浮動性めまいや傾眠の副作用があるため、海外では投与後8時間以内に自動車運転や機械操作に従事しないよう注意喚起がなされている例がある。",
+    "guideline_url": "https://www.jhsnet.net/pdf/guideline_2021.pdf"
   }
 ]

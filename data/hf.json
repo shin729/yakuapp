@@ -592,5 +592,24 @@
     "evidence": "CIBIS-II試験（Lancet 1999 PMID:10023943）",
     "evidence_url": null,
     "caution": "急激な中断禁忌（反跳性狭心症）。気管支喘息・末梢動脈疾患では慎重。糖尿病でビラン症状をマスクする可能性"
+  },
+  {
+    "name": "アコラミジス",
+    "brand": "ビヨントラ",
+    "category": "HFpEF治療薬",
+    "class": "トランスサイレチン（TTR）安定化薬",
+    "action_type": "TTR四量体の解離を阻害し、アミロイド形成を抑制する作用",
+    "mechanism": "高親和性のトランスサイレチン（TTR）安定化薬である。TTR四量体の解離を強力に阻害（90％以上の安定化）し、アミロイド形成の原因となる変性モノマーの生成を抑制することで、心筋へのアミロイド沈着を防止する。第3相試験（ATTRibute-CM）において、全死亡や心血管入院のリスクを有意に低下させ、血清TTR濃度を速やかかつ持続的に上昇させることが示されている。",
+    "efficacy_star": 5,
+    "placebo_onset": "主要評価項目（全死亡、心血管関連入院、NT-proBNP、6分間歩行距離）において有意な改善（P<0.001）",
+    "placebo_sleep": "血清TTR濃度の速やかな上昇（プラセボ比で有意な改善）",
+    "NNT": null,
+    "onset_time": "投与後早期から（速やか）",
+    "duration_hours": "12時間（1日2回投与）",
+    "guideline_rank": "JCS/JHRS 2020年改訂版刊行後の薬剤。最新エビデンスに基づき、トランスサイレチン型心アミロイドーシス（ATTR-CM）の予後改善を目的として使用される。",
+    "evidence": "ATTRibute-CM Gillmore JD et al. N Engl J Med 2024（PMID:38197816）",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/38197816/",
+    "caution": "主な副作用はプラセボと同程度であり、感染症や心不全の増悪が報告されているが、特異的な重大な副作用は確立されていない。eGFR 30mL/min/1.73m2未満の重度腎機能障害患者における有効性および安全性は未確立であるため、投与に際しては注意が必要である。",
+    "guideline_url": "https://www.j-circ.or.jp/cms/wp-content/uploads/2020/01/JCS2020_Ono.pdf"
   }
 ]

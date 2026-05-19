@@ -616,5 +616,23 @@
     "evidence": "Blume-Peytavi U et al. J Dtsch Dermatol Ges 2014;12:569-79（おむつ皮膚炎管理）",
     "evidence_url": null,
     "caution": "乾燥した皮疹への使用で過乾燥・亀裂リスク（湿潤皮疹専用）。白色軟膏が衣類に付着・洗濯困難。剥がすときに皮膚を引っ張らないよう注意。感染皮疹への使用は感染を閉じ込めるリスク"
+  },
+  {
+    "name": "リトレシチニブ",
+    "brand": "リットフーロ",
+    "category": "円形脱毛症",
+    "class": "JAK3/TEC阻害剤",
+    "action_type": "JAK3およびTECファミリーキナーゼを選択的に阻害する経口薬",
+    "mechanism": "JAK3およびTECファミリーキナーゼを選択的に阻害することで、IL-15やIL-21などのサイトカインシグナル伝達を抑制し、T細胞の活性化や炎症反応を抑える。尋常性白斑や円形脱毛症の病態に関与する免疫反応を制御し、皮膚の再色素沈着や毛髪の再生を促進すると考えられている経口JAK阻害剤である。",
+    "efficacy_star": 4,
+    "placebo_onset": "24週時点のF-VASI変化率：50mg群 -21.2%（プラセボ群 2.1%、P < 0.001）",
+    "placebo_sleep": "24週間の延長投与期間におけるリトレシチニブ200/50mg投与による改善の加速",
+    "NNT": null,
+    "onset_time": "24週（主要評価項目評価時）",
+    "duration_hours": null,
+    "guideline_rank": "PMDA承認の効能は「円形脱毛症（脱毛部位が広範囲に及ぶ難治例に限る）」。通常、成人及び12歳以上の小児に50mgを1日1回投与する。広範囲な脱毛を有する重症例における選択肢となる。",
+    "evidence": "Efficacy and safety of oral ritlecitinib for the treatment of active nonsegmental vitiligo: A randomized phase 2b clinical trial Ezzedine K et al. J Am Acad Dermatol 2023 (PMID: 36370907)",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/36370907/",
+    "caution": "主な副作用は上気道感染、頭痛。重篤な感染症、結核、血液学的異常（好中球減少、リンパ球減少等）に注意が必要。投与前の感染症スクリーニングと投与中の定期的な血液検査が推奨される。生ワクチン接種は避けること。"
   }
 ]

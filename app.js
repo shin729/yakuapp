@@ -146,6 +146,7 @@ const DOMAINS = {
       { key: 'アトピー性皮膚炎',       label: '🧴 アトピー性皮膚炎' },
       { key: '乾癬',                   label: '🔴 乾癬' },
       { key: 'ざ瘡・外用薬',           label: '💊 ざ瘡・外用薬' },
+      { key: '円形脱毛症',             label: '💈 円形脱毛症' },
       { key: '褥瘡治療薬',             label: '🩹 褥瘡治療薬' },
       { key: '皮膚感染症・外用抗菌薬', label: '🦠 皮膚感染症・外用抗菌薬' },
       { key: 'スキンケア・保湿剤',     label: '💧 スキンケア・保湿剤' },
@@ -402,10 +403,14 @@ const DOMAINS = {
   antiviral: {
     file: './data/antivirals.json',
     categories: [
-      { key: '抗ヘルペス/CMV薬', label: '💊 抗ヘルペス/CMV薬' },
-      { key: '抗HIV薬',          label: '🔴 抗HIV薬' },
-      { key: '抗マラリア薬',     label: '🌿 抗マラリア薬' },
-      { key: 'その他原虫薬',     label: '🦠 その他原虫薬' },
+      { key: '抗ヘルペス/CMV薬',    label: '💊 抗ヘルペス/CMV薬' },
+      { key: '抗HIV薬',            label: '🔴 抗HIV薬' },
+      { key: '抗インフルエンザ薬', label: '🤧 抗インフルエンザ薬' },
+      { key: '抗COVID-19薬',       label: '🦠 抗COVID-19薬' },
+      { key: '抗HBV薬',            label: '🟡 抗HBV薬' },
+      { key: 'エムポックス・天然痘',label: '🔶 エムポックス・天然痘' },
+      { key: '抗マラリア薬',       label: '🌿 抗マラリア薬' },
+      { key: 'その他原虫薬',       label: '🦠 その他原虫薬' },
     ],
     defaultCat:   '抗ヘルペス/CMV薬',
     headBg:       'linear-gradient(180deg, #fffbeb 0%, #fef3c7 100%)',
@@ -2110,7 +2115,7 @@ function getRowDefs(category) {
   if (category === '高リン血症治療薬')     return HYPERPHOSPHATEMIA_ROWS;
   if (['緑内障', '加齢黄斑変性', 'ドライアイ'].includes(category)) return OPHTHALMO_ROWS;
   if (category === '感染性眼疾患') return OPHTHALMO_ROWS;
-  if (['アトピー性皮膚炎', '乾癬', 'ざ瘡・外用薬', '皮膚感染症・外用抗菌薬', 'スキンケア・保湿剤'].includes(category)) return DERMA_ROWS;
+  if (['アトピー性皮膚炎', '乾癬', 'ざ瘡・外用薬', '円形脱毛症', '皮膚感染症・外用抗菌薬', 'スキンケア・保湿剤'].includes(category)) return DERMA_ROWS;
   if (category === '消毒薬') return DERMA_ROWS;
   if (category === '褥瘡治療薬') return WOUND_ROWS;
   if (['筋弛緩薬', '変形性関節症'].includes(category)) return ORTHO_ROWS;
