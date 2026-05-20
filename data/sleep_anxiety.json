@@ -147,9 +147,9 @@
     "efficacy_star": 3,
     "placebo_onset": "入眠時間−18分（国内データ）",
     "placebo_sleep": "総睡眠+50分（国内データ）",
-    "NNT": "未算出（国内エビデンス限定）",
+    "NNT": null,
     "duration_hours": "18〜38時間（長時間型）",
-    "guideline_rank": "中等度の睡眠維持障害に。筋弛緩・抗不安作用もあり（BZ系）",
+    "guideline_rank": "中等度の睡眠維持障害に。筋弛緩・抗不安作用もあり（BZ系）（NNT：国内データ限定のため未算出）",
     "evidence": "国内添付文書（JAPIC）",
     "caution": "翌日の眠気・依存性・筋弛緩作用に注意"
   },
