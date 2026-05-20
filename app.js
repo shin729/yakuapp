@@ -248,6 +248,7 @@ const DOMAINS = {
       { key: 'TNF阻害薬',        label: '🎯 TNF阻害薬' },
       { key: 'IL阻害薬',         label: '💉 IL阻害薬' },
       { key: 'JAK阻害薬',        label: '🔬 JAK阻害薬' },
+      { key: 'T細胞共刺激阻害薬', label: '🧩 T細胞共刺激阻害薬' },
       { key: '全身性免疫抑制薬', label: '💊 全身性免疫抑制薬' },
     ],
     defaultCat: 'csDMARD',
