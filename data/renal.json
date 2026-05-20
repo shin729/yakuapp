@@ -314,11 +314,11 @@
     "mechanism": "非吸収性の陽イオン交換ポリマーであり、腸管（主に遠位大腸）においてカリウムイオンを捕捉・結合する。これにより糞便中へのカリウム排泄を増加させ、血清中のカリウム濃度を低下させる作用を持つ。経口投与後、消化管を通過する過程で作用を発揮する。",
     "efficacy_star": 3,
     "placebo_onset": "OPAL-HK試験：投与4週でK⁺0.65 mEq/L低下（プラセボ比）。DIAMOND試験：RAAS阻害薬継続下での心不全患者のK⁺管理に有効",
-    "placebo_sleep": null,
+    "placebo_sleep": "ロケルマより緩やかな作用発現（4〜7時間）。慢性高K血症の長期管理向き。急性高K血症（透析前緊急等）にはロケルマが優先",
     "NNT": null,
     "onset_time": "4〜7時間（K低下効果発現）。ロケルマより遅め",
     "duration_hours": "8.4g 1日1回（開始用量）→K値に応じ4.2〜25.2g/日に調整。食事中または食直後に冷水50mL以上に懸濁",
-    "guideline_rank": null,
+    "guideline_rank": "CKD患者でRAAS阻害薬（ACE阻害薬/ARB）を継続しながら慢性高カリウム血症を管理する第一選択薬の一つ。ロケルマより緩徐なため急性高K血症の緊急処置には不向き。外来・慢性管理向け。",
     "evidence": "A randomized study to compare oral potassium binders in the treatment of acute hyperkalemia Cañas AE et al. BMC Nephrol 2023 (PMID: 37016309)",
     "evidence_url": null,
     "caution": "主な副作用は下痢、便秘、腹痛、吐き気などの胃腸症状。禁忌・除外基準として、最近の腸管手術歴、イレウス、糖尿病性ケトアシドーシス、または投与後4時間以内の緊急透析の予定がある場合などが挙げられる。"
