@@ -608,7 +608,7 @@
     "duration_hours": "800mg 1日2回 食後",
     "guideline_rank": "JCS/JHRS 2020年改訂版不整脈薬物治療ガイドラインには未掲載。ATTR-CM治療における選択的TTR安定化薬。全死亡や心血管関連入院を抑制する予後改善薬として位置付けられる。",
     "evidence": "ATTRibute-CM Trial Judge DP et al. J Am Coll Cardiol 2025（PMID:40074465）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/40074465/",
+    "evidence_url": null,
     "caution": "臨床試験（ATTRibute-CM）において良好な忍容性が示されている。副作用として感染症や消化器症状がみられる場合がある。TTR安定化による疾患修飾を目的とするため、心不全の標準治療と適切に併用する。投与に際しては最新の国内添付文書における警告・禁忌・副作用情報を必ず参照すること。",
     "guideline_url": "https://www.j-circ.or.jp/cms/wp-content/uploads/2020/01/JCS2020_Ono.pdf"
   }

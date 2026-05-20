@@ -572,7 +572,7 @@
     "duration_hours": "1日1回 180mg 内服（食事に関係なく服用可）",
     "guideline_rank": "最大耐用量のスタチン等の脂質低下療法下でもLDL-Cが十分に低下しない、心血管疾患リスクの高い患者や家族性高コレステロール血症患者への追加投与として検討される。",
     "evidence": "CLEAR Wisdom Randomized Clinical Trial Anne C Goldberg et al. JAMA. 2019（PMID:31714986）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/31714986/",
+    "evidence_url": null,
     "caution": "主な副作用は鼻咽頭炎(5.2%)、尿路感染症(5.0%)。プラセボ群（1.9%）と比較して高尿酸血症（4.2%）の発現率が高いため、投与中の尿酸値変動には注意が必要である。"
   }
 ]

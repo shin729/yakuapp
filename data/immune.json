@@ -446,7 +446,7 @@
     "duration_hours": "1日2回経口投与",
     "guideline_rank": "既存療法（マイコフェノール酸 モフェチルおよび低用量ステロイド）への上乗せ療法として、増殖型ループス腎炎における腎寛解率を有意に改善する。",
     "evidence": "Efficacy of Voclosporin in Proliferative Lupus Nephritis with High Levels of Proteinuria Hanni Menn-Josephy Clin J Am Soc Nephrol 2024 (PMID: 38110196)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/38110196/",
+    "evidence_url": null,
     "caution": "主な副作用は感染症、頭痛、高血圧、腎機能低下（eGFR減少）。投与中は腎機能の定期的モニタリングが推奨される。有害事象の全体的な発生率はプラセボ群と同程度である。"
   }
 ]

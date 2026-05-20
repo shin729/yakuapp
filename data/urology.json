@@ -212,7 +212,7 @@
     "duration_hours": "性交1時間前に25〜100mg 頓服（食事の影響受けやすい）",
     "guideline_rank": "ED第一選択。PDE5阻害薬中で最も使用経験が豊富。食事（高脂肪食）の影響を受けるため空腹時服用が推奨。肺高血圧にはレバチオ（低用量）として適応",
     "evidence": "Goldstein I et al. N Engl J Med 1998;338:1397-404（PMID:9580503）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/9580503/",
+    "evidence_url": null,
     "caution": "硝酸薬（ニトログリセリン等）との併用絶対禁忌（急激な血圧低下・死亡例報告）。α₁遮断薬との併用で血圧低下増強。視覚障害（青みがかった視野変化・NAION）。心血管イベントリスク患者では性行為自体のリスク評価が必要"
   },
   {
@@ -230,7 +230,7 @@
     "duration_hours": "頓服：性交1〜2時間前に10〜20mg（食事の影響なし）\n毎日服用：5mg/日（BPH合併例・頻回性交希望）",
     "guideline_rank": "現在最も使用頻度の高いPDE5阻害薬。食事の影響なし・36時間効果持続が最大の利点。BPH合併EDにはザルティア（5mg/日）が適応。毎日服用で自発性の高い性生活を維持可能",
     "evidence": "Porst H et al. Eur Urol 2003;43:206-12（PMID:12600430）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/12600430/",
+    "evidence_url": null,
     "caution": "硝酸薬との併用絶対禁忌。背部痛・筋肉痛（PDE11阻害による、他のPDE5阻害薬より多い）。CYP3A4阻害薬（ケトコナゾール等）で血中濃度上昇。重篤な肝機能障害・重篤な腎機能障害では禁忌または減量"
   },
   {

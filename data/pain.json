@@ -985,7 +985,7 @@
     "duration_hours": "75mg OD錠 1回1錠 頓服（急性期）または1日1錠（予防・発症抑制）",
     "guideline_rank": "頭痛の診療ガイドライン2021：急性期治療で「強い推奨、エビデンスの確実性A」、予防療法で「Group 1（有効）」と評価。血管収縮を伴わない新しい特異的治療薬として推奨される。",
     "evidence": "Rimegepant, an oral calcitonin gene-related peptide receptor antagonist, for migraine. Lipton RB et al. N Engl J Med 2019（PMID: 31291516）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/31291516/",
+    "evidence_url": null,
     "caution": "主な副作用は悪心、めまい、傾眠等。トリプタン特有の血管収縮作用はないが、重度の肝障害患者等への投与は慎重に行う必要がある。強力なCYP3A4阻害薬または誘導薬との併用は、本剤の血中濃度に影響を及ぼすため注意を要する。国内での最新の承認情報および添付文書を確認すること。",
     "guideline_url": "https://www.jhsnet.net/pdf/guideline_2021.pdf"
   },
@@ -1004,7 +1004,7 @@
     "duration_hours": "60mg 1日1回 内服（食事に関係なく）",
     "guideline_rank": "頭痛の診療ガイドライン2021：有効性が確立された薬剤（Group 1）として分類。反復性片頭痛の予防療法に推奨される。作成時点では国内未承認であった。",
     "evidence": "ELEVATE trial, Tassorelli C, Lancet Neurol 2024 (PMID:38364831)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/38364831/",
+    "evidence_url": null,
     "caution": "主な副作用は悪心、便秘、傾眠。重篤な有害事象の報告は少なく、既存の経口予防薬（2～4クラス）が奏効しない症例での有効性も実証されている。妊婦への安全性は未確立。肝機能への影響については、臨床試験においてプラセボ群と同等であることが示されている。",
     "guideline_url": "https://www.jhsnet.net/pdf/guideline_2021.pdf"
   }

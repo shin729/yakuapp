@@ -1168,7 +1168,7 @@
     "duration_hours": "0.92mg 1日1回（1日目0.23mg→7日目0.46mg→14日目0.92mgと漸増）",
     "guideline_rank": "2024年AGAガイドラインにて、バイオ製剤未治療の中等症〜重症潰瘍性大腸炎に対する寛解導入療法の第一選択薬の一つとして、リサンキズマブと並び最高位に推奨されている。",
     "evidence": "Comparative Efficacy of Advanced Therapies for Management of Moderate-to-Severe Ulcerative Colitis: 2024 American Gastroenterological Association Evidence Synthesis Ashwin N Ananthakrishnan et al. Gastroenterology 2024 (PMID: 39425738)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/39425738/",
+    "evidence_url": null,
     "caution": "主な副作用は徐脈、房室ブロック、肝機能酵素上昇、黄斑浮腫、感染症リスク増大。投与開始初期に心拍数低下が生じる可能性があるため、心血管疾患患者への投与には注意が必要。また、リンパ球減少に伴う日和見感染症に留意し、投与開始前および期間中に適切なモニタリングを行うこと。"
   },
   {

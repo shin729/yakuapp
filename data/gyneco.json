@@ -32,7 +32,7 @@
     "duration_hours": "0.72〜1.44mg（貼付剤）週2回（3〜4日ごと）貼付",
     "guideline_rank": "血栓リスクのある患者・肝機能障害・高TG血症・片頭痛患者への経口エストラジオール代替として推奨。喫煙者にも相対的に安全。欧米ガイドラインで経皮HRTは血栓リスクが低いとして推奨",
     "evidence": "Scarabin PY et al. Lancet 2003;362:428-32（PMID:12927428）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/12927428/",
+    "evidence_url": null,
     "caution": "貼付部位皮膚反応（発赤・かゆみ）。子宮のある女性はプロゲスチン必須。乳がん禁忌。血栓症既往は経皮でも相対禁忌。グレープフルーツとの相互作用なし（肝代謝を経ないため）"
   },
   {
@@ -68,7 +68,7 @@
     "duration_hours": "2.5〜10mg 1日1回 内服（周期的：月の一部/連続的：毎日）",
     "guideline_rank": "HRTでの子宮内膜保護に必須（子宮摘出者を除く）。WHI試験でMPA併用HRTが乳がんリスクをわずかに増加→天然型プロゲステロン（ジドロゲステロン等）への切り替えが推奨される傾向",
     "evidence": "Rossouw JE et al. JAMA 2002;288:321-33（PMID:12117397）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/12117397/",
+    "evidence_url": null,
     "caution": "乳がんリスク（エストロゲン単独より高い）。気分変動・浮腫・体重増加。静脈血栓塞栓症（合成プロゲスチンは経口エストロゲンと相乗リスク）。脂質プロファイルへの悪影響（HDL低下）"
   },
   {
@@ -104,7 +104,7 @@
     "duration_hours": "1〜2mg 1日1回 内服（月経周期に関係なく連続投与）",
     "guideline_rank": "子宮内膜症疼痛の第一選択内服薬（ESHRE・JSOG推奨）。GnRHアゴニストと同等の疼痛改善で長期継続可。妊娠希望がない場合は長期継続可能。妊娠希望時は一時中止→月経再開後に妊娠試みる",
     "evidence": "Strowitzki T et al. Hum Reprod 2010;25:633-41（PMID:20022899）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/20022899/",
+    "evidence_url": null,
     "caution": "不正出血（特に初期3ヶ月・スポッティング）。無月経（長期使用）→骨密度低下（軽度）。体重増加。気分変動・うつ。妊娠中禁忌。肝機能障害患者では慎重投与"
   },
   {
@@ -140,7 +140,7 @@
     "duration_hours": "40mg 1日1回 内服（ADD-BACK：E+P配合錠との固定合剤も）",
     "guideline_rank": "GnRHアゴニスト注射が困難・flare upを避けたい・経口を希望する患者に。ADD-BACKと組み合わせで長期（最大24ヶ月）使用可能（海外）。日本では6ヶ月まで（単独）",
     "evidence": "Taylor HS et al. N Engl J Med 2017;377:28-40（PMID:28677946）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/28677946/",
+    "evidence_url": null,
     "caution": "更年期様症状（hot flush・骨密度低下）。ADD-BACKなしでは骨密度低下リスク。妊娠中禁忌（催奇形性）。QT延長薬との相互作用注意。CYP3A4誘導薬で効果減弱"
   },
   {
@@ -464,7 +464,7 @@
     "duration_hours": "1シート28錠（E4 15mg/ドロスピレノン3mg 実錠21錠＋プラセボ7錠）毎日同じ時間に1錠",
     "guideline_rank": "2025年発表の臨床試験において、月経困難症に対する有効な治療選択肢であり、従来の製剤と比較して血栓塞栓症リスクを低減できる可能性が示唆されている。",
     "evidence": "Efficacy and safety of estetrol (15 mg)/drospirenone (3 mg) combination in a cyclic regimen for the treatment of primary and secondary dysmenorrhea. Osuga Y, et al. Fertil Steril. 2025 (PMID: 39521109)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/39521109/",
+    "evidence_url": null,
     "caution": "主な副作用は不正出血（間欠出血）であり、従来の経口避妊薬と同様の傾向を示す。凝固・線溶系への影響はエチニルエストラジオール含有製剤よりも有意に小さいことが報告されているが、血栓塞栓症等に関する一般的な注意は必要である。"
   },
   {
@@ -482,7 +482,7 @@
     "duration_hours": "24時間",
     "guideline_rank": "月経困難症および子宮内膜症に伴う疼痛の治療における第一選択薬の一つ（低用量エストロゲン・プロゲスチン配合薬）。",
     "evidence": "Efficacy and safety of estetrol (15 mg)/drospirenone (3 mg) combination in a cyclic regimen for the treatment of primary and secondary dysmenorrhea: a multicenter, placebo-controlled, double-blind, randomized study Osuga Y et al. Fertil Steril. 2025 (PMID: 39521109)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/39521109/",
+    "evidence_url": null,
     "caution": "禁忌：血栓症、前兆を伴う偏頭痛、喫煙、高血圧、乳癌等。副作用：不正出血、悪心、頭痛等。重大な副作用として血栓症があり、下肢の疼痛・腫脹、突然の息切れ、激しい頭痛、視力障害等の症状が現れた場合は直ちに服用を中止し受診すること。"
   },
   {
@@ -500,7 +500,7 @@
     "duration_hours": "24時間",
     "guideline_rank": "第3相試験で子宮筋腫の過多月経に有効性を確認。100mg単独投与は、ホルモン補充療法を希望しない、または使用できない患者における独自の治療選択肢となる。",
     "evidence": "Linzagolix with and without hormonal add-back therapy for the treatment of symptomatic uterine fibroids: two randomised, placebo-controlled, phase 3 trials. Donnez J et al. Lancet 2022 (PMID: 36116480)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/36116480/",
+    "evidence_url": null,
     "caution": "主な副作用はホットフラッシュ（200mg単独群で32-35%）。エストロゲン低下に伴う骨密度減少や更年期様症状に注意が必要である。200mg投与時は通常ホルモン補充療法（ABT）の併用を検討し、100mg単独はABTを望まない患者の選択肢となる。"
   }
 ]

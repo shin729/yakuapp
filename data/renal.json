@@ -104,7 +104,7 @@
     "duration_hours": "1日1回 1.25〜2.5mg 内服",
     "guideline_rank": "代謝障害（糖尿病・脂質異常症）合併高血圧に適する。利尿効果よりも血管拡張作用が降圧の主体。ESH/ESCガイドラインでヒドロクロロチアジドの代替として推奨",
     "evidence": "PROGRESS Collaborative Group. Lancet 2001;358:1033-41（PMID:11589932）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/11589932/",
+    "evidence_url": null,
     "caution": "低K血症（チアジドより少ないが注意）・高尿酸血症。スルホンアミドアレルギー。重篤な腎不全（GFR<30）では効果減弱。QT延長（低K血症を介して）"
   },
   {
@@ -122,7 +122,7 @@
     "duration_hours": "心不全：1日1回 25mg（最大50mg）内服\n腹水：1日1回 100〜400mg 内服",
     "guideline_rank": "HFrEF（EF<35%）の4大柱のひとつ（RALES試験）。ACE阻害薬・β遮断薬との3剤併用で予後改善エビデンス確立。アンドロゲン・プロゲステロン受容体も遮断→女性化乳房・月経不順が問題",
     "evidence": "Pitt B et al. N Engl J Med 1999;341:709-17（PMID:10471456）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/10471456/",
+    "evidence_url": null,
     "caution": "高K血症（腎機能障害・RAAS阻害薬併用で危険）。女性化乳房（男性）・月経不順（女性）（アンドロゲン受容体拮抗による）。重篤な腎不全（GFR<30）では禁忌または極慎重。ACE阻害薬/ARBとの3剤併用は高K血症・腎機能悪化リスク"
   },
   {
@@ -140,7 +140,7 @@
     "duration_hours": "心不全：1日1回 25mg（最大50mg）内服\n高血圧：1日1回 50〜100mg",
     "guideline_rank": "スピロノラクトンの副作用（女性化乳房）が問題になる男性患者の代替として優先。HFrEF患者でESC/JCS心不全ガイドライン推奨クラスI（LVEF<35%・症候性）",
     "evidence": "Zannad F et al. N Engl J Med 2011;364:11-21（PMID:21073363）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/21073363/",
+    "evidence_url": null,
     "caution": "高K血症（スピロノラクトンと同等リスク）。重篤な腎機能障害（GFR<30）では禁忌。CYP3A4阻害薬（ケトコナゾール等）で血中濃度上昇→禁忌。マイクロゾームCYP3A4基質。女性化乳房は少ないが皮疹あり"
   },
   {
@@ -194,7 +194,7 @@
     "duration_hours": "急性期：1回10g 1日3回×48時間→維持：1回5g 1日1回（最大15g/日）。水50mLに懸濁して服用",
     "guideline_rank": "KDIGO・JSN（日本腎臓学会）ガイドラインで高K血症の標準治療薬として推奨。効果発現が速く急性高K血症にも対応可能。ポリスチレン系（カリメート・アーガメイト）より安全性プロファイルが優れる",
     "evidence": "Packham DK et al. N Engl J Med 2015;372:222-31（PMID:25415807）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/25415807/",
+    "evidence_url": null,
     "caution": "浮腫（Na⁺交換によりNa負荷増加→心不全・高血圧患者は用量調整）。過補正による低K血症（K<3.5 mEq/Lで休薬）。他の経口薬との同時服用2時間前後を避ける（K捕捉により吸収影響の可能性）。重篤な消化管運動障害では慎重投与"
   },
   {
@@ -320,7 +320,7 @@
     "duration_hours": "8.4g 1日1回（開始用量）→K値に応じ4.2〜25.2g/日に調整。食事中または食直後に冷水50mL以上に懸濁",
     "guideline_rank": null,
     "evidence": "A randomized study to compare oral potassium binders in the treatment of acute hyperkalemia Cañas AE et al. BMC Nephrol 2023 (PMID: 37016309)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/37016309/",
+    "evidence_url": null,
     "caution": "主な副作用は下痢、便秘、腹痛、吐き気などの胃腸症状。禁忌・除外基準として、最近の腸管手術歴、イレウス、糖尿病性ケトアシドーシス、または投与後4時間以内の緊急透析の予定がある場合などが挙げられる。"
   }
 ]

@@ -68,7 +68,7 @@
     "duration_hours": "予防：0.4〜0.8mg 1日1回 内服（妊娠前1ヶ月〜妊娠3ヶ月）。MTX補助：5mg/週（MTX翌日）",
     "guideline_rank": "妊娠計画中の全女性に葉酸補充（0.4mg/日）が推奨（JSOGガイドライン・WHO・CDC）。神経管閉鎖障害リスク高い場合（前回出産既往・てんかん薬服用者）は4〜5mg/日。MTX使用全患者に葉酸5mg/週補充",
     "evidence": "MRC Vitamin Study Research Group. Lancet 1991;338:131-7（PMID:1677062）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/1677062/",
+    "evidence_url": null,
     "caution": "B12欠乏を隠蔽する（葉酸補充で貧血が改善しても神経障害は進行→B12不足を先に除外）。抗てんかん薬（フェニトイン・バルプロ酸）との相互作用（葉酸がPHT血中濃度低下）。高用量長期投与での発がんリスクは議論あり"
   },
   {
@@ -194,7 +194,7 @@
     "duration_hours": "子癇：負荷量 4〜6g 静注（10〜20分）→維持 1〜2g/時 持続静注。低Mg血症：1〜2g 静注 または 経口Mg製剤",
     "guideline_rank": "子癇・子癇前症に絶対的適応（WHO必須医薬品）。TdP（QT延長に伴う多形性心室頻拍）に第一選択（ACLSガイドライン）。難治性気管支喘息にも使用",
     "evidence": "Altman D et al. Lancet 2002;359:1877-90（Magpie試験・PMID:12057549）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/12057549/",
+    "evidence_url": null,
     "caution": "高マグネシウム血症→深部腱反射消失（毒性の早期警告）→呼吸麻痺→心停止。腎機能低下時は蓄積→投与量・速度を減らす。拮抗薬：グルコン酸カルシウム10mL 静注（Mg毒性に対して）"
   },
   {
@@ -344,7 +344,7 @@
     "duration_hours": "経腸：0.2〜0.5g/kg/日 経管。静注：0.2〜0.4g/kg/日（腎・肝不全では禁忌）",
     "guideline_rank": "骨髄移植・消化管術後では経腸グルタミン補充を考慮（ESPEN）。ICU重症患者への静注高用量グルタミンは現在推奨されない（REDOXS試験後）。腎・肝不全患者への静注グルタミンは禁忌",
     "evidence": "Heyland D et al. N Engl J Med 2013;368:1489-97（REDOXS・PMID:23594003）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/23594003/",
+    "evidence_url": null,
     "caution": "腎不全・肝不全患者への高用量静注グルタミンは死亡率増加リスク（REDOXS試験）→禁忌。高アンモニア血症（肝機能低下時）。アミノ酸代謝異常患者では慎重"
   },
   {

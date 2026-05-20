@@ -159,7 +159,7 @@
     "duration_hours": "硝子体内注射 0.5mg/0.05mL 月1回×3回（導入期）→維持期はPRN法またはT&E法",
     "guideline_rank": "滲出型AMDの標準治療。アフリベルセプト・ブロルシズマブ・ファリシマブと同等効果。注射間隔はランイビズマブが最も短い（月1回）が費用は他剤より低い傾向",
     "evidence": "Brown DM et al. N Engl J Med 2006;355:1432-44（PMID:17021319）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/17021319/",
+    "evidence_url": null,
     "caution": "硝子体内注射関連合併症（眼内炎・網膜剥離・眼圧上昇・白内障）。全身血栓塞栓リスク（動脈血栓：脳卒中・心筋梗塞リスク）→既往ある患者は慎重。注射後の眼圧上昇（一過性）。抗VEGF治療中の血圧上昇"
   },
   {
@@ -177,7 +177,7 @@
     "duration_hours": "硝子体内注射 2mg/0.05mL 毎月×3回（導入期）→2ヶ月毎（維持期）",
     "guideline_rank": "現在最も広く使用される抗VEGF薬のひとつ。PlGF阻害によりランイビズマブより血管安定化が強い可能性。高用量製剤（HD）で16週投与が可能→治療負担大幅軽減",
     "evidence": "Heier JS et al. Ophthalmology 2012;119:2537-48（PMID:23084240）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/23084240/",
+    "evidence_url": null,
     "caution": "硝子体内注射関連合併症（眼内炎・網膜裂孔・眼圧上昇）。全身血栓塞栓リスク（脳卒中・心筋梗塞）。高血圧。眼内炎症（ブロルシズマブより少ない）。注射後の一過性眼圧上昇"
   },
   {
@@ -195,7 +195,7 @@
     "duration_hours": "硝子体内注射 6mg/0.05mL 毎月×3回（導入）→12週毎（維持）",
     "guideline_rank": "投与間隔を12週まで延長可能→患者・医師の通院負担軽減。市販後に眼内炎症・網膜血管炎の発生が報告されており、アフリベルセプトとの使い分けは施設・患者状態により判断",
     "evidence": "Dugel PU et al. Ophthalmology 2020;127:72-84（PMID:31516947）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/31516947/",
+    "evidence_url": null,
     "caution": "眼内炎症・網膜血管閉塞（市販後報告：頻度はアフリベルセプトより高い可能性）。硝子体内注射関連合併症。眼内炎症が発生した場合は直ちに中止・眼科的治療。全身血栓塞栓リスク"
   },
   {
@@ -213,7 +213,7 @@
     "duration_hours": "硝子体内注射 6mg/0.05mL 毎月×4回（導入）→8〜16週毎（維持・個別化）",
     "guideline_rank": "16週投与間隔が最長クラス→通院負担が最小。最新の二重特異性抗体で現時点では最長投与間隔を達成。AMD・DME両方に適応あり。保険承認は2022年（日本）",
     "evidence": "Khanani AM et al. Lancet 2022;399:1365-76（PMID:35305954）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/35305954/",
+    "evidence_url": null,
     "caution": "硝子体内注射関連合併症（眼内炎・眼圧上昇）。眼内炎症（使用経験が蓄積中のため注意継続）。全身血栓塞栓リスク。高血圧。現時点ではブロルシズマブよりも安全性データ豊富ではないため長期追跡が必要"
   },
   {

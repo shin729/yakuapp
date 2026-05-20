@@ -14,7 +14,7 @@
     "duration_hours": "300mg 2週毎 皮下注（初回600mg）。小児は体重別用量あり",
     "guideline_rank": "外用薬・免疫抑制薬無効の中等度〜重症AD第一選択の生物学的製剤（JDA・AADガイドライン）。JAK阻害薬との比較ではEASI-75は同等〜やや劣るが安全性プロファイルで優れる。妊婦への使用データあり",
     "evidence": "Simpson EA et al. N Engl J Med 2016;375:2335-48（PMID:27690741）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/27690741/",
+    "evidence_url": null,
     "caution": "結膜炎（10〜20%・重要な副作用→眼科管理）。注射部位反応。ヘルペス増悪（JAK阻害薬より少ない）。生ワクチン接種注意。好酸球増多（一過性）"
   },
   {
@@ -32,7 +32,7 @@
     "duration_hours": "600mg初回→300mg 2週毎 皮下注（反応良好例は4週毎に延長）",
     "guideline_rank": "デュピルマブと並ぶ第一選択生物学的製剤。EASI-75はデュピルマブより数値上は低いが、安全性（特に結膜炎が少ない）に優れる可能性。デュピルマブ不応・不耐容例への切り替えとして使用",
     "evidence": "Wollenberg A et al. NEJM 2021;384:2229-40（PMID:34097370）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/34097370/",
+    "evidence_url": null,
     "caution": "結膜炎（デュピルマブより少ない傾向）。注射部位反応。好酸球増多。上気道感染。生ワクチン接種注意"
   },
   {
@@ -50,7 +50,7 @@
     "duration_hours": "500mg初回（2週後に2回目）→250mg 2週毎 皮下注（反応良好例は4週毎）",
     "guideline_rank": "トラロキヌマブと同じ抗IL-13抗体クラス。EASI-75の数値はデュピルマブと同等水準（ADhere試験）。結膜炎リスクがデュピルマブより少ない可能性。2023年日本承認",
     "evidence": "Bieber T et al. N Engl J Med 2023;388:1080-91（PMID:36947674）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/36947674/",
+    "evidence_url": null,
     "caution": "結膜炎（抗IL-13抗体としてデュピルマブより少ない傾向）。注射部位反応。上気道感染。好酸球増多"
   },
   {
@@ -68,7 +68,7 @@
     "duration_hours": "60mg 4週毎 皮下注",
     "guideline_rank": "掻痒が主訴でピックアップ症状の場合に選択。デュピルマブ・JAK阻害薬との使い分けは「皮疹重症度 vs 掻痒重症度」による。皮疹が重症なら他剤を優先。結節性痒疹にも適応拡大",
     "evidence": "Kabashima K et al. N Engl J Med 2020;383:141-50（PMID:32640128）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/32640128/",
+    "evidence_url": null,
     "caution": "末梢性浮腫。上気道感染。頭痛。関節痛。皮疹への効果が他の生物学的製剤に劣る点を患者に説明。注射部位反応"
   },
   {
@@ -86,7 +86,7 @@
     "duration_hours": "15〜30mg 1日1回 内服（食事の影響なし）",
     "guideline_rank": "AD生物学的製剤・JAK阻害薬の中で最高の有効性エビデンス（HEADS UP試験でデュピルマブ比優越）。結核・帯状疱疹・血栓等のリスクスクリーニング必須。妊婦禁忌。生物学的製剤との優先順位は施設・患者状態による",
     "evidence": "Guttman-Yassky E et al. JAMA Dermatol 2021;157:825-36（PMID:34076683）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/34076683/",
+    "evidence_url": null,
     "caution": "帯状疱疹（VZVワクチン接種推奨）。重篤感染症・結核再活性化（スクリーニング必須）。静脈血栓塞栓症（VTE）リスク。悪性腫瘍リスク（長期）。妊婦・妊娠希望者禁忌。CYP3A4阻害薬で血中濃度上昇"
   },
   {
@@ -104,7 +104,7 @@
     "duration_hours": "100〜200mg 1日1回 内服（食後）",
     "guideline_rank": "ウパダシチニブと並ぶ内服JAK1阻害薬。用量反応性があり100mg→200mgで効果増強。血小板減少（初期に多い）・悪心の頻度がウパダシチニブと比較した際の差異。13歳以上の小児に使用可",
     "evidence": "Simpson EL et al. N Engl J Med 2020;383:1524-34（PMID:33085875）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/33085875/",
+    "evidence_url": null,
     "caution": "血小板減少（初期・用量依存）。悪心・嘔吐（食後投与で軽減）。帯状疱疹・重篤感染症。VTE・心血管リスク（長期）。妊婦禁忌。CYP2C19基質（阻害薬で血中濃度上昇）"
   },
   {
@@ -176,7 +176,7 @@
     "duration_hours": "300mg 週1回×5回（導入）→月1回 皮下注（150mgの場合もあり）",
     "guideline_rank": "IL-17A阻害薬の中で最もエビデンスが豊富で使用経験が長い（2015年承認）。PASI75は80%超。PsA・ASにも有効で関節合併例に特に有用。腸管炎症を悪化させる可能性→IBD合併には慎重",
     "evidence": "Langley RG et al. N Engl J Med 2014;371:326-38（PMID:25007392）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/25007392/",
+    "evidence_url": null,
     "caution": "カンジダ感染症（IL-17がカンジダ防御に関与）。炎症性腸疾患（IBD）の悪化・新規発症→IBD患者には禁忌。結核再活性化（スクリーニング必須）。好中球減少。生ワクチン禁忌"
   },
   {
@@ -194,7 +194,7 @@
     "duration_hours": "160mg初回→80mg 2週毎×12週→80mg 4週毎 皮下注",
     "guideline_rank": "セクキヌマブと並ぶ抗IL-17A薬。PASI100はセクキヌマブより高い傾向。導入期に2週毎投与が必要な点がセクキヌマブ（月1回）との差。IBD禁忌はセクキヌマブと同様",
     "evidence": "Gordon KB et al. N Engl J Med 2016;375:345-56（PMID:27299809）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/27299809/",
+    "evidence_url": null,
     "caution": "カンジダ感染症。IBD悪化・新規発症→禁忌。結核スクリーニング必須。好中球減少。注射部位反応"
   },
   {
@@ -212,7 +212,7 @@
     "duration_hours": "320mg 4週毎 皮下注（導入・維持同一用量）",
     "guideline_rank": "IL-17A/Fの同時阻害でPASI100が最高水準。効果のみを見ればトップクラスの乾癬治療薬。カンジダ感染のリスクがIL-17A単独阻害より高い可能性。IBD禁忌",
     "evidence": "Warren RB et al. N Engl J Med 2021;385:130-41（PMID:34161703）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/34161703/",
+    "evidence_url": null,
     "caution": "カンジダ感染症（IL-17A/F両方阻害でリスク上昇・15〜20%）。IBD悪化→禁忌。口腔カンジダ・外陰カンジダに注意。結核スクリーニング必須"
   },
   {
@@ -230,7 +230,7 @@
     "duration_hours": "150mg 0・4週→12週毎 皮下注（導入後は3ヶ月毎1回）",
     "guideline_rank": "グセルクマブとともに抗IL-23（p19）薬の代表。PASI75・90は最高水準。維持で3ヶ月毎投与が可能→最も通院負担が少ない選択肢のひとつ。IBD（クローン病・UC）にも適応あり",
     "evidence": "Gordon KB et al. Lancet 2018;392:650-61（PMID:30097359）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/30097359/",
+    "evidence_url": null,
     "caution": "感染症（上気道感染・毛包炎）。結核スクリーニング必須。悪性腫瘍リスク（長期）。IL-17阻害薬と異なりIBDに禁忌なし（むしろ適応あり）。生ワクチン禁忌"
   },
   {
@@ -248,7 +248,7 @@
     "duration_hours": "30mg 1日2回 内服（初週は増量スケジュールあり：10mg→20mg→30mg）",
     "guideline_rank": "生物学的製剤未使用・使用困難（感染リスク高・注射忌避）の中等度乾癬に。免疫抑制が少なく感染症リスクが低い→高齢者・易感染性患者に選択肢。効果はIL-17/23阻害薬に劣る",
     "evidence": "Papp K et al. Lancet 2015;386:323-31（PMID:26051365）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/26051365/",
+    "evidence_url": null,
     "caution": "悪心・下痢（開始初期・2〜4週で軽減傾向）→増量スケジュール遵守。体重減少（低体重患者は注意）。抑うつ・自殺念慮（リスク患者は慎重）。CYP3A4誘導薬（リファンピシン等）で効果減弱"
   },
   {
@@ -632,7 +632,7 @@
     "duration_hours": "50mg 1日1回 食後（長期投与）",
     "guideline_rank": "12歳以上の50%以上の頭部脱毛を有する、全身療法の適応となる円形脱毛症患者における治療選択肢。",
     "evidence": "ALLEGRO trial King B et al. Lancet 2023（PMID: 37062298）",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/37062298/",
+    "evidence_url": null,
     "caution": "有害事象の発現率は各群でプラセボと同程度であるが、副作用による投与中止例も報告されている。12歳以上の青年および成人が対象。重大な感染症等の全身投与に伴うリスクには注意が必要であり、適切な症例選定が求められる。"
   }
 ]
