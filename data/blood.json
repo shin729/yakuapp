@@ -523,20 +523,20 @@
   },
   {
     "name": "ジピリダモール",
-    "brand": "アドノックス・アンギナール・ペルサンチン",
+    "brand": "ペルサンチン・アンギナール",
     "category": "抗血小板薬",
-    "class": "ピリミドピリミジン系抗血小板薬（PDE阻害薬）",
-    "action_type": "血小板内のcAMP濃度を上昇させ、強力な血小板凝集抑制作用を示す",
-    "mechanism": "血小板内のホスホジエステラーゼ（PDE）を阻害してcAMPの分解を抑制し、細胞内cAMP濃度を上昇させる。また、赤血球や血管内皮細胞へのアデノシン取り込みを阻害することで血中アデノシン濃度を高め、アデニル酸シクラーゼ活性化を介してcAMP産生を促進し、血小板凝集を抑制する。血管拡張作用も併せ持つ。",
+    "class": "PDE阻害薬",
+    "action_type": "血小板凝集抑制作用および血管拡張作用",
+    "mechanism": "血小板内へのアデノシン取り込み阻害およびホスホジエステラーゼ（PDE）阻害により、細胞内cAMP濃度を上昇させることで血小板凝集を抑制する。また、血管平滑筋のcAMP増加を介した冠血管拡張作用も有する。これにより、血管内での血栓形成抑制と血流量の改善に寄与する。",
     "efficacy_star": 3,
-    "placebo_onset": "ESPS-2試験：ASA+ジピリダモール持続放出製剤でASA単独比 脳卒中再発リスク23%減少。ESPRIT試験：ASA+ジピリダモールで年間血管イベント率1.0% vs ASA単独1.5%（HR 0.80, NNT=約200/年）。単剤での抗血小板効果はASAより弱いため、主にASAとの併用で使用",
-    "placebo_sleep": "PDE阻害によるcAMP↑とアデノシン取り込み阻害の2機序→ASAとの重複なし→相加的な血小板凝集抑制。冠動脈拡張作用を利用した薬物負荷心筋シンチ（ジピリダモール負荷試験）にも使用。頭痛は血管拡張によるもので、低用量から漸増すると軽減しやすい",
+    "placebo_onset": "1年後の再発脳卒中率はITT解析で2.4％、PP解析で2.5％（抗凝固薬群との間に有意差なし）",
+    "placebo_sleep": "3ヶ月後の血管再開通率は抗血小板薬群（56/92）と抗凝固薬群（53/89）で同等（P=0.97）",
     "NNT": null,
-    "onset_time": null,
-    "duration_hours": null,
-    "guideline_rank": "脳梗塞（心原性塞栓症を除く）の再発抑制：アスピリンとの併用で推奨される。",
-    "evidence": "Effects of Dose Titration on Dipyridamole-Induced Headache: A Randomized, Double-Blind Clinical Trial. Kang MK et al. Cerebrovasc Dis. 2022 (PMID: 35034023)",
-    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/35034023/",
-    "caution": "高頻度で頭痛が発現する（約74%）。低用量から開始し、段階的に増量するタイトレーション戦略が頭痛の重症度軽減に有効である。冠動脈疾患患者では冠動脈盗血現象による症状悪化の可能性があるため注意。主な副作用は頭痛、めまい、胃腸障害等。"
+    "onset_time": "血小板凝集抑制：1〜2時間（単回投与後）",
+    "duration_hours": "徐放製剤200mg 1日2回（ASA 25mgとの配合剤が主流）／通常製剤：25〜50mg 1日3〜4回",
+    "guideline_rank": "添付文書上、ワーファリンとの併用による心臓弁置換術後の血栓・塞栓抑制、または狭心症・心筋梗塞等に用いられる。",
+    "evidence": "Antiplatelet Therapy vs Anticoagulation Therapy in Cervical Artery Dissection: The Cervical Artery Dissection in Stroke Study (CADISS) Randomized Clinical Trial Final Results. Markus HS et al. JAMA Neurol. 2019 (PMID:30801621)",
+    "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/30801621/",
+    "caution": "禁忌：本剤に対し過敏症の既往歴がある患者。主な副作用：頭痛、動悸、顔面紅潮、悪心等。心不全、低血圧、重篤な冠動脈疾患のある患者には慎重に投与すること。"
   }
 ]

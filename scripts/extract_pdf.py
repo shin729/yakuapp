@@ -306,17 +306,45 @@ async def _run_extraction(nb_id: str, client, prompt: str, extra_urls: list[str]
         raw = raw.split("\n", 1)[1]
         raw = raw.rsplit("```", 1)[0].strip()
 
+    # コードブロック除去（json以外のラベルも対応）
+    if raw.startswith("```"):
+        lines = raw.split("\n", 1)
+        raw = lines[1] if len(lines) > 1 else raw
+        raw = raw.rsplit("```", 1)[0].strip()
+
+    # BOM除去・先頭空白除去
+    raw = raw.lstrip('﻿').strip()
+
+    drugs = None
+    # 1) 直接パース
     try:
         drugs = json.loads(raw)
     except json.JSONDecodeError:
-        match = re.search(r'\[.*\]', raw, re.DOTALL)
-        if match:
-            drugs = json.loads(match.group())
-        else:
-            print("\n--- NotebookLM応答（パース失敗）---")
-            print(raw[:2000])
-            print("---")
-            raise ValueError("JSONの抽出に失敗しました")
+        pass
+
+    # 2) raw_decode: 先頭の有効なJSON構造だけ取り出す（Extra dataエラー対策）
+    if drugs is None:
+        try:
+            drugs, _ = json.JSONDecoder().raw_decode(raw)
+        except json.JSONDecodeError:
+            pass
+
+    # 3) 正規表現で配列・オブジェクトを探す
+    if drugs is None:
+        for pat in [r'\[.*?\]', r'\{.*?\}']:
+            m = re.search(pat, raw, re.DOTALL)
+            if m:
+                try:
+                    drugs = json.loads(m.group())
+                    break
+                except json.JSONDecodeError:
+                    continue
+
+    if drugs is None:
+        print("\n--- NotebookLM応答（パース失敗）---")
+        print(raw[:2000])
+        print("---")
+        raise ValueError("JSONの抽出に失敗しました")
 
     if isinstance(drugs, dict):
         drugs = [drugs]
