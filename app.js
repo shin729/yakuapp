@@ -380,6 +380,7 @@ const DOMAINS = {
       { key: '肺高血圧症',         label: '❤ 肺高血圧症' },
       { key: '間質性肺疾患',       label: '🫧 間質性肺疾患' },
       { key: '咳嗽',               label: '😮‍💨 咳嗽' },
+      { key: '去痰薬',             label: '💧 去痰薬' },
       { key: 'RX_SABA',      label: '🔴 SABA（短時間作用β2）' },
       { key: 'RX_LABA',      label: '🟠 LABA（長時間作用β2）' },
       { key: 'RX_LAMA',      label: '🔵 LAMA（長時間作用抗コリン）' },
@@ -389,7 +390,7 @@ const DOMAINS = {
       { key: 'RX_TRIPLE',    label: '⬛ ICS/LABA/LAMA（3剤）' },
     ],
     categoryGroups: [
-      { key: 'disease',   label: '疾患別',    cats: ['気管支喘息（吸入）', 'COPD（吸入）', '気管支喘息（内服）', 'COPD（内服）', '肺高血圧症', '間質性肺疾患', '咳嗽'] },
+      { key: 'disease',   label: '疾患別',    cats: ['気管支喘息（吸入）', 'COPD（吸入）', '気管支喘息（内服）', 'COPD（内服）', '肺高血圧症', '間質性肺疾患', '咳嗽', '去痰薬'] },
       { key: 'mechanism', label: '作用機序別', cats: ['RX_SABA', 'RX_LABA', 'RX_LAMA', 'RX_ICS', 'RX_ICS_LABA', 'RX_LAMA_LABA', 'RX_TRIPLE'] },
     ],
     defaultGroup: 'disease',
@@ -2163,7 +2164,7 @@ function getRowDefs(category) {
        'RX_ICS_LABA', 'RX_LAMA_LABA', 'RX_TRIPLE'].includes(category))
     return RESP_INHALER_ROWS;
   if (['気管支喘息（内服）', 'COPD（内服）',
-       '肺高血圧症', '間質性肺疾患', '慢性咳嗽'].includes(category))
+       '肺高血圧症', '間質性肺疾患', '咳嗽', '去痰薬'].includes(category))
     return RESP_ORAL_ROWS;
   return PAIN_ROWS;
 }
