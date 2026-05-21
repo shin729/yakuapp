@@ -32,10 +32,17 @@ const DOMAINS = {
       { key: '強オピオイド',             label: '🔴 強オピオイド' },
       { key: '弱オピオイド・補助薬',     label: '⚕ 弱オピオイド・補助薬' },
       { key: '神経障害性疼痛',           label: '⚡ 神経障害性疼痛' },
-      { key: '片頭痛',                   label: '🎯 片頭痛' },
+      { key: '片頭痛（急性期）',         label: '🎯 急性期治療' },
+      { key: '片頭痛（予防）',           label: '🛡 予防薬' },
       { key: '抗てんかん薬',             label: '🧩 抗てんかん薬' },
       { key: 'パーキンソン病治療薬',     label: '🔵 パーキンソン病治療薬' },
     ],
+    categoryGroups: [
+      { key: 'pain',     label: '疼痛',    cats: ['非オピオイド系', '強オピオイド', '弱オピオイド・補助薬', '神経障害性疼痛'] },
+      { key: 'migraine', label: '片頭痛',  cats: ['片頭痛（急性期）', '片頭痛（予防）'] },
+      { key: 'neuro',    label: '神経疾患', cats: ['抗てんかん薬', 'パーキンソン病治療薬'] },
+    ],
+    defaultGroup: 'pain',
     defaultCat: '非オピオイド系',
     headBg:       'linear-gradient(180deg, #f0fdf9 0%, #e4f9f5 100%)',
     stickyBg:     '#f0fdf9',
@@ -70,11 +77,11 @@ const DOMAINS = {
       { key: '経口薬・分泌促進系',        label: '⚠ 分泌促進（低血糖リスク）' },
     ],
     categoryGroups: [
-      { key: 'injectable', label: '注射薬', cats: ['注射薬（非インスリン）', '超速効型インスリン', '速効型・中間型インスリン', '持続型インスリン', '混合型インスリン'] },
       { key: 'oral',       label: '経口薬', cats: ['経口薬・代謝改善系', '経口薬・心腎保護系', '経口薬・分泌促進系'] },
+      { key: 'injectable', label: '注射薬', cats: ['注射薬（非インスリン）', '超速効型インスリン', '速効型・中間型インスリン', '持続型インスリン', '混合型インスリン'] },
     ],
-    defaultGroup: 'injectable',
-    defaultCat: '注射薬（非インスリン）',
+    defaultGroup: 'oral',
+    defaultCat: '経口薬・代謝改善系',
     headBg:       'linear-gradient(180deg, #fef2f2 0%, #fee2e2 100%)',
     stickyBg:     '#fef2f2',
     rowAltBg:     '#fff8f8',
@@ -2125,7 +2132,7 @@ function getRowDefs(category) {
   if (['制吐薬（CINV）', '骨修飾薬'].includes(category)) return ONCOLOGY_ROWS;
   if (['ビタミン', 'ミネラル・電解質'].includes(category)) return NUTRITION_ROWS;
   if (category === '経腸栄養剤') return ENTERAL_ROWS;
-  if (category === '片頭痛')             return MIGRAINE_ROWS;
+  if (category === '片頭痛（急性期）' || category === '片頭痛（予防）') return MIGRAINE_ROWS;
   if (category === '抗てんかん薬')       return EPILEPSY_ROWS;
   if (category === 'パーキンソン病治療薬') return PARKINSON_ROWS;
   if (category === '内服')   return STEROID_ORAL_ROWS;
