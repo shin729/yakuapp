@@ -611,5 +611,26 @@
     "evidence_url": null,
     "caution": "臨床試験（ATTRibute-CM）において良好な忍容性が示されている。副作用として感染症や消化器症状がみられる場合がある。TTR安定化による疾患修飾を目的とするため、心不全の標準治療と適切に併用する。投与に際しては最新の国内添付文書における警告・禁忌・副作用情報を必ず参照すること。",
     "guideline_url": "https://www.j-circ.or.jp/cms/wp-content/uploads/2020/01/JCS2020_Ono.pdf"
+  },
+  {
+    "name": "マバカマテン",
+    "brand": "カムジオス",
+    "category": "閉塞性HCM治療薬",
+    "class": "心筋ミオシン阻害薬",
+    "action_type": "心筋ミオシンATPase阻害→左室過収縮抑制・LVOT閉塞解除",
+    "mechanism": "心筋ミオシンのATPaseを直接阻害し、過剰な心筋収縮を抑制する。閉塞性HCMでは心室中隔の過収縮による左室流出路閉塞（LVOTG上昇）が主な病態であり、マバカマテンはこれを是正し症状・心不全進行を改善する。投与量はエコーで定期的にLVOT圧較差を確認しながら調整する",
+    "efficacy_star": 4,
+    "placebo_onset": "運動負荷後LVOTG≥50mmHgの解消率 37% vs 17%（プラセボ）・呼吸困難の改善",
+    "placebo_sleep": "NY心機能分類の改善・6分間歩行距離の延長（EXPLORER-HCM試験）",
+    "NNT": null,
+    "mortality_benefit": "なし（EXPLORER-HCMは症状・機能エンドポイント）",
+    "start_dose": "5mg × 1回/日（経口）",
+    "target_dose": "5〜10mg × 1回/日（エコー確認しながら増量）",
+    "onset_time": "数週間（LVOTG低下・症状改善）",
+    "duration_hours": "1日1回",
+    "guideline_rank": "閉塞性HCM（LVOT圧較差≥50mmHg）で心不全症状がある患者の第一選択候補。既存治療（β遮断薬・Ca拮抗薬・ジソピラミド）の代替・上乗せとして。2025年3月日本承認・2025年5月薬価収載。エコーで定期的にLVOT圧較差および左室収縮機能をモニタリングすること",
+    "evidence": "EXPLORER-HCM trial（PMID:32871107）",
+    "evidence_url": null,
+    "caution": "【重要モニタリング】定期エコーでLVOT圧較差および左室収縮機能（EF）を確認。EFが著明に低下した場合は減量・中止。PDE5阻害薬との併用は過度な左室収縮低下リスク。催奇形性（妊婦禁忌）。CYP3A4阻害薬（クラリスロマイシン等）で血中濃度上昇"
   }
 ]

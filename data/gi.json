@@ -12,7 +12,7 @@
     "water_required": "特別な制限なし（食前・食後どちらでも可）",
     "efficacy_star": 4,
     "guideline_rank": "オピオイド誘発性便秘（OIC）の第一選択薬。がん疼痛・慢性疼痛でオピオイド使用中の便秘に特化した適応。一般的な便秘（非OIC）には効果が期待できない",
-    "evidence": "PMID:28902435（COMPOSE-1/2試験）",
+    "evidence": "COMPOSE-1/2試験（PMID:28902435）",
     "caution": "オピオイド離脱症状（腹痛・下痢・発汗・流涙）。消化管閉塞禁忌。消化管穿孔リスクのある患者に注意",
     "evidence_url": null
   },
@@ -80,7 +80,7 @@
     "water_required": "必須（水に溶かして内服・コップ1〜2杯）",
     "efficacy_star": 4,
     "guideline_rank": "欧米での慢性便秘第一選択薬。小児・高齢者にも安全。電解質異常・依存性なし。効果発現が遅いため即効性は期待できない。粉末を水に溶かして飲む必要がある（味への工夫が必要）",
-    "evidence": "PMID:11508264（小児RCT）; Cochrane Review（Lee-Robichaud 2010）",
+    "evidence": "小児RCT（PMID:11508264）; Cochrane Review（Lee-Robichaud 2010）",
     "caution": "高度腸閉塞・消化管穿孔禁忌。大量急速投与で電解質異常の可能性",
     "evidence_url": null
   },
@@ -340,7 +340,7 @@
     "duration_hours": "化学療法1日目：125mg → 2・3日目：80mg（3日間投与）",
     "efficacy_star": 4,
     "guideline_rank": "高度催吐性化学療法（シスプラチン等）の標準三剤制吐療法の1剤。遅発性CINVに特に有効。5-HT3拮抗薬・デキサメタゾンとの併用が必須。CYP3A4阻害薬のためデキサメタゾンの用量調節が必要",
-    "evidence": "PMID:12819290（EMEND試験）",
+    "evidence": "EMEND試験（PMID:12819290）",
     "caution": "CYP3A4強力阻害薬（ワルファリン・ピモジド等との相互作用に注意）。デキサメタゾンの用量を約50%に減量が必要（CYP3A4阻害で血中濃度上昇）",
     "evidence_url": null
   },
@@ -376,7 +376,7 @@
     "duration_hours": "急性期1日1〜2回投与（T1/2 約4〜6時間）",
     "efficacy_star": 5,
     "guideline_rank": "CINV予防の標準薬。デキサメタゾン・アプレピタントとの三剤併用が高度催吐性化学療法の標準。遅発性CINV（24時間以降）には効果が弱まるため三剤併用が重要",
-    "evidence": "PMID:1856421（Ondansetron vs metoclopramide）; MASCCガイドライン",
+    "evidence": "Ondansetron vs metoclopramide（PMID:1856421）; MASCCガイドライン",
     "caution": "QT延長（4mg静注は安全・大量投与・心疾患例に注意）。頭痛・便秘（5-HT3遮断による腸管蠕動低下）",
     "evidence_url": null
   },
@@ -412,7 +412,7 @@
     "duration_hours": "1日3〜4回（T1/2 約4〜5時間）",
     "efficacy_star": 3,
     "guideline_rank": "悪心・嘔吐の汎用制吐薬。化学療法誘発悪心より一般的な悪心・術後・つわりに適している。長期投与では錐体外路症状（遅発性ジスキネジア）リスクがあるため原則短期使用",
-    "evidence": "PMID:16235869（系統的レビュー）; 日本がん支持療法学会 CINVガイドライン",
+    "evidence": "系統的レビュー（PMID:16235869）; 日本がん支持療法学会 CINVガイドライン",
     "caution": "錐体外路症状（アカシジア・ジストニア・遅発性ジスキネジア）：長期投与禁忌。プロラクチン増加（乳汁分泌・無月経）。褐色細胞腫禁忌。消化管閉塞禁忌",
     "evidence_url": null
   },
@@ -527,7 +527,7 @@
     "duration_hours": "1日1回（食前・食後を問わない）",
     "efficacy_star": 5,
     "guideline_rank": "ピロリ除菌の標準レジメン（除菌率90%以上：PPIベースより優位）。重症逆流性食道炎・難治性GERDの第一選択。NSAIDによる胃潰瘍予防にも強力。PPIより夜間酸分泌抑制が格段に優れる",
-    "evidence": "PMID:25643041; PMID:28779714（ピロリ除菌試験）",
+    "evidence": "PMID:25643041; ピロリ除菌試験（PMID:28779714）",
     "caution": "高ガストリン血症（長期投与）。カルボナート・PPI類と同様の制酸薬相互作用。CYP3A4基質",
     "evidence_url": null
   },
@@ -544,7 +544,7 @@
     "duration_hours": "1日1回（食前30分投与が推奨）",
     "efficacy_star": 4,
     "guideline_rank": "逆流性食道炎・消化性潰瘍・NSAID潰瘍予防の標準PPI。CYP2C19代謝の個人差が少なく安定した効果。P-CAB（ボノプラザン）への切り替えは夜間症状・難治性GERDに有効",
-    "evidence": "PMID:9823677（SYMPATHY試験）; 日本消化器病学会 GERDガイドライン",
+    "evidence": "SYMPATHY試験（PMID:9823677）; 日本消化器病学会 GERDガイドライン",
     "caution": "マグネシウム低下（長期使用）。C.ディフィシル感染リスク軽度増加。鉄・B12・Ca²⁺吸収低下（長期使用）",
     "evidence_url": null
   },
@@ -612,7 +612,7 @@
     "duration_hours": "1日3〜4回（食前30分と就寝前：空腹時の方が付着効果大）",
     "efficacy_star": 4,
     "guideline_rank": "消化性潰瘍の治療（特に十二指腸潰瘍）・NSAID潰瘍予防に有効。酸分泌抑制薬（PPI）が主流の現在でも、PPIと異なる機序で補完的に使用される。腎機能低下例では長期使用でAl蓄積に注意",
-    "evidence": "PMID:3059054（潰瘍治癒試験）",
+    "evidence": "潰瘍治癒試験（PMID:3059054）",
     "caution": "Al蓄積（腎機能低下患者での長期使用禁忌）。他薬剤の吸収阻害（2時間以上間隔をあけて投与）。便秘",
     "evidence_url": null
   },
@@ -679,7 +679,7 @@
     "onset_time": "4〜8週間（症状スコアの改善が確認される期間）",
     "efficacy_star": 3,
     "guideline_rank": "FD（機能性ディスペプシア）の日本初の適応薬（世界初のFD専用薬）。ピロリ除菌後も症状が残る場合に適応。PDS（食後愁訴症候群）型に特に有効。H.pylori除菌を先行してから開始する",
-    "evidence": "PMID:22982483（日本国内P3試験）",
+    "evidence": "日本国内P3試験（PMID:22982483）",
     "caution": "下痢（ACh増加による）。PPIやH2ブロッカー（EPS型）との使い分けが必要",
     "evidence_url": null
   },
@@ -711,7 +711,7 @@
     "onset_time": "1〜2週間（初回投与後から比較的速やかに効果発現）",
     "efficacy_star": 4,
     "guideline_rank": "IBS-D（下痢型）男性の標準治療薬。女性は便秘に傾きやすいため特に低用量（2.5μg）から開始。虚血性大腸炎・重篤な便秘のリスクがあるため定期的な観察が必要",
-    "evidence": "PMID:16863569（日本国内P3試験）",
+    "evidence": "日本国内P3試験（PMID:16863569）",
     "caution": "重篤な便秘・腸閉塞（便秘に傾き過ぎた場合）。虚血性大腸炎（稀）。女性では低用量（2.5μg）から開始",
     "evidence_url": null
   },
@@ -829,7 +829,7 @@
     "immunosuppression_strength": "弱い（局所抗炎症のみ）",
     "efficacy_star": 4,
     "guideline_rank": "1日1回投与（2〜4錠/日）で大腸全域をカバーする5-ASAの最新製剤。服薬回数が少なく長期維持療法のアドヒアランス維持に優れる。アサコール比で同等の有効性・優れた利便性。小腸病変（CD）には適さない",
-    "evidence": "PMID:17630600（ASCEND試験）; 日本消化器病学会 IBDガイドライン2020",
+    "evidence": "ASCEND試験（PMID:17630600）; 日本消化器病学会 IBDガイドライン2020",
     "caution": "間質性腎炎（定期的腎機能モニタリング）。食後投与推奨（空腹時ではMMXコーティングの溶解タイミングが変化する可能性）",
     "evidence_url": null
   },
@@ -864,7 +864,7 @@
     "immunosuppression_strength": "中〜強（IL-12/23特異的抑制・抗TNFより感染リスクが低い）",
     "efficacy_star": 5,
     "guideline_rank": "抗TNFα製剤失効・不耐容のCD・UCの第二線生物学的製剤。安全性プロファイルが抗TNFより良好（感染リスク低）。抗薬剤抗体産生が少なく長期安定性が高い",
-    "evidence": "PMID:23434375（UNIFI UC試験）; PMID:26956974（UNIFI CD試験）",
+    "evidence": "UNIFI UC試験（PMID:23434375）; UNIFI CD試験（PMID:26956974）",
     "caution": "感染リスク（抗TNFより低いが結核スクリーニング必要）。活動性感染症禁忌",
     "evidence_url": null
   },
@@ -881,7 +881,7 @@
     "immunosuppression_strength": "中〜強（IL-23特異的・Th17経路選択的：IL-12経路は温存）",
     "efficacy_star": 5,
     "guideline_rank": "抗TNF失効・不耐容のCD・UCへの選択肢。ウステキヌマブより選択性が高くIL-12経路（Th1免疫）を温存するため感染防御能への影響が理論的に少ない。ADVANCE試験（CD）で抗TNF失効例でも高い寛解率を示した。日本ではCD2023年・UC2024年承認",
-    "evidence": "PMID:34774328（ADVANCE/MOTIVATE CD試験）; PMID:36634691（INSPIRE UC試験）",
+    "evidence": "ADVANCE/MOTIVATE CD試験（PMID:34774328）; INSPIRE UC試験（PMID:36634691）",
     "caution": "投与前感染症スクリーニング（結核・B型肝炎）必須。活動性感染症禁忌。活動性TB禁忌",
     "evidence_url": null
   },
@@ -898,7 +898,7 @@
     "immunosuppression_strength": "中程度・腸管局所特異的（全身免疫へのインパクトは最小限）",
     "efficacy_star": 4,
     "guideline_rank": "抗TNF失効・不耐容例または感染ハイリスク例（高齢・COPD・B型肝炎既往）に特に有用。腸管局所選択性により全身感染リスクが低い。効果発現がやや遅い（6〜14週）",
-    "evidence": "PMID:23964932（GEMINI 1 UC試験）; PMID:23964933（GEMINI 2 CD試験）",
+    "evidence": "GEMINI 1 UC試験（PMID:23964932）; GEMINI 2 CD試験（PMID:23964933）",
     "caution": "活動性感染症禁忌。進行性多巣性白質脳症（PML）リスクは非常に低い（腸管選択的）。輸注反応（稀）",
     "evidence_url": null
   },
@@ -915,7 +915,7 @@
     "immunosuppression_strength": "強い（TNFα広域遮断→自然免疫・適応免疫の全身的な抑制）",
     "efficacy_star": 5,
     "guideline_rank": "中等症〜重症UC・CDのステロイド難治・依存例の標準生物学的製剤。投与前に必ず結核スクリーニング（胸部X線・QFT/T-SPOT）・B型肝炎HBs抗原確認が必須。キメラ型のため抗体産生によるADAリスクあり（AZAの併用で低減）",
-    "evidence": "PMID:9717533（Active Crohn's Disease試験）; PMID:15765826（ACT1/ACT2 UC試験）",
+    "evidence": "Active Crohn's Disease試験（PMID:9717533）; ACT1/ACT2 UC試験（PMID:15765826）",
     "caution": "投与前結核スクリーニング必須。活動性感染症禁忌。うっ血性心不全（NYHA III/IV）禁忌。脱髄疾患悪化。抗薬剤抗体（ADA）形成による効果減弱",
     "evidence_url": null
   },
@@ -932,7 +932,7 @@
     "immunosuppression_strength": "強い（TNFα広域遮断→自然免疫・適応免疫の全身的な抑制）",
     "efficacy_star": 5,
     "guideline_rank": "インフリキシマブと同等の有効性を持つ抗TNFα製剤。完全ヒト型のためADA産生リスクが低く長期安定性が高い。皮下注自己投与（2週間に1回）で外来管理に優れる。投与前に必ず結核スクリーニング・B型肝炎HBs抗原確認が必須。関節症状を伴うIBDにも適応",
-    "evidence": "PMID:12867484（CLASSIC I CD試験）; PMID:21617852（ULTRA 1 UC試験）",
+    "evidence": "CLASSIC I CD試験（PMID:12867484）; ULTRA 1 UC試験（PMID:21617852）",
     "caution": "投与前結核スクリーニング必須。活動性感染症禁忌。うっ血性心不全（NYHA III/IV）禁忌。脱髄疾患悪化。注射部位反応",
     "evidence_url": null
   },
@@ -983,7 +983,7 @@
     "immunosuppression_strength": "強い（全身免疫抑制・骨髄抑制は少ないがT細胞機能を広く抑制）",
     "efficacy_star": 4,
     "guideline_rank": "UC・CD急性増悪（中等症〜重症）の寛解導入に第一選択。寛解達成後は漸減中止し維持療法（5-ASA・免疫調節薬・生物学的製剤）に移行。ステロイド依存例では免疫調節薬（AZA）・生物学的製剤を検討",
-    "evidence": "PMID:3913590（Truelove & Witts基準）; 日本消化器病学会 IBDガイドライン",
+    "evidence": "Truelove & Witts基準（PMID:3913590）; 日本消化器病学会 IBDガイドライン",
     "caution": "感染症増悪（結核・ニューモシスチス肺炎・ヘルペス再活性化）。骨粗しょう症・大腿骨頭壊死。高血糖・高血圧・浮腫。精神症状（ステロイド精神病）。副腎皮質機能抑制（急に中断禁止）",
     "evidence_url": null
   },
@@ -1069,7 +1069,7 @@
     "duration_type": "継続性（4〜12週間の服用で症状改善・グレリン経路の修飾に時間が必要）",
     "efficacy_star": 4,
     "guideline_rank": "FD（機能性ディスペプシア）に対しグレリン経路を介した独自の作用機序。アコチアミドが無効・使用困難な場合の代替。食欲不振・体重減少を伴う高齢者FDに特に有用。化学療法食欲不振にも保険適応",
-    "evidence": "PMID:23382220（FD試験）; PMID:22955268（化学療法誘発食欲不振試験）",
+    "evidence": "FD試験（PMID:23382220）; 化学療法誘発食欲不振試験（PMID:22955268）",
     "caution": "甘草含有（偽アルドステロン症：低K血症・高血圧・浮腫）。消化器症状（稀に下痢）",
     "evidence_url": null
   },
@@ -1085,7 +1085,7 @@
     "duration_type": "比較的速効性（数日〜1週間で症状改善の場合も多い）",
     "efficacy_star": 3,
     "guideline_rank": "化学療法誘発口腔粘膜炎（口内炎）の予防・治療にエビデンスあり（イリノテカン・5-FU）。急性胃腸炎後の症状残存・FD・IBS混合型にも有用。下痢・嘔吐両方に対応できる",
-    "evidence": "PMID:21296527（化学療法口内炎試験）; 日本がんサポーティブケア学会ガイドライン",
+    "evidence": "化学療法口内炎試験（PMID:21296527）; 日本がんサポーティブケア学会ガイドライン",
     "caution": "甘草含有（偽アルドステロン症：長期大量投与で低K血症）。間質性肺炎（稀・黄芩含有漢方薬共通）",
     "evidence_url": null
   },
@@ -1149,7 +1149,7 @@
     "duration_type": "継続性（8〜24週間の長期服用で体重・便通の改善）",
     "efficacy_star": 3,
     "guideline_rank": "肥満・メタボリックシンドロームを伴う実証の便秘に有効。BMI高値・脂肪肝・内臓脂肪型肥満の患者に使用。虚証（体力低下）への使用は禁忌（著しい腹瀉・脱力を招く）",
-    "evidence": "PMID:20817924（肥満試験）",
+    "evidence": "肥満試験（PMID:20817924）",
     "caution": "甘草・麻黄含有（偽アルドステロン症・交感神経刺激：高血圧悪化・不眠）。虚証禁忌（体力低下者に投与すると著しい下痢・衰弱）。18種類の生薬配合で多数の薬物相互作用リスク",
     "evidence_url": null
   },
