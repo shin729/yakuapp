@@ -13,7 +13,7 @@
     "onset_time": "4〜6週（TSH正常化）",
     "duration_hours": "1日1回 内服（起床時空腹が最良）。初期25〜50μg→目標TSH 0.5〜2.5 mIU/L",
     "guideline_rank": "甲状腺機能低下症の第一選択。長半減期で安定した血中濃度。食物・カルシウム・鉄剤との服用間隔（30〜60分）に注意。T₄/T₃配合は一部のT₄→T₃変換不良患者に検討",
-    "evidence": "Jonklaas J et al. Thyroid 2014（ATA Guidelines PMID:25266247）",
+    "evidence": "Jonklaas et al.（Thyroid 2014 PMID:25266247）",
     "evidence_url": null,
     "caution": "過剰投与で頻脈・狭心症・骨粗鬆症・心房細動。高齢者・冠動脈疾患では少量から開始。妊娠中は用量増量が必要（胎児神経発達に不可欠）。カルシウム・鉄剤・PPI・コレスチラミンが吸収を阻害"
   },
@@ -31,7 +31,7 @@
     "onset_time": "4〜6時間（即効性）",
     "duration_hours": "1日2〜3回分割投与（半減期が短いため）。通常5〜25μg/日",
     "guideline_rank": "レボチロキシン単独で症状が改善しない例に追加検討（T₄/T₃配合療法）。甲状腺クリーゼの補助として静注製剤も使用。単独使用は血中T₃の乱高下が生じやすく一般的でない",
-    "evidence": "Idrees T et al. Thyroid 2020（PMID:32580649）",
+    "evidence": "Idrees et al.（Thyroid 2020 PMID:32580649）",
     "evidence_url": null,
     "caution": "半減期短く血中T₃が乱高下→動悸・狭心症悪化リスク。高齢者・心疾患患者では原則避ける。単独長期投与は骨密度低下・心房細動リスク。TSH抑制が過剰になりやすい"
   },
@@ -49,7 +49,7 @@
     "onset_time": "2〜4週（FT₃/FT₄改善）",
     "duration_hours": "1日1回（維持療法）初期10〜30mg/日→維持5〜10mg/日。長期（1〜2年）投与",
     "guideline_rank": "バセドウ病第一選択。PTUより肝毒性が少なく1日1回で服薬アドヒアランス良好。妊娠初期（第1トリメスター）はPTUを選択（チアマゾールの催奇形性リスクのため）。第2トリメスター以降は切り替え可",
-    "evidence": "JTA Guidelines 2024; Laurberg P et al. Eur Thyroid J 2013（PMID:24783042）",
+    "evidence": "Laurberg et al.（Eur Thyroid J 2013 PMID:24783042）",
     "evidence_url": null,
     "caution": "無顆粒球症（0.2〜0.5%・発熱・咽頭痛で即中止）。皮疹・蕁麻疹（10〜15%）。ANCA関連血管炎（PTUより少ない）。妊娠初期の催奇形性（頭皮欠損・食道閉鎖等）→妊娠初期はPTU選択"
   },
@@ -67,7 +67,7 @@
     "onset_time": "2〜4週（FT₃/FT₄改善）",
     "duration_hours": "1日3〜4回分割投与。初期300〜400mg/日（クリーゼ時600〜800mg/日）→維持50〜150mg/日",
     "guideline_rank": "妊娠初期（第1トリメスター）はチアマゾールに代えてPTUを選択（催奇形性リスク低い）。甲状腺クリーゼではPTU＋ヨウ素＋β遮断薬の組み合わせが標準治療。チアマゾール不耐の場合の代替として",
-    "evidence": "JTA Guidelines 2024; Stagnaro-Green A et al. Thyroid 2011（ATA妊娠ガイドライン PMID:21787128）",
+    "evidence": "Stagnaro-Green et al.（Thyroid 2011 PMID:21787128）",
     "evidence_url": null,
     "caution": "重篤な肝毒性（劇症肝炎 0.1〜0.2%）→定期的な肝機能モニタリング。無顆粒球症。ANCA関連血管炎（チアマゾールより多い）。1日3〜4回服薬でアドヒアランス困難。妊娠中期以降はチアマゾールに切り替え推奨"
   },
@@ -85,7 +85,7 @@
     "onset_time": "数日（ウォルフ・チャイコフ効果）",
     "duration_hours": "術前：1日3回（50〜100mg/回）×10〜14日。クリーゼ：PTU投与後1時間以降に使用",
     "guideline_rank": "甲状腺癌・バセドウ病の術前準備として抗甲状腺薬で甲状腺機能正常化後に追加（術中出血↓）。エスケープ現象（2〜4週で効果消失）のため単独長期使用不可。クリーゼではPTU優先、その後ヨウ素追加",
-    "evidence": "JTA Guidelines 2024; Nayak B et al. Thyroid 2011（クリーゼ治療 PMID:21265605）",
+    "evidence": "Nayak et al.（Thyroid 2011 PMID:21265605）",
     "evidence_url": null,
     "caution": "ヨウ素アレルギー。エスケープ現象（2〜4週で効果消失）のため単独長期使用不可。PTUより先に投与するとホルモン合成再開リスク（必ずPTU投与後に使用）。腎機能低下例で高ヨード血症"
   },
@@ -103,7 +103,7 @@
     "onset_time": "数時間〜2〜3日（ヨウ素効果）",
     "duration_hours": "術前：1回5〜10滴×1日3回×10〜14日。クリーゼ：PTU投与後1時間以上空けて投与",
     "guideline_rank": "ヨウ化カリウムと同効だがルゴール液が歴史的に広く使われる。甲状腺クリーゼではPTU大量→1時間後にヨウ素という順序が必須。エスケープ現象があるため単独長期使用不可。集学的治療の一環",
-    "evidence": "JTA甲状腺クリーゼ診断基準2012; Burch HB et al. Thyroid 2015（PMID:25437915）",
+    "evidence": "Burch et al.（Thyroid 2015 PMID:25437915）",
     "evidence_url": null,
     "caution": "ヨウ素アレルギー（ヨードアレルギー）。エスケープ現象（単独長期不可）。PTUより先に投与すると甲状腺ホルモン合成再開リスク（PTU優先投与が鉄則）。服用時は必ず水で薄める（消化管刺激）"
   },
@@ -121,7 +121,7 @@
     "onset_time": "1〜2時間（皮下注）。LAR製剤は1〜2ヶ月で定常状態",
     "duration_hours": "皮下注（1日3回）またはLAR製剤（4週毎筋注 20〜30mg）",
     "guideline_rank": "末端肥大症第一選択薬（手術不適・術後残存例）。LAR製剤はアドヒアランス良好。SST2受容体陽性の神経内分泌腫瘍G1/G2（PROMID試験・CLARINET試験）に適応。ランレオチドと同等の有効性",
-    "evidence": "Melmed S et al. NEJM 2006; PROMID trial Rinke A et al.（PMID:19822898）",
+    "evidence": "PROMID試験（J Clin Oncol 2009 PMID:19822898）",
     "evidence_url": null,
     "caution": "胆石・胆嚢炎（長期使用で>25%）。一過性の血糖変動（GH↓でインスリン感受性改善→低血糖リスク）。消化器症状（下痢・腹痛・悪心）は最初の1〜2ヶ月に多い。注射部位反応（LAR製剤）"
   },
@@ -139,7 +139,7 @@
     "onset_time": "4〜8週で効果発現（深部皮下注の緩徐吸収）",
     "duration_hours": "4週毎深部皮下注（60/90/120mg）。自己投与可能なオートジェル製剤あり",
     "guideline_rank": "オクトレオチドLARと同等の有効性。自己投与可能なオートジェル製剤は利便性が高い。膵・消化管神経内分泌腫瘍G1/G2（CLARINET試験）に適応拡大。オクトレオチドから切り替えも可",
-    "evidence": "CLARINET trial Caplin ME et al. NEJM 2014（PMID:25014687）",
+    "evidence": "CLARINET試験（NEJM 2014 PMID:25014687）",
     "evidence_url": null,
     "caution": "胆石・胆嚢炎（長期使用）。血糖変動（低血糖→高血糖の可能性）。消化器症状。注射部位の硬結（深部皮下注）。高額（オクトレオチドLARと同程度）"
   },
@@ -157,7 +157,7 @@
     "onset_time": "1〜2週（プロラクチン低下）。腫瘍縮小は数ヶ月",
     "duration_hours": "週1〜2回内服。開始0.25mg/週→維持0.5〜2mg/週（効果・耐性に応じて調整）",
     "guideline_rank": "高プロラクチン血症・プロラクチノーマの第一選択（ブロモクリプチンより有効・副作用少・服用頻度少）。妊娠希望例では妊娠確認後に中止（安全性データはブロモクリプチンより少ない）。パーキンソン病にも低用量で使用",
-    "evidence": "Webster J et al. NEJM 1994（PMID:7904238）; Di Sarno A et al. Endocrine 2000",
+    "evidence": "Webster et al.（NEJM 1994 PMID:7904238）",
     "evidence_url": null,
     "caution": "悪心・頭痛（特に開始時。食後服用で軽減）。起立性低血圧。高用量長期使用（パーキンソン病量）で心臓弁膜症リスク（高プロラクチン血症治療量では低リスク）。衝動制御障害（まれ）。妊娠中は原則中止"
   },
@@ -175,7 +175,7 @@
     "onset_time": "15〜30分（鼻腔内）。1〜2時間（舌下錠）",
     "duration_hours": "舌下錠（ミニリンメルト）60〜240μg就寝前。鼻腔内噴霧10〜20μg/回",
     "guideline_rank": "中枢性尿崩症（腎性尿崩症には無効）の第一選択。夜尿症はJCS・日本小児泌尿器科学会ガイドラインで推奨。夜間多尿（高齢者の夜間頻尿）にも有効だが低Na血症リスクに注意。水分制限との組み合わせが重要",
-    "evidence": "Robinson AG. Ann Intern Med 1976; Rittig S et al. J Urol 2008（PMID:18206928）",
+    "evidence": "Rittig et al.（J Urol 2008 PMID:18206928）",
     "evidence_url": null,
     "caution": "低ナトリウム血症（水中毒）が最重要副作用→過剰な水分摂取と組み合わせると危険。高齢者・心不全・腎機能低下例でリスク大。服用後8〜12時間は水分摂取制限。腎性尿崩症には無効"
   },
@@ -193,7 +193,7 @@
     "onset_time": "2〜4週でPTH低下（投与前血清Ca>8.4 mg/dLが必要）",
     "duration_hours": "1日1回25〜75mg内服（食後服用で吸収改善）",
     "guideline_rank": "CKD透析患者の2HPT第一選択薬（日本透析医学会ガイドライン）。PTH>300 pg/mLが治療開始目安。低Ca血症に注意（Ca補充剤やビタミンDとの組み合わせ）。原発性副甲状腺機能亢進症（手術非適応例）にも使用可",
-    "evidence": "EVOLVE trial Chertow GM et al. NEJM 2012（PMID:23121374）",
+    "evidence": "EVOLVE試験（NEJM 2012 PMID:23121374）",
     "evidence_url": null,
     "caution": "低カルシウム血症（血清Ca<8.0 mg/dLで服用禁忌）。悪心・嘔吐（最多の副作用・服用継続困難の原因）。QT延長（低Ca血症が原因）。食後服用で吸収↑・副作用↓。透析患者以外への保険適用は限定的"
   },
@@ -211,7 +211,7 @@
     "onset_time": "数週間でPTH低下（透析時静注のため血中濃度が確実）",
     "duration_hours": "透析終了時に週3回静注（2.5〜15mg）。ボーラス静注",
     "guideline_rank": "透析患者の2HPTでシナカルセト内服困難例・悪心嘔吐で継続困難な例の代替として。透析時静注で確実な投与が可能。シナカルセトからの切り替えは等量換算で可能（エテルカルセチド5mg≒シナカルセト25mg）",
-    "evidence": "Block GA et al. NEJM 2017（PMID:28099057）",
+    "evidence": "Block et al.（NEJM 2017 PMID:28099057）",
     "evidence_url": null,
     "caution": "低カルシウム血症（シナカルセト同様）。筋痙攣（低Ca血症由来）。注射部位疼痛（まれ）。静注製剤のため外来透析施設のみ使用可能。費用がシナカルセトより高い"
   }

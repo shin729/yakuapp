@@ -121,7 +121,7 @@
     "onset_time": "経口：数日〜数週間（負荷投与で短縮）/ 静注：数時間",
     "duration_hours": "1日1回（T1/2 極めて長い：40〜55日）",
     "guideline_rank": "器質的心疾患（心不全EF<40%・心筋梗塞後）合併AFで安全に使用できる唯一のリズムコントロール薬。他剤（フレカイニド・ソタロール等）が禁忌・無効の場合に選択。ただし甲状腺・肺・肝・角膜への長期毒性があり、重症例・他剤無効例に限定する",
-    "evidence": "CTAF trial（PMID:10987749）; SCD-HeFT trial; 日本循環器学会ガイドライン2020",
+    "evidence": "CTAF試験（NEJM 2000 PMID:10987749）",
     "caution": "甲状腺機能異常（頻度高い）・間質性肺炎・肝障害・角膜色素沈着・光線過敏症。半減期40〜55日で副作用が遷延。ヨウ素含有のためCT造影剤との相互作用注意。定期的な甲状腺・肺機能・肝機能モニタリング必須",
     "evidence_url": null
   },
@@ -175,7 +175,7 @@
     "onset_time": "1〜3時間（経口）",
     "duration_hours": "1日2回投与（T1/2 約14時間）",
     "guideline_rank": "【最重要】器質的心疾患（心筋梗塞後・EF<40%心不全・高度左室肥大）には絶対禁忌（CAST試験：死亡率増加）。器質的心疾患のない孤立性AF（lone AF）のリズムコントロール第一選択。発作時頓服（pill-in-the-pocket）療法にも使用可",
-    "evidence": "CAST trial（PMID:2201423）; Cochrane Review（Lafuente-Lafuente et al. PMID:26086642）",
+    "evidence": "CAST試験（NEJM 1989 PMID:2201423）",
     "caution": "【絶対禁忌】器質的心疾患（心筋梗塞後・心不全・高度左室肥大）。QRS幅延長・催不整脈作用。腎機能低下で蓄積（CCr<35で減量・禁忌）",
     "evidence_url": null
   },
@@ -211,7 +211,7 @@
     "onset_time": "1〜2時間（経口）",
     "duration_hours": "1日3回（通常錠）/ 1日2回（徐放錠）",
     "guideline_rank": "器質的心疾患のない迷走神経緊張性AF（食後・睡眠中・安静時に発症）の第一選択薬。交感神経依存性AFにはβ遮断薬が優先されるが、迷走神経緊張性には本薬が優位。HOCM合併AFにも有効（流出路狭窄改善）。【注意】器質的心疾患（心筋梗塞後・心不全・高度左室肥大）では死亡率増加の懸念があり原則禁忌",
-    "evidence": "日本循環器学会 不整脈薬物治療ガイドライン2020; Sherrid MV et al., JACC 2005（HCM PMID:15837261）",
+    "evidence": "日本循環器学会 不整脈薬物治療ガイドライン2020",
     "caution": "抗コリン作用（排尿困難・前立腺肥大禁忌・口渇・便秘・緑内障禁忌）。QT延長・torsades de pointes（QTcを定期モニタリング）。器質的心疾患（心不全・心筋梗塞後）禁忌。低血糖（インスリン分泌促進）",
     "evidence_url": null
   },
@@ -229,7 +229,7 @@
     "onset_time": "3〜6時間（経口）",
     "duration_hours": "1日2回投与（T1/2 約13〜19時間）",
     "guideline_rank": "器質的心疾患のない〜軽度（EF>35%・NYHA I-II）AFのリズムコントロール選択肢。アミオダロンより安全性が高いが効果はやや劣る。【重要禁忌】重症心不全（NYHA III-IV・EF<35%）・永続性AFには禁忌（ANDROMEDA試験：死亡率増加）。日本2012年承認",
-    "evidence": "ATHENA trial（PMID:19120403）; ANDROMEDA trial（PMID:18672165）; ESC AFガイドライン2020",
+    "evidence": "ATHENA試験（NEJM 2009 PMID:19120403）",
     "caution": "重症心不全（NYHA III-IV）・永続性AF禁忌。肝障害（重篤肝炎報告あり→肝機能モニタリング必須）。QTc延長。ワルファリン・ダビガトラン・シンバスタチンとの薬物相互作用",
     "evidence_url": null
   },
@@ -265,7 +265,7 @@
     "onset_time": "静注：15〜30分 / 経口負荷：数日",
     "duration_hours": "経口1日1回（T1/2 40〜55日）",
     "guideline_rank": "電気的除細動抵抗性VF・無脈性VTへの静注がACLSプロトコルで第一選択。ICD植込み後の頻回ショック予防にも使用。器質的心疾患合併VTで最も有効。可能であればカテーテルアブレーションと組み合わせる",
-    "evidence": "ARREST trial（PMID:10499487）; SCD-HeFT trial; ACLS 2020",
+    "evidence": "ARREST試験（Lancet 1999 PMID:10499487）",
     "caution": "甲状腺・肺（間質性肺炎）・肝・角膜への長期毒性（AF用途と同様）。半減期40〜55日で副作用遷延。静注時に低血圧・徐脈に注意",
     "evidence_url": null
   },

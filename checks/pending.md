@@ -112,4 +112,16 @@ routinesによる発見事項を記録するファイル。
 - [x] [2026-05-25] 統一感: urology.json / evidence 15件が著者長形式→標準形式に修正。フィナステリドはPLESS試験（NEJM 1998 PMID:9475764）として試験名表記 （対応日: 2026-05-25）
 - [x] [2026-05-25] 統一感: gyneco.json / evidence 22件が著者長形式→標準形式に修正。PROMISE試験・WHI試験・SPIRIT試験・WHO試験・Legro試験は試験名表記で統一。一貫性修正2件: ドロスピレノン（スリンダ）onset_time/duration_hours修正・リンザゴリクス（イセルティ）onset_time/duration_hours修正 （対応日: 2026-05-25）
 
+- [x] [2026-05-25] 統一感: derma.json / evidence 全件が長形式→標準形式（試験名（雑誌 年 PMID:XXXXX）/著者 et al.（雑誌 年 PMID:XXXXX））に修正。複数引用を単一主要引用に削減 26件 （対応日: 2026-05-25）
+- [x] [2026-05-25] 統一感: immune.json / evidence 長形式→標準形式に修正 20件 （対応日: 2026-05-25）
+- [x] [2026-05-25] 統一感: blood.json / evidence 長形式→標準形式に修正 12件 （対応日: 2026-05-25）
+- [x] [2026-05-25] 統一感: endocrine.json / evidence 長形式→標準形式に修正 12件 （対応日: 2026-05-25）
+- [x] [2026-05-25] 統一感: diabetes.json / evidence 長形式→標準形式に修正 7件 （対応日: 2026-05-25）
+- [x] [2026-05-25] 統一感: nutrition.json / evidence 長形式→標準形式に修正 13件 （対応日: 2026-05-25）
+- [x] [2026-05-25] 統一感: lifestyle.json / evidence 長形式→標準形式に修正 22件 （対応日: 2026-05-25）
+- [x] [2026-05-25] 統一感: arrhythmia.json / evidence 長形式→標準形式に修正 5件（CTAF試験・CAST試験・ATHENA試験・ARREST試験・ジソピラミドガイドライン単純化） （対応日: 2026-05-25）
+- [x] [2026-05-25] 統一感: antivirals.json / evidence 長形式→標準形式に修正 2件（PURPOSE 1試験・PALM007試験） （対応日: 2026-05-25）
+- [x] [2026-05-25] 統一感: hf.json / evidence 長形式→標準形式に修正 17件（PARADIGM-HF・SOLVD-Treatment・CHARM-Alternative・EMPHASIS-HF・RALES・COPERNICUS・CIBIS-II・DAPA-HF・EMPEROR-Reduced・SHIFT・VICTORIA・LIFE・Val-HeFT・Rakugi・ATTRibute-CM・RALES高血圧・ALLHAT） （対応日: 2026-05-25）
+- [x] [2026-05-25] 統一感: gi.json / evidence 長形式→標準形式・複数引用削減に修正 26件（OCTAVE試験・U-ACHIEVE試験・Sandborn et al.・Ananthakrishnan et al.ほか） （対応日: 2026-05-25）
+
 <!-- 最終チェック: 2026-05-25 / 次回: フィールド欠損チェック / 対象: 未定 / 未対応0件 -->

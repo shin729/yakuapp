@@ -16,7 +16,7 @@
     "onset_time": "1〜3時間",
     "duration_hours": "1日2回",
     "guideline_rank": "安定したHFrEF（EF<40%）でACE阻害薬・ARBからアップグレードする最優先候補。EF<35%または入院リスクが高い患者でガイドライン推奨。【重要】ACE阻害薬と同時投与禁忌・切り替え時36時間以上の休薬が必須（血管浮腫リスク）",
-    "evidence": "PARADIGM-HF trial（PMID:25176015）; 日本循環器学会 心不全ガイドライン",
+    "evidence": "PARADIGM-HF試験（NEJM 2014 PMID:25176015）",
     "caution": "【禁忌】ACE阻害薬との同時投与（血管浮腫）・切り替え時36時間洗い出し必須。妊婦禁忌。低血圧・高K血症・腎機能悪化に注意",
     "evidence_url": null
   },
@@ -37,7 +37,7 @@
     "onset_time": "1〜2時間（降圧効果）",
     "duration_hours": "1日1〜2回",
     "guideline_rank": "HFrEF（EF<40%）の第一選択RAAS遮断薬。すべてのHFrEF患者に原則投与。忍容性があればARNI（エンレスト）へのアップグレードを検討。空咳が出る場合はARB（カンデサルタン）へ変更",
-    "evidence": "SOLVD-Treatment trial（PMID:2057034）; 日本循環器学会 心不全ガイドライン2017改訂版",
+    "evidence": "SOLVD-Treatment試験（NEJM 1991 PMID:2057034）",
     "caution": "空咳（ACE阻害薬特有、約10〜15%）。高K血症（MRA・ARB併用時は特に注意）。腎機能悪化（両側腎動脈狭窄禁忌）。妊婦禁忌",
     "evidence_url": null
   },
@@ -58,7 +58,7 @@
     "onset_time": "3〜4時間（降圧効果）",
     "duration_hours": "1日1回",
     "guideline_rank": "ACE阻害薬（エナラプリル等）による空咳が出る場合の第一代替薬。ACE阻害薬との併用も可能だが高K血症・腎機能悪化に注意。ARNIへのアップグレードも選択肢",
-    "evidence": "CHARM-Alternative trial（PMID:12954463）; CHARM-Added trial（PMID:12954464）",
+    "evidence": "CHARM-Alternative試験（Lancet 2003 PMID:12954463）",
     "caution": "高K血症（MRA・ACE阻害薬との三剤併用は原則禁忌）。腎機能悪化に注意。妊婦禁忌",
     "evidence_url": null
   },
@@ -79,7 +79,7 @@
     "onset_time": "1〜2時間（降圧）",
     "duration_hours": "1日1回",
     "guideline_rank": "スピロノラクトンによる女性化乳房・月経不順が問題になる場合の代替。心筋梗塞後LV機能低下（EF≤40%）への適応もある（EPHESUS試験）。スピロノラクトンより薬価が高い",
-    "evidence": "EMPHASIS-HF trial（PMID:21073363）; EPHESUS trial（PMID:12668699）",
+    "evidence": "EMPHASIS-HF試験（NEJM 2011 PMID:21073363）",
     "caution": "高K血症（スピロノラクトンと同様に注意）。eGFR<30は禁忌。ACE阻害薬・ARBとの併用で高K血症リスク増大",
     "evidence_url": null
   },
@@ -100,7 +100,7 @@
     "onset_time": "2〜3日（利尿効果）",
     "duration_hours": "1日1回",
     "guideline_rank": "HFrEF（EF<35%）でACE阻害薬・β遮断薬を使用中の患者に第三の柱として追加。NNT=9は心不全薬の中で最も優れた部類。女性化乳房・月経不順が問題になる場合はエプレレノン（選択的MRA）へ変更",
-    "evidence": "RALES trial（PMID:10471456）; 日本循環器学会 心不全ガイドライン",
+    "evidence": "RALES試験（NEJM 1999 PMID:10471456）",
     "caution": "高K血症（腎機能低下例・ACE/ARB併用で特に危険）。女性化乳房・月経不順（エストロゲン様作用）。腎機能低下（eGFR<30は原則禁忌）",
     "evidence_url": null
   },
@@ -121,7 +121,7 @@
     "onset_time": "1〜2時間",
     "duration_hours": "1日2回",
     "guideline_rank": "HFrEFの4本柱の一つ。β遮断薬選択では非選択的作用のため喘息・重症COPDは禁忌。安定した状態で少量から開始し2週間ごとに倍増。【注意】心不全急性増悪時は導入禁忌・継続中も用量調整",
-    "evidence": "COPERNICUS trial（PMID:11386264）; US Carvedilol trial（PMID:8614419）",
+    "evidence": "COPERNICUS試験（NEJM 2001 PMID:11386264）",
     "caution": "喘息・重症COPD禁忌（β2遮断）。急性心不全増悪期は導入禁忌。徐脈・低血圧。急な中断禁止（リバウンド）",
     "evidence_url": null
   },
@@ -142,7 +142,7 @@
     "onset_time": "1〜2時間",
     "duration_hours": "1日1回",
     "guideline_rank": "HFrEFの4本柱の一つ。β1選択性がありカルベジロールより気管支への影響が少ない。軽度〜中等度COPD合併例でも慎重投与可能。1日1回で服薬アドヒアランスに有利",
-    "evidence": "CIBIS-II trial（PMID:10023943）; 日本循環器学会 心不全ガイドライン",
+    "evidence": "CIBIS-II試験（Lancet 1999 PMID:10023943）",
     "caution": "重症喘息・重篤COPD禁忌（軽度COPDは慎重投与可）。急性心不全増悪期は導入禁忌。徐脈・高度房室ブロック。急な中断禁止",
     "evidence_url": null
   },
@@ -163,7 +163,7 @@
     "onset_time": "数日〜2週間（利尿・体重減少）",
     "duration_hours": "1日1回",
     "guideline_rank": "HFrEFの「第4の柱」として2020年以降ガイドラインに追加。糖尿病の有無を問わず全HFrEF患者に推奨。腎保護効果も有し、eGFR≥25から投与可能（ACE/ARBより適応が広い）",
-    "evidence": "DAPA-HF trial（PMID:31535829）; 日本循環器学会 心不全ガイドライン2021追補版",
+    "evidence": "DAPA-HF試験（NEJM 2019 PMID:31535829）",
     "caution": "尿路・性器感染症リスク増加。過度な脱水・低血圧に注意（特に利尿薬との併用）。eGFR<25は効果減弱（投与継続の適応を検討）。1型糖尿病禁忌。ケトアシドーシス（まれ）",
     "evidence_url": null
   },
@@ -184,7 +184,7 @@
     "onset_time": "数日〜2週間（利尿・体重減少）",
     "duration_hours": "1日1回",
     "guideline_rank": "ダパグリフロジンと同等の位置づけで、HFrEFの第4の柱。両剤の比較試験はないが効果・副作用プロファイルはほぼ同等。腎保護効果がよりはっきりしている点が特徴",
-    "evidence": "EMPEROR-Reduced trial（PMID:32865377）; 日本循環器学会 心不全ガイドライン",
+    "evidence": "EMPEROR-Reduced試験（NEJM 2020 PMID:32865377）",
     "caution": "尿路・性器感染症。過度の脱水・低血圧（利尿薬併用時注意）。eGFR<20は効果減弱。1型糖尿病禁忌。ケトアシドーシス（まれ）",
     "evidence_url": null
   },
@@ -205,7 +205,7 @@
     "onset_time": "3〜4時間",
     "duration_hours": "1日2回",
     "guideline_rank": "β遮断薬を最大量使用しても安静時心拍数≥75bpm（洞調律）のHFrEFに適応。β遮断薬禁忌例（重篤喘息等）の代替にもなりうる。【注意】AF（心房細動）には無効（洞結節選択的）・AF禁忌",
-    "evidence": "SHIFT trial（PMID:20801500）; 日本循環器学会 心不全ガイドライン",
+    "evidence": "SHIFT試験（Lancet 2010 PMID:20801500）",
     "caution": "心房細動禁忌（洞結節にしか作用しない）。高度洞不全・房室ブロック禁忌。光視症（視覚異常）が約3%に発現（可逆的）。CYP3A4阻害薬（クラリスロマイシン等）で血中濃度上昇",
     "evidence_url": null
   },
@@ -226,7 +226,7 @@
     "onset_time": "数週間（HF入院・CV死亡への影響評価は長期)",
     "duration_hours": "1日1回（食後服用で吸収向上）",
     "guideline_rank": "ガイドライン推奨治療（ARNI/ACE/ARB・β遮断薬・MRA・SGLT2阻害薬）に上乗せが基本。高リスクHFrEF（過去1年に急性増悪入院歴や高NTproBNP）に適応。2024年5月日本承認",
-    "evidence": "Armstrong PW et al. NEJM 2020（VICTORIA試験 PMID:32222134）",
+    "evidence": "VICTORIA試験（NEJM 2020 PMID:32222134）",
     "evidence_url": null,
     "caution": "低血圧（過度な降圧に注意）。催奇形性（妊婦禁忌・授乳禁忌）。eGFR<15では慎重投与。PDE5阻害薬（シルデナフィル等）との併用禁忌（過度の血圧低下）。sGC刺激薬の長期安全性データは蓄積中"
   },
@@ -427,7 +427,7 @@
     "onset_time": "1〜2時間（降圧最大効果3〜6時間）",
     "duration_hours": "24時間（1日1回）",
     "guideline_rank": "CKD・蛋白尿・痛風合併高血圧に。唯一尿酸低下作用を持つARB",
-    "evidence": "Dahlof B et al. Lancet 2002（LIFE試験 PMID:11937178）",
+    "evidence": "LIFE試験（Lancet 2002 PMID:11937178）",
     "evidence_url": null,
     "caution": "妊婦禁忌。高K血症（腎機能低下例）。ACE阻害薬との併用は腎機能悪化リスク"
   },
@@ -445,7 +445,7 @@
     "onset_time": "2〜4時間（降圧最大効果）",
     "duration_hours": "24時間（1日1回）",
     "guideline_rank": "心不全・高血圧合併例に。ARBの中で心不全エビデンス（Val-HeFT）が充実。後発品で使用頻度高い。肝代謝のため腎障害での調整不要",
-    "evidence": "Cohn JN et al. NEJM 2001（Val-HeFT試験 PMID:11794152）",
+    "evidence": "Val-HeFT試験（NEJM 2001 PMID:11794152）",
     "evidence_url": null,
     "caution": "妊婦禁忌。高K血症（特に腎機能低下・K保持性利尿薬）。肝障害時は慎重投与（肝代謝型）。ACE阻害薬との併用は推奨されない"
   },
@@ -463,7 +463,7 @@
     "onset_time": "1〜2時間",
     "duration_hours": "24時間（1日1回）",
     "guideline_rank": "ARBの中で最強の降圧効果。他ARBで目標血圧に届かない難治性高血圧に。標準20mgから40mgまで増量可能",
-    "evidence": "Rakugi H et al. Hypertens Res 2012（PMID:22573009）",
+    "evidence": "Rakugi et al.（Hypertens Res 2012 PMID:22573009）",
     "evidence_url": null,
     "caution": "妊婦禁忌。高K血症（腎機能低下例）。ACE阻害薬との併用は推奨されない。肝代謝（CYP2C9・UGT）"
   },
@@ -499,7 +499,7 @@
     "onset_time": "1〜2週（最大効果4〜8週）",
     "duration_hours": "1日1回",
     "guideline_rank": "最もエビデンスが豊富なCCB。狭心症合併・高齢者収縮期高血圧に",
-    "evidence": "ALLHAT（JAMA 2002 PMID:12479763）; ASCOT-BPLA（Lancet 2005 PMID:16271648）",
+    "evidence": "ALLHAT試験（JAMA 2002 PMID:12479763）",
     "evidence_url": null,
     "caution": "末梢浮腫（用量依存的・特に女性）。歯肉増殖症。頭痛・動悸（開始初期）。心不全への使用は慎重"
   },
@@ -553,7 +553,7 @@
     "onset_time": "2〜3日（最大効果まで数週間）",
     "duration_hours": "24時間（t1/2 20h）",
     "guideline_rank": "難治性高血圧（第4選択）・心不全・原発性アルドステロン症に",
-    "evidence": "Pitt B et al. NEJM 1999（RALES試験 PMID:10471456）",
+    "evidence": "RALES試験（NEJM 1999 PMID:10471456）",
     "evidence_url": null,
     "caution": "高K血症（ACE/ARB併用で特に注意）。女性化乳房・月経異常（抗アンドロゲン作用）。腎機能低下例は禁忌または慎重"
   },
@@ -607,7 +607,7 @@
     "onset_time": "数週〜数ヶ月（TTR安定化・症状改善）",
     "duration_hours": "800mg 1日2回 食後",
     "guideline_rank": "JCS/JHRS 2020年改訂版不整脈薬物治療ガイドラインには未掲載。ATTR-CM治療における選択的TTR安定化薬。全死亡や心血管関連入院を抑制する予後改善薬として位置付けられる。",
-    "evidence": "ATTRibute-CM Trial Judge DP et al. J Am Coll Cardiol 2025（PMID:40074465）",
+    "evidence": "ATTRibute-CM試験（J Am Coll Cardiol 2025 PMID:40074465）",
     "evidence_url": null,
     "caution": "臨床試験（ATTRibute-CM）において良好な忍容性が示されている。副作用として感染症や消化器症状がみられる場合がある。TTR安定化による疾患修飾を目的とするため、心不全の標準治療と適切に併用する。投与に際しては最新の国内添付文書における警告・禁忌・副作用情報を必ず参照すること。",
     "guideline_url": "https://www.j-circ.or.jp/cms/wp-content/uploads/2020/01/JCS2020_Ono.pdf"

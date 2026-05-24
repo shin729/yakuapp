@@ -13,7 +13,7 @@
     "onset_time": "24〜48時間（ウェルニッケ症状）",
     "duration_hours": "治療：100〜500mg 静注/筋注（ウェルニッケ急性期は500mg×3回/日 × 3日間 静注）。予防・維持：10〜100mg 内服",
     "guideline_rank": "アルコール依存・栄養不良・長期IVH・妊娠悪阻の全患者にウェルニッケ脳症の予防投与を推奨（英国・EFNS）。疑わしければ治療せよ（治療の遅延は不可逆的脳障害を招く）",
-    "evidence": "Donnino MW et al. Mayo Clin Proc 2007;82:684-8（PMID:17550749）",
+    "evidence": "Donnino et al.（Mayo Clin Proc 2007 PMID:17550749）",
     "evidence_url": null,
     "caution": "過敏反応（静注急速投与でアナフィラキシー稀に報告→ゆっくり投与）。通常の用量では毒性なし。フロセミドや利尿薬でB1排泄増加→欠乏リスク上昇"
   },
@@ -31,7 +31,7 @@
     "onset_time": "数週〜数ヶ月（神経障害）・1〜2週（貧血）",
     "duration_hours": "500μg 1日3回 内服 または 500〜1000μg 筋注/静注（悪性貧血は筋注が標準）",
     "guideline_rank": "糖尿病性末梢神経障害に広く処方（エビデンスはモデレート）。メトホルミン長期服用者はB12欠乏リスク→定期モニタリング。悪性貧血（自己免疫性萎縮性胃炎）では終生補充",
-    "evidence": "Sun Y et al. J Neurol Neurosurg Psychiatry 2005;76:361-5（PMID:15716525）",
+    "evidence": "Sun et al.（J Neurol Neurosurg Psychiatry 2005 PMID:15716525）",
     "evidence_url": null,
     "caution": "通常用量では副作用ほぼなし。超高用量（薬理学的大量投与）：ニキビ様皮疹稀に。シアノコバラミン（合成型）と比較してメコバラミン（活性型）は神経系への移行が高いとされる"
   },
@@ -49,7 +49,7 @@
     "onset_time": "1〜2週（神経障害予防効果）",
     "duration_hours": "INH予防：10〜25mg 1日1回 内服（INH服用中）。悪阻：10〜25mg 1日3〜4回",
     "guideline_rank": "抗結核療法でINHを使用する全患者にB6補充（WHO・IDSA・日本結核病学会推奨）。妊娠悪阻でビタミンB6±ドキシラミン（ジクレクチン）が第一選択（ACOG推奨）",
-    "evidence": "Snider DE. Int J Tuberc Lung Dis 1980;1:44（INH + B6）",
+    "evidence": "Snider（Int J Tuberc Lung Dis 1980）",
     "evidence_url": null,
     "caution": "高用量長期投与（200mg/日以上）：感覚性末梢神経障害（光線過敏性神経障害）→通常治療量では問題なし。フェノバルビタール・フェニトインの血中濃度を低下させる"
   },
@@ -67,7 +67,7 @@
     "onset_time": "神経管保護は妊娠4〜6週（形成期）が重要→妊娠前から開始",
     "duration_hours": "予防：0.4〜0.8mg 1日1回 内服（妊娠前1ヶ月〜妊娠3ヶ月）。MTX補助：5mg/週（MTX翌日）",
     "guideline_rank": "妊娠計画中の全女性に葉酸補充（0.4mg/日）が推奨（JSOGガイドライン・WHO・CDC）。神経管閉鎖障害リスク高い場合（前回出産既往・てんかん薬服用者）は4〜5mg/日。MTX使用全患者に葉酸5mg/週補充",
-    "evidence": "MRC Vitamin Study Research Group. Lancet 1991;338:131-7（PMID:1677062）",
+    "evidence": "MRC Vitamin Study（Lancet 1991 PMID:1677062）",
     "evidence_url": null,
     "caution": "B12欠乏を隠蔽する（葉酸補充で貧血が改善しても神経障害は進行→B12不足を先に除外）。抗てんかん薬（フェニトイン・バルプロ酸）との相互作用（葉酸がPHT血中濃度低下）。高用量長期投与での発がんリスクは議論あり"
   },
@@ -85,7 +85,7 @@
     "onset_time": "2〜4週（Ca上昇・PTH低下）",
     "duration_hours": "0.5〜1.0μg 1日1〜2回 内服",
     "guideline_rank": "CKDの2次性副甲状腺機能亢進症にKDIGO推奨。骨粗鬆症治療薬の補助としても広く使用。高Ca血症モニタリングが必須（過量→高Ca血症→腎結石・腎機能悪化）",
-    "evidence": "Tan AU Jr et al. Am J Kidney Dis 1997;29:514-23（PMID:9100041）",
+    "evidence": "Tan et al.（Am J Kidney Dis 1997 PMID:9100041）",
     "evidence_url": null,
     "caution": "高カルシウム血症（最大の副作用）→Ca・Pモニタリング必須。高リン血症（P制限食・リン吸着薬も併用）。軟組織石灰化。サイアザイド系利尿薬との併用でCa上昇増強"
   },
@@ -103,7 +103,7 @@
     "onset_time": "数日〜2週（壊血病）",
     "duration_hours": "壊血病治療：500〜1000mg 1日3回 内服。維持・予防：100〜500mg/日",
     "guideline_rank": "壊血病（アルコール依存・貧困・高齢者・透析患者）に診断即治療。鉄欠乏貧血の鉄剤服用時にビタミンC同時服用を推奨（FeSO4と同時服用で吸収2倍）。過剰投与（>2g/日）はシュウ酸腎結石リスク",
-    "evidence": "Padayatty SJ et al. J Am Coll Nutr 2003;22:18-35（PMID:12569111）",
+    "evidence": "Padayatty et al.（J Am Coll Nutr 2003 PMID:12569111）",
     "evidence_url": null,
     "caution": "過剰摂取→シュウ酸尿症・腎結石（2g/日超）。下痢（高用量）。ヘモクロマトーシスでは鉄過剰を助長。G6PD欠乏症患者では溶血性貧血のリスク（大量静注）"
   },
@@ -139,7 +139,7 @@
     "onset_time": "食後（脂溶性）",
     "duration_hours": "100〜300mg/日（成人）",
     "guideline_rank": "ビタミンE欠乏症の補充。末梢循環改善目的（保険適応）。抗酸化サプリとしても広く使用。",
-    "evidence": "Bjelakovic G, et al.: JAMA. 2007; 297(8): 842-857（PMID:17327526）",
+    "evidence": "Bjelakovic et al.（JAMA 2007 PMID:17327526）",
     "evidence_url": null,
     "caution": "高用量（>400IU/日）では出血リスク増加・全死亡率増加の報告（メタアナリシス）。ワルファリン効果増強。脂溶性のため体内蓄積（ただし水溶性ビタミンより毒性は低い）。"
   },
@@ -157,7 +157,7 @@
     "onset_time": "食後（脂溶性・食事摂取で吸収↑）",
     "duration_hours": "45mg 1日3回（食後）",
     "guideline_rank": "骨粗鬆症の第三選択薬（BPやデノスマブより弱い）。日本でのみ保険適応あり。ビスホスホネート不耐患者の代替。ワルファリン服用患者には禁忌。",
-    "evidence": "Shiraki M, et al.: J Bone Miner Res. 2000; 15(3): 515-521（PMID:10750566）",
+    "evidence": "Shiraki et al.（J Bone Miner Res 2000 PMID:10750566）",
     "evidence_url": null,
     "caution": "ワルファリン服用患者に禁忌（拮抗によりINR低下・血栓リスク）。脂溶性のため体内蓄積あり（ただし毒性は低い）。"
   },
@@ -193,7 +193,7 @@
     "onset_time": "数分（静注）",
     "duration_hours": "子癇：負荷量 4〜6g 静注（10〜20分）→維持 1〜2g/時 持続静注。低Mg血症：1〜2g 静注 または 経口Mg製剤",
     "guideline_rank": "子癇・子癇前症に絶対的適応（WHO必須医薬品）。TdP（QT延長に伴う多形性心室頻拍）に第一選択（ACLSガイドライン）。難治性気管支喘息にも使用",
-    "evidence": "Altman D et al. Lancet 2002;359:1877-90（Magpie試験・PMID:12057549）",
+    "evidence": "Magpie試験（Lancet 2002 PMID:12057549）",
     "evidence_url": null,
     "caution": "高マグネシウム血症→深部腱反射消失（毒性の早期警告）→呼吸麻痺→心停止。腎機能低下時は蓄積→投与量・速度を減らす。拮抗薬：グルコン酸カルシウム10mL 静注（Mg毒性に対して）"
   },
@@ -248,7 +248,7 @@
     "onset_time": "4〜6週（クローン病寛解導入）",
     "duration_hours": "1.0kcal/mL（希釈）→1日1200〜2400kcal（体重・病態による）。経管・経口どちらも可",
     "guideline_rank": "クローン病の寛解導入（ECCO・日本消化器病学会）では栄養療法がステロイドと同等とする日本の推奨あり。欧米ではステロイドに劣るとするデータもあり議論継続。術前栄養改善にも使用",
-    "evidence": "Yamamoto T et al. Eur J Gastroenterol Hepatol 2013;25:526-33（PMID:23388571）",
+    "evidence": "Yamamoto et al.（Eur J Gastroenterol Hepatol 2013 PMID:23388571）",
     "evidence_url": null,
     "caution": "高浸透圧（希釈不足→下痢）。悪心・腹部不快（急速投与）。低脂肪→必須脂肪酸欠乏（長期単独使用）→脂肪乳剤の補充必要。味の問題からアドヒアランスが悪い"
   },
@@ -267,7 +267,7 @@
     "onset_time": "2〜4週（栄養改善）",
     "duration_hours": "1.0kcal/mL・250mL缶 1日3〜6缶（750〜1500kcal）。経管または経口",
     "guideline_rank": "ESPEN・JSPEN栄養療法ガイドラインで経腸栄養が機能する消化管には積極的に使用を推奨。経静脈栄養より感染・腸管萎縮リスクが低い。水分制限不要の標準患者に第一選択",
-    "evidence": "Heyland DK et al. JPEN 2003;27:355-73（PMID:12971743）",
+    "evidence": "Heyland et al.（JPEN 2003 PMID:12971743）",
     "evidence_url": null,
     "caution": "下痢（高浸透圧・急速投与）。誤嚥性肺炎（嚥下障害患者への経管投与時）。ダンピング症候群（胃切除後）。大豆アレルギー（大豆多糖体含有）"
   },
@@ -324,7 +324,7 @@
     "onset_time": "4〜8週（栄養状態）・2〜4週（血糖管理改善）",
     "duration_hours": "1.5kcal/mL・267mL/袋 1日3〜4袋（900〜1500kcal）。経管または経口可",
     "guideline_rank": "日本糖尿病学会・JSPENで糖尿病合併の経腸栄養には低GI型栄養剤の使用を検討。ラコールと同じ高カロリー密度で糖尿病合併時はイノラスを選択する根拠となる",
-    "evidence": "Sato N et al. Nutrients 2020;12:1985（PMID:32630773）",
+    "evidence": "Sato et al.（Nutrients 2020 PMID:32630773）",
     "evidence_url": null,
     "caution": "下痢（高浸透圧・速度超過）。過栄養（過体重患者は投与量調整）。乳タンパクアレルギー。血糖モニタリングは継続必要（低GIでも完全正常化はしない）"
   },
@@ -343,7 +343,7 @@
     "onset_time": "数日〜数週（感染合併症・口内炎改善）",
     "duration_hours": "経腸：0.2〜0.5g/kg/日 経管。静注：0.2〜0.4g/kg/日（腎・肝不全では禁忌）",
     "guideline_rank": "骨髄移植・消化管術後では経腸グルタミン補充を考慮（ESPEN）。ICU重症患者への静注高用量グルタミンは現在推奨されない（REDOXS試験後）。腎・肝不全患者への静注グルタミンは禁忌",
-    "evidence": "Heyland D et al. N Engl J Med 2013;368:1489-97（REDOXS・PMID:23594003）",
+    "evidence": "REDOXS試験（NEJM 2013 PMID:23594003）",
     "evidence_url": null,
     "caution": "腎不全・肝不全患者への高用量静注グルタミンは死亡率増加リスク（REDOXS試験）→禁忌。高アンモニア血症（肝機能低下時）。アミノ酸代謝異常患者では慎重"
   },

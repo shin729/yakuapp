@@ -29,7 +29,7 @@
     "water_required": "食前30分投与必須（食後投与で下痢リスク大幅増加）",
     "efficacy_star": 4,
     "guideline_rank": "慢性便秘症（CC）とIBS-C（便秘型過敏性腸症候群）の両方に保険適応。腹痛を伴う便秘には特に有用。食前投与厳守。6歳未満の小児には禁忌（動物実験で死亡）",
-    "evidence": "PMID:22980216; PMID:22658848",
+    "evidence": "PMID:22980216",
     "caution": "食後投与禁忌（重篤な下痢）。下痢（用量依存的）。6歳未満禁忌",
     "evidence_url": null
   },
@@ -46,7 +46,7 @@
     "water_required": "食後投与推奨（空腹時投与で悪心が増加する）",
     "efficacy_star": 4,
     "guideline_rank": "MgO無効・使用困難な慢性便秘に有効。オピオイド誘発性便秘（ナルデメジンが第一選択）にも適応あり。悪心の副作用が多い（約30%）。妊婦禁忌",
-    "evidence": "PMID:20948554; 日本消化器学会ガイドライン2017",
+    "evidence": "日本消化器学会 慢性便秘症診療ガイドライン2017",
     "caution": "悪心（最も多い副作用、約29〜30%）。食後投与で軽減可。妊婦禁忌（動物実験で催奇形性）。下痢",
     "evidence_url": null
   },
@@ -80,7 +80,7 @@
     "water_required": "必須（水に溶かして内服・コップ1〜2杯）",
     "efficacy_star": 4,
     "guideline_rank": "欧米での慢性便秘第一選択薬。小児・高齢者にも安全。電解質異常・依存性なし。効果発現が遅いため即効性は期待できない。粉末を水に溶かして飲む必要がある（味への工夫が必要）",
-    "evidence": "小児RCT（PMID:11508264）; Cochrane Review（Lee-Robichaud 2010）",
+    "evidence": "Cochrane Review（Lee-Robichaud 2010）",
     "caution": "高度腸閉塞・消化管穿孔禁忌。大量急速投与で電解質異常の可能性",
     "evidence_url": null
   },
@@ -97,7 +97,7 @@
     "water_required": "重要（水分不足で効果減弱・尿路結石リスク増加）",
     "efficacy_star": 4,
     "guideline_rank": "慢性便秘の標準治療薬。安価・安全・長期使用可能。腎機能低下例では高Mg血症（重篤例：心停止）に注意し定期的なMg値モニタリングが必要。PEG・新規作用機序薬への切り替えも選択肢",
-    "evidence": "日本消化器学会 慢性便秘症診療ガイドライン2017; PMID:28533186",
+    "evidence": "日本消化器学会 慢性便秘症診療ガイドライン2017",
     "caution": "腎機能低下例で高Mg血症（悪心・嘔吐・徐脈・心停止）。テトラサイクリン・ニューキノロンの吸収阻害（2時間以上あけて投与）",
     "evidence_url": null
   },
@@ -148,7 +148,7 @@
     "water_required": "必要（コップ1杯以上。内用液は水に滴下して服用）",
     "efficacy_star": 4,
     "guideline_rank": "急性・一時的便秘の第一選択薬の1つ。内用液（1日10〜15滴）で用量調節しやすくセンノシドと並んで最も広く処方される刺激性下剤。長期連用禁忌のため、慢性便秘には非刺激性（MgO・PEG）への切り替えが原則",
-    "evidence": "日本消化器学会 慢性便秘症診療ガイドライン2017; PMID:28533186",
+    "evidence": "日本消化器学会 慢性便秘症診療ガイドライン2017",
     "caution": "長期連用禁忌（依存性・大腸メラノーシス・低K血症）。腸閉塞・腸炎禁忌。妊婦慎重投与（子宮収縮刺激の可能性）。服用量の個人差が大きい（1日5〜20滴で調節）",
     "evidence_url": null
   },
@@ -197,7 +197,7 @@
     "onset_time": "数日（抗菌薬開始と同時に投与開始が望ましい）",
     "efficacy_star": 3,
     "guideline_rank": "抗菌薬投与中・投与後の整腸目的で使用。抗菌薬と同時服用可能（耐性株）。通常の整腸剤（非耐性）は抗菌薬と同時投与すると死菌となり効果がない",
-    "evidence": "Cochrane Review（Goldenberg 2017）; PMID:27774828",
+    "evidence": "Cochrane Review（Goldenberg 2017）",
     "caution": "製剤によって耐性スペクトルが異なるため処方された抗菌薬との組み合わせ確認が必要",
     "evidence_url": null
   },
@@ -259,7 +259,7 @@
     "dosing_timing": "食後（胆汁分泌と同期させることで吸収・効果が向上する）",
     "efficacy_star": 4,
     "guideline_rank": "PBCの標準治療薬（肝機能改善・線維化進展抑制）。コレステロール系胆石（石灰化なし・胆嚢収縮能あり）の溶解療法に使用。NASH・慢性肝炎にも保険適応あり",
-    "evidence": "PMID:11083 （PBC試験）; 日本消化器病学会ガイドライン",
+    "evidence": "日本消化器病学会ガイドライン",
     "caution": "溶解療法は効果発現に6ヶ月〜2年必要。Ca²⁺含有胆石・胆嚢機能不全には無効。下痢（稀）",
     "evidence_url": null
   },
@@ -358,7 +358,7 @@
     "duration_hours": "1日1回（長半減期T1/2 約12時間）",
     "efficacy_star": 5,
     "guideline_rank": "オンダンセトロンと同等の有効性を持つCINV標準薬。1日1回投与の利便性が高い。経皮製剤（グラニセトロン貼付剤）は嚥下困難患者に有用",
-    "evidence": "PMID:7519956; MASCCガイドライン",
+    "evidence": "MASCCガイドライン",
     "caution": "便秘（腸管蠕動抑制）。頭痛。QT延長（オンダンセトロンより頻度低い）",
     "evidence_url": null
   },
@@ -376,7 +376,7 @@
     "duration_hours": "急性期1日1〜2回投与（T1/2 約4〜6時間）",
     "efficacy_star": 5,
     "guideline_rank": "CINV予防の標準薬。デキサメタゾン・アプレピタントとの三剤併用が高度催吐性化学療法の標準。遅発性CINV（24時間以降）には効果が弱まるため三剤併用が重要",
-    "evidence": "Ondansetron vs metoclopramide（PMID:1856421）; MASCCガイドライン",
+    "evidence": "MASCCガイドライン",
     "caution": "QT延長（4mg静注は安全・大量投与・心疾患例に注意）。頭痛・便秘（5-HT3遮断による腸管蠕動低下）",
     "evidence_url": null
   },
@@ -412,7 +412,7 @@
     "duration_hours": "1日3〜4回（T1/2 約4〜5時間）",
     "efficacy_star": 3,
     "guideline_rank": "悪心・嘔吐の汎用制吐薬。化学療法誘発悪心より一般的な悪心・術後・つわりに適している。長期投与では錐体外路症状（遅発性ジスキネジア）リスクがあるため原則短期使用",
-    "evidence": "系統的レビュー（PMID:16235869）; 日本がん支持療法学会 CINVガイドライン",
+    "evidence": "日本がん支持療法学会 CINVガイドライン",
     "caution": "錐体外路症状（アカシジア・ジストニア・遅発性ジスキネジア）：長期投与禁忌。プロラクチン増加（乳汁分泌・無月経）。褐色細胞腫禁忌。消化管閉塞禁忌",
     "evidence_url": null
   },
@@ -446,7 +446,7 @@
     "quick_onset": "あり（服用後1〜3時間で効果発現）",
     "efficacy_star": 4,
     "guideline_rank": "非感染性下痢の第一選択薬（旅行者下痢・化学療法誘発下痢・IBS-Dの急性期）。感染性下痢（血便・発熱・激しい腹痛を伴う場合）では絶対禁忌。原因不明の下痢では必ず感染症を除外する",
-    "evidence": "PMID:8105691; Cochrane Review（de Bruyn 2000）",
+    "evidence": "Cochrane Review（de Bruyn 2000）",
     "caution": "感染性下痢禁忌（腸管麻痺・毒素血症が悪化）。腸閉塞禁忌。小児での大量投与で重篤な心毒性（QRS延長・心室性不整脈）",
     "evidence_url": null
   },
@@ -544,7 +544,7 @@
     "duration_hours": "1日1回（食前30分投与が推奨）",
     "efficacy_star": 4,
     "guideline_rank": "逆流性食道炎・消化性潰瘍・NSAID潰瘍予防の標準PPI。CYP2C19代謝の個人差が少なく安定した効果。P-CAB（ボノプラザン）への切り替えは夜間症状・難治性GERDに有効",
-    "evidence": "SYMPATHY試験（PMID:9823677）; 日本消化器病学会 GERDガイドライン",
+    "evidence": "SYMPATHY試験（PMID:9823677）",
     "caution": "マグネシウム低下（長期使用）。C.ディフィシル感染リスク軽度増加。鉄・B12・Ca²⁺吸収低下（長期使用）",
     "evidence_url": null
   },
@@ -727,7 +727,7 @@
     "onset_time": "2〜4週間（症状改善には継続服用が必要）",
     "efficacy_star": 3,
     "guideline_rank": "IBS全型（下痢型・便秘型・混合型）とFDに広く使用可能な万能型腸管調節薬。症状に合わせた特化型薬剤（ラモセトロン等）より効果は劣るが副作用が少なく広い適応をカバーする",
-    "evidence": "Cochrane Review（Poynard 2001）; PMID:11355215",
+    "evidence": "Cochrane Review（Poynard 2001）",
     "caution": "重篤な副作用は少ない。口渇・便秘（稀）",
     "evidence_url": null
   },
@@ -793,7 +793,7 @@
     "immunosuppression_strength": "弱い（局所抗炎症のみ・全身免疫抑制なし）",
     "efficacy_star": 4,
     "guideline_rank": "小腸〜大腸に病変が広がるUCおよびCD（小腸型）に適する唯一の5-ASA製剤。pH依存型（アサコール等）は小腸では放出されないためペンタサが必須の場面がある。最高用量4g/日（顆粒）で寛解導入・維持",
-    "evidence": "Cochrane Review（Sutherland 2006）; 日本消化器病学会 IBDガイドライン2020",
+    "evidence": "日本消化器病学会 IBDガイドライン2020",
     "caution": "間質性腎炎（稀だが重篤・定期的腎機能モニタリング必要）。重篤な副作用は少ない。アスピリン過敏症（稀）",
     "evidence_url": null
   },
@@ -864,7 +864,7 @@
     "immunosuppression_strength": "中〜強（IL-12/23特異的抑制・抗TNFより感染リスクが低い）",
     "efficacy_star": 5,
     "guideline_rank": "抗TNFα製剤失効・不耐容のCD・UCの第二線生物学的製剤。安全性プロファイルが抗TNFより良好（感染リスク低）。抗薬剤抗体産生が少なく長期安定性が高い",
-    "evidence": "UNIFI UC試験（PMID:23434375）; UNIFI CD試験（PMID:26956974）",
+    "evidence": "UNIFI UC試験（PMID:23434375）",
     "caution": "感染リスク（抗TNFより低いが結核スクリーニング必要）。活動性感染症禁忌",
     "evidence_url": null
   },
@@ -881,7 +881,7 @@
     "immunosuppression_strength": "中〜強（IL-23特異的・Th17経路選択的：IL-12経路は温存）",
     "efficacy_star": 5,
     "guideline_rank": "抗TNF失効・不耐容のCD・UCへの選択肢。ウステキヌマブより選択性が高くIL-12経路（Th1免疫）を温存するため感染防御能への影響が理論的に少ない。ADVANCE試験（CD）で抗TNF失効例でも高い寛解率を示した。日本ではCD2023年・UC2024年承認",
-    "evidence": "ADVANCE/MOTIVATE CD試験（PMID:34774328）; INSPIRE UC試験（PMID:36634691）",
+    "evidence": "ADVANCE/MOTIVATE CD試験（PMID:34774328）",
     "caution": "投与前感染症スクリーニング（結核・B型肝炎）必須。活動性感染症禁忌。活動性TB禁忌",
     "evidence_url": null
   },
@@ -898,7 +898,7 @@
     "immunosuppression_strength": "中程度・腸管局所特異的（全身免疫へのインパクトは最小限）",
     "efficacy_star": 4,
     "guideline_rank": "抗TNF失効・不耐容例または感染ハイリスク例（高齢・COPD・B型肝炎既往）に特に有用。腸管局所選択性により全身感染リスクが低い。効果発現がやや遅い（6〜14週）",
-    "evidence": "GEMINI 1 UC試験（PMID:23964932）; GEMINI 2 CD試験（PMID:23964933）",
+    "evidence": "GEMINI 1 UC試験（PMID:23964932）",
     "caution": "活動性感染症禁忌。進行性多巣性白質脳症（PML）リスクは非常に低い（腸管選択的）。輸注反応（稀）",
     "evidence_url": null
   },
@@ -915,7 +915,7 @@
     "immunosuppression_strength": "強い（TNFα広域遮断→自然免疫・適応免疫の全身的な抑制）",
     "efficacy_star": 5,
     "guideline_rank": "中等症〜重症UC・CDのステロイド難治・依存例の標準生物学的製剤。投与前に必ず結核スクリーニング（胸部X線・QFT/T-SPOT）・B型肝炎HBs抗原確認が必須。キメラ型のため抗体産生によるADAリスクあり（AZAの併用で低減）",
-    "evidence": "Active Crohn's Disease試験（PMID:9717533）; ACT1/ACT2 UC試験（PMID:15765826）",
+    "evidence": "ACT1/ACT2 UC試験（PMID:15765826）",
     "caution": "投与前結核スクリーニング必須。活動性感染症禁忌。うっ血性心不全（NYHA III/IV）禁忌。脱髄疾患悪化。抗薬剤抗体（ADA）形成による効果減弱",
     "evidence_url": null
   },
@@ -932,7 +932,7 @@
     "immunosuppression_strength": "強い（TNFα広域遮断→自然免疫・適応免疫の全身的な抑制）",
     "efficacy_star": 5,
     "guideline_rank": "インフリキシマブと同等の有効性を持つ抗TNFα製剤。完全ヒト型のためADA産生リスクが低く長期安定性が高い。皮下注自己投与（2週間に1回）で外来管理に優れる。投与前に必ず結核スクリーニング・B型肝炎HBs抗原確認が必須。関節症状を伴うIBDにも適応",
-    "evidence": "CLASSIC I CD試験（PMID:12867484）; ULTRA 1 UC試験（PMID:21617852）",
+    "evidence": "CLASSIC I CD試験（PMID:12867484）",
     "caution": "投与前結核スクリーニング必須。活動性感染症禁忌。うっ血性心不全（NYHA III/IV）禁忌。脱髄疾患悪化。注射部位反応",
     "evidence_url": null
   },
@@ -949,7 +949,7 @@
     "immunosuppression_strength": "中程度（T/Bリンパ球選択的抑制・全身免疫抑制はステロイドより緩和）",
     "efficacy_star": 4,
     "guideline_rank": "ステロイド依存性UC・CDの維持療法に使用。開始前にNUDT15遺伝子検査が推奨（骨髄抑制リスク評価）。効果発現まで3〜6ヶ月が必要（急性期には使用しない）。生物学的製剤との併用で免疫原性低下効果あり",
-    "evidence": "Cochrane Review（Timmer 2012）; PMID:22573695",
+    "evidence": "Cochrane Review（Timmer 2012）",
     "caution": "骨髄抑制（白血球減少・貧血：NUDT15変異例で重篤）。定期的な血球数モニタリング必要。悪性リンパ腫リスク増加（長期使用）。感染症（帯状疱疹・ニューモシスチス肺炎）",
     "evidence_url": null
   },
@@ -966,7 +966,7 @@
     "immunosuppression_strength": "中程度（腸管局所は強力・全身は弱い）",
     "efficacy_star": 3,
     "guideline_rank": "CD回腸型・上行結腸型の寛解導入に第一選択（プレドニゾロンの代替として）。全身ステロイド副作用が少ないため高齢者・糖尿病・骨粗しょう症患者に適している。維持療法としての長期使用は推奨されない",
-    "evidence": "Cochrane Review（Sherlock 2009）; PMID:11029335",
+    "evidence": "Cochrane Review（Sherlock 2009）",
     "caution": "CYP3A4阻害薬（アゾール系抗真菌薬・グレープフルーツ）との併用でステロイド過剰（禁忌）。長期使用で副腎抑制・骨密度低下",
     "evidence_url": null
   },
@@ -983,7 +983,7 @@
     "immunosuppression_strength": "強い（全身免疫抑制・骨髄抑制は少ないがT細胞機能を広く抑制）",
     "efficacy_star": 4,
     "guideline_rank": "UC・CD急性増悪（中等症〜重症）の寛解導入に第一選択。寛解達成後は漸減中止し維持療法（5-ASA・免疫調節薬・生物学的製剤）に移行。ステロイド依存例では免疫調節薬（AZA）・生物学的製剤を検討",
-    "evidence": "Truelove & Witts基準（PMID:3913590）; 日本消化器病学会 IBDガイドライン",
+    "evidence": "日本消化器病学会 IBDガイドライン",
     "caution": "感染症増悪（結核・ニューモシスチス肺炎・ヘルペス再活性化）。骨粗しょう症・大腿骨頭壊死。高血糖・高血圧・浮腫。精神症状（ステロイド精神病）。副腎皮質機能抑制（急に中断禁止）",
     "evidence_url": null
   },
@@ -1000,7 +1000,7 @@
     "immunosuppression_strength": "強い（JAK1/2/3の広域遮断による全身免疫抑制）",
     "efficacy_star": 4,
     "guideline_rank": "抗TNF無効・不耐容のUCに経口投与が可能な初の低分子薬。50歳以上+リスク因子（喫煙・心血管既往）がある場合は慎重投与・帯状疱疹ワクチン接種を推奨",
-    "evidence": "Sandborn WJ et al. NEJM 2017（OCTAVE試験 PMID:28813225）",
+    "evidence": "OCTAVE試験（NEJM 2017 PMID:28813225）",
     "caution": "帯状疱疹リスク増加（生物学的製剤より高い）。心血管イベント・静脈血栓塞栓症リスク。悪性腫瘍リスク。活動性感染症禁忌",
     "evidence_url": null
   },
@@ -1017,7 +1017,7 @@
     "immunosuppression_strength": "中程度（JAK1選択的・JAK2/3の抑制は少ない）",
     "efficacy_star": 5,
     "guideline_rank": "JAK1選択性によりトファシチニブより改善された安全性プロファイル。UCとクローン病の両方に適応（2021年UC・2023年CD承認）。抗TNF・生物学的製剤不応例にも有効",
-    "evidence": "Sandborn WJ et al. NEJM 2019（U-ACHIEVE試験 PMID:31722157）",
+    "evidence": "U-ACHIEVE試験（NEJM 2019 PMID:31722157）",
     "caution": "帯状疱疹リスク（接種推奨）。心血管・静脈血栓塞栓症リスク評価。活動性感染症禁忌。妊婦禁忌",
     "evidence_url": null
   },
@@ -1167,7 +1167,7 @@
     "onset_time": "2〜8週（寛解導入）",
     "duration_hours": "0.92mg 1日1回（1日目0.23mg→7日目0.46mg→14日目0.92mgと漸増）",
     "guideline_rank": "2024年AGAガイドラインにて、バイオ製剤未治療の中等症〜重症潰瘍性大腸炎に対する寛解導入療法の第一選択薬の一つとして、リサンキズマブと並び最高位に推奨されている。",
-    "evidence": "Comparative Efficacy of Advanced Therapies for Management of Moderate-to-Severe Ulcerative Colitis: 2024 American Gastroenterological Association Evidence Synthesis Ashwin N Ananthakrishnan et al. Gastroenterology 2024 (PMID: 39425738)",
+    "evidence": "Ananthakrishnan et al.（Gastroenterology 2024 PMID:39425738）",
     "evidence_url": null,
     "caution": "主な副作用は徐脈、房室ブロック、肝機能酵素上昇、黄斑浮腫、感染症リスク増大。投与開始初期に心拍数低下が生じる可能性があるため、心血管疾患患者への投与には注意が必要。また、リンパ球減少に伴う日和見感染症に留意し、投与開始前および期間中に適切なモニタリングを行うこと。"
   },
@@ -1185,7 +1185,7 @@
     "onset_time": "2〜8週（寛解導入効果）",
     "duration_hours": "2mg 1日1回（食事に関係なく服用可・漸増不要）",
     "guideline_rank": "2025年日本承認（ファイザー）。潰瘍性大腸炎の経口S1P受容体調節薬としてオザニモドに続く選択肢。生物学的製剤不応・不耐患者やJAK阻害薬が使えない患者に有用",
-    "evidence": "Sandborn WJ et al. Lancet 2023;401:1159-71（PMID:36924783）",
+    "evidence": "Sandborn et al.（Lancet 2023 PMID:36924783）",
     "evidence_url": null,
     "caution": "感染症リスク（リンパ球減少→帯状疱疹・日和見感染）。投与前：VZVワクチン接種・心電図確認推奨。黄斑浮腫（視力変化時は眼科受診）。妊娠中は禁忌（ヒト胎児毒性）。投与中止後も数週間リンパ球減少が持続"
   }

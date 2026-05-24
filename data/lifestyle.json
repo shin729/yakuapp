@@ -31,7 +31,7 @@
     "onset_time": "2週間以内に最大効果",
     "duration_hours": "336時間（2週に1回皮下注）",
     "guideline_rank": "スタチン最大量でもLDL目標未達の高リスク例・FHに。2週1回皮下注",
-    "evidence": "Schwartz GG et al. NEJM 2018（ODYSSEY OUTCOMES試験 PMID:30403574）",
+    "evidence": "ODYSSEY OUTCOMES試験（NEJM 2018 PMID:30403574）",
     "evidence_url": null,
     "caution": "注射剤（2週1回または月1回）。非常に高価。注射部位反応。筋肉痛まれ"
   },
@@ -49,7 +49,7 @@
     "onset_time": "2〜4週で最大効果",
     "duration_hours": "初回→3ヶ月後→以降6ヶ月毎（年2回）",
     "guideline_rank": "年2回皮下注で服薬アドヒアランス最高水準。スタチン最大量・PCSK9抗体薬でも不十分な高リスク例・FHに。2023年日本承認",
-    "evidence": "Wright RS et al. NEJM 2020（ORION-10試験 PMID:32302133）",
+    "evidence": "ORION-10試験（NEJM 2020 PMID:32302133）",
     "evidence_url": null,
     "caution": "注射部位反応（軽微）。心血管アウトカム試験（ORION-4）進行中。非常に高価"
   },
@@ -85,7 +85,7 @@
     "onset_time": "2〜4週（最大効果4〜6週）",
     "duration_hours": "1日1回",
     "guideline_rank": "高リスク患者の脂質異常症第一選択。LDL低下効果が強い",
-    "evidence": "ASCOT-LLA（Lancet 2003 PMID:12686036）; TNT試験（NEJM 2005 PMID:15755765）",
+    "evidence": "ASCOT-LLA試験（Lancet 2003 PMID:12686036）",
     "evidence_url": null,
     "caution": "ミオパチー・横紋筋融解症（特にフィブラート・CYP3A4阻害薬との併用）。肝機能検査定期確認。妊婦禁忌"
   },
@@ -121,7 +121,7 @@
     "onset_time": "2〜4週で最大効果",
     "duration_hours": "24時間（就寝前1回）",
     "guideline_rank": "CKD・透析患者・薬物相互作用が懸念される例に。水溶性で筋障害リスクが低い",
-    "evidence": "Shepherd J et al. NEJM 1995（WOSCOPS試験 PMID:7566020）",
+    "evidence": "WOSCOPS試験（NEJM 1995 PMID:7566020）",
     "evidence_url": null,
     "caution": "筋障害リスクが低い（水溶性）。P-糖タンパク基質のため一部相互作用。フィブラートとの慎重併用"
   },
@@ -157,7 +157,7 @@
     "onset_time": "4〜8週",
     "duration_hours": "1日2〜3回",
     "guideline_rank": "高TG血症・低HDL血症に。スタチンとの併用で混合型脂質異常症に。フェノフィブラートと同等だが腎機能低下例では蓄積しやすい",
-    "evidence": "BIP試験（PMID:10938172）",
+    "evidence": "BIP試験（Circulation 2000 PMID:10938172）",
     "evidence_url": null,
     "caution": "スタチンとの併用で横紋筋融解症リスク増加。腎機能低下で蓄積（eGFR<30で禁忌〜要調整）。胆石形成。肝酵素上昇"
   },
@@ -175,7 +175,7 @@
     "onset_time": "4〜8週",
     "duration_hours": "1日2回（朝・夕食後）",
     "guideline_rank": "高TG血症の新しい選択肢。フェノフィブラートより強力なTG低下。PROMINENT試験では心血管イベント抑制を示せず（TG正常化しても転帰改善なし）。TG降下目的の使用に限定",
-    "evidence": "Das Pradhan A et al. NEJM 2022（PROMINENT試験 PMID:36351464）",
+    "evidence": "PROMINENT試験（NEJM 2022 PMID:36351464）",
     "evidence_url": null,
     "caution": "スタチンとの横紋筋融解症リスク（フィブラート共通）。腎障害での用量調整はフェノフィブラートより軽微。肝障害に注意。PROMINENT試験で心血管保護効果は未証明"
   },
@@ -211,7 +211,7 @@
     "onset_time": "4〜8週",
     "duration_hours": "1日3回（食後）",
     "guideline_rank": "スタチン使用中の高TG血症・高心血管リスクに適する",
-    "evidence": "REDUCE-IT（NEJM 2018 PMID:30415628）; JELIS（Lancet 2007 PMID:17321310）",
+    "evidence": "REDUCE-IT試験（NEJM 2018 PMID:30415628）",
     "evidence_url": null,
     "caution": "出血リスク（抗凝固薬・抗血小板薬との併用注意）。消化器症状（魚臭・げっぷ）。心房細動リスクがわずかに増加"
   },
@@ -229,7 +229,7 @@
     "onset_time": "2〜4週",
     "duration_hours": "1日1回",
     "guideline_rank": "高尿酸血症・痛風発作予防の第一選択。腎機能低下例にも使用可",
-    "evidence": "CONFIRMS試験（PMID:20370912）; APEX試験（PMID:17146700）",
+    "evidence": "CONFIRMS試験（Arthritis Care Res 2010 PMID:20370912）",
     "evidence_url": null,
     "caution": "心血管イベントリスク（CARES試験でCV死亡率上昇の懸念）→心血管リスク高例はアロプリノール優先を検討。開始時に痛風発作増加→コルヒチン予防投与"
   },
@@ -265,7 +265,7 @@
     "onset_time": "2〜4週",
     "duration_hours": "1日1〜3回（腎機能に応じて）",
     "guideline_rank": "安価で長い使用経験。腎機能正常例の高尿酸血症に",
-    "evidence": "Sundy et al., JAMA 2011（PMID:21846852）",
+    "evidence": "Sundy et al.（JAMA 2011 PMID:21846852）",
     "evidence_url": null,
     "caution": "SJS（HLA-B*5801が高リスク→韓国・台湾・タイ系でスクリーニング推奨）。腎機能低下で蓄積し用量調整必須。開始時痛風発作増加"
   },
@@ -283,7 +283,7 @@
     "onset_time": "2〜4週",
     "duration_hours": "1日1回（食後）",
     "guideline_rank": "尿酸排泄低下型高尿酸血症の新しい第一選択。ベンズブロマロンより安全性が高い（肝毒性なし）。0.5mg/日から開始し1mg/日へ増量。尿路結石予防のため水分摂取・尿アルカリ化を推奨",
-    "evidence": "Hisatome I et al. Arthritis Rheumatol 2020（PMID:32077247）",
+    "evidence": "Hisatome et al.（Arthritis Rheumatol 2020 PMID:32077247）",
     "evidence_url": null,
     "caution": "開始時に痛風発作増加→コルヒチン予防投与推奨。尿路結石リスク（尿アルカリ化・水分摂取2L/日以上で予防）。腎機能高度低下（eGFR<30）では使用慎重。ベンズブロマロンのような重篤肝毒性の報告なし"
   },
@@ -301,7 +301,7 @@
     "onset_time": "2〜4週",
     "duration_hours": "1日1回（食後）",
     "guideline_rank": "尿酸産生過剰型に有効な排泄促進薬。重篤な肝毒性リスクあり",
-    "evidence": "Perez-Ruiz et al., Arthritis Res Ther 2011; 国内使用実績",
+    "evidence": "Perez-Ruiz et al.（Arthritis Res Ther 2011）",
     "evidence_url": null,
     "caution": "劇症肝炎・肝障害リスク（欧州では市場撤退、日本では継続）→定期的肝機能検査必須。尿路結石リスク（尿アルカリ化・水分摂取で予防）。腎不全・尿酸産生過剰型では禁忌"
   },
@@ -319,7 +319,7 @@
     "onset_time": "12〜24時間（急性期）",
     "duration_hours": "急性期：最初1 mg→0.5 mg（低用量法）/ 予防：0.5 mg/日",
     "guideline_rank": "急性痛風発作の消炎・ULT開始時の予防投与に。腎機能低下で用量注意",
-    "evidence": "Terkeltaub et al., Arthritis Rheum 2010（PMID:20131255）",
+    "evidence": "Terkeltaub et al.（Arthritis Rheum 2010 PMID:20131255）",
     "evidence_url": null,
     "caution": "下痢・悪心・腹痛（用量依存）。骨髄抑制（高用量・腎障害）。CYP3A4・P糖蛋白の基質でクラリスロマイシン等で中毒リスク。腎/肝障害で蓄積"
   },
@@ -337,7 +337,7 @@
     "onset_time": "数週間（BMD改善）/ 6〜12ヶ月（骨折予防効果確立）",
     "duration_hours": "週1回 70mg（起床後すぐ・コップ一杯の水で）",
     "guideline_rank": "骨粗鬆症治療の第一選択（エビデンス最多）。服薬後30分は横にならない・食事しない（食道刺激防止）。eGFR<35禁忌。長期使用（5〜10年以上）では非定型大腿骨骨折リスクを定期評価",
-    "evidence": "Black DM et al. Lancet 1996（FIT試験 PMID:8943451）",
+    "evidence": "FIT試験（Lancet 1996 PMID:8943451）",
     "evidence_url": null,
     "caution": "食道潰瘍・食道炎（服薬後30分以上は横にならない）。顎骨壊死（ONJ・長期高用量）。非定型大腿骨骨折（長期使用）。eGFR<35禁忌。Ca・VitD補充を並行"
   },
@@ -355,7 +355,7 @@
     "onset_time": "3〜6ヶ月（骨折予防効果発現）",
     "duration_hours": "週1回 17.5mg または月1回 75mg（起床後すぐ・水で）",
     "guideline_rank": "アレンドロン酸とほぼ同等の有効性。月1回製剤（75mg）でアドヒアランス向上。グルコルチコイド誘発性骨粗鬆症（ステロイド骨粗鬆症）にも適応あり。eGFR<35禁忌",
-    "evidence": "McClung MR et al. NEJM 2001（HIP試験 PMID:11172164）",
+    "evidence": "HIP試験（NEJM 2001 PMID:11172164）",
     "evidence_url": null,
     "caution": "食道刺激（服薬後30分横にならない）。顎骨壊死・非定型大腿骨骨折（長期）。eGFR<35禁忌"
   },
@@ -373,7 +373,7 @@
     "onset_time": "3〜6ヶ月（骨折予防効果発現）",
     "duration_hours": "月1回 50mg（起床後すぐ水で・食事前後2時間は摂取しない）",
     "guideline_rank": "日本開発のビスフォスフォネート（月1回内服）。アドヒアランスが良好。エビデンスは主に国内試験でアレンドロン酸・リセドロン酸より国際データは少ない",
-    "evidence": "Uchida S et al. Calcif Tissue Int 2009（PMID:19466382）",
+    "evidence": "Uchida et al.（Calcif Tissue Int 2009 PMID:19466382）",
     "evidence_url": null,
     "caution": "食道刺激（服薬後30分横にならない）。顎骨壊死・非定型大腿骨骨折（長期）。eGFR<35禁忌"
   },
@@ -391,7 +391,7 @@
     "onset_time": "投与後数日（骨代謝マーカー低下）",
     "duration_hours": "年1回 5mg 静注（15分以上かけて点滴）",
     "guideline_rank": "内服困難例（消化管障害・アドヒアランス不良）の第一選択。年1回の医療機関での静注でアドヒアランス問題を解決。大腿骨骨折も有意に予防。心血管死亡リスク低下も示唆",
-    "evidence": "Black DM et al. NEJM 2007（HORIZON-PFT PMID:17476007）",
+    "evidence": "HORIZON-PFT試験（NEJM 2007 PMID:17476007）",
     "evidence_url": null,
     "caution": "急性期反応（発熱・筋肉痛・倦怠感・投与後1〜3日 インフルエンザ様症状）。顎骨壊死・非定型大腿骨骨折。eGFR<35禁忌。事前水分補給が重要。心房細動リスクのわずかな増加"
   },
@@ -409,7 +409,7 @@
     "onset_time": "投与後1ヶ月以内に骨代謝マーカー低下",
     "duration_hours": "6ヶ月1回 60mg 皮下注（大腿・腹部・上腕）",
     "guideline_rank": "腎機能低下例（eGFR<35・ビスフォスフォネート禁忌）の第一選択。BMD改善が最大クラス。中止後の反跳（多発椎体骨折）リスクがあるため中止時はビスフォスフォネートへの切り替えが必須",
-    "evidence": "Cummings SR et al. NEJM 2009（FREEDOM試験 PMID:19671655）",
+    "evidence": "FREEDOM試験（NEJM 2009 PMID:19671655）",
     "evidence_url": null,
     "caution": "中止後の反跳（複数の椎体骨折発生リスク）→中止時はBP系への切り替え必須。低カルシウム血症（Ca・VitD補充必須）。顎骨壊死（ONJ）。非定型大腿骨骨折。感染リスクのわずかな増加"
   },
@@ -481,7 +481,7 @@
     "onset_time": "1〜3ヶ月（BMD改善急速）",
     "duration_hours": "月1回 210mg（105mg×2本同日）皮下注 12ヶ月間（その後BP/デノスマブへ移行）",
     "guideline_rank": "骨形成促進効果が最大（BMD増加率最高）。12ヶ月限定（その後必ずBP/デノスマブへ移行）。心血管リスクが高い患者（心筋梗塞・脳卒中既往1年以内）は禁忌",
-    "evidence": "Saag KG et al. NEJM 2017（ARCH PMID:28892457）; Cosman F et al. NEJM 2016（FRAME PMID:27641143）",
+    "evidence": "ARCH試験（NEJM 2017 PMID:28892457）",
     "evidence_url": null,
     "caution": "心血管リスク増加（心筋梗塞・脳卒中）→既往のある患者は禁忌。顎骨壊死（ONJ）・非定型大腿骨骨折。低カルシウム血症（Ca補充必須）。12ヶ月使用後は必ずBP/デノスマブへ移行"
   },
@@ -499,7 +499,7 @@
     "onset_time": "数ヶ月（BMD改善・骨代謝マーカー低下）",
     "duration_hours": "1日1回 60mg 内服（食事に無関係）",
     "guideline_rank": "骨粗鬆症治療＋ER陽性乳がんハイリスクの閉経後女性に適した選択。大腿骨骨折予防効果はBPより低い。ホットフラッシュのある患者では悪化するため避ける。男性・閉経前女性禁忌",
-    "evidence": "Ettinger B et al. JAMA 1999（MORE試験 PMID:10404912）",
+    "evidence": "MORE試験（JAMA 1999 PMID:10404912）",
     "evidence_url": null,
     "caution": "静脈血栓塞栓症リスク増加（VTEリスク×3）。ホットフラッシュ悪化。閉経前・妊婦・男性禁忌。大腿骨骨折予防効果はBPより弱い"
   },
@@ -517,7 +517,7 @@
     "onset_time": "数ヶ月（BMD改善）",
     "duration_hours": "1日1回 20mg 内服（食事に無関係）",
     "guideline_rank": "ラロキシフェンに比べ子宮内膜への影響が少ない。エストロゲン配合剤（デュアベイブ）としても使用。椎体骨折予防が主目的で大腿骨骨折予防効果は限定的",
-    "evidence": "Silverman SL et al. J Bone Miner Res 2008（TRIO試験 PMID:18665787）",
+    "evidence": "TRIO試験（J Bone Miner Res 2008 PMID:18665787）",
     "evidence_url": null,
     "caution": "静脈血栓塞栓症リスク（ラロキシフェンと同様）。ホットフラッシュ悪化。閉経前・妊婦・男性禁忌。大腿骨骨折予防効果は限定的"
   },
@@ -535,7 +535,7 @@
     "onset_time": "数週間（Ca吸収改善・数ヶ月で骨折予防）",
     "duration_hours": "1日1回 0.75μg 内服（食事に無関係）",
     "guideline_rank": "日本開発の活性型VitD₃誘導体。ビスフォスフォネートより骨折予防効果は劣るがCa・VitD補充を兼ねた基本治療として広く使用。転倒予防効果が特長。ビスフォスフォネートとの併用でCa補充役として有用",
-    "evidence": "Matsumoto T et al. Osteoporos Int 2011（PMID:21541440）",
+    "evidence": "Matsumoto et al.（Osteoporos Int 2011 PMID:21541440）",
     "evidence_url": null,
     "caution": "高カルシウム血症（定期的な血清Ca・Cr・尿Caモニタリング）。腎結石リスク。eGFR<30で慎重（高Ca血症が起きやすい）。利尿薬との組み合わせで高Ca血症リスク増加"
   },
@@ -553,7 +553,7 @@
     "onset_time": "数週間（Ca吸収改善）",
     "duration_hours": "1日1回 0.5〜1μg 内服",
     "guideline_rank": "骨粗鬆症の基本補助治療・CKDに伴う骨ミネラル代謝異常（二次性副甲状腺機能亢進症）の治療に広く使用。骨折予防効果：エルデカルシトール>アルファカルシドール>プラセボ",
-    "evidence": "Orimo H et al. Osteoporos Int 1994; META解析（複数試験）",
+    "evidence": "Orimo et al.（Osteoporos Int 1994）",
     "evidence_url": null,
     "caution": "高カルシウム血症（血清Ca・Crの定期モニタリング）。腎結石。eGFR<30で慎重"
   },
@@ -571,7 +571,7 @@
     "onset_time": "4〜12週（LDL-C低下効果）",
     "duration_hours": "1日1回 180mg 内服（食事に関係なく服用可）",
     "guideline_rank": "最大耐用量のスタチン等の脂質低下療法下でもLDL-Cが十分に低下しない、心血管疾患リスクの高い患者や家族性高コレステロール血症患者への追加投与として検討される。",
-    "evidence": "CLEAR Wisdom Randomized Clinical Trial Anne C Goldberg et al. JAMA. 2019（PMID:31714986）",
+    "evidence": "CLEAR Wisdom試験（JAMA 2019 PMID:31714986）",
     "evidence_url": null,
     "caution": "主な副作用は鼻咽頭炎(5.2%)、尿路感染症(5.0%)。プラセボ群（1.9%）と比較して高尿酸血症（4.2%）の発現率が高いため、投与中の尿酸値変動には注意が必要である。"
   }

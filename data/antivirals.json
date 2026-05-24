@@ -397,7 +397,7 @@
     "onset_time": "経口錠：2〜4時間でCmax。注射製剤は徐放性で長期持続（26週毎投与）",
     "duration_hours": 4368,
     "guideline_rank": "多剤耐性HIV感染症治療の併用薬として承認。PrEPにおいて年2回投与で極めて高い予防効果を示す。",
-    "evidence": "Twice-Yearly Lenacapavir or Daily F/TAF for HIV Prevention in Cisgender Women Bekker LG N Engl J Med 2024 (PMID: 39046157)",
+    "evidence": "PURPOSE 1試験（NEJM 2024 PMID:39046157）",
     "evidence_url": null,
     "caution": "主な副作用は注射部位反応（68.8%）であり、腫脹、紅斑、痛み、結節、硬結等が含まれる。0.2%で注射部位反応により投与中止に至った。長時間作用型製剤のため、投与後の副作用持続にも注意が必要。その他の安全性懸念は現時点で認められていない。"
   },
@@ -415,7 +415,7 @@
     "onset_time": "数日以内（皮疹改善開始）",
     "duration_hours": "200mg×3カプセル 1日2回 食後 14日間（体重40kg以上）",
     "guideline_rank": "米欧では承認済み。Clade I型mpoxを対象とした最新の臨床試験では、主要評価項目である病変消失期間の有意な短縮は認められなかった。",
-    "evidence": "Tecovirimat for Clade I MPXV Infection in the Democratic Republic of Congo PALM007 Writing Group N Engl J Med 2025 (PMID: 40239067)",
+    "evidence": "PALM007試験（NEJM 2025 PMID:40239067）",
     "evidence_url": null,
     "caution": "有害事象（72.9%）および重篤な有害事象（5.1%）の発現率はプラセボ群（それぞれ70.5%、5.0%）と同程度であり、安全性に関する新たな懸念は報告されていない。"
   }

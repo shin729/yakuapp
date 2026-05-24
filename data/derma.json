@@ -13,7 +13,7 @@
     "onset_time": "2〜4週（掻痒改善）・8〜16週（皮疹改善）",
     "duration_hours": "300mg 2週毎 皮下注（初回600mg）。小児は体重別用量あり",
     "guideline_rank": "外用薬・免疫抑制薬無効の中等度〜重症AD第一選択の生物学的製剤（JDA・AADガイドライン）。JAK阻害薬との比較ではEASI-75は同等〜やや劣るが安全性プロファイルで優れる。妊婦への使用データあり",
-    "evidence": "Simpson EA et al. N Engl J Med 2016;375:2335-48（PMID:27690741）",
+    "evidence": "SOLO 1/2試験（NEJM 2016 PMID:27690741）",
     "evidence_url": null,
     "caution": "結膜炎（10〜20%・重要な副作用→眼科管理）。注射部位反応。ヘルペス増悪（JAK阻害薬より少ない）。生ワクチン接種注意。好酸球増多（一過性）"
   },
@@ -31,7 +31,7 @@
     "onset_time": "8〜16週",
     "duration_hours": "600mg初回→300mg 2週毎 皮下注（反応良好例は4週毎に延長）",
     "guideline_rank": "デュピルマブと並ぶ第一選択生物学的製剤。EASI-75はデュピルマブより数値上は低いが、安全性（特に結膜炎が少ない）に優れる可能性。デュピルマブ不応・不耐容例への切り替えとして使用",
-    "evidence": "Wollenberg A et al. NEJM 2021;384:2229-40（PMID:34097370）",
+    "evidence": "ECZTRA試験（NEJM 2021 PMID:34097370）",
     "evidence_url": null,
     "caution": "結膜炎（デュピルマブより少ない傾向）。注射部位反応。好酸球増多。上気道感染。生ワクチン接種注意"
   },
@@ -49,7 +49,7 @@
     "onset_time": "4〜8週",
     "duration_hours": "500mg初回（2週後に2回目）→250mg 2週毎 皮下注（反応良好例は4週毎）",
     "guideline_rank": "トラロキヌマブと同じ抗IL-13抗体クラス。EASI-75の数値はデュピルマブと同等水準（ADhere試験）。結膜炎リスクがデュピルマブより少ない可能性。2023年日本承認",
-    "evidence": "Bieber T et al. N Engl J Med 2023;388:1080-91（PMID:36947674）",
+    "evidence": "ADhere試験（NEJM 2023 PMID:36947674）",
     "evidence_url": null,
     "caution": "結膜炎（抗IL-13抗体としてデュピルマブより少ない傾向）。注射部位反応。上気道感染。好酸球増多"
   },
@@ -67,7 +67,7 @@
     "onset_time": "2〜4週（掻痒改善・最速クラス）",
     "duration_hours": "60mg 4週毎 皮下注",
     "guideline_rank": "掻痒が主訴でピックアップ症状の場合に選択。デュピルマブ・JAK阻害薬との使い分けは「皮疹重症度 vs 掻痒重症度」による。皮疹が重症なら他剤を優先。結節性痒疹にも適応拡大",
-    "evidence": "Kabashima K et al. N Engl J Med 2020;383:141-50（PMID:32640128）",
+    "evidence": "Kabashima et al.（NEJM 2020 PMID:32640128）",
     "evidence_url": null,
     "caution": "末梢性浮腫。上気道感染。頭痛。関節痛。皮疹への効果が他の生物学的製剤に劣る点を患者に説明。注射部位反応"
   },
@@ -85,7 +85,7 @@
     "onset_time": "1〜2日（掻痒）・2〜4週（皮疹）",
     "duration_hours": "15〜30mg 1日1回 内服（食事の影響なし）",
     "guideline_rank": "AD生物学的製剤・JAK阻害薬の中で最高の有効性エビデンス（HEADS UP試験でデュピルマブ比優越）。結核・帯状疱疹・血栓等のリスクスクリーニング必須。妊婦禁忌。生物学的製剤との優先順位は施設・患者状態による",
-    "evidence": "Guttman-Yassky E et al. JAMA Dermatol 2021;157:825-36（PMID:34076683）",
+    "evidence": "HEADS UP試験（JAMA Dermatol 2021 PMID:34076683）",
     "evidence_url": null,
     "caution": "帯状疱疹（VZVワクチン接種推奨）。重篤感染症・結核再活性化（スクリーニング必須）。静脈血栓塞栓症（VTE）リスク。悪性腫瘍リスク（長期）。妊婦・妊娠希望者禁忌。CYP3A4阻害薬で血中濃度上昇"
   },
@@ -103,7 +103,7 @@
     "onset_time": "1〜2日（掻痒）",
     "duration_hours": "100〜200mg 1日1回 内服（食後）",
     "guideline_rank": "ウパダシチニブと並ぶ内服JAK1阻害薬。用量反応性があり100mg→200mgで効果増強。血小板減少（初期に多い）・悪心の頻度がウパダシチニブと比較した際の差異。13歳以上の小児に使用可",
-    "evidence": "Simpson EL et al. N Engl J Med 2020;383:1524-34（PMID:33085875）",
+    "evidence": "JADE MONO試験（NEJM 2020 PMID:33085875）",
     "evidence_url": null,
     "caution": "血小板減少（初期・用量依存）。悪心・嘔吐（食後投与で軽減）。帯状疱疹・重篤感染症。VTE・心血管リスク（長期）。妊婦禁忌。CYP2C19基質（阻害薬で血中濃度上昇）"
   },
@@ -121,7 +121,7 @@
     "onset_time": "1〜2週（掻痒改善）・2〜4週（皮疹改善）",
     "duration_hours": "2〜4mg 1日1回 内服",
     "guideline_rank": "AD経口JAK阻害薬の1つ（2020年日本承認）。ウパダシチニブ・アブロシチニブより有効性は数値上やや劣る。JAK1/2阻害でJAK2（造血サイトカイン）も阻害するため貧血・血小板減少リスクあり。円形脱毛症・関節リウマチにも適応。最適使用推進ガイドライン対象",
-    "evidence": "Blauvelt A et al. Lancet 2020;396:255-66（BREEZE-AD1 PMID:32711801）",
+    "evidence": "BREEZE-AD1試験（Lancet 2020 PMID:32711801）",
     "evidence_url": null,
     "caution": "帯状疱疹（VZVワクチン接種推奨）。重篤感染症・結核スクリーニング必須。静脈血栓塞栓症（VTE）リスク。貧血・血小板減少（JAK2阻害による造血障害）。悪性腫瘍リスク（長期）。妊婦禁忌。腎機能低下で用量調節が必要"
   },
@@ -139,7 +139,7 @@
     "onset_time": "1〜2週",
     "duration_hours": "0.1%（成人・12歳以上）/ 0.03%（2〜11歳）軟膏 1日2回 塗布",
     "guideline_rank": "ステロイド外用薬使用後の代替・皮膚萎縮リスクが高い部位（顔面・首・腋窩・鼠径部）の第一選択。ステロイドとの週2回プロアクティブ療法でも有効。2歳未満禁忌",
-    "evidence": "Ruzicka T et al. N Engl J Med 1997;337:816-21（PMID:9295240）",
+    "evidence": "Ruzicka et al.（NEJM 1997 PMID:9295240）",
     "evidence_url": null,
     "caution": "灼熱感・刺激感（使用開始初期・数日で軽減）。紫外線過敏（光線療法との併用注意）。2歳未満禁忌。長期投与での悪性腫瘍リスク（理論的懸念・FDA注意喚起）→頻繁・長期の使用は避ける。感染部位には使用しない"
   },
@@ -157,7 +157,7 @@
     "onset_time": "1〜2週",
     "duration_hours": "0.25〜0.5% クリーム 1日2回 塗布",
     "guideline_rank": "ステロイド・タクロリムス無効または使用困難例の第3選択外用薬。使用部位制限（眼周囲・粘膜・性器禁忌）あり。全身JAK阻害薬と比較して全身性副作用が少ない",
-    "evidence": "Nakagawa H et al. J Dermatol 2017;44:1048-57（PMID:28714536）",
+    "evidence": "Nakagawa et al.（J Dermatol 2017 PMID:28714536）",
     "evidence_url": null,
     "caution": "毛包炎・皮膚感染症（細菌・ウイルス）。眼周囲・粘膜・性器への使用禁忌。眼圧上昇（眼周囲に使用した場合）。全身吸収量はステロイドより少ないが重症感染症には使用しない"
   },
@@ -175,7 +175,7 @@
     "onset_time": "2〜4週",
     "duration_hours": "1% 軟膏 1日2回 塗布",
     "guideline_rank": "ステロイド・タクロリムス不耐容例、またはそれらへの追加薬として。適用部位制限なし（眼周囲も可能・ただし眼内は不可）がタクロリムスとの差。刺激感が少ない",
-    "evidence": "Nakagawa H et al. J Dermatol Sci 2022;105:61-9（PMID:34996678）",
+    "evidence": "Nakagawa et al.（J Dermatol Sci 2022 PMID:34996678）",
     "evidence_url": null,
     "caution": "注射部位（外用部位）反応。眼内への接触は避ける。感染皮膚病変には使用しない。長期安全性データは蓄積中"
   },
@@ -193,7 +193,7 @@
     "onset_time": "4〜8週",
     "duration_hours": "300mg 週1回×5回（導入）→月1回 皮下注（150mgの場合もあり）",
     "guideline_rank": "IL-17A阻害薬の中で最もエビデンスが豊富で使用経験が長い（2015年承認）。PASI75は80%超。PsA・ASにも有効で関節合併例に特に有用。腸管炎症を悪化させる可能性→IBD合併には慎重",
-    "evidence": "Langley RG et al. N Engl J Med 2014;371:326-38（PMID:25007392）",
+    "evidence": "ERASURE/FIXTURE試験（NEJM 2014 PMID:25007392）",
     "evidence_url": null,
     "caution": "カンジダ感染症（IL-17がカンジダ防御に関与）。炎症性腸疾患（IBD）の悪化・新規発症→IBD患者には禁忌。結核再活性化（スクリーニング必須）。好中球減少。生ワクチン禁忌"
   },
@@ -211,7 +211,7 @@
     "onset_time": "4〜8週",
     "duration_hours": "160mg初回→80mg 2週毎×12週→80mg 4週毎 皮下注",
     "guideline_rank": "セクキヌマブと並ぶ抗IL-17A薬。PASI100はセクキヌマブより高い傾向。導入期に2週毎投与が必要な点がセクキヌマブ（月1回）との差。IBD禁忌はセクキヌマブと同様",
-    "evidence": "Gordon KB et al. N Engl J Med 2016;375:345-56（PMID:27299809）",
+    "evidence": "UNCOVER試験（NEJM 2016 PMID:27299809）",
     "evidence_url": null,
     "caution": "カンジダ感染症。IBD悪化・新規発症→禁忌。結核スクリーニング必須。好中球減少。注射部位反応"
   },
@@ -229,7 +229,7 @@
     "onset_time": "4〜8週",
     "duration_hours": "320mg 4週毎 皮下注（導入・維持同一用量）",
     "guideline_rank": "IL-17A/Fの同時阻害でPASI100が最高水準。効果のみを見ればトップクラスの乾癬治療薬。カンジダ感染のリスクがIL-17A単独阻害より高い可能性。IBD禁忌",
-    "evidence": "Warren RB et al. N Engl J Med 2021;385:130-41（PMID:34161703）",
+    "evidence": "BE VIVID試験（NEJM 2021 PMID:34161703）",
     "evidence_url": null,
     "caution": "カンジダ感染症（IL-17A/F両方阻害でリスク上昇・15〜20%）。IBD悪化→禁忌。口腔カンジダ・外陰カンジダに注意。結核スクリーニング必須"
   },
@@ -247,7 +247,7 @@
     "onset_time": "4〜8週",
     "duration_hours": "150mg 0・4週→12週毎 皮下注（導入後は3ヶ月毎1回）",
     "guideline_rank": "グセルクマブとともに抗IL-23（p19）薬の代表。PASI75・90は最高水準。維持で3ヶ月毎投与が可能→最も通院負担が少ない選択肢のひとつ。IBD（クローン病・UC）にも適応あり",
-    "evidence": "Gordon KB et al. Lancet 2018;392:650-61（PMID:30097359）",
+    "evidence": "IMMhance試験（Lancet 2018 PMID:30097359）",
     "evidence_url": null,
     "caution": "感染症（上気道感染・毛包炎）。結核スクリーニング必須。悪性腫瘍リスク（長期）。IL-17阻害薬と異なりIBDに禁忌なし（むしろ適応あり）。生ワクチン禁忌"
   },
@@ -265,7 +265,7 @@
     "onset_time": "4〜8週",
     "duration_hours": "100mg 0・4週→以降8週毎 皮下注",
     "guideline_rank": "リサンキズマブとともに抗IL-23（p19）薬の代表（2018年日本承認）。PASI75・90は最高水準。投与頻度はリサンキズマブ（12週毎）より多い（8週毎）。IBDにも適応あり（UC）→IL-17薬と異なりIBD禁忌なし",
-    "evidence": "Blauvelt A et al. J Am Acad Dermatol 2017;76:405-17（VOYAGE 1 PMID:28057360）",
+    "evidence": "VOYAGE 1試験（J Am Acad Dermatol 2017 PMID:28057360）",
     "evidence_url": null,
     "caution": "感染症（上気道感染・毛包炎）。結核スクリーニング必須。IBD禁忌なし（IL-17阻害薬と異なる）。悪性腫瘍リスク（長期）。生ワクチン禁忌。注射部位反応"
   },
@@ -283,7 +283,7 @@
     "onset_time": "8〜12週",
     "duration_hours": "45〜90mg 0・4週→以降12週毎 皮下注（体重>100kgは90mg）",
     "guideline_rank": "第一世代乾癬生物学的製剤。PASI75はIL-17/p19薬に劣るが12週毎投与・長期安全性データが豊富。IBD（クローン病・UC）にも適応→IBD合併乾癬の選択肢。p40阻害でTh1/Th17両方を抑制する独自機序",
-    "evidence": "Leonardi CL et al. Lancet 2008;371:1665-74（PHOENIX 1 PMID:18486739）",
+    "evidence": "PHOENIX 1試験（Lancet 2008 PMID:18486739）",
     "evidence_url": null,
     "caution": "感染症（上気道感染・鼻咽頭炎）。結核スクリーニング必須。PASI90・100はIL-17/p19薬に劣る。悪性腫瘍リスク（長期）。生ワクチン禁忌。IBDにも適応あり（むしろIBD合併例に積極的使用）"
   },
@@ -301,7 +301,7 @@
     "onset_time": "8〜16週（緩徐）",
     "duration_hours": "30mg 1日2回 内服（初週は増量スケジュールあり：10mg→20mg→30mg）",
     "guideline_rank": "生物学的製剤未使用・使用困難（感染リスク高・注射忌避）の中等度乾癬に。免疫抑制が少なく感染症リスクが低い→高齢者・易感染性患者に選択肢。効果はIL-17/23阻害薬に劣る",
-    "evidence": "Papp K et al. Lancet 2015;386:323-31（PMID:26051365）",
+    "evidence": "ESTEEM試験（Lancet 2015 PMID:26051365）",
     "evidence_url": null,
     "caution": "悪心・下痢（開始初期・2〜4週で軽減傾向）→増量スケジュール遵守。体重減少（低体重患者は注意）。抑うつ・自殺念慮（リスク患者は慎重）。CYP3A4誘導薬（リファンピシン等）で効果減弱"
   },
@@ -337,7 +337,7 @@
     "onset_time": "4〜8週（コメド改善）・8〜12週（炎症性病変）",
     "duration_hours": "0.1% ゲル/クリーム 1日1回 就寝前 塗布",
     "guideline_rank": "尋常性ざ瘡の外用第一選択（国際ガイドライン）。コメド・炎症性病変の両方に有効。過酸化ベンゾイルまたは局所抗菌薬との併用が推奨（単剤耐性を防ぐ）。妊婦禁忌（催奇形性）",
-    "evidence": "Thiboutot D et al. J Am Acad Dermatol 2009;60:128-38（PMID:19130969）",
+    "evidence": "Thiboutot et al.（J Am Acad Dermatol 2009 PMID:19130969）",
     "evidence_url": null,
     "caution": "乾燥・落屑・刺激感（使用開始初期・保湿剤併用で軽減）。日光過敏→SPF製品使用推奨。妊婦禁忌（催奇形性）。眼・口・鼻粘膜周囲を避ける"
   },
@@ -355,7 +355,7 @@
     "onset_time": "4〜8週",
     "duration_hours": "2.5〜5% ゲル 1日1〜2回 塗布",
     "guideline_rank": "アダパレンまたは抗菌薬との併用が第一選択（単剤使用もある）。クリンダマイシンとの配合剤（デュアック）で耐性菌発生抑制。国際ガイドラインで抗菌薬使用時には必ずBPOを併用するよう推奨",
-    "evidence": "Eady AE et al. Br J Dermatol 2013;168:976-86（PMID:23210544）",
+    "evidence": "Eady et al.（Br J Dermatol 2013 PMID:23210544）",
     "evidence_url": null,
     "caution": "皮膚刺激・乾燥・落屑（特に高濃度）。漂白作用→白い衣類・タオル使用推奨。スルホンアミド・バルサムアレルギーとの交差反応。アダパレンとの同時塗布は刺激増強→別時間に使用"
   },
@@ -373,7 +373,7 @@
     "onset_time": "4〜8週",
     "duration_hours": "0.1%アダパレン+2.5%BPO ゲル 1日1回 就寝前 塗布",
     "guideline_rank": "現在の尋常性ざ瘡外用療法で最も強いエビデンスを持つ第一選択配合剤。1回投与でアドヒアランス良好。妊婦禁忌（アダパレン成分）",
-    "evidence": "Gollnick H et al. Br J Dermatol 2009;161:1180-9（PMID:19785619）",
+    "evidence": "Gollnick et al.（Br J Dermatol 2009 PMID:19785619）",
     "evidence_url": null,
     "caution": "皮膚乾燥・落屑・刺激感（開始初期）。漂白作用（白い衣類使用推奨）。日光過敏。妊婦禁忌（アダパレン成分の催奇形性）"
   },
@@ -486,7 +486,7 @@
     "onset_time": "2〜4週（肉芽形成・上皮化速度改善）",
     "duration_hours": "1日1〜2回 創面から約5cm離して2〜3プッシュ噴霧。冷蔵保存・溶解後14日以内使用",
     "guideline_rank": "JSPU褥瘡ガイドライン（第5版）でオルセノン・アクトシン無効の難治性褥瘡に推奨（より強いエビデンス）。感染消失・清潔な肉芽形成期に限定。薬価が高いため他剤無効後の次選択",
-    "evidence": "Robson MC et al. Lancet 1992;339:23-5（PMID:1345954）",
+    "evidence": "Robson et al.（Lancet 1992 PMID:1345954）",
     "evidence_url": null,
     "caution": "感染創・壊死組織残存創への使用禁忌。悪性腫瘍近傍の創には使用しない（FGF-2が腫瘍増殖を促進する懸念）。冷蔵保存必須・溶解後14日以内使用。スプレー噴霧時の眼への付着に注意"
   },
@@ -540,7 +540,7 @@
     "onset_time": "3〜7日（MRSA除菌）・1〜2週（皮膚感染治癒）",
     "duration_hours": "2% 軟膏 1日3回 患部塗布（皮膚感染：1〜2週）。鼻腔除菌：両鼻腔内に1日2〜3回×5日間",
     "guideline_rank": "MRSA皮膚感染・鼻腔除菌の外用第一選択（CDC・日本感染症学会）。長期広範囲使用での高度耐性ムピロシン耐性MRSA（MRSA-HMR）出現が問題→必要最小限の使用に限定。フシジン酸との使い分けはコスト・耐性菌リスクを考慮",
-    "evidence": "Huang SS et al. N Engl J Med 2013;368:2255-65（PMID:23718152）",
+    "evidence": "Huang et al.（NEJM 2013 PMID:23718152）",
     "evidence_url": null,
     "caution": "高度耐性ムピロシン耐性MRSAの出現（長期使用・広範囲使用で選択圧）。グラム陰性菌・腸球菌には無効。眼への接触を避ける。鼻腔除菌での再定着（5日コース後に再評価）"
   },
@@ -558,7 +558,7 @@
     "onset_time": "3〜5日（改善兆候）・1〜2週（治癒）",
     "duration_hours": "2% 油性クリーム 1日2回 患部塗布。通常1〜2週間",
     "guideline_rank": "皮膚感染症の外用抗菌薬としてゲンタシン・フシジンレオの代替。MRSAへの効果はゲンタシン同様に不十分（MSSAが主対象）。ざ瘡への外用としてもクリンダマイシンとの比較データが蓄積中",
-    "evidence": "Jacobs MR et al. Antimicrob Agents Chemother 2016（PMID:26902780）",
+    "evidence": "Jacobs et al.（Antimicrob Agents Chemother 2016 PMID:26902780）",
     "evidence_url": null,
     "caution": "キノロン系への耐性（既存キノロン耐性菌には効果不十分）。光線過敏（外用キノロンとして低いが使用後は遮光推奨）。接触性皮膚炎。MRSA感染が疑われる場合はムピロシンを選択"
   },
@@ -612,7 +612,7 @@
     "onset_time": "塗布直後（閉塞効果）",
     "duration_hours": "1日1〜数回 適量を患部に塗布（入浴後すぐが効果的）",
     "guideline_rank": "アトピー性皮膚炎・新生児スキンケアの保湿第一選択（NICE・日本皮膚科学会）。感作リスクの低さから最も安全な保湿剤。べたつきが嫌いな患者にはヒルドイドやスキンケアローションを優先",
-    "evidence": "Simpson EL et al. J Allergy Clin Immunol 2014;134:818-23（新生児スキンケアRCT・PMID:25282564）",
+    "evidence": "Simpson et al.（J Allergy Clin Immunol 2014 PMID:25282564）",
     "evidence_url": null,
     "caution": "べたつき感（アドヒアランス低下の原因）→薄く伸ばして使用を指導。閉塞効果のみ→感染皮疹・滲出液多い皮疹には使用しない。光線過敏（日光下での使用は衣類で保護）"
   },
@@ -666,7 +666,7 @@
     "onset_time": "数日（収斂・乾燥化効果）",
     "duration_hours": "10〜20% 軟膏（亜鉛華軟膏・白色軟膏との混合）1日1〜数回 患部塗布。おむつ交換ごとに塗布",
     "guideline_rank": "おむつ皮膚炎の第一選択（小児科学会・日本皮膚科学会）。湿潤・糜爛皮疹でヒルドイドを使えない状況の代替。乾燥皮膚にはヒルドイド・ワセリンを優先。褥瘡周囲皮膚保護の標準薬",
-    "evidence": "Blume-Peytavi U et al. J Dtsch Dermatol Ges 2014;12:569-79（おむつ皮膚炎管理）",
+    "evidence": "Blume-Peytavi et al.（J Dtsch Dermatol Ges 2014）",
     "evidence_url": null,
     "caution": "乾燥した皮疹への使用で過乾燥・亀裂リスク（湿潤皮疹専用）。白色軟膏が衣類に付着・洗濯困難。剥がすときに皮膚を引っ張らないよう注意。感染皮疹への使用は感染を閉じ込めるリスク"
   },
@@ -684,7 +684,7 @@
     "onset_time": "4〜8週で脱毛改善開始・12週以降で顕著な効果",
     "duration_hours": "50mg 1日1回 食後（長期投与）",
     "guideline_rank": "12歳以上の50%以上の頭部脱毛を有する、全身療法の適応となる円形脱毛症患者における治療選択肢。",
-    "evidence": "ALLEGRO trial King B et al. Lancet 2023（PMID: 37062298）",
+    "evidence": "ALLEGRO試験（Lancet 2023 PMID:37062298）",
     "evidence_url": null,
     "caution": "有害事象の発現率は各群でプラセボと同程度であるが、副作用による投与中止例も報告されている。12歳以上の青年および成人が対象。重大な感染症等の全身投与に伴うリスクには注意が必要であり、適切な症例選定が求められる。"
   }

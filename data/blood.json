@@ -31,7 +31,7 @@
     "onset_time": "1〜2時間で最大効果",
     "duration_hours": "1日2回（150mg or 110mg）",
     "guideline_rank": "AF血栓塞栓症予防のDOAC第一選択候補。中和薬（イダルシズマブ）がある唯一のDOAC。150mgで最強効果・110mgで出血低減。腎機能に応じた用量調整必要（eGFR<30禁忌）",
-    "evidence": "Connolly SJ et al. NEJM 2009（RE-LY試験 PMID:19717844）",
+    "evidence": "RE-LY試験（NEJM 2009 PMID:19717844）",
     "caution": "腎排泄（eGFR<30で禁忌・30〜50で110mg推奨）。消化器症状（服用時食事推奨）。消化管出血リスク（ワルファリンより高い）。機械弁禁忌",
     "evidence_url": null
   },
@@ -49,7 +49,7 @@
     "onset_time": "2〜4時間で最大効果（夕食後服用で吸収が安定）",
     "duration_hours": "1日1回 15mg（eGFR≥50）or 10mg（eGFR 15〜49）夕食後",
     "guideline_rank": "1日1回服用でアドヒアランス良好。夕食後服用が吸収に必須。Xa阻害DOACとして広く使用される。ROCKET AF試験はワルファリンと非劣性",
-    "evidence": "Patel MR et al. NEJM 2011（ROCKET AF試験 PMID:21830957）",
+    "evidence": "ROCKET AF試験（NEJM 2011 PMID:21830957）",
     "caution": "夕食後服用必須（空腹時は吸収40%低下）。腎機能低下で用量調整（eGFR<15禁忌）。中断時の反跳リスク（服用を忘れると急激な抗凝固効果低下）",
     "evidence_url": null
   },
@@ -67,7 +67,7 @@
     "onset_time": "1〜3時間で最大効果",
     "duration_hours": "1日2回（5mg または腎機能等により2.5mg）",
     "guideline_rank": "DOACの中で脳卒中予防効果・大出血抑制の両方でワルファリンより優れる（ARISTOTLE）。腎排泄が少なくeGFR 25〜30でも使用可能（慎重投与）。高齢者・腎機能低下例に特に有用",
-    "evidence": "Granger CB et al. NEJM 2011（ARISTOTLE試験 PMID:21870978）",
+    "evidence": "ARISTOTLE試験（NEJM 2011 PMID:21870978）",
     "caution": "1日2回（アドヒアランス要注意）。用量調整基準：80歳以上/体重60kg以下/Cr1.5mg/dL以上のうち2項目以上で2.5mgへ減量。中和薬アンデキサネットアルファ使用可",
     "evidence_url": null
   },
@@ -85,7 +85,7 @@
     "onset_time": "1〜2時間で最大効果",
     "duration_hours": "1日1回（60mg または腎機能等により30mgへ減量）",
     "guideline_rank": "日本発のDOAC（第一三共）。1日1回でアドヒアランス良好。用量調整：体重60kg以下/eGFR 15〜50/強いP-gp阻害薬使用時は30mgへ減量。AF・VTEの両方に適応",
-    "evidence": "Giugliano RP et al. NEJM 2013（ENGAGE AF-TIMI 48 PMID:24251359）",
+    "evidence": "ENGAGE AF-TIMI 48試験（NEJM 2013 PMID:24251359）",
     "caution": "腎機能で用量調整（eGFR<15禁忌）。P糖タンパク（P-gp）阻害薬で血中濃度上昇。機械弁禁忌。中断で塞栓リスク（橋渡し療法の検討を）",
     "evidence_url": null
   },
@@ -103,7 +103,7 @@
     "onset_time": "服用後30分以内に血小板抑制効果発現",
     "duration_hours": "1日1回 100mg（食後）",
     "guideline_rank": "二次予防の基本薬（脳梗塞・AMI後）。一次予防は出血リスクと血栓リスクの個別評価が必要（高齢者はリスク上回る可能性）。ACS/PCI後はP2Y12阻害薬とのDAPTが標準",
-    "evidence": "ATT Collaborators. Lancet 2009（PMID:19482214）",
+    "evidence": "ATT Collaborators（Lancet 2009 PMID:19482214）",
     "caution": "消化管出血リスク（PPI併用推奨）。アスピリン喘息（NSAIDs感受性喘息）禁忌。手術前7日休薬（例外あり）。ライ症候群（小児禁忌）",
     "evidence_url": null
   },
@@ -121,7 +121,7 @@
     "onset_time": "ローディング300〜600mg→2時間で効果発現 / 維持75mg/日→3〜7日で最大抑制",
     "duration_hours": "1日1回 75mg（ACS/PCI後はアスピリンとDAPT）",
     "guideline_rank": "DAPTの主力薬（BMS後最低1ヶ月・DES後最低6〜12ヶ月）。CYP2C19 PM（低代謝）はプラスグレル/チカグレロルへ変更考慮。脳梗塞再発予防のアスピリン代替",
-    "evidence": "CAPRIE Steering Committee. Lancet 1996（PMID:8918275）",
+    "evidence": "CAPRIE試験（Lancet 1996 PMID:8918275）",
     "caution": "CYP2C19遺伝子多型（*2/*3: Poor Metabolizer 約20%）で効果不十分。PPIのオメプラゾールとの相互作用（CYP2C19競合阻害）。手術前5〜7日休薬",
     "evidence_url": null
   },
@@ -193,7 +193,7 @@
     "onset_time": "静注開始後即時に血栓溶解開始。再灌流は30〜60分以内",
     "duration_hours": "静注 0.6mg/kg（最大36mg）・10%ボーラス→残90%を1時間で点滴（日本用量）",
     "guideline_rank": "急性脳梗塞の第一選択（発症4.5時間以内・NIHSS 4〜25目安）。Door-to-needle 60分以内が目標（time is brain）。血圧管理（185/110mmHg未満維持）が重要",
-    "evidence": "NINDS rt-PA Stroke Study Group. NEJM 1995（PMID:7477192）",
+    "evidence": "NINDS rt-PA試験（NEJM 1995 PMID:7477192）",
     "caution": "禁忌多数：出血性脳卒中既往・3ヶ月以内脳梗塞・頭蓋内手術・活動性出血・血圧185/110以上・血小板10万未満・抗凝固薬使用中。症候性頭蓋内出血（6%）が最重要合併症",
     "evidence_url": null
   },
@@ -211,7 +211,7 @@
     "onset_time": "静注開始後即時",
     "duration_hours": "静注 60,000〜96,000単位/回または持続投与（適応・施設によって異なる）",
     "guideline_rank": "アルテプラーゼ普及後は急性脳梗塞・AMIへの使用は限定的。透析シャント閉塞・局所血栓溶解（カテーテル使用）に残存。アルテプラーゼが使用できない状況での代替",
-    "evidence": "GUSTO Angiographic Investigators. NEJM 1993（PMID:8127828）",
+    "evidence": "GUSTO試験（NEJM 1993 PMID:8127828）",
     "caution": "出血リスク（頭蓋内出血含む）。活動性出血・出血性疾患禁忌。フィブリン非選択的なため全身性線溶亢進に注意",
     "evidence_url": null
   },
@@ -409,7 +409,7 @@
     "onset_time": "皮下注後4〜6時間でANC上昇開始・24〜48時間でピーク",
     "duration_hours": "皮下注または静注 1日1回（ANC>1500/μLで終了）",
     "guideline_rank": "FN高リスク（>20%）化学療法での一次予防推奨（ASCO/ESMO GL）。化学療法後24時間以降に開始。造血幹細胞移植（PBSCT）の動員にも使用。連日投与が必要（ペグフィルグラスチムが代替可）",
-    "evidence": "Crawford J et al. NEJM 1991（PMID:2049930）；ASCO Clinical Practice Guideline 2015",
+    "evidence": "Crawford et al.（NEJM 1991 PMID:2049930）",
     "caution": "骨痛（骨髄刺激による・NSAIDsまたはアセトアミノフェンで対処）。脾腫・脾破裂（稀・重篤）。ARDS。化学療法の14〜24時間前または直後は使用しない。白血病・骨髄異形成症候群での一般使用は慎重",
     "evidence_url": null
   },
@@ -427,7 +427,7 @@
     "onset_time": "皮下注後24〜72時間でANC上昇ピーク",
     "duration_hours": "皮下注 1サイクルに1回（化学療法24〜72時間後）",
     "guideline_rank": "現在のG-CSF第一選択（1サイクル1回）。連日投与不要でアドヒアランス・コスト効率が良い。FN高リスク（>20%）では一次予防で推奨（ASCO）。化学療法の24時間前〜14日後には使用しない",
-    "evidence": "Green MD et al. Ann Oncol 2003（PMID:12881374）",
+    "evidence": "Green et al.（Ann Oncol 2003 PMID:12881374）",
     "caution": "フィルグラスチムと同様の副作用（骨痛・脾腫）。化学療法との適切な間隔が必要（少なくとも24時間後・次回化学療法の14日前まで）。サイクル間での2回投与は禁止",
     "evidence_url": null
   },
@@ -481,7 +481,7 @@
     "onset_time": "皮下注後1〜2週で血小板上昇開始（最大効果2〜4週）",
     "duration_hours": "皮下注 週1回 1〜10μg/kg（応答に応じて調整）",
     "guideline_rank": "慢性ITP第二選択（エルトロンボパグと同等位置づけ）。注射が必要。経口不可・食事相互作用がある患者にはロミプロスチムが有利。定期的な血小板カウントが重要（過剰上昇に注意）",
-    "evidence": "Kuter DJ et al. NEJM 2008（PMID:18981485）",
+    "evidence": "Kuter et al.（NEJM 2008 PMID:18981485）",
     "caution": "骨髄線維化（長期投与で網状線維増加）。過剰な血小板上昇で血栓リスク。投薬中止後のリバウンド（血小板急減・出血リスク）。週1回注射が必要（自己注射可）",
     "evidence_url": null
   },
@@ -535,7 +535,7 @@
     "onset_time": "血小板凝集抑制：1〜2時間（単回投与後）",
     "duration_hours": "徐放製剤200mg 1日2回（ASA 25mgとの配合剤が主流）／通常製剤：25〜50mg 1日3〜4回",
     "guideline_rank": "添付文書上、ワーファリンとの併用による心臓弁置換術後の血栓・塞栓抑制、または狭心症・心筋梗塞等に用いられる。",
-    "evidence": "Antiplatelet Therapy vs Anticoagulation Therapy in Cervical Artery Dissection: The Cervical Artery Dissection in Stroke Study (CADISS) Randomized Clinical Trial Final Results. Markus HS et al. JAMA Neurol. 2019 (PMID:30801621)",
+    "evidence": "CADISS試験（JAMA Neurol 2019 PMID:30801621）",
     "evidence_url": null,
     "caution": "禁忌：本剤に対し過敏症の既往歴がある患者。主な副作用：頭痛、動悸、顔面紅潮、悪心等。心不全、低血圧、重篤な冠動脈疾患のある患者には慎重に投与すること。"
   }
