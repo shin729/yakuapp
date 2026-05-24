@@ -13,7 +13,7 @@
     "onset_time": "2〜4週（hot flush）・3〜6ヶ月（骨密度）",
     "duration_hours": "0.5〜2mg 1日1回 内服（子宮のある女性はプロゲスチン併用必須）",
     "guideline_rank": "更年期症状に最も有効なHRT第一選択。子宮のある女性にはプロゲスチン（MPA・ジドロゲステロン）を必ず併用（子宮内膜増殖症・子宮内膜がん予防）。乳がん個人既往・急性肝炎・血栓症既往は禁忌",
-    "evidence": "Baber RJ et al. Climacteric 2016;19:109-50（IMS HRT推奨）",
+    "evidence": "IMS HRT推奨ガイドライン（Climacteric 2016）",
     "evidence_url": null,
     "caution": "乳がんリスク（エストロゲン単独長期：わずかに上昇）。静脈血栓塞栓症（経口投与は経皮より高リスク）。子宮のある女性へのエストロゲン単独投与禁忌（子宮内膜がん）。胆嚢疾患悪化。高トリグリセリド血症悪化"
   },
@@ -31,7 +31,7 @@
     "onset_time": "1〜2週（血中濃度安定）",
     "duration_hours": "0.72〜1.44mg（貼付剤）週2回（3〜4日ごと）貼付",
     "guideline_rank": "血栓リスクのある患者・肝機能障害・高TG血症・片頭痛患者への経口エストラジオール代替として推奨。喫煙者にも相対的に安全。欧米ガイドラインで経皮HRTは血栓リスクが低いとして推奨",
-    "evidence": "Scarabin PY et al. Lancet 2003;362:428-32（PMID:12927428）",
+    "evidence": "Scarabin et al.（Lancet 2003 PMID:12927428）",
     "evidence_url": null,
     "caution": "貼付部位皮膚反応（発赤・かゆみ）。子宮のある女性はプロゲスチン必須。乳がん禁忌。血栓症既往は経皮でも相対禁忌。グレープフルーツとの相互作用なし（肝代謝を経ないため）"
   },
@@ -49,7 +49,7 @@
     "onset_time": "2〜4週（腟萎縮改善）",
     "duration_hours": "1mg 1日1回 内服 または 腟坐薬 0.5mg 隔日",
     "guideline_rank": "GSM（閉経関連泌尿生殖器症候群）の局所治療に推奨。全身VMS改善目的にはエストラジオールを優先。プロゲスチン不要（低用量局所投与）→乳がん既往者にも比較的安全とされる（ASCO指針で局所エストリオールは許容）",
-    "evidence": "Suckling J et al. Cochrane Database Syst Rev 2006（PMID:17054145）",
+    "evidence": "Suckling et al.（Cochrane 2006 PMID:17054145）",
     "evidence_url": null,
     "caution": "高用量・長期内服ではエストラジオールと同様の注意が必要。腟坐薬少量では全身吸収が少なく安全性が高い。乳がん既往者への全身投与は原則禁忌（局所低用量は施設・状態次第）"
   },
@@ -67,7 +67,7 @@
     "onset_time": "1〜3ヶ月（内膜変化確認）",
     "duration_hours": "2.5〜10mg 1日1回 内服（周期的：月の一部/連続的：毎日）",
     "guideline_rank": "HRTでの子宮内膜保護に必須（子宮摘出者を除く）。WHI試験でMPA併用HRTが乳がんリスクをわずかに増加→天然型プロゲステロン（ジドロゲステロン等）への切り替えが推奨される傾向",
-    "evidence": "Rossouw JE et al. JAMA 2002;288:321-33（PMID:12117397）",
+    "evidence": "WHI試験（JAMA 2002 PMID:12117397）",
     "evidence_url": null,
     "caution": "乳がんリスク（エストロゲン単独より高い）。気分変動・浮腫・体重増加。静脈血栓塞栓症（合成プロゲスチンは経口エストロゲンと相乗リスク）。脂質プロファイルへの悪影響（HDL低下）"
   },
@@ -85,7 +85,7 @@
     "onset_time": "4〜8週",
     "duration_hours": "20mg/0.45mg（バゼドキシフェン/CEE）1日1回 内服",
     "guideline_rank": "プロゲスチンの副作用（気分変動・体重増加・乳がんリスク）が懸念される子宮温存女性のHRTに。乳腺密度を増加させないため乳がん検診の解釈が容易。日本では2023年承認",
-    "evidence": "Pinkerton JV et al. Menopause 2013;20:1210-8（PMID:23571521）",
+    "evidence": "Pinkerton et al.（Menopause 2013 PMID:23571521）",
     "evidence_url": null,
     "caution": "VTE（静脈血栓塞栓症）リスク（バゼドキシフェンはSERMとしてのリスク）。禁煙推奨。乳がん禁忌。胆嚢疾患。服用中の経腟出血は異常（子宮内膜異常の可能性）"
   },
@@ -103,7 +103,7 @@
     "onset_time": "1〜3ヶ月（疼痛）・3〜6ヶ月（病変縮小）",
     "duration_hours": "1〜2mg 1日1回 内服（月経周期に関係なく連続投与）",
     "guideline_rank": "子宮内膜症疼痛の第一選択内服薬（ESHRE・JSOG推奨）。GnRHアゴニストと同等の疼痛改善で長期継続可。妊娠希望がない場合は長期継続可能。妊娠希望時は一時中止→月経再開後に妊娠試みる",
-    "evidence": "Strowitzki T et al. Hum Reprod 2010;25:633-41（PMID:20022899）",
+    "evidence": "Strowitzki et al.（Hum Reprod 2010 PMID:20022899）",
     "evidence_url": null,
     "caution": "不正出血（特に初期3ヶ月・スポッティング）。無月経（長期使用）→骨密度低下（軽度）。体重増加。気分変動・うつ。妊娠中禁忌。肝機能障害患者では慎重投与"
   },
@@ -121,7 +121,7 @@
     "onset_time": "4〜8週（効果発現）",
     "duration_hours": "1.88〜3.75mg 4週毎または11.25mg 12週毎 皮下注（デポ製剤）",
     "guideline_rank": "重症子宮内膜症・手術前後補助・内服薬無効例に。通常6ヶ月まで（骨密度低下のため）。ADD-BACK（低用量E+P）で1年以上継続可能。妊娠希望例には一時使用→治療後妊娠試みる",
-    "evidence": "Surrey ES et al. Fertil Steril 1990;53:401-8（PMID:2106015）",
+    "evidence": "Surrey et al.（Fertil Steril 1990 PMID:2106015）",
     "evidence_url": null,
     "caution": "更年期様症状（hot flush・骨密度低下・腟乾燥）→ADD-BACK療法で軽減。flare up（初回注射後1〜2週）。骨密度低下（6ヶ月超で臨床的に問題）。うつ。高脂血症"
   },
@@ -139,7 +139,7 @@
     "onset_time": "1〜2週（月経・出血減少）",
     "duration_hours": "40mg 1日1回 内服（ADD-BACK：E+P配合錠との固定合剤も）",
     "guideline_rank": "GnRHアゴニスト注射が困難・flare upを避けたい・経口を希望する患者に。ADD-BACKと組み合わせで長期（最大24ヶ月）使用可能（海外）。日本では6ヶ月まで（単独）",
-    "evidence": "Taylor HS et al. N Engl J Med 2017;377:28-40（PMID:28677946）",
+    "evidence": "SPIRIT試験（NEJM 2017 PMID:28677946）",
     "evidence_url": null,
     "caution": "更年期様症状（hot flush・骨密度低下）。ADD-BACKなしでは骨密度低下リスク。妊娠中禁忌（催奇形性）。QT延長薬との相互作用注意。CYP3A4誘導薬で効果減弱"
   },
@@ -157,7 +157,7 @@
     "onset_time": "4〜8週",
     "duration_hours": "200μg 1日2回 点鼻（月経第2〜5日から開始）",
     "guideline_rank": "注射が困難・忌避する患者へのGnRHアゴニスト代替。リュープロレリンと同様6ヶ月制限（ADD-BACKで延長可）。鼻炎・鼻閉のある患者では吸収が安定しない点が注意",
-    "evidence": "Henzl MR et al. N Engl J Med 1988;318:485-9（PMID:3340105）",
+    "evidence": "Henzl et al.（NEJM 1988 PMID:3340105）",
     "evidence_url": null,
     "caution": "更年期様症状（hot flush・骨密度低下）。鼻粘膜刺激・鼻出血。鼻炎・風邪時は吸収低下→効果不安定。flare up（初回投与後）。妊娠中禁忌"
   },
@@ -175,7 +175,7 @@
     "onset_time": "1周期（避妊）・2〜3周期（月経痛・PMDD改善）",
     "duration_hours": "3mg/0.02mg 28日シート（24錠実薬+4錠プラセボ）1日1回 内服",
     "guideline_rank": "月経困難症・PMDD・ニキビ合併例に適したOC。PMDDがある場合はヤーズフレックスではなくヤーズを選択（PMDD適応はヤーズのみ）。35歳以上の喫煙者禁忌。カリウム保持薬との相互作用注意（高K血症リスク）",
-    "evidence": "Yonkers KA et al. JAMA 2005;294:57-65（PMID:15998895）",
+    "evidence": "Yonkers et al.（JAMA 2005 PMID:15998895）",
     "evidence_url": null,
     "caution": "静脈血栓塞栓症（VTE）リスク増加（第4世代プロゲスチン）。35歳以上喫煙者禁忌。高K血症（ACE阻害薬・ARB・利尿薬との併用）。頭痛・悪心（初期）。血圧上昇"
   },
@@ -193,7 +193,7 @@
     "onset_time": "1周期目から月経削減効果（最長120日連続投与可）",
     "duration_hours": "3mg/0.02mg 最低24日〜最長120日連続内服。連続点状出血3日以上→4日間休薬→再開（自己管理型）",
     "guideline_rank": "月経困難症で月経回数そのものを減らしたい患者・スポーツや仕事の都合で月経タイミングを調整したい患者に。PMDDを伴う場合はヤーズを選択。スポッティング管理の患者教育が必須（2019年日本承認）",
-    "evidence": "Klipping C et al. Contraception 2012;85:315-22（PMID:22044643）",
+    "evidence": "Klipping et al.（Contraception 2012 PMID:22044643）",
     "evidence_url": null,
     "caution": "VTE（ヤーズと同等リスク）。スポッティング（使用初期・長期連続期間に多い）。35歳以上喫煙者禁忌。高K血症（ドロスピレノンの抗MR作用）。PMDDへの保険適用外"
   },
@@ -211,7 +211,7 @@
     "onset_time": "1周期（避妊）",
     "duration_hours": "28日シート（21錠実薬+7錠プラセボ）1日1回 内服",
     "guideline_rank": "OC第一選択のひとつ。VTEリスクを最小化したい場合に第2世代を選択。ニキビ・多毛症への効果はドロスピレノンより劣る。国内では最も処方頻度が高いOCのひとつ",
-    "evidence": "Edelman A et al. Cochrane Database Syst Rev 2019（PMID:30801135）",
+    "evidence": "Edelman et al.（Cochrane 2019 PMID:30801135）",
     "evidence_url": null,
     "caution": "VTE・動脈血栓（脳卒中・心筋梗塞）リスク。35歳以上喫煙者禁忌。片頭痛（前兆あり）禁忌。乳がん・血栓症既往禁忌。飲み忘れ時のプロトコル遵守"
   },
@@ -229,7 +229,7 @@
     "onset_time": "1周期（避妊）・2〜3周期（ニキビ）",
     "duration_hours": "150μg/0.03mg 28日シート（21錠実薬+7錠プラセボ）1日1回 内服",
     "guideline_rank": "ニキビ合併の月経困難症に適したOC。第3世代はVTEリスクが第2世代よりやや高いとするデータもある（議論あり）。コンプライアンスを重視する場合に1相性が有利",
-    "evidence": "Gu S et al. Contraception 1990;41:477-84",
+    "evidence": "Gu et al.（Contraception 1990）",
     "evidence_url": null,
     "caution": "VTE（第3世代は第2世代より高いとする研究あり）。35歳以上喫煙者禁忌。血圧上昇。服用忘れの管理"
   },
@@ -247,7 +247,7 @@
     "onset_time": "1〜2周期（月経痛）",
     "duration_hours": "1mg/0.02mg（LD）28日シート（21錠実薬+7錠プラセボ）1日1回 内服",
     "guideline_rank": "子宮内膜症の可能性がある月経困難症に。一般的な避妊目的OCより月経困難症への作用が強い。フリウェルは後発品（ジェネリック）",
-    "evidence": "Harada T et al. Fertil Steril 2008;90:1583-8（PMID:18249374）",
+    "evidence": "Harada et al.（Fertil Steril 2008 PMID:18249374）",
     "evidence_url": null,
     "caution": "VTE（OC共通）。不正出血（初期）。内膜症診断後は高用量ジエノゲスト単剤の方が疼痛改善効果が高い場合もある。35歳以上喫煙者禁忌"
   },
@@ -265,7 +265,7 @@
     "onset_time": "できるだけ早く（性交後72時間以内）",
     "duration_hours": "1.5mg 1回服用（または0.75mg×2回・12時間間隔）",
     "guideline_rank": "WHO必須医薬品リスト掲載。緊急避妊法として最も普及。通常OCとは異なり継続服用ではなく緊急1回投与。最も効果的なのは銅付加IUD（Cu-IUD）だが侵襲的",
-    "evidence": "von Hertzen H et al. Lancet 1998;352:428-33（WHO試験・PMID:9708750）",
+    "evidence": "WHO試験（Lancet 1998 PMID:9708750）",
     "evidence_url": null,
     "caution": "悪心・嘔吐（服用後）→嘔吐した場合は再服用。点状出血・月経周期変化。次の月経まで追加避妊措置推奨。妊娠に対する直接的な催奇形性はない（服用後妊娠継続しても問題ない）。受精後には効果なし"
   },
@@ -283,7 +283,7 @@
     "onset_time": "月経2〜5日目から5日間内服→7〜10日後に排卵",
     "duration_hours": "50mg 1日1回×5日間（月経2〜5日目開始）。無効なら100mg/日まで増量。6周期まで",
     "guideline_rank": "無排卵・PCOSの排卵誘発で広く使用（JSOG）。ただしPCOSではレトロゾールが妊娠率・生産率で優れるとするRCTあり→施設によりレトロゾールが第一選択化（ASRM 2023）。多胎妊娠リスクあり（双胎 約8〜10%）",
-    "evidence": "Legro RS et al. N Engl J Med 2014;371:119-29（PMID:25006718）",
+    "evidence": "Legro試験（NEJM 2014 PMID:25006718）",
     "evidence_url": null,
     "caution": "多胎妊娠（双胎 8〜10%・高次多胎）。OHSS（クロミフェンは軽度）。ほてり・悪心（抗エストロゲン）。頸管粘液減少→精子通過性低下。視覚異常（稀・服薬中断）。6周期超の使用は推奨されない"
   },
@@ -301,7 +301,7 @@
     "onset_time": "月経2〜5日目から5日間内服→7〜12日後に排卵",
     "duration_hours": "2.5〜5mg 1日1回×5日間（月経2〜5日目開始）",
     "guideline_rank": "PCOS排卵誘発でクロミフェンより優れるエビデンス（ASRM 2023ガイドライン改訂でPCOS第一選択へ）。日本では不妊治療への適応外（乳がんが本来の適応）→自費処方が多い。クロミフェン無効例・内膜菲薄化例にも適応",
-    "evidence": "Legro RS et al. N Engl J Med 2014;371:119-29（PMID:25006718）",
+    "evidence": "Legro試験（NEJM 2014 PMID:25006718）",
     "evidence_url": null,
     "caution": "催奇形性の懸念（動物試験）→妊娠判明後は直ちに中止。多胎妊娠（双胎 ≤3%・クロミフェンより少ない）。ほてり（軽度）。日本では乳がん用薬のため不妊適応は自費処方"
   },
@@ -319,7 +319,7 @@
     "onset_time": "月経2〜3日目から連日皮下注→8〜14日で採卵",
     "duration_hours": "150〜300IU/日 皮下注（AMH・AFC・年齢・体重で個別調整）→hCGまたはGnRHaトリガーで排卵誘発",
     "guideline_rank": "ART（IVF・ICSI）の標準的卵巣刺激薬（ESHRE・JSOG）。GnRHアンタゴニスト（ガニレリクス等）と組み合わせてLHサージを防ぐ。OHSS高リスク例はhCGでなくGnRHaトリガー（デクロレリン等）に変更",
-    "evidence": "Daya S et al. Hum Reprod 2000;15 Suppl 1:43-52（PMID:11043578）",
+    "evidence": "Daya et al.（Hum Reprod 2000 PMID:11043578）",
     "evidence_url": null,
     "caution": "卵巣過剰刺激症候群（OHSS）：腹水・胸水・血液濃縮→重症は入院管理。多胎妊娠（複数胚移植を避けることで低減）。注射部位反応。PCOSは高感受性→低用量から開始（Low Dose Protocol）"
   },
@@ -337,7 +337,7 @@
     "onset_time": "月経2〜3日目から連日注射→8〜14日で採卵",
     "duration_hours": "75〜300IU/日 筋注または皮下注（rFSHと同様に個別調整）",
     "guideline_rank": "IVF卵巣刺激でrFSHと同等の有効性（ESHRE）。低ゴナドトロピン性無排卵（WHOグループI）にはLHを含むHMGを優先。rFSH vs HMGの選択は患者状態・コスト・施設方針で決定",
-    "evidence": "van Wely M et al. Cochrane Database Syst Rev 2011（PMID:21229998）",
+    "evidence": "van Wely et al.（Cochrane 2011 PMID:21229998）",
     "evidence_url": null,
     "caution": "OHSS（rFSHと同等リスク）。多胎妊娠。尿由来製剤のためロット間変動の可能性（遺伝子組換えより大）。筋注時の局所疼痛"
   },
@@ -355,7 +355,7 @@
     "onset_time": "投与後34〜36時間で排卵（またはIVF採卵）",
     "duration_hours": "排卵トリガー：5000〜10000IU 筋注または皮下注（1回）。黄体補充：1500〜2500IU 筋注（採卵後2・5・8日目）",
     "guideline_rank": "全ての排卵誘発プロトコルに必須。OHSS高リスク（PCOS・多卵胞発育）ではhCGトリガーを避けてGnRHaトリガーに変更（ESHRE・JSOG推奨）。尿由来より組換えhCG（オビドレル）がOHSSリスク低という報告あり",
-    "evidence": "Andersen CY et al. Hum Reprod 1999;14:306-10（PMID:10099971）",
+    "evidence": "Andersen et al.（Hum Reprod 1999 PMID:10099971）",
     "evidence_url": null,
     "caution": "OHSS（最大の危険：hCG投与がOHSSのトリガー）→OHSS高リスク例はGnRHaトリガーに変更。腹痛・腹部膨満（OHSS前駆症状）。多胎妊娠。血栓塞栓症（重症OHSS合併時）"
   },
@@ -373,7 +373,7 @@
     "onset_time": "FSH開始5〜7日目（卵胞14〜15mm到達時）〜採卵日前日まで連日皮下注",
     "duration_hours": "0.25mg 1日1回 皮下注（FSH開始5〜7日目〜採卵日前日まで）",
     "guideline_rank": "IVFアンタゴニスト法（現在の標準的ART刺激法）に必須（ESHRE・JSOG）。ロングプロトコルより短期間・低OHSS・採卵数同等。PCOSや高レスポンダーでは特にアンタゴニスト法＋GnRHaトリガーが推奨（OHSS予防）",
-    "evidence": "Lambalk CB et al. Lancet 2006;367:1800-9（PMID:16753481）",
+    "evidence": "Lambalk et al.（Lancet 2006 PMID:16753481）",
     "evidence_url": null,
     "caution": "注射部位反応（皮下注）。稀にアレルギー（ヒスタミン様反応）。採卵当日まで継続が必要（中断→LHサージリスク）"
   },
@@ -391,7 +391,7 @@
     "onset_time": "ロングプロトコル：前周期高温期から連日点鼻→14〜21日でダウンレギュレーション確認→FSH開始。トリガー：採卵34〜36時間前1回（0.3〜0.6mg）",
     "duration_hours": "ダウンレギュレーション：0.15mg（1回3スプレー）1日4回 点鼻。採卵トリガー：0.3〜0.6mg 1回",
     "guideline_rank": "日本ではIVFのロングプロトコル用ダウンレギュレーション薬として広く使用。アンタゴニスト法が主流化しつつあるが子宮内膜症合併例・ポリープ合併例にはロングプロトコルが有利な場合あり。GnRHaトリガーとしてのOHSS予防効果は高い（ESHRE）",
-    "evidence": "Griesinger G et al. Hum Reprod Update 2006;12:159-68（PMID:16291766）",
+    "evidence": "Griesinger et al.（Hum Reprod Update 2006 PMID:16291766）",
     "evidence_url": null,
     "caution": "フレアアップ（投与初期1〜2週に排卵・囊胞形成）。更年期様症状（ほてり・骨密度低下、ダウンレギュレーション中）。点鼻時の鼻炎・鼻閉で吸収不良。GnRHaトリガー後の黄体機能低下→プロゲステロン補充が必須"
   },
@@ -409,7 +409,7 @@
     "onset_time": "採卵翌日または胚移植2〜3日前から開始→妊娠7〜10週まで継続（施設方針による）",
     "duration_hours": "ルティナス 90mg 1日2〜3回 腟内投与。ウトロゲスタン 200mg 1日2〜3回 腟内投与",
     "guideline_rank": "IVF・ICSI・FETの全プロトコルで黄体補充が推奨（ESHRE・JSOG）。採卵後hCG黄体補充はOHSSリスクがある場合にプロゲステロン製剤で代替。妊娠継続後も切迫流産予防として継続（施設方針による）",
-    "evidence": "van der Linden M et al. Cochrane Database Syst Rev 2015（PMID:26148507）",
+    "evidence": "van der Linden et al.（Cochrane 2015 PMID:26148507）",
     "evidence_url": null,
     "caution": "腟用製剤の不快感（腟内粉末残留・腟分泌物増加）。局所刺激・かゆみ。経口ウトロゲスタンは眠気（経口投与時）。天然型プロゲステロンのため催奇形性なし"
   },
@@ -427,7 +427,7 @@
     "onset_time": "月経後または胚移植2〜3日前から開始",
     "duration_hours": "10mg 1日2〜3回 内服（黄体補充）。習慣流産予防：10mg 1日2回（妊娠16〜20週まで）",
     "guideline_rank": "黄体機能不全・習慣流産への経口黄体補充薬として広く処方（日本：JSOG）。経腟プロゲステロンと比較してエビデンスはやや弱い（PROMISE試験 2019）。経口製剤の利便性から継続率が高い",
-    "evidence": "Coomarasamy A et al. N Engl J Med 2019;380:1869-77（PROMISE試験・PMID:31141634）",
+    "evidence": "PROMISE試験（NEJM 2019 PMID:31141634）",
     "evidence_url": null,
     "caution": "血栓塞栓症リスク（合成プロゲスチンとして最低限）。浮腫・気分変動（まれ）。乳がん（ホルモン受容体陽性）禁忌。天然型プロゲステロンより子宮内膜の分泌期変換が弱いという報告あり"
   },
@@ -445,7 +445,7 @@
     "onset_time": "2〜4週（プロラクチン低下）・1〜3ヶ月（排卵回復）",
     "duration_hours": "0.25〜0.5mg 週1〜2回 内服（食後）。プロラクチノーマ：0.5〜2mg/週",
     "guideline_rank": "高プロラクチン血症第一選択（Endocrine Society・日本内分泌学会）。ブロモクリプチン無効・不耐容例にも有効。プロラクチノーマは手術より薬物療法優先。妊娠判明後は中止が一般的（安全性データはブロモクリプチンに劣る）",
-    "evidence": "Webster J et al. N Engl J Med 1994;331:904-9（PMID:8078532）",
+    "evidence": "Webster et al.（NEJM 1994 PMID:8078532）",
     "evidence_url": null,
     "caution": "起立性低血圧（投与初期・食事と一緒に服用）。悪心（ブロモクリプチンより少ない）。心臓弁膜症（高用量長期：パーキンソン病治療用量での報告→不妊治療用量は低リスク）。妊娠中継続の安全性データが限られる"
   },
@@ -463,7 +463,7 @@
     "onset_time": "服用開始後1周期（28日）で避妊効果",
     "duration_hours": "1シート28錠（E4 15mg/ドロスピレノン3mg 実錠21錠＋プラセボ7錠）毎日同じ時間に1錠",
     "guideline_rank": "2025年発表の臨床試験において、月経困難症に対する有効な治療選択肢であり、従来の製剤と比較して血栓塞栓症リスクを低減できる可能性が示唆されている。",
-    "evidence": "Efficacy and safety of estetrol (15 mg)/drospirenone (3 mg) combination in a cyclic regimen for the treatment of primary and secondary dysmenorrhea. Osuga Y, et al. Fertil Steril. 2025 (PMID: 39521109)",
+    "evidence": "Osuga et al.（Fertil Steril 2025 PMID:39521109）",
     "evidence_url": null,
     "caution": "主な副作用は不正出血（間欠出血）であり、従来の経口避妊薬と同様の傾向を示す。凝固・線溶系への影響はエチニルエストラジオール含有製剤よりも有意に小さいことが報告されているが、血栓塞栓症等に関する一般的な注意は必要である。"
   },
@@ -478,10 +478,10 @@
     "placebo_onset": "月経困難症スコア改善量（プラセボ比-1.4点）",
     "placebo_sleep": "レスポンダー率（2点以上の改善）64.3%",
     "NNT": null,
-    "onset_time": null,
-    "duration_hours": "24時間",
+    "onset_time": "1周期（避妊）・2〜3周期（月経困難症改善）",
+    "duration_hours": "4mg 1日1回内服（28日シート・プラセボ錠なし・連続服用）",
     "guideline_rank": "月経困難症および子宮内膜症に伴う疼痛の治療における第一選択薬の一つ（低用量エストロゲン・プロゲスチン配合薬）。",
-    "evidence": "Efficacy and safety of estetrol (15 mg)/drospirenone (3 mg) combination in a cyclic regimen for the treatment of primary and secondary dysmenorrhea: a multicenter, placebo-controlled, double-blind, randomized study Osuga Y et al. Fertil Steril. 2025 (PMID: 39521109)",
+    "evidence": "Osuga et al.（Fertil Steril 2025 PMID:39521109）",
     "evidence_url": null,
     "caution": "禁忌：血栓症、前兆を伴う偏頭痛、喫煙、高血圧、乳癌等。副作用：不正出血、悪心、頭痛等。重大な副作用として血栓症があり、下肢の疼痛・腫脹、突然の息切れ、激しい頭痛、視力障害等の症状が現れた場合は直ちに服用を中止し受診すること。"
   },
@@ -496,10 +496,10 @@
     "placebo_onset": "過多月経改善率：プラセボ比 +40.5〜64.5%",
     "placebo_sleep": "100mg単独群の改善率：56.4〜56.7%",
     "NNT": null,
-    "onset_time": "24週間",
-    "duration_hours": "24時間",
+    "onset_time": "2〜4週（月経量減少）",
+    "duration_hours": "100mg 1日1回内服（ADD-BACKなし）または200mg+エストラジオール/NETA配合錠",
     "guideline_rank": "第3相試験で子宮筋腫の過多月経に有効性を確認。100mg単独投与は、ホルモン補充療法を希望しない、または使用できない患者における独自の治療選択肢となる。",
-    "evidence": "Linzagolix with and without hormonal add-back therapy for the treatment of symptomatic uterine fibroids: two randomised, placebo-controlled, phase 3 trials. Donnez J et al. Lancet 2022 (PMID: 36116480)",
+    "evidence": "Donnez et al.（Lancet 2022 PMID:36116480）",
     "evidence_url": null,
     "caution": "主な副作用はホットフラッシュ（200mg単独群で32-35%）。エストロゲン低下に伴う骨密度減少や更年期様症状に注意が必要である。200mg投与時は通常ホルモン補充療法（ABT）の併用を検討し、100mg単独はABTを望まない患者の選択肢となる。"
   }

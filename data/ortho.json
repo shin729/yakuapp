@@ -13,7 +13,7 @@
     "onset_time": "1〜2週（筋緊張改善）",
     "duration_hours": "50mg 1日3回 食後内服（100mgまで増量可）",
     "guideline_rank": "腰痛診療ガイドライン（日本整形外科学会）では急性腰痛への筋弛緩薬の有効性は限定的（エビデンスB）。慢性頸肩腕・肩こりへの短期使用が主。長期漫然投与は避ける",
-    "evidence": "Garg H et al. J Orthop Surg Res 2012（エペリゾン腰痛RCT）",
+    "evidence": "Garg et al.（J Orthop Surg Res 2012）",
     "evidence_url": null,
     "caution": "眠気（少ないがあり）・ふらつき（高齢者注意）。肝機能障害（まれ）。皮疹（過敏反応）。長期漫然投与での依存性は低い。CYP2D6で代謝→同酵素阻害薬との相互作用"
   },
@@ -31,7 +31,7 @@
     "onset_time": "数日〜1週間",
     "duration_hours": "2〜4mg 1日3回 食後内服（最大12mg/日）",
     "guideline_rank": "筋緊張が強い・エペリゾン無効例に。痙性麻痺（脳卒中後・脊髄損傷・MS）への適応もある（バクロフェンと並ぶ第一選択）。低用量から開始（眠気・血圧低下に注意）",
-    "evidence": "Kamen L et al. J Spinal Cord Med 2008;31:146-56（PMID:18581661）",
+    "evidence": "Kamen et al.（J Spinal Cord Med 2008 PMID:18581661）",
     "evidence_url": null,
     "caution": "眠気・鎮静（エペリゾンより強い）→運転注意。血圧低下（α2作動による降圧）。肝機能障害（定期モニタリング）。フルボキサミン（CYP1A2阻害薬）との併用禁忌（血中濃度10倍以上上昇）。突然中断で反跳性高血圧"
   },
@@ -49,7 +49,7 @@
     "onset_time": "1〜2週（痙性麻痺改善）",
     "duration_hours": "5mg 1日3回から開始→5〜20mg 1日3回（最大80mg/日）まで漸増",
     "guideline_rank": "痙性麻痺（MS・脊髄損傷・脳卒中後）の第一選択（ESM・日本神経学会）。腰痛・肩こりへの適応は明確でない（エペリゾン・チザニジンを優先）。髄腔内投与（バクロフェンポンプ）は重症痙性麻痺に有効",
-    "evidence": "Shakespeare DT et al. Cochrane Database Syst Rev 2003（MSの痙性麻痺・PMID:14973943）",
+    "evidence": "Shakespeare et al.（Cochrane 2003 PMID:14973943）",
     "evidence_url": null,
     "caution": "眠気・脱力・めまい（用量依存）。急激な中断で離脱症候群（幻覚・けいれん・発熱）→必ず漸減。腎機能低下で蓄積（腎排泄）。高齢者では過鎮静・転倒リスク。消化器症状（悪心・嘔吐）"
   },
@@ -59,7 +59,7 @@
     "category": "筋弛緩薬",
     "class": "中枢性筋弛緩薬（脊髄多シナプス反射抑制）",
     "action_type": "頸肩腕症候群・腰痛症・肩関節周囲炎に伴る筋緊張亢進・肩こり",
-    "mechanism": "脊髄での多シナプス反射を抑制→骨格筋の過剰緊張を低下。脊髄での多シナプス反射を抑制→骨格筋の過剰緊張を低下",
+    "mechanism": "脊髄での多シナプス反射を抑制→骨格筋の過剰緊張を低下",
     "efficacy_star": 3,
     "placebo_onset": "頸肩腕症・腰痛での筋緊張・疼痛改善（エペリゾンと同等程度）",
     "placebo_sleep": "エペリゾン・チザニジンと同じ適応。使い分けの根拠は乏しく（作用機序・有効性に大きな差がない）、施設の慣習・患者の副作用プロファイルで選択されることが多い",
@@ -85,7 +85,7 @@
     "onset_time": "経口1〜2時間・静注1〜3分（MH緊急時）",
     "duration_hours": "痙縮：25〜100mg 1日3〜4回。MH：1〜2.5mg/kg 静注（繰り返し投与）",
     "guideline_rank": "痙性麻痺：バクロフェン・チザニジン無効例に追加。悪性高熱：疑いがあれば即座に投与（MH必須備蓄薬）。",
-    "evidence": "Katrak PH, et al.: Cochrane Database Syst Rev. 2008; (3): CD003929（PMID:18646096）",
+    "evidence": "Katrak et al.（Cochrane 2008 PMID:18646096）",
     "evidence_url": null,
     "caution": "肝毒性（重篤な肝障害・劇症肝炎）：長期高用量使用で発生リスク。定期的肝機能検査必須。筋力低下・倦怠感・めまい。女性・高齢者でリスク高。"
   },
@@ -103,7 +103,7 @@
     "onset_time": "2〜4週（注射コース後）",
     "duration_hours": "アルツ：25mg/2.5mL 週1回 関節内注射×5回。スベニール：30mg/3mL 週1回×3〜5回",
     "guideline_rank": "変形性膝関節症診療ガイドライン（日本整形外科学会 2023）では条件付き推奨（エビデンスB）。運動療法・体重管理・NSAIDsの次の選択肢。OARSI・ACR 2020ではエビデンスが弱いとする評価もあり施設差が大きい",
-    "evidence": "Bellamy N et al. Cochrane Database Syst Rev 2006（PMID:16625553）",
+    "evidence": "Bellamy et al.（Cochrane 2006 PMID:16625553）",
     "evidence_url": null,
     "caution": "注射後疼痛増悪（フレア：投与直後一過性に増悪・1〜2日で改善）。感染性関節炎（無菌操作が必須）。アレルギー反応（鶏卵・鳥羽毛アレルギー患者は鶏由来製品に注意）。出血傾向患者（抗凝固薬服用中）は慎重"
   },
@@ -121,7 +121,7 @@
     "onset_time": "1〜2時間（局所鎮痛）",
     "duration_hours": "テープ：1日1回貼付（24時間）。パップ：1日2回貼付（12時間）。患部に直接貼付",
     "guideline_rank": "変形性関節症・腰痛症への外用NSAIDsは内服より先に試みることを推奨（OARSI・日本整形外科学会）。全身性NSAIDsが使いにくい患者（消化器疾患・腎機能低下・高齢者）では外用を優先。貼付部位の皮膚刺激に注意",
-    "evidence": "Derry S et al. Cochrane Database Syst Rev 2016（外用NSAIDs・PMID:27223443）",
+    "evidence": "Derry et al.（Cochrane 2016 PMID:27223443）",
     "evidence_url": null,
     "caution": "接触性皮膚炎・皮膚刺激（貼付部位）→同じ部位への連続貼付を避ける。光線過敏（ケトプロフェン貼付薬で特に問題→ロキソプロフェンは比較的少ない）。全身吸収による消化器・腎臓副作用（内服より少ないが高齢者・広面積では注意）。アスピリン喘息患者は禁忌"
   },
@@ -139,7 +139,7 @@
     "onset_time": "30分〜1時間",
     "duration_hours": "300〜1000mg 1日3〜4回 内服（最大4000mg/日）。高齢者・肝機能低下は最大2000mg/日",
     "guideline_rank": "OARSI・ACR変形性関節症ガイドライン：NSAIDs使用困難例の第一選択。NSAIDsより鎮痛効果は弱いが副作用が少ない。1500mg/日以上で抗炎症効果（弱い）も出るとされる。painドメインのNSAIDsカテゴリと合わせて参照",
-    "evidence": "Towheed TE et al. Cochrane Database Syst Rev 2006（変形性関節症・PMID:16625530）",
+    "evidence": "Towheed et al.（Cochrane 2006 PMID:16625530）",
     "evidence_url": null,
     "caution": "肝毒性（4000mg/日超・アルコール多飲・肝疾患患者）→用量厳守。他のアセトアミノフェン含有製品との重複投与（総量管理）。治療量でも長期高用量投与での腎機能低下報告あり。NSAIDsより鎮痛効果が劣る点を患者に説明"
   },
