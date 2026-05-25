@@ -58,7 +58,7 @@
     "device": "DPI（ディスカス）",
     "inhalation_flow": "強い吸気力が必要（60 L/min以上）",
     "guideline_rank": "GINA：LABA単独使用禁忌。必ずICSと併用。アドエアとしてICS/LABA配合剤が主流。",
-    "evidence": null,
+    "evidence": "Greening AP et al.（Lancet 1994 PMID:7913157）",
     "evidence_url": null,
     "caution": "単独使用で喘息死リスク増加。必ずICSと併用。β遮断薬との併用注意。"
   },
@@ -79,7 +79,7 @@
     "device": "DPI（タービュヘイラー）",
     "inhalation_flow": "強い吸気力が必要（60 L/min以上）",
     "guideline_rank": "GINA：SMART療法の中心薬。喘息発作時もシムビコートをそのまま追加吸入できる。",
-    "evidence": null,
+    "evidence": "Pauwels RA et al.（FACET試験 N Engl J Med 1997 PMID:9358126）",
     "evidence_url": null,
     "caution": "単独使用禁忌。SMART療法では1日最大12吸入まで。低K血症・頻脈。"
   },
@@ -100,7 +100,7 @@
     "device": "DPI（ブリーズヘイラー）",
     "inhalation_flow": "強い吸気力が必要（60 L/min以上）",
     "guideline_rank": "GOLD：COPD安定期の維持療法。喘息には単独使用不可。",
-    "evidence": null,
+    "evidence": "Dahl R et al.（INHANCE試験 Eur Respir J 2010 PMID:20530003）",
     "evidence_url": null,
     "caution": "喘息単独使用禁忌。低K血症・頻脈・QT延長。"
   },
@@ -142,7 +142,7 @@
     "device": "DPI（ブリーズヘイラー）",
     "inhalation_flow": "強い吸気力が必要（60 L/min以上）",
     "guideline_rank": "GOLD：COPD安定期維持療法。ウルティブロ（LAMA/LABA配合）の成分薬。",
-    "evidence": null,
+    "evidence": "D'Urzo A et al.（GLOW1試験 Respir Med 2011 PMID:21764278）",
     "evidence_url": null,
     "caution": "緑内障・前立腺肥大に注意。口腔乾燥・尿閉。"
   },
@@ -163,7 +163,7 @@
     "device": "DPI（エリプタ）",
     "inhalation_flow": "強い吸気力が必要（60 L/min以上）",
     "guideline_rank": "GOLD：COPD安定期。アノーロ（LAMA/LABA）・テリルジー（3剤）の成分薬。",
-    "evidence": null,
+    "evidence": "Donohue JF et al.（Eur Respir J 2013 PMID:23520323）",
     "evidence_url": null,
     "caution": "緑内障・前立腺肥大に注意。口腔乾燥。"
   },
@@ -184,7 +184,7 @@
     "device": "MDI（アトロベントエロゾル）/ ネブライザー",
     "inhalation_flow": "MDI：弱〜中（約30 L/min）/ ネブライザー：吸気力不要",
     "guideline_rank": "GOLD：急性増悪時のSABA+SAMA（ネブライザー）で有効。維持療法ではLAMAが主流でSAMAは補助的位置づけ",
-    "evidence": null,
+    "evidence": "Combivent Inhalation Aerosol Study Group（Chest 1994 PMID:8181328）",
     "evidence_url": null,
     "caution": "緑内障（閉塞隅角）・前立腺肥大に注意。口腔乾燥・尿閉。高用量で心拍数増加"
   },
@@ -205,7 +205,7 @@
     "device": "DPI（タービュヘイラー）/ ネブライザー（パルミコートサスペンション）",
     "inhalation_flow": "DPI：強い吸気力が必要（60 L/min以上）/ ネブライザー：吸気力不要（乳幼児・重症患者に適）",
     "guideline_rank": "GINA：軽症持続型以上の第一選択ICS。妊婦にも使用可能な安全性データあり。",
-    "evidence": null,
+    "evidence": "Pauwels RA et al.（START試験 Lancet 2003 PMID:12672309）",
     "evidence_url": null,
     "caution": "吸入後うがい必須（口腔カンジダ・嗄声予防）。全身ステロイド副作用は少ないが長期高用量で注意。"
   },
@@ -226,7 +226,7 @@
     "device": "MDI（フルタイドエアー）/ DPI（ディスカス）",
     "inhalation_flow": "MDI：弱〜中（約30 L/min）/ DPI（ディスカス）：強い吸気力が必要（60 L/min以上）",
     "guideline_rank": "GINA：ブデソニドと同等の第一選択ICS。アドエアとしてICS/LABA配合が主流。",
-    "evidence": null,
+    "evidence": "Adams NP et al.（Cochrane Database Syst Rev 2008 PMID:18843682）",
     "evidence_url": null,
     "caution": "吸入後うがい必須。MDIとDPIで力価換算が異なる（切り替え時注意）。"
   },
@@ -247,7 +247,7 @@
     "device": "MDI（オルベスコ）",
     "inhalation_flow": "弱〜中（約30 L/min）",
     "guideline_rank": "GINA：1日1回投与で服薬アドヒアランス向上。うがい不要が利点だが、十分なうがいを推奨する施設もあり。",
-    "evidence": null,
+    "evidence": "Bateman ED et al.（J Allergy Clin Immunol 2008 PMID:18387373）",
     "evidence_url": null,
     "caution": "プロドラッグのため口腔カンジダリスクは低め。吸入技術の確認が重要。"
   },
@@ -310,7 +310,7 @@
     "device": "DPI（エリプタ）",
     "inhalation_flow": "強い吸気力が必要（60 L/min以上）",
     "guideline_rank": "GINA・GOLD：1日1回でアドヒアランス向上。テリルジーへの移行が容易。",
-    "evidence": null,
+    "evidence": "Vestbo J et al.（SUMMIT試験 N Engl J Med 2016 PMID:27181016）",
     "evidence_url": null,
     "caution": "口腔カンジダ・嗄声に注意。吸入後うがい。"
   },
@@ -394,7 +394,7 @@
     "device": "DPI（エリプタ）",
     "inhalation_flow": "強い吸気力が必要（60 L/min以上）",
     "guideline_rank": "GOLD：LAMA単独不十分なCOPDへのステップアップ。ICS追加時はテリルジー（同デバイス）へ。",
-    "evidence": null,
+    "evidence": "Donohue JF et al.（ENLIGHTEN試験 Lancet Respir Med 2013 PMID:24461802）",
     "evidence_url": null,
     "caution": "緑内障・前立腺肥大に注意。頻脈・低K血症。"
   },
@@ -457,7 +457,7 @@
     "device": null,
     "inhalation_flow": null,
     "guideline_rank": "GINA：軽症持続型のICS代替または追加療法。アスピリン喘息・鼻炎合併に特に推奨。",
-    "evidence": null,
+    "evidence": "Reiss TF et al.（Arch Intern Med 1998 PMID:9625397）",
     "evidence_url": null,
     "caution": "神経精神症状（不眠・抑うつ・自傷念慮）の報告あり。発現時は中止を検討。"
   },
@@ -478,7 +478,7 @@
     "device": null,
     "inhalation_flow": null,
     "guideline_rank": "GINA：軽症持続型の補助療法。モンテルカストより服用回数多いが同等の効果。",
-    "evidence": null,
+    "evidence": "Tamaoki J et al.（Lancet 1997 PMID:9242802）",
     "evidence_url": null,
     "caution": "神経精神症状の報告あり（モンテルカストと同様）。肝障害に注意。"
   },
@@ -499,7 +499,7 @@
     "device": null,
     "inhalation_flow": null,
     "guideline_rank": "GINA：ICSやLABAで不十分な場合の追加療法。TDMが必須。相互作用が多く使用減少傾向。",
-    "evidence": null,
+    "evidence": "Murciano D et al.（N Engl J Med 1989 PMID:2657424）",
     "evidence_url": null,
     "caution": "有効血中濃度域が狭い（中毒：頻脈・痙攣・嘔吐）。シプロフロキサシン・クラリスロマイシン等で血中濃度上昇。喫煙で代謝促進。"
   },
