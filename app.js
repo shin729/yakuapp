@@ -869,7 +869,7 @@ function renderGlobalSearch() {
     });
   });
 
-  container.innerHTML = ordered.map(({ key, label, dk, domCfg }) => {
+  container.innerHTML = `<div class="search-groups-grid">${ordered.map(({ key, label, dk, domCfg }) => {
     const sorted = sortDrugs(groups[key]);
     const domBtn = document.querySelector(`.domain-btn[data-domain="${dk}"]`);
     const domLabel = domBtn ? domBtn.textContent.trim() : dk;
@@ -887,7 +887,7 @@ function renderGlobalSearch() {
         </div>
         ${inner}
       </div>`;
-  }).join('');
+  }).join('')}</div>`;
   applyDragScroll(container);
 
   container.querySelectorAll('.search-group-jump').forEach(btn => {

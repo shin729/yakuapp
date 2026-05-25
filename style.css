@@ -807,8 +807,17 @@ thead .sticky-col { z-index: 3; }
 }
 
 /* ===== 全体検索グループ ===== */
+.search-groups-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-start;
+}
+
 .search-group {
-  margin-bottom: 20px;
+  flex: 1;
+  min-width: min(500px, 100%);
+  margin-bottom: 0;
 }
 
 .search-group-header {
