@@ -32,17 +32,11 @@ const DOMAINS = {
       { key: '強オピオイド',             label: '🔴 強オピオイド' },
       { key: '弱オピオイド・補助薬',     label: '⚕ 弱オピオイド・補助薬' },
       { key: '神経障害性疼痛',           label: '⚡ 神経障害性疼痛' },
-      { key: '片頭痛（急性期）',         label: '🎯 急性期治療' },
-      { key: '片頭痛（予防）',           label: '🛡 予防薬' },
+      { key: '片頭痛（頓服）',             label: '🎯 片頭痛（頓服）' },
+      { key: '片頭痛（予防薬）',           label: '🛡 片頭痛（予防薬）' },
       { key: '抗てんかん薬',             label: '🧩 抗てんかん薬' },
       { key: 'パーキンソン病治療薬',     label: '🔵 パーキンソン病治療薬' },
     ],
-    categoryGroups: [
-      { key: 'pain',     label: '疼痛',    cats: ['非オピオイド系', '強オピオイド', '弱オピオイド・補助薬', '神経障害性疼痛'] },
-      { key: 'migraine', label: '片頭痛',  cats: ['片頭痛（急性期）', '片頭痛（予防）'] },
-      { key: 'neuro',    label: '神経疾患', cats: ['抗てんかん薬', 'パーキンソン病治療薬'] },
-    ],
-    defaultGroup: 'pain',
     defaultCat: '非オピオイド系',
     headBg:       'linear-gradient(180deg, #f0fdf9 0%, #e4f9f5 100%)',
     stickyBg:     '#f0fdf9',
@@ -2132,7 +2126,7 @@ function getRowDefs(category) {
   if (['制吐薬（CINV）', '骨修飾薬'].includes(category)) return ONCOLOGY_ROWS;
   if (['ビタミン', 'ミネラル・電解質'].includes(category)) return NUTRITION_ROWS;
   if (category === '経腸栄養剤') return ENTERAL_ROWS;
-  if (category === '片頭痛（急性期）' || category === '片頭痛（予防）') return MIGRAINE_ROWS;
+  if (category === '片頭痛（頓服）' || category === '片頭痛（予防薬）') return MIGRAINE_ROWS;
   if (category === '抗てんかん薬')       return EPILEPSY_ROWS;
   if (category === 'パーキンソン病治療薬') return PARKINSON_ROWS;
   if (category === '内服')   return STEROID_ORAL_ROWS;
