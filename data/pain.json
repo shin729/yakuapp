@@ -13,7 +13,7 @@
     "onset_time": "30〜60分",
     "duration_hours": "4〜6時間",
     "guideline_rank": "軽〜中等度疼痛の第一選択。腎機能・胃への影響が少なく高齢者・妊婦にも",
-    "evidence": "Cochrane Review（Moore et al. 2015）; WHO鎮痛ラダー",
+    "evidence": "Cochrane Review（Moore et al. 2015）",
     "caution": "過量服用で肝障害。腎・胃腸への影響はNSAIDsより少ない。妊婦にも使用可",
     "evidence_url": null,
     "analgesic_effect": "★★★ 中等度（軽〜中等度疼痛・発熱時の疼痛に有効）",
@@ -33,7 +33,7 @@
     "onset_time": "45〜60分",
     "duration_hours": "8〜12時間",
     "guideline_rank": "胃腸障害リスクが低いCOX-2選択薬。消化性潰瘍既往・高齢者に",
-    "evidence": "Cochrane Review（Derry et al. 2013）; CONDOR試験",
+    "evidence": "Cochrane Review（Derry et al. 2013）",
     "caution": "胃腸リスクが低い。スルホンアミドアレルギーに注意。心血管リスクは注意が必要",
     "evidence_url": null,
     "analgesic_effect": "★★★★ 強い（変形性関節症・慢性炎症性疼痛・術後痛）",
@@ -73,7 +73,7 @@
     "onset_time": "30〜60分",
     "duration_hours": "6〜8時間",
     "guideline_rank": "胃腸障害リスクが低め。変形性関節症・関節リウマチに",
-    "evidence": "国内臨床試験データ; PMDA承認資料",
+    "evidence": "国内臨床試験データ",
     "caution": "胃腸障害は選択的COX-2阻害薬と同程度に少ない。国内使用実績が主体",
     "evidence_url": null,
     "analgesic_effect": "★★★ 中等度〜強い（変形性関節症・急性疼痛）",
@@ -93,7 +93,7 @@
     "onset_time": "30〜60分",
     "duration_hours": "4〜6時間",
     "guideline_rank": "急性疼痛・炎症に有効なNSAID。胃腸障害のリスクがある場合は注意",
-    "evidence": "PMDA承認資料; 国内臨床試験データ",
+    "evidence": "PMDA承認資料",
     "caution": "胃腸障害・腎機能低下に注意。空腹時服用は避ける。プロドラッグのため胃への直接刺激は少ない",
     "evidence_url": null,
     "analgesic_effect": "★★★★ 強い（急性疼痛・術後痛・頭痛・月経痛・歯痛）",
@@ -191,7 +191,7 @@
     "onset_time": "30〜60分",
     "duration_hours": "4〜6時間",
     "guideline_rank": "NSAIDs が使えない慢性疼痛に。2成分の相乗効果",
-    "evidence": "Fricke et al., Clin Ther 2004（PMID:15530999）",
+    "evidence": "Fricke et al.（Clin Ther 2004 PMID:15530999）",
     "caution": "トラマドール・アセトアミノフェン両剤の注意事項が該当。他のアセトアミノフェン製剤との重複に注意",
     "evidence_url": null
   },
@@ -227,7 +227,7 @@
     "onset_time": "貼付後12〜24時間（血中濃度定常状態まで3日）",
     "duration_hours": "168時間（週1回交換）",
     "guideline_rank": "週1回貼付剤で服薬管理が容易。経口困難・慢性腰痛・変形性関節症に",
-    "evidence": "Steiner DJ et al. Clin J Pain 2011（PMID:21240002）",
+    "evidence": "Steiner et al.（Clin J Pain 2011 PMID:21240002）",
     "evidence_url": null,
     "caution": "部分作動薬のため完全作動薬との併用で拮抗。貼付部位の皮膚刺激。貼付剤はフェンタニルと異なり非麻薬指定（ノルスパン）"
   },
@@ -263,7 +263,7 @@
     "onset_time": "1〜2週間で効果発現",
     "duration_hours": "12時間（t1/2 約6h・1日2回）",
     "guideline_rank": "末梢神経障害性疼痛に。プレガバリンより傾眠・めまいが少ない傾向",
-    "evidence": "Baba M et al. J Diabetes Investig 2019（PMID:30672128）",
+    "evidence": "Baba et al.（J Diabetes Investig 2019 PMID:30672128）",
     "evidence_url": null,
     "caution": "傾眠・めまい（プレガバリンより少ない傾向）。腎機能に応じて減量。体重増加あり"
   },
@@ -281,7 +281,7 @@
     "onset_time": "1〜2週間（効果発現）",
     "duration_hours": "8〜12時間（半減期6時間）",
     "guideline_rank": "糖尿病性神経障害・帯状疱疹後神経痛の第一選択α2δリガンド",
-    "evidence": "Cochrane Review（Moore et al. 2009 PMID:30673120）; Dworkin et al., Pain 2005",
+    "evidence": "Cochrane Review（Moore et al. 2009 PMID:30673120）",
     "caution": "眩暈・眠気（高頻度）。体重増加・浮腫。依存性・乱用リスクあり。腎機能に応じた用量調節が必要",
     "evidence_url": null
   },
@@ -317,7 +317,7 @@
     "onset_time": "1〜2週間（疼痛改善）",
     "duration_hours": "効果持続12〜24時間",
     "guideline_rank": "糖尿病性神経障害性疼痛・線維筋痛症に適する",
-    "evidence": "Cochrane Review（Lunn et al. 2014）; Häuser et al., Eur J Pain 2013（線維筋痛症）",
+    "evidence": "Cochrane Review（Lunn et al. 2014）",
     "caution": "嘔気・血圧上昇。急激な中断は避ける。糖尿病性神経障害・慢性腰痛・線維筋痛症に保険適応あり",
     "evidence_url": null
   },
@@ -353,7 +353,7 @@
     "onset_time": "1ヶ月以内に効果発現",
     "duration_hours": "月1回皮下注射（半減期28日）",
     "guideline_rank": "月4回以上の発作がある反復性・慢性片頭痛の予防に",
-    "evidence": "ARISE試験（Lancet Neurology 2017 PMID:29171821）; STRIVE試験",
+    "evidence": "ARISE試験（Lancet Neurology 2017 PMID:29171821）",
     "caution": "便秘・注射部位反応。妊婦への安全性は未確立。高価格。他予防薬不応例に特に有効",
     "evidence_url": null
   },
@@ -371,7 +371,7 @@
     "onset_time": "投与1カ月以内に効果発現",
     "duration_hours": "720時間（月1回皮下注）",
     "guideline_rank": "月4回以上の片頭痛予防。月1回注射で効果発現が早い",
-    "evidence": "Stauffer VL et al. JAMA Neurol 2018（EVOLVE-1試験 PMID:29813147）",
+    "evidence": "EVOLVE-1試験（JAMA Neurol 2018 PMID:29813147）",
     "evidence_url": null,
     "caution": "注射部位反応。高価（月約4〜5万円）。妊娠中は禁忌。他の予防薬が無効または副作用の例に適応"
   },
@@ -389,7 +389,7 @@
     "onset_time": "投与1カ月以内に効果発現",
     "duration_hours": "720時間（1ヶ月）または2160時間（3ヶ月）",
     "guideline_rank": "月4回以上の片頭痛予防。月1回または四半期1回から選択可",
-    "evidence": "Silberstein SD et al. NEJM 2017（HALO試験 PMID:29800211）",
+    "evidence": "HALO試験（NEJM 2017 PMID:29800211）",
     "evidence_url": null,
     "caution": "注射部位反応。四半期1回投与（675mg）は服薬アドヒアランス向上に有利。他予防薬無効例に適応"
   },
@@ -479,7 +479,7 @@
     "onset_time": "予防効果は4〜8週間",
     "duration_hours": "予防薬として継続服用",
     "guideline_rank": "Grade C1、慢性頭痛の診療ガイドライン2021・高齢者・慢性連日性頭痛を目的に補助的に使用",
-    "evidence": "Shimada et al., Phytomedicine 2008; 慢性頭痛の診療ガイドライン2021",
+    "evidence": "慢性頭痛の診療ガイドライン2021",
     "caution": "高齢者・高血圧を伴う慢性頭痛に特に有用。急性期効果は限定的。消化器症状は少ない。長期服用向き",
     "evidence_url": null
   },
@@ -497,7 +497,7 @@
     "onset_time": "30〜60分（急性期）；予防効果は2〜4週間",
     "duration_hours": "4〜6時間",
     "guideline_rank": "Grade B、慢性頭痛の診療ガイドライン2021を目的に補助的に使用",
-    "evidence": "Odaguchi et al., Headache 2006; 慢性頭痛の診療ガイドライン2021（日本神経学会/日本頭痛学会）",
+    "evidence": "慢性頭痛の診療ガイドライン2021（日本神経学会/日本頭痛学会）",
     "caution": "嘔気・嘔吐を伴う片頭痛に特に有効。熱証・のぼせが強い場合は不向き。エキス顆粒製剤が一般的。妊婦への安全性は比較的高い",
     "evidence_url": null
   },
@@ -533,7 +533,7 @@
     "onset_time": "数日〜1週間",
     "duration_hours": "半減期13時間（1日2回）",
     "guideline_rank": "焦点発作の補助療法。Na+チャンネル遮断の新機序",
-    "evidence": "Ben-Menachem et al., Epilepsia 2007（PMID:17448157）",
+    "evidence": "Ben-Menachem et al.（Epilepsia 2007 PMID:17448157）",
     "caution": "眩暈・頭痛・複視。PR間隔延長（心伝導障害のある患者に注意）。薬物相互作用少ない",
     "evidence_url": null
   },
@@ -551,7 +551,7 @@
     "onset_time": "2〜4週",
     "duration_hours": "24時間（半減期 105時間）",
     "guideline_rank": "焦点・強直間代発作の補助療法。攻撃性・精神症状に注意",
-    "evidence": "French JA et al. Neurology 2012（PMID:22689744）",
+    "evidence": "French et al.（Neurology 2012 PMID:22689744）",
     "evidence_url": null,
     "caution": "めまい・傾眠・攻撃性・精神症状（用量依存）。CYP3A4誘導薬で血中濃度↓。アルコールとの相互作用"
   },
@@ -569,7 +569,7 @@
     "onset_time": "数週間（漸増が必要）",
     "duration_hours": "半減期21時間（1日2回）",
     "guideline_rank": "焦点・全般発作。片頭痛予防にも適応。認知機能・体重減少に注意",
-    "evidence": "Cochrane Review（Marson et al. 2002）; 片頭痛：Silberstein et al., JAMA 2004",
+    "evidence": "Cochrane Review（Marson et al. 2002）",
     "caution": "認知機能低下・語の想起障害（多め）。体重減少。腎結石。炭酸水素塩低下。漸増スケジュール必須",
     "evidence_url": null
   },
@@ -587,7 +587,7 @@
     "onset_time": "2〜4週で効果発現",
     "duration_hours": "24時間（半減期 63時間）",
     "guideline_rank": "焦点・全般てんかんの補助療法。腎結石・発汗減少に注意",
-    "evidence": "Brodie MJ et al. Epilepsy Res 2005（PMID:16289617）",
+    "evidence": "Brodie et al.（Epilepsy Res 2005 PMID:16289617）",
     "evidence_url": null,
     "caution": "腎結石（炭酸脱水酵素阻害）・発汗減少・高体温。体重減少。認知機能への影響少ない。緩徐に増量"
   },
@@ -605,7 +605,7 @@
     "onset_time": "数日〜2週間（血中濃度安定後）",
     "duration_hours": "半減期9〜16時間",
     "guideline_rank": "全般てんかん・小児に適する",
-    "evidence": "SANAD試験（Lancet 2007）; Cochrane Review",
+    "evidence": "SANAD試験（Lancet 2007 PMID:17399303）",
     "caution": "催奇形性（妊婦禁忌）。体重増加・肝毒性・血小板減少。血中濃度モニタリング（50〜100μg/mL）",
     "evidence_url": null
   },
@@ -623,7 +623,7 @@
     "onset_time": "経口：数日〜1週間（フェニトイン値安定後）",
     "duration_hours": "半減期22時間（個人差大）",
     "guideline_rank": "強直間代発作・焦点発作。治療域が狭く血中濃度モニタリング必須",
-    "evidence": "SANAD試験（Lancet 2007 PMID:17399302）; Cochrane Review",
+    "evidence": "SANAD試験（Lancet 2007 PMID:17399302）",
     "caution": "治療域が狭い（10〜20μg/mL）。薬物相互作用多い（CYP誘導）。歯肉増殖・多毛・奇形（妊婦禁忌）。静注は心毒性に注意",
     "evidence_url": null
   },
@@ -641,7 +641,7 @@
     "onset_time": "数日〜1週間",
     "duration_hours": "12〜24時間（t1/2 36〜42h）",
     "guideline_rank": "Lennox-Gastaut症候群・難治性てんかんの補助療法",
-    "evidence": "Ng YT et al. NEJM 2011（PMID:21879742）",
+    "evidence": "Ng et al.（NEJM 2011 PMID:21879742）",
     "evidence_url": null,
     "caution": "耐性形成（連用で効果減弱）・依存・離脱症状。1,4-BZより少ないが長期使用に注意。傾眠"
   },
@@ -659,7 +659,7 @@
     "onset_time": "2〜4時間（経口）",
     "duration_hours": "半減期：初回25〜65時間→自己誘導後8〜20時間",
     "guideline_rank": "三叉神経痛の第一選択薬（Grade A）。焦点発作・強直間代発作の主要抗てんかん薬の一つ（SANAD試験）。アジア人HLA-B*1502保因者はSJS/TENリスク高（スクリーニング推奨）",
-    "evidence": "Wiffen PJ et al. Cochrane 2011（三叉神経痛 PMID:21412919）; SANAD試験（Lancet 2007）",
+    "evidence": "Cochrane Review（Wiffen et al. 2011 PMID:21412919）",
     "evidence_url": null,
     "caution": "SJS/TEN（HLA-B*1502陽性アジア人で高リスク）。低Na血症（SIADH）・肝障害。CYP3A4強誘導により多数の薬物相互作用。自己誘導で1〜2週後に血中濃度低下（増量必要）。血中濃度モニタリング（4〜12μg/mL）"
   },
@@ -677,7 +677,7 @@
     "onset_time": "2〜3時間（経口）",
     "duration_hours": "半減期25〜35時間（1日1〜2回）",
     "guideline_rank": "焦点発作・原発性全般発作・Lennox-Gastaut症候群の補助療法。双極性障害の維持（うつ状態）に第一選択。カルバマゼピンよりSJS/TENリスクが低く広く使用される。SANAD試験で長期有効性を確認",
-    "evidence": "SANAD試験（Lancet 2007 PMID:17399302）; Cochrane Review（Marson 2016）",
+    "evidence": "SANAD試験（Lancet 2007 PMID:17399302）",
     "evidence_url": null,
     "caution": "SJSリスク（漸増スケジュール必須・急増量で高リスク）。バルプロ酸併用で血中濃度2倍化（VPA使用時は1/2量から開始）。CYP3A4誘導薬（カルバマゼピン等）で血中濃度低下"
   },
@@ -695,7 +695,7 @@
     "onset_time": "30〜60分（速放）",
     "duration_hours": "3〜5時間（速放）；8〜12時間（徐放）",
     "guideline_rank": "パーキンソン病・運動症状に適する",
-    "evidence": "Cochrane Review（Katzenschlager et al. 2003）; MDS-UPDRS長期試験",
+    "evidence": "Cochrane Review（Katzenschlager et al. 2003）",
     "caution": "長期使用でウェアリングオフ・ジスキネジア。嘔気（ドンペリドン併用）。起立性低血圧。精神症状（幻覚）",
     "evidence_url": null
   },
@@ -731,7 +731,7 @@
     "onset_time": "数日〜2週間",
     "duration_hours": "8〜12時間（速放）；24時間（徐放）",
     "guideline_rank": "早期・中等度PDに。ドパミン作動薬で衝動制御障害に注意",
-    "evidence": "Brooks et al., Brain 1998（PMID:9519335）",
+    "evidence": "Brooks et al.（Brain 1998 PMID:9519335）",
     "caution": "突発的な眠気・衝動制御障害。嘔気。体位性低血圧。レストレスレッグス症候群（RLS）にも適応",
     "evidence_url": null
   },
@@ -749,7 +749,7 @@
     "onset_time": "数日〜2週間（パッチ貼付開始後）",
     "duration_hours": "24時間（1日1回貼付）",
     "guideline_rank": "貼付剤で血中濃度が安定。嚥下困難・ウェアリングオフに有用",
-    "evidence": "Giladi et al., Eur J Neurol 2007（PMID:17635671）",
+    "evidence": "Giladi et al.（Eur J Neurol 2007 PMID:17635671）",
     "caution": "貼付部位の皮膚反応（必ず毎日部位変更）。突発的眠気・衝動制御障害。RLSにも適応",
     "evidence_url": null
   },
@@ -839,7 +839,7 @@
     "onset_time": "数日〜1週間",
     "duration_hours": "半減期10〜15時間（1日2〜3回）",
     "guideline_rank": "L-DOPA誘発ジスキネジアの第一選択経口薬（MDS推奨）。早期PDの初期単剤療法や抗コリン薬の代替にも使用（副作用が抗コリン薬より少ない）",
-    "evidence": "Thomas A et al. Neurology 2004（PMID:14745074）; Cochrane Review（Crosby et al. 2003）",
+    "evidence": "Thomas et al.（Neurology 2004 PMID:14745074）",
     "evidence_url": null,
     "caution": "幻覚・精神症状（特に高齢者・認知症例）。網状皮斑・末梢浮腫。急な中断で悪性症候群様症状（漸減が必要）。腎機能低下時は蓄積するため減量"
   },
@@ -857,7 +857,7 @@
     "onset_time": "tmax 2.8〜3.4時間（単回投与時）",
     "duration_hours": "24〜36時間（1日3回経口投与）",
     "guideline_rank": "他強オピオイドが奏効しない難治性がん疼痛のオピオイドスイッチング。処方には届出登録・専門研修修了が必要。",
-    "evidence": "Nicholson AB, et al.: Cochrane Database Syst Rev. 2017; 2: CD003971 (PMID: 28177515)",
+    "evidence": "Cochrane Review（Nicholson et al. 2017 PMID:28177515）",
     "evidence_url": null,
     "caution": "QT延長、心室頻拍、呼吸抑制等の重篤な副作用により致命的な経過をたどることがある。主な副作用は傾眠、悪心、嘔吐、QT延長、便秘等である。重篤な呼吸抑制や気管支喘息、麻痺性イレウス、ナルメフェン塩酸塩投与中の患者等は禁忌である。連用により薬物依存を生じるおそれがある。"
   },
@@ -875,7 +875,7 @@
     "onset_time": "1〜2時間（徐放製剤）",
     "duration_hours": "12時間（1日2回）",
     "guideline_rank": "神経障害性疼痛成分を伴う慢性疼痛に。悪心・便秘がオキシコドンより少ない",
-    "evidence": "Schwartz S et al. J Pain 2011（PMID:21945027）",
+    "evidence": "Schwartz et al.（J Pain 2011 PMID:21945027）",
     "evidence_url": null,
     "caution": "悪心・便秘がオキシコドンより少ない。CYP代謝なし（相互作用少）。MAO阻害薬は禁忌。セロトニン症候群リスク（SSRI/SNRI併用注意）"
   },
@@ -893,7 +893,7 @@
     "onset_time": "即放：15〜30分・徐放（ナルサス）：2〜4時間",
     "duration_hours": "即放：4〜6時間・徐放：24時間",
     "guideline_rank": "腎障害合併癌性疼痛に。1日1回徐放剤（ナルサス）で管理が容易",
-    "evidence": "Wirz S et al. Pain Physician 2017（PMID:28934793）",
+    "evidence": "Wirz et al.（Pain Physician 2017 PMID:28934793）",
     "evidence_url": null,
     "caution": "便秘・悪心・眠気。少量から開始し漸増。ナロキソンで拮抗。日本では2017年承認の比較的新しい薬剤"
   },
@@ -911,7 +911,7 @@
     "onset_time": "経口：30〜60分・徐放：1〜2時間",
     "duration_hours": "即放：4〜6時間・徐放：12時間",
     "guideline_rank": "癌性疼痛・慢性疼痛に。腎障害時はモルヒネより安全",
-    "evidence": "Caraceni A et al. Lancet Oncol 2012（PMID:22240242）",
+    "evidence": "Caraceni et al.（Lancet Oncol 2012 PMID:22240242）",
     "evidence_url": null,
     "caution": "便秘・悪心・眠気。腎障害時はモルヒネより安全。依存性・乱用リスク（麻薬指定）。CYP3A4/2D6基質"
   },
@@ -929,7 +929,7 @@
     "onset_time": "経口：30〜60分・静注：5〜10分",
     "duration_hours": "即放：4〜6時間・徐放（コンチン）：12時間",
     "guideline_rank": "癌性疼痛WHO3段階ラダーの基本薬。豊富な剤形と長年の使用経験",
-    "evidence": "WHO癌疼痛ガイドライン・Cochrane review 2015（PMID:26398958）",
+    "evidence": "WHO癌疼痛ガイドライン",
     "evidence_url": null,
     "caution": "呼吸抑制（特に初回・急増量）・便秘（必ず緩下薬併用）・悪心。腎機能低下でM6G蓄積→過鎮静。ナロキソンで拮抗可能"
   },
@@ -947,7 +947,7 @@
     "onset_time": "貼付剤：12〜24時間（steady state）・静注：即効",
     "duration_hours": "貼付剤：72時間（3日1回交換）",
     "guideline_rank": "経口困難・悪心が強い例に貼付剤。腎障害例にも使用しやすい",
-    "evidence": "Tassinari D et al. J Palliat Med 2011（PMID:21385030）",
+    "evidence": "Tassinari et al.（J Palliat Med 2011 PMID:21385030）",
     "evidence_url": null,
     "caution": "発熱・加温で吸収↑→過剰投与リスク。CYP3A4阻害薬で血中濃度↑。貼付剤は経口換算量から計算して開始。便秘少ないが悪心・眠気あり"
   },
@@ -965,7 +965,7 @@
     "onset_time": "数日〜1週間",
     "duration_hours": "半減期9時間（1日2回）",
     "guideline_rank": "焦点発作の補助療法。レベチラセタム無効・不耐例での代替として有用。薬物相互作用が少なく使いやすい。",
-    "evidence": "Phase III pooled試験（焦点発作; 発作頻度−23%、50%responder率+18% vs プラセボ）",
+    "evidence": "Klein et al.（Epilepsia 2015 PMID:26626937）",
     "evidence_url": null,
     "caution": "傾眠・めまい・疲労・悪心。CYP2C19誘導薬やカルバマゼピン併用で血中濃度低下に注意。カルバマゼピン活性代謝物の濃度上昇あり。自殺念慮・攻撃性等の精神症状悪化に留意。",
     "guideline_url": null
@@ -984,10 +984,10 @@
     "onset_time": "2時間以内",
     "duration_hours": "急性期：約4時間",
     "guideline_rank": "頭痛の診療ガイドライン2021：急性期治療で「強い推奨、エビデンスの確実性A」、予防療法で「Group 1（有効）」と評価。血管収縮を伴わない新しい特異的治療薬として推奨される。",
-    "evidence": "Rimegepant, an oral calcitonin gene-related peptide receptor antagonist, for migraine. Lipton RB et al. N Engl J Med 2019（PMID: 31291516）",
+    "evidence": "Lipton et al.（NEJM 2019 PMID:31291516）",
     "evidence_url": null,
     "caution": "主な副作用は悪心、めまい、傾眠等。トリプタン特有の血管収縮作用はないが、重度の肝障害患者等への投与は慎重に行う必要がある。強力なCYP3A4阻害薬または誘導薬との併用は、本剤の血中濃度に影響を及ぼすため注意を要する。国内での最新の承認情報および添付文書を確認すること。",
-    "guideline_url": "https://www.jhsnet.net/pdf/guideline_2021.pdf"
+    "guideline_url": null
   },
   {
     "name": "アトゲパント",
@@ -1003,9 +1003,9 @@
     "onset_time": "予防効果：2〜4週（発作頻度減少）",
     "duration_hours": "予防薬（毎日投与）",
     "guideline_rank": "頭痛の診療ガイドライン2021：有効性が確立された薬剤（Group 1）として分類。反復性片頭痛の予防療法に推奨される。作成時点では国内未承認であった。",
-    "evidence": "ELEVATE trial, Tassorelli C, Lancet Neurol 2024 (PMID:38364831)",
+    "evidence": "ELEVATE試験（Lancet Neurol 2024 PMID:38364831）",
     "evidence_url": null,
     "caution": "主な副作用は悪心、便秘、傾眠。重篤な有害事象の報告は少なく、既存の経口予防薬（2～4クラス）が奏効しない症例での有効性も実証されている。妊婦への安全性は未確立。肝機能への影響については、臨床試験においてプラセボ群と同等であることが示されている。",
-    "guideline_url": "https://www.jhsnet.net/pdf/guideline_2021.pdf"
+    "guideline_url": null
   }
 ]

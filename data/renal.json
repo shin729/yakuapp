@@ -301,7 +301,7 @@
     "onset_time": "食直前咀嚼（チュアブル錠・食事中のリンと混合させるため）",
     "duration_hours": "250〜1000mg 1日3回（食事ごと咀嚼）",
     "guideline_rank": "Ca非含有吸着薬の選択肢。セベラマーが副作用・不耐の場合の代替。チュアブル製剤のため服薬方法の指導が重要。",
-    "evidence": "Finn WF, et al.: Clin Nephrol. 2004; 62(3): 193-201（PMID:15461099）",
+    "evidence": "Finn et al.（Clin Nephrol 2004 PMID:15461099）",
     "evidence_url": null,
     "caution": "骨・肝臓へのランタン蓄積（長期安全性データは蓄積中）。消化器症状（悪心・嘔吐）。他薬との吸着（2時間以上間隔をあけて服用）。歯の損傷予防のため適切に咀嚼。"
   },
@@ -319,7 +319,7 @@
     "onset_time": "4〜7時間（K低下効果発現）。ロケルマより遅め",
     "duration_hours": "8.4g 1日1回（開始用量）→K値に応じ4.2〜25.2g/日に調整。食事中または食直後に冷水50mL以上に懸濁",
     "guideline_rank": "CKD患者でRAAS阻害薬（ACE阻害薬/ARB）を継続しながら慢性高カリウム血症を管理する第一選択薬の一つ。ロケルマより緩徐なため急性高K血症の緊急処置には不向き。外来・慢性管理向け。",
-    "evidence": "A randomized study to compare oral potassium binders in the treatment of acute hyperkalemia Cañas AE et al. BMC Nephrol 2023 (PMID: 37016309)",
+    "evidence": "Cañas et al.（BMC Nephrol 2023 PMID:37016309）",
     "evidence_url": null,
     "caution": "主な副作用は下痢、便秘、腹痛、吐き気などの胃腸症状。禁忌・除外基準として、最近の腸管手術歴、イレウス、糖尿病性ケトアシドーシス、または投与後4時間以内の緊急透析の予定がある場合などが挙げられる。"
   }

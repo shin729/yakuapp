@@ -10,7 +10,7 @@
     "efficacy_star": 4,
     "onset_time": "数日〜2週間（慢性使用で効果発現）",
     "guideline_rank": "メニエール病の第一選択内服薬。眩暈発作の頻度・重症度を軽減。6mg×3回/日または12mg×2回/日。急性期よりも予防・維持療法として有用",
-    "evidence": "Lacour M, Sterkers O. CNS Drugs 2001; 日本めまい平衡医学会ガイドライン2023",
+    "evidence": "日本めまい平衡医学会ガイドライン2023",
     "evidence_url": null,
     "caution": "褐色細胞腫禁忌（高血圧発作誘発）。消化性潰瘍患者は注意。妊婦・授乳婦への安全性未確立"
   },
@@ -40,7 +40,7 @@
     "efficacy_star": 4,
     "onset_time": "1〜4週間で効果判定",
     "guideline_rank": "メニエール病の確定・疑い例の第一選択。ベタヒスチンと併用されることが多い。70mL×3回/日。内リンパ水腫の証拠がある場合に特に有効",
-    "evidence": "Kitahara M et al. Acta Otolaryngol 1982; 日本めまい平衡医学会ガイドライン2023",
+    "evidence": "日本めまい平衡医学会ガイドライン2023",
     "evidence_url": null,
     "caution": "強い苦味（コンプライアンス低下しやすい）。脱水・電解質異常に注意。糖尿病患者は血糖モニタリング。腎不全患者禁忌"
   },
@@ -70,7 +70,7 @@
     "role": "副鼻腔炎・アレルギー性鼻炎の局所薬第一選択",
     "efficacy_star": 5,
     "guideline_rank": "慢性副鼻腔炎・アレルギー性鼻炎の局所治療第一選択。クラリスロマイシン少量長期療法と並んでガイドライン最推奨。鼻ポリープでは縮小・症状改善。成人200μg/日（1回2噴霧 両側）",
-    "evidence": "Meltzer EO et al. JACI 1996; 慢性副鼻腔炎診療ガイドライン2023",
+    "evidence": "慢性副鼻腔炎診療ガイドライン2023",
     "evidence_url": null,
     "caution": "BA<1%のため通常用量では全身副作用（HPA軸抑制）はほぼなし。長期使用での鼻中隔穿孔（まれ）に注意。感染症（カンジダ等）悪化の可能性。2歳以上に使用可"
   },
@@ -86,7 +86,7 @@
     "efficacy_star": 3,
     "duration": "急性期2〜4週間/慢性期長期投与可",
     "guideline_rank": "副鼻腔炎治療の基本薬として抗菌薬・マクロライド療法と併用。副鼻腔の自然口開通を助ける。500mg×3回/日",
-    "evidence": "Majima Y et al. ORL 1986; 慢性副鼻腔炎診療ガイドライン2023",
+    "evidence": "慢性副鼻腔炎診療ガイドライン2023",
     "evidence_url": null,
     "caution": "重篤な副作用少なく安全性高い。妊婦は慎重投与。アンブロキソールと機序が異なり補完的に使用可"
   },
@@ -102,7 +102,7 @@
     "efficacy_star": 3,
     "duration": "急性期2〜4週間/長期投与可",
     "guideline_rank": "カルボシステインと作用機序が異なるため補完的に使用可。局所麻酔作用も持つため喉の痛みにも有効。45mg×1回/日（徐放錠）",
-    "evidence": "Malerba M et al. Expert Opin Drug Metab Toxicol 2008",
+    "evidence": "Malerba et al.（Expert Opin Drug Metab Toxicol 2008）",
     "evidence_url": null,
     "caution": "食後投与推奨（胃部不快感を軽減）。スティーブンス・ジョンソン症候群の報告あり（まれ）"
   },
@@ -118,7 +118,7 @@
     "efficacy_star": 4,
     "duration": "8〜12週間（少量長期療法）",
     "guideline_rank": "好酸球性副鼻腔炎以外の慢性副鼻腔炎の第一選択。200mg/日を8〜12週投与。好酸球性（鼻ポリープ多い型）には効果不十分→ステロイドへ",
-    "evidence": "Cervin A, Wallwork B. Adv Otorhinolaryngol 2016; 慢性副鼻腔炎診療ガイドライン2023",
+    "evidence": "慢性副鼻腔炎診療ガイドライン2023",
     "evidence_url": null,
     "caution": "QT延長リスク。CYP3A4阻害によりスタチン・Ca拮抗薬・ワルファリン等と相互作用。長期投与での耐性菌誘導に注意"
   },
@@ -165,7 +165,7 @@
     "rebound_risk": "5〜7日以内厳守。超過で薬剤性鼻炎（リバウンド）発生リスク大",
     "efficacy_star": 4,
     "guideline_rank": "即効性・効果の確実性は最も高い。急性期の一時的使用に限定。連用禁忌が最大の注意点。5〜7日を超える使用は禁忌",
-    "evidence": "Graf P. Drugs 2005; Doshi J. Rhinology 2009",
+    "evidence": "Graf（Drugs 2005）",
     "evidence_url": null,
     "caution": "連用禁止（7日以内）→薬剤性鼻炎（rhinitis medicamentosa）リスク。高血圧・甲状腺機能亢進・緑内障・前立腺肥大に注意。2歳未満禁忌"
   },
@@ -182,7 +182,7 @@
     "rebound_risk": "10日以内が目安。オキシメタゾリンよりリバウンド比較的マイルドだが連用は避ける",
     "efficacy_star": 3,
     "guideline_rank": "処方箋薬として使用される。成人・小児ともに使用可（小児用濃度あり）。持続時間はオキシメタゾリンより短い",
-    "evidence": "Ramey JT et al. J Investig Allergol Clin Immunol 2006",
+    "evidence": "Ramey et al.（J Investig Allergol Clin Immunol 2006）",
     "evidence_url": null,
     "caution": "連用禁止（10日以内）。高血圧・心疾患・甲状腺機能亢進症に注意。小児への使用は用量調整が必要"
   },
@@ -214,7 +214,7 @@
     "efficacy_star": 3,
     "onset_time": "30〜60分",
     "guideline_rank": "急性めまい・乗り物酔い予防の対症療法薬。OTC・処方薬両方で入手可能。眠気が強く急性症状の短期使用に限定。予防投与は乗車前30分。25〜50mg 経口 1日3〜4回",
-    "evidence": "Shupak A et al. Aviat Space Environ Med 2005",
+    "evidence": "Shupak et al.（Aviat Space Environ Med 2005）",
     "evidence_url": null,
     "caution": "眠気が強い（自動車運転禁忌）。抗コリン作用による口渇・排尿困難・便秘。緑内障・前立腺肥大禁忌。高齢者は認知機能低下・転倒リスクに注意。長期使用は避ける"
   },
@@ -242,7 +242,7 @@
     "target_symptom": "突発性難聴（発症2週間以内）・急性低音障害型感音難聴",
     "efficacy_star": 4,
     "guideline_rank": "突発性難聴の標準治療。発症から1〜2週間以内の開始が鍵。初期60mg/日→漸減。鼓室内デキサメタゾン注射は全身ステロイド無効例・高リスク例の代替",
-    "evidence": "Conlin AE et al. Arch Otolaryngol 2007; 突発性難聴診療ガイドライン2018",
+    "evidence": "突発性難聴診療ガイドライン2018",
     "evidence_url": null,
     "caution": "高血圧・糖尿病・消化性潰瘍・緑内障の悪化リスク。感染症増悪。PPI・Ca製剤の予防的併用推奨"
   },
@@ -286,7 +286,7 @@
     "formulation": "含嗽液（7%を希釈して使用）",
     "efficacy_star": 3,
     "guideline_rank": "殺菌作用が必要な場合に選択。ウイルス感染予防エビデンスは弱い。長期連用は口腔内常在菌叢への影響あり",
-    "evidence": "Herrero AJ et al. Med Oral 2010",
+    "evidence": "Herrero et al.（Med Oral 2010）",
     "evidence_url": null,
     "caution": "甲状腺疾患患者に注意（ヨード過剰摂取）。妊婦禁忌（ヨード胎盤通過）。長期連用で口腔フローラ変化。歯・義歯の着色あり"
   },
@@ -301,7 +301,7 @@
     "formulation": "口腔用軟膏（患部に直接塗布）",
     "efficacy_star": 4,
     "guideline_rank": "アフタ性口内炎の第一選択局所薬。患部に薄く塗布（擦り込まない）。1日2〜4回食後・就寝前。疼痛・治癒期間を有意に短縮",
-    "evidence": "Rodriguez M et al. Oral Surg Oral Med Oral Pathol 1994",
+    "evidence": "Rodriguez et al.（Oral Surg Oral Med Oral Pathol 1994）",
     "evidence_url": null,
     "caution": "局所カンジダ感染悪化リスク→真菌性口内炎に禁忌。ウイルス性口内炎（ヘルペス）にも不適。長期・広範囲使用で全身吸収リスク"
   },
@@ -316,7 +316,7 @@
     "formulation": "口腔内貼付剤（フィルム型）",
     "efficacy_star": 4,
     "guideline_rank": "再発性アフタ性口内炎の第一選択薬のひとつ。ステロイドを避けたい場合の代替として有用。1日1〜2回患部に貼付。カンジダリスクなし",
-    "evidence": "Greer RO et al. J Oral Pathol Med 1993",
+    "evidence": "Greer et al.（J Oral Pathol Med 1993）",
     "evidence_url": null,
     "caution": "舌尖・軟口蓋など貼付困難な部位には使いにくい。重篤な副作用は少ない"
   },
