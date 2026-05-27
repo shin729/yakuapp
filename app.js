@@ -1226,7 +1226,7 @@ const STRONG_OPIOID_ROWS = [
   { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'  },
   { label: '効果発現時間',     field: 'onset_time',      type: 'val'    },
   { label: '効果持続時間',     field: 'duration_hours',  type: 'val'    },
-  { label: '等鎮痛換算量',     field: 'equianalgesic',   type: 'val'    },
+  { label: '等鎮痛換算量',     field: 'equianalgesic',   type: 'mech'   },
   { label: '使い分けポイント', field: 'guideline_rank',  type: 'usecase'},
   { label: 'エビデンス出典',   field: 'evidence',        type: 'evidence'},
   { label: '⚠ 注意事項',      field: 'caution',         type: 'caution'},

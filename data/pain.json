@@ -860,7 +860,7 @@
     "evidence": "Cochrane Review（Nicholson et al. 2017 PMID:28177515）",
     "evidence_url": null,
     "caution": "QT延長、心室頻拍、呼吸抑制等の重篤な副作用により致命的な経過をたどることがある。主な副作用は傾眠、悪心、嘔吐、QT延長、便秘等である。重篤な呼吸抑制や気管支喘息、麻痺性イレウス、ナルメフェン塩酸塩投与中の患者等は禁忌である。連用により薬物依存を生じるおそれがある。",
-    "equianalgesic": "非線形換算（モルヒネ換算量で係数が変動：〜30mg→1/4、〜300mg→1/10、〜600mg→1/20）"
+    "equianalgesic": "非線形換算（モルヒネ換算量で係数が変動：〜30mg→1/4、〜300mg→1/10、〜600mg→1/20）\nレスキュー：原則モルヒネ等の別オピオイドを使用"
   },
   {
     "name": "タペンタドール",
@@ -879,7 +879,7 @@
     "evidence": "Schwartz et al.（J Pain 2011 PMID:21945027）",
     "evidence_url": null,
     "caution": "悪心・便秘がオキシコドンより少ない。CYP代謝なし（相互作用少）。MAO阻害薬は禁忌。セロトニン症候群リスク（SSRI/SNRI併用注意）",
-    "equianalgesic": "モルヒネ経口30mg ≒ タペンタドール100mg"
+    "equianalgesic": "モルヒネ経口30mg ≒ タペンタドール100mg\nレスキュー：速放製剤なし（モルヒネ等を代用）"
   },
   {
     "name": "ヒドロモルフォン",
@@ -898,7 +898,7 @@
     "evidence": "Wirz et al.（Pain Physician 2017 PMID:28934793）",
     "evidence_url": null,
     "caution": "便秘・悪心・眠気。少量から開始し漸増。ナロキソンで拮抗。日本では2017年承認の比較的新しい薬剤",
-    "equianalgesic": "モルヒネ経口30mg ≒ ヒドロモルフォン経口6mg（力価比5倍）・注射1.2mg"
+    "equianalgesic": "モルヒネ経口30mg ≒ ヒドロモルフォン経口6mg（力価比5倍）・注射1.2mg\nレスキュー：ナルラピド1mg/回（定時量の1/6）"
   },
   {
     "name": "オキシコドン",
@@ -917,7 +917,7 @@
     "evidence": "Caraceni et al.（Lancet Oncol 2012 PMID:22240242）",
     "evidence_url": null,
     "caution": "便秘・悪心・眠気。腎障害時はモルヒネより安全。依存性・乱用リスク（麻薬指定）。CYP3A4/2D6基質",
-    "equianalgesic": "モルヒネ経口30mg ≒ オキシコドン経口20mg（力価比1.5倍）・注射15mg"
+    "equianalgesic": "モルヒネ経口30mg ≒ オキシコドン経口20mg（力価比1.5倍）・注射15mg\nレスキュー：速放製剤2.5〜5mg/回（定時量の1/8〜1/6）"
   },
   {
     "name": "モルヒネ",
@@ -936,7 +936,7 @@
     "evidence": "WHO癌疼痛ガイドライン",
     "evidence_url": null,
     "caution": "呼吸抑制（特に初回・急増量）・便秘（必ず緩下薬併用）・悪心。腎機能低下でM6G蓄積→過鎮静。ナロキソンで拮抗可能",
-    "equianalgesic": "基準薬　経口30mg ≒ 注射15mg ≒ 坐剤20mg"
+    "equianalgesic": "基準薬　経口30mg ≒ 注射15mg ≒ 坐剤20mg\nレスキュー：速放製剤5mg/回（定時量の1/6）"
   },
   {
     "name": "フェンタニル",
@@ -955,7 +955,7 @@
     "evidence": "Tassinari et al.（J Palliat Med 2011 PMID:21385030）",
     "evidence_url": null,
     "caution": "発熱・加温で吸収↑→過剰投与リスク。CYP3A4阻害薬で血中濃度↑。貼付剤は経口換算量から計算して開始。便秘少ないが悪心・眠気あり",
-    "equianalgesic": "モルヒネ経口30mg/日 ≒ フェンタニル貼付12.5μg/h（デュロテップMT 2.1mg/72h）・注射0.3mg/日"
+    "equianalgesic": "モルヒネ経口30mg/日 ≒ フェンタニル貼付12.5μg/h（デュロテップMT 2.1mg/72h）・注射0.3mg/日\nレスキュー：OTFC（アブストラル舌下錠100μg〜・イーフェンバッカル錠50μg〜）"
   },
   {
     "name": "ブリバラセタム",
