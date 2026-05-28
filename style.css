@@ -1394,6 +1394,7 @@ thead .cmp-label-col { background: #f5f3ff !important; }
   background: #f8fafc;
   border-left: 3px solid #93c5fd;
 }
+.card-detail-mech .cd-val { white-space: pre-line; }
 
 .card-detail-kcal {
   background: #f0fdf4;
