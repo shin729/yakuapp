@@ -50,7 +50,7 @@
     "onset_time": "数時間",
     "duration_hours": "1日1回（長時間作用のため）",
     "guideline_rank": "脳腫瘍・脳転移による脳浮腫、化学療法の制吐前投薬、COVID-19重症例に使用。副腎抑制が強く長期連用は避ける",
-    "evidence": "COVID-19重症例：RECOVERY試験（NEJM 2021）。化学療法制吐：日本癌治療学会制吐療法適正使用ガイドライン",
+    "evidence": "RECOVERY試験（NEJM 2021 PMID:32678530）",
     "caution": "副腎抑制が最も強い。長期使用で骨粗鬆症・感染症リスク大。突然中止禁忌。HPA軸抑制に注意"
   },
   {
