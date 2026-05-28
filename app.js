@@ -2331,6 +2331,7 @@ function getClassBadge(cls) {
     'トリプタン系（5-HT1B/1D作動薬）':{ css: 'triptan' },
     'ジタン系（5-HT1F作動薬）':       { css: 'ditan' },
     'CGRP受容体拮抗抗体':             { css: 'cgrp-ab' },
+    'CGRP拮抗抗体（リガンド）':       { css: 'cgrp-ab' },
     'ゲパント系（CGRP受容体小分子拮抗薬）': { css: 'gepant' },
     'Na+チャネル遮断薬（抗てんかん）':{ css: 'na-channel-b' },
     'SV2A結合薬':                     { css: 'sv2a-b' },
