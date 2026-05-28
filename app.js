@@ -250,6 +250,7 @@ const DOMAINS = {
       { key: 'IL阻害薬',         label: '💉 IL阻害薬' },
       { key: 'JAK阻害薬',        label: '🔬 JAK阻害薬' },
       { key: 'T細胞共刺激阻害薬', label: '🧩 T細胞共刺激阻害薬' },
+      { key: 'SLE生物学的製剤',  label: '🔵 SLE生物学的製剤' },
       { key: '全身性免疫抑制薬', label: '💊 全身性免疫抑制薬' },
     ],
     defaultCat: 'csDMARD',
