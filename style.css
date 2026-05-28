@@ -650,6 +650,16 @@ thead .sticky-col { z-index: 3; }
   white-space: pre-line;
 }
 
+/* 肝臓疾患 バッジ */
+.class-badge.liv-daa-pan  { background: #0c4a6e; color: #e0f2fe; }
+.class-badge.liv-daa      { background: #075985; color: #bfdbfe; }
+.class-badge.liv-hbv      { background: #4c1d95; color: #ede9fe; }
+.class-badge.liv-hbv-taf  { background: #3b0764; color: #f3e8ff; }
+.class-badge.liv-hbv-tdf  { background: #581c87; color: #ede9fe; }
+.class-badge.liv-fxr      { background: #1e3a5f; color: #dbeafe; }
+.class-badge.liv-he       { background: #78350f; color: #fef3c7; }
+.class-badge.liv-protect  { background: #374151; color: #f3f4f6; }
+
 /* 心不全 追加バッジ */
 .class-badge.hf-arni    { background: #4c1d95; color: #ede9fe; }
 .class-badge.hf-if      { background: #0f4c81; color: #dbeafe; }

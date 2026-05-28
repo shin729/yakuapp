@@ -501,6 +501,22 @@ const DOMAINS = {
     rowAltSticky: '#ecfbf1',
     accentColor:  '#15803d',
   },
+  liver: {
+    file: './data/liver.json',
+    categories: [
+      { key: '慢性C型肝炎（DAA）',          label: '🟡 慢性C型肝炎（DAA）' },
+      { key: '慢性B型肝炎（核酸アナログ）',  label: '🟠 慢性B型肝炎（核酸アナログ）' },
+      { key: 'NAFLD/NASH・PBC（胆汁うっ滞）',label: '🟤 NAFLD/NASH・PBC' },
+      { key: '肝性脳症',                    label: '🧠 肝性脳症' },
+      { key: '肝庇護薬',                    label: '🛡 肝庇護薬' },
+    ],
+    defaultCat: '慢性C型肝炎（DAA）',
+    headBg:       'linear-gradient(180deg, #fdf7ee 0%, #fdebd0 100%)',
+    stickyBg:     '#fdf7ee',
+    rowAltBg:     '#fefcf7',
+    rowAltSticky: '#f9eedc',
+    accentColor:  '#92400e',
+  },
 };
 
 // ===== 抗結核薬リスト（対象菌別タブ AB_TB 用） =====
@@ -1862,6 +1878,39 @@ const BLOOD_HEMA_ROWS = [
   { label: '⚠ 注意事項',      field: 'caution',        type: 'caution' },
 ];
 
+// ===== 肝臓疾患 ROW_DEFS =====
+const LIVER_HCV_ROWS = [
+  { label: '作用機序（NS標的）',   field: 'mechanism',          type: 'mech'    },
+  { label: 'ジェノタイプ適応',     field: 'genotype',           type: 'val'     },
+  { label: 'SVR12率',              field: 'svr_rate',           type: 'accent'  },
+  { label: '治療期間',             field: 'treatment_duration', type: 'val'     },
+  { label: '効果スコア',           field: 'efficacy_star',      type: 'stars'   },
+  { label: '使い分けポイント',     field: 'guideline_rank',     type: 'usecase' },
+  { label: 'エビデンス出典',       field: 'evidence',           type: 'evidence'},
+  { label: '⚠ 注意事項',          field: 'caution',            type: 'caution' },
+];
+
+const LIVER_HBV_ROWS = [
+  { label: '作用機序',             field: 'mechanism',          type: 'mech'    },
+  { label: 'ウイルス学的効果',     field: 'viral_response',     type: 'accent'  },
+  { label: 'HBe抗原陰性化率',      field: 'hbe_response',       type: 'accent'  },
+  { label: '耐性出現率',           field: 'resistance',         type: 'val'     },
+  { label: '効果スコア',           field: 'efficacy_star',      type: 'stars'   },
+  { label: '使い分けポイント',     field: 'guideline_rank',     type: 'usecase' },
+  { label: 'エビデンス出典',       field: 'evidence',           type: 'evidence'},
+  { label: '⚠ 注意事項',          field: 'caution',            type: 'caution' },
+];
+
+const LIVER_ROWS = [
+  { label: '主な作用',             field: 'action_type',        type: 'mech'    },
+  { label: '作用機序',             field: 'mechanism',          type: 'mech'    },
+  { label: '肝機能/治療効果',      field: 'liver_effect',       type: 'accent'  },
+  { label: '効果スコア',           field: 'efficacy_star',      type: 'stars'   },
+  { label: '使い分けポイント',     field: 'guideline_rank',     type: 'usecase' },
+  { label: 'エビデンス出典',       field: 'evidence',           type: 'evidence'},
+  { label: '⚠ 注意事項',          field: 'caution',            type: 'caution' },
+];
+
 // ===== 免疫・リウマチ ROW_DEFS =====
 const IMMUNE_ROWS = [
   { label: '主な適応疾患',     field: 'action_type',    type: 'mech'    },
@@ -2071,6 +2120,11 @@ const ENT_THROAT_ROWS = [
 ];
 
 function getRowDefs(category) {
+  if (currentDomain === 'liver') {
+    if (category === '慢性C型肝炎（DAA）')         return LIVER_HCV_ROWS;
+    if (category === '慢性B型肝炎（核酸アナログ）') return LIVER_HBV_ROWS;
+    return LIVER_ROWS;
+  }
   if (currentDomain === 'blood') {
     if (['鉄剤', 'ESA（腎性貧血）', 'G-CSF', 'TPO受容体作動薬'].includes(category)) return BLOOD_HEMA_ROWS;
     return BLOOD_AC_ROWS;
@@ -2621,6 +2675,18 @@ function getClassBadge(cls) {
     '直接トロンビン阻害薬（DTI・DOAC）':                  { css: 'arr-doac'   },
     '直接Xa因子阻害薬（DOAC・1日1回型）':                { css: 'arr-doac'   },
     '直接Xa因子阻害薬（DOAC・1日2回型）':                { css: 'arr-doac'   },
+    // 肝臓疾患
+    'NS3/4A＋NS5A二重阻害薬（パンジェノタイプ）':         { css: 'liv-daa-pan' },
+    'NS5Bポリメラーゼ＋NS5A阻害薬（パンジェノタイプ）':   { css: 'liv-daa-pan' },
+    'NS5Bポリメラーゼ＋NS5A阻害薬':                      { css: 'liv-daa'    },
+    'NS5A阻害薬＋NS3/4Aプロテアーゼ阻害薬':              { css: 'liv-daa'    },
+    'グアノシンアナログ（HBV DNAポリメラーゼ阻害薬）':     { css: 'liv-hbv'    },
+    'テノホビルプロドラッグ（TAF・腎骨安全性改善型）':     { css: 'liv-hbv-taf'},
+    'テノホビルプロドラッグ（TDF・ヌクレオチドアナログ）': { css: 'liv-hbv-tdf'},
+    'FXRアゴニスト（核内受容体選択的作動薬）':            { css: 'liv-fxr'    },
+    '浸透圧性下剤（二糖類・腸内発酵型）・肝性脳症治療薬': { css: 'liv-he'     },
+    'リファマイシン系経口非吸収性抗菌薬（腸管選択的）':   { css: 'liv-he'     },
+    'グリチルリチン配合静注製剤（肝庇護薬）':              { css: 'liv-protect'},
   };
   return map[cls] || { css: 'benzo' };
 }
