@@ -286,4 +286,6 @@ routinesによる発見事項を記録するファイル。
 - [x] [2026-05-31] 欠損確認: steroid.json 27件 / NNT null 全27件→意図的null確定（2026-04-29確認済み・力価で代替）/ star・caution全件あり
 - [x] [2026-05-31] 欠損確認: endocrine.json 13件 / NNT null 全13件→意図的null確定（2026-05-17確認済み・THYROID_ROWSにNNT行なし）/ star・caution全件あり
 
-<!-- 最終チェック: 2026-05-31 / 次回: 欠損確認 / 対象: sleep_anxiety.json（全件NNT確認） -->
+- [x] [2026-05-31] 欠損確認: sleep_anxiety.json 83件 / NNT null 2件（ボルノレキサント/ボルズィ＝2026年3月新薬・NNT未算出、ニトラゼパム/ベンザリン＝国内エビデンス限定・2026-05-20確認済み）→ 意図的null確定 / 81件はNNT値あり / star・caution全件あり
+
+<!-- 最終チェック: 2026-05-31 / 次回: 欠損確認 / 対象: immune.json（csDMARD NNT確認） -->
