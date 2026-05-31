@@ -275,4 +275,9 @@ routinesによる発見事項を記録するファイル。
 
 - [x] [2026-05-31] 欠損確認: blood.json 32件 / NNT null 15件（ワルファリン・エドキサバン・ESA3件・血栓溶解薬・TPO受容体作動薬等）→ 意図的null確定（抗凝固薬は相対的NNTで算出困難・ESAは造血効果でNNT定義不適・急性期薬）/ efficacy_star・caution全件あり
 
-<!-- 最終チェック: 2026-05-31 / 次回: 販売中止チェック / 対象: gyneco.json（最近追加薬） -->
+- [x] [2026-05-31] 欠損確認: gyneco.json 28件 / NNT null 9件（不妊治療薬FSH・HMG・hCG・GnRHアンタゴニスト等）→ 意図的null確定（生殖補助医療のNNTは出生率エンドポイントで複雑）/ efficacy_star・caution全件あり
+- [x] [2026-05-31] 網羅確認: gyneco.json / リンザゴリクス（イセルティ）掲載確認済み・エラゴリクス（エリスモ）は日本未承認→掲載不要
+
+- [x] [2026-05-31] 欠損確認: urology.json 15件 / NNT null 12件（α1遮断薬3・5α還元酵素阻害薬2・過活動膀胱薬4・ED薬1等）→ 意図的null確定（IPSS症状スコア改善・LUTS改善等でのNNT計算は複雑・将来追加検討）/ efficacy_star・caution全件あり
+
+<!-- 最終チェック: 2026-05-31 / 次回: 欠損確認 / 対象: sleep_anxiety.json（全件NNT確認） -->
