@@ -821,7 +821,7 @@
     "onset_time": "数日〜1週間",
     "duration_hours": "24時間超（COMT阻害持続）",
     "guideline_rank": "ウェアリングオフ対策のCOMT阻害薬。エンタカポンより1日1回でアドヒアランス良好。BIPARK-1/2試験で確認された有効性",
-    "evidence": "BIPARK-1試験（PMID:27448191）; BIPARK-2試験（PMID:27448192）",
+    "evidence": "BIPARK-1試験（Lancet Neurol 2016 PMID:27448191）",
     "caution": "必ずレボドパと併用（単独使用不可）。ジスキネジア増悪（→レボドパ減量）。下痢・尿の変色（橙色）。エンタカポンに比べ相互作用が少ない",
     "evidence_url": null
   },
