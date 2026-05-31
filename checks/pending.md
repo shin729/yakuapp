@@ -280,4 +280,10 @@ routinesによる発見事項を記録するファイル。
 
 - [x] [2026-05-31] 欠損確認: urology.json 15件 / NNT null 12件（α1遮断薬3・5α還元酵素阻害薬2・過活動膀胱薬4・ED薬1等）→ 意図的null確定（IPSS症状スコア改善・LUTS改善等でのNNT計算は複雑・将来追加検討）/ efficacy_star・caution全件あり
 
+- [x] [2026-05-31] 欠損確認: nutrition.json 20件 / NNT null 17件→意図的null確定（ビタミン・ミネラル・経腸栄養剤はNNT算出困難）/ star・caution全件あり
+- [x] [2026-05-31] 欠損確認: oncology.json 10件 / NNT null 1件（メトクロプラミド/プリンペラン）→意図的null確定（古典的D2拮抗制吐薬・現代RCTでのNNT算出困難）/ star・caution全件あり
+- [x] [2026-05-31] 欠損確認: ophthalmo.json 19件 / NNT null 14件→意図的null確定（眼圧低下・視力改善等でNNT定義困難）/ star・caution全件あり
+- [x] [2026-05-31] 欠損確認: steroid.json 27件 / NNT null 全27件→意図的null確定（2026-04-29確認済み・力価で代替）/ star・caution全件あり
+- [x] [2026-05-31] 欠損確認: endocrine.json 13件 / NNT null 全13件→意図的null確定（2026-05-17確認済み・THYROID_ROWSにNNT行なし）/ star・caution全件あり
+
 <!-- 最終チェック: 2026-05-31 / 次回: 欠損確認 / 対象: sleep_anxiety.json（全件NNT確認） -->
