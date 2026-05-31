@@ -10,7 +10,7 @@
     "treatment_duration": "8週間（肝硬変なし・治療歴なし）/ 12〜16週間（肝硬変あり・再治療例）",
     "efficacy_star": 5,
     "guideline_rank": "日本肝臓学会推奨 第一選択。パンジェノタイプ対応でジェノタイプ検査前でも投与可。腎機能低下・透析例にも用量調整不要（腎排泄なし）。最短8週で治療完結できる利点が大きい",
-    "evidence": "EXPEDITION-4（NEJM 2017 PMID:29166393）; ENDURANCE-3（NEJM 2018 PMID:29562146）",
+    "evidence": "EXPEDITION-4（NEJM 2017 PMID:29166393）",
     "evidence_url": null,
     "caution": "P-gp/CYP3A阻害薬との相互作用多数。アタザナビル・カルバマゼピン・リファンピシン等は禁忌。非代償性肝硬変（Child-Pugh B/C）は禁忌。皮疹・掻痒感・倦怠感。食後服用で吸収改善"
   },
@@ -25,7 +25,7 @@
     "treatment_duration": "12週間（標準）/ 8週間（HCV RNA<600万IU/mL・肝硬変なし・治療歴なし）",
     "efficacy_star": 5,
     "guideline_rank": "ジェノタイプ1型（日本の主流）の主要選択肢。8週短縮療法は低ウイルス量・肝硬変なし・治療歴なしの条件下で可能。1b型に特に高いSVR率",
-    "evidence": "ION-1（NEJM 2014 PMID:24725352）; ION-3（NEJM 2014 PMID:25027208）",
+    "evidence": "ION-1（NEJM 2014 PMID:24725352）",
     "evidence_url": null,
     "caution": "アミオダロン禁忌（致死的徐脈・心停止の報告）。P-gp誘導薬（リファンピシン等）は禁忌。PPI服用者は4時間空ける（レジパスビルの吸収低下）。腎機能高度低下（eGFR<30）では慎重使用"
   },
@@ -40,7 +40,7 @@
     "treatment_duration": "12週間 / 非代償性肝硬変：リバビリン+12週",
     "efficacy_star": 5,
     "guideline_rank": "非代償性肝硬変（Child-Pugh B）にリバビリン併用で使用可能（マヴィレットが禁忌の例の代替）。DAA再治療例にはソホスブビル/ベルパタスビル/ボキシラプレビルへの変更を検討",
-    "evidence": "ASTRAL-1（NEJM 2015 PMID:26630143）; ASTRAL-4（NEJM 2015 PMID:26569658）",
+    "evidence": "ASTRAL-1（NEJM 2015 PMID:26630143）",
     "evidence_url": null,
     "caution": "アミオダロン禁忌（ソホスブビル共通）。制酸薬は4時間空けて服用（ベルパタスビルの溶解性低下）。P-gp/CYP誘導薬（リファンピシン等）で効果減弱。非代償性肝硬変にはリバビリン追加が必須"
   },
@@ -70,7 +70,7 @@
     "resistance": "0〜1%（5年・核酸アナログ未治療例）",
     "efficacy_star": 5,
     "guideline_rank": "日本肝臓学会推奨 第一選択（テノホビルと同等推奨）。核酸アナログ未治療例では耐性出現率が極めて低い。ラミブジン治療歴例は耐性変異があり効果不十分→TDF/TAFを選択",
-    "evidence": "Chang et al.（NEJM 2006 PMID:16855266）; Lai et al.（NEJM 2006 PMID:16855267）",
+    "evidence": "Chang et al.（NEJM 2006 PMID:16855266）",
     "evidence_url": null,
     "caution": "空腹時服用必須（食事で吸収40%低下）。HIV未治療への単剤投与禁忌（HIV-1 M184V耐性誘導リスク）。乳酸アシドーシス・重篤な肝腫大の可能性（稀・重篤）。急激な投与中止はHBV急性増悪リスク"
   },
@@ -114,7 +114,7 @@
     "liver_effect": "ALT・ALP・ビリルビン改善。PBCで生化学的改善率60〜70%",
     "efficacy_star": 3,
     "guideline_rank": "PBCの唯一確立された標準治療（日本肝臓学会・EASL 第一選択）。NASH・慢性肝炎・胆石にも保険適応。PBC治療目標はALPの正常化（不完全反応の場合オベチコール酸を追加）",
-    "evidence": "Poupon et al.（NEJM 1994 PMID:8302367）; Corpechot et al.（Lancet 2011 PMID:21571150）",
+    "evidence": "Poupon et al.（NEJM 1994 PMID:8302367）",
     "evidence_url": null,
     "caution": "効果発現が緩徐（6ヶ月〜2年で評価）。下痢・腹部不快感（稀）。胆道閉塞・急性胆管炎は禁忌。Ca²⁺含有胆石・胆嚢機能不全には溶解療法不適"
   },
@@ -142,7 +142,7 @@
     "liver_effect": "アンモニア値20〜30%低下・精神症状（羽ばたき振戦・意識障害）改善",
     "efficacy_star": 3,
     "guideline_rank": "肝性脳症の第一選択（AASLD・EASL・日本ガイドライン推奨）。1日2〜3回の軟便を目標に用量調整。慢性予防的投与にも使用。リファキシミンとの併用で相加効果が得られる",
-    "evidence": "Als-Nielsen et al. Cochrane（Gut 2004 PMID:14583943）; Bass et al.（NEJM 2010 PMID:20463240）",
+    "evidence": "Bass et al.（NEJM 2010 PMID:20463240）",
     "evidence_url": null,
     "caution": "過剰投与で下痢・低K血症・脱水。甘味があり服薬しやすいが糖尿病では血糖モニタリング。腸閉塞・消化管穿孔患者には禁忌"
   },
