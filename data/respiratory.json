@@ -603,7 +603,7 @@
     "duration_hours": "4週間（皮下注）",
     "device": null,
     "inhalation_flow": null,
-    "guideline_rank": "GINA Step 5：好酸球非高値（<300/μL）にも唯一の適応。2型炎症型・非2型炎症型の両喘息に有効。2023年日本承認",
+    "guideline_rank": "GINA Step 5：好酸球非高値（<300/μL）にも唯一の適応。2型炎症型・非2型炎症型の両喘息に有効。2023年日本承認（喘息）。2026年2月CRSwNP（鼻茸を伴う慢性副鼻腔炎）適応追加承認（喘息+副鼻腔炎の両方に1剤でカバー可）",
     "evidence": "Menzies-Gow AN, et al. N Engl J Med. 2021. PMID: 34252915",
     "evidence_url": null,
     "caution": "注射部位反応・鼻咽頭炎。アナフィラキシーリスク（投与後観察必須）。好酸球≥300/μLでは他生物学的製剤との優劣を比較検討"
