@@ -487,7 +487,7 @@
     "efficacy_star": 5,
     "administration": "皮下注射210mg 4週間毎",
     "remission_rate": "重症喘息：年間増悪率56%低下（NAVIGATOR試験）。好酸球数・IgE値を問わない広い適応",
-    "guideline_rank": "2024年日本承認。好酸球数・FeNO・IgEに関わらず表現型を問わず有効。抗IL-5抗体等が効果不十分な場合の選択肢。炎症カスケードの最上流を遮断",
+    "guideline_rank": "2023年日本承認（重症喘息）・2026年2月CRSwNP適応追加（鼻茸を伴う慢性副鼻腔炎）。好酸球数・FeNO・IgE値を問わず表現型を問わず有効。抗IL-5抗体等が効果不十分な場合の選択肢。炎症カスケードの最上流（TSLP）を遮断",
     "evidence": "Menzies-Gow A et al. N Engl J Med 2021（NAVIGATOR trial・PMID:34077232）",
     "evidence_url": null,
     "caution": "注射部位反応（約7%）。アナフィラキシー（稀・投与後観察必要）。好酸球一過性増加"
