@@ -76,7 +76,7 @@
     "brand": "リクシアナ",
     "category": "抗凝固薬",
     "class": "直接Xa因子阻害薬（DOAC・1日1回型）",
-    "action_type": "第Xa因子直接阻害→AF・静脈血栓塞栓症の予防・治療",
+    "action_type": "第Xa因子直接阻害→AF・静脈血栓塞栓症の予防・治療・CTEPH（2025年3月適応追加）",
     "mechanism": "活性化Xa因子に選択的・可逆的に結合し阻害",
     "efficacy_star": 4,
     "placebo_onset": "脳卒中・全身性塞栓リスク低下 ワルファリン比 非劣性（ENGAGE AF-TIMI 48）",
