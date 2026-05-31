@@ -593,25 +593,6 @@
     "negative_symptoms": "陰性症状★★★（D2部分作動・5-HT1A作動）"
   },
   {
-    "name": "カリプラジン",
-    "brand": "レアルダ",
-    "category": "抗精神病薬（非定型）",
-    "class": "非定型抗精神病薬（DSS）",
-    "action_type": "抗精神病・陰性症状改善",
-    "mechanism": "D3受容体優先的部分作動（D3/D2比 10:1）。陰性症状・認知機能へのエビデンスが最強クラス",
-    "positive_symptoms": "陽性症状★★★★（D3/D2部分作動）",
-    "negative_symptoms": "陰性症状★★★★★（D3優先作動で最強エビデンス）",
-    "placebo_onset": "PANSS改善 プラセボ比−15〜20点",
-    "placebo_sleep": "陰性症状反応率 45〜60%（NSA-16評価）",
-    "NNT": 4,
-    "efficacy_star": 5,
-    "duration_hours": "24時間（活性代謝物t1/2 1〜3週）",
-    "guideline_rank": "陰性症状が前景の統合失調症に最もエビデンスが強い",
-    "evidence": "Németh G et al. Lancet 2017（PMID:28185672）",
-    "evidence_url": null,
-    "caution": "活性代謝物の半減期が長く（1〜3週）、副作用発現が遅れることがある。アカシジアに注意"
-  },
-  {
     "name": "ブレクスピプラゾール",
     "brand": "レキサルティ",
     "category": "抗精神病薬（非定型）",
