@@ -17,6 +17,7 @@ const DOMAINS = {
       { key: 'ADHD治療薬',             label: '🎯 ADHD' },
       { key: 'アルコール依存症治療薬', label: '🍶 アルコール依存症' },
       { key: '禁煙補助薬',             label: '🚭 禁煙補助' },
+      { key: 'むずむず脚症候群（RLS）', label: '🦵 むずむず脚症候群' },
     ],
     defaultCat: '睡眠薬',
     headBg:       'linear-gradient(180deg, #f0f4ff 0%, #e8eeff 100%)',
@@ -1233,6 +1234,21 @@ const SMOKING_ROWS = [
   { label: '⚠ 注意事項',      field: 'caution',        type: 'caution'},
 ];
 
+// むずむず脚症候群（RLS）
+const RLS_ROWS = [
+  { label: '主な作用',         field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',         field: 'mechanism',      type: 'mech'   },
+  { label: 'IRLS改善スコア',   field: 'placebo_onset',  type: 'accent' },
+  { label: '睡眠・付加効果',   field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT',              field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',         field: 'onset_time',     type: 'val'    },
+  { label: '投与法・頻度',     field: 'duration_hours', type: 'val'    },
+  { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
+  { label: 'エビデンス出典',   field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',      field: 'caution',        type: 'caution'},
+];
+
 // 強オピオイド
 const STRONG_OPIOID_ROWS = [
   { label: '主な作用',         field: 'action_type',    type: 'mech'   },
@@ -2151,6 +2167,7 @@ function getRowDefs(category) {
   if (category === 'ADHD治療薬')             return ADHD_ROWS;
   if (category === 'アルコール依存症治療薬') return ALCOHOL_ROWS;
   if (category === '禁煙補助薬')             return SMOKING_ROWS;
+  if (category === 'むずむず脚症候群（RLS）') return RLS_ROWS;
   if (category === '強オピオイド')           return STRONG_OPIOID_ROWS;
   if (category === '糖尿病治療薬')       return DIABETES_ROWS;
   // 糖尿病ドメイン（注射薬・経口薬）
@@ -2382,6 +2399,7 @@ function getClassBadge(cls) {
     'α2δリガンド（カルシウムチャネル調節薬）': { css: 'alpha2delta' },
     'α2δリガンド（Ca²⁺チャネル調節薬）':    { css: 'alpha2delta' },
     'α2δリガンド（第2世代）':               { css: 'alpha2delta' },
+    'α2δリガンド（ガバペンチノイドプロドラッグ）': { css: 'alpha2delta' },
     'トリプタン系（5-HT1B/1D作動薬）':{ css: 'triptan' },
     'ジタン系（5-HT1F作動薬）':       { css: 'ditan' },
     'CGRP受容体拮抗抗体':             { css: 'cgrp-ab' },
