@@ -1573,5 +1573,30 @@
     "atypical": "-",
     "evidence_url": null,
     "half_life": "約2.7時間"
+  },
+  {
+    "name": "セフトロザン/タゾバクタム",
+    "brand": "ザバクサ",
+    "category": "その他",
+    "class": "βラクタマーゼ阻害薬配合新規セフェム（MDR緑膿菌特化型）",
+    "mechanism": "セフトロザン（新規セファロスポリン）がPBP1b・PBP3に高い親和性で結合→緑膿菌・腸内細菌科に殺菌的に作用。タゾバクタムがESBL（TEM・SHV・CTX-M型）・一部AmpC型βラクタマーゼを阻害→セフトロザンの加水分解を防ぐ。MexAB-OprM排出ポンプへの親和性が低くポンプ耐性緑膿菌にも効果を示す",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "1.5g（C1g+T0.5g）静注 8時間毎（cUTI・cIAI）/ 3g（C2g+T1g）静注 8時間毎（HAP/VAP）",
+    "route": "注射",
+    "first_line": "MDR緑膿菌感染症（HAP/VAP・cUTI）・ESBL産生腸内細菌科感染症（重症）",
+    "off_label": null,
+    "cross": "セフェム系（同系）：禁忌、\nペニシリン系：慎重（交差アレルギー）",
+    "caution": "腎機能低下で用量調整必須（CrCl 30-50 mL/min：1/2量・CrCl 15-29 mL/min：さらに減量）。カルバペネム耐性KPC/MBL産生菌・OprD欠失緑膿菌には効果なし→耐性機序を確認の上使用。セフィデロコルとの使い分け：CRAB・MBL産生菌はセフィデロコル優先。2019年日本承認・点滴静注薬",
+    "tdm": null,
+    "mrsa": "-",
+    "strep": "+",
+    "entero": "-",
+    "entero_bac": "++",
+    "esbl": "+++",
+    "pseudo": "+++",
+    "anaerobe": "-",
+    "atypical": "-",
+    "evidence_url": null,
+    "half_life": "約3時間（セフトロザン）"
   }
 ]
