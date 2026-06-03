@@ -2291,7 +2291,12 @@ function safetyPairCell(d, def) {
     return `<span style="color:${color};font-weight:700">${esc(String(v))}</span>`;
   }
   const [f1, f2] = def.fields;
-  return `<td class="val-cell" style="text-align:center;letter-spacing:0.05em">${symSpan(d[f1])}<span style="color:#d1d5db;margin:0 3px">｜</span>${symSpan(d[f2])}</td>`;
+  const box = 'flex:1;display:flex;align-items:center;justify-content:center;padding:5px 6px;border:1.5px solid #9ca3af;border-radius:3px;min-width:28px';
+  return `<td class="val-cell" style="padding:4px 5px"><div style="display:flex;gap:4px">${
+    `<div style="${box}">${symSpan(d[f1])}</div>`
+  }${
+    `<div style="${box}">${symSpan(d[f2])}</div>`
+  }</div></td>`;
 }
 
 // ===== 行ヘルパー =====
