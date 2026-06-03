@@ -1306,6 +1306,8 @@ const OSTEOPOROSIS_ROWS = [
   { label: '効果スコア',       field: 'efficacy_star',  type: 'stars'  },
   { label: '効果発現',         field: 'onset_time',     type: 'val'    },
   { label: '投与法・頻度',     field: 'duration_hours', type: 'val'    },
+  { label: '妊娠｜授乳',       fields: ['pregnancy', 'lactation'], type: 'safety_pair' },
+  { label: '腎不全｜透析性',   fields: ['renal_gfr', 'dialysis'], type: 'safety_pair' },
   { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典',   field: 'evidence',       type: 'evidence'},
   { label: '⚠ 注意事項',      field: 'caution',        type: 'caution'},
@@ -1513,6 +1515,8 @@ const DYSLIPIDEMIA_ROWS = [
   { label: '効果スコア',     field: 'efficacy_star',  type: 'stars'  },
   { label: '効果発現',       field: 'onset_time',     type: 'val'    },
   { label: '投与頻度',       field: 'duration_hours', type: 'val'    },
+  { label: '妊娠｜授乳',     fields: ['pregnancy', 'lactation'], type: 'safety_pair' },
+  { label: '腎不全｜透析性', fields: ['renal_gfr', 'dialysis'], type: 'safety_pair' },
   { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典', field: 'evidence',       type: 'evidence'},
   { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
@@ -1528,6 +1532,8 @@ const HYPERURICEMIA_ROWS = [
   { label: '効果スコア',     field: 'efficacy_star',  type: 'stars'  },
   { label: '効果発現',       field: 'onset_time',     type: 'val'    },
   { label: '投与頻度',       field: 'duration_hours', type: 'val'    },
+  { label: '妊娠｜授乳',     fields: ['pregnancy', 'lactation'], type: 'safety_pair' },
+  { label: '腎不全｜透析性', fields: ['renal_gfr', 'dialysis'], type: 'safety_pair' },
   { label: '使い分けポイント', field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典', field: 'evidence',       type: 'evidence'},
   { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
@@ -2256,6 +2262,7 @@ function buildRows(drugs, cfg, category) {
 }
 
 function renderCell(d, def, accentColor) {
+  if (def.type === 'safety_pair') return safetyPairCell(d, def);
   const v = d[def.field];
   const s = v !== undefined && v !== null ? String(v) : 'データなし';
   switch (def.type) {
@@ -2275,6 +2282,16 @@ function renderCell(d, def, accentColor) {
     }
     default:         return `<td class="val-cell">${esc(s)}</td>`;
   }
+}
+
+function safetyPairCell(d, def) {
+  function symSpan(v) {
+    if (v === null || v === undefined) return '<span style="color:#9ca3af">-</span>';
+    const color = v === '◎' ? '#15803d' : v === '△' ? '#d97706' : v === '×' ? '#dc2626' : '#374151';
+    return `<span style="color:${color};font-weight:700">${esc(String(v))}</span>`;
+  }
+  const [f1, f2] = def.fields;
+  return `<td class="val-cell" style="text-align:center;letter-spacing:0.05em">${symSpan(d[f1])}<span style="color:#d1d5db;margin:0 3px">｜</span>${symSpan(d[f2])}</td>`;
 }
 
 // ===== 行ヘルパー =====
