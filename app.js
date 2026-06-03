@@ -165,6 +165,7 @@ const DOMAINS = {
     categories: [
       { key: 'HRT・更年期',  label: '🌸 HRT・更年期' },
       { key: '子宮内膜症',   label: '🔴 子宮内膜症' },
+      { key: '子宮筋腫',     label: '🔵 子宮筋腫' },
       { key: 'OC・避妊',     label: '💊 OC・避妊' },
       { key: '不妊治療',     label: '🌱 不妊治療' },
     ],
@@ -2195,7 +2196,7 @@ function getRowDefs(category) {
   if (category === '消毒薬') return DERMA_ROWS;
   if (category === '褥瘡治療薬') return WOUND_ROWS;
   if (['筋弛緩薬', '変形性関節症'].includes(category)) return ORTHO_ROWS;
-  if (['HRT・更年期', '子宮内膜症', 'OC・避妊', '不妊治療'].includes(category)) return GYNECO_ROWS;
+  if (['HRT・更年期', '子宮内膜症', '子宮筋腫', 'OC・避妊', '不妊治療'].includes(category)) return GYNECO_ROWS;
   if (['制吐薬（CINV）', '骨修飾薬'].includes(category)) return ONCOLOGY_ROWS;
   if (['ビタミン', 'ミネラル・電解質'].includes(category)) return NUTRITION_ROWS;
   if (category === '経腸栄養剤') return ENTERAL_ROWS;
