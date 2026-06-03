@@ -193,7 +193,7 @@
     "evidence_url": null,
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": "<30",
+    "renal_gfr": ">30",
     "dialysis": "有",
     "caution": "スタチンとの併用で横紋筋融解症リスク増加。腎機能低下で蓄積（eGFR<30で禁忌〜要調整）。胆石形成。肝酵素上昇"
   },
@@ -237,7 +237,7 @@
     "evidence_url": null,
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": "<30",
+    "renal_gfr": ">30",
     "dialysis": "有",
     "caution": "スタチンとの併用で横紋筋融解症リスク増加。腎機能低下で調整（eGFR<30禁忌）。胆石形成。肝酵素上昇"
   },
@@ -369,7 +369,7 @@
     "evidence_url": null,
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": "<30",
+    "renal_gfr": ">30",
     "dialysis": "有",
     "caution": "劇症肝炎・肝障害リスク（欧州では市場撤退、日本では継続）→定期的肝機能検査必須。尿路結石リスク（尿アルカリ化・水分摂取で予防）。腎不全・尿酸産生過剰型では禁忌"
   },
@@ -391,7 +391,7 @@
     "evidence_url": null,
     "pregnancy": "×",
     "lactation": "△",
-    "renal_gfr": "<30",
+    "renal_gfr": ">30",
     "dialysis": "有",
     "caution": "下痢・悪心・腹痛（用量依存）。骨髄抑制（高用量・腎障害）。CYP3A4・P糖蛋白の基質でクラリスロマイシン等で中毒リスク。腎/肝障害で蓄積"
   },
@@ -413,7 +413,7 @@
     "evidence_url": null,
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": "<35",
+    "renal_gfr": ">35",
     "dialysis": "無",
     "caution": "食道潰瘍・食道炎（服薬後30分以上は横にならない）。顎骨壊死（ONJ・長期高用量）。非定型大腿骨骨折（長期使用）。eGFR<35禁忌。Ca・VitD補充を並行"
   },
@@ -435,7 +435,7 @@
     "evidence_url": null,
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": "<35",
+    "renal_gfr": ">35",
     "dialysis": "無",
     "caution": "食道刺激（服薬後30分横にならない）。顎骨壊死・非定型大腿骨骨折（長期）。eGFR<35禁忌"
   },
@@ -457,7 +457,7 @@
     "evidence_url": null,
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": "<35",
+    "renal_gfr": ">35",
     "dialysis": "無",
     "caution": "食道刺激（服薬後30分横にならない）。顎骨壊死・非定型大腿骨骨折（長期）。eGFR<35禁忌"
   },
@@ -479,7 +479,7 @@
     "evidence_url": null,
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": "<35",
+    "renal_gfr": ">35",
     "dialysis": "無",
     "caution": "急性期反応（発熱・筋肉痛・倦怠感・投与後1〜3日 インフルエンザ様症状）。顎骨壊死・非定型大腿骨骨折。eGFR<35禁忌。事前水分補給が重要。心房細動リスクのわずかな増加"
   },
