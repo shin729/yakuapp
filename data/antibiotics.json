@@ -1623,5 +1623,30 @@
     "atypical": "-",
     "evidence_url": null,
     "half_life": "約3時間（セフトロザン）"
+  },
+  {
+    "name": "セフタジジム/アビバクタム",
+    "brand": "ザビセフタ",
+    "category": "その他",
+    "class": "βラクタマーゼ阻害薬配合セフェム（KPC/OXA-48・ESBL産生菌対応）",
+    "mechanism": "セフタジジム（第3世代セフェム・PBP3に高親和性）+アビバクタム（Class A/C/D βラクタマーゼ〔KPC・OXA-48・ESBL〕と共有結合→不可逆的阻害・加水分解後に再活性化する特異なメカニズム）→KPC産生CRE・OXA-48産生腸内細菌科・ESBL産生菌・MDR緑膿菌への活性回復。Class B（MBL：NDM・VIM・IMP）には無効",
+    "pkpd": "時間依存性（%T>MIC）",
+    "dose_us": "2.5g（CAZ 2g+AVI 0.5g）静注 2時間 8時間毎",
+    "route": "注射",
+    "first_line": "KPC/OXA-48産生CRE感染症・MDR緑膿菌・ESBL産生菌重症感染症",
+    "off_label": null,
+    "cross": "セフェム系（同系）：禁忌、\nペニシリン系：慎重（交差アレルギー）",
+    "caution": "MBL産生菌（NDM・VIM・IMP型）には無効→耐性機序確認必須。腎機能低下で用量調整必須（eGFR<50 mL/min）。OXA-48産生CRABはセフィデロコル優先。レカルブリオとの使い分け：OXA-48カバーはザビセフタが優れる。2024年6月24日日本承認・2024年8月薬価収載",
+    "tdm": null,
+    "mrsa": "-",
+    "strep": "++",
+    "entero": "-",
+    "entero_bac": "+++",
+    "esbl": "+++",
+    "pseudo": "++",
+    "anaerobe": "-",
+    "atypical": "-",
+    "evidence_url": null,
+    "half_life": "約2時間（セフタジジム成分）"
   }
 ]
