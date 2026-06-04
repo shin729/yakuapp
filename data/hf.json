@@ -90,13 +90,13 @@
     "target_dose": "50mg × 1回/日",
     "onset_time": "1〜2時間（降圧）",
     "duration_hours": "1日1回",
-    "guideline_rank": "スピロノラクトンによる女性化乳房・月経不順が問題になる場合の代替。心筋梗塞後LV機能低下（EF≤40%）への適応もある（EPHESUS試験）。スピロノラクトンより薬価が高い",
+    "guideline_rank": "スピロノラクトンによる女性化乳房・月経不順が問題になる場合の代替。心筋梗塞後LV機能低下（EF≤40%）への適応もある（EPHESUS試験）。スピロノラクトンより薬価が高い。CKD（eGFR<30）では高K血症リスクで禁忌。透析患者は透析でカリウム管理されるため使用可能。",
     "evidence": "EMPHASIS-HF試験（NEJM 2011 PMID:21073363）",
     "caution": "高K血症（スピロノラクトンと同様に注意）。eGFR<30は禁忌。ACE阻害薬・ARBとの併用で高K血症リスク増大",
     "evidence_url": null,
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": null,
+    "renal_gfr": ">30",
     "dialysis": "無"
   },
   {
