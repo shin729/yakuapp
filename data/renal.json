@@ -144,13 +144,13 @@
     "NNT": 9,
     "onset_time": "2〜4日（抗アルドステロン効果）",
     "duration_hours": "心不全：1日1回 25mg（最大50mg）内服\n腹水：1日1回 100〜400mg 内服",
-    "guideline_rank": "HFrEF（EF<35%）の4大柱のひとつ（RALES試験）。ACE阻害薬・β遮断薬との3剤併用で予後改善エビデンス確立。アンドロゲン・プロゲステロン受容体も遮断→女性化乳房・月経不順が問題",
+    "guideline_rank": "HFrEF（EF<35%）の4大柱のひとつ（RALES試験）。ACE阻害薬・β遮断薬との3剤併用で予後改善エビデンス確立。アンドロゲン・プロゲステロン受容体も遮断→女性化乳房・月経不順が問題。CKD（eGFR<30）では高K血症リスクで原則禁忌。透析患者は透析でカリウム管理されるため使用可能（ALLIANCE・ACHIEVE試験で有益性確認）。",
     "evidence": "Pitt B et al. N Engl J Med 1999;341:709-17（PMID:10471456）",
     "evidence_url": null,
     "caution": "高K血症（腎機能障害・RAAS阻害薬併用で危険）。女性化乳房（男性）・月経不順（女性）（アンドロゲン受容体拮抗による）。重篤な腎不全（GFR<30）では禁忌または極慎重。ACE阻害薬/ARBとの3剤併用は高K血症・腎機能悪化リスク",
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": null,
+    "renal_gfr": ">30",
     "dialysis": "無"
   },
   {

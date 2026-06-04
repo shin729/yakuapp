@@ -115,13 +115,13 @@
     "target_dose": "25〜50mg × 1回/日",
     "onset_time": "2〜3日（利尿効果）",
     "duration_hours": "1日1回",
-    "guideline_rank": "HFrEF（EF<35%）でACE阻害薬・β遮断薬を使用中の患者に第三の柱として追加。NNT=9は心不全薬の中で最も優れた部類。女性化乳房・月経不順が問題になる場合はエプレレノン（選択的MRA）へ変更",
+    "guideline_rank": "HFrEF（EF<35%）でACE阻害薬・β遮断薬を使用中の患者に第三の柱として追加。NNT=9は心不全薬の中で最も優れた部類。女性化乳房・月経不順が問題になる場合はエプレレノン（選択的MRA）へ変更。CKD（eGFR<30）では高K血症リスクで原則禁忌。透析患者は透析でカリウム管理されるため使用可能（ALLIANCE・ACHIEVE試験で有益性確認）。",
     "evidence": "RALES試験（NEJM 1999 PMID:10471456）",
     "caution": "高K血症（腎機能低下例・ACE/ARB併用で特に危険）。女性化乳房・月経不順（エストロゲン様作用）。腎機能低下（eGFR<30は原則禁忌）",
     "evidence_url": null,
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": null,
+    "renal_gfr": ">30",
     "dialysis": "無"
   },
   {
@@ -340,13 +340,13 @@
     "target_dose": "25〜50mg × 1回/日",
     "onset_time": "2〜3日（利尿効果）",
     "duration_hours": "1日1回",
-    "guideline_rank": "HFpEFでの全体エビデンスは確立していない（TOPCAT試験で全体の主要エンドポイントは未達）。SGLT2阻害薬が使えない症例や症状コントロール目的で使用を検討。体液貯留・浮腫が主症状のHFpEFには症状改善として選択肢",
+    "guideline_rank": "HFpEFでの全体エビデンスは確立していない（TOPCAT試験で全体の主要エンドポイントは未達）。SGLT2阻害薬が使えない症例や症状コントロール目的で使用を検討。体液貯留・浮腫が主症状のHFpEFには症状改善として選択肢。CKD（eGFR<30）では高K血症リスクで原則禁忌。透析患者は透析でカリウム管理されるため使用可能（ALLIANCE・ACHIEVE試験で有益性確認）。",
     "evidence": "TOPCAT trial（PMID:24716680）",
     "caution": "高K血症。eGFR<30は原則禁忌。女性化乳房。HFpEFでの予後改善エビデンスは確立していない点を念頭に",
     "evidence_url": null,
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": null,
+    "renal_gfr": ">30",
     "dialysis": "無"
   },
   {
@@ -660,13 +660,13 @@
     "efficacy_star": 4,
     "onset_time": "2〜3日（最大効果まで数週間）",
     "duration_hours": "24時間（t1/2 20h）",
-    "guideline_rank": "難治性高血圧（第4選択）・心不全・原発性アルドステロン症に",
+    "guideline_rank": "難治性高血圧（第4選択）・心不全・原発性アルドステロン症に。CKD（eGFR<30）では高K血症リスクで原則禁忌。透析患者は透析でカリウム管理されるため使用可能（ALLIANCE・ACHIEVE試験で有益性確認）。",
     "evidence": "RALES試験（NEJM 1999 PMID:10471456）",
     "evidence_url": null,
     "caution": "高K血症（ACE/ARB併用で特に注意）。女性化乳房・月経異常（抗アンドロゲン作用）。腎機能低下例は禁忌または慎重",
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": null,
+    "renal_gfr": ">30",
     "dialysis": "無"
   },
   {
