@@ -623,6 +623,24 @@ thead .sticky-col { z-index: 3; }
 /* Value cells */
 .val-cell    { text-align: center; font-weight: 600; font-size: 0.85rem; }
 .val-nodata  { color: var(--gray-400) !important; font-weight: 400; font-size: 0.75rem; }
+
+/* 安全性ペアセル（妊娠｜授乳 / 腎機能｜透析性） */
+.safety-pair-cell { padding: 0 !important; }
+.safety-pair-inner {
+  display: flex;
+  min-height: 34px;
+  align-items: stretch;
+}
+.safety-pair-l,
+.safety-pair-r {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 4px;
+  font-size: 0.82rem;
+}
+.safety-pair-l { border-right: 1.5px solid #9ca3af; }
 .onset-cell  { text-align: center; font-weight: 700; font-size: 0.82rem; color: #0891b2; }
 
 /* Rank badges */
@@ -1635,17 +1653,14 @@ thead .cmp-label-col { background: #f5f3ff !important; }
   }
 }
 
-/* Responsive */
-@media (max-width: 480px) {
-  :root { --label-col-width: 70px; --drug-col-width: 138px; }
-  .col-name   { font-size: 0.85rem; }
-  .tab-btn    { font-size: 0.74rem; padding: 7px 11px; }
-  .domain-btn { font-size: 0.8rem; padding: 8px 12px; border-radius: 20px; }
-}
-
+/* ===== モバイル共通（~639px） ===== */
 @media (max-width: 639px) {
-  .main { padding: 12px; }
+  .main { padding: 10px 10px; }
   .card-list { gap: 10px; }
+
+  /* ヘッダー */
+  .header { padding: 12px 12px 10px; }
+  .header .subtitle { font-size: 0.7rem; }
 
   /* ===== 大分類タブ：横スクロール化 ===== */
   .domain-tabs {
@@ -1655,17 +1670,20 @@ thead .cmp-label-col { background: #f5f3ff !important; }
     scrollbar-width: none;
     gap: 6px;
     padding: 4px 2px 8px;
+    /* 右端フェード */
+    -webkit-mask-image: linear-gradient(to right, black 90%, transparent 100%);
+    mask-image: linear-gradient(to right, black 90%, transparent 100%);
   }
   .domain-tabs::-webkit-scrollbar { display: none; }
   .domain-btn {
     flex: 0 0 auto;
     white-space: nowrap;
-    font-size: 0.82rem;
-    padding: 9px 14px;
+    font-size: 0.8rem;
+    padding: 8px 13px;
     border-radius: 20px;
   }
 
-  /* ===== 小分類タブ：横スクロール化（縦長解消） ===== */
+  /* ===== 小分類タブ：横スクロール化 ===== */
   .tabs {
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -1680,13 +1698,38 @@ thead .cmp-label-col { background: #f5f3ff !important; }
   .tabs::-webkit-scrollbar { display: none; }
 
   .tab-btn {
-    flex: 0 0 auto;       /* 横スクロール：伸び縮みさせない */
-    white-space: nowrap;  /* テキスト折り返し禁止 */
+    flex: 0 0 auto;
+    white-space: nowrap;
     font-size: 0.76rem;
-    padding: 8px 13px;
-    border-radius: 5px;   /* 角ばった正方形寄り（大分類20pxと対比） */
+    padding: 8px 12px;
+    border-radius: 5px;
     min-width: unset;
   }
 
+  /* 検索・メタ行 */
   .search-box { max-width: 100%; }
+  .meta-row-right { flex-wrap: wrap; gap: 6px; }
+
+  /* テーブルスクロールヒント（モバイルにも表示） */
+  .table-scroll-hint { display: block; }
+
+  /* テーブル列ヘッダーのドラッグカーソルはモバイル不要 */
+  .table-wrapper { cursor: default; }
+
+  /* val-cellの文字サイズをモバイル向けに微調整 */
+  .val-cell { font-size: 0.8rem; }
+  .row-label { font-size: 0.68rem; padding: 7px 4px; }
+
+  /* 薬剤名カラムヘッダー */
+  .col-name  { font-size: 0.84rem; }
+  .col-brand { font-size: 0.64rem; }
+  .compare-table thead th:not(.sticky-col) { padding: 10px 8px 8px; }
+}
+
+/* ===== 小型モバイル（~480px）===== */
+@media (max-width: 480px) {
+  :root { --label-col-width: 68px; --drug-col-width: 132px; }
+  .col-name   { font-size: 0.82rem; }
+  .tab-btn    { font-size: 0.72rem; padding: 7px 10px; }
+  .domain-btn { font-size: 0.76rem; padding: 7px 11px; }
 }
