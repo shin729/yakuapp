@@ -15,7 +15,11 @@
     "guideline_rank": "セマグルチドを上回る体重減少・血糖降下。体重管理が重要な2型糖尿病例に特に有用。2023年日本承認",
     "evidence": "SURPASS-2試験（NEJM 2021 PMID:34170647）",
     "evidence_url": null,
-    "caution": "悪心・嘔吐・下痢（開始初期）。膵炎既往は禁忌。甲状腺C細胞腫瘍リスク（動物実験）。週1回皮下注射"
+    "caution": "悪心・嘔吐・下痢（開始初期）。膵炎既往は禁忌。甲状腺C細胞腫瘍リスク（動物実験）。週1回皮下注射",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セマグルチド",
@@ -33,7 +37,11 @@
     "guideline_rank": "週1回注射で体重減少効果が最強クラス。心血管ハイリスク例に",
     "evidence": "SUSTAIN-6（NEJM 2016 PMID:27633186）",
     "evidence_url": null,
-    "caution": "悪心・嘔吐・下痢（開始初期）。膵炎リスク（既往例は禁忌）。甲状腺C細胞腫瘍リスク（動物実験）。網膜症の一時的悪化"
+    "caution": "悪心・嘔吐・下痢（開始初期）。膵炎リスク（既往例は禁忌）。甲状腺C細胞腫瘍リスク（動物実験）。網膜症の一時的悪化",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "デュラグルチド",
@@ -51,7 +59,11 @@
     "guideline_rank": "週1回注射。心血管ハイリスク・利便性重視の患者に",
     "evidence": "REWIND試験（Lancet 2019 PMID:31189511）",
     "evidence_url": null,
-    "caution": "悪心・嘔吐（セマグルチドより少ない傾向）。膵炎・胆石症リスク。重篤な腎障害では注意"
+    "caution": "悪心・嘔吐（セマグルチドより少ない傾向）。膵炎・胆石症リスク。重篤な腎障害では注意",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "リラグルチド",
@@ -69,7 +81,11 @@
     "guideline_rank": "心血管病既往DM・肥満合併例に。体重減少・心保護エビデンスあり",
     "evidence": "LEADER試験（NEJM 2016 PMID:27295427）",
     "evidence_url": null,
-    "caution": "悪心・嘔吐（初期）。甲状腺髄様癌の既往/家族歴は禁忌。膵炎リスク（まれ）。注射製剤"
+    "caution": "悪心・嘔吐（初期）。甲状腺髄様癌の既往/家族歴は禁忌。膵炎リスク（まれ）。注射製剤",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "インスリン アスパルト",
@@ -84,7 +100,11 @@
     "timing": "食直前（0〜10分前）",
     "feature": "最も使用頻度の高い超速効型。1型・2型の食前インスリンとして標準的。ポンプ療法（CSII）にも使用可",
     "caution": "食後に注射すると食直前比で血糖制御が劣る\n低血糖：食事が取れない場合は注射しない",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "インスリン リスプロ",
@@ -99,7 +119,11 @@
     "timing": "食直前",
     "feature": "作用発現がアスパルトよりわずかに速め。CSII（インスリンポンプ）に使用可。妊婦への使用実績が豊富",
     "caution": "食直前注射を厳守\n他の超速効型と互換的に使用可だが患者ごとに使い分けを統一する",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "インスリン グルリジン",
@@ -114,7 +138,11 @@
     "timing": "食直前〜食後15分以内",
     "feature": "食後投与にも対応可（高齢者・食欲不振時に有用）。アスパルト・リスプロとの有効性は同等",
     "caution": "他のインスリンとの混合は推奨されない\nCSII（ポンプ）には非推奨（安定性↓）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "インスリン アスパルト（改良型）",
@@ -129,7 +157,11 @@
     "timing": "食直前〜食後20分以内",
     "feature": "通常アスパルトより5分速い。食後投与も可能で食欲不振時・食事量不確定な場合に有用",
     "caution": "食後投与は低血糖リスク低下するが血糖制御は食直前より劣る\n保存方法はノボラピッドと同様",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "インスリン リスプロ（改良型）",
@@ -144,7 +176,11 @@
     "timing": "食直前〜食後20分以内",
     "feature": "2022年日本承認。フィアスプと並ぶ第2世代超速効型。CSII（ポンプ）にも使用可",
     "caution": "食後投与でも有効だが食直前が望ましい\nフィアスプとの直接比較エビデンスは限定的",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ヒト速効型インスリン",
@@ -159,7 +195,11 @@
     "timing": "食前30分",
     "feature": "点滴静注・持続静注が可能な唯一のインスリン剤形。\n術中管理・DKA・高血糖緊急時に使用",
     "caution": "食前30分投与を守れない場合は超速効型に切替を検討\n静注と皮下注で作用時間が大きく異なる",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ヒト中間型インスリン（NPH）",
@@ -174,7 +214,11 @@
     "timing": "1日1〜2回（就寝前・朝）",
     "feature": "安価・古典的。現在は持続型アナログが主流。混合型製剤（NPH70%成分）として現役",
     "caution": "ピークによる夜間低血糖リスクが高い\n使用前に転倒混和して白濁を確認",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "インスリン グラルギン U-100",
@@ -189,7 +233,11 @@
     "timing": "1日1回（就寝前または毎日固定時間）",
     "feature": "最も広く使われる基礎インスリン。フラット作用で夜間低血糖リスク低。後発品（ランタスBS）あり",
     "caution": "他のインスリンとの混合禁忌（pHが変わり析出が乱れる）\n注射部位を毎回変えること",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "インスリン グラルギン U-300",
@@ -204,7 +252,11 @@
     "timing": "1日1回（就寝前または毎日固定時間）",
     "feature": "U-100より低血糖リスク約25%低下（EDITION試験）。注射量が1/3と少なく注射部位反応が少ない",
     "caution": "切替時はU-100と1:1（同単位数）で開始\n他インスリンとの混合禁忌",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "インスリン デテミル",
@@ -219,7 +271,11 @@
     "timing": "1日1〜2回（就寝前または朝夕）",
     "feature": "体重増加がグラルギン・NPHより少ない傾向。妊婦への使用可（妊娠中の基礎インスリンとして選択肢）",
     "caution": "用量が少ないと持続時間が短くなり夕方に高血糖が出やすい\n1日2回投与が必要な場合がある",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "インスリン デグルデク",
@@ -234,7 +290,11 @@
     "timing": "1日1回（任意の時間帯に固定・±8時間の柔軟性あり）",
     "feature": "最長持続の基礎インスリン。低血糖リスクがグラルギンよりさらに低い（BEGIN試験）。投与時間の柔軟性が最も高い",
     "caution": "定常状態到達まで3〜4日かかる（用量調整は最短3日ごと）\nライゾデグ（デグルデク+アスパルト配合）として配合剤もある",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "インスリン イコデク",
@@ -249,7 +309,11 @@
     "timing": "週1回（同じ曜日・同じ時間帯に固定）",
     "feature": "世界初・日本初の週1回基礎インスリン（2024年日本承認）。\n投与回数を週1回に削減→アドヒアランス向上に期待",
     "caution": "用量調整は週1回ペース（毎日の調整不可）\n定常状態到達まで2〜4週要→切替後数週間は慎重なモニタリング必須",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "インスリン アスパルト二相性30",
@@ -265,7 +329,11 @@
     "timing": "食直前（1日2回：朝食前・夕食前）",
     "feature": "1本で食後＋基礎血糖をカバー。注射回数を減らせるため2型DM導入に使いやすい",
     "caution": "使用前に転倒混和（白濁確認）\n比率固定のため用量調整に制限あり。食事量の変動で低血糖・高血糖リスク",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "インスリン リスプロ二相性25",
@@ -281,7 +349,11 @@
     "timing": "食直前（1日2〜3回）",
     "feature": "中間型比率が高く基礎血糖制御が強め。ミックス50と組み合わせての使い分けも可",
     "caution": "振って混和してから使用\n食事量・タイミングを固定することが重要",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "インスリン リスプロ二相性50",
@@ -297,7 +369,11 @@
     "timing": "食直前（1日2〜3回）",
     "feature": "食後血糖が特に高い症例に適する。食前血糖が正常〜低めで食後血糖が高い場合はミックス50",
     "caution": "速効成分が多いため低血糖リスクがミックス25より高い\n食事量の一定化が特に重要",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ヒト二相性インスリン30",
@@ -313,7 +389,11 @@
     "timing": "食前30分（1日2回）",
     "feature": "安価・古典的。インスリン導入期や費用を重視する場合に選択肢",
     "caution": "食前30分前注射を厳守（超速効型より待ち時間が長い）\n転倒混和を毎回実施",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "メトホルミン",
@@ -331,7 +411,11 @@
     "guideline_rank": "2型糖尿病の第一選択。肥満例・心血管保護・安価で最も使われる",
     "evidence": "UKPDS 34（Lancet 1998 PMID:9742977）",
     "evidence_url": null,
-    "caution": "腎機能低下（eGFR<30）で禁忌→乳酸アシドーシス。造影剤使用前後は休薬。消化器症状（悪心・下痢）。ビタミンB12欠乏"
+    "caution": "腎機能低下（eGFR<30）で禁忌→乳酸アシドーシス。造影剤使用前後は休薬。消化器症状（悪心・下痢）。ビタミンB12欠乏",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": ">30"
   },
   {
     "name": "ピオグリタゾン",
@@ -349,7 +433,11 @@
     "guideline_rank": "インスリン抵抗性・NASH合併例に。心不全・浮腫は禁忌",
     "evidence": "PROactive試験（Lancet 2005 PMID:16214598）",
     "evidence_url": null,
-    "caution": "浮腫・心不全悪化（NYHA III-IVは禁忌）。骨折リスク増加（閉経後女性）。膀胱癌リスク（長期使用）"
+    "caution": "浮腫・心不全悪化（NYHA III-IVは禁忌）。骨折リスク増加（閉経後女性）。膀胱癌リスク（長期使用）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "アカルボース",
@@ -367,7 +455,11 @@
     "guideline_rank": "食後高血糖が主体の軽症2型DM・IGT（耐糖能異常）の予防に。低血糖リスクなし",
     "evidence": "STOP-NIDDM試験（Lancet 2002 PMID:12047579）",
     "evidence_url": null,
-    "caution": "腹部膨満・放屁・下痢（腸内細菌による未吸収糖の発酵）\n低血糖時はブドウ糖で対応（砂糖・スクロースは無効）\n食直前に服用必須"
+    "caution": "腹部膨満・放屁・下痢（腸内細菌による未吸収糖の発酵）\n低血糖時はブドウ糖で対応（砂糖・スクロースは無効）\n食直前に服用必須",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ボグリボース",
@@ -385,7 +477,11 @@
     "guideline_rank": "食後高血糖・IGT改善に。アカルボースよりGI副作用が少ない傾向。日本で広く使用",
     "evidence": "国内承認データ",
     "evidence_url": null,
-    "caution": "腹部膨満・放屁（アカルボースよりやや少ない）\n食直前服用が重要。低血糖時はブドウ糖で対応"
+    "caution": "腹部膨満・放屁（アカルボースよりやや少ない）\n食直前服用が重要。低血糖時はブドウ糖で対応",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "イメグリミン",
@@ -403,7 +499,11 @@
     "guideline_rank": "2型糖尿病の新選択肢。メトホルミン・SGLT2阻害薬・DPP4阻害薬と異なる機序のため多剤併用時の上乗せに有用。eGFR<30禁忌",
     "evidence": "TIMES1〜3試験（PMID:34059306）",
     "evidence_url": null,
-    "caution": "乳酸アシドーシス（メトホルミンと類似構造のため同様の注意が必要）。eGFR<30禁忌・eGFR<45で慎重投与。低血糖は単独では少ないがSU薬・インスリン併用時は注意。国内開発薬のため長期データは蓄積中"
+    "caution": "乳酸アシドーシス（メトホルミンと類似構造のため同様の注意が必要）。eGFR<30禁忌・eGFR<45で慎重投与。低血糖は単独では少ないがSU薬・インスリン併用時は注意。国内開発薬のため長期データは蓄積中",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "エンパグリフロジン",
@@ -421,7 +521,11 @@
     "guideline_rank": "心不全・CKD合併糖尿病に特に有効。体重・血圧も低下",
     "evidence": "EMPA-REG OUTCOME（NEJM 2015 PMID:26378978）",
     "evidence_url": null,
-    "caution": "尿路・性器感染症（特に女性）。正常血糖DKA（シックデイに注意）。脱水・低血圧。フォルニエ壊疽（極めて稀）"
+    "caution": "尿路・性器感染症（特に女性）。正常血糖DKA（シックデイに注意）。脱水・低血圧。フォルニエ壊疽（極めて稀）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": ">45"
   },
   {
     "name": "ダパグリフロジン",
@@ -439,7 +543,11 @@
     "guideline_rank": "HFpEF・CKD・心不全にもFDA適応。心腎保護が最も広い",
     "evidence": "DAPA-HF試験（NEJM 2019 PMID:31535829）",
     "evidence_url": null,
-    "caution": "尿路感染・性器感染。DKAリスク（シックデイ対応要）。eGFR<25では血糖降下効果が減弱"
+    "caution": "尿路感染・性器感染。DKAリスク（シックデイ対応要）。eGFR<25では血糖降下効果が減弱",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": ">45"
   },
   {
     "name": "カナグリフロジン",
@@ -457,7 +565,11 @@
     "guideline_rank": "心不全・CKD合併糖尿病に有効。下肢切断リスクに注意",
     "evidence": "CANVAS試験（NEJM 2017 PMID:28605608）",
     "evidence_url": null,
-    "caution": "尿路・性器感染症。ケトアシドーシス（空腹時・手術前は中止）。下肢切断リスク（カナグリフロジン固有）。シックデイに中止"
+    "caution": "尿路・性器感染症。ケトアシドーシス（空腹時・手術前は中止）。下肢切断リスク（カナグリフロジン固有）。シックデイに中止",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": ">45"
   },
   {
     "name": "シタグリプチン",
@@ -475,7 +587,11 @@
     "guideline_rank": "忍容性・安全性が高いDPP-4阻害薬。高齢者・腎機能低下例に用量調節",
     "evidence": "TECOS試験（NEJM 2015 PMID:26052984）",
     "evidence_url": null,
-    "caution": "膵炎リスク（まれ）。関節痛。腎機能低下で用量減量（eGFR<45で50 mg/日）。心血管保護効果は限定的"
+    "caution": "膵炎リスク（まれ）。関節痛。腎機能低下で用量減量（eGFR<45で50 mg/日）。心血管保護効果は限定的",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "リナグリプチン",
@@ -493,7 +609,11 @@
     "guideline_rank": "慢性腎臓病（CKD）合併糖尿病の第一選択DPP-4阻害薬。透析患者でも用量調整なしで使用可能。CKD患者においてシタグリプチンは減量が必要だが、リナグリプチンは同用量（5mg/日）のまま使用できる",
     "evidence": "CARMELINA試験（PMID:30477464）",
     "evidence_url": null,
-    "caution": "膵炎リスク（まれ）。関節痛。心血管保護効果は限定的（CARMELINA試験で中立）。ゲムフィブロジルとの併用でAUC増加（注意）"
+    "caution": "膵炎リスク（まれ）。関節痛。心血管保護効果は限定的（CARMELINA試験で中立）。ゲムフィブロジルとの併用でAUC増加（注意）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "アログリプチン",
@@ -511,7 +631,11 @@
     "guideline_rank": "ACS後の大規模試験（EXAMINE）で安全性確認。心不全合併例は慎重",
     "evidence": "EXAMINE試験（NEJM 2013 PMID:23992602）",
     "evidence_url": null,
-    "caution": "心不全悪化リスク（DPP-4阻害薬クラス懸念）\n腎機能低下で減量（eGFR30〜60で12.5 mg/日）\n膵炎リスク（まれ）"
+    "caution": "心不全悪化リスク（DPP-4阻害薬クラス懸念）\n腎機能低下で減量（eGFR30〜60で12.5 mg/日）\n膵炎リスク（まれ）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "テネリグリプチン",
@@ -529,7 +653,11 @@
     "guideline_rank": "国内開発DPP-4阻害薬。腎機能低下でも減量幅が小さい",
     "evidence": "国内第III相試験（PMID:24130079）",
     "evidence_url": null,
-    "caution": "QTc延長（高用量・電解質異常との組み合わせで注意）\n膵炎リスク（まれ）"
+    "caution": "QTc延長（高用量・電解質異常との組み合わせで注意）\n膵炎リスク（まれ）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "トレラグリプチン",
@@ -547,7 +675,11 @@
     "guideline_rank": "服薬回数削減が重要な患者・高齢者・多剤服薬患者に。週1回服薬の利便性が最大の特徴",
     "evidence": "Inagaki et al.（Diabetes Care 2014 PMID:24682513）",
     "evidence_url": null,
-    "caution": "腎排泄型（eGFR<45で禁忌または減量）\n共有結合による不可逆的阻害のため中毒・副作用時の管理は注意"
+    "caution": "腎排泄型（eGFR<45で禁忌または減量）\n共有結合による不可逆的阻害のため中毒・副作用時の管理は注意",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "フィネレノン",
@@ -565,7 +697,11 @@
     "guideline_rank": "SGLT2阻害薬・RAS遮断薬と組み合わせてCKD+T2DMの腎・心血管保護を強化。2022年日本承認。SGLT2阻害薬使用中でも追加効果あり（FINEARTS-HF等）。血清K≥5.0mEq/Lまたは eGFR<25では開始禁忌",
     "evidence": "FIDELIO-DKD試験（NEJM 2020 PMID:32972995）",
     "evidence_url": null,
-    "caution": "高カリウム血症（開始前K≥5.0mEq/L禁忌・定期モニタリング必須）。eGFR<25では開始禁忌。強いCYP3A4阻害薬（イトラコナゾール・クラリスロマイシン等）との併用禁忌。スピロノラクトン・エプレレノンとの重複投与禁忌"
+    "caution": "高カリウム血症（開始前K≥5.0mEq/L禁忌・定期モニタリング必須）。eGFR<25では開始禁忌。強いCYP3A4阻害薬（イトラコナゾール・クラリスロマイシン等）との併用禁忌。スピロノラクトン・エプレレノンとの重複投与禁忌",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セマグルチド（経口）",
@@ -584,7 +720,11 @@
     "evidence": "PIONEER 6試験（NEJM 2019 PMID:31120236）",
     "evidence_url": null,
     "caution": "服用方法厳守（空腹時・少量水・30分待機）を守らないと吸収率が著しく低下。消化器症状（悪心・嘔吐・下痢）：注射剤と同様。膵炎・甲状腺髄様がんリスク。1型糖尿病・糖尿病性ケトアシドーシスに禁忌。",
-    "guideline_url": null
+    "guideline_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "グリメピリド",
@@ -602,7 +742,11 @@
     "guideline_rank": "低コスト・強力な血糖降下。低血糖リスクがあり高齢者は少量から",
     "evidence": "Charbonnel et al.（Diabetes Care 2005 PMID:16567827）",
     "evidence_url": null,
-    "caution": "低血糖リスク（特に高齢者・腎障害・食事摂取不足）。体重増加。腎障害（eGFR<30）で禁忌。磺アミド系アレルギーに注意"
+    "caution": "低血糖リスク（特に高齢者・腎障害・食事摂取不足）。体重増加。腎障害（eGFR<30）で禁忌。磺アミド系アレルギーに注意",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "グリクラジド",
@@ -620,7 +764,11 @@
     "guideline_rank": "SU薬の中では心血管SUR2への作用が比較的少ない。ADVANCE試験（MR製剤）で大規模エビデンス",
     "evidence": "ADVANCE試験（グリクラジドMR; NEJM 2008 PMID:18539916）",
     "evidence_url": null,
-    "caution": "低血糖リスク（高齢者・腎障害・食事量不足）\n体重増加。腎機能低下（eGFR<30は禁忌）"
+    "caution": "低血糖リスク（高齢者・腎障害・食事量不足）\n体重増加。腎機能低下（eGFR<30は禁忌）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "グリベンクラミド",
@@ -638,7 +786,11 @@
     "guideline_rank": "強力な血糖降下力。低血糖リスクが高くSU薬の中では現在は後退。高齢者・腎障害では避ける",
     "evidence": "UKPDS試験（SU群として参加）",
     "evidence_url": null,
-    "caution": "低血糖リスクが高い（グリメピリドより強く・長い低血糖）\n腎機能低下（eGFR<30）は禁忌。高齢者に使いにくい。体重増加が顕著"
+    "caution": "低血糖リスクが高い（グリメピリドより強く・長い低血糖）\n腎機能低下（eGFR<30）は禁忌。高齢者に使いにくい。体重増加が顕著",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ナテグリニド",
@@ -656,7 +808,11 @@
     "guideline_rank": "食後高血糖が主体の軽〜中等症2型DM。SU薬より夜間低血糖リスクが低め",
     "evidence": "Horton ES et al. Diabetes Care 2000（PMID:10480606）",
     "evidence_url": null,
-    "caution": "低血糖リスクあり（SUより軽度・短時間だが高齢者は注意）\n食事を取らない場合は飲まない。腎機能低下で慎重"
+    "caution": "低血糖リスクあり（SUより軽度・短時間だが高齢者は注意）\n食事を取らない場合は飲まない。腎機能低下で慎重",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ミチグリニド",
@@ -674,6 +830,10 @@
     "guideline_rank": "食後高血糖改善のグリニド系。ナテグリニドより作用が強く短い。食事のタイミングに合わせた柔軟な使用が可能",
     "evidence": "国内第III相試験（PMID:17898804）",
     "evidence_url": null,
-    "caution": "低血糖リスクあり（食事量が少ない場合は服用しない）\n食直前5分以内の服用が重要。腎機能低下で慎重"
+    "caution": "低血糖リスクあり（食事量が少ない場合は服用しない）\n食直前5分以内の服用が重要。腎機能低下で慎重",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   }
 ]

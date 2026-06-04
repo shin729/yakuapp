@@ -22,7 +22,11 @@
     "anaerobe": "++",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約0.5時間（30分）"
+    "half_life": "約0.5時間（30分）",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "アモキシシリン",
@@ -47,7 +51,11 @@
     "anaerobe": "+",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約1.0時間（60分）"
+    "half_life": "約1.0時間（60分）",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "アンピシリン",
@@ -72,7 +80,11 @@
     "anaerobe": "++",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約1.0時間（60分）"
+    "half_life": "約1.0時間（60分）",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ピペラシリン",
@@ -97,7 +109,11 @@
     "anaerobe": "++（嫌気性菌）",
     "atypical": "-（非定型菌）",
     "evidence_url": null,
-    "half_life": "約0.79時間"
+    "half_life": "約0.79時間",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "アモキシシリン/クラブラン酸",
@@ -122,7 +138,11 @@
     "anaerobe": "++",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約1.36時間"
+    "half_life": "約1.36時間",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "スルバクタム／アンピシリン",
@@ -147,7 +167,11 @@
     "anaerobe": "+++",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約1.1時間（64分）"
+    "half_life": "約1.1時間（64分）",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "タゾバクタム/ピペラシリン",
@@ -172,7 +196,11 @@
     "anaerobe": "++",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約0.68時間"
+    "half_life": "約0.68時間",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セファゾリン",
@@ -197,7 +225,11 @@
     "anaerobe": "+",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約1.4時間（84分）"
+    "half_life": "約1.4時間（84分）",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セファレキシン",
@@ -222,7 +254,11 @@
     "pseudo": "-",
     "anaerobe": "-",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セファクロル",
@@ -247,7 +283,11 @@
     "pseudo": "-",
     "anaerobe": "-",
     "atypical": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セフォチアム",
@@ -272,7 +312,11 @@
     "anaerobe": "+",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約1.1時間"
+    "half_life": "約1.1時間",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セフメタゾール",
@@ -297,7 +341,11 @@
     "anaerobe": "++",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約1.2時間（70分）"
+    "half_life": "約1.2時間（70分）",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セフロキシム アキセチル",
@@ -322,7 +370,11 @@
     "anaerobe": "+",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約1.7時間"
+    "half_life": "約1.7時間",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セフィキシム",
@@ -347,7 +399,11 @@
     "anaerobe": "+",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約2.3時間"
+    "half_life": "約2.3時間",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セフォタキシム",
@@ -372,7 +428,11 @@
     "anaerobe": "+",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約1.0時間（62分）"
+    "half_life": "約1.0時間（62分）",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セフカペン ピボキシル",
@@ -397,7 +457,11 @@
     "anaerobe": "+",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約1.0時間（60分）"
+    "half_life": "約1.0時間（60分）",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セフジトレン ピボキシル",
@@ -422,7 +486,11 @@
     "anaerobe": "+",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約1.0時間（60分）"
+    "half_life": "約1.0時間（60分）",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セフタジジム",
@@ -447,7 +515,11 @@
     "anaerobe": "+",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約1.5時間（91分）"
+    "half_life": "約1.5時間（91分）",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セフォペラゾン/スルバクタム",
@@ -472,7 +544,11 @@
     "anaerobe": "++",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約1.7時間（セフォペラゾン成分）"
+    "half_life": "約1.7時間（セフォペラゾン成分）",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セフトリアキソン",
@@ -497,7 +573,11 @@
     "anaerobe": "+",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約8.1時間"
+    "half_life": "約8.1時間",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セフポドキシム プロキセチル",
@@ -522,7 +602,11 @@
     "anaerobe": "+",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約2.0時間"
+    "half_life": "約2.0時間",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セフェピム",
@@ -547,7 +631,11 @@
     "anaerobe": "+",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約2時間"
+    "half_life": "約2時間",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "イミペネム・シラスタチン",
@@ -572,7 +660,11 @@
     "anaerobe": "+++",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約1.0時間（58分）"
+    "half_life": "約1.0時間（58分）",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "イミペネム/シラスタチン/レレバクタム",
@@ -597,7 +689,11 @@
     "anaerobe": "++",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約1時間（イミペネム成分）"
+    "half_life": "約1時間（イミペネム成分）",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "テビペネム ピボキシル",
@@ -622,7 +718,11 @@
     "anaerobe": "++",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約1.1時間"
+    "half_life": "約1.1時間",
+    "pregnancy": "△",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ドリペネム",
@@ -647,7 +747,11 @@
     "anaerobe": "+++（嫌気性菌）",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約0.5時間（30分）"
+    "half_life": "約0.5時間（30分）",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ビアペネム",
@@ -672,7 +776,11 @@
     "anaerobe": "++",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約1時間"
+    "half_life": "約1時間",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "メロペネム",
@@ -697,7 +805,11 @@
     "anaerobe": "+++",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約0.5時間（30分）"
+    "half_life": "約0.5時間（30分）",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "アジスロマイシン",
@@ -722,7 +834,11 @@
     "anaerobe": "+",
     "atypical": "+++",
     "evidence_url": null,
-    "half_life": "約68時間（組織内）"
+    "half_life": "約68時間（組織内）",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "エリスロマイシン",
@@ -747,7 +863,11 @@
     "anaerobe": "++",
     "atypical": "+++",
     "evidence_url": null,
-    "half_life": "約1.4時間（82分）"
+    "half_life": "約1.4時間（82分）",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "クラリスロマイシン",
@@ -772,7 +892,11 @@
     "anaerobe": "++",
     "atypical": "+++",
     "evidence_url": null,
-    "half_life": "約4.04時間"
+    "half_life": "約4.04時間",
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ドキシサイクリン",
@@ -797,7 +921,11 @@
     "anaerobe": "+",
     "atypical": "+++",
     "evidence_url": null,
-    "half_life": "約7.5時間"
+    "half_life": "約7.5時間",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ミノサイクリン",
@@ -822,7 +950,11 @@
     "anaerobe": "++",
     "atypical": "+++",
     "evidence_url": null,
-    "half_life": "約6.0時間"
+    "half_life": "約6.0時間",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "チゲサイクリン",
@@ -847,7 +979,11 @@
     "anaerobe": "++",
     "atypical": "++",
     "evidence_url": null,
-    "half_life": "約42時間"
+    "half_life": "約42時間",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ガレノキサシン",
@@ -872,7 +1008,11 @@
     "anaerobe": "+",
     "atypical": "+++",
     "evidence_url": null,
-    "half_life": "約11時間"
+    "half_life": "約11時間",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "シタフロキサシン",
@@ -897,7 +1037,11 @@
     "anaerobe": "++",
     "atypical": "+++",
     "evidence_url": null,
-    "half_life": "約7.9時間"
+    "half_life": "約7.9時間",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "シプロフロキサシン",
@@ -922,7 +1066,11 @@
     "anaerobe": "△",
     "atypical": "++",
     "evidence_url": null,
-    "half_life": "約2.6時間"
+    "half_life": "約2.6時間",
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "モキシフロキサシン",
@@ -947,7 +1095,11 @@
     "anaerobe": "++",
     "atypical": "+++",
     "evidence_url": null,
-    "half_life": "約13.9時間"
+    "half_life": "約13.9時間",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "レボフロキサシン",
@@ -972,7 +1124,11 @@
     "anaerobe": "+",
     "atypical": "+++",
     "evidence_url": null,
-    "half_life": "約7.89時間"
+    "half_life": "約7.89時間",
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "アミカシン",
@@ -997,7 +1153,11 @@
     "anaerobe": "-",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約2.2時間"
+    "half_life": "約2.2時間",
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "カナマイシン",
@@ -1022,7 +1182,11 @@
     "anaerobe": "-",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約3.9時間"
+    "half_life": "約3.9時間",
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ゲンタマイシン",
@@ -1047,7 +1211,11 @@
     "anaerobe": "-",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約2.2時間"
+    "half_life": "約2.2時間",
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ストレプトマイシン",
@@ -1072,7 +1240,11 @@
     "anaerobe": "-",
     "atypical": "+++",
     "evidence_url": null,
-    "half_life": "約5.0時間"
+    "half_life": "約5.0時間",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "アルベカシン",
@@ -1097,7 +1269,11 @@
     "anaerobe": "-",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約2.0時間"
+    "half_life": "約2.0時間",
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "テイコプラニン",
@@ -1122,7 +1298,11 @@
     "anaerobe": "+",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約85時間（二相性：初期0.5時間/終末期85時間）"
+    "half_life": "約85時間（二相性：初期0.5時間/終末期85時間）",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "バンコマイシン",
@@ -1147,7 +1327,11 @@
     "anaerobe": "+",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約5.2時間"
+    "half_life": "約5.2時間",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "アズトレオナム",
@@ -1172,7 +1356,11 @@
     "anaerobe": "-",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約1.7時間（100分）"
+    "half_life": "約1.7時間（100分）",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "クリンダマイシン",
@@ -1197,7 +1385,11 @@
     "anaerobe": "+++",
     "atypical": "++",
     "evidence_url": null,
-    "half_life": "約0.5時間（30分）"
+    "half_life": "約0.5時間（30分）",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "スルファメトキサゾール・トリメトプリム",
@@ -1222,7 +1414,11 @@
     "anaerobe": "+",
     "atypical": "+",
     "evidence_url": null,
-    "half_life": "約12.0時間"
+    "half_life": "約12.0時間",
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ファロペネム",
@@ -1247,7 +1443,11 @@
     "anaerobe": "++",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約1.0時間（60分）"
+    "half_life": "約1.0時間（60分）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ホスホマイシン",
@@ -1272,7 +1472,11 @@
     "anaerobe": "△",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約1.5時間"
+    "half_life": "約1.5時間",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "リネゾリド",
@@ -1297,7 +1501,11 @@
     "anaerobe": "+",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約5時間"
+    "half_life": "約5時間",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "イソニアジド",
@@ -1322,7 +1530,11 @@
     "anaerobe": "-",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約1.0時間（60分）"
+    "half_life": "約1.0時間（60分）",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "エタンブトール",
@@ -1347,7 +1559,11 @@
     "anaerobe": "-",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約48時間"
+    "half_life": "約48時間",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "エンビオマイシン",
@@ -1372,7 +1588,11 @@
     "anaerobe": "-",
     "atypical": "++",
     "evidence_url": null,
-    "half_life": "約2.70時間"
+    "half_life": "約2.70時間",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ピラジナミド",
@@ -1397,7 +1617,11 @@
     "anaerobe": "-",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約12.3時間"
+    "half_life": "約12.3時間",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "リファブチン",
@@ -1422,7 +1646,11 @@
     "anaerobe": "-",
     "atypical": "+++",
     "evidence_url": null,
-    "half_life": "約20時間"
+    "half_life": "約20時間",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "リファンピシン",
@@ -1447,7 +1675,11 @@
     "anaerobe": "+",
     "atypical": "++",
     "evidence_url": null,
-    "half_life": "約4.5時間"
+    "half_life": "約4.5時間",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "メトロニダゾール",
@@ -1472,7 +1704,11 @@
     "anaerobe": "+++",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約8時間"
+    "half_life": "約8時間",
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "フィダキソマイシン",
@@ -1497,7 +1733,11 @@
     "anaerobe": "++",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約11.7時間（活性代謝産物OP-1118は約67時間）"
+    "half_life": "約11.7時間（活性代謝産物OP-1118は約67時間）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ダプトマイシン",
@@ -1522,7 +1762,11 @@
     "anaerobe": "+",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約8〜9時間"
+    "half_life": "約8〜9時間",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "コリスチン",
@@ -1547,7 +1791,11 @@
     "anaerobe": "-",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約14時間"
+    "half_life": "約14時間",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "セフィデロコル",
@@ -1572,7 +1820,11 @@
     "anaerobe": "-",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約2.7時間"
+    "half_life": "約2.7時間",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セフタロリン",
@@ -1597,7 +1849,11 @@
     "anaerobe": "+",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約2.7時間"
+    "half_life": "約2.7時間",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セフトロザン/タゾバクタム",
@@ -1622,7 +1878,11 @@
     "anaerobe": "-",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約3時間（セフトロザン）"
+    "half_life": "約3時間（セフトロザン）",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セフタジジム/アビバクタム",
@@ -1647,6 +1907,10 @@
     "anaerobe": "-",
     "atypical": "-",
     "evidence_url": null,
-    "half_life": "約2時間（セフタジジム成分）"
+    "half_life": "約2時間（セフタジジム成分）",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   }
 ]

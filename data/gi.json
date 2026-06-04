@@ -14,7 +14,11 @@
     "guideline_rank": "オピオイド誘発性便秘（OIC）の第一選択薬。がん疼痛・慢性疼痛でオピオイド使用中の便秘に特化した適応。一般的な便秘（非OIC）には効果が期待できない",
     "evidence": "COMPOSE-1/2試験（PMID:28902435）",
     "caution": "オピオイド離脱症状（腹痛・下痢・発汗・流涙）。消化管閉塞禁忌。消化管穿孔リスクのある患者に注意",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "リナクロチド",
@@ -31,7 +35,11 @@
     "guideline_rank": "慢性便秘症（CC）とIBS-C（便秘型過敏性腸症候群）の両方に保険適応。腹痛を伴う便秘には特に有用。食前投与厳守。6歳未満の小児には禁忌（動物実験で死亡）",
     "evidence": "PMID:22980216",
     "caution": "食後投与禁忌（重篤な下痢）。下痢（用量依存的）。6歳未満禁忌",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ルビプロストン",
@@ -48,7 +56,11 @@
     "guideline_rank": "MgO無効・使用困難な慢性便秘に有効。オピオイド誘発性便秘（ナルデメジンが第一選択）にも適応あり。悪心の副作用が多い（約30%）。妊婦禁忌",
     "evidence": "日本消化器学会 慢性便秘症診療ガイドライン2017",
     "caution": "悪心（最も多い副作用、約29〜30%）。食後投与で軽減可。妊婦禁忌（動物実験で催奇形性）。下痢",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "エロビキシバット",
@@ -65,7 +77,11 @@
     "guideline_rank": "慢性便秘症に有効。腹痛・腹部不快感の副作用が比較的多い。食前15分投与で効果的。MgO無効例の代替選択肢",
     "evidence": "PMID:29671977",
     "caution": "腹痛・腹部不快感（約18%）。下痢。胆道閉塞・胆汁うっ滞に注意",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ポリエチレングリコール",
@@ -82,7 +98,11 @@
     "guideline_rank": "欧米での慢性便秘第一選択薬。小児・高齢者にも安全。電解質異常・依存性なし。効果発現が遅いため即効性は期待できない。粉末を水に溶かして飲む必要がある（味への工夫が必要）",
     "evidence": "Cochrane Review（Lee-Robichaud 2010）",
     "caution": "高度腸閉塞・消化管穿孔禁忌。大量急速投与で電解質異常の可能性",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "酸化マグネシウム",
@@ -99,7 +119,11 @@
     "guideline_rank": "慢性便秘の標準治療薬。安価・安全・長期使用可能。腎機能低下例では高Mg血症（重篤例：心停止）に注意し定期的なMg値モニタリングが必要。PEG・新規作用機序薬への切り替えも選択肢",
     "evidence": "日本消化器学会 慢性便秘症診療ガイドライン2017",
     "caution": "腎機能低下例で高Mg血症（悪心・嘔吐・徐脈・心停止）。テトラサイクリン・ニューキノロンの吸収阻害（2時間以上あけて投与）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "センノシド",
@@ -116,7 +140,11 @@
     "guideline_rank": "一時的・急性便秘の第一選択。翌朝排便が必要な場面に有用。長期常用は禁忌で耐性形成後は非刺激性（MgO・PEG）に切り替える。術前腸管処置にも使用",
     "evidence": "日本消化器学会 慢性便秘症診療ガイドライン2017",
     "caution": "長期連用禁忌（依存性・習慣性・大腸メラノーシス）。低K血症。妊婦禁忌。腸閉塞・腸炎禁忌",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ビサコジル",
@@ -133,7 +161,11 @@
     "guideline_rank": "緊急時・検査前の排便誘発に坐薬が有用。経口は就寝前服用で翌朝排便。長期使用禁忌のため一時使用にとどめる",
     "evidence": "日本消化器学会 慢性便秘症診療ガイドライン2017",
     "caution": "長期連用禁忌。牛乳・制酸薬との同時服用禁忌（錠剤の腸溶コーティング溶解）。腸閉塞禁忌",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ピコスルファートナトリウム",
@@ -150,7 +182,11 @@
     "guideline_rank": "急性・一時的便秘の第一選択薬の1つ。内用液（1日10〜15滴）で用量調節しやすくセンノシドと並んで最も広く処方される刺激性下剤。長期連用禁忌のため、慢性便秘には非刺激性（MgO・PEG）への切り替えが原則",
     "evidence": "日本消化器学会 慢性便秘症診療ガイドライン2017",
     "caution": "長期連用禁忌（依存性・大腸メラノーシス・低K血症）。腸閉塞・腸炎禁忌。妊婦慎重投与（子宮収縮刺激の可能性）。服用量の個人差が大きい（1日5〜20滴で調節）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ラクツロース",
@@ -167,7 +203,11 @@
     "guideline_rank": "慢性便秘および肝性脳症の両方に保険適応を持つ唯一の下剤。肝疾患合併便秘に特に推奨。甘味があり服薬しやすい。肝性脳症予防・治療では1日3回に分割投与しアンモニア値をモニタリング",
     "evidence": "Cochrane Review（Gluud 2016・肝性脳症）; 日本消化器学会 慢性便秘症診療ガイドライン2017",
     "caution": "腹部膨満感・腹痛・下痢（腸内発酵ガス産生による）。糖尿病患者では血糖上昇（糖分含有）に注意。腸閉塞禁忌。ガラクトース血症禁忌",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ビフィズス菌",
@@ -183,7 +223,11 @@
     "guideline_rank": "下痢・便秘・腸炎後の腸内環境改善に広く使用。抗菌薬との同時投与では耐性製剤（ビオフェルミンR）が適切。副作用が少なく長期使用可能",
     "evidence": "日本消化器学会 腸内細菌・プロバイオティクスガイドライン",
     "caution": "免疫不全患者では菌血症の報告あり（稀）。抗菌薬と同時服用で効果減弱（非耐性製剤）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "耐性乳酸菌",
@@ -199,7 +243,11 @@
     "guideline_rank": "抗菌薬投与中・投与後の整腸目的で使用。抗菌薬と同時服用可能（耐性株）。通常の整腸剤（非耐性）は抗菌薬と同時投与すると死菌となり効果がない",
     "evidence": "Cochrane Review（Goldenberg 2017）",
     "caution": "製剤によって耐性スペクトルが異なるため処方された抗菌薬との組み合わせ確認が必要",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "酪酸菌（宮入菌）",
@@ -215,7 +263,11 @@
     "guideline_rank": "抗菌薬耐性（芽胞形成）のため抗菌薬との同時投与が可能。クロストリジウム・ディフィシル感染再発予防の補助に有用。過敏性腸症候群にも使用される",
     "evidence": "日本消化器病学会 IBSガイドライン2020",
     "caution": "特記すべき重篤な副作用は少ない。免疫不全患者では注意",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ラクトミン（乳酸菌）",
@@ -231,7 +283,11 @@
     "guideline_rank": "一般的な整腸目的に広く使用。市販薬としても入手可能。抗菌薬と同時投与不可（非耐性株）。高齢者・小児の慢性的な軟便・下痢に使いやすい",
     "evidence": "一般的な臨床使用経験に基づく",
     "caution": "抗菌薬と同時服用で効果なし（死菌になる）。重篤な副作用報告なし",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "リパクレオン（パンクレリパーゼ）",
@@ -246,7 +302,11 @@
     "guideline_rank": "慢性膵炎・膵外分泌不全の標準治療薬。腸溶性カプセルで膵酵素を十二指腸に届ける設計。用量は脂肪摂取量に応じて調節（脂肪1gあたりリパーゼ1000〜2000単位が目安）",
     "evidence": "日本膵臓学会 慢性膵炎診療ガイドライン2021",
     "caution": "豚由来製品のため豚肉アレルギーに注意。高用量で線維性大腸症（非常に稀）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ウルソデオキシコール酸",
@@ -261,7 +321,11 @@
     "guideline_rank": "PBCの標準治療薬（肝機能改善・線維化進展抑制）。コレステロール系胆石（石灰化なし・胆嚢収縮能あり）の溶解療法に使用。NASH・慢性肝炎にも保険適応あり",
     "evidence": "日本消化器病学会ガイドライン",
     "caution": "溶解療法は効果発現に6ヶ月〜2年必要。Ca²⁺含有胆石・胆嚢機能不全には無効。下痢（稀）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "リパーゼ・胆汁酸配合製剤",
@@ -277,7 +341,11 @@
     "guideline_rank": "高脂肪食・揚げ物食後の胃もたれ・脂肪便に適する。胆嚢切除後の胆汁分泌低下による脂肪消化不良を補う。重症膵外分泌不全には処方薬リパクレオンが必要。脂溶性ビタミン（A/D/E/K）吸収補助効果も期待できる",
     "evidence": "一般的な臨床使用経験",
     "caution": "下痢（脂肪分解過剰で過剰服用時）。胆石・胆嚢炎の活動期は注意",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "パンクレアチン配合製剤（バランス型）",
@@ -293,7 +361,11 @@
     "guideline_rank": "多様な食事内容による消化不良・食べ過ぎ全般に対応。胆嚢切除後（胆汁分泌低下）にも胆汁エキス配合製剤が使用される。膵外分泌不全（慢性膵炎等）には用量が不足するためリパクレオンが必要",
     "evidence": "一般的な臨床使用経験",
     "caution": "豚由来成分のためアレルギーに注意。膵外分泌不全には効果不十分（リパクレオンに移行）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "タカヂアスターゼ配合製剤",
@@ -309,7 +381,11 @@
     "guideline_rank": "炭水化物過多食・ご飯・デンプン食による消化不良・食後膨満感に適する。胃腸虚弱・高齢者の食欲低下時の消化補助として使用しやすい。脂肪・タンパク質消化にはほとんど効果がない",
     "evidence": "一般的な臨床使用経験",
     "caution": "重篤な副作用報告はほとんどない。アスペルギルスアレルギーに注意（稀）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ジメチコン（ガスコン）",
@@ -324,7 +400,11 @@
     "guideline_rank": "腹部膨満・ガス感の対症療法。内視鏡検査前の前処置（泡沫除去）に頻用。腸管からほぼ吸収されないため安全性が高い。根本治療ではなく症状緩和",
     "evidence": "内視鏡前処置における使用経験",
     "caution": "重篤な副作用なし。腸閉塞が原因の場合は適切な処置が必要",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "アプレピタント",
@@ -342,7 +422,11 @@
     "guideline_rank": "高度催吐性化学療法（シスプラチン等）の標準三剤制吐療法の1剤。遅発性CINVに特に有効。5-HT3拮抗薬・デキサメタゾンとの併用が必須。CYP3A4阻害薬のためデキサメタゾンの用量調節が必要",
     "evidence": "EMEND試験（PMID:12819290）",
     "caution": "CYP3A4強力阻害薬（ワルファリン・ピモジド等との相互作用に注意）。デキサメタゾンの用量を約50%に減量が必要（CYP3A4阻害で血中濃度上昇）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "グラニセトロン",
@@ -360,7 +444,11 @@
     "guideline_rank": "オンダンセトロンと同等の有効性を持つCINV標準薬。1日1回投与の利便性が高い。経皮製剤（グラニセトロン貼付剤）は嚥下困難患者に有用",
     "evidence": "MASCCガイドライン",
     "caution": "便秘（腸管蠕動抑制）。頭痛。QT延長（オンダンセトロンより頻度低い）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "オンダンセトロン",
@@ -378,7 +466,11 @@
     "guideline_rank": "CINV予防の標準薬。デキサメタゾン・アプレピタントとの三剤併用が高度催吐性化学療法の標準。遅発性CINV（24時間以降）には効果が弱まるため三剤併用が重要",
     "evidence": "MASCCガイドライン",
     "caution": "QT延長（4mg静注は安全・大量投与・心疾患例に注意）。頭痛・便秘（5-HT3遮断による腸管蠕動低下）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ドンペリドン",
@@ -396,7 +488,11 @@
     "guideline_rank": "メトクロプラミドの錐体外路症状リスクが懸念される場合の代替。パーキンソン病患者のドパミン作動薬による悪心に使用可能（中枢D2受容体には影響少）。QT延長に注意（特に高用量・高齢者）",
     "evidence": "日本消化器学会ガイドライン; PMID:11597199",
     "caution": "QT延長（心室性不整脈リスク：高用量・電解質異常・他QT延長薬との併用で増大）。プロラクチン増加。消化管出血・機械的閉塞禁忌",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "メトクロプラミド",
@@ -414,7 +510,11 @@
     "guideline_rank": "悪心・嘔吐の汎用制吐薬。化学療法誘発悪心より一般的な悪心・術後・つわりに適している。長期投与では錐体外路症状（遅発性ジスキネジア）リスクがあるため原則短期使用",
     "evidence": "日本がん支持療法学会 CINVガイドライン",
     "caution": "錐体外路症状（アカシジア・ジストニア・遅発性ジスキネジア）：長期投与禁忌。プロラクチン増加（乳汁分泌・無月経）。褐色細胞腫禁忌。消化管閉塞禁忌",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "プロクロルペラジン",
@@ -432,7 +532,11 @@
     "guideline_rank": "化学療法以外の多様な悪心（がん患者の全身症状・オピオイド誘発性・前庭性）に有用。5-HT3拮抗薬が主流の現在でも多因性悪心・緩和ケア領域での需要が高い",
     "evidence": "Cochrane Review; 緩和ケアガイドライン",
     "caution": "錐体外路症状（アカシジア・ジストニア）。鎮静（H1遮断）。QT延長。抗コリン作用（口渇・尿閉・眼圧上昇）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ロペラミド",
@@ -448,7 +552,11 @@
     "guideline_rank": "非感染性下痢の第一選択薬（旅行者下痢・化学療法誘発下痢・IBS-Dの急性期）。感染性下痢（血便・発熱・激しい腹痛を伴う場合）では絶対禁忌。原因不明の下痢では必ず感染症を除外する",
     "evidence": "Cochrane Review（de Bruyn 2000）",
     "caution": "感染性下痢禁忌（腸管麻痺・毒素血症が悪化）。腸閉塞禁忌。小児での大量投与で重篤な心毒性（QRS延長・心室性不整脈）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "タンニン酸アルブミン",
@@ -464,7 +572,11 @@
     "guideline_rank": "軽度〜中等度の下痢・腸炎の対症療法。特に小児の下痢に使用されやすい。強力な下痢止め作用は期待できないが安全性が高い",
     "evidence": "一般的な臨床使用経験",
     "caution": "鉄剤・消化酵素との同時服用で吸収を阻害する可能性",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "天然ケイ酸アルミニウム",
@@ -480,7 +592,11 @@
     "guideline_rank": "感染性・非感染性下痢の対症療法。食中毒・急性腸炎で毒素を吸着する目的にも使用。薬物中毒（一部）にも使われる。他の薬剤の吸収を阻害するため投与間隔をあける",
     "evidence": "一般的な臨床使用経験",
     "caution": "他薬剤の吸収阻害（2時間以上間隔をあけて投与）。腸閉塞禁忌",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ベルベリン",
@@ -496,7 +612,11 @@
     "guideline_rank": "軽度の感染性・非感染性下痢の対症療法。重症感染性下痢には適切な抗菌薬を選択する。整腸剤との併用も一般的",
     "evidence": "一般的な臨床使用経験",
     "caution": "重症感染性下痢には抗菌薬選択を優先。腸閉塞禁忌",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "コレスチラミン",
@@ -512,7 +632,11 @@
     "guideline_rank": "回腸切除後の胆汁酸性下痢に第一選択。C.ディフィシル感染の補助療法に使用されることもあるが抗菌薬（バンコマイシン等）を主体とする。脂質異常症（LDL低下）にも保険適応",
     "evidence": "日本消化器病学会ガイドライン",
     "caution": "多くの薬剤の吸収を阻害（2〜4時間間隔をあけて投与）。脂溶性ビタミン（A/D/E/K）吸収低下。長期使用で葉酸欠乏",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ボノプラザン",
@@ -529,7 +653,11 @@
     "guideline_rank": "ピロリ除菌の標準レジメン（除菌率90%以上：PPIベースより優位）。重症逆流性食道炎・難治性GERDの第一選択。NSAIDによる胃潰瘍予防にも強力。PPIより夜間酸分泌抑制が格段に優れる",
     "evidence": "PMID:25643041; ピロリ除菌試験（PMID:28779714）",
     "caution": "高ガストリン血症（長期投与）。カルボナート・PPI類と同様の制酸薬相互作用。CYP3A4基質",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "エソメプラゾール",
@@ -546,7 +674,11 @@
     "guideline_rank": "逆流性食道炎・消化性潰瘍・NSAID潰瘍予防の標準PPI。CYP2C19代謝の個人差が少なく安定した効果。P-CAB（ボノプラザン）への切り替えは夜間症状・難治性GERDに有効",
     "evidence": "SYMPATHY試験（PMID:9823677）",
     "caution": "マグネシウム低下（長期使用）。C.ディフィシル感染リスク軽度増加。鉄・B12・Ca²⁺吸収低下（長期使用）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ランソプラゾール",
@@ -563,7 +695,11 @@
     "guideline_rank": "逆流性食道炎・消化性潰瘍の標準治療薬。OD錠の汎用性が高い。ピロリ除菌レジメン（PAC法）に使用可（ボノプラザンベースより除菌率はやや低い）",
     "evidence": "日本消化器病学会 消化性潰瘍ガイドライン2020",
     "caution": "長期使用でのマグネシウム低下・C.ディフィシル感染リスク増加（PPIクラス共通）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ラベプラゾール",
@@ -580,7 +716,11 @@
     "guideline_rank": "CYP2C19遺伝子多型の影響を受けにくいため、他PPIで効果不十分な場合の代替として有用。ピロリ除菌にも使用可。日本人はPM（低代謝型）の割合が約20%と高いため意識が必要",
     "evidence": "日本消化器病学会ガイドライン",
     "caution": "PPIクラス共通の長期使用リスク（Mg低下・C.ディフィシル・Ca²⁺吸収低下）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ファモチジン",
@@ -597,7 +737,11 @@
     "guideline_rank": "胃潰瘍・十二指腸潰瘍・GERD（軽症）の標準薬。速効性があり症状出現時の頓用にも使用可能。PPIの夜間酸ブレークスルーへの就寝前H2ブロッカー追加が有効。腎機能低下で用量調節が必要",
     "evidence": "日本消化器病学会 消化性潰瘍ガイドライン2020",
     "caution": "腎機能低下で用量調節必要（腎排泄型）。長期使用で耐性形成（2〜4週間で効果減弱：下方制御）。肝機能障害（稀）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "スクラルファート",
@@ -614,7 +758,11 @@
     "guideline_rank": "消化性潰瘍の治療（特に十二指腸潰瘍）・NSAID潰瘍予防に有効。酸分泌抑制薬（PPI）が主流の現在でも、PPIと異なる機序で補完的に使用される。腎機能低下例では長期使用でAl蓄積に注意",
     "evidence": "潰瘍治癒試験（PMID:3059054）",
     "caution": "Al蓄積（腎機能低下患者での長期使用禁忌）。他薬剤の吸収阻害（2時間以上間隔をあけて投与）。便秘",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "レバミピド",
@@ -631,7 +779,11 @@
     "guideline_rank": "NSAID潰瘍予防・胃炎・消化性潰瘍の粘膜保護に使用。PPI・H2ブロッカーと比較して酸分泌抑制はないが粘膜保護の観点から補完的に用いられる。ピロリ除菌補助や口内炎（粘膜障害）にも適応あり",
     "evidence": "PMID:9203905",
     "caution": "重篤な副作用は少ない。便秘・下痢（稀）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "テプレノン",
@@ -648,7 +800,11 @@
     "guideline_rank": "急性胃炎・慢性胃炎・消化性潰瘍の粘膜保護に使用。レバミピドと同様に酸分泌抑制薬との併用で相補的な胃保護を提供する",
     "evidence": "日本消化器病学会ガイドライン",
     "caution": "重篤な副作用は少ない。GOT/GPT上昇（稀な肝機能障害）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ポラプレジンク",
@@ -665,7 +821,11 @@
     "guideline_rank": "胃潰瘍・胃炎・口内炎（亜鉛欠乏に伴う粘膜障害）に有効。亜鉛欠乏（味覚障害・皮膚症状）の補充療法としても使用される。PPI等と組み合わせて相補的な粘膜保護を提供",
     "evidence": "PMID:9438584",
     "caution": "銅欠乏（亜鉛の過剰摂取で銅吸収阻害）。テトラサイクリン・ニューキノロンの吸収阻害（2時間以上間隔をあけて投与）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "アコチアミド",
@@ -681,7 +841,11 @@
     "guideline_rank": "FD（機能性ディスペプシア）の日本初の適応薬（世界初のFD専用薬）。ピロリ除菌後も症状が残る場合に適応。PDS（食後愁訴症候群）型に特に有効。H.pylori除菌を先行してから開始する",
     "evidence": "日本国内P3試験（PMID:22982483）",
     "caution": "下痢（ACh増加による）。PPIやH2ブロッカー（EPS型）との使い分けが必要",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "イトプリド",
@@ -697,7 +861,11 @@
     "guideline_rank": "FDのPDS（食後愁訴症候群）型に使用される。中枢性副作用（錐体外路症状）が少なく使いやすい。アコチアミド（アコファイド）が日本初のFD保険適応薬として主流になりつつある",
     "evidence": "PMID:9723956",
     "caution": "プロラクチン上昇（メトクロプラミドより少ない）。QT延長（稀）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ラモセトロン",
@@ -713,7 +881,11 @@
     "guideline_rank": "IBS-D（下痢型）男性の標準治療薬。女性は便秘に傾きやすいため特に低用量（2.5μg）から開始。虚血性大腸炎・重篤な便秘のリスクがあるため定期的な観察が必要",
     "evidence": "日本国内P3試験（PMID:16863569）",
     "caution": "重篤な便秘・腸閉塞（便秘に傾き過ぎた場合）。虚血性大腸炎（稀）。女性では低用量（2.5μg）から開始",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "トリメブチン",
@@ -729,7 +901,11 @@
     "guideline_rank": "IBS全型（下痢型・便秘型・混合型）とFDに広く使用可能な万能型腸管調節薬。症状に合わせた特化型薬剤（ラモセトロン等）より効果は劣るが副作用が少なく広い適応をカバーする",
     "evidence": "Cochrane Review（Poynard 2001）",
     "caution": "重篤な副作用は少ない。口渇・便秘（稀）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ポリカルボフィルカルシウム",
@@ -745,7 +921,11 @@
     "guideline_rank": "IBS全型に対応できる安全性の高い薬剤。食物繊維に近い作用機序で副作用が少ない。慢性便秘の補助療法にも使用可能。イリボー（IBS-D特化）より効果は穏やかだが安全性が高い",
     "evidence": "PMID:11502357",
     "caution": "腸閉塞禁忌（腸管内で膨潤するため）。十分な水分摂取が必要",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "メペンゾラート",
@@ -761,7 +941,11 @@
     "guideline_rank": "腸管スパスム性の腹痛・下痢に有効。症状の急性期緩和に使用されやすい。長期連用では便秘・耐性に注意。現在はIBS特化薬（ラモセトロン等）や腸管調節薬（トリメブチン）が主流",
     "evidence": "一般的な臨床使用経験",
     "caution": "便秘（腸管蠕動抑制）。緑内障禁忌（眼圧上昇）。前立腺肥大禁忌（尿閉）。口渇・眼乾燥（抗コリン副作用）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "モサプリド",
@@ -777,7 +961,11 @@
     "guideline_rank": "FD（特にPDS型・食後愁訴症候群）・胃排出遅延の標準治療薬として日本で最も広く処方される消化管運動促進薬の1つ。錐体外路症状・QT延長リスクがなく安全性が高い。保険上は慢性胃炎の適応。アコチアミドはFD保険適応薬として並行使用される",
     "evidence": "PMID:10379476; 日本消化器学会FDガイドライン2021",
     "caution": "重篤な肝障害では血中濃度上昇に注意（慎重投与）。効果が限定的な場合はアコチアミドへの切り替えを検討",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "メサラジン（ペンタサ）",
@@ -795,7 +983,11 @@
     "guideline_rank": "小腸〜大腸に病変が広がるUCおよびCD（小腸型）に適する唯一の5-ASA製剤。pH依存型（アサコール等）は小腸では放出されないためペンタサが必須の場面がある。最高用量4g/日（顆粒）で寛解導入・維持",
     "evidence": "日本消化器病学会 IBDガイドライン2020",
     "caution": "間質性腎炎（稀だが重篤・定期的腎機能モニタリング必要）。重篤な副作用は少ない。アスピリン過敏症（稀）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "メサラジン（アサコール）",
@@ -813,7 +1005,11 @@
     "guideline_rank": "UC大腸型（空腸病変なし）に適する。大腸への薬剤集中効率が高く大腸UC治療の主力5-ASA。小腸病変があるCD・ペンタサ適応例には適さない。1日3回投与がやや煩雑。最高用量2400〜3600mg/日",
     "evidence": "日本消化器病学会 IBDガイドライン2020; Schroeder 1987 NEJM",
     "caution": "間質性腎炎（定期的腎機能モニタリング）。pH7未満の環境（胃液・腸液）では溶解しない",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "メサラジン（リアルダ）",
@@ -831,7 +1027,11 @@
     "guideline_rank": "1日1回投与（2〜4錠/日）で大腸全域をカバーする5-ASAの最新製剤。服薬回数が少なく長期維持療法のアドヒアランス維持に優れる。アサコール比で同等の有効性・優れた利便性。小腸病変（CD）には適さない",
     "evidence": "ASCEND試験（PMID:17630600）; 日本消化器病学会 IBDガイドライン2020",
     "caution": "間質性腎炎（定期的腎機能モニタリング）。食後投与推奨（空腹時ではMMXコーティングの溶解タイミングが変化する可能性）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "サラゾスルファピリジン",
@@ -849,7 +1049,11 @@
     "guideline_rank": "メサラジン製剤が主流の現在でも関節炎合併UCに有用（免疫調節作用）。スルファピリジンによる副作用（葉酸欠乏・男性不妊・溶血性貧血・アレルギー）が多いため現在は2番手。低コスト。葉酸補充が推奨される",
     "evidence": "Baron 1962 BMJ; 日本消化器病学会 IBDガイドライン2020",
     "caution": "スルファピリジン副作用：葉酸欠乏（巨赤芽球性貧血）・男性不妊（精子減少）・溶血性貧血・Stevens-Johnson症候群。スルファ系アレルギー禁忌。葉酸補充（1mg/日）が推奨",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ウステキヌマブ",
@@ -866,7 +1070,11 @@
     "guideline_rank": "抗TNFα製剤失効・不耐容のCD・UCの第二線生物学的製剤。安全性プロファイルが抗TNFより良好（感染リスク低）。抗薬剤抗体産生が少なく長期安定性が高い",
     "evidence": "UNIFI UC試験（NEJM 2019 PMID:31553940）",
     "caution": "感染リスク（抗TNFより低いが結核スクリーニング必要）。活動性感染症禁忌",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "リサンキズマブ",
@@ -883,7 +1091,11 @@
     "guideline_rank": "抗TNF失効・不耐容のCD・UCへの選択肢。ウステキヌマブより選択性が高くIL-12経路（Th1免疫）を温存するため感染防御能への影響が理論的に少ない。ADVANCE試験（CD）で抗TNF失効例でも高い寛解率を示した。日本ではCD2023年・UC2024年承認",
     "evidence": "ADVANCE/MOTIVATE CD試験（PMID:34774328）",
     "caution": "投与前感染症スクリーニング（結核・B型肝炎）必須。活動性感染症禁忌。活動性TB禁忌",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ベドリズマブ",
@@ -900,7 +1112,11 @@
     "guideline_rank": "抗TNF失効・不耐容例または感染ハイリスク例（高齢・COPD・B型肝炎既往）に特に有用。腸管局所選択性により全身感染リスクが低い。効果発現がやや遅い（6〜14週）",
     "evidence": "GEMINI 1 UC試験（PMID:23964932）",
     "caution": "活動性感染症禁忌。進行性多巣性白質脳症（PML）リスクは非常に低い（腸管選択的）。輸注反応（稀）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "インフリキシマブ",
@@ -917,7 +1133,11 @@
     "guideline_rank": "中等症〜重症UC・CDのステロイド難治・依存例の標準生物学的製剤。投与前に必ず結核スクリーニング（胸部X線・QFT/T-SPOT）・B型肝炎HBs抗原確認が必須。キメラ型のため抗体産生によるADAリスクあり（AZAの併用で低減）",
     "evidence": "ACT1/ACT2 UC試験（PMID:15765826）",
     "caution": "投与前結核スクリーニング必須。活動性感染症禁忌。うっ血性心不全（NYHA III/IV）禁忌。脱髄疾患悪化。抗薬剤抗体（ADA）形成による効果減弱",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "アダリムマブ",
@@ -934,7 +1154,11 @@
     "guideline_rank": "インフリキシマブと同等の有効性を持つ抗TNFα製剤。完全ヒト型のためADA産生リスクが低く長期安定性が高い。皮下注自己投与（2週間に1回）で外来管理に優れる。投与前に必ず結核スクリーニング・B型肝炎HBs抗原確認が必須。関節症状を伴うIBDにも適応",
     "evidence": "CLASSIC I CD試験（PMID:12867484）",
     "caution": "投与前結核スクリーニング必須。活動性感染症禁忌。うっ血性心不全（NYHA III/IV）禁忌。脱髄疾患悪化。注射部位反応",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "アザチオプリン",
@@ -951,7 +1175,11 @@
     "guideline_rank": "ステロイド依存性UC・CDの維持療法に使用。開始前にNUDT15遺伝子検査が推奨（骨髄抑制リスク評価）。効果発現まで3〜6ヶ月が必要（急性期には使用しない）。生物学的製剤との併用で免疫原性低下効果あり",
     "evidence": "Cochrane Review（Timmer 2012）",
     "caution": "骨髄抑制（白血球減少・貧血：NUDT15変異例で重篤）。定期的な血球数モニタリング必要。悪性リンパ腫リスク増加（長期使用）。感染症（帯状疱疹・ニューモシスチス肺炎）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ブデソニド",
@@ -968,7 +1196,11 @@
     "guideline_rank": "CD回腸型・上行結腸型の寛解導入に第一選択（プレドニゾロンの代替として）。全身ステロイド副作用が少ないため高齢者・糖尿病・骨粗しょう症患者に適している。維持療法としての長期使用は推奨されない",
     "evidence": "Cochrane Review（Sherlock 2009）",
     "caution": "CYP3A4阻害薬（アゾール系抗真菌薬・グレープフルーツ）との併用でステロイド過剰（禁忌）。長期使用で副腎抑制・骨密度低下",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "プレドニゾロン（消化器）",
@@ -985,7 +1217,11 @@
     "guideline_rank": "UC・CD急性増悪（中等症〜重症）の寛解導入に第一選択。寛解達成後は漸減中止し維持療法（5-ASA・免疫調節薬・生物学的製剤）に移行。ステロイド依存例では免疫調節薬（AZA）・生物学的製剤を検討",
     "evidence": "日本消化器病学会 IBDガイドライン",
     "caution": "感染症増悪（結核・ニューモシスチス肺炎・ヘルペス再活性化）。骨粗しょう症・大腿骨頭壊死。高血糖・高血圧・浮腫。精神症状（ステロイド精神病）。副腎皮質機能抑制（急に中断禁止）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "トファシチニブ",
@@ -1002,7 +1238,11 @@
     "guideline_rank": "抗TNF無効・不耐容のUCに経口投与が可能な初の低分子薬。50歳以上+リスク因子（喫煙・心血管既往）がある場合は慎重投与・帯状疱疹ワクチン接種を推奨",
     "evidence": "OCTAVE試験（NEJM 2017 PMID:28813225）",
     "caution": "帯状疱疹リスク増加（生物学的製剤より高い）。心血管イベント・静脈血栓塞栓症リスク。悪性腫瘍リスク。活動性感染症禁忌",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ウパダシチニブ",
@@ -1019,7 +1259,11 @@
     "guideline_rank": "JAK1選択性によりトファシチニブより改善された安全性プロファイル。UCとクローン病の両方に適応（2021年UC・2023年CD承認）。抗TNF・生物学的製剤不応例にも有効",
     "evidence": "U-ACHIEVE試験（NEJM 2019 PMID:31722157）",
     "caution": "帯状疱疹リスク（接種推奨）。心血管・静脈血栓塞栓症リスク評価。活動性感染症禁忌。妊婦禁忌",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "フィルゴチニブ",
@@ -1037,7 +1281,11 @@
     "guideline_rank": "中等症〜重症UCで生物学的製剤の効果不十分・不耐容例の経口代替薬。1日1回経口で投薬管理が容易。トファシチニブ（汎JAK阻害）より心血管・血栓リスクが低い可能性。帯状疱疹ワクチン接種推奨",
     "evidence": "SELECTION試験（NEJM 2021 PMID:33567017）",
     "caution": "感染症リスク（帯状疱疹・結核・日和見感染）→投与前スクリーニング必須。妊婦禁忌。血栓塞栓症リスク（DVT・PE）。悪性腫瘍リスク（長期投与）。生ワクチン禁忌",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ミリキズマブ",
@@ -1055,7 +1303,11 @@
     "guideline_rank": "2023年6月日本承認（潰瘍性大腸炎）・2025年3月27日クローン病適応追加。抗TNF薬無効・不耐容例でも有効。IL-23 p19選択的中和により感染リスクが抗TNF薬より低いとされる。導入はIV点滴（4週ごと3回）、維持はSC皮下注（4週ごと）に切り替え",
     "evidence": "LUCENT-1/2試験（NEJM 2023 PMID:36812437）",
     "caution": "感染症リスク（比較的低い）。結核・B型肝炎スクリーニング必須。注射部位反応（維持療法SC時）。悪性腫瘍リスクの長期評価継続中",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "六君子湯",
@@ -1071,7 +1323,11 @@
     "guideline_rank": "FD（機能性ディスペプシア）に対しグレリン経路を介した独自の作用機序。アコチアミドが無効・使用困難な場合の代替。食欲不振・体重減少を伴う高齢者FDに特に有用。化学療法食欲不振にも保険適応",
     "evidence": "FD試験（PMID:23382220）; 化学療法誘発食欲不振試験（PMID:22955268）",
     "caution": "甘草含有（偽アルドステロン症：低K血症・高血圧・浮腫）。消化器症状（稀に下痢）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": null,
+    "lactation": null,
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "半夏瀉心湯",
@@ -1087,7 +1343,11 @@
     "guideline_rank": "化学療法誘発口腔粘膜炎（口内炎）の予防・治療にエビデンスあり（イリノテカン・5-FU）。急性胃腸炎後の症状残存・FD・IBS混合型にも有用。下痢・嘔吐両方に対応できる",
     "evidence": "化学療法口内炎試験（PMID:21296527）; 日本がんサポーティブケア学会ガイドライン",
     "caution": "甘草含有（偽アルドステロン症：長期大量投与で低K血症）。間質性肺炎（稀・黄芩含有漢方薬共通）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": null,
+    "lactation": null,
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "大建中湯",
@@ -1103,7 +1363,11 @@
     "guideline_rank": "術後腸閉塞予防として日本で広く使用（腹部手術後の腸管運動回復を促進）。慢性腸閉塞・腹部手術後の腸管管理に有効。EBMとして手術後腸管運動促進のエビデンスが蓄積されている",
     "evidence": "PMID:11459338; 日本消化器外科学会ガイドライン",
     "caution": "蠕動亢進による腹痛（特に機械的腸閉塞では禁忌）。甘草含有なし（偽アルドステロン症なし）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": null,
+    "lactation": null,
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "桂枝加芍薬湯",
@@ -1119,7 +1383,11 @@
     "guideline_rank": "IBS（混合型・便秘型）に適した漢方薬。腸管スパスムによる腹痛・便通異常に有効。IBS治療ガイドラインで漢方として推奨。桂枝加芍薬大黄湯（大黄追加）は便秘型により有効",
     "evidence": "日本消化器病学会 IBS診療ガイドライン2020",
     "caution": "甘草含有（偽アルドステロン症）。桂皮アレルギー（稀）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": null,
+    "lactation": null,
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "麻子仁丸",
@@ -1135,7 +1403,11 @@
     "guideline_rank": "高齢者・産後の習慣性便秘に適した穏やかな下剤漢方薬。大黄含有だが少量のため刺激が弱く依存性が生じにくい。ポリエチレングリコール・MgO等の西洋薬との併用も可能",
     "evidence": "日本消化器学会ガイドライン; 一般的な臨床使用経験",
     "caution": "大黄含有（過剰服用で腹痛・下痢）。妊婦禁忌（子宮収縮作用）。甘草少量含有（偽アルドステロン症リスクは低いが長期大量投与に注意）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": null,
+    "lactation": null,
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "防風通聖散",
@@ -1151,7 +1423,11 @@
     "guideline_rank": "肥満・メタボリックシンドロームを伴う実証の便秘に有効。BMI高値・脂肪肝・内臓脂肪型肥満の患者に使用。虚証（体力低下）への使用は禁忌（著しい腹瀉・脱力を招く）",
     "evidence": "肥満試験（PMID:20817924）",
     "caution": "甘草・麻黄含有（偽アルドステロン症・交感神経刺激：高血圧悪化・不眠）。虚証禁忌（体力低下者に投与すると著しい下痢・衰弱）。18種類の生薬配合で多数の薬物相互作用リスク",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": null,
+    "lactation": null,
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "オザニモド",
@@ -1169,7 +1445,11 @@
     "guideline_rank": "2024年AGAガイドラインにて、バイオ製剤未治療の中等症〜重症潰瘍性大腸炎に対する寛解導入療法の第一選択薬の一つとして、リサンキズマブと並び最高位に推奨されている。",
     "evidence": "True North試験（NEJM 2021 PMID:34587383）",
     "evidence_url": null,
-    "caution": "主な副作用は徐脈、房室ブロック、肝機能酵素上昇、黄斑浮腫、感染症リスク増大。投与開始初期に心拍数低下が生じる可能性があるため、心血管疾患患者への投与には注意が必要。また、リンパ球減少に伴う日和見感染症に留意し、投与開始前および期間中に適切なモニタリングを行うこと。"
+    "caution": "主な副作用は徐脈、房室ブロック、肝機能酵素上昇、黄斑浮腫、感染症リスク増大。投与開始初期に心拍数低下が生じる可能性があるため、心血管疾患患者への投与には注意が必要。また、リンパ球減少に伴う日和見感染症に留意し、投与開始前および期間中に適切なモニタリングを行うこと。",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "エトラシモド",
@@ -1187,6 +1467,10 @@
     "guideline_rank": "2025年日本承認（ファイザー）。潰瘍性大腸炎の経口S1P受容体調節薬としてオザニモドに続く選択肢。生物学的製剤不応・不耐患者やJAK阻害薬が使えない患者に有用",
     "evidence": "Sandborn et al.（Lancet 2023 PMID:36924783）",
     "evidence_url": null,
-    "caution": "感染症リスク（リンパ球減少→帯状疱疹・日和見感染）。投与前：VZVワクチン接種・心電図確認推奨。黄斑浮腫（視力変化時は眼科受診）。妊娠中は禁忌（ヒト胎児毒性）。投与中止後も数週間リンパ球減少が持続"
+    "caution": "感染症リスク（リンパ球減少→帯状疱疹・日和見感染）。投与前：VZVワクチン接種・心電図確認推奨。黄斑浮腫（視力変化時は眼科受診）。妊娠中は禁忌（ヒト胎児毒性）。投与中止後も数週間リンパ球減少が持続",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   }
 ]

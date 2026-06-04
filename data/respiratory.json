@@ -18,7 +18,11 @@
     "guideline_rank": "GINA・GOLD：発作時の第一選択。頻回使用はコントロール不良のサイン。",
     "evidence": "O'Byrne PM, et al. N Engl J Med. 2001. PMID: 11547741",
     "evidence_url": null,
-    "caution": "頻回使用で低K血症・頻脈。喘息死リスク増加の報告あり。定期使用は避ける。"
+    "caution": "頻回使用で低K血症・頻脈。喘息死リスク増加の報告あり。定期使用は避ける。",
+    "pregnancy": "△",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "プロカテロール",
@@ -39,7 +43,11 @@
     "guideline_rank": "国内ガイドライン：発作時の第一選択。小児・高齢者にはネブライザーが使いやすい。",
     "evidence": null,
     "evidence_url": null,
-    "caution": "頻脈・動悸・低K血症。妊婦への使用は慎重に。"
+    "caution": "頻脈・動悸・低K血症。妊婦への使用は慎重に。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "サルメテロール",
@@ -60,7 +68,11 @@
     "guideline_rank": "GINA：LABA単独使用禁忌。必ずICSと併用。アドエアとしてICS/LABA配合剤が主流。",
     "evidence": "Greening AP et al.（Lancet 1994 PMID:7913157）",
     "evidence_url": null,
-    "caution": "単独使用で喘息死リスク増加。必ずICSと併用。β遮断薬との併用注意。"
+    "caution": "単独使用で喘息死リスク増加。必ずICSと併用。β遮断薬との併用注意。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ホルモテロール",
@@ -81,7 +93,11 @@
     "guideline_rank": "GINA：SMART療法の中心薬。喘息発作時もシムビコートをそのまま追加吸入できる。",
     "evidence": "Pauwels RA et al.（FACET試験 N Engl J Med 1997 PMID:9358126）",
     "evidence_url": null,
-    "caution": "単独使用禁忌。SMART療法では1日最大12吸入まで。低K血症・頻脈。"
+    "caution": "単独使用禁忌。SMART療法では1日最大12吸入まで。低K血症・頻脈。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "インダカテロール",
@@ -102,7 +118,11 @@
     "guideline_rank": "GOLD：COPD安定期の維持療法。喘息には単独使用不可。",
     "evidence": "Dahl R et al.（INHANCE試験 Eur Respir J 2010 PMID:20530003）",
     "evidence_url": null,
-    "caution": "喘息単独使用禁忌。低K血症・頻脈・QT延長。"
+    "caution": "喘息単独使用禁忌。低K血症・頻脈・QT延長。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "チオトロピウム",
@@ -123,7 +143,11 @@
     "guideline_rank": "GOLD：COPD安定期の第一選択。吸気力低下時はSMI（レスピマット）を選択。",
     "evidence": "Casaburi R, et al. Eur Respir J. 2002. PMID: 11853102",
     "evidence_url": null,
-    "caution": "閉塞隅角緑内障・前立腺肥大に注意。口腔乾燥・尿閉。SMIは手技が簡便。"
+    "caution": "閉塞隅角緑内障・前立腺肥大に注意。口腔乾燥・尿閉。SMIは手技が簡便。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "グリコピロニウム",
@@ -144,7 +168,11 @@
     "guideline_rank": "GOLD：COPD安定期維持療法。ウルティブロ（LAMA/LABA配合）の成分薬。",
     "evidence": "D'Urzo A et al.（GLOW1試験 Respir Med 2011 PMID:21764278）",
     "evidence_url": null,
-    "caution": "緑内障・前立腺肥大に注意。口腔乾燥・尿閉。"
+    "caution": "緑内障・前立腺肥大に注意。口腔乾燥・尿閉。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ウメクリジニウム",
@@ -165,7 +193,11 @@
     "guideline_rank": "GOLD：COPD安定期。アノーロ（LAMA/LABA）・テリルジー（3剤）の成分薬。",
     "evidence": "Donohue JF et al.（Eur Respir J 2013 PMID:23520323）",
     "evidence_url": null,
-    "caution": "緑内障・前立腺肥大に注意。口腔乾燥。"
+    "caution": "緑内障・前立腺肥大に注意。口腔乾燥。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "イプラトロピウム",
@@ -186,7 +218,11 @@
     "guideline_rank": "GOLD：急性増悪時のSABA+SAMA（ネブライザー）で有効。維持療法ではLAMAが主流でSAMAは補助的位置づけ",
     "evidence": "Combivent Inhalation Aerosol Study Group（Chest 1994 PMID:8181328）",
     "evidence_url": null,
-    "caution": "緑内障（閉塞隅角）・前立腺肥大に注意。口腔乾燥・尿閉。高用量で心拍数増加"
+    "caution": "緑内障（閉塞隅角）・前立腺肥大に注意。口腔乾燥・尿閉。高用量で心拍数増加",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ブデソニド",
@@ -207,7 +243,11 @@
     "guideline_rank": "GINA：軽症持続型以上の第一選択ICS。妊婦にも使用可能な安全性データあり。",
     "evidence": "Pauwels RA et al.（START試験 Lancet 2003 PMID:12672309）",
     "evidence_url": null,
-    "caution": "吸入後うがい必須（口腔カンジダ・嗄声予防）。全身ステロイド副作用は少ないが長期高用量で注意。"
+    "caution": "吸入後うがい必須（口腔カンジダ・嗄声予防）。全身ステロイド副作用は少ないが長期高用量で注意。",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "フルチカゾンプロピオン酸",
@@ -228,7 +268,11 @@
     "guideline_rank": "GINA：ブデソニドと同等の第一選択ICS。アドエアとしてICS/LABA配合が主流。",
     "evidence": "Adams NP et al.（Cochrane Database Syst Rev 2008 PMID:18843682）",
     "evidence_url": null,
-    "caution": "吸入後うがい必須。MDIとDPIで力価換算が異なる（切り替え時注意）。"
+    "caution": "吸入後うがい必須。MDIとDPIで力価換算が異なる（切り替え時注意）。",
+    "pregnancy": "◎",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "シクレソニド",
@@ -249,7 +293,11 @@
     "guideline_rank": "GINA：1日1回投与で服薬アドヒアランス向上。うがい不要が利点だが、十分なうがいを推奨する施設もあり。",
     "evidence": "Bateman ED et al.（J Allergy Clin Immunol 2008 PMID:18387373）",
     "evidence_url": null,
-    "caution": "プロドラッグのため口腔カンジダリスクは低め。吸入技術の確認が重要。"
+    "caution": "プロドラッグのため口腔カンジダリスクは低め。吸入技術の確認が重要。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ブデソニド/ホルモテロール",
@@ -270,7 +318,11 @@
     "guideline_rank": "GINA：中等症喘息のSMART療法の中心薬。発作時もシムビコートをそのまま追加吸入。",
     "evidence": "O'Byrne PM, et al. Am J Respir Crit Care Med. 2005. PMID: 15764728",
     "evidence_url": null,
-    "caution": "SMART療法は1日最大12吸入まで。口腔カンジダ・嗄声に注意。吸入後うがい。"
+    "caution": "SMART療法は1日最大12吸入まで。口腔カンジダ・嗄声に注意。吸入後うがい。",
+    "pregnancy": "◎",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "フルチカゾン/サルメテロール",
@@ -291,7 +343,11 @@
     "guideline_rank": "GINA・GOLD：標準的ICS/LABA配合剤。頓用不可のためSABAの手持ちを必ず確保。",
     "evidence": "Calverley PM, et al. N Engl J Med. 2007. PMID: 17314337",
     "evidence_url": null,
-    "caution": "頓用不可。SABA別途必須。口腔カンジダ・嗄声に注意。吸入後うがい。"
+    "caution": "頓用不可。SABA別途必須。口腔カンジダ・嗄声に注意。吸入後うがい。",
+    "pregnancy": "◎",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "フルチカゾンフランカルボン酸/ビランテロール",
@@ -312,7 +368,11 @@
     "guideline_rank": "GINA・GOLD：1日1回でアドヒアランス向上。テリルジーへの移行が容易。",
     "evidence": "Vestbo J et al.（SUMMIT試験 N Engl J Med 2016 PMID:27181016）",
     "evidence_url": null,
-    "caution": "口腔カンジダ・嗄声に注意。吸入後うがい。"
+    "caution": "口腔カンジダ・嗄声に注意。吸入後うがい。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "フルチカゾン/ホルモテロール",
@@ -333,7 +393,11 @@
     "guideline_rank": "GINA：DPI使用困難・吸気力低下患者へのICS/LABA。シムビコートのようなSMART療法不可（維持専用）。スペーサー併用可。2012年日本承認",
     "evidence": "Bateman ED et al. J Asthma 2012",
     "evidence_url": null,
-    "caution": "SMART療法不可（シムビコートと混同注意）。口腔カンジダ・嗄声。吸入後うがい。"
+    "caution": "SMART療法不可（シムビコートと混同注意）。口腔カンジダ・嗄声。吸入後うがい。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "チオトロピウム/オロダテロール",
@@ -354,7 +418,11 @@
     "guideline_rank": "GOLD：LAMA単独で不十分なCOPDへのステップアップ。SMIで吸気力が弱い患者にも使いやすい。",
     "evidence": "Buhl R, et al. Eur Respir J. 2015. PMID: 25882805",
     "evidence_url": null,
-    "caution": "緑内障・前立腺肥大に注意。口腔乾燥。"
+    "caution": "緑内障・前立腺肥大に注意。口腔乾燥。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "グリコピロニウム/インダカテロール",
@@ -375,7 +443,11 @@
     "guideline_rank": "GOLD：LAMA単独で不十分なCOPDへのステップアップ。",
     "evidence": "Mahler DA, et al. Thorax. 2012. PMID: 22496069",
     "evidence_url": null,
-    "caution": "緑内障・前立腺肥大に注意。頻脈・低K血症。"
+    "caution": "緑内障・前立腺肥大に注意。頻脈・低K血症。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ウメクリジニウム/ビランテロール",
@@ -396,7 +468,11 @@
     "guideline_rank": "GOLD：LAMA単独不十分なCOPDへのステップアップ。ICS追加時はテリルジー（同デバイス）へ。",
     "evidence": "Donohue JF et al.（ENLIGHTEN試験 Lancet Respir Med 2013 PMID:24461802）",
     "evidence_url": null,
-    "caution": "緑内障・前立腺肥大に注意。頻脈・低K血症。"
+    "caution": "緑内障・前立腺肥大に注意。頻脈・低K血症。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "フルチカゾン/ビランテロール/ウメクリジニウム",
@@ -417,7 +493,11 @@
     "guideline_rank": "GOLD：LAMA/LABA単独で増悪繰り返すCOPDへのステップアップ。喘息でもStep 4以上に使用。",
     "evidence": "Lipson DA, et al. N Engl J Med. 2018. PMID: 29668352",
     "evidence_url": null,
-    "caution": "口腔カンジダ・嗄声に注意。吸入後うがい。肺炎リスクの増加報告あり（COPD）。"
+    "caution": "口腔カンジダ・嗄声に注意。吸入後うがい。肺炎リスクの増加報告あり（COPD）。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ブデソニド/グリコピロニウム/ホルモテロール",
@@ -438,7 +518,11 @@
     "guideline_rank": "GOLD 2024：LAMA/LABAで増悪繰り返すCOPDへのICS追加（3剤ステップアップ）。好酸球≥300/μLでICS追加効果が大きい。pMDIのため吸気力の弱い高齢者・重症例に有利",
     "evidence": "Rabe KF et al. NEJM 2020;383:35-48（ETHOS試験 PMID:32877581）",
     "evidence_url": null,
-    "caution": "口腔カンジダ・嗄声に注意（吸入後うがい）。肺炎リスク増加（ICS共通）。好酸球低値（<100/μL）ではICS追加効果乏しく肺炎リスクが上回る可能性。吸入補助具（スペーサー）不使用でも喉への沈着が少ない"
+    "caution": "口腔カンジダ・嗄声に注意（吸入後うがい）。肺炎リスク増加（ICS共通）。好酸球低値（<100/μL）ではICS追加効果乏しく肺炎リスクが上回る可能性。吸入補助具（スペーサー）不使用でも喉への沈着が少ない",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "モンテルカスト",
@@ -459,7 +543,11 @@
     "guideline_rank": "GINA：軽症持続型のICS代替または追加療法。アスピリン喘息・鼻炎合併に特に推奨。",
     "evidence": "Reiss TF et al.（Arch Intern Med 1998 PMID:9625397）",
     "evidence_url": null,
-    "caution": "神経精神症状（不眠・抑うつ・自傷念慮）の報告あり。発現時は中止を検討。"
+    "caution": "神経精神症状（不眠・抑うつ・自傷念慮）の報告あり。発現時は中止を検討。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "プランルカスト",
@@ -480,7 +568,11 @@
     "guideline_rank": "GINA：軽症持続型の補助療法。モンテルカストより服用回数多いが同等の効果。",
     "evidence": "Tamaoki J et al.（Lancet 1997 PMID:9242802）",
     "evidence_url": null,
-    "caution": "神経精神症状の報告あり（モンテルカストと同様）。肝障害に注意。"
+    "caution": "神経精神症状の報告あり（モンテルカストと同様）。肝障害に注意。",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "テオフィリン",
@@ -501,7 +593,11 @@
     "guideline_rank": "GINA：ICSやLABAで不十分な場合の追加療法。TDMが必須。相互作用が多く使用減少傾向。",
     "evidence": "Murciano D et al.（N Engl J Med 1989 PMID:2657424）",
     "evidence_url": null,
-    "caution": "有効血中濃度域が狭い（中毒：頻脈・痙攣・嘔吐）。シプロフロキサシン・クラリスロマイシン等で血中濃度上昇。喫煙で代謝促進。"
+    "caution": "有効血中濃度域が狭い（中毒：頻脈・痙攣・嘔吐）。シプロフロキサシン・クラリスロマイシン等で血中濃度上昇。喫煙で代謝促進。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "オマリズマブ",
@@ -522,7 +618,11 @@
     "guideline_rank": "GINA Step 5：高IgE・アレルゲン感作陽性の重症アレルギー喘息に。血中総IgE・体重によって用量決定。",
     "evidence": "Humbert M, et al. Allergy. 2005. PMID: 16115215",
     "evidence_url": null,
-    "caution": "アナフィラキシーリスク（投与後30分観察必須）。血中IgE・体重での用量設定が複雑。"
+    "caution": "アナフィラキシーリスク（投与後30分観察必須）。血中IgE・体重での用量設定が複雑。",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "メポリズマブ",
@@ -543,7 +643,11 @@
     "guideline_rank": "GINA Step 5：血中好酸球≥300/μLの重症好酸球性喘息。4週に1回皮下注。",
     "evidence": "Ortega HG, et al. N Engl J Med. 2014. PMID: 25199059",
     "evidence_url": null,
-    "caution": "注射部位反応・頭痛。アナフィラキシーリスク（投与後観察必須）。"
+    "caution": "注射部位反応・頭痛。アナフィラキシーリスク（投与後観察必須）。",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ベンラリズマブ",
@@ -564,7 +668,11 @@
     "guideline_rank": "GINA Step 5：初回3回は4週ごと→以降8週ごと。メポリズマブより投与間隔が延長できる。",
     "evidence": "FitzGerald JM, et al. Lancet. 2016. PMID: 27609406",
     "evidence_url": null,
-    "caution": "注射部位反応・頭痛・咽頭炎。アナフィラキシーリスク。"
+    "caution": "注射部位反応・頭痛・咽頭炎。アナフィラキシーリスク。",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "デュピルマブ",
@@ -585,7 +693,11 @@
     "guideline_rank": "GINA Step 5：アトピー皮膚炎・好酸球性副鼻腔炎合併の重症喘息に特に適。2週に1回皮下注。",
     "evidence": "Castro M, et al. N Engl J Med. 2018. PMID: 30088228",
     "evidence_url": null,
-    "caution": "注射部位反応・結膜炎。アナフィラキシーリスク。IL-4/IL-13遮断による皮膚炎悪化の初期報告あり。"
+    "caution": "注射部位反応・結膜炎。アナフィラキシーリスク。IL-4/IL-13遮断による皮膚炎悪化の初期報告あり。",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "テゼペルマブ",
@@ -606,7 +718,11 @@
     "guideline_rank": "GINA Step 5：好酸球非高値（<300/μL）にも唯一の適応。2型炎症型・非2型炎症型の両喘息に有効。2023年日本承認（喘息）。2026年2月CRSwNP（鼻茸を伴う慢性副鼻腔炎）適応追加承認（喘息+副鼻腔炎の両方に1剤でカバー可）",
     "evidence": "Menzies-Gow AN, et al. N Engl J Med. 2021. PMID: 34252915",
     "evidence_url": null,
-    "caution": "注射部位反応・鼻咽頭炎。アナフィラキシーリスク（投与後観察必須）。好酸球≥300/μLでは他生物学的製剤との優劣を比較検討"
+    "caution": "注射部位反応・鼻咽頭炎。アナフィラキシーリスク（投与後観察必須）。好酸球≥300/μLでは他生物学的製剤との優劣を比較検討",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ロフルミラスト",
@@ -627,7 +743,11 @@
     "guideline_rank": "GOLD：吸入薬で不十分な重症COPDの追加療法。好酸球≥300/μLで特に有効。テオフィリンとの差別化が重要。",
     "evidence": "Calverley PM, et al. Lancet. 2009. PMID: 19716960",
     "evidence_url": null,
-    "caution": "悪心・下痢・体重減少（初期）。精神症状（不眠・抑うつ）の報告あり。重篤な肝障害患者には禁忌。"
+    "caution": "悪心・下痢・体重減少（初期）。精神症状（不眠・抑うつ）の報告あり。重篤な肝障害患者には禁忌。",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ボセンタン",
@@ -648,7 +768,11 @@
     "guideline_rank": "ESC/ERS：PAH第一選択ERA。マシテンタン・アンブリセンタンと並ぶ選択肢だが肝毒性リスクが高く月1回肝機能検査必須。PDE5阻害薬との併用が標準。",
     "evidence": "Rubin LJ, et al. N Engl J Med. 2002. PMID: 11807329",
     "evidence_url": null,
-    "caution": "催奇形性：妊婦禁忌・避妊必須。肝毒性（月1回肝機能検査必須・ERA中で最高リスク）。貧血・末梢浮腫。シクロスポリン・グリブリドとの併用禁忌。"
+    "caution": "催奇形性：妊婦禁忌・避妊必須。肝毒性（月1回肝機能検査必須・ERA中で最高リスク）。貧血・末梢浮腫。シクロスポリン・グリブリドとの併用禁忌。",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "マシテンタン",
@@ -669,7 +793,11 @@
     "guideline_rank": "ESC/ERS：PAH第一選択薬の一つ。PDE5阻害薬との併用療法が標準。",
     "evidence": "Pulido T, et al. N Engl J Med. 2013. PMID: 24047865",
     "evidence_url": null,
-    "caution": "催奇形性：妊婦禁忌・避妊必須。肝障害・貧血。他のERAと同様の管理。"
+    "caution": "催奇形性：妊婦禁忌・避妊必須。肝障害・貧血。他のERAと同様の管理。",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "アンブリセンタン",
@@ -690,7 +818,11 @@
     "guideline_rank": "ESC/ERS：PDE5阻害薬との併用が標準（AMBITION試験で有効性確立）。",
     "evidence": "Galiè N, et al. N Engl J Med. 2015. PMID: 25992101",
     "evidence_url": null,
-    "caution": "催奇形性：妊婦禁忌・避妊必須。末梢浮腫・頭痛・鼻閉。"
+    "caution": "催奇形性：妊婦禁忌・避妊必須。末梢浮腫・頭痛・鼻閉。",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "シルデナフィル（PAH）",
@@ -711,7 +843,11 @@
     "guideline_rank": "ESC/ERS：ERAとの併用療法が標準。タダラフィル（1日1回）が利便性で優位だが、用量調節しやすいシルデナフィルを選ぶ場合もあり。PAH専用製剤（レバチオ）とED用製剤（バイアグラ）は用量・保険適応が異なる",
     "evidence": "Galiè N et al. N Engl J Med 2005（SUPER-1試験 PMID:15904419）",
     "evidence_url": null,
-    "caution": "硝酸薬との併用禁忌（急激な血圧低下）。頭痛・潮紅・鼻閉・視覚障害（青みがかった見え方）。PAH専用量（20mg×3回）で使用すること"
+    "caution": "硝酸薬との併用禁忌（急激な血圧低下）。頭痛・潮紅・鼻閉・視覚障害（青みがかった見え方）。PAH専用量（20mg×3回）で使用すること",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "タダラフィル（PAH）",
@@ -732,7 +868,11 @@
     "guideline_rank": "ESC/ERS：ERAとの併用が標準。ERの勃起不全用量（20mg）とは用量が異なる（40mg/日）。",
     "evidence": "Galiè N, et al. Circulation. 2009. PMID: 19506108",
     "evidence_url": null,
-    "caution": "硝酸薬との併用禁忌（急激な血圧低下）。頭痛・潮紅・筋痛。"
+    "caution": "硝酸薬との併用禁忌（急激な血圧低下）。頭痛・潮紅・筋痛。",
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セレキシパグ",
@@ -753,7 +893,11 @@
     "guideline_rank": "ESC/ERS：ERA+PDE5阻害薬で不十分なPAHへの追加療法。最大耐用量まで増量。",
     "evidence": "Sitbon O, et al. N Engl J Med. 2015. PMID: 26290114",
     "evidence_url": null,
-    "caution": "頭痛・悪心・下痢・顎痛・筋痛（プロスタサイクリン関連副作用）。少量から増量。"
+    "caution": "頭痛・悪心・下痢・顎痛・筋痛（プロスタサイクリン関連副作用）。少量から増量。",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "リオシグアト",
@@ -774,7 +918,11 @@
     "guideline_rank": "ESC/ERS：CTEPH（手術不能・術後残存）の第一選択内服薬。PAHにも適応。PDE5阻害薬との併用は禁忌（相加的血圧低下）。2014年日本承認。",
     "evidence": "Ghofrani HA, et al. N Engl J Med. 2013. PMID: 23883377",
     "evidence_url": null,
-    "caution": "PDE5阻害薬・硝酸薬・NOドナーとの併用禁忌（急激な血圧低下）。催奇形性：妊婦禁忌。低血圧・頭痛・消化器症状。少量から増量。"
+    "caution": "PDE5阻害薬・硝酸薬・NOドナーとの併用禁忌（急激な血圧低下）。催奇形性：妊婦禁忌。低血圧・頭痛・消化器症状。少量から増量。",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ソタテルセプト",
@@ -795,7 +943,11 @@
     "guideline_rank": "中リスク以上PAHへの既存療法（ERA/PDE5阻害薬等）への追加療法。2025年6月日本承認・8月発売。新規作用機序（アクチビン/BMP経路）による初のPAH疾患修飾薬的アプローチ。高薬価（45mg約108万円/瓶）",
     "evidence": "STELLAR試験（NEJM 2023 PMID:37222487）",
     "evidence_url": null,
-    "caution": "血清ヘモグロビン上昇（エリスロポエチン様作用→多血症リスク）。肺出血・血栓塞栓症。妊婦禁忌。皮下注射部位反応。PDE5阻害薬との併用禁忌ではないが血行動態モニタリング推奨"
+    "caution": "血清ヘモグロビン上昇（エリスロポエチン様作用→多血症リスク）。肺出血・血栓塞栓症。妊婦禁忌。皮下注射部位反応。PDE5阻害薬との併用禁忌ではないが血行動態モニタリング推奨",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ピルフェニドン",
@@ -816,7 +968,11 @@
     "guideline_rank": "ATS/ERS/JRS：IPF軽〜中等症の第一選択。ニンテダニブとの使い分けは副作用・合併症による。",
     "evidence": "King TE Jr, et al. N Engl J Med. 2014. PMID: 24836310",
     "evidence_url": null,
-    "caution": "光線過敏症（サンスクリーン必須）・悪心・食欲不振・肝障害。食後服用で消化器症状軽減。"
+    "caution": "光線過敏症（サンスクリーン必須）・悪心・食欲不振・肝障害。食後服用で消化器症状軽減。",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ニンテダニブ",
@@ -837,7 +993,11 @@
     "guideline_rank": "ATS/ERS：IPFの第一選択。SSc-ILD・進行性線維化性ILDにも適応拡大。ピルフェニドンより適応疾患が広い。",
     "evidence": "Richeldi L, et al. N Engl J Med. 2014. PMID: 24836309",
     "evidence_url": null,
-    "caution": "下痢（最も頻度が高い）・悪心・肝障害・出血傾向。食後服用。催奇形性あり。"
+    "caution": "下痢（最も頻度が高い）・悪心・肝障害・出血傾向。食後服用。催奇形性あり。",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ゲーファピキサント",
@@ -858,7 +1018,11 @@
     "guideline_rank": "国内：難治性慢性咳嗽の新たな選択肢（2023年承認）。他の原因疾患を除外後に使用。",
     "evidence": "Smith JA, et al. Lancet. 2020. PMID: 32979990",
     "evidence_url": null,
-    "caution": "味覚異常（約40%・甘味・塩味低下）が最多副作用。多くは軽度で継続可能。妊婦禁忌。"
+    "caution": "味覚異常（約40%・甘味・塩味低下）が最多副作用。多くは軽度で継続可能。妊婦禁忌。",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "チペピジン",
@@ -879,7 +1043,11 @@
     "guideline_rank": "国内: 急性・慢性咳嗽の一般的な鎮咳薬。慢性咳嗽への効果のRCTエビデンスは限定的だが国内で広く使用。",
     "evidence": null,
     "evidence_url": null,
-    "caution": "本剤過敏症は禁忌。眠気・胃腸障害（軽度）。依存性なし。"
+    "caution": "本剤過敏症は禁忌。眠気・胃腸障害（軽度）。依存性なし。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ジメモルファン",
@@ -900,7 +1068,11 @@
     "guideline_rank": "国内: 一般的な非麻薬性鎮咳薬。構造上はモルヒネ類似だがオピオイド作用なし。",
     "evidence": null,
     "evidence_url": null,
-    "caution": "本剤過敏症は禁忌。眠気。依存性・呼吸抑制なし。"
+    "caution": "本剤過敏症は禁忌。眠気。依存性・呼吸抑制なし。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "クロペラスチン",
@@ -921,7 +1093,11 @@
     "guideline_rank": "国内: 中枢・末梢の二重作用を持つ非麻薬性鎮咳薬。エビデンスは限定的。",
     "evidence": null,
     "evidence_url": null,
-    "caution": "本剤過敏症は禁忌。眠気（抗ヒスタミン作用）・口渇・胃腸障害。依存性なし。"
+    "caution": "本剤過敏症は禁忌。眠気（抗ヒスタミン作用）・口渇・胃腸障害。依存性なし。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "クロフェダノール",
@@ -942,7 +1118,11 @@
     "guideline_rank": "国内: 中枢・末梢の二重作用を持つ非麻薬性鎮咳薬。",
     "evidence": null,
     "evidence_url": null,
-    "caution": "本剤過敏症は禁忌。眠気・口渇・尿閉（抗コリン作用）。緑内障・前立腺肥大に注意。依存性なし。"
+    "caution": "本剤過敏症は禁忌。眠気・口渇・尿閉（抗コリン作用）。緑内障・前立腺肥大に注意。依存性なし。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ペントキシベリン",
@@ -963,7 +1143,11 @@
     "guideline_rank": "国内: 小児にも使用可能な非麻薬性中枢・末梢性鎮咳薬。",
     "evidence": null,
     "evidence_url": null,
-    "caution": "本剤過敏症は禁忌。眠気・口渇（抗コリン作用）。緑内障・前立腺肥大に注意。依存性なし。"
+    "caution": "本剤過敏症は禁忌。眠気・口渇（抗コリン作用）。緑内障・前立腺肥大に注意。依存性なし。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "デキストロメトルファン",
@@ -984,7 +1168,11 @@
     "guideline_rank": "国内・米国: OTC（市販薬）としても広く使用される標準的非麻薬性鎮咳薬。MAO阻害薬との併用は禁忌。",
     "evidence": null,
     "evidence_url": null,
-    "caution": "MAO阻害薬との併用禁忌（セロトニン症候群）。大量摂取で解離症状（乱用リスク）。眠気・めまい。"
+    "caution": "MAO阻害薬との併用禁忌（セロトニン症候群）。大量摂取で解離症状（乱用リスク）。眠気・めまい。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "コデイン",
@@ -1005,7 +1193,11 @@
     "guideline_rank": "国内・WHO: 難治性咳嗽や緩和ケア場面で使用。欧米では12歳未満・18歳未満（扁桃術後）に禁忌。\n【規格と麻薬区分】1%散（10mg/g）は麻薬非該当→通常処方箋で可。10%散・錠剤（20mg等）は麻薬指定→麻薬処方箋必要。鎮咳目的では1%散が一般的で麻薬管理不要。",
     "evidence": null,
     "evidence_url": null,
-    "caution": "高規格製剤（10%散・錠）は麻薬指定・処方箋管理必須。依存性・便秘・呼吸抑制。CYP2D6超速代謝者で過量リスク。小児への使用は要注意。"
+    "caution": "高規格製剤（10%散・錠）は麻薬指定・処方箋管理必須。依存性・便秘・呼吸抑制。CYP2D6超速代謝者で過量リスク。小児への使用は要注意。",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "モルヒネ",
@@ -1026,7 +1218,11 @@
     "guideline_rank": "ACCP・緩和ケアガイドライン: 難治性咳嗽の緩和に低用量モルヒネ（経口2.5〜5mg q4h）を推奨。コデイン不耐時の代替。",
     "evidence": null,
     "evidence_url": null,
-    "caution": "麻薬指定・処方箋管理必須。呼吸抑制（特に高用量・腎不全）・依存性・便秘・嘔気。初回投与時は低用量から開始。"
+    "caution": "麻薬指定・処方箋管理必須。呼吸抑制（特に高用量・腎不全）・依存性・便秘・嘔気。初回投与時は低用量から開始。",
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "カルボシステイン",
@@ -1047,7 +1243,11 @@
     "guideline_rank": "国内：呼吸器疾患の去痰第一選択薬。COPD・気管支炎・副鼻腔炎（耳鼻科）でも標準使用。",
     "evidence": null,
     "evidence_url": null,
-    "caution": "本剤過敏症は禁忌。消化器症状（軽度）。安全性は良好。"
+    "caution": "本剤過敏症は禁忌。消化器症状（軽度）。安全性は良好。",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "アンブロキソール",
@@ -1068,6 +1268,10 @@
     "guideline_rank": "国内：カルボシステインと並ぶ標準去痰薬。早産児・新生児のRDS（呼吸窮迫症候群）にも使用。吸入・注射剤もあり。",
     "evidence": null,
     "evidence_url": null,
-    "caution": "本剤過敏症は禁忌。消化器症状（軽度）。妊娠初期は慎重に。"
+    "caution": "本剤過敏症は禁忌。消化器症状（軽度）。妊娠初期は慎重に。",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   }
 ]

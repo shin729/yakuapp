@@ -13,7 +13,11 @@
     "cross": "プロベネシド・シメチジン（腎クリアランス低下）、ミコフェノール酸モフェチル・テオフィリン（相互影響）",
     "caution": "禁忌：本剤・バラシクロビルへの過敏症。腎障害時は減量必須（腎排泄76%）。大量投与時の神経毒性（せん妄・幻覚）・腎障害に注意。",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "アメナメビル",
@@ -29,7 +33,11 @@
     "cross": "CYP3A4阻害→シクロスポリン・タクロリムス等の血中濃度上昇。リファンピシンにより本剤濃度低下",
     "caution": "禁忌：本剤過敏症。腎障害・透析患者でも用量調整不要（非腎排泄）。シクロスポリン・タクロリムス等CYP3A4基質との相互作用に注意。妊婦・授乳婦への安全性未確立。",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ガンシクロビル",
@@ -45,7 +53,11 @@
     "cross": "プロベネシド（腎クリアランス低下・半減期延長）、ジダノシン・ミコフェノール酸（毒性増強）",
     "caution": "禁忌：好中球<500/mm³、本剤・アシクロビル過敏症、妊婦。骨髄抑制（好中球減少・血小板減少）に注意。イミペネム・シラスタチンとの併用で痙攣リスク。腎障害時は減量。",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ビダラビン",
@@ -61,7 +73,11 @@
     "cross": "ペントスタチン：禁忌（腎不全・神経毒性）、アロプリノール（副作用増強）",
     "caution": "禁忌：ペントスタチン併用中。腎障害・骨髄抑制患者は慎重投与。副作用：骨髄抑制、腎障害、肝障害、神経毒性。現在はアシクロビルが優先。",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "バラシクロビル",
@@ -77,7 +93,11 @@
     "cross": "プロベネシド・シメチジン（腎クリアランス低下→血中濃度上昇）",
     "caution": "禁忌：バラシクロビル・アシクロビル過敏症。腎障害時は用量調整必須（eGFR<50で減量）。大量投与時の血栓性微小血管障害症（TTP/HUS）に注意。神経毒性（せん妄・幻覚）の可能性。",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ファムシクロビル",
@@ -93,7 +113,11 @@
     "cross": "プロベネシド（ペンシクロビル腎クリアランス低下→血中濃度上昇）",
     "caution": "禁忌：本剤・ペンシクロビル過敏症。腎障害時は用量調整（eGFR<60で要調整）。頭痛・悪心が主な副作用。妊婦への安全性データ限定的。",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "バルガンシクロビル",
@@ -109,7 +133,11 @@
     "cross": "プロベネシド（腎クリアランス低下）・ジダノシン（毒性増強）・ミコフェノール酸（骨髄毒性増強）",
     "caution": "禁忌：好中球<500/mm³・血小板<25000/mm³・本剤/ガンシクロビル/アシクロビル過敏症・妊婦（催奇形性）。骨髄抑制（好中球減少・血小板減少）が主要副作用。腎障害時は用量調整必須。",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ホスカルネット",
@@ -125,7 +153,11 @@
     "cross": "ペンタミジン：禁忌（低カルシウム血症増強・腎障害増強）。腎毒性薬（アミノグリコシド・アムホテリシンB・NSAIDs）との併用で腎障害増強",
     "caution": "禁忌：ペンタミジン静注薬との併用。重大副作用：腎障害（頻度高）・低カルシウム血症（けいれん・QT延長）・低マグネシウム血症。投与中は電解質モニタリングと補液が必須。陰茎潰瘍（尿中排泄による局所刺激）。",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ジドブジン",
@@ -141,7 +173,11 @@
     "cross": "イブプロフェン：禁忌。リバビリン（拮抗）・プロベネシド・フルコナゾール・リファンピシン・リトナビル（相互影響）",
     "caution": "禁忌：好中球<750/mm³またはHb<7.5g/dL、イブプロフェン服用中。主な副作用：貧血・好中球減少（骨髄抑制）・消化器障害・乳酸アシドーシス。",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "エンテカビル",
@@ -157,7 +193,11 @@
     "cross": "腎毒性薬との併用で腎機能低下リスク（エンテカビル自体も腎排泄）",
     "caution": "禁忌：本剤過敏症。HIV未治療患者への単剤使用はHIV耐性誘導リスク（必ずHIV検査後使用）。ラミブジン治療歴があると耐性変異が生じやすい→テノホビルを優先。空腹時服用が必須。乳酸アシドーシス（稀・重篤）。",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "テノホビルジソプロキシル",
@@ -173,7 +213,11 @@
     "cross": "ジダノシン（消化器毒性・膵炎リスク）・アタザナビル（テノホビル濃度上昇）。NSAIDs・アミノグリコシドとの併用で腎機能低下",
     "caution": "禁忌：本剤過敏症。腎毒性（eGFR低下・近位尿細管障害）・骨密度低下に注意。eGFR<50で用量調整または代替薬（TAF・テノホビルアラフェナミド）に変更。急激な投与中止はHBV再燃リスク。",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "スルファドキシン・ピリメタミン",
@@ -189,7 +233,11 @@
     "cross": "経口血糖降下薬・クマリン系抗凝血剤（作用増強）、ST合剤・トリメトプリム（相加毒性）",
     "caution": "禁忌：サルファ剤過敏症・妊婦・授乳婦・新生児・葉酸欠乏性貧血。重大な副作用：Stevens-Johnson症候群・中毒性表皮壊死症（TEN）。G6PD欠乏者で溶血リスク。",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "メトロニダゾール",
@@ -205,7 +253,11 @@
     "cross": "アルコール：ジスルフィラム様反応（悪心・嘔吐・腹痛）。ワルファリン（代謝阻害→PT延長）。ジスルフィラム（精神神経症状）",
     "caution": "禁忌：妊娠3カ月以内・血液疾患・脳脊髄器質的疾患。投与中〜終了後72時間はアルコール禁忌。末梢神経障害・中枢神経症状に注意。",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ペンタミジン",
@@ -221,7 +273,11 @@
     "cross": "ザルシタビン・ホスカルネット・アミオダロン注射剤：禁忌（不整脈・心毒性）",
     "caution": "禁忌：ザルシタビン・ホスカルネット・アミオダロン注射剤との併用。重篤な低血糖・低血圧・腎障害・QT延長・心室性不整脈に注意。吸入はPaO₂≦60mmHgで禁忌。",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "メフロキン",
@@ -237,7 +293,11 @@
     "cross": "キニーネ・キニジン・クロロキン・ハロファントリン：QT延長・心毒性増強（禁忌〜禁忌）",
     "caution": "禁忌：てんかん・精神病既往・妊婦・キニーネ/ハロファントリン投与中。精神・神経系副作用（不安・抑うつ・幻覚）が頻発（5%以上）。長い半減期により副作用が遷延することがある。",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "オセルタミビル",
@@ -253,7 +313,11 @@
     "cross": "プロベネシド（腎分泌阻害→血中濃度2倍上昇）。ワルファリン（INRモニタリング推奨）",
     "caution": "禁忌：本剤過敏症。10代への治療的使用は異常行動との関連報告あり（必要性と個別判断）。腎機能低下時は減量（eGFR<60で調整）。授乳中は慎重投与",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "バロキサビル",
@@ -269,7 +333,11 @@
     "cross": "乳製品・鉄剤・制酸薬（Ca・Mg・Al）で吸収低下（同時服用を避ける）",
     "caution": "禁忌：本剤過敏症・妊婦。PA耐性変異（I38T/F等）ウイルスの出現報告あり（特にA(H3N2)）。妊婦・授乳婦は禁忌。12歳未満は安全性未確立",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ザナミビル",
@@ -285,7 +353,11 @@
     "cross": "全身吸収が少ないため相互作用が少ない。吸入器の操作が必要（高齢者・小児は要注意）",
     "caution": "禁忌：本剤過敏症。喘息・COPD患者では気管支痙攣の可能性（吸入前にSABAを使用）。吸入器の操作困難な患者（意識低下・高齢者）には不向き。乳糖不耐症禁忌（乳糖含有）",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ラニナミビル",
@@ -301,7 +373,11 @@
     "cross": "全身吸収が極めて少ないため薬物相互作用はほぼなし",
     "caution": "禁忌：本剤過敏症。単回吸入なので服薬確認が容易だが吸入手技の確認が必要。喘息・COPDでの気管支痙攣に注意。乳糖含有（乳糖不耐症に注意）",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ペラミビル",
@@ -317,7 +393,11 @@
     "cross": "プロベネシド（腎分泌阻害→血中濃度上昇）",
     "caution": "禁忌：本剤過敏症・腎透析患者（重度腎不全）。腎機能低下時は用量調整（eGFR<50で要調整）。単回投与のため外来での利便性高い（入院不要）",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "モルヌピラビル",
@@ -333,7 +413,11 @@
     "cross": "薬物相互作用は少ない（CYP非阻害）。パキロビッドが多剤併用禁忌の場合の代替として重要",
     "caution": "禁忌：妊婦（催奇形性・動物試験）・妊娠可能な女性は投与中〜終了後4日間避妊必須。有効率はパキロビッドより低い（30%程度）。有性生殖年齢の男性は投与中〜終了後3ヶ月避妊。腎障害での用量調整不要。",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ニルマトレルビル/リトナビル",
@@ -349,7 +433,11 @@
     "cross": "CYP3A4基質（シンバスタチン・アミオダロン・免疫抑制薬・抗てんかん薬等）の血中濃度を著しく上昇→多数の薬物相互作用が臨床上の最重要課題",
     "caution": "禁忌：eGFR<30（重度腎不全）。重篤な薬物相互作用（リトナビルによるCYP3A4阻害）→投与前に必ず全処方薬との相互作用確認が必須。妊婦禁忌",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "エンシトレルビル",
@@ -365,7 +453,11 @@
     "cross": "CYP3A4を弱〜中程度阻害（パキロビッドより相互作用が少ない）。ホルモン系薬・一部の抗てんかん薬で注意",
     "caution": "禁忌：重度肝障害（CYP3A4で代謝）・妊婦（動物実験で胎児毒性）・授乳婦。薬物相互作用はパキロビッドより少ないが一部注意が必要",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "レムデシビル",
@@ -381,7 +473,11 @@
     "cross": "クロロキン・ヒドロキシクロロキンと同時使用でレムデシビルの活性低下（拮抗作用）",
     "caution": "禁忌：eGFR<30（点滴製剤に含まれる添加物スルホブチルエーテルβシクロデキストリンが腎蓄積）。肝酵素上昇・徐脈・血圧低下（急速投与禁忌）。外来向け3日コースは腎機能問わず使用可",
     "tdm": null,
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "レナカパビル",
@@ -399,7 +495,11 @@
     "guideline_rank": "多剤耐性HIV感染症治療の併用薬として承認。PrEPにおいて年2回投与で極めて高い予防効果を示す。",
     "evidence": "PURPOSE 1試験（NEJM 2024 PMID:39046157）",
     "evidence_url": null,
-    "caution": "主な副作用は注射部位反応（68.8%）であり、腫脹、紅斑、痛み、結節、硬結等が含まれる。0.2%で注射部位反応により投与中止に至った。長時間作用型製剤のため、投与後の副作用持続にも注意が必要。その他の安全性懸念は現時点で認められていない。"
+    "caution": "主な副作用は注射部位反応（68.8%）であり、腫脹、紅斑、痛み、結節、硬結等が含まれる。0.2%で注射部位反応により投与中止に至った。長時間作用型製剤のため、投与後の副作用持続にも注意が必要。その他の安全性懸念は現時点で認められていない。",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "テコビリマット",
@@ -417,6 +517,10 @@
     "guideline_rank": "米欧では承認済み。Clade I型mpoxを対象とした最新の臨床試験では、主要評価項目である病変消失期間の有意な短縮は認められなかった。",
     "evidence": "PALM007試験（NEJM 2025 PMID:40239067）",
     "evidence_url": null,
-    "caution": "有害事象（72.9%）および重篤な有害事象（5.1%）の発現率はプラセボ群（それぞれ70.5%、5.0%）と同程度であり、安全性に関する新たな懸念は報告されていない。"
+    "caution": "有害事象（72.9%）および重篤な有害事象（5.1%）の発現率はプラセボ群（それぞれ70.5%、5.0%）と同程度であり、安全性に関する新たな懸念は報告されていない。",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   }
 ]

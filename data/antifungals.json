@@ -19,7 +19,11 @@
     "crypto": "+++",
     "mucor": "++",
     "dermatophyte": "△",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "アムホテリシンB",
@@ -41,7 +45,11 @@
     "crypto": "-",
     "mucor": "-",
     "dermatophyte": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "アムホテリシンBリポソーム",
@@ -63,7 +71,11 @@
     "crypto": "+++",
     "mucor": "++",
     "dermatophyte": "△",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "フルコナゾール",
@@ -85,7 +97,11 @@
     "crypto": "++",
     "mucor": "-",
     "dermatophyte": "+",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "フルコナゾール",
@@ -107,7 +123,11 @@
     "crypto": "++",
     "mucor": "-",
     "dermatophyte": "+",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ホスフルコナゾール",
@@ -129,7 +149,11 @@
     "crypto": "++",
     "mucor": "-",
     "dermatophyte": "+",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "イトラコナゾール",
@@ -151,7 +175,11 @@
     "crypto": "++",
     "mucor": "-",
     "dermatophyte": "+++",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "イトラコナゾール",
@@ -173,7 +201,11 @@
     "crypto": "++",
     "mucor": "-",
     "dermatophyte": "+++",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ボリコナゾール",
@@ -195,7 +227,11 @@
     "crypto": "++",
     "mucor": "-",
     "dermatophyte": "△",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ボリコナゾール",
@@ -217,7 +253,11 @@
     "crypto": "++",
     "mucor": "-",
     "dermatophyte": "△",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ミカファンギン",
@@ -239,7 +279,11 @@
     "crypto": "-",
     "mucor": "-",
     "dermatophyte": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "カスポファンギン",
@@ -261,7 +305,11 @@
     "crypto": "-",
     "mucor": "-",
     "dermatophyte": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "アニデュラファンギン",
@@ -283,7 +331,11 @@
     "crypto": "-",
     "mucor": "-",
     "dermatophyte": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "フルシトシン",
@@ -305,7 +357,11 @@
     "crypto": "+++",
     "mucor": "-",
     "dermatophyte": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "テルビナフィン",
@@ -327,7 +383,11 @@
     "crypto": "+",
     "mucor": "-",
     "dermatophyte": "+++",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ミコナゾール",
@@ -349,7 +409,11 @@
     "crypto": "+",
     "mucor": "-",
     "dermatophyte": "++",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ミコナゾール",
@@ -371,7 +435,11 @@
     "crypto": "+",
     "mucor": "+",
     "dermatophyte": "++",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ポサコナゾール",
@@ -393,7 +461,11 @@
     "crypto": "++",
     "mucor": "++",
     "dermatophyte": "+",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "イサブコナゾニウム",
@@ -415,6 +487,10 @@
     "crypto": "+",
     "mucor": "++",
     "dermatophyte": "-",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   }
 ]

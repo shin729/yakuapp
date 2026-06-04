@@ -15,7 +15,11 @@
     "guideline_rank": "AFレートコントロールの第一選択。心機能低下（EF<40%）合併例でも安全に使用可能（心不全にも適応）。運動時の心拍数コントロールに優れる。β1選択性が高く喘息でもジルチアゼムより安全だが重症喘息は禁忌",
     "evidence": "日本循環器学会 不整脈薬物治療ガイドライン2020; AFFIRM trial（PMID:12466506）",
     "caution": "喘息・重症COPD禁忌。高度徐脈・房室ブロックに注意。急な中断でリバウンド（頻脈・虚血増悪）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "メトプロロール",
@@ -33,7 +37,11 @@
     "guideline_rank": "AFレートコントロールのβ遮断薬選択肢。静注製剤があり急性期の緊急コントロールに使いやすい。ビソプロロールより短時間作用で用量調節しやすい。急性期→静注、慢性期→経口への切り替えもスムーズ",
     "evidence": "日本循環器学会ガイドライン2020; AFFIRM trial（PMID:12466506）",
     "caution": "喘息・重症COPD禁忌。徐脈・高度房室ブロックに注意。急な中断禁止（リバウンド頻脈）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ランジオロール",
@@ -51,7 +59,11 @@
     "guideline_rank": "術中・術後の頻脈性不整脈（AF・AFl・洞性頻脈）に保険適応。超短半減期で効果の微調整が容易。心機能低下例でも比較的安全に使用可能。静注のみ（経口製剤なし）。日本循環器学会ガイドライン2020で急性期AFレートコントロールに位置づけ",
     "evidence": "日本循環器学会 不整脈薬物治療ガイドライン2020; Nagai R, et al. Circ J. 2013",
     "caution": "高度徐脈・房室ブロック・喘息・重症COPD禁忌。低血圧・心原性ショックに注意。静注のみ（経口製剤なし）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ジルチアゼム",
@@ -69,7 +81,11 @@
     "guideline_rank": "β遮断薬禁忌（喘息・COPD）の場合の第一選択。急性期静注でも使用可。【重要】心機能低下（EF<40%）例では陰性変力作用のため禁忌。心不全合併AFにはβ遮断薬またはジゴキシンを選ぶ",
     "evidence": "日本循環器学会ガイドライン2020; Cochrane Review（Ulimoen et al. 2013）",
     "caution": "心機能低下（EF<40%）・低血圧・高度房室ブロック禁忌。β遮断薬との静注併用で高度徐脈・房室ブロックのリスク。WPW症候群合併AF禁忌",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ベラパミル",
@@ -87,7 +103,11 @@
     "guideline_rank": "AFレートコントロールにはジルチアゼムより陰性変力作用が強く注意が必要。PSVTの急性停止（静注）では高い有効性。【絶対禁忌】WPW症候群合併AF → 副伝導路を介した急速伝導（250bpm以上）→心室細動（致死的）",
     "evidence": "日本循環器学会ガイドライン2020; AHA/ACC SVTガイドライン2015",
     "caution": "【絶対禁忌】WPW症候群合併AF・心機能低下（EF<40%）・低血圧・高度房室ブロック・β遮断薬との静注同時投与",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ジゴキシン",
@@ -105,7 +125,11 @@
     "guideline_rank": "安静時のレートコントロールは可能だが運動時は不十分。β遮断薬・Ca拮抗薬が使用できない場合や、心機能低下（EF<40%）合併でレートコントロールと強心作用を兼ねる場合の補助薬として使用。単独での第一選択は避ける",
     "evidence": "日本循環器学会ガイドライン2020; DIG trial; AFFIRM trial（PMID:12466506）",
     "caution": "治療域が非常に狭く中毒（悪心・嘔吐・徐脈・視覚異常・不整脈）に注意。腎機能低下で蓄積（減量必要）。低K血症・低Mg血症で中毒リスク大幅増大",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "アミオダロン",
@@ -123,7 +147,11 @@
     "guideline_rank": "器質的心疾患（心不全EF<40%・心筋梗塞後）合併AFで安全に使用できる唯一のリズムコントロール薬。他剤（フレカイニド・ソタロール等）が禁忌・無効の場合に選択。ただし甲状腺・肺・肝・角膜への長期毒性があり、重症例・他剤無効例に限定する",
     "evidence": "CTAF試験（NEJM 2000 PMID:10987749）",
     "caution": "甲状腺機能異常（頻度高い）・間質性肺炎・肝障害・角膜色素沈着・光線過敏症。半減期40〜55日で副作用が遷延。ヨウ素含有のためCT造影剤との相互作用注意。定期的な甲状腺・肺機能・肝機能モニタリング必須",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ソタロール",
@@ -141,7 +169,11 @@
     "guideline_rank": "アミオダロンほど強力ではないが長期毒性が少ない。軽度の器質的心疾患（安定冠動脈疾患・EF>40%）合併AFでも使用可。ただしQT延長→Torsades de Pointes（TdP）リスクあり。腎機能低下（CCr<30）は蓄積で禁忌",
     "evidence": "日本循環器学会ガイドライン2020; Cochrane Review（Lafuente-Lafuente et al. 2015）",
     "caution": "QT延長（TdP）リスク：QTc>500msで中止。腎機能低下（CCr<30）禁忌。低カリウム・低Mg血症は禁忌。喘息禁忌（β2遮断）。心機能著明低下例は注意",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ベプリジル",
@@ -159,7 +191,11 @@
     "guideline_rank": "慢性化・長期持続性AFでフレカイニド・ソタロール無効例の次の選択肢。日本独自の使用経験が豊富。アミオダロンより長期毒性は少ないが、QT延長（TdP）リスクあり。海外では使用頻度が低い（日本特有の選択肢）",
     "evidence": "日本循環器学会ガイドライン2020; 国内臨床試験データ",
     "caution": "QT延長（TdP）リスク（アミオダロンと同様の注意が必要）。低カリウム・低Mg血症禁忌。心機能低下（EF<40%）には慎重投与",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "フレカイニド",
@@ -177,7 +213,11 @@
     "guideline_rank": "【最重要】器質的心疾患（心筋梗塞後・EF<40%心不全・高度左室肥大）には絶対禁忌（CAST試験：死亡率増加）。器質的心疾患のない孤立性AF（lone AF）のリズムコントロール第一選択。発作時頓服（pill-in-the-pocket）療法にも使用可",
     "evidence": "CAST試験（NEJM 1989 PMID:2201423）",
     "caution": "【絶対禁忌】器質的心疾患（心筋梗塞後・心不全・高度左室肥大）。QRS幅延長・催不整脈作用。腎機能低下で蓄積（CCr<35で減量・禁忌）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ピルジカイニド",
@@ -195,7 +235,11 @@
     "guideline_rank": "フレカイニドと同様に器質的心疾患のない孤立性AF第一選択。発作時頓服（pill-in-the-pocket）療法として国内で広く使用。フレカイニドよりQRS延長が少ない。腎排泄のため腎機能低下例は減量または禁忌",
     "evidence": "J-RHYTHM II study; 日本循環器学会ガイドライン2020",
     "caution": "【絶対禁忌】器質的心疾患（心筋梗塞後・心不全・高度左室肥大）。腎機能低下（CCr<50で減量、CCr<30は禁忌）。QRS延長・催不整脈作用",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ジソピラミド",
@@ -213,7 +257,11 @@
     "guideline_rank": "器質的心疾患のない迷走神経緊張性AF（食後・睡眠中・安静時に発症）の第一選択薬。交感神経依存性AFにはβ遮断薬が優先されるが、迷走神経緊張性には本薬が優位。HOCM合併AFにも有効（流出路狭窄改善）。【注意】器質的心疾患（心筋梗塞後・心不全・高度左室肥大）では死亡率増加の懸念があり原則禁忌",
     "evidence": "日本循環器学会 不整脈薬物治療ガイドライン2020",
     "caution": "抗コリン作用（排尿困難・前立腺肥大禁忌・口渇・便秘・緑内障禁忌）。QT延長・torsades de pointes（QTcを定期モニタリング）。器質的心疾患（心不全・心筋梗塞後）禁忌。低血糖（インスリン分泌促進）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ドロネダロン",
@@ -231,7 +279,11 @@
     "guideline_rank": "器質的心疾患のない〜軽度（EF>35%・NYHA I-II）AFのリズムコントロール選択肢。アミオダロンより安全性が高いが効果はやや劣る。【重要禁忌】重症心不全（NYHA III-IV・EF<35%）・永続性AFには禁忌（ANDROMEDA試験：死亡率増加）。日本2012年承認",
     "evidence": "ATHENA試験（NEJM 2009 PMID:19120403）",
     "caution": "重症心不全（NYHA III-IV）・永続性AF禁忌。肝障害（重篤肝炎報告あり→肝機能モニタリング必須）。QTc延長。ワルファリン・ダビガトラン・シンバスタチンとの薬物相互作用",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "プロパフェノン",
@@ -249,7 +301,11 @@
     "guideline_rank": "器質的心疾患のない孤立性AF（lone AF）のリズムコントロール選択肢（フレカイニド・ピルジカイニドと同位置づけ）。弱いβ遮断作用があるため喘息患者にはフレカイニドより不利。pill-in-the-pocket療法にも使用可",
     "evidence": "ERAFT trial; 日本循環器学会ガイドライン2020",
     "caution": "【絶対禁忌】器質的心疾患（心筋梗塞後・心不全・高度左室肥大）。弱いβ遮断作用のため喘息・COPDに注意。CYP2D6多型による血中濃度の個人差（PM患者で蓄積）。催不整脈・QRS延長",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "アミオダロン（VT/VF）",
@@ -267,7 +323,11 @@
     "guideline_rank": "電気的除細動抵抗性VF・無脈性VTへの静注がACLSプロトコルで第一選択。ICD植込み後の頻回ショック予防にも使用。器質的心疾患合併VTで最も有効。可能であればカテーテルアブレーションと組み合わせる",
     "evidence": "ARREST試験（Lancet 1999 PMID:10499487）",
     "caution": "甲状腺・肺（間質性肺炎）・肝・角膜への長期毒性（AF用途と同様）。半減期40〜55日で副作用遷延。静注時に低血圧・徐脈に注意",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ニフェカラント",
@@ -285,7 +345,11 @@
     "guideline_rank": "電気的除細動抵抗性VF・無脈性VTへの静注（日本独自の採用）。アミオダロン静注が使用できない・無効な場合の代替薬。Na⁺チャネル遮断なしのためQRS延長がない。QT延長→TdPに注意（致死性VF状況では次善問題として考慮）",
     "evidence": "日本循環器学会ガイドライン2020; 国内臨床試験データ",
     "caution": "強いQT延長→TdPリスク（事前に血清K・Mgの正常化が前提）。静注専用・経口製剤なし。低K・低Mg血症は禁忌に近い",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "リドカイン（静注）",
@@ -303,7 +367,11 @@
     "guideline_rank": "急性期VT/VFの補助薬として使用。電気的除細動後の再発予防に。特に急性心筋梗塞合併の心室性不整脈に有効。経口製剤がなく長期管理には不向き。重篤VF・無脈性VTではアミオダロン静注が優先",
     "evidence": "AHA/ACC急性冠症候群ガイドライン; ACLS 2020プロトコル",
     "caution": "経口吸収不可→静注専用。過量投与で中枢神経毒性（眠気・痙攣・意識障害）。心機能低下例では慎重投与（肝代謝遅延）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "メキシレチン",
@@ -321,7 +389,11 @@
     "guideline_rank": "慢性VPC・非持続性VTの症状コントロールに使用。Class Ib全般でClass Icより器質的心疾患合併例での催不整脈リスクは低いが、長期予後改善は示されていない。無症候性VPCへの使用は推奨されない",
     "evidence": "日本循環器学会ガイドライン; CAST試験の教訓（Class Icの危険性 → Class Ibはより安全）",
     "caution": "消化器症状（悪心・嘔吐・食欲不振）が多い。肝障害に注意（肝代謝）。Class Ia薬との併用でQT延長",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "シベンゾリン",
@@ -339,7 +411,11 @@
     "guideline_rank": "閉塞性肥大型心筋症（HOCM）の症状改善目的で使用する国内での重要な適応。VT・VPCの抑制にも使用。低血糖誘発作用があるため糖尿病・高齢者・経口血糖降下薬使用者では特に注意",
     "evidence": "日本循環器学会 肥大型心筋症ガイドライン2023",
     "caution": "低血糖（特に糖尿病患者・高齢者・SU薬・インスリン使用者）。催不整脈・QRS延長。腎機能低下で蓄積",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ベラパミル静注（SVT）",
@@ -357,7 +433,11 @@
     "guideline_rank": "ATP使用禁忌（喘息等）の場合のPSVT停止に選択。ATPと同等の有効性で効果持続時間が長い。【絶対禁忌】WPW症候群合併PSVT → 副伝導路を介した急速伝導→VFリスク（致死的）。β遮断薬との静注同時投与禁忌",
     "evidence": "AHA/ACC SVTガイドライン2015（PMID:26409259）",
     "caution": "【絶対禁忌】WPW症候群合併不整脈・心機能低下（EF<40%）・低血圧・高度房室ブロック・β遮断薬静注同時投与",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ジルチアゼム静注（SVT）",
@@ -375,7 +455,11 @@
     "guideline_rank": "急性期AF・心房粗動のレートコントロールおよびSVT停止に使用。ベラパミルより心機能への陰性作用が少ないため急性期管理に使いやすい。ただし心機能低下（EF<40%）例は禁忌。WPW症候群禁忌",
     "evidence": "AHA/ACC AFガイドライン; 日本循環器学会ガイドライン2020",
     "caution": "【禁忌】WPW症候群・心機能低下（EF<40%）・低血圧・高度房室ブロック。β遮断薬静注との同時使用禁忌",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ATP（アデノシン三リン酸）",
@@ -393,7 +477,11 @@
     "guideline_rank": "PSVTの急性停止に最も有効・安全な第一選択（迷走神経刺激無効時）。一時的な完全房室ブロックを起こすが即座に回復。WPW症候群でも使用可（副伝導路には直接作用しない）。喘息患者は禁忌（気管支攣縮）",
     "evidence": "ACLS 2020ガイドライン; AHA/ACC SVTガイドライン2015（PMID:26409259）",
     "caution": "顔面紅潮・胸部不快感・一過性徐脈・呼吸困難（短時間で消失）。喘息禁忌（気管支攣縮）。テオフィリンで効果減弱（アデノシン拮抗）。ジピリダモールで効果増強（過度の房室ブロック）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "プロプラノロール",
@@ -411,6 +499,10 @@
     "guideline_rank": "PSVT再発予防・SVTの慢性期管理に使用。甲状腺機能亢進症合併頻脈・QT延長症候群（LQT1・LQT2の交感神経依存型）に特に有効。β1選択性がないためビソプロロール・メトプロロールより喘息・COPD患者への注意が必要",
     "evidence": "日本循環器学会ガイドライン2020; QT延長症候群治療エビデンス",
     "caution": "喘息・COPD禁忌（β2遮断→気管支痙攣）。徐脈・房室ブロック。急な中断禁止（リバウンド頻脈・虚血増悪）。糖尿病患者では低血糖症状をマスク",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   }
 ]

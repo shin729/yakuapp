@@ -16,7 +16,11 @@
     "evidence": "Meltzer et al.（Ann Allergy Asthma Immunol 1997）",
     "evidence_url": null,
     "caution": "制酸薬（Al/Mg製剤）・フルーツジュースで吸収36%低下。水で服用",
-    "response_rate": "花粉症：症状スコア50%以上改善 約50〜58%（対プラセボ比差 +15〜20%）"
+    "response_rate": "花粉症：症状スコア50%以上改善 約50〜58%（対プラセボ比差 +15〜20%）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ビラスチン",
@@ -35,7 +39,11 @@
     "evidence": "Horak et al.（Inflamm Res 2010）",
     "evidence_url": null,
     "caution": "食事と同時服用で血中濃度が約60%低下（食前2時間または食後1時間）。制酸薬でも低下",
-    "response_rate": "花粉症：症状スコア50%以上改善 約53〜62%（対プラセボ比差 +18〜22%）"
+    "response_rate": "花粉症：症状スコア50%以上改善 約53〜62%（対プラセボ比差 +18〜22%）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ロラタジン",
@@ -54,7 +62,11 @@
     "evidence": "Meltzer et al.（J Allergy Clin Immunol 1994）",
     "evidence_url": null,
     "caution": "CYP3A4阻害薬（エリスロマイシン・ケトコナゾール）で血中濃度上昇",
-    "response_rate": "花粉症：症状スコア50%以上改善 約50〜58%（対プラセボ比差 +15〜22%）"
+    "response_rate": "花粉症：症状スコア50%以上改善 約50〜58%（対プラセボ比差 +15〜22%）",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "デスロラタジン",
@@ -73,7 +85,11 @@
     "evidence": "Simons et al.（J Allergy Clin Immunol 2003）",
     "evidence_url": null,
     "caution": "重篤な腎不全・肝不全は慎重投与。CYP代謝の影響を受けにくいのが特徴",
-    "response_rate": "花粉症：症状スコア50%以上改善 約52〜62%（対プラセボ比差 +18〜24%）"
+    "response_rate": "花粉症：症状スコア50%以上改善 約52〜62%（対プラセボ比差 +18〜24%）",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "エピナスチン",
@@ -92,7 +108,11 @@
     "evidence": "Ciprandi et al.（Ann Allergy Asthma Immunol 1997）",
     "evidence_url": null,
     "caution": "重篤な腎機能障害では慎重投与（腎排泄）",
-    "response_rate": "花粉症：鼻症状スコア50%以上改善 約50〜60%（国内プラセボ対照試験）"
+    "response_rate": "花粉症：鼻症状スコア50%以上改善 約50〜60%（国内プラセボ対照試験）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ルパタジン",
@@ -111,7 +131,11 @@
     "evidence": "Sastre et al.（J Investig Allergol Clin Immunol 2009）",
     "evidence_url": null,
     "caution": "CYP3A4基質（ケトコナゾール等で血中濃度上昇）。アルコール増強。食後服用推奨",
-    "response_rate": "花粉症：鼻症状スコア改善率 約55〜65%（国内プラセボ対照試験）"
+    "response_rate": "花粉症：鼻症状スコア改善率 約55〜65%（国内プラセボ対照試験）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "セチリジン",
@@ -130,7 +154,11 @@
     "evidence": "Simons FE. J Allergy Clin Immunol 1994",
     "evidence_url": null,
     "caution": "腎機能低下時に蓄積。軽度眠気（自動車運転は注意）。アルコール増強",
-    "response_rate": "花粉症：症状スコア50%以上改善 約58〜65%（対プラセボ比差 +20〜28%）NNT ≈ 5〜6"
+    "response_rate": "花粉症：症状スコア50%以上改善 約58〜65%（対プラセボ比差 +20〜28%）NNT ≈ 5〜6",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "レボセチリジン",
@@ -149,7 +177,11 @@
     "evidence": "Bachert et al.（J Allergy Clin Immunol 2004）",
     "evidence_url": null,
     "caution": "腎排泄（腎不全で蓄積）。軽度眠気。夕方服用推奨（翌朝の眠気軽減）",
-    "response_rate": "花粉症：症状スコア50%以上改善 約60〜68%（対プラセボ比差 +22〜30%）NNT ≈ 5"
+    "response_rate": "花粉症：症状スコア50%以上改善 約60〜68%（対プラセボ比差 +22〜30%）NNT ≈ 5",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "エバスチン",
@@ -168,7 +200,11 @@
     "evidence": "Pendse et al.（Curr Med Res Opin 1994）",
     "evidence_url": null,
     "caution": "CYP3A4阻害薬との相互作用に注意（QT延長リスク）",
-    "response_rate": "花粉症：症状スコア50%以上改善 約52〜62%（対プラセボ比差 +16〜24%）"
+    "response_rate": "花粉症：症状スコア50%以上改善 約52〜62%（対プラセボ比差 +16〜24%）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "オロパタジン",
@@ -187,7 +223,11 @@
     "evidence": "Okubo et al.（Allergol Int 2005）",
     "evidence_url": null,
     "caution": "自動車運転注意（眠気あり）。1日2回服用が必要（用法遵守が重要）",
-    "response_rate": "花粉症：鼻症状スコア50%以上改善 約55〜65%（国内プラセボ対照試験）"
+    "response_rate": "花粉症：鼻症状スコア50%以上改善 約55〜65%（国内プラセボ対照試験）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ベポタスチン",
@@ -206,7 +246,11 @@
     "evidence": "Nagakura et al.（J Allergy Clin Immunol 2000）",
     "evidence_url": null,
     "caution": "腎機能障害時は減量（腎排泄）。軽度眠気（自動車運転注意）。1日2回服用が必要",
-    "response_rate": "花粉症：鼻症状スコア50%以上改善 約50〜60%（国内プラセボ対照試験）"
+    "response_rate": "花粉症：鼻症状スコア50%以上改善 約50〜60%（国内プラセボ対照試験）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "アゼラスチン",
@@ -225,7 +269,11 @@
     "evidence": "Ciprandi et al.（J Allergy Clin Immunol 1995）",
     "evidence_url": null,
     "caution": "眠気注意（自動車運転禁止相当）。アルコール増強。1日2回",
-    "response_rate": "花粉症：鼻症状スコア50%以上改善 約50〜60%（対プラセボ比差 +15〜22%）"
+    "response_rate": "花粉症：鼻症状スコア50%以上改善 約50〜60%（対プラセボ比差 +15〜22%）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ケトチフェン",
@@ -244,7 +292,11 @@
     "evidence": "Craps et al.（Clin Allergy 1978）",
     "evidence_url": null,
     "caution": "強い眠気（自動車運転禁止）。経口血糖降下薬との相互作用（血小板減少報告）",
-    "response_rate": "花粉症：症状改善 約40〜55%（古い臨床試験データ。現代比較試験少）"
+    "response_rate": "花粉症：症状改善 約40〜55%（古い臨床試験データ。現代比較試験少）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "クロルフェニラミン",
@@ -263,7 +315,11 @@
     "evidence": "古典的薬剤（大規模RCT少）",
     "evidence_url": null,
     "caution": "口渇・排尿困難（前立腺肥大禁忌）・緑内障禁忌。高齢者の認知機能低下・転倒リスク",
-    "response_rate": "花粉症：症状改善 約45〜55%（古い臨床試験データ）"
+    "response_rate": "花粉症：症状改善 約45〜55%（古い臨床試験データ）",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ジフェンヒドラミン",
@@ -282,7 +338,11 @@
     "evidence": "古典的薬剤",
     "evidence_url": null,
     "caution": "口渇・排尿困難・緑内障禁忌。認知症リスク増加（長期・高齢者）。自動車運転禁止",
-    "response_rate": "花粉症：症状改善 約40〜55%（古い臨床試験データ）"
+    "response_rate": "花粉症：症状改善 約40〜55%（古い臨床試験データ）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ヒドロキシジン",
@@ -301,7 +361,11 @@
     "evidence": "Simons FE. J Allergy Clin Immunol 2004",
     "evidence_url": null,
     "caution": "QT延長注意（特に高用量）。口渇・尿閉。緑内障禁忌。妊娠初期禁忌",
-    "response_rate": "蕁麻疹・掻痒：症状改善率 約50〜65%（プラセボ対照試験）"
+    "response_rate": "蕁麻疹・掻痒：症状改善率 約50〜65%（プラセボ対照試験）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "プロメタジン",
@@ -320,7 +384,11 @@
     "evidence": "古典的薬剤",
     "evidence_url": null,
     "caution": "2歳未満禁忌（呼吸抑制）。錐体外路症状（フェノチアジン系）。強い抗コリン作用",
-    "response_rate": "症状改善 約40〜55%（古い臨床試験。現代RCTデータ少）"
+    "response_rate": "症状改善 約40〜55%（古い臨床試験。現代RCTデータ少）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "モンテルカスト",
@@ -338,7 +406,11 @@
     "guideline_rank": "抗ヒスタミン薬と相補的作用機序。鼻閉・喘息合併・夜間症状に強み。両薬の併用が標準",
     "evidence": "Reicin et al.（Ann Allergy Asthma Immunol 2000）",
     "evidence_url": null,
-    "caution": "神経精神症状（抑うつ・悪夢・不眠）の報告（市販後調査）。子供でも報告あり"
+    "caution": "神経精神症状（抑うつ・悪夢・不眠）の報告（市販後調査）。子供でも報告あり",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "プランルカスト",
@@ -356,7 +428,11 @@
     "guideline_rank": "国内開発薬。モンテルカストとほぼ同等の有効性・安全性。1日2回が服薬遵守上の課題",
     "evidence": "Fujita et al.（Allergol Int 2002）",
     "evidence_url": null,
-    "caution": "肝機能障害（AST/ALT上昇）の報告。定期的肝機能検査を推奨"
+    "caution": "肝機能障害（AST/ALT上昇）の報告。定期的肝機能検査を推奨",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "クロモグリク酸ナトリウム",
@@ -372,7 +448,11 @@
     "guideline_rank": "妊婦・小児に安全性プロファイルが高い。症状が出てからでは効果なし（予防薬）",
     "evidence": "Kay et al.（Clin Exp Allergy 2007）",
     "evidence_url": null,
-    "caution": "症状発現後には無効。吸入剤は気管支痙攣誘発の可能性（希）。1日4〜6回が必要"
+    "caution": "症状発現後には無効。吸入剤は気管支痙攣誘発の可能性（希）。1日4〜6回が必要",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "トラニラスト",
@@ -388,7 +468,11 @@
     "guideline_rank": "アレルギーとケロイドを合併する症例に特に有用。TGF-β抑制による線維化予防が特徴",
     "evidence": "Isaji M. Curr Opin Investig Drugs 2000",
     "evidence_url": null,
-    "caution": "膀胱炎様症状（排尿痛・頻尿）の報告。肝機能障害"
+    "caution": "膀胱炎様症状（排尿痛・頻尿）の報告。肝機能障害",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "オマリズマブ",
@@ -405,7 +489,11 @@
     "guideline_rank": "抗ヒスタミン4倍量でも不十分な慢性蕁麻疹・重症喘息の適応。IgE値に応じた用量計算が必要",
     "evidence": "Maurer et al.（NEJM 2013 PMID:23432142）",
     "evidence_url": null,
-    "caution": "注射部位反応。アナフィラキシー（稀・投与後30分観察必須）。高コスト（月8〜16万円）"
+    "caution": "注射部位反応。アナフィラキシー（稀・投与後30分観察必須）。高コスト（月8〜16万円）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "デュピルマブ",
@@ -422,7 +510,11 @@
     "guideline_rank": "Th2アレルギー経路を広くカバー。アトピー性皮膚炎の生物学的製剤スタンダード。適応疾患が最多",
     "evidence": "Simpson et al.（NEJM 2016 PMID:27690741）",
     "evidence_url": null,
-    "caution": "結膜炎（アトピー例で15〜20%）。注射部位反応。ニキビ様皮疹"
+    "caution": "結膜炎（アトピー例で15〜20%）。注射部位反応。ニキビ様皮疹",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "メポリズマブ",
@@ -439,7 +531,11 @@
     "guideline_rank": "血中好酸球高値（≥300/μL）の喘息で特に高い有効性。ステロイド依存例の離脱補助",
     "evidence": "Pavord et al.（Lancet 2012 PMID:22901886）",
     "evidence_url": null,
-    "caution": "注射部位反応。頭痛。血中好酸球数での適応判断が必要"
+    "caution": "注射部位反応。頭痛。血中好酸球数での適応判断が必要",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ベンラリズマブ",
@@ -456,7 +552,11 @@
     "guideline_rank": "メポリズマブより好酸球除去が急速・強力。維持投与が8週毎で利便性高い（月2回→隔月）",
     "evidence": "FitzGerald et al.（Lancet 2016 PMID:27609383）",
     "evidence_url": null,
-    "caution": "注射部位反応。好酸球急速低下で潜在的寄生虫感染・副腎不全が顕在化する可能性"
+    "caution": "注射部位反応。好酸球急速低下で潜在的寄生虫感染・副腎不全が顕在化する可能性",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "トラロキヌマブ",
@@ -473,7 +573,11 @@
     "guideline_rank": "IL-13選択的遮断。2022年日本承認。デュピルマブ結膜炎が問題となる例や不耐・禁忌例の代替選択肢",
     "evidence": "Wollenberg et al.（Lancet 2021 PMID:33529331）",
     "evidence_url": null,
-    "caution": "結膜炎（約4%・デュピルマブの15〜20%より低頻度）。注射部位反応。上気道感染スクリーニング推奨"
+    "caution": "結膜炎（約4%・デュピルマブの15〜20%より低頻度）。注射部位反応。上気道感染スクリーニング推奨",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "テゼペルマブ",
@@ -490,7 +594,11 @@
     "guideline_rank": "2023年日本承認（重症喘息）・2026年2月CRSwNP適応追加（鼻茸を伴う慢性副鼻腔炎）。好酸球数・FeNO・IgE値を問わず表現型を問わず有効。抗IL-5抗体等が効果不十分な場合の選択肢。炎症カスケードの最上流（TSLP）を遮断",
     "evidence": "Menzies-Gow A et al. N Engl J Med 2021（NAVIGATOR trial・PMID:34077232）",
     "evidence_url": null,
-    "caution": "注射部位反応（約7%）。アナフィラキシー（稀・投与後観察必要）。好酸球一過性増加"
+    "caution": "注射部位反応（約7%）。アナフィラキシー（稀・投与後観察必要）。好酸球一過性増加",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ネモリズマブ",
@@ -507,7 +615,11 @@
     "guideline_rank": "2022年日本承認。掻痒を直接標的とする初の抗IL-31Rα抗体。炎症よりも掻痒が主訴の症例に特に適している。デュピルマブとの併用も検討可",
     "evidence": "Kabashima K et al. N Engl J Med 2020（ARCADIA試験・PMID:32937046）",
     "evidence_url": null,
-    "caution": "注射部位反応（約8%）。上気道感染。好酸球一過性増加"
+    "caution": "注射部位反応（約8%）。上気道感染。好酸球一過性増加",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "スギ花粉舌下免疫療法",
@@ -525,7 +637,11 @@
     "guideline_rank": "スギ花粉症ガイドライン第一選択（経口手術不要・自宅投与可）。唯一根治を目指せる治療",
     "evidence": "Okubo et al.（Allergol Int 2021）",
     "evidence_url": null,
-    "caution": "3〜5年の長期継続が前提。花粉飛散シーズン外開始推奨。口腔内潰瘍・急性感染症中は中止"
+    "caution": "3〜5年の長期継続が前提。花粉飛散シーズン外開始推奨。口腔内潰瘍・急性感染症中は中止",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ダニアレルゲン舌下免疫療法",
@@ -543,7 +659,11 @@
     "guideline_rank": "通年性アレルギー性鼻炎（ダニ感作確認要）の根治療法。喘息発症予防効果もエビデンスあり",
     "evidence": "Demoly et al.（J Allergy Clin Immunol 2016）",
     "evidence_url": null,
-    "caution": "喘息コントロール不良（FEV1<70%）は禁忌。初回投与は医療機関で実施。長期継続前提"
+    "caution": "喘息コントロール不良（FEV1<70%）は禁忌。初回投与は医療機関で実施。長期継続前提",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "皮下免疫療法（SCIT）",
@@ -561,6 +681,10 @@
     "guideline_rank": "複数アレルゲン感作例・SLITで効果不十分な例に選択。医療機関受診必須のため利便性は低い",
     "evidence": "Calderon et al.（Lancet 2007 PMID:17967618）",
     "evidence_url": null,
-    "caution": "毎回医療機関での投与必須（アナフィラキシー対応設備要）。注射後30分経過観察。喘息悪化禁忌"
+    "caution": "毎回医療機関での投与必須（アナフィラキシー対応設備要）。注射後30分経過観察。喘息悪化禁忌",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   }
 ]
