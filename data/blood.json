@@ -106,7 +106,7 @@
     "evidence_url": null,
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": null,
+    "renal_gfr": ">15",
     "dialysis": "有"
   },
   {

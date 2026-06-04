@@ -196,7 +196,7 @@
     "evidence_url": null,
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": ">45",
+    "renal_gfr": ">25",
     "dialysis": "無"
   },
   {
@@ -221,7 +221,7 @@
     "evidence_url": null,
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": ">45",
+    "renal_gfr": ">20",
     "dialysis": "無"
   },
   {
@@ -296,7 +296,7 @@
     "evidence_url": null,
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": ">45",
+    "renal_gfr": ">20",
     "dialysis": "無"
   },
   {
@@ -321,7 +321,7 @@
     "evidence_url": null,
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": ">45",
+    "renal_gfr": ">25",
     "dialysis": "無"
   },
   {

@@ -412,7 +412,7 @@
     "evidence": "UKPDS 34（Lancet 1998 PMID:9742977）",
     "evidence_url": null,
     "caution": "腎機能低下（eGFR<30）で禁忌→乳酸アシドーシス。造影剤使用前後は休薬。消化器症状（悪心・下痢）。ビタミンB12欠乏",
-    "pregnancy": "◎",
+    "pregnancy": "△",
     "lactation": "◎",
     "renal_gfr": ">30",
     "dialysis": "有"
