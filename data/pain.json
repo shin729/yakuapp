@@ -17,7 +17,11 @@
     "caution": "過量服用で肝障害。腎・胃腸への影響はNSAIDsより少ない。妊婦にも使用可",
     "evidence_url": null,
     "analgesic_effect": "★★★ 中等度（軽〜中等度疼痛・発熱時の疼痛に有効）",
-    "anti_inflammatory_effect": "★ ほぼなし（COX阻害作用は極めて弱い・抗炎症目的では使用しない）"
+    "anti_inflammatory_effect": "★ ほぼなし（COX阻害作用は極めて弱い・抗炎症目的では使用しない）",
+    "pregnancy": "◎",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "セレコキシブ",
@@ -37,7 +41,11 @@
     "caution": "胃腸リスクが低い。スルホンアミドアレルギーに注意。心血管リスクは注意が必要",
     "evidence_url": null,
     "analgesic_effect": "★★★★ 強い（変形性関節症・慢性炎症性疼痛・術後痛）",
-    "anti_inflammatory_effect": "★★★★ 強い（COX-2選択的阻害・消化管障害が非選択的NSAIDより少ない）"
+    "anti_inflammatory_effect": "★★★★ 強い（COX-2選択的阻害・消化管障害が非選択的NSAIDより少ない）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "メロキシカム",
@@ -57,7 +65,11 @@
     "caution": "1日1回投与が可能。急性痛への有効性は他NSAIDsよりやや劣る場合あり",
     "evidence_url": null,
     "analgesic_effect": "★★★ 中等度〜強い（変形性関節症・慢性関節リウマチ）",
-    "anti_inflammatory_effect": "★★★★ 強い（COX-2優先的選択性・治療用量ではCOX-1影響少）"
+    "anti_inflammatory_effect": "★★★★ 強い（COX-2優先的選択性・治療用量ではCOX-1影響少）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "エトドラク",
@@ -77,7 +89,11 @@
     "caution": "胃腸障害は選択的COX-2阻害薬と同程度に少ない。国内使用実績が主体",
     "evidence_url": null,
     "analgesic_effect": "★★★ 中等度〜強い（変形性関節症・急性疼痛）",
-    "anti_inflammatory_effect": "★★★ 中〜強（COX-2優先的選択性・消化管副作用は非選択的より少ない）"
+    "anti_inflammatory_effect": "★★★ 中〜強（COX-2優先的選択性・消化管副作用は非選択的より少ない）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ロキソプロフェン",
@@ -97,7 +113,11 @@
     "caution": "胃腸障害・腎機能低下に注意。空腹時服用は避ける。プロドラッグのため胃への直接刺激は少ない",
     "evidence_url": null,
     "analgesic_effect": "★★★★ 強い（急性疼痛・術後痛・頭痛・月経痛・歯痛）",
-    "anti_inflammatory_effect": "★★★★ 強い（COX-1/2両方を阻害・プロドラッグ設計で胃腸負担を軽減）"
+    "anti_inflammatory_effect": "★★★★ 強い（COX-1/2両方を阻害・プロドラッグ設計で胃腸負担を軽減）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "イブプロフェン",
@@ -117,7 +137,11 @@
     "caution": "胃腸障害・腎障害リスク。心血管リスク患者には注意。市販薬としても普及",
     "evidence_url": null,
     "analgesic_effect": "★★★★★ 非常に強い（急性疼痛のNNT最良・OTC最強クラス）",
-    "anti_inflammatory_effect": "★★★★ 強い（COX-1/2両方を非選択的に阻害・関節炎にも有効）"
+    "anti_inflammatory_effect": "★★★★ 強い（COX-1/2両方を非選択的に阻害・関節炎にも有効）",
+    "pregnancy": "×",
+    "lactation": "◎",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ジクロフェナク",
@@ -137,7 +161,11 @@
     "caution": "胃腸障害・肝障害リスク。心血管リスクはNSAIDs中やや高め。外用剤も有効",
     "evidence_url": null,
     "analgesic_effect": "★★★★ 強い（炎症性疼痛・術後痛・筋骨格系疼痛）",
-    "anti_inflammatory_effect": "★★★★★ 非常に強い（COX阻害に加えてリポキシゲナーゼ経路も部分的に抑制）"
+    "anti_inflammatory_effect": "★★★★★ 非常に強い（COX阻害に加えてリポキシゲナーゼ経路も部分的に抑制）",
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ナプロキセン",
@@ -157,7 +185,11 @@
     "caution": "効果発現はやや遅いが持続時間が長い。心血管リスクはNSAIDs中最も低いとされる",
     "evidence_url": null,
     "analgesic_effect": "★★★★ 強い（長時間作用・慢性疼痛・片頭痛・月経困難症）",
-    "anti_inflammatory_effect": "★★★★ 強い（COX-1/2両阻害・心血管安全性が非選択的NSAIDで最も良好）"
+    "anti_inflammatory_effect": "★★★★ 強い（COX-1/2両阻害・心血管安全性が非選択的NSAIDで最も良好）",
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "トラマドール",
@@ -175,7 +207,11 @@
     "guideline_rank": "NSAIDs が使えない慢性疼痛・神経障害性疼痛に。依存性は純粋オピオイドより低い",
     "evidence": "Cochrane Review（Duehmke et al. 2017 PMID:28616956）",
     "caution": "嘔気・めまい・便秘。依存性あり（弱い）。セロトニン症候群リスク。痙攣閾値低下",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "トラマドール/アセトアミノフェン",
@@ -193,7 +229,11 @@
     "guideline_rank": "NSAIDs が使えない慢性疼痛に。2成分の相乗効果",
     "evidence": "Fricke et al.（Clin Ther 2004 PMID:15530999）",
     "caution": "トラマドール・アセトアミノフェン両剤の注意事項が該当。他のアセトアミノフェン製剤との重複に注意",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "コデイン",
@@ -211,7 +251,11 @@
     "guideline_rank": "軽〜中等度疼痛・鎮咳。弱い鎮痛が必要な咳嗽合併例に",
     "evidence": "Cochrane Review（Derry et al. 2010 PMID:20393966）",
     "caution": "単剤での鎮痛効果は弱い。CYP2D6多型で効果差が大きい。依存性・便秘・嘔気",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ブプレノルフィン",
@@ -229,7 +273,11 @@
     "guideline_rank": "週1回貼付剤で服薬管理が容易。経口困難・慢性腰痛・変形性関節症に",
     "evidence": "Steiner et al.（Clin J Pain 2011 PMID:21240002）",
     "evidence_url": null,
-    "caution": "部分作動薬のため完全作動薬との併用で拮抗。貼付部位の皮膚刺激。貼付剤はフェンタニルと異なり非麻薬指定（ノルスパン）"
+    "caution": "部分作動薬のため完全作動薬との併用で拮抗。貼付部位の皮膚刺激。貼付剤はフェンタニルと異なり非麻薬指定（ノルスパン）",
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ペンタゾシン",
@@ -247,7 +295,11 @@
     "guideline_rank": "急性疼痛・術後痛の頓服。他オピオイドとの併用は禁忌",
     "evidence": "添付文書・臨床経験",
     "evidence_url": null,
-    "caution": "他オピオイドと併用禁忌（μ拮抗で離脱症状誘発）。精神症状（幻覚・興奮）に注意。乱用防止のため注射剤にナロキソン配合剤あり"
+    "caution": "他オピオイドと併用禁忌（μ拮抗で離脱症状誘発）。精神症状（幻覚・興奮）に注意。乱用防止のため注射剤にナロキソン配合剤あり",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ミロガバリン",
@@ -265,7 +317,11 @@
     "guideline_rank": "末梢神経障害性疼痛に。プレガバリンより傾眠・めまいが少ない傾向",
     "evidence": "Baba et al.（J Diabetes Investig 2019 PMID:30672128）",
     "evidence_url": null,
-    "caution": "傾眠・めまい（プレガバリンより少ない傾向）。腎機能に応じて減量。体重増加あり"
+    "caution": "傾眠・めまい（プレガバリンより少ない傾向）。腎機能に応じて減量。体重増加あり",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "プレガバリン",
@@ -283,7 +339,11 @@
     "guideline_rank": "糖尿病性神経障害・帯状疱疹後神経痛の第一選択α2δリガンド",
     "evidence": "Cochrane Review（Moore et al. 2009 PMID:30673120）",
     "caution": "眩暈・眠気（高頻度）。体重増加・浮腫。依存性・乱用リスクあり。腎機能に応じた用量調節が必要",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ガバペンチン",
@@ -301,7 +361,11 @@
     "guideline_rank": "糖尿病性神経障害・帯状疱疹後神経痛に。プレガバリン先発薬",
     "evidence": "Cochrane Review（Moore et al. 2014 PMID:28597471）",
     "caution": "眩暈・眠気・認知機能低下。用量依存的だが吸収が非線形（高用量で吸収率低下）。プレガバリンの前身",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "デュロキセチン（神経痛）",
@@ -319,7 +383,11 @@
     "guideline_rank": "糖尿病性神経障害性疼痛・線維筋痛症に適する",
     "evidence": "Cochrane Review（Lunn et al. 2014）",
     "caution": "嘔気・血圧上昇。急激な中断は避ける。糖尿病性神経障害・慢性腰痛・線維筋痛症に保険適応あり",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "アミトリプチリン（神経痛）",
@@ -337,7 +405,11 @@
     "guideline_rank": "神経障害性疼痛に適する",
     "evidence": "Cochrane Review（Derry et al. 2012 PMID:23235657）",
     "caution": "口渇・便秘・尿閉（抗コリン）・眠気・起立性低血圧。過量服用で心毒性。高齢者は慎重に",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "エレヌマブ",
@@ -355,7 +427,11 @@
     "guideline_rank": "月4回以上の発作がある反復性・慢性片頭痛の予防に",
     "evidence": "ARISE試験（Lancet Neurology 2017 PMID:29171821）",
     "caution": "便秘・注射部位反応。妊婦への安全性は未確立。高価格。他予防薬不応例に特に有効",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ガルカネズマブ",
@@ -373,7 +449,11 @@
     "guideline_rank": "月4回以上の片頭痛予防。月1回注射で効果発現が早い",
     "evidence": "EVOLVE-1試験（JAMA Neurol 2018 PMID:29813147）",
     "evidence_url": null,
-    "caution": "注射部位反応。高価（月約4〜5万円）。妊娠中は禁忌。他の予防薬が無効または副作用の例に適応"
+    "caution": "注射部位反応。高価（月約4〜5万円）。妊娠中は禁忌。他の予防薬が無効または副作用の例に適応",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "フレマネズマブ",
@@ -391,7 +471,11 @@
     "guideline_rank": "月4回以上の片頭痛予防。月1回または四半期1回から選択可",
     "evidence": "HALO試験（NEJM 2017 PMID:29800211）",
     "evidence_url": null,
-    "caution": "注射部位反応。四半期1回投与（675mg）は服薬アドヒアランス向上に有利。他予防薬無効例に適応"
+    "caution": "注射部位反応。四半期1回投与（675mg）は服薬アドヒアランス向上に有利。他予防薬無効例に適応",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ラスミジタン",
@@ -409,7 +493,11 @@
     "guideline_rank": "心血管リスクが高くトリプタンが禁忌の急性発作に",
     "evidence": "SAMURAI・SPARTAN試験（NEJM 2019 PMID:30446595）",
     "caution": "眩暈・眠気（CNS副作用が多め）。心血管禁忌なし。服用後8時間は運転不可",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "リザトリプタン",
@@ -427,7 +515,11 @@
     "guideline_rank": "急性発作に速やかな効果。冠動脈疾患がなければ第一選択",
     "evidence": "Cochrane Review（Oldman et al. 2002 PMID:25408622）",
     "caution": "虚血性心疾患・脳血管障害に禁忌。プロプラノロール服用者は用量減量。口腔内崩壊錠（OD錠）で水なし服用可",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "スマトリプタン",
@@ -445,7 +537,11 @@
     "guideline_rank": "急性発作の標準トリプタン。皮下注射で最速発現",
     "evidence": "Cochrane Review（Derry et al. 2012 PMID:22336849）",
     "caution": "虚血性心疾患・脳血管障害に禁忌。嘔気・胸部絞扼感。トリプタン系は月10回以上の使用で薬物乱用頭痛に注意",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ゾルミトリプタン",
@@ -463,7 +559,11 @@
     "guideline_rank": "急性発作に。点鼻薬もあり嘔気が強い例に使いやすい",
     "evidence": "Cochrane Review（Smith et al. 2012 PMID:24848613）",
     "caution": "虚血性心疾患・脳血管障害に禁忌。鼻スプレー製剤もあり嘔気に効果的",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "釣藤散",
@@ -481,7 +581,11 @@
     "guideline_rank": "Grade C1、慢性頭痛の診療ガイドライン2021・高齢者・慢性連日性頭痛を目的に補助的に使用",
     "evidence": "慢性頭痛の診療ガイドライン2021",
     "caution": "高齢者・高血圧を伴う慢性頭痛に特に有用。急性期効果は限定的。消化器症状は少ない。長期服用向き",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": null,
+    "lactation": null,
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "呉茱萸湯",
@@ -499,7 +603,11 @@
     "guideline_rank": "Grade B、慢性頭痛の診療ガイドライン2021を目的に補助的に使用",
     "evidence": "慢性頭痛の診療ガイドライン2021（日本神経学会/日本頭痛学会）",
     "caution": "嘔気・嘔吐を伴う片頭痛に特に有効。熱証・のぼせが強い場合は不向き。エキス顆粒製剤が一般的。妊婦への安全性は比較的高い",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": null,
+    "lactation": null,
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "レベチラセタム",
@@ -517,7 +625,11 @@
     "guideline_rank": "焦点発作・ミオクローヌス発作に。相互作用が少なく使いやすい",
     "evidence": "Cochrane Review（Mbizvo et al. 2012 PMID:22623614）",
     "caution": "薬物相互作用が少なく安全性高い。行動異常・易刺激性（特に小児）。腎機能低下時は減量",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ラコサミド",
@@ -535,7 +647,11 @@
     "guideline_rank": "焦点発作の補助療法。Na+チャンネル遮断の新機序",
     "evidence": "Ben-Menachem et al.（Epilepsia 2007 PMID:17448157）",
     "caution": "眩暈・頭痛・複視。PR間隔延長（心伝導障害のある患者に注意）。薬物相互作用少ない",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ペランパネル",
@@ -553,7 +669,11 @@
     "guideline_rank": "焦点・強直間代発作の補助療法。攻撃性・精神症状に注意",
     "evidence": "French et al.（Neurology 2012 PMID:22689744）",
     "evidence_url": null,
-    "caution": "めまい・傾眠・攻撃性・精神症状（用量依存）。CYP3A4誘導薬で血中濃度↓。アルコールとの相互作用"
+    "caution": "めまい・傾眠・攻撃性・精神症状（用量依存）。CYP3A4誘導薬で血中濃度↓。アルコールとの相互作用",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "トピラマート",
@@ -571,7 +691,11 @@
     "guideline_rank": "焦点・全般発作。片頭痛予防にも適応。認知機能・体重減少に注意",
     "evidence": "Cochrane Review（Marson et al. 2002）",
     "caution": "認知機能低下・語の想起障害（多め）。体重減少。腎結石。炭酸水素塩低下。漸増スケジュール必須",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ゾニサミド",
@@ -589,7 +713,11 @@
     "guideline_rank": "焦点・全般てんかんの補助療法。腎結石・発汗減少に注意",
     "evidence": "Brodie et al.（Epilepsy Res 2005 PMID:16289617）",
     "evidence_url": null,
-    "caution": "腎結石（炭酸脱水酵素阻害）・発汗減少・高体温。体重減少。認知機能への影響少ない。緩徐に増量"
+    "caution": "腎結石（炭酸脱水酵素阻害）・発汗減少・高体温。体重減少。認知機能への影響少ない。緩徐に増量",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "バルプロ酸（抗てんかん）",
@@ -607,7 +735,11 @@
     "guideline_rank": "全般てんかん・小児に適する",
     "evidence": "SANAD試験（Lancet 2007 PMID:17399303）",
     "caution": "催奇形性（妊婦禁忌）。体重増加・肝毒性・血小板減少。血中濃度モニタリング（50〜100μg/mL）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "フェニトイン",
@@ -625,7 +757,11 @@
     "guideline_rank": "強直間代発作・焦点発作。治療域が狭く血中濃度モニタリング必須",
     "evidence": "SANAD試験（Lancet 2007 PMID:17399302）",
     "caution": "治療域が狭い（10〜20μg/mL）。薬物相互作用多い（CYP誘導）。歯肉増殖・多毛・奇形（妊婦禁忌）。静注は心毒性に注意",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "クロバザム",
@@ -643,7 +779,11 @@
     "guideline_rank": "Lennox-Gastaut症候群・難治性てんかんの補助療法",
     "evidence": "Ng et al.（NEJM 2011 PMID:21879742）",
     "evidence_url": null,
-    "caution": "耐性形成（連用で効果減弱）・依存・離脱症状。1,4-BZより少ないが長期使用に注意。傾眠"
+    "caution": "耐性形成（連用で効果減弱）・依存・離脱症状。1,4-BZより少ないが長期使用に注意。傾眠",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "カルバマゼピン",
@@ -661,7 +801,11 @@
     "guideline_rank": "三叉神経痛の第一選択薬（Grade A）。焦点発作・強直間代発作の主要抗てんかん薬の一つ（SANAD試験）。アジア人HLA-B*1502保因者はSJS/TENリスク高（スクリーニング推奨）",
     "evidence": "Cochrane Review（Wiffen et al. 2011 PMID:21412919）",
     "evidence_url": null,
-    "caution": "SJS/TEN（HLA-B*1502陽性アジア人で高リスク）。低Na血症（SIADH）・肝障害。CYP3A4強誘導により多数の薬物相互作用。自己誘導で1〜2週後に血中濃度低下（増量必要）。血中濃度モニタリング（4〜12μg/mL）"
+    "caution": "SJS/TEN（HLA-B*1502陽性アジア人で高リスク）。低Na血症（SIADH）・肝障害。CYP3A4強誘導により多数の薬物相互作用。自己誘導で1〜2週後に血中濃度低下（増量必要）。血中濃度モニタリング（4〜12μg/mL）",
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ラモトリギン",
@@ -679,7 +823,11 @@
     "guideline_rank": "焦点発作・原発性全般発作・Lennox-Gastaut症候群の補助療法。双極性障害の維持（うつ状態）に第一選択。カルバマゼピンよりSJS/TENリスクが低く広く使用される。SANAD試験で長期有効性を確認",
     "evidence": "SANAD試験（Lancet 2007 PMID:17399302）",
     "evidence_url": null,
-    "caution": "SJSリスク（漸増スケジュール必須・急増量で高リスク）。バルプロ酸併用で血中濃度2倍化（VPA使用時は1/2量から開始）。CYP3A4誘導薬（カルバマゼピン等）で血中濃度低下"
+    "caution": "SJSリスク（漸増スケジュール必須・急増量で高リスク）。バルプロ酸併用で血中濃度2倍化（VPA使用時は1/2量から開始）。CYP3A4誘導薬（カルバマゼピン等）で血中濃度低下",
+    "pregnancy": "△",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "レボドパ／カルビドパ",
@@ -697,7 +845,11 @@
     "guideline_rank": "パーキンソン病・運動症状に適する",
     "evidence": "Cochrane Review（Katzenschlager et al. 2003）",
     "caution": "長期使用でウェアリングオフ・ジスキネジア。嘔気（ドンペリドン併用）。起立性低血圧。精神症状（幻覚）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "プラミペキソール",
@@ -715,7 +867,11 @@
     "guideline_rank": "若年PD・うつ合併例に。ドパミン作動薬として線条体D3刺激",
     "evidence": "Parkinson Study Group（NEJM 2000 PMID:10869036）",
     "caution": "突発的な眠気（ナルコレプシー様発作）・衝動制御障害（過食・賭博等）。体位性低血圧。幻覚",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "ロピニロール",
@@ -733,7 +889,11 @@
     "guideline_rank": "早期・中等度PDに。ドパミン作動薬で衝動制御障害に注意",
     "evidence": "Brooks et al.（Brain 1998 PMID:9519335）",
     "caution": "突発的な眠気・衝動制御障害。嘔気。体位性低血圧。レストレスレッグス症候群（RLS）にも適応",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ロチゴチン",
@@ -751,7 +911,11 @@
     "guideline_rank": "貼付剤で血中濃度が安定。嚥下困難・ウェアリングオフに有用",
     "evidence": "Giladi et al.（Eur J Neurol 2007 PMID:17635671）",
     "caution": "貼付部位の皮膚反応（必ず毎日部位変更）。突発的眠気・衝動制御障害。RLSにも適応",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "セレギリン",
@@ -769,7 +933,11 @@
     "guideline_rank": "補助的に使用。初期PDの単剤または L-DOPAへの上乗せ",
     "evidence": "Cochrane Review（Ives et al. 2004 PMID:15266527）",
     "caution": "チラミン含有食品（チーズ等）との相互作用（非選択的MAO阻害量では少ない）。セロトニン症候群（三環系・SSRI併用禁忌）",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "エンタカポン",
@@ -787,7 +955,11 @@
     "guideline_rank": "ウェアリングオフ対策としてL-DOPAに上乗せ。COMT阻害薬",
     "evidence": "NOMESCOM試験（Mov Disord 2004 PMID:15083282）",
     "caution": "必ずレボドパと併用（単独使用不可）。下痢・尿の変色（橙色〜赤色）。ジスキネジアが増悪する場合はレボドパ減量",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ラサジリン",
@@ -805,7 +977,11 @@
     "guideline_rank": "初期PD単剤療法または L-DOPAへの上乗せとして有用。セレギリンより副作用が少なくチラミン制限不要（高選択的MAO-B阻害のため）。MDS推奨：疾患修飾効果の可能性あり",
     "evidence": "TEMPO試験（PMID:12495434）; ADAGIO試験（PMID:19578567）",
     "caution": "セロトニン症候群（SSRI・TCA・メペリジン・デキストロメトルファンとの併用禁忌）。チラミン制限は原則不要（セレギリンより安全）。過度の眠気・起立性低血圧",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "オピカポン",
@@ -823,7 +999,11 @@
     "guideline_rank": "ウェアリングオフ対策のCOMT阻害薬。エンタカポンより1日1回でアドヒアランス良好。BIPARK-1/2試験で確認された有効性",
     "evidence": "BIPARK-1試験（Lancet Neurol 2016 PMID:27448191）",
     "caution": "必ずレボドパと併用（単独使用不可）。ジスキネジア増悪（→レボドパ減量）。下痢・尿の変色（橙色）。エンタカポンに比べ相互作用が少ない",
-    "evidence_url": null
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "アマンタジン",
@@ -841,7 +1021,11 @@
     "guideline_rank": "L-DOPA誘発ジスキネジアの第一選択経口薬（MDS推奨）。早期PDの初期単剤療法や抗コリン薬の代替にも使用（副作用が抗コリン薬より少ない）",
     "evidence": "Thomas et al.（Neurology 2004 PMID:14745074）",
     "evidence_url": null,
-    "caution": "幻覚・精神症状（特に高齢者・認知症例）。網状皮斑・末梢浮腫。急な中断で悪性症候群様症状（漸減が必要）。腎機能低下時は蓄積するため減量"
+    "caution": "幻覚・精神症状（特に高齢者・認知症例）。網状皮斑・末梢浮腫。急な中断で悪性症候群様症状（漸減が必要）。腎機能低下時は蓄積するため減量",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "メサドン塩酸塩",
@@ -860,7 +1044,11 @@
     "evidence": "Cochrane Review（Nicholson et al. 2017 PMID:28177515）",
     "evidence_url": null,
     "caution": "QT延長、心室頻拍、呼吸抑制等の重篤な副作用により致命的な経過をたどることがある。主な副作用は傾眠、悪心、嘔吐、QT延長、便秘等である。重篤な呼吸抑制や気管支喘息、麻痺性イレウス、ナルメフェン塩酸塩投与中の患者等は禁忌である。連用により薬物依存を生じるおそれがある。",
-    "equianalgesic": "非線形換算（モルヒネ換算量で係数が変動：〜30mg→1/4、〜300mg→1/10、〜600mg→1/20）\nレスキュー：原則モルヒネ等の別オピオイドを使用"
+    "equianalgesic": "非線形換算（モルヒネ換算量で係数が変動：〜30mg→1/4、〜300mg→1/10、〜600mg→1/20）\nレスキュー：原則モルヒネ等の別オピオイドを使用",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "タペンタドール",
@@ -879,7 +1067,11 @@
     "evidence": "Schwartz et al.（J Pain 2011 PMID:21945027）",
     "evidence_url": null,
     "caution": "悪心・便秘がオキシコドンより少ない。CYP代謝なし（相互作用少）。MAO阻害薬は禁忌。セロトニン症候群リスク（SSRI/SNRI併用注意）",
-    "equianalgesic": "モルヒネ経口30mg ≒ タペンタドール100mg\nレスキュー：速放製剤なし（モルヒネ等を代用）"
+    "equianalgesic": "モルヒネ経口30mg ≒ タペンタドール100mg\nレスキュー：速放製剤なし（モルヒネ等を代用）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ヒドロモルフォン",
@@ -898,7 +1090,11 @@
     "evidence": "Wirz et al.（Pain Physician 2017 PMID:28934793）",
     "evidence_url": null,
     "caution": "便秘・悪心・眠気。少量から開始し漸増。ナロキソンで拮抗。日本では2017年承認の比較的新しい薬剤",
-    "equianalgesic": "モルヒネ経口30mg ≒ ヒドロモルフォン経口6mg（力価比5倍）・注射1.2mg\nレスキュー：ナルラピド1mg/回（定時量の1/6）"
+    "equianalgesic": "モルヒネ経口30mg ≒ ヒドロモルフォン経口6mg（力価比5倍）・注射1.2mg\nレスキュー：ナルラピド1mg/回（定時量の1/6）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "オキシコドン",
@@ -917,7 +1113,11 @@
     "evidence": "Caraceni et al.（Lancet Oncol 2012 PMID:22240242）",
     "evidence_url": null,
     "caution": "便秘・悪心・眠気。腎障害時はモルヒネより安全。依存性・乱用リスク（麻薬指定）。CYP3A4/2D6基質",
-    "equianalgesic": "モルヒネ経口30mg ≒ オキシコドン経口20mg（力価比1.5倍）・注射15mg\nレスキュー：速放製剤2.5〜5mg/回（定時量の1/8〜1/6）"
+    "equianalgesic": "モルヒネ経口30mg ≒ オキシコドン経口20mg（力価比1.5倍）・注射15mg\nレスキュー：速放製剤2.5〜5mg/回（定時量の1/8〜1/6）",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "モルヒネ",
@@ -936,7 +1136,11 @@
     "evidence": "WHO癌疼痛ガイドライン",
     "evidence_url": null,
     "caution": "呼吸抑制（特に初回・急増量）・便秘（必ず緩下薬併用）・悪心。腎機能低下でM6G蓄積→過鎮静。ナロキソンで拮抗可能",
-    "equianalgesic": "基準薬　経口30mg ≒ 注射15mg ≒ 坐剤20mg\nレスキュー：速放製剤5mg/回（定時量の1/6）"
+    "equianalgesic": "基準薬　経口30mg ≒ 注射15mg ≒ 坐剤20mg\nレスキュー：速放製剤5mg/回（定時量の1/6）",
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "フェンタニル",
@@ -955,7 +1159,11 @@
     "evidence": "Tassinari et al.（J Palliat Med 2011 PMID:21385030）",
     "evidence_url": null,
     "caution": "発熱・加温で吸収↑→過剰投与リスク。CYP3A4阻害薬で血中濃度↑。貼付剤は経口換算量から計算して開始。便秘少ないが悪心・眠気あり",
-    "equianalgesic": "モルヒネ経口30mg/日 ≒ フェンタニル貼付12.5μg/h（デュロテップMT 2.1mg/72h）・注射0.3mg/日\nレスキュー：OTFC（アブストラル舌下錠100μg〜・イーフェンバッカル錠50μg〜）"
+    "equianalgesic": "モルヒネ経口30mg/日 ≒ フェンタニル貼付12.5μg/h（デュロテップMT 2.1mg/72h）・注射0.3mg/日\nレスキュー：OTFC（アブストラル舌下錠100μg〜・イーフェンバッカル錠50μg〜）",
+    "pregnancy": "×",
+    "lactation": "△",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "ブリバラセタム",
@@ -974,7 +1182,11 @@
     "evidence": "Klein et al.（Epilepsia 2015 PMID:26626937）",
     "evidence_url": null,
     "caution": "傾眠・めまい・疲労・悪心。CYP2C19誘導薬やカルバマゼピン併用で血中濃度低下に注意。カルバマゼピン活性代謝物の濃度上昇あり。自殺念慮・攻撃性等の精神症状悪化に留意。",
-    "guideline_url": null
+    "guideline_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "有"
   },
   {
     "name": "リメゲパント",
@@ -993,7 +1205,11 @@
     "evidence": "Lipton et al.（NEJM 2019 PMID:31291516）",
     "evidence_url": null,
     "caution": "主な副作用は悪心、めまい、傾眠等。トリプタン特有の血管収縮作用はないが、重度の肝障害患者等への投与は慎重に行う必要がある。強力なCYP3A4阻害薬または誘導薬との併用は、本剤の血中濃度に影響を及ぼすため注意を要する。国内での最新の承認情報および添付文書を確認すること。",
-    "guideline_url": null
+    "guideline_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   },
   {
     "name": "アトゲパント",
@@ -1012,6 +1228,10 @@
     "evidence": "ELEVATE試験（Lancet Neurol 2024 PMID:38364831）",
     "evidence_url": null,
     "caution": "主な副作用は悪心、便秘、傾眠。重篤な有害事象の報告は少なく、既存の経口予防薬（2～4クラス）が奏効しない症例での有効性も実証されている。妊婦への安全性は未確立。肝機能への影響については、臨床試験においてプラセボ群と同等であることが示されている。",
-    "guideline_url": null
+    "guideline_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   }
 ]
