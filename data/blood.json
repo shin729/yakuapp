@@ -40,7 +40,7 @@
     "evidence_url": null,
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": null,
+    "renal_gfr": ">30",
     "dialysis": "有"
   },
   {
@@ -63,7 +63,7 @@
     "pregnancy": "×",
     "lactation": "×",
     "renal_gfr": null,
-    "dialysis": "有"
+    "dialysis": "無"
   },
   {
     "name": "アピキサバン",
@@ -85,7 +85,7 @@
     "pregnancy": "×",
     "lactation": "×",
     "renal_gfr": null,
-    "dialysis": "有"
+    "dialysis": "無"
   },
   {
     "name": "エドキサバン",
