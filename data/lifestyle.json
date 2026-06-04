@@ -386,7 +386,7 @@
     "NNT": 4,
     "onset_time": "12〜24時間（急性期）",
     "duration_hours": "急性期：最初1 mg→0.5 mg（低用量法）/ 予防：0.5 mg/日",
-    "guideline_rank": "急性痛風発作の消炎・ULT開始時の予防投与に。腎機能低下で用量注意",
+    "guideline_rank": "急性痛風発作の消炎・ULT開始時の予防投与に。腎機能低下で用量注意。透析患者でも蓄積し重篤な副作用リスクがあるため使用禁忌（透析で除去されるが投与間隔での蓄積が問題）。",
     "evidence": "Terkeltaub et al.（Arthritis Rheum 2010 PMID:20131255）",
     "evidence_url": null,
     "pregnancy": "×",
