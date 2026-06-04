@@ -414,8 +414,8 @@
     "caution": "腎機能低下（eGFR<30）で禁忌→乳酸アシドーシス。造影剤使用前後は休薬。消化器症状（悪心・下痢）。ビタミンB12欠乏",
     "pregnancy": "◎",
     "lactation": "◎",
-    "renal_gfr": null,
-    "dialysis": ">30"
+    "renal_gfr": ">30",
+    "dialysis": "有"
   },
   {
     "name": "ピオグリタゾン",
@@ -524,8 +524,8 @@
     "caution": "尿路・性器感染症（特に女性）。正常血糖DKA（シックデイに注意）。脱水・低血圧。フォルニエ壊疽（極めて稀）",
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": null,
-    "dialysis": ">45"
+    "renal_gfr": ">45",
+    "dialysis": "無"
   },
   {
     "name": "ダパグリフロジン",
@@ -546,8 +546,8 @@
     "caution": "尿路感染・性器感染。DKAリスク（シックデイ対応要）。eGFR<25では血糖降下効果が減弱",
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": null,
-    "dialysis": ">45"
+    "renal_gfr": ">45",
+    "dialysis": "無"
   },
   {
     "name": "カナグリフロジン",
@@ -568,8 +568,8 @@
     "caution": "尿路・性器感染症。ケトアシドーシス（空腹時・手術前は中止）。下肢切断リスク（カナグリフロジン固有）。シックデイに中止",
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": null,
-    "dialysis": ">45"
+    "renal_gfr": ">45",
+    "dialysis": "無"
   },
   {
     "name": "シタグリプチン",

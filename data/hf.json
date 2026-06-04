@@ -196,8 +196,8 @@
     "evidence_url": null,
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": null,
-    "dialysis": ">45"
+    "renal_gfr": ">45",
+    "dialysis": "無"
   },
   {
     "name": "エンパグリフロジン",
@@ -221,8 +221,8 @@
     "evidence_url": null,
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": null,
-    "dialysis": ">45"
+    "renal_gfr": ">45",
+    "dialysis": "無"
   },
   {
     "name": "イバブラジン",
@@ -296,8 +296,8 @@
     "evidence_url": null,
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": null,
-    "dialysis": ">45"
+    "renal_gfr": ">45",
+    "dialysis": "無"
   },
   {
     "name": "ダパグリフロジン（HFpEF）",
@@ -321,8 +321,8 @@
     "evidence_url": null,
     "pregnancy": "×",
     "lactation": "×",
-    "renal_gfr": null,
-    "dialysis": ">45"
+    "renal_gfr": ">45",
+    "dialysis": "無"
   },
   {
     "name": "スピロノラクトン（HFpEF）",
