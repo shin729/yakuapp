@@ -521,8 +521,8 @@
     "guideline_rank": "プラリア投与患者には原則必須で併用処方。デノスマブとセットで使用するものであり単独での骨粗鬆症治療薬としては用いない。中断すると低Ca血症リスクが急増するため継続が重要",
     "evidence": "プラリア添付文書・骨粗鬆症診療ガイドライン2023",
     "evidence_url": null,
-    "pregnancy": "×",
-    "lactation": "×",
+    "pregnancy": "◎",
+    "lactation": "◎",
     "renal_gfr": null,
     "dialysis": "無",
     "caution": "デノスマブ投与中は中断禁止（低Ca血症・テタニー・痙攣・不整脈リスク）。腎機能低下例では高Ca血症・高Mg血症に注意。他のCa・VitD製剤との重複服用で過剰補充に注意"
@@ -675,11 +675,11 @@
     "guideline_rank": "日本開発の活性型VitD₃誘導体。ビスフォスフォネートより骨折予防効果は劣るがCa・VitD補充を兼ねた基本治療として広く使用。転倒予防効果が特長。ビスフォスフォネートとの併用でCa補充役として有用",
     "evidence": "Matsumoto et al.（Osteoporos Int 2011 PMID:21541440）",
     "evidence_url": null,
-    "pregnancy": "×",
-    "lactation": "×",
+    "pregnancy": "△",
+    "lactation": "△",
     "renal_gfr": null,
     "dialysis": "無",
-    "caution": "高カルシウム血症（定期的な血清Ca・Cr・尿Caモニタリング）。腎結石リスク。eGFR<30で慎重（高Ca血症が起きやすい）。利尿薬との組み合わせで高Ca血症リスク増加"
+    "caution": "高カルシウム血症（定期的な血清Ca・Cr・尿Caモニタリング）。腎結石リスク。eGFR<30で慎重（高Ca血症が起きやすい）。利尿薬との組み合わせで高Ca血症リスク増加 ／ 【妊娠】活性型VitD誘導体。妊娠中の骨代謝維持に使用可。高Ca血症リスクがあるため血清Ca・尿Caの定期モニタリング必須。"
   },
   {
     "name": "アルファカルシドール",
@@ -697,11 +697,11 @@
     "guideline_rank": "骨粗鬆症の基本補助治療・CKDに伴う骨ミネラル代謝異常（二次性副甲状腺機能亢進症）の治療に広く使用。骨折予防効果：エルデカルシトール>アルファカルシドール>プラセボ",
     "evidence": "Orimo et al.（Osteoporos Int 1994）",
     "evidence_url": null,
-    "pregnancy": "×",
-    "lactation": "×",
+    "pregnancy": "△",
+    "lactation": "△",
     "renal_gfr": null,
     "dialysis": "無",
-    "caution": "高カルシウム血症（血清Ca・Crの定期モニタリング）。腎結石。eGFR<30で慎重"
+    "caution": "高カルシウム血症（血清Ca・Crの定期モニタリング）。腎結石。eGFR<30で慎重 ／ 【妊娠】活性型VitD前駆体。同上の理由で妊娠中は慎重に使用。血清Caモニタリング必須。"
   },
   {
     "name": "ベムペド酸",

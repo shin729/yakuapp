@@ -168,9 +168,9 @@
     "duration_hours": "1日2回（T1/2 約12時間）",
     "guideline_rank": "アミオダロンほど強力ではないが長期毒性が少ない。軽度の器質的心疾患（安定冠動脈疾患・EF>40%）合併AFでも使用可。ただしQT延長→Torsades de Pointes（TdP）リスクあり。腎機能低下（CCr<30）は蓄積で禁忌",
     "evidence": "日本循環器学会ガイドライン2020; Cochrane Review（Lafuente-Lafuente et al. 2015）",
-    "caution": "QT延長（TdP）リスク：QTc>500msで中止。腎機能低下（CCr<30）禁忌。低カリウム・低Mg血症は禁忌。喘息禁忌（β2遮断）。心機能著明低下例は注意",
+    "caution": "QT延長（TdP）リスク：QTc>500msで中止。腎機能低下（CCr<30）禁忌。低カリウム・低Mg血症は禁忌。喘息禁忌（β2遮断）。心機能著明低下例は注意 ／ 【妊娠】母体投与による胎児SVT（上室性頻脈）の経胎盤治療薬として使用される。TGA B3。QT延長・Torsade de Pointesリスクの監視必要。",
     "evidence_url": null,
-    "pregnancy": "×",
+    "pregnancy": "△",
     "lactation": "△",
     "renal_gfr": null,
     "dialysis": "有"
