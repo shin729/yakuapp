@@ -618,8 +618,8 @@
     "guideline_rank": "GINA Step 5：高IgE・アレルゲン感作陽性の重症アレルギー喘息に。血中総IgE・体重によって用量決定。",
     "evidence": "Humbert M, et al. Allergy. 2005. PMID: 16115215",
     "evidence_url": null,
-    "caution": "アナフィラキシーリスク（投与後30分観察必須）。血中IgE・体重での用量設定が複雑。",
-    "pregnancy": "×",
+    "caution": "アナフィラキシーリスク（投与後30分観察必須）。血中IgE・体重での用量設定が複雑。 ／ 【妊娠】GINAガイドライン：妊娠前から使用中で有効な場合は継続推奨。Xolairレジストリデータで重大な胎児影響報告なし。",
+    "pregnancy": "△",
     "lactation": "×",
     "renal_gfr": null,
     "dialysis": "無"
@@ -1218,8 +1218,8 @@
     "guideline_rank": "ACCP・緩和ケアガイドライン: 難治性咳嗽の緩和に低用量モルヒネ（経口2.5〜5mg q4h）を推奨。コデイン不耐時の代替。",
     "evidence": null,
     "evidence_url": null,
-    "caution": "麻薬指定・処方箋管理必須。呼吸抑制（特に高用量・腎不全）・依存性・便秘・嘔気。初回投与時は低用量から開始。",
-    "pregnancy": "×",
+    "caution": "麻薬指定・処方箋管理必須。呼吸抑制（特に高用量・腎不全）・依存性・便秘・嘔気。初回投与時は低用量から開始。 ／ 【妊娠】妊娠中の重篤な呼吸困難・咳嗽（緩和ケア）に使用可。新生児オピオイド離脱症候群（NOWS）のモニタリング必要。",
+    "pregnancy": "△",
     "lactation": "△",
     "renal_gfr": null,
     "dialysis": "有"
@@ -1268,9 +1268,9 @@
     "guideline_rank": "国内：カルボシステインと並ぶ標準去痰薬。早産児・新生児のRDS（呼吸窮迫症候群）にも使用。吸入・注射剤もあり。",
     "evidence": null,
     "evidence_url": null,
-    "caution": "本剤過敏症は禁忌。消化器症状（軽度）。妊娠初期は慎重に。",
-    "pregnancy": "×",
-    "lactation": "×",
+    "caution": "本剤過敏症は禁忌。消化器症状（軽度）。妊娠初期は慎重に。 ／ 【妊娠】TGA B3。妊娠中の去痰薬として広く使用。欧州では妊娠全期間に使用可とされる。日本添付文書は慎重投与。",
+    "pregnancy": "△",
+    "lactation": "△",
     "renal_gfr": null,
     "dialysis": "無"
   }
