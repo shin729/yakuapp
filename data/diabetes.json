@@ -784,7 +784,7 @@
     "onset_time": "1〜2時間（作用発現）",
     "duration_hours": "1日1〜3回（朝食前）",
     "guideline_rank": "強力な血糖降下力。低血糖リスクが高くSU薬の中では現在は後退。高齢者・腎障害では避ける",
-    "evidence": "UKPDS試験（SU群として参加）",
+    "evidence": "UKPDS Group（Lancet 1998 PMID:9742976）",
     "evidence_url": null,
     "caution": "低血糖リスクが高い（グリメピリドより強く・長い低血糖）\n腎機能低下（eGFR<30）は禁忌。高齢者に使いにくい。体重増加が顕著",
     "pregnancy": "×",

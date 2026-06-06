@@ -391,7 +391,7 @@
     "device": "MDI（エアゾール）",
     "inhalation_flow": "弱〜中（約30 L/min）",
     "guideline_rank": "GINA：DPI使用困難・吸気力低下患者へのICS/LABA。シムビコートのようなSMART療法不可（維持専用）。スペーサー併用可。2012年日本承認",
-    "evidence": "Bateman ED et al. J Asthma 2012",
+    "evidence": "Bateman et al.（J Asthma 2012 PMID:22264007）",
     "evidence_url": null,
     "caution": "SMART療法不可（シムビコートと混同注意）。口腔カンジダ・嗄声。吸入後うがい。",
     "pregnancy": "△",

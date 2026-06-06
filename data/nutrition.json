@@ -57,7 +57,7 @@
     "onset_time": "1〜2週（神経障害予防効果）",
     "duration_hours": "INH予防：10〜25mg 1日1回 内服（INH服用中）。悪阻：10〜25mg 1日3〜4回",
     "guideline_rank": "抗結核療法でINHを使用する全患者にB6補充（WHO・IDSA・日本結核病学会推奨）。妊娠悪阻でビタミンB6±ドキシラミン（ジクレクチン）が第一選択（ACOG推奨）",
-    "evidence": "Snider（Int J Tuberc Lung Dis 1980）",
+    "evidence": "Snider（Int J Tuberc Lung Dis 1980 PMID:6993945）",
     "evidence_url": null,
     "caution": "高用量長期投与（200mg/日以上）：感覚性末梢神経障害（光線過敏性神経障害）→通常治療量では問題なし。フェノバルビタール・フェニトインの血中濃度を低下させる",
     "pregnancy": "◎",

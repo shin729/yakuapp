@@ -277,7 +277,7 @@
     "onset_time": "1周期（避妊）・2〜3周期（ニキビ）",
     "duration_hours": "150μg/0.03mg 28日シート（21錠実薬+7錠プラセボ）1日1回 内服",
     "guideline_rank": "ニキビ合併の月経困難症に適したOC。第3世代はVTEリスクが第2世代よりやや高いとするデータもある（議論あり）。コンプライアンスを重視する場合に1相性が有利",
-    "evidence": "Gu et al.（Contraception 1990）",
+    "evidence": "Gu et al.（Contraception 1990 PMID:2111566）",
     "evidence_url": null,
     "caution": "VTE（第3世代は第2世代より高いとする研究あり）。35歳以上喫煙者禁忌。血圧上昇。服用忘れの管理",
     "pregnancy": "×",

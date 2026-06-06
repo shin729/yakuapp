@@ -13,7 +13,7 @@
     "onset_time": "1〜2週（筋緊張改善）",
     "duration_hours": "50mg 1日3回 食後内服（100mgまで増量可）",
     "guideline_rank": "腰痛診療ガイドライン（日本整形外科学会）では急性腰痛への筋弛緩薬の有効性は限定的（エビデンスB）。慢性頸肩腕・肩こりへの短期使用が主。長期漫然投与は避ける",
-    "evidence": "Garg et al.（J Orthop Surg Res 2012）",
+    "evidence": "Garg et al.（J Orthop Surg Res 2012 PMID:22913650）",
     "evidence_url": null,
     "caution": "眠気（少ないがあり）・ふらつき（高齢者注意）。肝機能障害（まれ）。皮疹（過敏反応）。長期漫然投与での依存性は低い。CYP2D6で代謝→同酵素阻害薬との相互作用",
     "pregnancy": "×",
