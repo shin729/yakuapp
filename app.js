@@ -948,6 +948,17 @@ function buildDrugCard(d, defs, cfg) {
   // Detail rows (all defs except stars/nnt/rank already shown in KPIs)
   const detailHTML = defs.map(def => {
     if (['stars', 'nnt'].includes(def.type)) return '';
+    if (def.type === 'safety_pair') {
+      const [f1, f2] = def.fields;
+      const v1 = d[f1], v2 = d[f2];
+      if (v1 == null && v2 == null) return '';
+      const sym = v => {
+        if (v == null) return `<span style="color:#9ca3af">-</span>`;
+        const color = v === '◎' ? '#15803d' : v === '△' ? '#d97706' : v === '×' ? '#dc2626' : '#374151';
+        return `<span style="color:${color};font-weight:700">${esc(String(v))}</span>`;
+      };
+      return `<div class="card-detail-row"><span class="cd-label">${esc(def.label)}</span><span class="cd-val">${sym(v1)}&thinsp;｜&thinsp;${sym(v2)}</span></div>`;
+    }
     const v = d[def.field];
     if (v == null || v === '') return '';
     const s = String(v);
