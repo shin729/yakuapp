@@ -321,7 +321,7 @@
     "onset_time": "食直前・食直後（食事中のリンと結合させるため）",
     "duration_hours": "0.5〜3g 1日3回（食事ごと）",
     "guideline_rank": "CKD-MBD（ミネラル骨代謝異常）の基本治療。低コストだが高Ca血症・血管石灰化リスクがある患者ではCa非含有吸着薬を優先。",
-    "evidence": "KDIGO CKD-MBD Guidelines 2017",
+    "evidence": "KDIGO Work Group（Kidney Int Suppl 2017 PMID:30675420）",
     "evidence_url": null,
     "caution": "高カルシウム血症（血清Ca >10.0mg/dL時は減量・中止）。血管石灰化リスク（冠動脈・弁膜石灰化促進の可能性）。便秘。制酸作用により他薬の吸収に影響。",
     "pregnancy": "◎",
