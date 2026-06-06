@@ -59,7 +59,7 @@
     "duration": "24時間（10mg 1日1回）",
     "indication": "アレルギー性鼻炎、蕁麻疹",
     "guideline_rank": "小児用シロップあり。妊婦Bカテゴリ（安全性データ豊富）。OTCとしても入手可能",
-    "evidence": "Meltzer et al.（J Allergy Clin Immunol 1994）",
+    "evidence": "Meltzer et al.（J Allergy Clin Immunol 1994 PMID:7751481）",
     "evidence_url": null,
     "caution": "CYP3A4阻害薬（エリスロマイシン・ケトコナゾール）で血中濃度上昇",
     "response_rate": "花粉症：症状スコア50%以上改善 約50〜58%（対プラセボ比差 +15〜22%）",

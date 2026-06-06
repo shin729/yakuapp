@@ -96,7 +96,7 @@
     "water_required": "必須（水に溶かして内服・コップ1〜2杯）",
     "efficacy_star": 4,
     "guideline_rank": "欧米での慢性便秘第一選択薬。小児・高齢者にも安全。電解質異常・依存性なし。効果発現が遅いため即効性は期待できない。粉末を水に溶かして飲む必要がある（味への工夫が必要）",
-    "evidence": "Cochrane Review（Lee-Robichaud 2010）",
+    "evidence": "Lee-Robichaud et al.（Cochrane 2010 PMID:20927643）",
     "caution": "高度腸閉塞・消化管穿孔禁忌。大量急速投与で電解質異常の可能性",
     "evidence_url": null,
     "pregnancy": "◎",
