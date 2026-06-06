@@ -952,12 +952,9 @@ function buildDrugCard(d, defs, cfg) {
       const [f1, f2] = def.fields;
       const v1 = d[f1], v2 = d[f2];
       if (v1 == null && v2 == null) return '';
-      const sym = v => {
-        if (v == null) return `<span style="color:#9ca3af">-</span>`;
-        const color = v === '◎' ? '#15803d' : v === '△' ? '#d97706' : v === '×' ? '#dc2626' : '#374151';
-        return `<span style="color:${color};font-weight:700">${esc(String(v))}</span>`;
-      };
-      return `<div class="card-detail-row"><span class="cd-label">${esc(def.label)}</span><span class="cd-val">${sym(v1)}&thinsp;｜&thinsp;${sym(v2)}</span></div>`;
+      const hint = f1 === 'renal_gfr'
+        ? '<span class="cd-safety-hint">左:GFR下限 右:透析除去性</span>' : '';
+      return `<div class="card-detail-row"><span class="cd-label">${esc(def.label)}</span><span class="cd-val">${safetySymbol(v1)}&thinsp;｜&thinsp;${safetySymbol(v2)}${hint}</span></div>`;
     }
     const v = d[def.field];
     if (v == null || v === '') return '';
@@ -2410,7 +2407,13 @@ function buildRows(drugs, cfg, category) {
   return defs.map((def, i) => {
     const alt    = i % 2 === 1;
     const isWarn = def.label.startsWith('⚠');
-    return makeRow(drugs, cfg, def.label, d => renderCell(d, def, cfg.accentColor), alt, isWarn);
+    let title = '';
+    if (def.type === 'safety_pair') {
+      title = def.fields[0] === 'pregnancy'
+        ? '左：妊娠中　右：授乳中　◎=積極推奨 △=条件付き可 ×=禁忌'
+        : '左：使用可能GFR下限（>数値）　右：透析での除去性（有=除去 無=蓄積）';
+    }
+    return makeRow(drugs, cfg, def.label, d => renderCell(d, def, cfg.accentColor), alt, isWarn, title);
   }).join('');
 }
 
@@ -2437,23 +2440,32 @@ function renderCell(d, def, accentColor) {
   }
 }
 
+function safetySymbol(v) {
+  if (v == null) return '<span style="color:#9ca3af">-</span>';
+  if (v === '◎') return '<span style="color:#15803d;font-weight:700">◎</span>';
+  if (v === '△') return '<span style="color:#d97706;font-weight:700">△</span>';
+  if (v === '×') return '<span style="color:#dc2626;font-weight:700">×</span>';
+  if (v === '有') return '<span style="color:#2563eb;font-weight:600;font-size:0.85em">有</span>';
+  if (v === '無') return '<span style="color:#9ca3af;font-weight:600;font-size:0.85em">無</span>';
+  if (typeof v === 'string' && v.startsWith('>'))
+    return `<span style="color:#d97706;font-weight:600;font-size:0.82em">${esc(v)}</span>`;
+  return `<span style="color:#374151;font-weight:600">${esc(String(v))}</span>`;
+}
+
 function safetyPairCell(d, def) {
-  function symSpan(v) {
-    if (v === null || v === undefined) return '<span style="color:#9ca3af">-</span>';
-    const color = v === '◎' ? '#15803d' : v === '△' ? '#d97706' : v === '×' ? '#dc2626' : '#374151';
-    return `<span style="color:${color};font-weight:700">${esc(String(v))}</span>`;
-  }
   const [f1, f2] = def.fields;
-  return `<td class="val-cell safety-pair-cell"><div class="safety-pair-inner"><div class="safety-pair-l">${symSpan(d[f1])}</div><div class="safety-pair-r">${symSpan(d[f2])}</div></div></td>`;
+  return `<td class="val-cell safety-pair-cell"><div class="safety-pair-inner"><div class="safety-pair-l">${safetySymbol(d[f1])}</div><div class="safety-pair-r">${safetySymbol(d[f2])}</div></div></td>`;
 }
 
 // ===== 行ヘルパー =====
-function makeRow(drugs, cfg, label, cellFn, alt, isWarn = false) {
+function makeRow(drugs, cfg, label, cellFn, alt, isWarn = false, title = '') {
   const labelClass  = `row-label${isWarn ? ' row-label-warn' : ''}`;
-  const stickyStyle = `background:${alt ? cfg.rowAltSticky : 'white'}`;
+  const bg          = alt ? cfg.rowAltSticky : 'white';
+  const style       = title ? `background:${bg};cursor:help` : `background:${bg}`;
+  const titleAttr   = title ? ` title="${esc(title)}"` : '';
   return `
     <tr${alt ? ' class="row-alt"' : ''}>
-      <td class="sticky-col ${labelClass}" style="${stickyStyle}">${esc(label)}</td>
+      <td class="sticky-col ${labelClass}" style="${style}"${titleAttr}>${esc(label)}</td>
       ${drugs.map(cellFn).join('')}
     </tr>`;
 }
