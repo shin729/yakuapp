@@ -1098,6 +1098,27 @@
     "dialysis": "無"
   },
   {
+    "name": "グセルクマブ",
+    "brand": "トレムフィア",
+    "category": "潰瘍性大腸炎・クローン病",
+    "class": "抗IL-23p19抗体（完全ヒト型IgG1・CD64結合のデュアル作用）",
+    "action_type": "IL-23のp19サブユニット中和＋CD64（FcγRI）結合によるIL-23産生細胞捕捉→Th17炎症経路を二重に遮断",
+    "mechanism": "IL-23のp19サブユニットに高親和性で結合しIL-23シグナルを遮断すると同時に、IL-23産生細胞表面のCD64（FcγRI）にも結合してIL-23を局所で捕捉する（デュアル作用）。IL-12（p35+p40）には影響せずIL-23（p19+p40）を選択的に阻害し、Th17由来のIL-17A・IL-22産生を抑制する",
+    "remission_type": "寛解導入・維持療法の両方（UC：2025年3月導入療法承認・2026年2月皮下注寛解導入追加、CD：2025年6月承認）",
+    "infection_risk": "低〜中程度（IL-23選択的阻害でIL-12経路を温存・感染リスクはウステキヌマブと同等以下）",
+    "NNT": 5,
+    "immunosuppression_strength": "中〜強（IL-23特異的・Th17経路選択的：IL-12経路は温存）",
+    "efficacy_star": 5,
+    "guideline_rank": "リサンキズマブ・ミリキズマブと並ぶ抗IL-23（p19）薬。QUASAR試験（UC）で寛解導入・維持の有効性を示し、GALAXI-2/3試験（CD）ではウステキヌマブに対する優越性を達成した。乾癬で先行承認（derma.json掲載）、IBDではUC・CDとも2025年承認。導入はIV点滴、維持はSC皮下注",
+    "evidence": "QUASAR試験（Lancet 2024 PMID:39706209）",
+    "caution": "投与前感染症スクリーニング（結核・B型肝炎）必須。活動性感染症・活動性結核は禁忌。生ワクチン禁忌。注射部位反応（維持療法SC時）。悪性腫瘍リスクの長期評価継続中",
+    "evidence_url": null,
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
+  },
+  {
     "name": "ベドリズマブ",
     "brand": "エンタイビオ",
     "category": "潰瘍性大腸炎・クローン病",
