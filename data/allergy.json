@@ -532,8 +532,8 @@
     "guideline_rank": "Th2アレルギー経路を広くカバー。アトピー性皮膚炎の生物学的製剤スタンダード。適応疾患が最多",
     "evidence": "Simpson et al.（NEJM 2016 PMID:27690741）",
     "evidence_url": null,
-    "caution": "結膜炎（アトピー例で15〜20%）。注射部位反応。ニキビ様皮疹",
-    "pregnancy": "×",
+    "caution": "結膜炎（アトピー例で15〜20%）。注射部位反応。ニキビ様皮疹 ／ 【妊娠】複数コホート・registry・2024-2025年メタ解析で重大な先天異常の増加なし（国際コンセンサスでも重症例の妊娠中継続を許容）。積極的新規開始より既存重症例の継続が基本。derma.json掲載分と評価統一（妊娠△）。",
+    "pregnancy": "△",
     "lactation": "×",
     "renal_gfr": null,
     "dialysis": "無"

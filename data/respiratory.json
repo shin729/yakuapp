@@ -693,8 +693,8 @@
     "guideline_rank": "GINA Step 5：アトピー皮膚炎・好酸球性副鼻腔炎合併の重症喘息に特に適。2週に1回皮下注。",
     "evidence": "Castro M, et al. N Engl J Med. 2018. PMID: 30088228",
     "evidence_url": null,
-    "caution": "注射部位反応・結膜炎。アナフィラキシーリスク。IL-4/IL-13遮断による皮膚炎悪化の初期報告あり。",
-    "pregnancy": "×",
+    "caution": "注射部位反応・結膜炎。アナフィラキシーリスク。IL-4/IL-13遮断による皮膚炎悪化の初期報告あり。 ／ 【妊娠】複数コホート・registry・2024-2025年メタ解析で重大な先天異常の増加なし（国際コンセンサスでも重症例の妊娠中継続を許容）。積極的新規開始より既存重症例の継続が基本。derma.json掲載分と評価統一（妊娠△）。",
+    "pregnancy": "△",
     "lactation": "×",
     "renal_gfr": null,
     "dialysis": "無"
