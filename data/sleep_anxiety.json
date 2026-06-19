@@ -677,7 +677,7 @@
     "lactation": "×",
     "renal_gfr": null,
     "dialysis": "無",
-    "dose_equiv": "稲垣・稲田2017版に未収載（2022版で別掲）"
+    "dose_equiv": "CP100mg相当 ≒ 10mg（稲垣・稲田2022版）"
   },
   {
     "name": "ブロナンセリン",
@@ -773,7 +773,7 @@
     "lactation": "△",
     "renal_gfr": null,
     "dialysis": "無",
-    "dose_equiv": "稲垣・稲田2017版に未収載（2022版・第28回追補で別掲）"
+    "dose_equiv": "CP100mg相当 ≒ 0.5mg（稲垣・稲田2022版）"
   },
   {
     "name": "ズラノロン",
@@ -817,7 +817,7 @@
     "lactation": "△",
     "renal_gfr": null,
     "dialysis": "無",
-    "dose_equiv": "稲垣・稲田2017版に未収載（2019承認・追補で別掲）"
+    "dose_equiv": "稲垣・稲田2017/2022版とも未収載（公的換算値なし）"
   },
   {
     "name": "ミルタザピン",
@@ -993,7 +993,7 @@
     "lactation": "△",
     "renal_gfr": null,
     "dialysis": "無",
-    "dose_equiv": "稲垣・稲田2017版に未収載（2022版・第28回追補で別掲）"
+    "dose_equiv": "CP100mg相当 ≒ 0.5mg（稲垣・稲田2022版）"
   },
   {
     "name": "アミトリプチリン",
