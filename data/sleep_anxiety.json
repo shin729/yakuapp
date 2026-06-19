@@ -125,7 +125,8 @@
     "pregnancy": "×",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "ジアゼパム5mg相当 ≒ 2.5mg"
   },
   {
     "name": "ゾルピデム",
@@ -146,7 +147,8 @@
     "pregnancy": "△",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "ジアゼパム5mg相当 ≒ 10mg"
   },
   {
     "name": "トリアゾラム",
@@ -167,7 +169,8 @@
     "pregnancy": "△",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "ジアゼパム5mg相当 ≒ 0.25mg"
   },
   {
     "name": "ブロチゾラム",
@@ -188,7 +191,8 @@
     "pregnancy": "△",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "ジアゼパム5mg相当 ≒ 0.25mg"
   },
   {
     "name": "ニトラゼパム",
@@ -209,7 +213,8 @@
     "pregnancy": "△",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "ジアゼパム5mg相当 ≒ 5mg"
   },
   {
     "name": "エスシタロプラム",
@@ -230,7 +235,8 @@
     "pregnancy": "△",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "イミプラミン150mg相当 ≒ 20mg"
   },
   {
     "name": "パロキセチン",
@@ -251,7 +257,8 @@
     "pregnancy": "×",
     "lactation": "◎",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "イミプラミン150mg相当 ≒ 40mg"
   },
   {
     "name": "デュロキセチン",
@@ -272,7 +279,8 @@
     "pregnancy": "△",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "イミプラミン150mg相当 ≒ 30mg"
   },
   {
     "name": "タンドスピロン",
@@ -314,7 +322,8 @@
     "pregnancy": "△",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "有"
+    "dialysis": "有",
+    "dose_equiv": "ジアゼパム5mg相当 ≒ 1.2mg"
   },
   {
     "name": "アルプラゾラム",
@@ -335,7 +344,8 @@
     "pregnancy": "△",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "ジアゼパム5mg相当 ≒ 0.8mg"
   },
   {
     "name": "クロナゼパム",
@@ -356,7 +366,8 @@
     "pregnancy": "△",
     "lactation": "×",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "ジアゼパム5mg相当 ≒ 0.25mg"
   },
   {
     "name": "エチゾラム",
@@ -377,7 +388,8 @@
     "pregnancy": "×",
     "lactation": "×",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "ジアゼパム5mg相当 ≒ 1.5mg"
   },
   {
     "name": "ハロペリドール",
@@ -400,7 +412,8 @@
     "pregnancy": "△",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "CP100mg相当 ≒ 2mg"
   },
   {
     "name": "フルフェナジン",
@@ -423,7 +436,8 @@
     "pregnancy": "×",
     "lactation": "×",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "CP100mg相当 ≒ 2mg"
   },
   {
     "name": "クロルプロマジン",
@@ -446,7 +460,8 @@
     "pregnancy": "×",
     "lactation": "×",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "CP換算の基準薬（CP100mg）｜稲垣・稲田2017版・目安"
   },
   {
     "name": "スルピリド",
@@ -469,7 +484,8 @@
     "pregnancy": "×",
     "lactation": "×",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "CP100mg相当 ≒ 200mg"
   },
   {
     "name": "レボメプロマジン",
@@ -492,7 +508,8 @@
     "pregnancy": "×",
     "lactation": "×",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "CP100mg相当 ≒ 100mg"
   },
   {
     "name": "クロザピン",
@@ -515,7 +532,8 @@
     "pregnancy": "×",
     "lactation": "×",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "CP100mg相当 ≒ 50mg"
   },
   {
     "name": "オランザピン",
@@ -538,7 +556,8 @@
     "pregnancy": "×",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "CP100mg相当 ≒ 2.5mg"
   },
   {
     "name": "クエチアピン",
@@ -561,7 +580,8 @@
     "pregnancy": "×",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "CP100mg相当 ≒ 66mg"
   },
   {
     "name": "アセナピン",
@@ -584,7 +604,8 @@
     "pregnancy": "×",
     "lactation": "×",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "CP100mg相当 ≒ 2.5mg"
   },
   {
     "name": "リスペリドン",
@@ -607,7 +628,8 @@
     "pregnancy": "×",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "CP100mg相当 ≒ 1mg"
   },
   {
     "name": "パリペリドン",
@@ -630,7 +652,8 @@
     "pregnancy": "×",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "CP100mg相当 ≒ 1.5mg"
   },
   {
     "name": "ルラシドン",
@@ -653,7 +676,8 @@
     "pregnancy": "×",
     "lactation": "×",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "稲垣・稲田2017版に未収載（2022版で別掲）"
   },
   {
     "name": "ブロナンセリン",
@@ -676,7 +700,8 @@
     "pregnancy": "×",
     "lactation": "×",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "CP100mg相当 ≒ 4mg"
   },
   {
     "name": "ペロスピロン",
@@ -699,7 +724,8 @@
     "pregnancy": "×",
     "lactation": "×",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "CP100mg相当 ≒ 8mg"
   },
   {
     "name": "アリピプラゾール",
@@ -722,7 +748,8 @@
     "pregnancy": "×",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "CP100mg相当 ≒ 4mg"
   },
   {
     "name": "ブレクスピプラゾール",
@@ -745,7 +772,8 @@
     "pregnancy": "×",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "稲垣・稲田2017版に未収載（2022版・第28回追補で別掲）"
   },
   {
     "name": "ズラノロン",
@@ -788,7 +816,8 @@
     "pregnancy": "×",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "稲垣・稲田2017版に未収載（2019承認・追補で別掲）"
   },
   {
     "name": "ミルタザピン",
@@ -809,7 +838,8 @@
     "pregnancy": "△",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "イミプラミン150mg相当 ≒ 30mg"
   },
   {
     "name": "デュロキセチン",
@@ -830,7 +860,8 @@
     "pregnancy": "△",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "イミプラミン150mg相当 ≒ 30mg"
   },
   {
     "name": "ベンラファキシン",
@@ -851,7 +882,8 @@
     "pregnancy": "△",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "イミプラミン150mg相当 ≒ 150mg"
   },
   {
     "name": "ミルナシプラン",
@@ -872,7 +904,8 @@
     "pregnancy": "×",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "イミプラミン150mg相当 ≒ 100mg"
   },
   {
     "name": "セルトラリン",
@@ -893,7 +926,8 @@
     "pregnancy": "△",
     "lactation": "◎",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "イミプラミン150mg相当 ≒ 100mg"
   },
   {
     "name": "フルボキサミン",
@@ -914,7 +948,8 @@
     "pregnancy": "△",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "イミプラミン150mg相当 ≒ 150mg"
   },
   {
     "name": "アリピプラゾール",
@@ -935,7 +970,8 @@
     "pregnancy": "×",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "CP100mg相当 ≒ 4mg"
   },
   {
     "name": "ブレクスピプラゾール",
@@ -956,7 +992,8 @@
     "pregnancy": "×",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "稲垣・稲田2017版に未収載（2022版・第28回追補で別掲）"
   },
   {
     "name": "アミトリプチリン",
@@ -977,7 +1014,8 @@
     "pregnancy": "△",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "イミプラミン150mg相当 ≒ 150mg"
   },
   {
     "name": "クロミプラミン",
@@ -998,7 +1036,8 @@
     "pregnancy": "△",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "イミプラミン150mg相当 ≒ 120mg"
   },
   {
     "name": "イミプラミン",
@@ -1019,7 +1058,8 @@
     "pregnancy": "△",
     "lactation": "△",
     "renal_gfr": null,
-    "dialysis": "無"
+    "dialysis": "無",
+    "dose_equiv": "イミプラミン換算の基準薬（IMP150mg）｜稲垣・稲田2017版・目安"
   },
   {
     "name": "エスケタミン",

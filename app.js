@@ -1055,6 +1055,7 @@ const ROW_DEFS = {
   '睡眠薬': [
     { label: '主な作用',       field: 'action_type',    type: 'mech'  },
     { label: '作用機序',       field: 'mechanism',      type: 'mech'  },
+    { label: '等価換算',       field: 'dose_equiv',     type: 'val'   },
     { label: '入眠時間',       field: 'placebo_onset',  type: 'accent' },
     { label: '中途覚醒・熟睡', field: 'placebo_sleep',  type: 'accent' },
     { label: 'NNT',            field: 'NNT',            type: 'nnt'   },
@@ -1069,6 +1070,7 @@ const ROW_DEFS = {
   '抗不安薬': [
     { label: '主な作用',       field: 'action_type',    type: 'mech'  },
     { label: '作用機序',       field: 'mechanism',      type: 'mech'  },
+    { label: '等価換算',       field: 'dose_equiv',     type: 'val'   },
     { label: '不安スコア改善', field: 'placebo_onset',  type: 'accent' },
     { label: '治療反応率',     field: 'placebo_sleep',  type: 'accent' },
     { label: 'NNT',            field: 'NNT',            type: 'nnt'   },
@@ -1098,10 +1100,18 @@ const PSYCH_ROWS = [
   { label: '⚠ 注意事項',    field: 'caution',        type: 'caution'},
 ];
 
+// 抗うつ薬専用：等価換算（イミプラミン換算）行を追加（気分安定薬・認知症はPSYCH_ROWSのまま）
+const ANTIDEPRESSANT_ROWS = [
+  ...PSYCH_ROWS.slice(0, 2),
+  { label: '等価換算',       field: 'dose_equiv',     type: 'val'   },
+  ...PSYCH_ROWS.slice(2),
+];
+
 // 抗精神病薬（定型・非定型）専用：陽性症状・陰性症状行を追加
 const AP_ROWS = [
   { label: '主な作用',       field: 'action_type',       type: 'mech'   },
   { label: '作用機序',       field: 'mechanism',         type: 'mech'   },
+  { label: '等価換算',       field: 'dose_equiv',        type: 'val'    },
   { label: '陽性症状改善',   field: 'positive_symptoms', type: 'accent' },
   { label: '陰性症状改善',   field: 'negative_symptoms', type: 'accent' },
   { label: '症状スコア改善', field: 'placebo_onset',     type: 'accent' },
@@ -2317,7 +2327,8 @@ function getRowDefs(category) {
   if (ROW_DEFS[category]) return ROW_DEFS[category];
   if (['抗精神病薬（定型）', '抗精神病薬（非定型）'].includes(category))
     return AP_ROWS;
-  if (['抗うつ薬', '気分安定薬', '認知症治療薬'].includes(category))
+  if (category === '抗うつ薬') return ANTIDEPRESSANT_ROWS;
+  if (['気分安定薬', '認知症治療薬'].includes(category))
     return PSYCH_ROWS;
   if (category === '双極性障害そう状態') return BIPOLAR_MANIA_ROWS;
   if (category === '双極性障害うつ状態') return BIPOLAR_DEP_ROWS;
