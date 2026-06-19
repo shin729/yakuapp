@@ -1740,3 +1740,62 @@ thead .cmp-label-col { background: #f5f3ff !important; }
   .tab-btn    { font-size: 0.72rem; padding: 7px 10px; }
   .domain-btn { font-size: 0.76rem; padding: 7px 11px; }
 }
+
+/* ===== 等価換算計算機 ===== */
+.calc-open-btn {
+  margin-top: 4px;
+  background: rgba(255,255,255,0.16);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.55);
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.calc-open-btn:hover { background: rgba(255,255,255,0.28); }
+
+.calc-modal { position: fixed; inset: 0; z-index: 1000; display: none; }
+.calc-modal.open { display: block; }
+.calc-overlay { position: absolute; inset: 0; background: rgba(15,23,42,0.55); }
+.calc-panel {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+  width: min(520px, 92vw); max-height: 88vh; overflow-y: auto;
+  background: #fff; border-radius: 14px; padding: 18px 18px 16px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+.calc-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.calc-title { font-size: 1.05rem; font-weight: 700; color: #1e293b; }
+.calc-close { background: none; border: none; font-size: 1.1rem; color: #64748b; cursor: pointer; padding: 4px 8px; }
+.calc-close:hover { color: #1e293b; }
+
+.calc-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.calc-tab {
+  flex: 1 1 auto; background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 8px;
+  padding: 7px 8px; font-size: 0.74rem; font-weight: 600; color: #475569; cursor: pointer;
+}
+.calc-tab.active { background: #7c3aed; border-color: #7c3aed; color: #fff; }
+
+.calc-rows { display: flex; flex-direction: column; gap: 8px; }
+.calc-row { display: flex; align-items: center; gap: 6px; }
+.calc-drug { flex: 1 1 auto; min-width: 0; padding: 7px 8px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 0.85rem; background: #fff; }
+.calc-dose { width: 72px; padding: 7px 8px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 0.85rem; text-align: right; }
+.calc-unit { font-size: 0.78rem; color: #64748b; }
+.calc-eq { flex: 0 0 auto; min-width: 92px; text-align: right; font-size: 0.8rem; font-weight: 600; color: #7c3aed; }
+.calc-row-rm { background: none; border: none; color: #cbd5e1; font-size: 0.95rem; cursor: pointer; padding: 2px 4px; }
+.calc-row-rm:hover { color: #ef4444; }
+
+.calc-add {
+  margin-top: 12px; width: 100%; background: #f8fafc; border: 1px dashed #cbd5e1;
+  border-radius: 8px; padding: 8px; font-size: 0.82rem; font-weight: 600; color: #475569; cursor: pointer;
+}
+.calc-add:hover { border-color: #7c3aed; color: #7c3aed; }
+
+.calc-total {
+  margin-top: 14px; padding: 12px 14px; background: #f5f3ff; border: 1px solid #ddd6fe;
+  border-radius: 10px; font-size: 0.95rem; color: #1e293b; text-align: center;
+}
+.calc-total strong { font-size: 1.3rem; color: #7c3aed; }
+.calc-total-sub { display: block; font-size: 0.72rem; color: #64748b; margin-top: 2px; font-weight: 400; }
+.calc-note { margin-top: 12px; font-size: 0.7rem; color: #94a3b8; line-height: 1.5; }

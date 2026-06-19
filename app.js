@@ -3197,4 +3197,103 @@ document.getElementById('compare-bar-chips').addEventListener('click', e => {
   if (x) toggleCompareItem(x.dataset.cmpName, x.dataset.cmpCat);
 });
 
+// ===== 等価換算計算機（稲垣・稲田2017版） =====
+// 各値＝「基準薬○mgに相当する当該薬のmg」。equivalent = 入力mg × 基準 ÷ 値
+const DOSE_CALC = {
+  cp:  { label: '抗精神病薬（CP換算）', ref: 100, refName: 'クロルプロマジン100mg', unit: 'CP換算mg',
+    drugs: {'クロルプロマジン':100,'レボメプロマジン':100,'ハロペリドール':2,'フルフェナジン':2,'スルピリド':200,'アリピプラゾール':4,'アセナピン':2.5,'ブロナンセリン':4,'クロザピン':50,'オランザピン':2.5,'パリペリドン':1.5,'ペロスピロン':8,'クエチアピン':66,'リスペリドン':1} },
+  dzp: { label: '抗不安薬・睡眠薬（DZP換算）', ref: 5, refName: 'ジアゼパム5mg', unit: 'DZP換算mg',
+    drugs: {'ジアゼパム':5,'ロラゼパム':1.2,'アルプラゾラム':0.8,'クロナゼパム':0.25,'エチゾラム':1.5,'ニトラゼパム':5,'トリアゾラム':0.25,'ブロチゾラム':0.25,'ゾルピデム':10,'エスゾピクロン':2.5} },
+  imp: { label: '抗うつ薬（イミプラミン換算）', ref: 150, refName: 'イミプラミン150mg', unit: 'イミプラミン換算mg',
+    drugs: {'イミプラミン':150,'アミトリプチリン':150,'クロミプラミン':120,'エスシタロプラム':20,'フルボキサミン':150,'デュロキセチン':30,'ベンラファキシン':150,'ミルナシプラン':100,'ミルタザピン':30,'パロキセチン':40,'セルトラリン':100} },
+};
+let calcType = 'cp';
+const round1 = x => Math.round(x * 10) / 10;
+
+function openCalc() {
+  let modal = document.getElementById('calc-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'calc-modal';
+    modal.className = 'calc-modal';
+    modal.innerHTML = `
+      <div class="calc-overlay" id="calc-overlay"></div>
+      <div class="calc-panel" role="dialog" aria-label="等価換算計算機">
+        <div class="calc-head">
+          <span class="calc-title">🧮 等価換算計算機</span>
+          <button class="calc-close" id="calc-close" type="button" aria-label="閉じる">✕</button>
+        </div>
+        <div class="calc-tabs" id="calc-tabs"></div>
+        <div class="calc-rows" id="calc-rows"></div>
+        <button class="calc-add" id="calc-add" type="button">＋ 薬剤を追加</button>
+        <div class="calc-total" id="calc-total"></div>
+        <p class="calc-note">稲垣・稲田2017版に基づく目安。多剤併用時の概算用です。版・個人差で変動し、臨床判断は医師・薬剤師へ。</p>
+      </div>`;
+    document.body.appendChild(modal);
+    document.getElementById('calc-overlay').addEventListener('click', closeCalc);
+    document.getElementById('calc-close').addEventListener('click', closeCalc);
+    document.getElementById('calc-add').addEventListener('click', () => { calcAddRow(); calcRecompute(); });
+    const rows = document.getElementById('calc-rows');
+    rows.addEventListener('input', calcRecompute);
+    rows.addEventListener('change', calcRecompute);
+    rows.addEventListener('click', e => {
+      const rm = e.target.closest('.calc-row-rm');
+      if (rm) { rm.closest('.calc-row').remove(); calcRecompute(); }
+    });
+  }
+  renderCalcTabs();
+  document.getElementById('calc-rows').innerHTML = '';
+  calcAddRow();
+  calcRecompute();
+  modal.classList.add('open');
+}
+function closeCalc() {
+  const m = document.getElementById('calc-modal');
+  if (m) m.classList.remove('open');
+}
+function renderCalcTabs() {
+  document.getElementById('calc-tabs').innerHTML = Object.entries(DOSE_CALC).map(([k, v]) =>
+    `<button class="calc-tab${k === calcType ? ' active' : ''}" type="button" data-ct="${k}">${esc(v.label)}</button>`).join('');
+  document.querySelectorAll('#calc-tabs .calc-tab').forEach(b => b.addEventListener('click', () => {
+    calcType = b.dataset.ct;
+    renderCalcTabs();
+    document.getElementById('calc-rows').innerHTML = '';
+    calcAddRow();
+    calcRecompute();
+  }));
+}
+function calcAddRow() {
+  const opts = Object.keys(DOSE_CALC[calcType].drugs)
+    .map(n => `<option value="${esc(n)}">${esc(n)}</option>`).join('');
+  const row = document.createElement('div');
+  row.className = 'calc-row';
+  row.innerHTML = `
+    <select class="calc-drug">${opts}</select>
+    <input class="calc-dose" type="number" min="0" step="any" inputmode="decimal" placeholder="用量">
+    <span class="calc-unit">mg</span>
+    <span class="calc-eq" aria-live="polite">—</span>
+    <button class="calc-row-rm" type="button" aria-label="削除">✕</button>`;
+  document.getElementById('calc-rows').appendChild(row);
+}
+function calcRecompute() {
+  const conf = DOSE_CALC[calcType];
+  let total = 0;
+  document.querySelectorAll('#calc-rows .calc-row').forEach(row => {
+    const name = row.querySelector('.calc-drug').value;
+    const dose = parseFloat(row.querySelector('.calc-dose').value);
+    const factor = conf.drugs[name];
+    const eqEl = row.querySelector('.calc-eq');
+    if (factor && dose > 0) {
+      const eq = dose * conf.ref / factor;
+      total += eq;
+      eqEl.textContent = `≒ ${round1(eq)} ${conf.unit}`;
+    } else {
+      eqEl.textContent = '—';
+    }
+  });
+  document.getElementById('calc-total').innerHTML =
+    `合計 <strong>${round1(total)}</strong> ${esc(conf.unit)}<span class="calc-total-sub">（${esc(conf.refName)}を基準）</span>`;
+}
+document.getElementById('calc-open').addEventListener('click', openCalc);
+
 init();
