@@ -3199,13 +3199,27 @@ document.getElementById('compare-bar-chips').addEventListener('click', e => {
 
 // ===== 等価換算計算機（稲垣・稲田2017版） =====
 // 各値＝「基準薬○mgに相当する当該薬のmg」。equivalent = 入力mg × 基準 ÷ 値
+// cp/dzp/imp: 値は「基準薬○mgに相当する当該薬のmg」。eq = 入力mg × 基準 ÷ 値
+// op(MME): 値は {factor, in}。eq = 入力 × factor（経口モルヒネmg/日）。入力単位は薬剤ごと
 const DOSE_CALC = {
   cp:  { label: '抗精神病薬（CP換算）', ref: 100, refName: 'クロルプロマジン100mg', unit: 'CP換算mg',
+    note: '稲垣・稲田2022版に基づくクロルプロマジン換算の目安。',
     drugs: {'クロルプロマジン':100,'レボメプロマジン':100,'ハロペリドール':2,'フルフェナジン':2,'スルピリド':200,'アリピプラゾール':4,'アセナピン':2.5,'ブロナンセリン':4,'クロザピン':50,'オランザピン':2.5,'パリペリドン':1.5,'ペロスピロン':8,'クエチアピン':66,'リスペリドン':1,'ルラシドン':10,'ブレクスピプラゾール':0.5} },
   dzp: { label: '抗不安薬・睡眠薬（DZP換算）', ref: 5, refName: 'ジアゼパム5mg', unit: 'DZP換算mg',
+    note: '稲垣・稲田2017版に基づくジアゼパム換算の目安。',
     drugs: {'ジアゼパム':5,'ロラゼパム':1.2,'アルプラゾラム':0.8,'クロナゼパム':0.25,'エチゾラム':1.5,'ニトラゼパム':5,'トリアゾラム':0.25,'ブロチゾラム':0.25,'ゾルピデム':10,'エスゾピクロン':2.5} },
   imp: { label: '抗うつ薬（イミプラミン換算）', ref: 150, refName: 'イミプラミン150mg', unit: 'イミプラミン換算mg',
+    note: '稲垣・稲田2017版に基づくイミプラミン換算の目安。',
     drugs: {'イミプラミン':150,'アミトリプチリン':150,'クロミプラミン':120,'エスシタロプラム':20,'フルボキサミン':150,'デュロキセチン':30,'ベンラファキシン':150,'ミルナシプラン':100,'ミルタザピン':30,'パロキセチン':40,'セルトラリン':100} },
+  op:  { label: '強オピオイド（経口モルヒネ換算）', mme: true, refName: '経口モルヒネ', unit: '経口モルヒネ換算mg/日',
+    note: '緩和ケアの慣用換算による経口モルヒネ換算（MME）の目安。メサドンは非線形換算のため除外（個別調整）。フェンタニルは経皮 μg/h で入力。',
+    drugs: {
+      'モルヒネ（経口）':         { factor: 1,   in: 'mg/日' },
+      'オキシコドン（経口）':     { factor: 1.5, in: 'mg/日' },
+      'ヒドロモルフォン（経口）': { factor: 5,   in: 'mg/日' },
+      'タペンタドール（経口）':   { factor: 0.3, in: 'mg/日' },
+      'フェンタニル（経皮）':     { factor: 2.4, in: 'μg/h' },
+    } },
 };
 let calcType = 'cp';
 const round1 = x => Math.round(x * 10) / 10;
@@ -3227,7 +3241,7 @@ function openCalc() {
         <div class="calc-rows" id="calc-rows"></div>
         <button class="calc-add" id="calc-add" type="button">＋ 薬剤を追加</button>
         <div class="calc-total" id="calc-total"></div>
-        <p class="calc-note">稲垣・稲田2017版に基づく目安。多剤併用時の概算用です。版・個人差で変動し、臨床判断は医師・薬剤師へ。</p>
+        <p class="calc-note" id="calc-note"></p>
       </div>`;
     document.body.appendChild(modal);
     document.getElementById('calc-overlay').addEventListener('click', closeCalc);
@@ -3261,6 +3275,11 @@ function renderCalcTabs() {
     calcAddRow();
     calcRecompute();
   }));
+  updateCalcNote();
+}
+function updateCalcNote() {
+  const el = document.getElementById('calc-note');
+  if (el) el.textContent = DOSE_CALC[calcType].note + ' 版・個人差で変動し、臨床判断は医師・薬剤師へ。';
 }
 function calcAddRow() {
   const opts = Object.keys(DOSE_CALC[calcType].drugs)
@@ -3277,16 +3296,20 @@ function calcAddRow() {
 }
 function calcRecompute() {
   const conf = DOSE_CALC[calcType];
+  const outUnit = conf.mme ? 'mg/日' : 'mg';
   let total = 0;
   document.querySelectorAll('#calc-rows .calc-row').forEach(row => {
     const name = row.querySelector('.calc-drug').value;
     const dose = parseFloat(row.querySelector('.calc-dose').value);
-    const factor = conf.drugs[name];
+    const val = conf.drugs[name];
+    const isObj = val && typeof val === 'object';
+    const unitEl = row.querySelector('.calc-unit');
+    if (unitEl) unitEl.textContent = isObj ? val.in : 'mg';
     const eqEl = row.querySelector('.calc-eq');
-    if (factor && dose > 0) {
-      const eq = dose * conf.ref / factor;
+    if (val && dose > 0) {
+      const eq = isObj ? dose * val.factor : dose * conf.ref / val;
       total += eq;
-      eqEl.textContent = `≒ ${round1(eq)} ${conf.unit}`;
+      eqEl.textContent = `≒ ${round1(eq)} ${outUnit}`;
     } else {
       eqEl.textContent = '—';
     }
