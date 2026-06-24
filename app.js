@@ -1623,6 +1623,7 @@ const HYPERURICEMIA_ROWS = [
 const PARKINSON_ROWS = [
   { label: '主な作用',         field: 'action_type',    type: 'mech'  },
   { label: '作用機序',         field: 'mechanism',      type: 'mech'  },
+  { label: '等価換算（LED）',  field: 'dose_equiv',     type: 'val'   },
   { label: 'UPDRS運動スコア改善',field: 'placebo_onset', type: 'accent' },
   { label: 'ADL改善率',        field: 'placebo_sleep',  type: 'accent' },
   { label: 'NNT',              field: 'NNT',            type: 'nnt'   },
@@ -3223,6 +3224,20 @@ const DOSE_CALC = {
   ste: { label: 'ステロイド（PSL換算）', ref: 5, refName: 'プレドニゾロン5mg', unit: 'プレドニゾロン換算mg',
     note: 'グルココルチコイドの抗炎症力価による換算の目安。ミネラルコルチコイド作用・半減期・電解質への影響は別途考慮。',
     drugs: {'プレドニゾロン':5,'ヒドロコルチゾン':20,'メチルプレドニゾロン':4,'デキサメタゾン':0.75,'ベタメタゾン':0.75} },
+  ledd: { label: 'パーキンソン病薬（レボドパ換算/LED）', mme: true, refName: 'レボドパ', unit: 'レボドパ換算mg/日（LED）', outUnit: 'mgLED/日',
+    note: 'Tomlinson 2010に基づくレボドパ等価換算（LED）の目安。ドパミン作動薬（プラミペキソール・ロピニロール等）はフリー体換算で、塩として入力する場合は補正が必要。COMT阻害薬（エンタカポン・オピカポン）は単独の換算値を持たず併用レボドパ量×0.33等を上乗せするため本計算機の合算には含めない（別途加算）。イストラデフィリン（ノウリアスト）は確立した換算値なし。',
+    drugs: {
+      'レボドパ（速放）':           { factor: 1,    in: 'mg/日' },
+      'レボドパ（徐放/CR）':        { factor: 0.75, in: 'mg/日' },
+      'プラミペキソール（フリー体）': { factor: 100,  in: 'mg/日' },
+      'ロピニロール':               { factor: 20,   in: 'mg/日' },
+      'ロチゴチン（貼付）':         { factor: 30,   in: 'mg/日' },
+      'セレギリン（経口）':         { factor: 10,   in: 'mg/日' },
+      'ラサギリン':                 { factor: 100,  in: 'mg/日' },
+      'アマンタジン':               { factor: 1,    in: 'mg/日' },
+      'カベルゴリン':               { factor: 67,   in: 'mg/日' },
+      'アポモルヒネ（皮下）':       { factor: 10,   in: 'mg/日' },
+    } },
 };
 let calcType = 'cp';
 const round1 = x => Math.round(x * 10) / 10;
@@ -3299,7 +3314,7 @@ function calcAddRow() {
 }
 function calcRecompute() {
   const conf = DOSE_CALC[calcType];
-  const outUnit = conf.mme ? 'mg/日' : 'mg';
+  const outUnit = conf.outUnit || (conf.mme ? 'mg/日' : 'mg');
   let total = 0;
   document.querySelectorAll('#calc-rows .calc-row').forEach(row => {
     const name = row.querySelector('.calc-drug').value;
