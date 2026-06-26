@@ -625,6 +625,7 @@ function applyDomainFilter(group) {
 }
 
 let dataCache = {};
+const loadErrors = {};            // domainKey -> エラーメッセージ（データ読み込み失敗時）
 let currentDomain         = 'sleep';
 let currentCategory       = '睡眠薬';
 let currentCategoryGroup  = null;   // 疾患別 / 作用機序別（categoryGroups を持つドメイン専用）
@@ -656,16 +657,36 @@ const COMPARE_ROWS = [
 // ===== Init =====
 async function init() {
   await Promise.allSettled(
-    Object.entries(DOMAINS).map(async ([key, cfg]) => {
-      const res = await fetch(cfg.file);
-      dataCache[key] = await res.json();
-    })
+    Object.keys(DOMAINS).map(key => loadDomain(key))
   );
   document.body.className = `domain-${currentDomain}`;
   renderDomainTabs();
   renderCatTabs();
   render();
   requestAnimationFrame(syncBottomPadding);
+}
+
+// 1ドメイン分のJSONを読み込む。失敗（404・JSON破損＝OneDrive同期切れ等）は
+// 握りつぶさず loadErrors に記録し、空配列でフォールバックして他ドメインを守る。
+async function loadDomain(key) {
+  try {
+    const res = await fetch(DOMAINS[key].file);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    dataCache[key] = await res.json();
+    delete loadErrors[key];
+  } catch (e) {
+    dataCache[key] = dataCache[key] || [];
+    loadErrors[key] = e.message || '読み込みに失敗しました';
+    console.error(`[yakuapp] データ読み込み失敗: ${DOMAINS[key].file}`, e);
+  }
+}
+
+// 再読込ボタン用：該当ドメインだけ取り直して再描画
+async function reloadDomain(key) {
+  const btn = document.querySelector('.load-error-retry');
+  if (btn) { btn.disabled = true; btn.textContent = '再読込中…'; }
+  await loadDomain(key);
+  render();
 }
 
 // ===== ドメインタブ =====
@@ -840,9 +861,14 @@ function renderDomainView() {
   const sorted = sortDrugs(drugs);
   const cfg    = DOMAINS[currentDomain];
 
-  document.getElementById('result-info').textContent = `${sorted.length} 件表示中`;
-
   const container = document.getElementById('cards');
+  // データ読み込みに失敗したドメインは「該当なし」ではなくエラー＋再読込を表示
+  if (loadErrors[currentDomain]) {
+    document.getElementById('result-info').textContent = '';
+    container.innerHTML = loadErrorHTML(currentDomain);
+    return;
+  }
+  document.getElementById('result-info').textContent = `${sorted.length} 件表示中`;
   if (sorted.length === 0) {
     container.innerHTML = noResultsHTML();
     return;
@@ -1019,6 +1045,16 @@ function noResultsHTML() {
     <div class="no-results">
       <div class="no-results-icon">🔍</div>
       <p>「${searchQuery}」に一致する薬が見つかりませんでした。</p>
+    </div>`;
+}
+
+function loadErrorHTML(key) {
+  return `
+    <div class="load-error" role="alert">
+      <div class="load-error-icon">⚠</div>
+      <p class="load-error-msg">このカテゴリのデータを読み込めませんでした。<br>通信状況をご確認のうえ、再読込してください。</p>
+      <p class="load-error-detail">（${esc(loadErrors[key] || '')}）</p>
+      <button class="load-error-retry" type="button" data-reload="${esc(key)}">再読込</button>
     </div>`;
 }
 
@@ -3168,6 +3204,9 @@ document.getElementById('compare-clear-btn').addEventListener('click', () => {
 
 // カード・テーブルへの委譲イベント
 document.getElementById('cards').addEventListener('click', e => {
+  // データ再読込ボタン（読み込み失敗時）
+  const reloadBtn = e.target.closest('.load-error-retry');
+  if (reloadBtn) { reloadDomain(reloadBtn.dataset.reload); return; }
   // エビデンスリンク
   const evBtn = e.target.closest('.ev-link-btn');
   if (evBtn) {
