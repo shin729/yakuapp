@@ -659,6 +659,7 @@ async function init() {
   await Promise.allSettled(
     Object.keys(DOMAINS).map(key => loadDomain(key))
   );
+  restoreView();                       // 前回見ていたドメイン・カテゴリを復元
   document.body.className = `domain-${currentDomain}`;
   renderDomainTabs();
   renderCatTabs();
@@ -751,6 +752,7 @@ function switchDomain(domain) {
   currentCategoryGroup = DOMAINS[domain].defaultGroup || null;
   currentCategory      = DOMAINS[domain].defaultCat;
   document.body.className = `domain-${domain}`;
+  saveView();
   renderDomainTabs();
   renderCatTabs();
   render();
@@ -759,10 +761,42 @@ function switchDomain(domain) {
 // ===== カテゴリ切り替え =====
 function switchCat(category) {
   currentCategory = category;
+  saveView();
   document.querySelectorAll('#cat-tabs .tab-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.cat === category);
   });
   render();
+}
+
+// ===== 表示状態の記憶（localStorage）=====
+// 最後に見ていたドメイン・カテゴリを保存し、次回起動時に復元する。
+const LS_VIEW_KEY = 'yakuapp:lastView';
+function saveView() {
+  try {
+    localStorage.setItem(LS_VIEW_KEY, JSON.stringify({ domain: currentDomain, category: currentCategory }));
+  } catch (e) { /* プライベートモード等で失敗しても無視 */ }
+}
+function isValidCategory(domain, catKey) {
+  return (DOMAINS[domain]?.categories || []).some(c => c.key === catKey);
+}
+function categoryGroupOf(domain, catKey) {
+  const groups = DOMAINS[domain]?.categoryGroups;
+  if (!groups) return null;
+  const g = groups.find(grp => grp.cats.includes(catKey));
+  return g ? g.key : null;
+}
+function restoreView() {
+  let saved;
+  try { saved = JSON.parse(localStorage.getItem(LS_VIEW_KEY) || 'null'); } catch (e) { saved = null; }
+  if (!saved || !DOMAINS[saved.domain]) return;          // 未保存・無効ドメインはデフォルトのまま
+  currentDomain        = saved.domain;
+  currentCategoryGroup = DOMAINS[currentDomain].defaultGroup || null;
+  currentCategory      = DOMAINS[currentDomain].defaultCat;
+  if (saved.category && isValidCategory(currentDomain, saved.category)) {
+    currentCategory = saved.category;
+    const grp = categoryGroupOf(currentDomain, saved.category);
+    if (grp) currentCategoryGroup = grp;                  // グループ分けドメインは該当グループも復元
+  }
 }
 
 // ===== 検索 =====
@@ -939,6 +973,7 @@ function renderGlobalSearch() {
       document.getElementById('search').value = '';
       switchDomain(dk);
       currentCategory = cat;
+      saveView();
       render();
     });
   });
