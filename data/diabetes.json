@@ -835,5 +835,27 @@
     "lactation": "×",
     "renal_gfr": null,
     "dialysis": "無"
+  },
+  {
+    "name": "レパグリニド",
+    "brand": "シュアポスト",
+    "category": "経口薬・分泌促進系",
+    "class": "グリニド系（速効型分泌促進薬）",
+    "action_type": "食後インスリン分泌促進（速効型・グリニド系で最も強力）",
+    "mechanism": "膵β細胞のSUR1（ATP感受性K⁺チャネル）にSU薬とは異なる部位で結合し速やかにインスリン分泌を促進。結合・解離が速く速効・短時間作用→食後高血糖を是正。主にCYP2C8・一部CYP3A4で肝代謝され胆汁排泄",
+    "efficacy_star": 3,
+    "placebo_onset": "HbA1c -1.0〜1.5%（SU薬グリベンクラミドに非劣性・グリニド系で最も強力）",
+    "placebo_sleep": "体重 +0.5〜1 kg",
+    "NNT": null,
+    "onset_time": "30分以内",
+    "duration_hours": "毎食直前10分以内（1日3回）",
+    "guideline_rank": "食後高血糖が主体の2型DM。ナテグリニド・ミチグリニドより降糖作用が強い。肝代謝・胆汁排泄が主体のため腎機能低下例（透析含む）でも比較的使いやすいのが他の分泌促進薬との差別化点",
+    "evidence": "Marbury et al.（Diabetes Res Clin Pract 1999 PMID:10369424）",
+    "evidence_url": null,
+    "caution": "SU薬との併用禁忌（相加・相乗効果の安全性未確立）\n低血糖（食事を抜く・食事30分以上前の服用で誘発）。毎食直前10分以内の服用を厳守。クロピドグレル・ST合剤・シクロスポリン等のCYP2C8/3A4阻害薬で血中濃度上昇→低血糖に注意",
+    "pregnancy": "×",
+    "lactation": "×",
+    "renal_gfr": null,
+    "dialysis": "無"
   }
 ]
