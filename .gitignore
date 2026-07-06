@@ -2,3 +2,9 @@ data/raw/
 .claude/
 __pycache__/
 *.pyc
+
+# NotebookLM等のPDF抽出テキスト（再生成可能・ディスクには残す）
+pdf*_text.txt
+*Temppdf*.txt
+# ログ
+logs/*.log
