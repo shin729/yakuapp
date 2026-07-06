@@ -1639,6 +1639,24 @@ const NUTRITION_ROWS = [
   { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
 ];
 
+// ミネラル・電解質（含有電解質量＝製剤単位あたりのmEq等を表示）
+const MINERAL_ROWS = [
+  { label: '主な適応',             field: 'action_type',    type: 'mech'   },
+  { label: '含有電解質量（目安）', field: 'dose_equiv',     type: 'val'    },
+  { label: '作用機序',             field: 'mechanism',      type: 'mech'   },
+  { label: '有効性・補充効果',     field: 'placebo_onset',  type: 'accent' },
+  { label: '付加効果・臨床的意義', field: 'placebo_sleep',  type: 'accent' },
+  { label: 'NNT',                  field: 'NNT',            type: 'nnt'    },
+  { label: '効果スコア',           field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',             field: 'onset_time',     type: 'val'    },
+  { label: '投与法・用量',         field: 'duration_hours', type: 'val'    },
+  { label: '妊娠｜授乳',     fields: ['pregnancy', 'lactation'], type: 'safety_pair' },
+  { label: '腎機能｜透析性', fields: ['renal_gfr', 'dialysis'], type: 'safety_pair' },
+  { label: '使い分けポイント',     field: 'guideline_rank', type: 'usecase'},
+  { label: 'エビデンス出典',       field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
+];
+
 // 経腸栄養剤専用（カロリー密度を優先表示）
 const ENTERAL_ROWS = [
   { label: '主な適応',             field: 'action_type',    type: 'mech'   },
@@ -2437,7 +2455,8 @@ function getRowDefs(category) {
   if (['筋弛緩薬', '変形性関節症'].includes(category)) return ORTHO_ROWS;
   if (['HRT・更年期', '子宮内膜症', '子宮筋腫', 'OC・避妊', '不妊治療'].includes(category)) return GYNECO_ROWS;
   if (['制吐薬（CINV）', '骨修飾薬'].includes(category)) return ONCOLOGY_ROWS;
-  if (['ビタミン', 'ミネラル・電解質'].includes(category)) return NUTRITION_ROWS;
+  if (category === 'ミネラル・電解質') return MINERAL_ROWS;
+  if (category === 'ビタミン') return NUTRITION_ROWS;
   if (category === '経腸栄養剤') return ENTERAL_ROWS;
   if (category === '片頭痛（頓服）' || category === '片頭痛（予防薬）') return MIGRAINE_ROWS;
   if (category === '抗てんかん薬')       return EPILEPSY_ROWS;
@@ -3311,6 +3330,18 @@ const DOSE_CALC = {
       'アマンタジン':               { factor: 1,    in: 'mg/日' },
       'カベルゴリン':               { factor: 67,   in: 'mg/日' },
       'アポモルヒネ（皮下）':       { factor: 10,   in: 'mg/日' },
+    } },
+  k: { label: 'カリウム製剤（K量換算）', mme: true, refName: 'カリウム', unit: 'mEq（K⁺）', outUnit: 'mEq',
+    note: '各カリウム製剤の含有カリウム量（mEq）への換算の目安。徐放錠1錠600mg＝K 8mEq、L-アスパラギン酸K錠300mg＝K 1.8mEq、グルコン酸Kは製剤ラベルのmEq表記どおり。複数製剤を足すと1日総K量（mEq）の目安になる。製剤の切り替えは「常用量対比」でなく必ず同mEqで行い、血清K・心電図をモニタリングする。塩の種類でCl負荷が異なり、低クロール血症を伴う低K血症では塩化物（KCl）が合理的。注射（KCL補正液）は必ず希釈・速度厳守。',
+    drugs: {
+      '塩化カリウム徐放錠（600mg/錠）':            { factor: 8,      in: '錠' },
+      'グルコン酸カリウム錠（グルコンサンK 5mEq）':   { factor: 5,      in: '錠' },
+      'グルコン酸カリウム錠（グルコンサンK 2.5mEq）': { factor: 2.5,    in: '錠' },
+      'グルコン酸カリウム細粒（4mEq/g）':          { factor: 4,      in: 'g' },
+      'L-アスパラギン酸カリウム錠（300mg）':       { factor: 1.8,    in: '錠' },
+      'L-アスパラギン酸カリウム散50%（2.9mEq/g）': { factor: 2.9,    in: 'g' },
+      '塩化カリウム散・原末（13.4mEq/g）':          { factor: 13.4,   in: 'g' },
+      '塩化カリウム注（KCL補正液 1mEq/mL）':       { factor: 1,      in: 'mL' },
     } },
 };
 let calcType = 'cp';
