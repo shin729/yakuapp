@@ -611,6 +611,6 @@ routinesによる発見事項を記録するファイル。
   - α-グルコシダーゼ阻害薬：ミグリトール（セイブル）が未掲載（現行2剤はアカルボース・ボグリボースのみ）
   優先度: DPP-4阻害薬3剤・SGLT2阻害薬3剤（いずれも臨床使用頻度が高く同クラス内の欠落が大きい）＞GLP-1注射薬2剤（エキセナチドは使用頻度低下傾向だが歴史的代表薬）＞ミグリトール（使用頻度は他2剤よりやや低い）。data/*.json編集はユーザー承認後
 
-- [ ] [2026-07-22] インフラ継続: .git/index.lock（2026-07-11 08:07作成のまま、11日連続未解消）。git statusは正常動作（前回同様、実害は限定的だがlock自体は残存）。ローカルのClaude Codeでの.git/index.lock削除・commit/push状況の恒久確認が引き続き必要
+- [ ] [2026-07-22] インフラ継続: .git/index.lock（2026-07-11 08:07作成のまま）は今回mvで.git/index.lock.bak2へ退避しcommitには成功（objects配下tmp_obj_*とHEAD.lockのunlink不可警告は出るが実害なし）。ただしgit pushが「fatal: could not read Username for 'https://github.com'」で失敗（このサンドボックス環境にGitHub認証情報が設定されていないため。lock問題とは別原因）。commit 3bcfe26はローカルには存在するがorigin/masterには未反映。ローカルのClaude Code環境でのgit push実行が必要
 
 <!-- 最終チェック: 2026-07-22 / 次回: 欠損確認・統一感チェック / 対象: allergy.json（フィールド欠損・brand表記統一感を確認） -->
