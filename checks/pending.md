@@ -613,4 +613,8 @@ routinesによる発見事項を記録するファイル。
 
 - [ ] [2026-07-22] インフラ継続: .git/index.lock（2026-07-11 08:07作成のまま）は今回mvで.git/index.lock.bak2へ退避しcommitには成功（objects配下tmp_obj_*とHEAD.lockのunlink不可警告は出るが実害なし）。ただしgit pushが「fatal: could not read Username for 'https://github.com'」で失敗（このサンドボックス環境にGitHub認証情報が設定されていないため。lock問題とは別原因）。commit 3bcfe26はローカルには存在するがorigin/masterには未反映。ローカルのClaude Code環境でのgit push実行が必要
 
-<!-- 最終チェック: 2026-07-22 / 次回: 欠損確認・統一感チェック / 対象: allergy.json（フィールド欠損・brand表記統一感を確認） -->
+- [x] [2026-07-23] 欠損確認・統一感チェック: allergy.json 全32件 → NNT・efficacy_star・cautionの欠損状況とbrand表記統一感を確認。NNTはキー自体が全ファイル共通で存在せず（antibiotics/antifungals/antivirals/giと同じ「NNT行なし」パターン・意図的null確定）。efficacy_star・cautionは全32件で欠損なし。brand表記は単剤名またはブランド併記時は全て「・」区切りで統一（例：レスタミン・ベナドリル、ピレチア・ヒベルナ、シングレア・キプレス、シダキュア・シダトレン、ミティキュア・アシテア）。「/」区切りや規格表記の混在なし・問題なし。
+
+- [x] [2026-07-23] インフラ継続: .git/index.lock・.git/HEAD.lock（2026-07-22 08:06作成のまま、12日連続発生）を今回はmvで.git/index.lock.bak_<timestamp>等へリネームして解消、git add/commitは正常実行見込み。ただし作業ツリーに本ルーティン対象外のdata/*.json多数（app.js含む）が「modified」表示されており、pending.md以外はステージしない方針で対応（データ編集はルール上禁止のため原因不明の差分には触れない）
+
+<!-- 最終チェック: 2026-07-23 / 次回: 販売中止チェック / 対象: allergy.json 第一世代抗ヒスタミン薬・古参薬（クロルフェニラミン・ジフェンヒドラミン・プロメタジン・ヒドロキシジン等）優先で確認 -->
