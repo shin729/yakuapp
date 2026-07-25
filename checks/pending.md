@@ -591,7 +591,7 @@ routinesによる発見事項を記録するファイル。
 - [ ] [2026-07-19] インフラ継続: .git/index.lock（2026-07-11 08:07作成のまま）が今回も残存・rm実行はOperation not permittedで失敗、git add/commitは「Unable to create .git/index.lock: File exists」で失敗（8日連続未解消）。本ルーティンによるpending.md更新はディスク上（OneDrive同期）には反映済みだがgit履歴には未反映。ローカルのClaude Codeでの.git/index.lock削除・commit/pushが引き続き必要
 
 - [ ] [2026-07-20] 欠損確認・統一感チェック: gi.json 全73件 → NNT・efficacy_star・cautionの欠損状況とbrand表記統一感を確認。efficacy_star・cautionは全73件で欠損なし。NNTはキー自体が10カテゴリ中8カテゴリ（便秘薬・整腸剤・消化酵素胆汁系・下痢止め・胃酸分泌抑制薬・粘膜防御薬・機能性消化管疾患・漢方）で存在せず（意図的null、他ファイルと同じ「NNT行なし」パターン）。「悪心・嘔吐」6件は全件キーあり・うちドンペリドン/プロクロルペラジンの2件がnull（古い世代の制吐薬でRCTエビデンス乏しく意図的と推定）。「潰瘍性大腸炎・クローン病」20件は全件NNT記載あり。
-  brand表記の区切り文字不統一を発見：diabetes.jsonで指摘済みと同種の問題。「・」区切り70件（マグミット・重カマ等）に対し「消化酵素・胆汁系」カテゴリ内の3件のみ「 / 」区切り（ハイゲンC / リパクロン、タフマックE / フェスタール、エクセラーゼ / ダイジゼスト）。同カテゴリ内で区切り文字が混在しており統一を推奨（優先度低〜中）。
+  brand表記の区切り文字不統一を発見：diabetes.jsonで指摘済みと同種の問題。「・」区切り70件（マグミット・重カマ等）に対し「消化酵素・胆汁系」カテゴリ内の3件のみ「 / 」区切り（ハイゲンC / リパクロン、タフマックE / フェスタール、エクセラーゼ / ダイジゼスト）。同カテゴリ内で区切り文字が混在しており統一を推奨（優先度低〜中）。 → 対応済み: 2026-07-25 3件（ハイゲンC・リパクロン／タフマックE・フェスタール／エクセラーゼ・ダイジゼスト）を「・」に統一・push。
   参考: renal_gfr欄はgi.json全73件でnull（diabetes.json 4/41・renal.json 3/18・hf.json 9/33は非null値あり）。GI薬は腎機能調整情報が相対的に不要な薬剤が多いためと推定されるが、意図的欠損か未入力かは要ユーザー確認（優先度低）。evidence_url欄は確認した他ファイル（diabetes/renal/hf/arrhythmia）でも全件nullのため、gi.json固有の問題ではなくアプリ全体で未使用フィールドと判断・指摘不要。data/*.json編集はユーザー承認後
 
 - [ ] [2026-07-20] インフラ継続: .git/index.lock（2026-07-11 08:07作成のまま）が今回も残存・rm実行はOperation not permittedで失敗、git add/commitは「Unable to create .git/index.lock: File exists」で失敗（9日連続未解消）。本ルーティンによるpending.md更新はディスク上（OneDrive同期）には反映済みだがgit履歴には未反映。ローカルのClaude Codeでの.git/index.lock削除・commit/pushが引き続き必要
