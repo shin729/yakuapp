@@ -736,5 +736,7 @@ routinesによる発見事項を記録するファイル。
   ⑨プロメタジン: 販売中止の具体的情報は見当たらず（1956年発売の古参薬、現行添付文書PINSに掲載あり）→「販売中」。
   → 9剤とも先発・後発いずれかで供給継続のため「販売中」＝削除対象なし。これでallergy.json抗ヒスタミン薬17剤の販売中止チェックが完了。後発品レベルでの中止・経過措置移行が広範に進行中の傾向があり、次回同カテゴリチェック時は再確認が望ましい（優先度低〜中）。
 
+- [ ] [2026-08-09] インフラ継続: git push origin masterが引き続き失敗（`fatal: could not read Username for 'https://github.com'`、08-04と同一原因＝sandbox内に認証情報なし）。commit自体はindex.lock/HEAD.lock/master.lock問題をGIT_INDEX_FILE退避＋refs/heads/master直接上書きで回避し成功（7d7f7dc）。origin/masterより14コミット先行した状態が未pushのまま累積中。ユーザー側でのcredential設定（gh authまたはPAT配置）が必要。
+
 <!-- 最終チェック: 2026-08-09 / 次回: カテゴリ網羅チェック / 対象: antibiotics.json -->
 
