@@ -738,5 +738,13 @@ routinesによる発見事項を記録するファイル。
 
 - [ ] [2026-08-09] インフラ継続: git push origin masterが引き続き失敗（`fatal: could not read Username for 'https://github.com'`、08-04と同一原因＝sandbox内に認証情報なし）。commit自体はindex.lock/HEAD.lock/master.lock問題をGIT_INDEX_FILE退避＋refs/heads/master直接上書きで回避し成功（7d7f7dc）。origin/masterより14コミット先行した状態が未pushのまま累積中。ユーザー側でのcredential設定（gh authまたはPAT配置）が必要。
 
-<!-- 最終チェック: 2026-08-09 / 次回: カテゴリ網羅チェック / 対象: antibiotics.json -->
+- [x] [2026-08-10] 追加分チェック対応（ローカル実装・push済）: 7/27〜8/9のルーティン発見を精査し、方針（効き目重視・供給ステータス非掲載・削除は恒久的販売中止のみ）で振り分けて対応。
+  【誤記修正3件】allergy ビラスチン brand「ビレーズ」→「ビラノア」（ビレーズ＝COPD3剤配合吸入薬ビレーズトリの略称で別薬・検証済み）／ortho クロルフェネシンカルバメート「伴る」→「伴う」／ortho セレコキシブ「。。」→「。」。
+  【表記統一】ortho ヒアルロン酸ナトリウム（関節内注射）→name括弧を外し「ヒアルロン酸ナトリウム」に統一（brand・categoryで区別）／brand区切り「 / 」→「・」を全data横断で25件統一（steroidの「ソル・メドロール」「ソル・コーテフ」を含む2対は三連「・」で紛らわしくなるため除外し「 / 」維持）。
+  【網羅追加5件（evidence検証済PMID・国産旧薬は国内承認時資料）】allergy メキタジン（ゼスラン・ニポラジン）／allergy レブリキズマブ（イブグリース・ADvocate PMID:36920778）／liver 分岐鎖アミノ酸製剤BCAA（アミノレバン・リーバクト・LOTUS PMID:16206505）／liver テノホビルジソプロキシル（テノゼット・Marcellin PMID:19052126）／ortho アフロクアロン（アロフト）。allergy32→34・liver9→11・ortho9→10・全861件・ERROR0。
+  【見送り】hf カルペリチド（ハンプ）=急性期静注薬でアプリの慢性期・経口比較の主旨から外れるため見送り／arrhythmia 古いclass Ia 4剤（プロカインアミド等）=優先度低で見送り（いずれも販売中で削除対象ではない）。
+  【販売中止チェック結果】allergy抗ヒス17剤・ortho9剤・liver候補・arrhythmia候補は全て先発or後発で薬価収載継続＝削除対象なし（方針どおり供給注記もしない）。
+  【副次的に発見・未対応】nutrition.json チョコラA brand「ドライスロップ」は「ドライシロップ」の誤字疑い（今回スコープ外・次回要確認）。（対応日: 2026-08-10）
+
+<!-- 最終チェック: 2026-08-10 / 次回: カテゴリ網羅チェック antibiotics.json（予定どおり）。留意: nutrition「ドライスロップ」誤字疑い／カルペリチド・古Ia4剤は範囲外で見送り済み。恒久的販売中止のみ削除・供給ステータスは非掲載 / 対象: antibiotics.json -->
 
