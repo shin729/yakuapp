@@ -760,5 +760,7 @@ routinesによる発見事項を記録するファイル。
   【副次的発見・優先度低】フルオロキノロン系5剤中ガレノキサシンのみcross欄に「フルオロキノロン系（同系）：交差あり」の記載があり、他4剤（シタフロキサシン・シプロフロキサシン・モキシフロキサシン・レボフロキサシン）はcross欄null。マクロライド系・テトラサイクリン系・アミノグリコシド系はいずれも同系内注記なしでnull統一されているため、フルオロキノロン系内のみの不統一。
   data/*.json編集はユーザー承認後（今回は発見・記録のみ）。
 
+- [ ] [2026-08-11] インフラ継続: git push origin masterが引き続き失敗（`fatal: could not read Username for 'https://github.com'`、認証情報未設定は08-04/08-09と同一原因）。commit自体はGIT_INDEX_FILE退避＋refs/heads/master直接上書きで回避し成功（f4f90ba）。origin/masterより2コミット先行のまま未push。ユーザー側でのcredential設定（gh authまたはPAT配置）が必要。
+
 <!-- 最終チェック: 2026-08-11 / 次回: 販売中止チェック / 対象: antibiotics.json -->
 
