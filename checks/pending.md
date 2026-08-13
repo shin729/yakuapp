@@ -785,6 +785,8 @@ routinesによる発見事項を記録するファイル。
   【表記統一】name/brand/category/classの表記パターンは一貫（同名複数剤形はbrandに剤形名を含めて区別、category「〜系」・classはその略称で統一）。問題なし。
   data/*.json編集はユーザー承認後（今回は発見・記録のみ）。
 
+- [ ] [2026-08-14] インフラ継続: git push origin masterが引き続き失敗（`fatal: could not read Username for 'https://github.com'`、08-04/08-09/08-11/08-12と同一原因＝sandbox内に認証情報なし）。commit自体は.git/HEAD.lock/index.lockのstale残存（unlink不可）をwrite-tree＋commit-tree＋refs/heads/master直接上書きで回避し成功（a03636d）。origin/masterより6コミット先行のまま未push。ユーザー側でのcredential設定（gh authまたはPAT配置）が必要。
+
 <!-- 最終チェック: 2026-08-14 / 次回: 販売中止チェック / 対象: antibiotics.json残62剤（ペニシリン系7・セファロスポリン第1〜4世代15・カルバペネム系5(イミペネム・シラスタチン系除く)・マクロライド系3・テトラサイクリン系3・フルオロキノロン系5・アミノグリコシド系4(カナマイシン除き要精査)・グリコペプチド系2・その他多数）を優先継続 -->
 <!-- フィールド欠損チェック未実施ファイル: antiseptic・antivirals・arrhythmia・blood・derma・diabetes・endocrine・ent・gi・gyneco・lifestyle・liver・nutrition・oncology・ophthalmo・pain・renal・respiratory・sleep_anxiety・steroid・urology -->
 
