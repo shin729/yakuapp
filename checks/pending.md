@@ -771,6 +771,20 @@ routinesによる発見事項を記録するファイル。
 
 - [ ] [2026-08-12] インフラ継続: git push origin masterが引き続き失敗（`fatal: could not read Username for 'https://github.com'`、08-04/08-09/08-11と同一原因）。commit自体はGIT_INDEX_FILE退避＋refs/heads/master直接上書きで回避し成功（7688e17）。origin/masterより4コミット先行のまま未push。ユーザー側でのcredential設定（gh authまたはPAT配置）が必要。
 
-<!-- 最終チェック: 2026-08-12 / 次回: カテゴリ網羅チェック / 対象: antibiotics.json（前回既発見のセフジニル欠落等の再確認含む） -->
-<!-- 販売中止チェック継続対象（未着手62剤）: ペニシリン系7・セファロスポリン第1〜4世代15・カルバペネム系5(イミペネム・シラスタチン系除く)・マクロライド系3・テトラサイクリン系3・フルオロキノロン系5・アミノグリコシド系4(カナマイシン除き要精査)・グリコペプチド系2・その他多数 -->
+- [ ] [2026-08-13] カテゴリ網羅チェック: antibiotics.json（66件・全カテゴリのname/class集計で再確認）
+  ①セフジニル（セフゾン）: 前回（08-10）指摘の丸ごと未掲載を再確認・引き続き欠落。セファロスポリン第3世代は既存7剤（セフィキシム・セフォタキシム・セフカペン ピボキシル・セフジトレン ピボキシル・セフタジジム・セフトリアキソン・セフポドキシム プロキセチル）のみで、国内最頻用の経口第3世代セフェムが含まれない。優先度高（変更なし）。
+  ②トスフロキサシン（オゼックス/トスキサシン）: フルオロキノロン系（同系5剤：シタフロキサシン・シプロフロキサシン・レボフロキサシン・ガレノキサシン・モキシフロキサシン）に未掲載。国内小児科（細菌性肺炎・中耳炎等）で汎用される経口フルオロキノロンで新規欠落として発見。優先度中。
+  ③パズフロキサシン（パシル/パズクロス）: 同じくフルオロキノロン系に未掲載。国内で汎用される注射用フルオロキノロン（重症感染症・ICU等）。優先度中。
+  → data/*.json編集はユーザー承認後（今回は発見・記録のみ）。次回販売中止チェック（B）では残62剤の継続実施を優先。
+
+- [ ] [2026-08-13] インフラ継続: .git/index.lock がstale状態で残存し rm 不可（Operation not permitted、2026-08-01記載の問題が再発／未解消）。GIT_INDEX_FILE退避での write-tree も `.git/objects/e6/tmp_obj_*` のunlinkで同エラーが発生し失敗（FUSEマウント固有の問題の可能性、`mount`出力で type fuse 確認）。今回はchecks/pending.md編集のみディスクに保存済み・git commit/push未実施。ユーザー側でのgit状態の手動修復（.git/index.lock削除・objects配下の破損tmpファイル整理）が必要。
+
+- [ ] [2026-08-14] フィールド欠損・統一感チェック: antifungals.json（全19件・未実施ファイルから選定）
+  【欠損確認】NNT・efficacy_starはキー自体なし（antibiotics.jsonと同一の意図的パターン・candida/aspergillus/crypto/mucor/dermatophyteのスペクトラム表記で代替）。cautionは全19件で値あり・欠損なし。evidence_url・renal_gfrは全19件null——ただしこれはantibiotics(66/66)・allergy(34/34)でも同様に全件nullでアプリ全体の未整備パターン（antifungals固有の問題ではない、優先度低）。
+  【欠損・不統一（新規発見）】同一薬剤名で複数剤形が別行登録されている構造の中、後発の剤形行のみfirst_line／crossが未記入の箇所を発見：①アムホテリシンB「ファンギゾンシロップ」行がfirst_line・cross両方null（「ファンギゾン注」行には両方記載あり）。②ミコナゾール「フロリードF注」行がfirst_line null（「フロリードゲル」行には記載あり）。同一薬剤の他剤形との比較で情報欠落が明確なため優先度中——適応・相互作用という実用上重要な情報が該当剤形選択時に欠けるため補完が望ましい。
+  【表記統一】name/brand/category/classの表記パターンは一貫（同名複数剤形はbrandに剤形名を含めて区別、category「〜系」・classはその略称で統一）。問題なし。
+  data/*.json編集はユーザー承認後（今回は発見・記録のみ）。
+
+<!-- 最終チェック: 2026-08-14 / 次回: 販売中止チェック / 対象: antibiotics.json残62剤（ペニシリン系7・セファロスポリン第1〜4世代15・カルバペネム系5(イミペネム・シラスタチン系除く)・マクロライド系3・テトラサイクリン系3・フルオロキノロン系5・アミノグリコシド系4(カナマイシン除き要精査)・グリコペプチド系2・その他多数）を優先継続 -->
+<!-- フィールド欠損チェック未実施ファイル: antiseptic・antivirals・arrhythmia・blood・derma・diabetes・endocrine・ent・gi・gyneco・lifestyle・liver・nutrition・oncology・ophthalmo・pain・renal・respiratory・sleep_anxiety・steroid・urology -->
 
