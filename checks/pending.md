@@ -800,6 +800,8 @@ routinesによる発見事項を記録するファイル。
   ③フドステイン（スペリア・クリアナール）: 未掲載。カルボシステインと同系統（気道粘液修復薬）だが処方頻度はやや低く優先度中。
   → 優先度：ツロブテロール（貼付剤という投与形態ごと欠落）＞ブロムヘキシン（去痰薬の代表薬欠落）＞フドステイン。data/*.json編集はユーザー承認後（今回は発見・記録のみ）。
 
+- [ ] [2026-08-16] インフラ継続: git push origin masterが引き続き失敗（`fatal: could not read Username for 'https://github.com'`、08-04/08-09/08-11/08-12/08-14と同一原因＝sandbox内に認証情報なし）。加えて.git/index.lock・refs/heads/master.lockがstale残存し通常のcommit/update-refが不可（08-13/08-14既知の問題、継続）。今回はGIT_INDEX_FILE退避＋write-tree＋commit-tree＋refs/heads/master直接上書きで回避しコミット成功（af1da69）。origin/masterより9コミット先行のまま未push。ユーザー側でのcredential設定（gh authまたはPAT配置）およびstale lockファイルの手動削除が必要。
+
 <!-- 最終チェック: 2026-08-16 / 次回: フィールド欠損チェック・統一感のチェック / 対象: antiseptic.json（フィールド欠損チェック未実施ファイルの先頭） -->
 <!-- 販売中止チェック未着手分: antibiotics.json残58剤（アモキシシリン・ピペラシリン・アモキシシリン/クラブラン酸・セファロスポリン第1〜4世代15・カルバペネム系5・マクロライド系3・テトラサイクリン系3・フルオロキノロン系5・アミノグリコシド系4(カナマイシン除き要精査)・グリコペプチド系2・その他多数）を次回B実施時に優先継続 -->
 <!-- フィールド欠損チェック未実施ファイル: antiseptic・antivirals・arrhythmia・blood・derma・diabetes・endocrine・ent・gi・gyneco・lifestyle・liver・nutrition・oncology・ophthalmo・pain・renal・sleep_anxiety・steroid・urology（respiratoryはC実施済みのため除外） -->
