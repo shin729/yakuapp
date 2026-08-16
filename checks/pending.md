@@ -802,7 +802,14 @@ routinesによる発見事項を記録するファイル。
 
 - [ ] [2026-08-16] インフラ継続: git push origin masterが引き続き失敗（`fatal: could not read Username for 'https://github.com'`、08-04/08-09/08-11/08-12/08-14と同一原因＝sandbox内に認証情報なし）。加えて.git/index.lock・refs/heads/master.lockがstale残存し通常のcommit/update-refが不可（08-13/08-14既知の問題、継続）。今回はGIT_INDEX_FILE退避＋write-tree＋commit-tree＋refs/heads/master直接上書きで回避しコミット成功（af1da69）。origin/masterより9コミット先行のまま未push。ユーザー側でのcredential設定（gh authまたはPAT配置）およびstale lockファイルの手動削除が必要。
 
-<!-- 最終チェック: 2026-08-16 / 次回: フィールド欠損チェック・統一感のチェック / 対象: antiseptic.json（フィールド欠損チェック未実施ファイルの先頭） -->
-<!-- 販売中止チェック未着手分: antibiotics.json残58剤（アモキシシリン・ピペラシリン・アモキシシリン/クラブラン酸・セファロスポリン第1〜4世代15・カルバペネム系5・マクロライド系3・テトラサイクリン系3・フルオロキノロン系5・アミノグリコシド系4(カナマイシン除き要精査)・グリコペプチド系2・その他多数）を次回B実施時に優先継続 -->
-<!-- フィールド欠損チェック未実施ファイル: antiseptic・antivirals・arrhythmia・blood・derma・diabetes・endocrine・ent・gi・gyneco・lifestyle・liver・nutrition・oncology・ophthalmo・pain・renal・sleep_anxiety・steroid・urology（respiratoryはC実施済みのため除外） -->
+- [ ] [2026-08-17] フィールド欠損・統一感チェック: antiseptic.json（全5件・消毒薬）
+  【欠損確認】caution・efficacy_starは全5件で値あり・欠損なし。evidence_url・renal_gfrは全5件null——antibiotics/antifungals/allergyと同様のアプリ全体未整備パターン（優先度低、既知）。
+  【不統一（新規発見）】NNTフィールドが5件中4件null、クロルヘキシジンのみNNT=5。ポビドンヨードとクロルヘキシジンは共にevidence欄で同一のMimoz試験（Lancet 2015 PMID:26255877、CVC挿入部位消毒の比較試験）を引用しているにもかかわらず、NNTが算出されているのはクロルヘキシジンのみでポビドンヨード（比較対照薬）はnull。同一試験由来の比較データであれば両剤にNNTを反映するのが筋で、現状は不統一。優先度中。
+  【表記統一】brand欄は5件とも「銘柄名・銘柄名」の複数併記形式で統一。duration_hours欄も5件とも用法・希釈濃度の実用情報として統一的に使用されており問題なし。
+  data/*.json編集はユーザー承認後（今回は発見・記録のみ）。
+
+- [ ] [2026-08-17] インフラ継続: git push origin masterが引き続き失敗（`fatal: could not read Username for 'https://github.com'`、08-04以降と同一原因＝sandbox内に認証情報なし）。加えてワーキングツリーにapp.js・data/*.json多数（allergy/antifungals/antiseptic/antivirals/arrhythmia/derma/endocrine/ent/gi/gyneco/immune/liver/oncology/ophthalmo/ortho/pain/sleep_anxiety/urology等）の未staged差分が存在（挿入行数=削除行数で一致しており改行コード等の差分の可能性、内容編集ではなさそうだが本ルーチンでは関与せず・data/*.json未編集ルール遵守）。またchecks/pending.mdのstaged版が2026-08-10時点の古い内容のまま残存（前回までのgit復旧回避策の副作用の可能性）。今回はchecks/pending.mdのみ`git add`して再ステージし、通常のcommit/pushを試行。失敗時は従来通りwrite-tree等の回避策を使用。ユーザー側でのcredential設定（gh authまたはPAT配置）とワーキングツリー差分の確認が必要。
+
+<!-- 最終チェック: 2026-08-17 / 次回: 販売中止チェック / 対象: antibiotics.json残58剤（アモキシシリン・ピペラシリン・アモキシシリン/クラブラン酸・セファロスポリン第1〜4世代15・カルバペネム系5・マクロライド系3・テトラサイクリン系3・フルオロキノロン系5・アミノグリコシド系4(カナマイシン除き要精査)・グリコペプチド系2・その他多数） -->
+<!-- フィールド欠損チェック未実施ファイル: antivirals・arrhythmia・blood・derma・diabetes・endocrine・ent・gi・gyneco・lifestyle・liver・nutrition・oncology・ophthalmo・pain・renal・sleep_anxiety・steroid・urology（antiseptic完了・respiratoryはC実施済みのため除外） -->
 
