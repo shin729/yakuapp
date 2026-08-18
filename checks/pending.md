@@ -822,6 +822,8 @@ routinesによる発見事項を記録するファイル。
   他クラス（セフェム第1・2・4世代、カルバペネム、マクロライド、テトラサイクリン、グリコペプチド、呼吸器キノロン等）は主要薬を概ね網羅・新規欠落なし。
   → data/*.json編集はユーザー承認後（今回は発見・記録のみ）。
 
+- [ ] [2026-08-19] インフラ継続: git push origin masterが引き続き失敗（`fatal: could not read Username for 'https://github.com'`、08-04以降と同一原因）。加えて.git/index.lock・HEAD.lock・refs/heads/master.lockがstale残存し通常のadd/commit/update-refが不可（08-13以降既知・継続）。今回はGIT_INDEX_FILE退避＋write-tree＋commit-tree＋refs/heads/master直接上書きで回避しコミット成功（5ca8d72）。origin/masterより13コミット先行のまま未push。ユーザー側でのcredential設定（gh authまたはPAT配置）およびstale lockファイルの手動削除が必要。
+
 <!-- 最終チェック: 2026-08-19 / 次回: 販売中止チェック / 対象: antibiotics.json残55剤（セファロスポリン第1〜4世代15・カルバペネム系5・マクロライド系3・テトラサイクリン系3・フルオロキノロン系5・アミノグリコシド系4・グリコペプチド系2・その他多数） -->
 <!-- フィールド欠損チェック未実施ファイル: antivirals・arrhythmia・blood・derma・diabetes・endocrine・ent・gi・gyneco・lifestyle・liver・nutrition・oncology・ophthalmo・pain・renal・sleep_anxiety・steroid・urology（antiseptic完了・respiratoryはC実施済みのため除外） -->
 
