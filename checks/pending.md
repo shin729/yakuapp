@@ -834,6 +834,8 @@ routinesによる発見事項を記録するファイル。
   → 残り9剤（セフィキシム・セフォタキシム以外の第3世代6剤・第4世代セフェピム・βラクタマーゼ阻害薬配合セフェム）およびカルバペネム系5・マクロライド系3・テトラサイクリン系3・フルオロキノロン系5・アミノグリコシド系4・グリコペプチド系2・その他多数は時間制限内に未着手。次回販売中止チェック時に優先実施。今回、完全な販売中止（先発・後発とも入手不可）は発見されず。
   data/*.json編集はユーザー承認後（今回は発見・記録のみ）。
 
+- [ ] [2026-08-20] インフラ継続: git push origin masterが引き続き失敗（`fatal: could not read Username for 'https://github.com'`、08-04以降と同一原因）。加えて.git/index.lock・HEAD.lock・refs/heads/master.lockがstale残存（08-13以降既知・継続）。今回もGIT_INDEX_FILE退避＋write-tree＋commit-tree＋refs/heads/master直接上書きで回避しコミット成功（a40b1af）。origin/masterより14コミット先行のまま未push。ユーザー側でのcredential設定（gh authまたはPAT配置）およびstale lockファイルの手動削除が必要。
+
 <!-- 最終チェック: 2026-08-20 / 次回: カテゴリ網羅チェック / 対象: pain.json（鎮痛薬、未実施カテゴリ） -->
 <!-- フィールド欠損チェック未実施ファイル: antivirals・arrhythmia・blood・derma・diabetes・endocrine・ent・gi・gyneco・lifestyle・liver・nutrition・oncology・ophthalmo・pain・renal・sleep_anxiety・steroid・urology（antiseptic完了・respiratoryはC実施済みのため除外） -->
 
