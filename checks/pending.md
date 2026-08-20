@@ -836,6 +836,16 @@ routinesによる発見事項を記録するファイル。
 
 - [ ] [2026-08-20] インフラ継続: git push origin masterが引き続き失敗（`fatal: could not read Username for 'https://github.com'`、08-04以降と同一原因）。加えて.git/index.lock・HEAD.lock・refs/heads/master.lockがstale残存（08-13以降既知・継続）。今回もGIT_INDEX_FILE退避＋write-tree＋commit-tree＋refs/heads/master直接上書きで回避しコミット成功（a40b1af）。origin/masterより14コミット先行のまま未push。ユーザー側でのcredential設定（gh authまたはPAT配置）およびstale lockファイルの手動削除が必要。
 
-<!-- 最終チェック: 2026-08-20 / 次回: カテゴリ網羅チェック / 対象: pain.json（鎮痛薬、未実施カテゴリ） -->
+- [ ] [2026-08-21] カテゴリ網羅チェック: pain.json（鎮痛薬、59剤、8カテゴリ）を確認。
+  非オピオイド系(8)・弱オピオイド/補助薬(5)・神経障害性疼痛(5)・片頭痛予防薬(5)・片頭痛頓服(8、国内承認トリプタン5種全て＋ジタン系＋ゲパント系2種で網羅)・抗てんかん薬(11)・パーキンソン病治療薬(11)・強オピオイド(6)の構成。
+  主要な抜け候補:
+  ①片頭痛予防薬: ロメリジン（ミグシス、国内で片頭痛予防に保険適用のCa拮抗薬・第一選択薬の一つ）が未収載。プロプラノロールも片頭痛予防の古典的選択肢だが本カテゴリに未収載。
+  ②神経障害性疼痛: ノイロトロピン（ワクシニアウイルス接種家兎炎症皮膚抽出液、帯状疱疹後神経痛等で頻用）が未収載。
+  ③抗てんかん薬: クロナゼパム・フェノバルビタール・エトスクシミド等の古典的薬剤が未収載（新規薬中心構成のため意図的な可能性あり、要確認）。
+  ④パーキンソン病治療薬: トリヘキシフェニジル（抗コリン薬、古典的併用薬）・タリペキソール（国内承認ドパミンアゴニスト）・ドロキシドパ（すくみ足治療薬）が未収載。
+  ⑤非オピオイド系: メフェナム酸（ポンタール）・フルルビプロフェン（ロピオン注）等が未収載。
+  data/*.json編集はユーザー承認後（今回は発見・記録のみ）。
+
+<!-- 最終チェック: 2026-08-21 / 次回: フィールド欠損チェック・統一感チェック / 対象: antivirals.json -->
 <!-- フィールド欠損チェック未実施ファイル: antivirals・arrhythmia・blood・derma・diabetes・endocrine・ent・gi・gyneco・lifestyle・liver・nutrition・oncology・ophthalmo・pain・renal・sleep_anxiety・steroid・urology（antiseptic完了・respiratoryはC実施済みのため除外） -->
 
