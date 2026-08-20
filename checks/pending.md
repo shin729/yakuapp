@@ -846,6 +846,8 @@ routinesによる発見事項を記録するファイル。
   ⑤非オピオイド系: メフェナム酸（ポンタール）・フルルビプロフェン（ロピオン注）等が未収載。
   data/*.json編集はユーザー承認後（今回は発見・記録のみ）。
 
+- [ ] [2026-08-21] インフラ継続: git push origin masterが引き続き失敗（`fatal: could not read Username for 'https://github.com'`、08-04以降と同一原因）。.git/HEAD.lock・index.lock・refs/heads/master.lockもstale残存し削除不可（Operation not permitted、08-13以降既知・継続）。今回はcommit-tree生成後、refs/heads/masterファイルを直接上書きしてコミット反映（871ea8e）。origin/masterより17コミット先行のまま未push。ユーザー側でのcredential設定（gh authまたはPAT配置）およびstale lockファイルの手動削除が必要。
+
 <!-- 最終チェック: 2026-08-21 / 次回: フィールド欠損チェック・統一感チェック / 対象: antivirals.json -->
 <!-- フィールド欠損チェック未実施ファイル: antivirals・arrhythmia・blood・derma・diabetes・endocrine・ent・gi・gyneco・lifestyle・liver・nutrition・oncology・ophthalmo・pain・renal・sleep_anxiety・steroid・urology（antiseptic完了・respiratoryはC実施済みのため除外） -->
 
