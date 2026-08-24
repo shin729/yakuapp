@@ -888,6 +888,8 @@ routinesによる発見事項を記録するファイル。
   → 5剤とも完全な販売中止（先発・後発とも入手不可）は発見されず。残り6剤（セフポドキシム プロキセチル・セフォペラゾン/スルバクタム・イミペネム/シラスタチン/レレバクタム・テビペネム ピボキシル・ドリペネム・ビアペネム）は時間制限内に未着手、次回販売中止チェック時に優先実施。
   data/*.json編集はユーザー承認後（今回は発見・記録のみ）。
 
+- [ ] [2026-08-25] インフラ継続: git push origin masterが引き続き失敗（`fatal: could not read Username for 'https://github.com'`、08-04以降と同一原因）。.git/HEAD.lockもstale残存し削除不可（Operation not permitted、08-13以降既知・継続）。今回もGIT_INDEX_FILE退避＋write-tree＋commit-tree＋refs/heads/master直接上書きでコミット成功（eb47b48）。origin/masterより20コミット先行のまま未push。ユーザー側でのcredential設定（gh authまたはPAT配置）およびstale lockファイルの手動削除が必要。
+
 <!-- 最終チェック: 2026-08-25 / 次回: カテゴリ網羅チェック / 対象: arrhythmia.json -->
 <!-- フィールド欠損チェック未実施ファイル: arrhythmia・blood・derma・diabetes・endocrine・ent・gi・gyneco・lifestyle・liver・nutrition・oncology・ophthalmo・pain・renal・sleep_anxiety・steroid・urology（antiseptic・antivirals完了、respiratoryはC実施済みのため除外） -->
 <!-- 販売中止チェック未着手残り: antibiotics.json（セフポドキシム プロキセチル・セフォペラゾン/スルバクタム・イミペネム/シラスタチン/レレバクタム・テビペネム ピボキシル・ドリペネム・ビアペネム） -->
