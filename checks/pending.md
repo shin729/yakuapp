@@ -900,7 +900,16 @@ routinesによる発見事項を記録するファイル。
 
 - [ ] [2026-08-26] インフラ継続: git push origin masterが引き続き失敗（`fatal: could not read Username for 'https://github.com'`、08-04以降と同一原因）。.git/HEAD.lockもstale残存し削除不可（Operation not permitted、08-13以降既知・継続）。今回もGIT_INDEX_FILE退避＋write-tree＋commit-tree＋refs/heads/master直接上書きでコミット成功（55de0d8）。origin/masterより6コミット先行のまま未push（前回記録の20から減少、原因不明・要確認）。ユーザー側でのcredential設定（gh authまたはPAT配置）およびstale lockファイルの手動削除が必要。
 
-<!-- 最終チェック: 2026-08-26 / 次回: フィールド欠損チェック・統一感チェック / 対象: arrhythmia.json -->
-<!-- フィールド欠損チェック未実施ファイル: arrhythmia・blood・derma・diabetes・endocrine・ent・gi・gyneco・lifestyle・liver・nutrition・oncology・ophthalmo・pain・renal・sleep_anxiety・steroid・urology（antiseptic・antivirals完了、respiratoryはC実施済みのため除外） -->
+- [ ] [2026-08-27] フィールド欠損チェック・統一感チェック: arrhythmia.json（全23件）を確認。
+  【欠損状況】NNT: 23件中13件がnull。内訳はランジオロール・アミオダロン(×2)・ソタロール・フレカイニド・ピルジカイニド・ドロネダロン・プロパフェノン（リズムコントロール/急性転換系）・ベラパミル静注・ATP（SVT頓挫系）の10件は数値あり（転換成功率などの明確な二値エンドポイントがある薬）、慢性レートコントロール系5件（ビソプロロール・メトプロロール・ジルチアゼム・ベラパミル・ジゴキシン）とニフェカラント・リドカイン・メキシレチン・シベンゾリン・ジルチアゼム静注・プロプラノロールはnull→他ファイルと同様、エンドポイント特性による意図的null濃厚。efficacy_star・cautionは23件全件で欠損なし。
+  evidence_url: 23件全件null（全カテゴリ共通で未使用の構造的フィールドと確認済み、本ファイル固有の問題ではない）。renal_gfr: 23件全件null→他の循環器系ファイル（hf.json 24/33件・blood.json 30/32件で入力あり）と比較すると本ファイルのみ0%であり、ジゴキシン・ソタロール・ニフェカラント・ATPなど腎排泄型薬が複数含まれるため要確認（用量調整に関わる情報として本来入力価値が高い）。
+  【表記統一感】name/brand欄は「アミオダロン」⇔「アミオダロン（VT/VF）」、「ベラパミル」⇔「ベラパミル静注（SVT）」、「ジルチアゼム」⇔「ジルチアゼム静注（SVT）」のように同一成分を適応・剤形で区別する括弧表記が一貫しており、不統一な混在（規格表記あり/なしの混在等）は見られず問題なし。
+  data/*.json編集はユーザー承認後（今回は発見・記録のみ）。
+
+- [ ] [2026-08-27] インフラ継続: git push origin masterが引き続き失敗（`fatal: could not read Username for 'https://github.com'`、08-04以降と同一原因）。.git/HEAD.lockもstale残存し削除不可（Operation not permitted、08-13以降既知・継続）。ユーザー側でのcredential設定（gh authまたはPAT配置）およびstale lockファイルの手動削除が必要。
+
+<!-- 最終チェック: 2026-08-27 / 次回: 販売中止チェック / 対象: antibiotics.json残り6剤（セフポドキシム プロキセチル・セフォペラゾン/スルバクタム・イミペネム/シラスタチン/レレバクタム・テビペネム ピボキシル・ドリペネム・ビアペネム） -->
+<!-- フィールド欠損チェック未実施ファイル: blood・derma・diabetes・endocrine・ent・gi・gyneco・lifestyle・liver・nutrition・oncology・ophthalmo・pain・renal・sleep_anxiety・steroid・urology（antiseptic・antivirals・arrhythmia完了、respiratoryはC実施済みのため除外） -->
+<!-- renal_gfr要確認: arrhythmia.json（腎排泄型薬複数あり全件null、循環器他ファイルは一部入力あり） -->
 <!-- 販売中止チェック未着手残り: antibiotics.json（セフポドキシム プロキセチル・セフォペラゾン/スルバクタム・イミペネム/シラスタチン/レレバクタム・テビペネム ピボキシル・ドリペネム・ビアペネム） -->
 
