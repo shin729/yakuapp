@@ -920,9 +920,19 @@ routinesによる発見事項を記録するファイル。
 
 - [ ] [2026-08-28] インフラ継続: git push origin masterが引き続き失敗（`fatal: could not read Username for 'https://github.com'`、08-04以降と同一原因）。.git/HEAD.lockもstale残存し削除不可（Operation not permitted、08-13以降既知・継続）。ユーザー側でのcredential設定（gh authまたはPAT配置）およびstale lockファイルの手動削除が必要。
 
-<!-- 最終チェック: 2026-08-28 / 次回: カテゴリ網羅チェック / 対象: hf.json（心不全） -->
-<!-- フィールド欠損チェック未実施ファイル: blood・derma・diabetes・endocrine・ent・gi・gyneco・lifestyle・liver・nutrition・oncology・ophthalmo・pain・renal・sleep_anxiety・steroid・urology（antiseptic・antivirals・arrhythmia完了、respiratoryはC実施済みのため除外） -->
+- [ ] [2026-08-29] カテゴリ網羅チェック: hf.json（心不全、全33件）を確認。
+  【網羅状況】HFrEF標準治療薬（Fantastic Four: ARNI サクビトリル/バルサルタン・β遮断薬 カルベジロール/ビソプロロール・MRA スピロノラクトン/エプレレノン・SGLT2阻害薬 ダパグリフロジン/エンパグリフロジン）は網羅。追加でイバブラジン・ベルイシグアト・HFpEF用薬（エンパグリフロジン/ダパグリフロジン/スピロノラクトン）、利尿薬（フロセミド・アゾセミド・トルバプタン）、ジゴキシン、ACE阻害薬/ARB各種（高血圧治療薬カテゴリと重複掲載だが別適応文脈のため問題なし）、ATTR心アミロイドーシス用薬（タファミジス・アコラミジス）、HCM用薬（マバカムテン）まで幅広く収載されており、慢性心不全の経口薬ラインナップとしては充実。
+  【欠落候補】急性非代償性心不全（急性心不全）で用いる代表的な静注薬（カルペリチド/ハンプ・ドブタミン・ミルリノン・硝酸薬)がhf.json含む全カテゴリJSONに1件も存在しない。arrhythmia.jsonには静注薬（アミオダロン静注・ベラパミル静注・ATP等）が収載されており、本アプリは静注薬も収載対象としているため、急性心不全の主要静注薬が丸ごと未収載である可能性がある（意図的にスコープ外＝経口・慢性期管理薬に限定という方針であれば問題なし）。また利尿薬はフロセミド・アゾセミドのみでトラセミドは未収載（軽微）。
+  → ユーザー確認事項: 急性心不全用静注薬（カルペリチド・ドブタミン・ミルリノン等）を収載対象とするか方針確認要。
+  data/*.json編集はユーザー承認後（今回は発見・記録のみ）。
+
+- [ ] [2026-08-29] インフラ継続: git push origin masterが引き続き失敗（`fatal: could not read Username for 'https://github.com'`、08-04以降と同一原因）。.git/HEAD.lockもstale残存し削除不可（Operation not permitted、08-13以降既知・継続）。加えて今回、作業ツリーにapp.js・data/allergy.json・data/antifungals.json・checks/pending.mdの未コミット変更が既に存在（このroutine実行前から、原因不明）。checks/pending.md以外はroutineの管轄外（data/*.json編集禁止のため）のため今回はコミット対象外とし、そのまま維持。ユーザー側でのcredential設定・stale lock削除・および他ファイルの未コミット変更の確認が必要。
+
+<!-- 最終チェック: 2026-08-29 / 次回: フィールド欠損チェック・統一感チェック / 対象: blood.json（血液） -->
+<!-- フィールド欠損チェック未実施ファイル: derma・diabetes・endocrine・ent・gi・gyneco・lifestyle・liver・nutrition・oncology・ophthalmo・pain・renal・sleep_anxiety・steroid・urology（antiseptic・antivirals・arrhythmia完了、bloodは次回実施予定、respiratoryはC実施済みのため除外） -->
 <!-- renal_gfr要確認: arrhythmia.json（腎排泄型薬複数あり全件null、循環器他ファイルは一部入力あり） -->
 <!-- 販売中止チェック要フォロー: セフォペラゾン/スルバクタム（スルペラゾン先発が販売中止方向、後発品の現行供給を要確認）・ドリペネム・ビアペネム（時間内に未確定） -->
-<!-- 販売中止チェック一巡完了: antibiotics.json（17剤全て確認済み、次回はカテゴリ網羅チェック後に別カテゴリへ移行検討） -->
+<!-- 販売中止チェック一巡完了: antibiotics.json（17剤全て確認済み） -->
+<!-- カテゴリ網羅チェック要ユーザー確認: hf.json急性心不全静注薬（カルペリチド・ドブタミン・ミルリノン等）の収載方針 -->
+<!-- 未コミット変更あり(routine管轄外): app.js・data/allergy.json・data/antifungals.json（本routine開始前から存在、原因・要否ユーザー確認） -->
 
