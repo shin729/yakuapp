@@ -408,7 +408,7 @@
     "NNT": null,
     "onset_time": "月経2〜3日目から連日皮下注→8〜14日で採卵",
     "duration_hours": "150〜300IU/日 皮下注（AMH・AFC・年齢・体重で個別調整）→hCGまたはGnRHaトリガーで排卵誘発",
-    "guideline_rank": "ART（IVF・ICSI）の標準的卵巣刺激薬（ESHRE・JSOG）。GnRHアンタゴニスト（ガニレリクス等）と組み合わせてLHサージを防ぐ。OHSS高リスク例はhCGでなくGnRHaトリガー（デクロレリン等）に変更",
+    "guideline_rank": "ART（IVF・ICSI）の標準的卵巣刺激薬（ESHRE・JSOG）。GnRHアンタゴニスト（ガニレリクス等）と組み合わせてLHサージを防ぐ。OHSS高リスク例はhCGでなくGnRHaトリガー（ブセレリン等）に変更",
     "evidence": "Daya et al.（Hum Reprod 2000 PMID:11043578）",
     "evidence_url": null,
     "caution": "卵巣過剰刺激症候群（OHSS）：腹水・胸水・血液濃縮→重症は入院管理。多胎妊娠（複数胚移植を避けることで低減）。注射部位反応。PCOSは高感受性→低用量から開始（Low Dose Protocol）",
@@ -470,7 +470,7 @@
     "mechanism": "LH受容体に結合→卵胞の最終成熟・排卵誘発。黄体細胞のLH受容体に作用→プロゲステロン産生維持→着床補助",
     "efficacy_star": 5,
     "placebo_onset": "排卵誘発成功率 95%以上（適切な卵胞サイズ到達後の投与）。IVF採卵での成熟卵子回収率 80〜90%",
-    "placebo_sleep": "タイミング療法・人工授精・IVFすべての排卵誘発に使用される中心的薬剤。OHSS高リスク症例ではGnRHaトリガー（デクロレリン等）に切り替え",
+    "placebo_sleep": "タイミング療法・人工授精・IVFすべての排卵誘発に使用される中心的薬剤。OHSS高リスク症例ではGnRHaトリガー（ブセレリン等）に切り替え",
     "NNT": null,
     "onset_time": "投与後34〜36時間で排卵（またはIVF採卵）",
     "duration_hours": "排卵トリガー：5000〜10000IU 筋注または皮下注（1回）。黄体補充：1500〜2500IU 筋注（採卵後2・5・8日目）",
@@ -528,7 +528,7 @@
     "dialysis": "無"
   },
   {
-    "name": "デクロレリン",
+    "name": "ブセレリン",
     "brand": "スプレキュア",
     "category": "不妊治療",
     "class": "GnRHアゴニスト（点鼻・ダウンレギュレーション・採卵トリガー）",
