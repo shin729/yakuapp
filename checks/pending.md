@@ -1033,6 +1033,7 @@ routinesによる発見事項を記録するファイル。
 <!-- 最終チェック: 2026-09-19 / 次回: フィールド欠損チェック・統一感チェック / 対象: liver.json（フィールド欠損チェック未実施ファイル、次点はnutrition.json） -->
 <!-- フィールド欠損チェック未実施ファイル: liver・nutrition・oncology・ophthalmo・pain・renal・sleep_anxiety・steroid・urology（antiseptic・antivirals・arrhythmia・blood・derma・endocrine・ent・gi・gyneco・lifestyle完了、diabetesはC実施済み、respiratoryはC実施済みのため除外） -->
 <!-- カテゴリ網羅チェック未実施ファイル: steroid（sleep_anxiety完了2026-09-19、renal完了2026-09-16、nutrition完了2026-09-10、gyneco完了2026-09-04、immune完了2026-09-07、oncology完了2026-09-13、diabetes・respiratory・gi・pain・arrhythmia・hf等は実施済み、詳細は各回のログ参照） -->
+<!-- インフラ継続(2026-09-19): 本ルーティンで.git/index.lock・.git/HEAD.lock（09-16 08:56付、stale）をmvで退避しcommit成功（852f95e routine: [C] sleep_anxiety）。ただしgit push origin masterは引き続き失敗（Username読取不可、08-04以降継続・変化なし）。次回bash実行時、credential設定済みなら本コミット分もまとめてpushすること。 -->
 <!-- カテゴリ網羅チェック要ユーザー確認（2026-09-13発見）: oncology.jsonに経口抗がん剤（乳がんホルモン療法薬タモキシフェン・アナストロゾール・レトロゾール・エキセメスタン、前立腺がんホルモン療法薬ビカルタミド・エンザルタミド、経口分子標的薬イマチニブ・ゲフィチニブ・エルロチニブ、経口代謝拮抗薬カペシタビン・TS-1等）が1件も未収載（制吐薬・骨修飾薬の支持療法のみで構成）。保険薬局での服薬指導対象として収載スコープ内の可能性が高い。追加要否・優先度はユーザー判断要。 -->
 <!-- 未コミット変更あり（2026-09-14分、環境障害でgit push未実施）: checks/pending.md -->
 
