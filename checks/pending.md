@@ -1046,6 +1046,7 @@ routinesによる発見事項を記録するファイル。
 
 <!-- 最終チェック: 2026-09-21 / 次回: カテゴリ網羅チェック / 対象: steroid.json（カテゴリ網羅チェック未実施ファイルのうち最後の1件） -->
 <!-- フィールド欠損チェック未実施ファイル: nutrition・oncology・ophthalmo・pain・renal・sleep_anxiety・steroid・urology（liver完了2026-09-20、antiseptic・antivirals・arrhythmia・blood・derma・endocrine・ent・gi・gyneco・lifestyle完了、diabetesはC実施済み、respiratoryはC実施済みのため除外） -->
+<!-- インフラ継続(2026-09-21): 本ルーティンで.git/HEAD.lock（stale）をmvで退避しcommit成功（baae680 routine: [B] diabetes 混合型インスリン4件）。ただしgit push origin masterは引き続き失敗（Username読取不可、08-04以降継続・変化なし）。次回bash実行時、credential設定済みなら本コミット分もまとめてpushすること。 -->
 <!-- インフラ継続(2026-09-20): 本ルーティンでgit commitが.git/HEAD.lock（09-19 08:06付、stale）により失敗（File exists、rm/mvともOperation not permitted）。checks/pending.mdの本コミット分（[A] liver）はfile tool経由のローカル反映のみでcommit/push未実施。次回bash環境でlockが解除されていれば09-19分以前の未push分と合わせてまとめてcommit・pushすること。 -->
 <!-- カテゴリ網羅チェック未実施ファイル: steroid（sleep_anxiety完了2026-09-19、renal完了2026-09-16、nutrition完了2026-09-10、gyneco完了2026-09-04、immune完了2026-09-07、oncology完了2026-09-13、diabetes・respiratory・gi・pain・arrhythmia・hf等は実施済み、詳細は各回のログ参照） -->
 <!-- インフラ継続(2026-09-19): 本ルーティンで.git/index.lock・.git/HEAD.lock（09-16 08:56付、stale）をmvで退避しcommit成功（852f95e routine: [C] sleep_anxiety）。ただしgit push origin masterは引き続き失敗（Username読取不可、08-04以降継続・変化なし）。次回bash実行時、credential設定済みなら本コミット分もまとめてpushすること。 -->
