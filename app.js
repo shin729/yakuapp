@@ -119,6 +119,7 @@ const DOMAINS = {
       { key: 'カリウム保持性利尿薬', label: '🟢 K保持性利尿薬' },
       { key: '高カリウム血症治療薬', label: '⚡ 高K血症' },
       { key: '高リン血症治療薬',     label: '🔴 高P血症' },
+      { key: 'CKD（保存期）・MBD',   label: '🫘 CKD保存期・MBD' },
     ],
     defaultCat: 'ループ利尿薬',
     headBg:       'linear-gradient(180deg, #eff6ff 0%, #dbeafe 100%)',
@@ -206,6 +207,10 @@ const DOMAINS = {
     categories: [
       { key: '制吐薬（CINV）', label: '🤢 制吐薬（CINV）' },
       { key: '骨修飾薬',       label: '🦴 骨修飾薬' },
+      { key: '乳がん内分泌療法',     label: '🎀 乳がん内分泌療法' },
+      { key: '前立腺がん内分泌療法', label: '🔷 前立腺がん内分泌療法' },
+      { key: '経口分子標的薬',       label: '🎯 経口分子標的薬' },
+      { key: '経口フッ化ピリミジン', label: '💊 経口フッ化ピリミジン' },
     ],
     defaultCat: '制吐薬（CINV）',
     headBg:       'linear-gradient(180deg, #f0fdf4 0%, #bbf7d0 100%)',
@@ -1505,6 +1510,21 @@ const HYPERKALEMIA_ROWS = [
   { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
 ];
 // 高リン血症治療薬
+const CKD_ROWS = [
+  { label: '適応',                 field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',             field: 'mechanism',      type: 'mech'   },
+  { label: '主な効果',             field: 'placebo_onset',  type: 'accent' },
+  { label: '特徴・服薬のポイント', field: 'placebo_sleep',  type: 'accent' },
+  { label: '効果スコア',           field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果発現',             field: 'onset_time',     type: 'val'    },
+  { label: '投与法・用量',         field: 'duration_hours', type: 'val'    },
+  { label: '妊娠｜授乳',     fields: ['pregnancy', 'lactation'], type: 'safety_pair' },
+  { label: '腎機能｜透析性', fields: ['renal_gfr', 'dialysis'], type: 'safety_pair' },
+  { label: '使い分けポイント',     field: 'guideline_rank', type: 'usecase'},
+  { label: 'エビデンス出典',       field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
+];
+
 const HYPERPHOSPHATEMIA_ROWS = [
   { label: '適応',                 field: 'action_type',    type: 'mech'   },
   { label: '作用機序',             field: 'mechanism',      type: 'mech'   },
@@ -1606,7 +1626,7 @@ const ORTHO_ROWS = [
   { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
 ];
 
-// がん支持療法（制吐薬・骨修飾薬）
+// がん支持療法（制吐薬・骨修飾薬）＋経口抗がん剤は ORAL_ANTICANCER_ROWS
 const ONCOLOGY_ROWS = [
   { label: '適応・対象レジメン',   field: 'action_type',    type: 'mech'   },
   { label: '作用機序',             field: 'mechanism',      type: 'mech'   },
@@ -1621,6 +1641,22 @@ const ONCOLOGY_ROWS = [
   { label: '使い分けポイント',     field: 'guideline_rank', type: 'usecase'},
   { label: 'エビデンス出典',       field: 'evidence',       type: 'evidence'},
   { label: '⚠ 注意事項',          field: 'caution',        type: 'caution'},
+];
+
+// 経口抗がん剤（内分泌療法・分子標的薬・フッ化ピリミジン）
+const ORAL_ANTICANCER_ROWS = [
+  { label: '適応',                 field: 'action_type',    type: 'mech'   },
+  { label: '作用機序',             field: 'mechanism',      type: 'mech'   },
+  { label: '主要試験の有効性',     field: 'placebo_onset',  type: 'accent' },
+  { label: '特徴・位置づけ',       field: 'placebo_sleep',  type: 'accent' },
+  { label: '効果スコア',           field: 'efficacy_star',  type: 'stars'  },
+  { label: '効果判定・投与期間',   field: 'onset_time',     type: 'val'    },
+  { label: '投与法・用量',         field: 'duration_hours', type: 'val'    },
+  { label: '妊娠｜授乳',     fields: ['pregnancy', 'lactation'], type: 'safety_pair' },
+  { label: '腎機能｜透析性', fields: ['renal_gfr', 'dialysis'], type: 'safety_pair' },
+  { label: '使い分けポイント',     field: 'guideline_rank', type: 'usecase'},
+  { label: 'エビデンス出典',       field: 'evidence',       type: 'evidence'},
+  { label: '⚠ 注意事項（服薬指導）', field: 'caution',      type: 'caution'},
 ];
 
 // ビタミン・ミネラル
@@ -2448,6 +2484,7 @@ function getRowDefs(category) {
   if (['ループ利尿薬', 'チアジド系利尿薬', 'カリウム保持性利尿薬'].includes(category)) return RENAL_ROWS;
   if (category === '高カリウム血症治療薬') return HYPERKALEMIA_ROWS;
   if (category === '高リン血症治療薬')     return HYPERPHOSPHATEMIA_ROWS;
+  if (category === 'CKD（保存期）・MBD')   return CKD_ROWS;
   if (['緑内障', '加齢黄斑変性', 'ドライアイ'].includes(category)) return OPHTHALMO_ROWS;
   if (category === '感染性眼疾患') return OPHTHALMO_ROWS;
   if (['アトピー性皮膚炎', '乾癬', 'ざ瘡・外用薬', '円形脱毛症', '皮膚感染症・外用抗菌薬', 'スキンケア・保湿剤'].includes(category)) return DERMA_ROWS;
@@ -2456,6 +2493,7 @@ function getRowDefs(category) {
   if (['筋弛緩薬', '変形性関節症'].includes(category)) return ORTHO_ROWS;
   if (['HRT・更年期', '子宮内膜症', '子宮筋腫', 'OC・避妊', '不妊治療'].includes(category)) return GYNECO_ROWS;
   if (['制吐薬（CINV）', '骨修飾薬'].includes(category)) return ONCOLOGY_ROWS;
+  if (['乳がん内分泌療法', '前立腺がん内分泌療法', '経口分子標的薬', '経口フッ化ピリミジン'].includes(category)) return ORAL_ANTICANCER_ROWS;
   if (category === 'ミネラル・電解質') return MINERAL_ROWS;
   if (category === 'ビタミン') return NUTRITION_ROWS;
   if (category === '経腸栄養剤') return ENTERAL_ROWS;
@@ -3307,10 +3345,10 @@ const DOSE_CALC = {
     drugs: {'クロルプロマジン':100,'レボメプロマジン':100,'ハロペリドール':2,'フルフェナジン':2,'スルピリド':200,'アリピプラゾール':4,'アセナピン':2.5,'ブロナンセリン':4,'クロザピン':50,'オランザピン':2.5,'パリペリドン':1.5,'ペロスピロン':8,'クエチアピン':66,'リスペリドン':1,'ルラシドン':10,'ブレクスピプラゾール':0.5} },
   dzp: { label: '抗不安薬・睡眠薬（DZP換算）', ref: 5, refName: 'ジアゼパム5mg', unit: 'DZP換算mg',
     note: '稲垣・稲田2017版に基づくジアゼパム換算の目安。',
-    drugs: {'ジアゼパム':5,'ロラゼパム':1.2,'アルプラゾラム':0.8,'クロナゼパム':0.25,'エチゾラム':1.5,'ニトラゼパム':5,'トリアゾラム':0.25,'ブロチゾラム':0.25,'ゾルピデム':10,'エスゾピクロン':2.5} },
+    drugs: {'ジアゼパム':5,'ロラゼパム':1.2,'アルプラゾラム':0.8,'クロナゼパム':0.25,'エチゾラム':1.5,'ニトラゼパム':5,'トリアゾラム':0.25,'ブロチゾラム':0.25,'ゾルピデム':10,'エスゾピクロン':2.5,'クロチアゼパム':10,'ロフラゼプ酸エチル':1.67,'フルニトラゼパム':1,'エスタゾラム':2,'クアゼパム':15} },
   imp: { label: '抗うつ薬（イミプラミン換算）', ref: 150, refName: 'イミプラミン150mg', unit: 'イミプラミン換算mg',
     note: '稲垣・稲田2017版に基づくイミプラミン換算の目安。',
-    drugs: {'イミプラミン':150,'アミトリプチリン':150,'クロミプラミン':120,'エスシタロプラム':20,'フルボキサミン':150,'デュロキセチン':30,'ベンラファキシン':150,'ミルナシプラン':100,'ミルタザピン':30,'パロキセチン':40,'セルトラリン':100} },
+    drugs: {'イミプラミン':150,'アミトリプチリン':150,'クロミプラミン':120,'エスシタロプラム':20,'フルボキサミン':150,'デュロキセチン':30,'ベンラファキシン':150,'ミルナシプラン':100,'ミルタザピン':30,'パロキセチン':40,'セルトラリン':100,'トラゾドン':300} },
   op:  { label: '強オピオイド（経口モルヒネ換算）', mme: true, refName: '経口モルヒネ', unit: '経口モルヒネ換算mg/日',
     note: '緩和ケアの慣用換算による経口モルヒネ換算（MME）の目安。メサドンは非線形換算のため除外（個別調整）。フェンタニルは経皮 μg/h で入力。',
     drugs: {
