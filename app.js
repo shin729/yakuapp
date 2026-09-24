@@ -3035,7 +3035,24 @@ function getClassBadge(cls) {
     'リファマイシン系経口非吸収性抗菌薬（腸管選択的）':   { css: 'liv-he'     },
     'グリチルリチン配合静注製剤（肝庇護薬）':              { css: 'liv-protect'},
   };
-  return map[cls] || { css: 'benzo' };
+  // 1) 完全一致
+  if (map[cls]) return map[cls];
+  // 2) 括弧内の補足（世代・剤形など）を外した基本名で一致
+  const baseOf = s => String(s || '').split(/[（(]/)[0].trim();
+  const base = baseOf(cls);
+  if (map[base]) return map[base];
+  // 3) 登録済みクラスのうち基本名が同じもの（例: 抗IL-13抗体（…）どうし）
+  if (!getClassBadge._baseIdx) {
+    const idx = {};
+    for (const k of Object.keys(map)) { const b = baseOf(k); if (!(b in idx)) idx[b] = map[k]; }
+    getClassBadge._baseIdx = idx;
+  }
+  if (getClassBadge._baseIdx[base]) return getClassBadge._baseIdx[base];
+  // 4) 未登録：基本名から決まる専用色（ベンゾジアゼピン系の色は使わない）
+  //    前方一致は誤爆するため使わない（例: ビグアナイド系消毒薬→糖尿病薬の色）
+  let h = 0;
+  for (const ch of base) h = (h * 31 + ch.codePointAt(0)) >>> 0;
+  return { css: `auto-${h % 10}` };
 }
 
 function getRankBadge(rank) {
